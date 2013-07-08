@@ -1,0 +1,6 @@
+application/logs/*.*
+users/*
+members/*
+temp
+**/*.log
+

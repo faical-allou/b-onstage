@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<title></title>
+</head>
+<body>
+<form action="doScoringCheque.php" method="post" class="payline-form">
+	<fieldset>
+		        <h4>Cheque information</h4>
+        <div class="row">
+            <label for="ChequeNumber">Cheque Number</label>
+            <input type="text" name="ChequeNumber" id="ChequeNumber" value="" />
+        </div>
+	</fieldset>
+	<fieldset>
+        <h4>Informations about payment</h4>
+        <div class="row">
+            <label for="paymentAmount">Payment amount</label>
+            <input type="text" name="paymentAmount" id="paymentAmount" value="33300" />
+        </div>
+        <div class="row">
+            <label for="paymentMode">Payment mode</label>
+            <select name="paymentMode" id="paymentMode">
+                <option value="CPT">CPT</option>
+                <option value="DIF">DIF</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="paymentFonction">Payment fonction</label>
+            <select name="paymentFonction" id="paymentFonction">
+                <option value="100">Autor</option>
+                <option value="101">Autor+Capture</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="paymentCurrency">Payement currency</label>
+            <input type="text" name="paymentCurrency" id="paymentCurrency" value="978" />
+        </div>
+        <div class="row">
+            <label for="paymentContractNumber">Contract number</label>
+            <input type="text" name="paymentContractNumber" id="paymentContractNumber" value="001" />
+        </div>
+        <div class="row">
+            <label for="paymentDifferedActionDate">Differed action date</label>
+            <input type="text" name="paymentDifferedActionDate" id="paymentDifferedActionDate" value="" />
+            <span class="help">(required if payment mode is "DIF". Format : "dd/mm/yy")</span>
+        </div>
+	</fieldset>
+<fieldset>
+        <h4>Informations about order</h4>
+        <div class="row">
+            <label for="orderRef">Order reference</label>
+            <input type="text" name="orderRef" id="orderRef" value="1234" />
+        </div>
+        <div class="row">
+            <label for="orderOrigin">Order origin</label>
+            <input type="text" name="orderOrigin" id="orderOrigin" value="1" />
+        </div>
+        <div class="row">
+            <label for="orderCountry">Order country</label>
+            <input type="text" name="orderCountry" id="orderCountry" value="FR" />
+        </div>
+        <div class="row">
+            <label for="orderTaxes">Order taxes</label>
+            <input type="text" name="orderTaxes" id="orderTaxes" value="0" />
+        </div>
+         <div class="row">
+            <label for="orderCurrency">Order currency</label>
+            <input type="text" name="orderCurrency" id="orderCurrency" value="978" />
+        </div>
+        <div class="row">
+            <label for="orderAmount">Order amount</label>
+            <input type="text" name="orderAmount" id="orderAmount" value="33300" />
+        </div>
+        <div class="row">
+            <label for="orderDate">Order date</label>
+            <input type="text" name="orderDate" id="orderDate" value="15/11/2011 12:00" />
+            <span class="help">(required format : "dd/mm/yyyy HH24:MM")</span>
+        </div>
+	</fieldset>
+	<fieldset>
+        <h4>Private datas</h4>
+        <div class="row">
+            <label for="privateDataKey1">Private data key 1</label>
+            <input type="text" name="privateDataKey1" id="privateDataKey1" value="key 1" />
+        </div>
+        <div class="row">
+            <label for="privateDataValue1">Private data value 1</label>
+            <input type="text" name="privateDataValue1" id="privateDataValue1" value="value 1" />
+        </div>
+        <hr/>
+        <div class="row">
+            <label for="privateDataKey2">Private data key 2</label>
+            <input type="text" name="privateDataKey2" id="privateDataKey2" value="key 2" />
+        </div>
+        <div class="row">
+            <label for="privateDataValue2">Private data value 2</label>
+            <input type="text" name="privateDataValue2" id="privateDataValue2" value="value 2" />
+        </div>
+        <hr/>
+        <div class="row">
+            <label for="privateDataKey3">Private data key 3</label>
+            <input type="text" name="privateDataKey3" id="privateDataKey3" value="key 3" />
+        </div>
+        <div class="row">
+            <label for="privateDataValue3">Private data value 2</label>
+            <input type="text" name="privateDataValue3" id="privateDataValue3" value="value 3" />
+        </div>
+	</fieldset>
+	<fieldset>
+		<h4>Server choice</h4>
+		<div class="row">
+            <label for="switcher">High Disponibility Switcher</label>
+            <input type="checkbox" name="switcher" id="switcher" value="" />
+        </div>
+		<div class="row">
+			<label for="choice1">Primaire</label>
+            <input type="radio" name="choice" id="choice1" value="Primaire" checked/><br>
+		</div>
+		<div class="row">
+			<label for="choice2">Secondaire</label>
+			<input type="radio" name="choice" id="choice2" value="Secondaire" /><br>
+        </div>
+	</fieldset>
+
+
+<input type="submit" name="submit" class="submit" value="Do Scoring cheque">
+</form>
+</body>
+</html>
+

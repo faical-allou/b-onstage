@@ -1,0 +1,35 @@
+[31-May-2012 08:32:00] PHP Fatal error:  Call to a member function where() on a non-object in /home/bonstage/public_html/application/models/ion_auth_model.php on line 909
+[31-May-2012 10:47:23] PHP Parse error:  syntax error, unexpected '}' in /home/bonstage/public_html/application/controllers/page.php on line 7
+[31-May-2012 11:16:42] PHP Parse error:  syntax error, unexpected T_STRING in /home/bonstage/public_html/application/views/page/index.php on line 129
+[31-May-2012 11:19:14] PHP Fatal error:  Call to a member function add() on a non-object in /home/bonstage/public_html/application/controllers/user.php on line 575
+[31-May-2012 11:19:44] PHP Fatal error:  Call to a member function add() on a non-object in /home/bonstage/public_html/application/controllers/user.php on line 575
+[03-Jun-2012 03:04:46] PHP Parse error:  syntax error, unexpected ';' in /home/bonstage/public_html/application/views/page/index.php on line 175
+[03-Jun-2012 03:04:49] PHP Parse error:  syntax error, unexpected ';' in /home/bonstage/public_html/application/views/page/index.php on line 175
+[03-Jun-2012 05:26:17] PHP Fatal error:  Call to undefined function url_decode() in /home/bonstage/public_html/application/controllers/user.php on line 578
+[03-Jun-2012 05:26:36] PHP Fatal error:  Call to undefined function url_decode() in /home/bonstage/public_html/application/controllers/user.php on line 578
+[03-Jun-2012 05:33:02] PHP Fatal error:  Call to undefined method CI_DB_mysql_result::order_by() in /home/bonstage/public_html/application/models/gallery_model.php on line 34
+[03-Jun-2012 05:54:29] PHP Fatal error:  Call to undefined method CI_DB_mysql_result::order_by() in /home/bonstage/public_html/application/models/gallery_model.php on line 33
+[03-Jun-2012 05:57:50] PHP Fatal error:  Call to undefined method CI_DB_mysql_result::order_by() in /home/bonstage/public_html/application/models/gallery_model.php on line 33
+[03-Jun-2012 05:59:27] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::result_array() in /home/bonstage/public_html/application/models/gallery_model.php on line 39
+[03-Jun-2012 06:01:03] PHP Fatal error:  Call to undefined method CI_DB_mysql_result::where() in /home/bonstage/public_html/application/models/gallery_model.php on line 34
+[03-Jun-2012 06:01:44] PHP Fatal error:  Call to undefined method CI_DB_mysql_result::where() in /home/bonstage/public_html/application/models/gallery_model.php on line 34
+[03-Jun-2012 06:02:02] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/bonstage/public_html/application/models/gallery_model.php on line 34
+[03-Jun-2012 06:03:26] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/bonstage/public_html/application/models/gallery_model.php on line 33
+[03-Jun-2012 06:03:28] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/bonstage/public_html/application/models/gallery_model.php on line 33
+[03-Jun-2012 06:30:08] PHP Fatal error:  Call to protected method CI_DB_active_record::_compile_select() from context 'Gallery_model' in /home/bonstage/public_html/application/models/gallery_model.php on line 36
+[04-Jun-2012 05:28:31] PHP Fatal error:  Class 'Event_model' not found in /home/bonstage/public_html/system/core/Loader.php on line 303
+[04-Jun-2012 05:29:04] PHP Fatal error:  Class 'Event_model' not found in /home/bonstage/public_html/system/core/Loader.php on line 303
+[04-Jun-2012 05:29:06] PHP Fatal error:  Class 'Event_model' not found in /home/bonstage/public_html/system/core/Loader.php on line 303
+[04-Jun-2012 05:29:07] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/bonstage/public_html/application/models/event_model.php on line 19
+[04-Jun-2012 05:29:10] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/bonstage/public_html/application/models/event_model.php on line 19
+[04-Jun-2012 05:29:55] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::result_array() in /home/bonstage/public_html/application/models/event_model.php on line 19
+[04-Jun-2012 05:33:43] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/bonstage/public_html/application/models/ion_auth_model.php on line 747
+[04-Jun-2012 05:33:48] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/bonstage/public_html/application/models/ion_auth_model.php on line 747
+[04-Jun-2012 05:41:38] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::num_rows() in /home/bonstage/public_html/application/models/event_model.php on line 19
+[05-Jun-2012 09:11:05] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/bonstage/public_html/application/controllers/page.php on line 56
+[05-Jun-2012 14:09:49] PHP Parse error:  syntax error, unexpected ',' in /home/bonstage/public_html/application/controllers/page.php on line 70
+[05-Jun-2012 14:10:16] PHP Parse error:  syntax error, unexpected ';' in /home/bonstage/public_html/application/views/page/index.php on line 109
+[05-Jun-2012 14:10:53] PHP Parse error:  syntax error, unexpected T_ECHO in /home/bonstage/public_html/application/views/page/index.php on line 112
+[05-Jun-2012 15:21:16] PHP Parse error:  syntax error, unexpected ';' in /home/bonstage/public_html/application/controllers/users_temp.php on line 21
+[05-Jun-2012 15:39:22] PHP Parse error:  syntax error, unexpected '{' in /home/bonstage/public_html/application/models/users_temp_model.php on line 21
+[05-Jun-2012 15:40:08] PHP Parse error:  syntax error, unexpected '{' in /home/bonstage/public_html/application/models/users_temp_model.php on line 21

@@ -1,0 +1,216 @@
+<form action="doRecurrentWalletPayment.php" method="post" name="fullWebPayment" class="payline-form">
+	<fieldset>
+        <h4>Informations about payment</h4>
+        <div class="row">
+            <label for="paymentAmount">Payment amount</label>
+            <input type="text" name="paymentAmount" id="paymentAmount" value="33300" />
+            <span class="help">(required)</span>
+        </div>
+        <div class="row">
+            <label for="paymentMode">Payment mode</label>
+            <select name="paymentMode" id="paymentMode">
+            	<option value="NX">Nx</option>
+                <option value="REC">REC</option>
+            </select>
+            <span class="help">(required)</span> 
+        </div>
+        <div class="row">
+            <label for="paymentFonction">Payment fonction</label>
+            <select name="paymentFonction" id="paymentFonction">
+                <option value="100">Autor</option>
+                <option value="101">Autor+Capture</option>
+            </select> 
+            <span class="help">(required)</span>
+        </div>
+        <div class="row">
+            <label for="paymentCurrency">Payement currency</label>
+            <input type="text" name="paymentCurrency" id="paymentCurrency" value="978" />
+        	<span class="help">(required)</span>
+        </div>
+        <div class="row">
+            <label for="paymentContractNumber">Contract numbers</label>
+            <input type="text" name="paymentContractNumber" id="paymentContractNumber" value="001">
+       		<span class="help">(separator if severals numbers : ";")</span>
+        </div>
+        <div class="row">
+            <label for="paymentDifferedActionDate">Differed action date</label>
+            <input type="text" name="paymentDifferedActionDate" id="paymentDifferedActionDate" value="" />
+            <span class="help">(required if payment mode is "DIF". Format : "dd/mm/yy")</span>
+        </div>     
+	</fieldset>
+	<fieldset>
+        <h4>Informations about order</h4>
+        <div class="row">
+            <label for="orderRef">Order reference</label>
+            <input type="text" name="orderRef" id="orderRef" value="1234" />
+        </div>
+        <div class="row">
+            <label for="orderOrigin">Order origin</label>
+            <input type="text" name="orderOrigin" id="orderOrigin" value="1" maxlength="3" />
+        </div>
+        <div class="row">
+            <label for="orderCountry">Order country</label>
+            <input type="text" name="orderCountry" id="orderCountry" value="FR" />
+        </div>
+        <div class="row">
+            <label for="orderTaxes">Order taxes</label>
+            <input type="text" name="orderTaxes" id="orderTaxes" value="0" />
+        </div>
+         <div class="row">
+            <label for="orderCurrency">Order currency</label>
+            <input type="text" name="orderCurrency" id="orderCurrency" value="978" />
+        </div>
+        <div class="row">
+            <label for="orderAmount">Order amount</label>
+            <input type="text" name="orderAmount" id="orderAmount" value="33300" />
+        </div>        
+        <div class="row">
+            <label for="orderDate">Order date</label>
+            <input type="text" name="orderDate" id="orderDate" value="15/11/2011 12:00" />
+            <span class="help">(required format : "dd/mm/yyyy HH24:MM")</span>
+        </div>         
+	</fieldset>
+	<fieldset>
+        <h4>Order details</h4>
+        <div class="row">
+            <label for="orderDetailRef1">Item reference 1</label>
+            <input type="text" name="orderDetailRef1" id="orderDetailRef1" value="reference1" maxlength="50" />
+        </div>
+        <div class="row">
+            <label for="orderDetailPrice1">Item price 1</label>
+            <input type="text" name="orderDetailPrice1" id="orderDetailPrice1" value="1" />
+        </div>
+        <div class="row">
+            <label for="orderDetailQuantity1">Item quantity 1</label>
+            <input type="text" name="orderDetailQuantity1" id="orderDetailQuantity1" value="1" />
+        </div>
+        <div class="row">
+            <label for="orderDetailComment1">Item comment 1</label>
+            <textarea name="orderDetailComment1" id="orderDetailComment1">Comment for item 1</textarea>
+        </div>
+        <hr/>
+        <div class="row">
+            <label for="orderDetailRef2">Item reference 2</label>
+            <input type="text" name="orderDetailRef2" id="orderDetailRef2" value="reference2" maxlength="50" />
+        </div>
+        <div class="row">
+            <label for="orderDetailPrice2">Item price 2</label>
+            <input type="text" name="orderDetailPrice2" id="orderDetailPrice2" value="1" />
+        </div>
+        <div class="row">
+            <label for="orderDetailQuantity2">Item quantity 2</label>
+            <input type="text" name="orderDetailQuantity2" id="orderDetailQuantity2" value="1" />
+        </div>
+        <div class="row">
+            <label for="orderDetailComment2">Item comment 2</label>
+            <textarea name="orderDetailComment2" id="orderDetailComment2">Comment for item 2</textarea>
+        </div>
+    </fieldset>     
+	<fieldset>
+        <h4>Private datas</h4>
+        <div class="row">
+            <label for="privateDataKey1">Private data key 1</label>
+            <input type="text" name="privateDataKey1" id="privateDataKey1" value="key 1" />
+        </div>
+        <div class="row">
+            <label for="privateDataValue1">Private data value 1</label>
+            <input type="text" name="privateDataValue1" id="privateDataValue1" value="value 1" />
+        </div>  
+        <hr/>
+        <div class="row">
+            <label for="privateDataKey2">Private data key 2</label>
+            <input type="text" name="privateDataKey2" id="privateDataKey2" value="key 2" />
+        </div>   
+        <div class="row">
+            <label for="privateDataValue2">Private data value 2</label>
+            <input type="text" name="privateDataValue2" id="privateDataValue2" value="value 2" />
+        </div>
+        <hr/>
+        <div class="row">
+            <label for="privateDataKey3">Private data key 3</label>
+            <input type="text" name="privateDataKey3" id="privateDataKey3" value="key 3" />
+        </div>   
+        <div class="row">
+            <label for="privateDataValue3">Private data value 2</label>
+            <input type="text" name="privateDataValue3" id="privateDataValue3" value="value 3" />
+        </div>     
+	</fieldset>
+	<fieldset>
+        <h4>Wallet informations</h4>
+        <div class="row">
+            <label for="walletId">Wallet ID</label>
+            <input type="text" name="walletId" id="walletId" value="" />
+            <span class="help">(required)</span>
+        </div>
+		<div class="row">
+            <label for="CardIndex">Card Index</label>
+            <input type="text" name="CardIndex" id="CardIndex" value="">
+        </div>	
+    </fieldset>
+    <fieldset>
+        <h4>Recurring informations</h4>
+        <div class="row">
+            <label for="recurringFirstAmount">First amount</label>
+            <input type="text" name="recurringFirstAmount" id="recurringFirstAmount" value="" />
+        </div>
+		<div class="row">
+            <label for="recurringBillingLeft">Billing left</label>
+            <input type="text" name="recurringBillingLeft" id="recurringBillingLeft" value="" />
+            <span class="help">(required) <input type="button" value="Calculate bill book" id="billbook" class="submit"/></span>
+        </div>
+		<div class="row">
+            <label for="recurringAmount">Amount</label>
+            <input type="text" name="recurringAmount" id="recurringAmount" value="" />
+            <span class="help">(required)</span>
+        </div>
+		<div class="row">
+            <label for="recurringBillingCycle">Billing cycle</label>
+            <select name="recurringBillingCycle" id="recurringBillingCycle">
+                <option value="10">Quotidien</option>
+                <option value="20">Hebdomadaire</option>
+                <option value="30">Bimensuel</option>
+                <option value="40" selected="selected">Mensuel</option>
+                <option value="50">Bimestriel</option>
+                <option value="60">Trimestriel</option>
+                <option value="70">Semi-annuel</option>
+                <option value="80">Annuel</option>
+                <option value="90">Bisannuel</option>
+            </select> 
+            <span class="help">(required)</span>
+        </div>
+		<div class="row">
+            <label for="recurringStartDate">Start date</label>
+            <input type="text" name="recurringStartDate" id="recurringStartDate" value="" />
+            <span class="help">(required format : "dd/mm/yyyy")</span>
+        </div>
+		<div class="row">
+            <label for="recurringBillingDay">Billing day</label>
+            <input type="text" name="recurringBillingDay" id="recurringBillingDay" value="" />
+            <span class="help">(required format : "dd")</span>
+        </div>
+    </fieldset>
+     <fieldset>
+        <h4>Scheduled date</h4>
+        <div class="row">
+            <label for="ScheduledDate">Date</label>
+            <input type="text" name="ScheduledDate" id="ScheduledDate" value="" />
+			<span class="help">(required format : "dd/mm/yyyy")</span>
+        </div>
+    </fieldset>  
+	<fieldset>
+		<h4>Server choice</h4>
+		<div class="row">
+            <label for="switcher">High Disponibility Switcher</label>
+            <input type="checkbox" name="switcher" id="switcher" value="" />
+        </div>
+		<div class="row">
+			<label for="choice1">Primaire</label>
+            <input type="radio" name="choice" id="choice1" value="Primaire" checked/><br>
+		</div>
+		<div class="row">
+			<label for="choice2">Secondaire</label>
+			<input type="radio" name="choice" id="choice2" value="Secondaire" /><br>
+        </div>
+	</fieldset>
+    <input type="submit" name="submit" class="submit" value="Do reccurent wallet payment" />
+</form>

@@ -1,0 +1,29 @@
+<form action="disablePaymentRecord.php" method="post"  class="payline-form">
+	<fieldset>
+        <h4>Disable payment record</h4>
+        <div class="row">
+            <label for="contractNumber">Contract number</label>
+            <input type="text" name="contractNumber" id="contractNumber" value="001">
+        </div>  
+        <div class="row">
+            <label for="paymentRecordId">Payment record id</label>
+            <input type="text" name="paymentRecordId" id="paymentRecordId" value="" />
+        </div>
+	</fieldset>
+		<fieldset>
+		<h4>Server choice</h4>
+		<div class="row">
+            <label for="switcher">High Disponibility Switcher</label>
+            <input type="checkbox" name="switcher" id="switcher" value="" />
+        </div>
+		<div class="row">
+			<label for="choice1">Primaire</label>
+            <input type="radio" name="choice" id="choice1" value="Primaire" checked/><br>
+		</div>
+		<div class="row">
+			<label for="choice2">Secondaire</label>
+			<input type="radio" name="choice" id="choice2" value="Secondaire" /><br>
+        </div>
+	</fieldset>
+    <input type="submit" name="submit" class="submit" value="Disable payment record" />
+</form>

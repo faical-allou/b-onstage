@@ -1,0 +1,154 @@
+/******************************
+*
+*  RoyalSlider White Controls Skin
+*
+*    1. Arrows 
+*    2. Bullets
+*    3. Thumbnails
+*    4. Tabs
+*    5. Fullscreen button
+*    6. Play/close video button
+*    7. Preloader
+*    8. Caption
+*    
+*  Sprite: 'rs-minimal-white.png'
+*  Feel free to edit anything
+*  If you don't some part - just delete it
+* 
+******************************/
+
+
+/* Background */
+.rsBlack,
+.rsBlack .rsOverflow,
+.rsBlack .rsSlide,
+.rsBlack .rsVideoFrameHolder,
+.rsBlack .rsThumbs {
+	background: #000;
+	color: #FFF;
+}
+
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.rsBlack .rsArrow {
+	height: 32px;
+	width: 32px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+}
+
+.rsBlack .rsArrowLeft { right: 37px; bottom: 7px; }
+.rsBlack .rsArrowRight { right: 7px; bottom: 7px; }
+
+.rsBlack .rsArrowIcn {		
+	width: 24px;
+	height: 24px;
+	margin-top: 3px;
+	margin-left: 3px;
+	position: absolute;
+	cursor: pointer;	
+	background: url('rs-black.png') transparent;
+	
+	border-radius: 2px;
+}
+.rsBlack .rsArrowIcn:hover {
+
+}
+
+
+.rsBlack.rsHor .rsArrowLeft .rsArrowIcn { background-position: -68px -36px; }
+.rsBlack.rsHor .rsArrowRight .rsArrowIcn { background-position: -68px -68px; }
+
+.rsBlack.rsVer .rsArrowLeft .rsArrowIcn { background-position: -100px -36px; }
+.rsBlack.rsVer .rsArrowRight .rsArrowIcn { background-position: -100px -68px; }
+
+.rsBlack .rsArrowDisabled .rsArrowIcn { opacity: .3 !important; filter: alpha(opacity=30);  *display: none; }
+
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.rsBlack .rsBullets {
+	position: absolute;
+	bottom: 10px;
+	right: 73px;
+	z-index: 35;
+	padding-top: 4px;
+	height: auto;
+	cursor:pointer;
+	text-align: center;
+	line-height: 6px;
+	overflow: hidden;
+}
+.rsBlack .rsBullet {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	*display:inline; 
+	*zoom:1;
+	padding: 6px 5px 6px 4px;
+}
+.rsBlack .rsBullet span {
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;	
+	background: rgba(0,0,0,0.2);
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.rsBlack .rsBullet.rsNavSelected span {
+	background: rgba(0,0,0,0.8);
+}
+
+
+/***************
+*
+*  7. Preloader
+*
+****************/
+
+.rsBlack .rsPreloader {
+	width:20px;
+	height:20px;
+	background-image:url(../preloaders/preloader-black.gif);
+
+	left:50%;
+	top:50%;
+	margin-left:-10px;
+	margin-top:-10px;	
+}
+
+
+
+
+/***************
+*
+*  8. Global caption
+*
+****************/
+.rsBlack .rsGCaption {
+	position: absolute;
+	float: none;
+	bottom: 6px;
+	left: 6px;
+	text-align: left;
+
+	background: #000;
+    background: rgba(0,0,0, 0.75);
+
+	color: #FFF;
+	padding: 2px 8px;
+	width: auto;
+	font-size: 12px;
+	border-radius: 2px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<title></title>
+</head>
+<body>
+<form action="verifyAuthentication.php" method="post" class="payline-form">
+	<fieldset>
+		        <h4>3DSecure information</h4>
+        <div class="row">
+            <label for="contractNumber">Contract number</label>
+            <input type="text" name="contractNumber" id="contractNumber" value="" />
+        </div>
+		        <div class="row">
+            <label for="pares">Pares</label>
+            <input type="text" name="pares" id="pares" value="" />
+        </div>
+		        <div class="row">
+            <label for="md">Md</label>
+            <input type="text" name="md" id="md" value="" />
+        </div>
+	</fieldset>
+
+<fieldset>
+        <h4>Informations about card</h4>
+        <div class="row">
+            <label for="cardNumber">Card number</label>
+            <input type="text" name="cardNumber" id="cardNumber" value="4970100011222417" />
+        </div>
+        <div class="row">
+            <label for="cardType">Card type</label>
+            <select name="cardType" id="cardType">
+                <option value="CB">CB</option>
+                <option value="AMEX">AMEX</option>
+                <option value="COFINOGA">COFINOGA</option>
+                <option value="JCB">JCB</option>
+                <option value="DINERS">DINERS</option>
+                <option value="AURORE">AURORE</option>
+                <option value="SOFINCO">SOFINCO</option>
+                <option value="CETELEM">CETELEM</option>
+                <option value="FNAC">FNAC</option>
+                <option value="PRINTEMPS">PRINTEMPS</option>
+                <option value="KANGOUROU">KANGOUROU</option>
+                <option value="SURCOUF">SURCOUF</option>
+                <option value="CYRILLUS">CYRILLUS</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="cardExpirationDate">Card expiration date</label>
+            <input type="text" name="cardExpirationDate" id="cardExpirationDate" value="0112" />
+        </div>
+        <div class="row">
+            <label for="cardCrypto">Card cryptogram</label>
+            <input type="text" name="cardCrypto" id="cardCrypto" value="123" />
+        </div>
+        <div class="row">
+            <label for="cardOwnerBirthdayDate">Owner birthday date</label>
+            <input type="text" name="cardOwnerBirthdayDate" id="cardOwnerBirthdayDate" value="" />
+            <span class="help">(required format : "ddmmyy")</span>
+        </div>
+        <div class="row">
+            <label for="cardPassword">Card password</label>
+            <input type="text" name="cardPassword" id="cardPassword" value="" />
+        </div>
+		<div class="row">
+            <label for="cardPresent">Card Present</label>
+            <select name="cardPresent" id="cardPresent">
+                <option value=""> </option>
+                <option value="1">yes</option>
+                <option value="0">no</option>
+            </select>
+        </div>
+    </fieldset>
+	<fieldset>
+		<h4>Server choice</h4>
+		<div class="row">
+            <label for="switcher">High Disponibility Switcher</label>
+            <input type="checkbox" name="switcher" id="switcher" value="" />
+        </div>
+		<div class="row">
+			<label for="choice1">Primaire</label>
+            <input type="radio" name="choice" id="choice1" value="Primaire" checked/><br>
+		</div>
+		<div class="row">
+			<label for="choice2">Secondaire</label>
+			<input type="radio" name="choice" id="choice2" value="Secondaire" /><br>
+        </div>
+	</fieldset>
+
+<input type="submit" name="submit" class="submit" value="Verify authentication">
+</form>
+</body>
+</html>
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<title></title>
+</head>
+<body>
+<form action="doCapture.php" method="post" class="payline-form">
+<fieldset>
+<h4>Transaction ID</h4>
+
+<div class="row"><label for="transactionID">Transaction ID</label>
+<input type="text" name="transactionID" value="" size="19"> <span
+class="help">(required)</span></div>
+</fieldset>
+
+<fieldset>
+<h4>Payment</h4>
+
+<div class="row"><label for="paymentAmount">Amount</label> <input
+type="text" name="paymentAmount" value="33300" size="10"></div>
+
+<div class="row"><label for="paymentMode">Payment mode</label>
+<select name="paymentMode" id="paymentMode">
+<option value="CPT">CPT</option>
+<option value="DIF">DIF</option>
+</select></div>
+
+<div class="row"><label for="paymentFonction">Payment
+function</label> <select name="paymentFonction" size="1">
+<option value="201">Full</option>
+<option value="202">Partial</option>
+</select></div>
+
+<div class="row"><label for="paymentCurrency">Payement
+currency</label> <input type="text" name="paymentCurrency" id=
+"paymentCurrency" value="978"></div>
+
+<div class="row"><label for="paymentContractNumber">Contract
+number</label> <input type="text" name="paymentContractNumber" id=
+"paymentContractNumber" value="001"></div>
+
+<div class="row"><label for="paymentDifferedActionDate">Differed
+action date</label> <input type="text" name=
+"paymentDifferedActionDate" id="paymentDifferedActionDate" value=
+""> <span class="help">(required if payment mode is "DIF". Format :
+"dd/mm/yy")</span></div>
+</fieldset>
+
+<fieldset>
+<h4>Private datas</h4>
+
+<div class="row"><label for="privateDataKey1">Private data key
+1</label> <input type="text" name="privateDataKey1" id=
+"privateDataKey1" value="key 1"></div>
+
+<div class="row"><label for="privateDataValue1">Private data value
+1</label> <input type="text" name="privateDataValue1" id=
+"privateDataValue1" value="value 1"></div>
+
+<hr>
+<div class="row"><label for="privateDataKey2">Private data key
+2</label> <input type="text" name="privateDataKey2" id=
+"privateDataKey2" value="key 2"></div>
+
+<div class="row"><label for="privateDataValue2">Private data value
+2</label> <input type="text" name="privateDataValue2" id=
+"privateDataValue2" value="value 2"></div>
+
+<hr>
+<div class="row"><label for="privateDataKey3">Private data key
+3</label> <input type="text" name="privateDataKey3" id=
+"privateDataKey3" value="key 3"></div>
+
+<div class="row"><label for="privateDataValue3">Private data value
+3</label> <input type="text" name="privateDataValue3" id=
+"privateDataValue3" value="value 3"></div>
+</fieldset>
+
+<fieldset>
+<h4>Sequence number</h4>
+
+<div class="row"><label for="sequenceNumber">Sequence
+number</label> <input type="text" name="sequenceNumber" id=
+"sequenceNumber" value=""></div>
+</fieldset>
+	<fieldset>
+		<h4>Server choice</h4>
+		<div class="row">
+            <label for="switcher">High Disponibility Switcher</label>
+            <input type="checkbox" name="switcher" id="switcher" value="" />
+        </div>
+		<div class="row">
+			<label for="choice1">Primaire</label>
+            <input type="radio" name="choice" id="choice1" value="Primaire" checked/><br>
+		</div>
+		<div class="row">
+			<label for="choice2">Secondaire</label>
+			<input type="radio" name="choice" id="choice2" value="Secondaire" /><br>
+        </div>
+	</fieldset>
+
+<input type="submit" name="submit" class="submit" value=
+"Capture"></form>
+</body>
+</html>
+

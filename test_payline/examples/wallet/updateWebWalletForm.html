@@ -1,0 +1,114 @@
+<form action="updateWebWallet.php" method="post"  class="payline-form" >
+	<fieldset>
+        <h4>Wallet informations</h4>    
+        <div class="row">
+            <label for="contractNumber">Contract number</label>
+            <input type="text" name="contractNumber" id="contractNumber" value="001">
+        </div> 
+        <div class="row">
+            <label for="walletId">Wallet Id</label>
+            <input type="text" name="walletId" id="walletId" value="001">
+        </div>
+		<div class="row">
+            <label for="CardIndex">Card Index</label>
+            <input type="text" name="CardIndex" id="CardIndex" value="">
+        </div>
+    </fieldset>
+    <fieldset>
+        <h4>Update informations</h4>
+     <div class="row">
+            <label for="updatePersonalDetails">Update personal details</label>
+            <input type="checkbox" name="updatePersonalDetails" id="debug" value="0" />
+		</div> 
+	 <div class="row">
+            <label for="updatePaymentDetails">Update payment details</label>
+            <input type="checkbox" name="updatePaymentDetails" id="debug" value="0" />
+	</div> 
+	</fieldset>
+    <fieldset>
+    	<h4>Transaction options</h4>
+		<div class="row">
+            <label for="notificationURL">Notification url</label>
+            <input type="text" name="notificationURL" id="notificationURL" value="" />
+            <span class="help">(valid url like http:// or https://)</span>
+		</div> 
+        <div class="row">
+            <label for="returnURL">Return url</label>
+            <input type="text" name="returnURL" id="returnURL" value="" />
+            <span class="help">(valid url like http:// or https://)</span>
+		</div>  
+        <div class="row">
+            <label for="cancelURL">Cancel url</label>
+            <input type="text" name="cancelURL" id="cancelURL" value="" />
+            <span class="help">(valid url like http:// or https://)</span>
+		</div> 
+        <div class="row">
+            <label for="customPaymentTemplateURL">Custom payment template URL</label>
+            <input type="text" name="customPaymentTemplateURL" id="customPaymentTemplateURL" value="" />
+            <span class="help">(valid url like http:// or https://)</span>
+		</div>
+		<div class="row">
+            <label for="customPaymentPageCode">Custom payment page code</label>
+            <input type="text" name="customPaymentPageCode" id="customPaymentPageCode" value="" />
+		</div>
+		<div class="row">
+            <label for="securityMode">Security mode</label>
+            <input type="text" name="securityMode" id="securityMode" value="" />
+		</div>
+        <div class="row">
+            <label for="languageCode">Language Code</label>   
+            <select name="languageCode" id="languageCode">
+                <option value="fre/fra">FR</option>
+                <option value="ger/deu">DE</option>
+                <option value="eng">UK</option>
+                <option value="ita">IT</option>
+                <option value="spa">SP</option>
+            </select>
+		</div>
+    </fieldset>
+	<fieldset>
+        <h4>Private datas</h4>
+        <div class="row">
+            <label for="privateDataKey1">Private data key 1</label>
+            <input type="text" name="privateDataKey1" id="privateDataKey1" value="key 1" />
+        </div>
+        <div class="row">
+            <label for="privateDataValue1">Private data value 1</label>
+            <input type="text" name="privateDataValue1" id="privateDataValue1" value="value 1" />
+        </div>  
+        <hr/>
+        <div class="row">
+            <label for="privateDataKey2">Private data key 2</label>
+            <input type="text" name="privateDataKey2" id="privateDataKey2" value="key 2" />
+        </div>   
+        <div class="row">
+            <label for="privateDataValue2">Private data value 2</label>
+            <input type="text" name="privateDataValue2" id="privateDataValue2" value="value 2" />
+        </div>
+        <hr/>
+        <div class="row">
+            <label for="privateDataKey3">Private data key 3</label>
+            <input type="text" name="privateDataKey3" id="privateDataKey3" value="key 3" />
+        </div>   
+        <div class="row">
+            <label for="privateDataValue3">Private data value 3</label>
+            <input type="text" name="privateDataValue3" id="privateDataValue3" value="value 3" />
+        </div>     
+	</fieldset>
+	<fieldset>
+		<h4>Server choice</h4>
+		<div class="row">
+            <label for="switcher">High Disponibility Switcher</label>
+            <input type="checkbox" name="switcher" id="switcher" value="" />
+        </div>
+		<div class="row">
+			<label for="choice1">Primaire</label>
+            <input type="radio" name="choice" id="choice1" value="Primaire" checked/><br>
+		</div>
+		<div class="row">
+			<label for="choice2">Secondaire</label>
+			<input type="radio" name="choice" id="choice2" value="Secondaire" /><br>
+        </div>
+	</fieldset>
+    <input type="submit" name="submit" class="submit" value="Update Web Wallet" />
+</form>

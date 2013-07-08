@@ -1,0 +1,16 @@
+2013-01-26 6:10:47 - ----------------------------------------------------------
+2013-01-26 6:10:47 - paylineSDK::__construct(66472380657968, tj****************Ya, , , , , )
+2013-01-26 6:10:47 - webServiceRequest(doWebPayment) - Location : https://homologation.payline.com/V4/services/WebPaymentAPI
+2013-01-26 6:10:48 - response return (code 00000)
+2013-01-26 17:42:27 - ----------------------------------------------------------
+2013-01-26 17:42:28 - paylineSDK::__construct(66472380657968, tj****************Ya, , , , , )
+2013-01-26 17:42:28 - webServiceRequest(doWebPayment) - Location : https://homologation.payline.com/V4/services/WebPaymentAPI
+2013-01-26 17:42:29 - response return (code 00000)
+2013-01-26 18:10:19 - ----------------------------------------------------------
+2013-01-26 18:10:19 - paylineSDK::__construct(66472380657968, tj****************Ya, , , , , )
+2013-01-26 18:10:19 - webServiceRequest(doWebPayment) - Location : https://homologation.payline.com/V4/services/WebPaymentAPI
+2013-01-26 18:10:20 - response return (code 00000)
+2013-01-26 18:12:17 - ----------------------------------------------------------
+2013-01-26 18:12:17 - paylineSDK::__construct(66472380657968, tj****************Ya, , , , , )
+2013-01-26 18:12:17 - webServiceRequest(doWebPayment) - Location : https://homologation.payline.com/V4/services/WebPaymentAPI
+2013-01-26 18:12:18 - response return (code 00000)

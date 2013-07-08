@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<title></title>
+</head>
+<body>
+<form action="verifyEnrollment.php" method="post" class=
+"payline-form">
+
+<fieldset>
+<h4>Informations about card</h4>
+
+<div class="row"><label for="cardNumber">Card number</label> <input
+type="text" name="cardNumber" id="cardNumber" value=
+"4970100011222417"></div>
+
+<div class="row"><label for="cardType">Card type</label> <select
+name="cardType" id="cardType">
+<option value="CB">CB</option>
+<option value="MASTERCARD">MASTERCARD</option>
+<option value="VISA">VISA</option>
+</select></div>
+
+<div class="row"><label for="cardExpirationDate">Card expiration
+date</label> <input type="text" name="cardExpirationDate" id=
+"cardExpirationDate" value="0112"></div>
+
+<div class="row"><label for="cardCrypto">Card cryptogram</label>
+<input type="text" name="cardCrypto" id="cardCrypto" value=
+"123"></div>
+
+<div class="row"><label for="cardOwnerBirthdayDate">Owner birthday
+date</label> <input type="text" name="cardOwnerBirthdayDate" id=
+"cardOwnerBirthdayDate" value=""> <span class="help">(required
+format : "ddmmyy")</span></div>
+
+<div class="row"><label for="cardPassword">Card password</label>
+<input type="text" name="cardPassword" id="cardPassword" value=
+""></div>
+</fieldset>
+
+
+<fieldset>
+<h4>Informations about payment</h4>
+
+<div class="row"><label for="paymentAmount">Payment amount</label>
+<input type="text" name="paymentAmount" id="paymentAmount" value=
+"33300"></div>
+
+<div class="row"><label for="paymentMode">Payment mode</label>
+<select name="paymentMode" id="paymentMode">
+<option value="CPT">CPT</option>
+</select></div>
+
+<div class="row"><label for="paymentFonction">Payment
+function</label> <select name="paymentFonction" id=
+"paymentFonction">
+<option value="100">Autor</option>
+<option value="101">Autor+Capture</option>
+</select></div>
+
+<div class="row"><label for="paymentCurrency">Payment
+currency</label> <input type="text" name="paymentCurrency" id=
+"paymentCurrency" value="978"></div>
+
+<div class="row"><label for="paymentContractNumber">Contract
+number</label> <input type="text" name="paymentContractNumber" id=
+"paymentContractNumber" value="0013DS"></div>
+
+</fieldset>
+<fieldset>
+<h4>Informations about user agent</h4>
+
+<div class="row"><label for="UsrAgent">User Agent</label>
+<input type="text" name="UsrAgent" id="UsrAgent" value="">
+</div>
+</fieldset>
+<fieldset>
+<h4>Informations about order</h4>
+
+<div class="row"><label for="orderRef">Order reference</label>
+<input type="text" name="orderRef" id="orderRef" value="1234">
+<span class="help">(required)</span></div>
+
+<div class="row"><label for="debug">MODE DEBUG</label> <input type=
+"checkbox" name="debug" id="debug" value="YES"></div>
+
+</fieldset>
+
+
+<input type="submit" name="submit" class="submit" value=
+"Verify enrollment"></form>
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+<form action="transactionsSearch.php" method="post" class="payline-form">
+	<fieldset>
+        <h4>Informations about Transaction</h4>
+        <div class="row">
+            <label for="transactionId">Transaction Id</label>
+            <input type="text" name="transactionId" id="transactionId" value="" />
+        </div>
+        <div class="row">
+            <label for="startDate">Start date</label>
+            <input type="text" name="startDate" id="startDate" value="" />
+        </div>
+        <div class="row">
+            <label for="endDate">End date</label>
+            <input type="text" name="endDate" id="endDate" value="" />
+        </div>
+        <div class="row">
+            <label for="authorizationNumber">Authorization number</label>
+            <input type="text" name="authorizationNumber" id="authorizationNumber" value="" />
+        </div>
+        <div class="row">
+            <label for="paymentMean">Card type</label>
+            <input type="text" name="paymentMean" id="paymentMean" value="" />
+        </div>
+        <div class="row">
+            <label for="transactionType">Transaction type</label>
+            <input type="text" name="transactionType" id="transactionType" value="" />
+        </div>
+        <div class="row">
+            <label for="contractNumber">Contract Number</label>
+            <input type="text" name="contractNumber" id="contractNumber" value="" />
+        </div>
+        <div class="row">
+            <label for="returnCode">Return code</label>
+            <input type="text" name="returnCode" id="returnCode" value="" />
+        </div>
+    </fieldset>
+	<fieldset>
+        <h4>Informations about order</h4>
+        <div class="row">
+            <label for="orderRef">Order reference</label>
+            <input type="text" name="orderRef" id="orderRef" value="" />
+        </div>
+    </fieldset>
+    <fieldset>
+        <h4>Informations about card</h4>
+        <div class="row">
+            <label for="cardNumber">Card number</label>
+            <input type="text" name="cardNumber" id="cardNumber" value="" />
+        </div>
+        <div class="row">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="" />
+        </div>
+        <div class="row">
+            <label for="firstName">FirstName</label>
+            <input type="text" name="firstName" id="firstName" value="" />
+        </div>
+        <div class="row">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="" />
+        </div>
+         <div class="row">
+            <label for="currency">Payement currency</label>
+            <input type="text" name="currency" id="currency" value="" />
+        </div>
+        <div class="row">
+            <label for="minAmount">Min Amount</label>
+            <input type="text" name="minAmount" id="minAmount" value="" />
+        </div>
+        <div class="row">
+            <label for="maxAmount">Max Amount</label>
+            <input type="text" name="maxAmount" id="maxAmount" value="" />
+        </div>
+        <div class="row">
+            <label for="walletId">Wallet Id</label>
+            <input type="text" name="walletId" id="walletId" value="" />
+        	<span class="help">(required)</span>
+        </div>
+    </fieldset>
+	<fieldset>
+		<h4>Server choice</h4>
+		<div class="row">
+            <label for="switcher">High Disponibility Switcher</label>
+            <input type="checkbox" name="switcher" id="switcher" value="" />
+        </div>
+		<div class="row">
+			<label for="choice1">Primaire</label>
+            <input type="radio" name="choice" id="choice1" value="Primaire" checked/><br>
+		</div>
+		<div class="row">
+			<label for="choice2">Secondaire</label>
+			<input type="radio" name="choice" id="choice2" value="Secondaire" /><br>
+        </div>
+	</fieldset>
+    <input type="submit" name="submit" class="submit" value="Transaction search" />
+</form>
+
+
+
+

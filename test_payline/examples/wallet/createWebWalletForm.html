@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<title></title>
+</head>
+<body>
+<form action="createWebWallet.php" method="post" class=
+"payline-form">
+<fieldset>
+<h4>Wallet informations</h4>
+
+<div class="row"><label for="contractNumber">Contract
+number</label> <input type="text" name="contractNumber" id=
+"contractNumber" value="001"></div>
+
+<div class="row"><label for="paymentContractNumber">Selected
+contract list</label> <input type="text" name=
+"paymentContractNumber" id="paymentContractNumber" value="001">
+<span class="help">(separator if severals numbers :
+";")</span></div>
+</fieldset>
+
+<fieldset>
+<h4>Informations about buyer</h4>
+
+<div class="row"><label for="buyerLastName">Buyer Last name</label>
+<input type="text" name="buyerLastName" id="buyerLastName" value=
+""></div>
+
+<div class="row"><label for="buyerFirstName">Buyer First
+name</label> <input type="text" name="buyerFirstName" id=
+"buyerFirstName" value=""></div>
+
+<div class="row"><label for="buyerEmail">Buyer email</label> <input
+type="text" name="buyerEmail" id="buyerEmail" value=""></div>
+
+<div class="row"><label for="buyerWalletId">Buyer wallet ID</label>
+<input type="text" name="buyerWalletId" id="buyerWalletId" value=
+""></div>
+
+<div class="row"><label for="buyerAccountCreateDate">Buyer account
+create date</label> <input type="text" name=
+"buyerAccountCreateDate" id="buyerAccountCreateDate" value="">
+<span class="help">(required format : "dd/mm/yy")</span></div>
+
+<div class="row"><label for="buyerAverageAmount">Buyer average
+amount</label> <input type="text" name="buyerAverageAmount" id=
+"buyerAverageAmount" value=""></div>
+
+<div class="row"><label for="buyerOrderCount">Buyer order
+count</label> <input type="text" name="buyerOrderCount" id=
+"buyerOrderCount" value=""></div>
+</fieldset>
+
+<fieldset>
+<h4>Invoice address</h4>
+
+<div class="row"><label for="addressName">Name</label> <input type=
+"text" name="addressName" id="addressName" value=""></div>
+
+<div class="row"><label for="addressStreet1">Street 1</label>
+<input type="text" name="addressStreet1" id="addressStreet1" value=
+""></div>
+
+<div class="row"><label for="addressStreet2">Street 2</label>
+<input type="text" name="addressStreet2" id="addressStreet2" value=
+""></div>
+
+<div class="row"><label for="addressCity">City</label> <input type=
+"text" name="addressCity" id="addressCity" value=""></div>
+
+<div class="row"><label for="addressZipCode">Zip code</label>
+<input type="text" name="addressZipCode" id="addressZipCode" value=
+""></div>
+
+<div class="row"><label for="addressCountry">Country</label> <input
+type="text" name="addressCountry" id="addressCountry" value=
+""></div>
+
+<div class="row"><label for="addressPhone">Phone</label> <input
+type="text" name="addressPhone" id="addressPhone" value=""></div>
+
+<div class="row"><label for="updatePersonalDetails">Update personal
+details</label> <input type="checkbox" name="updatePersonalDetails"
+id="debug" value="0"></div>
+</fieldset>
+
+<fieldset>
+<h4>Transaction options</h4>
+
+<div class="row"><label for="notificationURL">Notification
+url</label> <input type="text" name="notificationURL" id=
+"notificationURL" value=""> <span class="help">(valid url like
+http:// or https://)</span></div>
+
+<div class="row"><label for="returnURL">Return url</label> <input
+type="text" name="returnURL" id="returnURL" value=""> <span class=
+"help">(valid url like http:// or https://)</span></div>
+
+<div class="row"><label for="cancelURL">Cancel url</label> <input
+type="text" name="cancelURL" id="cancelURL" value=""> <span class=
+"help">(valid url like http:// or https://)</span></div>
+
+<div class="row"><label for="customPaymentPageCode">Custom payment
+page code</label> <input type="text" name="customPaymentPageCode"
+id="customPaymentPageCode" value=""></div>
+
+<div class="row"><label for="securityMode">Security mode</label>
+<input type="text" name="securityMode" id="securityMode" value=
+""></div>
+
+<div class="row"><label for="languageCode">Language Code</label>
+<select name="languageCode" id="languageCode">
+<option value="fre/fra">FR</option>
+<option value="ger/deu">DE</option>
+<option value="eng">UK</option>
+<option value="ita">IT</option>
+<option value="spa">SP</option>
+</select></div>
+</fieldset>
+
+<input type="submit" name="submit" class="submit" value=
+"Create Web Wallet"></form>
+</body>
+</html>
+

@@ -1,0 +1,172 @@
+<form action="updateWallet.php" method="post"  class="payline-form">
+	<fieldset>
+        <h4>Informations about card</h4>
+        <div class="row">
+            <label for="cardNumber">Card number</label>
+            <input type="text" name="cardNumber" id="cardNumber" value="4970100011222417" />
+        </div>
+        <div class="row">
+            <label for="cardType">Card type</label>
+            <select name="cardType" id="cardType">
+                <option value="CB">CB</option>
+                <option value="AMEX">AMEX</option>
+                <option value="COFINOGA">COFINOGA</option>
+                <option value="JCB">JCB</option>
+                <option value="DINERS">DINERS</option>
+                <option value="AURORE">AURORE</option>
+                <option value="SOFINCO">SOFINCO</option>
+                <option value="CETELEM">CETELEM</option>
+                <option value="FNAC">FNAC</option>
+                <option value="PRINTEMPS">PRINTEMPS</option>
+                <option value="KANGOUROU">KANGOUROU</option>
+                <option value="SURCOUF">SURCOUF</option>
+                <option value="CYRILLUS">CYRILLUS</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="cardExpirationDate">Card expiration date</label>
+            <input type="text" name="cardExpirationDate" id="cardExpirationDate" value="0112" />
+        </div>
+        <div class="row">
+            <label for="cardCrypto">Card cryptogram</label>
+            <input type="text" name="cardCrypto" id="cardCrypto" value="123" />
+        </div>
+        <div class="row">
+            <label for="cardOwnerBirthdayDate">Owner birthday date</label>
+            <input type="text" name="cardOwnerBirthdayDate" id="cardOwnerBirthdayDate" value="" />
+            <span class="help">(required format : "ddmmyy")</span>
+        </div>
+        <div class="row">
+            <label for="cardPassword">Card password</label>
+            <input type="text" name="cardPassword" id="cardPassword" value="" />
+        </div>
+    </fieldset>
+	<fieldset>
+        <h4>Invoice address</h4>
+        <div class="row">
+            <label for="addressName">Name</label>
+            <input type="text" name="addressName" id="addressName" value="" />
+        </div>
+        <div class="row">
+            <label for="addressStreet1">Street 1</label>
+            <input type="text" name="addressStreet1" id="addressStreet1" value="" />
+        </div>
+        <div class="row">
+            <label for="addressStreet2">Street 2</label>
+            <input type="text" name="addressStreet2" id="addressStreet2" value="" />
+        </div>
+        <div class="row">
+            <label for="addressCity">City</label>
+            <input type="text" name="addressCity" id="addressCity" value="" />
+        </div>
+        <div class="row">
+            <label for="addressZipCode">Zip code</label>
+            <input type="text" name="addressZipCode" id="addressZipCode" value="" />
+        </div>
+        <div class="row">
+            <label for="addressCountry">Country</label>
+            <input type="text" name="addressCountry" id="addressCountry" value="" />
+        </div>
+        <div class="row">
+            <label for="addressPhone">Phone</label>
+            <input type="text" name="addressPhone" id="addressPhone" value="" />
+        </div>
+    </fieldset>
+	<fieldset>
+        <h4>Wallet informations</h4>
+        <div class="row">
+            <label for="contractNumber">Contract number</label>
+            <input type="text" name="contractNumber" id="contractNumber" value="001">
+        </div>
+		<div class="row">
+            <label for="CardIndex">Card Index</label>
+            <input type="text" name="CardIndex" id="CardIndex" value="">
+        </div>	
+        <div class="row">
+            <label for="walletId">Wallet ID</label>
+            <input type="text" name="walletId" id="walletId" value="" />
+        </div>
+         <div class="row">
+            <label for="lastName">Last name</label>
+            <input type="text" name="lastName" id="lastName" value="Nastique" />
+        </div>
+		<div class="row">
+            <label for="firstName">First name</label>
+            <input type="text" name="firstName" id="firstName" value="Jim" />
+        </div>
+        <div class="row">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="" />
+        </div>
+    </fieldset>
+     <fieldset>
+        <h4>Informations about Transaction</h4>
+         <div class="row">
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment">Comment</textarea>
+        </div>
+	</fieldset>
+    <fieldset>
+        <h4>Private datas</h4>
+        <div class="row">
+            <label for="privateDataKey1">Private data key 1</label>
+            <input type="text" name="privateDataKey1" id="privateDataKey1" value="key 1" />
+        </div>
+        <div class="row">
+            <label for="privateDataValue1">Private data value 1</label>
+            <input type="text" name="privateDataValue1" id="privateDataValue1" value="value 1" />
+        </div>
+        <hr/>
+        <div class="row">
+            <label for="privateDataKey2">Private data key 2</label>
+            <input type="text" name="privateDataKey2" id="privateDataKey2" value="key 2" />
+        </div>
+        <div class="row">
+            <label for="privateDataValue2">Private data value 2</label>
+            <input type="text" name="privateDataValue2" id="privateDataValue2" value="value 2" />
+        </div>
+        <hr/>
+        <div class="row">
+            <label for="privateDataKey3">Private data key 3</label>
+            <input type="text" name="privateDataKey3" id="privateDataKey3" value="key 3" />
+        </div>
+        <div class="row">
+            <label for="privateDataValue3">Private data value 3</label>
+            <input type="text" name="privateDataValue3" id="privateDataValue3" value="value 3" />
+        </div>
+	</fieldset>
+	<fieldset>
+	    <h4>Authentification 3D secure</h4>
+	    <div class="row">
+	        <label for="3DSecureMd"><acronym title="Merchand data">MD</acronym></label>
+	        <input type="text" name="3DSecureMd" id="3DSecureMd" value="" />
+	    </div>
+	    <div class="row">
+	        <label for="3DSecurePares"><acronym title="Merchand data">Pares</acronym></label>
+	        <input type="text" name="3DSecurePares" id="3DSecurePares" value="" />
+	    </div>
+	</fieldset>
+		    <fieldset>
+        <h4>WSDL's Version</h4>
+        <div class="row">
+            <label for="version">Version</label>
+            <input type="text" name="version" id="version" value="" />
+        </div>
+    </fieldset>
+	<fieldset>
+		<h4>Server choice</h4>
+		<div class="row">
+            <label for="switcher">High Disponibility Switcher</label>
+            <input type="checkbox" name="switcher" id="switcher" value="" />
+        </div>
+		<div class="row">
+			<label for="choice1">Primaire</label>
+            <input type="radio" name="choice" id="choice1" value="Primaire" checked/><br>
+		</div>
+		<div class="row">
+			<label for="choice2">Secondaire</label>
+			<input type="radio" name="choice" id="choice2" value="Secondaire" /><br>
+        </div>
+	</fieldset>
+    <input type="submit" name="submit" class="submit" value="Update wallet" />
+</form>
