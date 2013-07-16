@@ -465,22 +465,22 @@ class Page extends CI_Controller {
 			'likes'		=> 0 //$fb_page[0]['fan_count']			
 		);
 		
-		/*****GET TWITTER INFOS*****/		
-		$twitter_screen_name = TWITTER_SCREEN_NAME;
-		$twitter_data = $this->_get_data('http://api.twitter.com/1/users/show.json?screen_name='.$twitter_screen_name);
-		$tweets = $this->_get_data('http://api.twitter.com/1/statuses/user_timeline.json?screen_name='.$twitter_screen_name.'&count=5'); 
-		$twitter = array(
-			'link'			=> TWITTER_LINK,
-			'followers'		=> $twitter_data->followers_count,
-			'tweets'		=> $tweets
-		);
+		/*****GET TWITTER INFOS*****/			$twitter = array();		if(TWITTER_SCREEN_NAME){
+			$twitter_screen_name = TWITTER_SCREEN_NAME;
+			$twitter_data = $this->_get_data('http://api.twitter.com/1/users/show.json?screen_name='.$twitter_screen_name);
+			$tweets = $this->_get_data('http://api.twitter.com/1/statuses/user_timeline.json?screen_name='.$twitter_screen_name.'&count=5'); 
+			$twitter = array(
+				'link'			=> TWITTER_LINK,
+				'followers'		=> @$twitter_data->followers_count,
+				'tweets'		=> $tweets
+			);		}
 		
 		/*****GET GOOGLE + INFOS*****/
-		$google_plus_link = _get('https://plus.google.com/109498236972306503560/posts');				
+		//$google_plus_link = _get('https://plus.google.com/109498236972306503560/posts');				
 		$google_plus = array(			
 			'id'		=> GOOGLE_ID,
-			'api_key'	=> GOOGLE_API_KEY,
-			'link'		=> $google_plus_link
+			'api_key'	=> GOOGLE_API_KEY,			'link'		=> GOOGLE_PLUS_LINK
+			//'link'		=> $google_plus_link
 		);
 		
 		//var header		
