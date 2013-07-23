@@ -74,17 +74,17 @@
 					<!--menu principal-->
 					<ul class="menu default left ml-30">
 						<li><?=anchor(base_url(), '<span aria-hidden="true" class="icon-home"></span>' , array('id' => 'menu-home'))?></li>
-						<li><?=anchor(site_url('concerts/oujouer'), 'Réserver date' , array('id' => 'menu-concert'))?></li>
-						<li><?=anchor(site_url('concerts/programmation'), 'Concerts' , array('id' => 'menu-programmation'))?></li>
-						<li><?=anchor(site_url('stages'), 'Scènes', array('id' => 'menu-stage'))?></li>
-						<li><?=anchor(site_url('artists'), 'Artistes' , array('id' => 'menu-artist'))?></li>
-						<li><?=anchor(site_url('about'), 'A propos' , array('id' => 'menu-about'))?></li>
+						<li><?=anchor(site_url('concerts/oujouer'), lang("header_book_date") , array('id' => 'menu-concert'))?></li>
+						<li><?=anchor(site_url('concerts/programmation'), lang("shows"), array('id' => 'menu-programmation'))?></li>
+						<li><?=anchor(site_url('stages'), lang("scenes"), array('id' => 'menu-stage'))?></li>
+						<li><?=anchor(site_url('artists'), lang("artists") , array('id' => 'menu-artist'))?></li>
+						<li><?=anchor(site_url('about'), lang("header_aboutus") , array('id' => 'menu-about'))?></li>
 					</ul>
 					<!--account menu-->
 					<?php if(empty($user)) { ?>
 					<ul class="menu right">
-						<li><?=anchor(site_url('signup_choice'), 'S\'inscrire', array('id' => 'menu-signup'))?></li>
-						<li><?=anchor(site_url('login'), 'Se connecter', array('id' => 'menu-signin'))?></li>
+						<li><?=anchor(site_url('signup_choice'), lang("signup"), array('id' => 'menu-signup'))?></li>
+						<li><?=anchor(site_url('login'), lang("login"), array('id' => 'menu-signin'))?></li>
 					</ul>
 					<?php } else { ?>
 					<ul class="profil-menu right">																		
@@ -92,7 +92,7 @@
 							<div id="dropdown-notification" class="wrapper-dropdown ui-corner-all priority-<?=$notifications['topPriority']?>">
 								<div class="fs-16 title"><?=$notifications['nbUnread']?></div>
 								<ul class="dropdown">
-									<li><a href="<?=site_url('user/notifications')?>" class="purple title fs-16">Voir toutes les notifications</a></li>
+									<li><a href="<?=site_url('user/notifications')?>" class="purple title fs-16"><?php echo lang("header_seeall_notices") ?></a></li>
 									<?php foreach ($notifications['notifications'] as $notification) {
 										switch ($notification['priority']) {
 											case 1:
@@ -121,15 +121,15 @@
 							<div id="dropdown-username" class="wrapper-dropdown ui-corner-all">
 								<div><?=img(array('src' => site_url($user['avatar'].'?'.time()),'class' => 'ui-corner-all db left','width' => '34px'))?><span class="ml-5 fs-16 title"><?=$user['username']?></span></div>
 								<ul class="dropdown">
-									<li><?=anchor(site_url('user'),'<span aria-hidden="true" class=" fs-14 icon-cog mr-10"></span>Mon compte', array('class' => 'ui-corner-top'))?></li>
+									<li><?=anchor(site_url('user'),'<span aria-hidden="true" class=" fs-14 icon-cog mr-10"></span>'.lang("header_myaccount"), array('class' => 'ui-corner-top'))?></li>
 									<?php if($user_group == 'stage') { ?>
-										<li><?=anchor(site_url('user/calendar'),'<span aria-hidden="true" class="fs-14 icon-calendar mr-10"></span>Mon calendrier')?></li>
+										<li><?=anchor(site_url('user/calendar'),'<span aria-hidden="true" class="fs-14 icon-calendar mr-10"></span>'.lang("header_mycalendar"))?></li>
 									<?php } else { ?>
-										<li><?=anchor(site_url('user/reservations'),'<span aria-hidden="true" class="fs-14 icon-calendar mr-10"></span>Mes réservations')?></li>
+										<li><?=anchor(site_url('user/reservations'),'<span aria-hidden="true" class="fs-14 icon-calendar mr-10"></span>'.lang("header_mybookings"))?></li>
 									<?php } ?>									
-									<li><?=anchor($user_link,'<span aria-hidden="true" class="fs-14 icon-user mr-10"></span>Mon profil')?></li>		
-									<li><?=anchor(site_url('user/contact'),'<span aria-hidden="true" class="fs-14 icon-plus mr-10"></span>Mes contacts')?></li>		
-									<li><?=anchor(site_url('logout'),'<span aria-hidden="true" class="fs-14 icon-exit mr-10"></span>Se déconnecter', array('class' => 'ui-corner-bottom'))?></li>
+									<li><?=anchor($user_link,'<span aria-hidden="true" class="fs-14 icon-user mr-10"></span>'.lang("header_myprofile"))?></li>		
+									<li><?=anchor(site_url('user/contact'),'<span aria-hidden="true" class="fs-14 icon-plus mr-10"></span>'.lang("header_mycontacts"))?></li>		
+									<li><?=anchor(site_url('logout'),'<span aria-hidden="true" class="fs-14 icon-exit mr-10"></span>'.lang("logout"), array('class' => 'ui-corner-bottom'))?></li>
 								</ul>
 							</div>
 						</li>	
@@ -154,25 +154,25 @@
 						<!--search status-->
 						<span>
 							<select name="search-status" id="search-status" multiple="multiple">
-								<option value="open" <?=($search['search-status']=='open') ? 'selected' : ''?>>Réservez une Date</option>
-								<option value="close" <?=($search['search-status']=='close') ? 'selected' : ''?>>Assister à un Concert</option>
+								<option value="open" <?=($search['search-status']=='open') ? 'selected' : ''?>><?php echo lang("header_book_a_date") ?></option>
+								<option value="close" <?=($search['search-status']=='close') ? 'selected' : ''?>><?php echo lang("header_attend_show") ?></option>
 							</select>
 						</span>
-						<span class="fs-16 grey bold ml-2 mr-2">du</span>
+						<span class="fs-16 grey bold ml-2 mr-2"><?php echo lang("from") ?></span>
 						<!--date range -->
 						<div id="wrapper-date-start" class="wrapper-search-date bg-white ui-corner-all">
-							<input class="ui-corner-left" type="text" size="8" maxlength="10" name="render-date-start" id="render-date-start" readonly="readonly" value="<?=date('d/m/Y', strtotime($search['search-date-start']))?>" />
+							<input class="ui-corner-left" type="text" size="8" maxlength="10" name="render-date-start" id="render-date-start" readonly value="<?=date('d/m/Y', strtotime($search['search-date-start']))?>" />
 							<span aria-hidden="true" class="fs-14 icon-calendar mr-10"></span>
 							<input type="hidden" name="search-date-start" id="search-date-start" value="<?=$search['search-date-start']?>" />
 						</div>
-						<span class="fs-16 grey bold ml-2 mr-2">au</span>
+						<span class="fs-16 grey bold ml-2 mr-2"><?php echo lang("to") ?></span>
 						<div id="wrapper-date-end" class="wrapper-search-date bg-white ui-corner-all">
-							<input class="ui-corner-left" type="text" size="8" maxlength="10" name="render-date-end" id="render-date-end" readonly="readonly" value="<?=date('d/m/Y', strtotime($search['search-date-end']))?>" />
+							<input class="ui-corner-left" type="text" size="8" maxlength="10" name="render-date-end" id="render-date-end" readonly value="<?=date('d/m/Y', strtotime($search['search-date-end']))?>" />
 							<span aria-hidden="true" class="fs-14 icon-calendar mr-10"></span>
 							<input type="hidden" name="search-date-end" id="search-date-end" value="<?=$search['search-date-end']?>" />
 						</div>
 						<!--search city-->
-						<span class="fs-16 grey bold ml-2 mr-2">à</span>
+						<span class="fs-16 grey bold ml-2 mr-2"><?php echo lang("in") ?></span>
 						<span>
 							<select name="search-city[]" id="search-city" multiple="multiple">
 								<?php if(isset($search['search-city'])) {
