@@ -31,6 +31,13 @@
 						<dd><?=anchor(site_url('legal'),'Mentions légales')?></dd>
 					</dl>
 				</div>
+                <div class="grid_4">		
+					<dl>
+						<dt class="title fs-16">Language</dt>
+						<dd><a href='/langswitch/switchLanguage/english'>English</a></dd>						
+						<dd><a href='/langswitch/switchLanguage/french'>Francais</a></dd>						
+					</dl>
+				</div>
 			</div>			
 			<div id="footer-bottom">
 				<div class="container_12">			
@@ -43,7 +50,15 @@
 	
 		<script src="<?=site_url('js/plugins.js')?>"></script>		
 		<script src="<?=site_url('js/dropdown.js')?>"></script>
-		<script src="<?=site_url('js/functions.js')?>"></script>
+		<?php 
+        if ($this->session->userdata('site_lang') == "english") {
+           ?><script src="<?=site_url('js/functions_en.js')?>"></script><?php
+        } 
+		// Default FRENCH
+		else {
+           ?><script src="<?=site_url('js/functions.js')?>"></script><?php
+        }
+		?>
 		<script src="<?=site_url('js/chosen/chosen.jquery.min.js')?>"></script>
 		<script src="<?=site_url('js/chosen/ajax-chosen.min.js')?>"></script>
 		<script src="<?=site_url('js/selectbox/jquery.selectBox.min.js')?>"></script>

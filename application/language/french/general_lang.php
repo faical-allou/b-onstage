@@ -51,3 +51,56 @@ $lang['signup_terminate_title'] = 'Terminé';
 
 //Notifications
 $lang['notify_account_created'] = 'Votre inscription est maintenant validée';
+
+
+// Titles
+$lang['home_title'] = 'Bienvenue sur b-onstage';
+
+
+// Page descriptions
+$lang['home_desc'] = 'Mettre une description';
+
+// General
+$lang['artists'] = 'Artistes';
+$lang['artist'] = 'Artiste';
+$lang['scenes'] = 'Scènes';
+$lang['scene'] = 'Scène';
+$lang['shows'] = 'Concerts';
+$lang['signup'] = 'S\'inscrire';
+$lang['login'] = 'Se connecter';
+$lang['logout'] = 'Se déconnecter';
+$lang['from'] = 'du';
+$lang['to'] = 'au';
+$lang['in'] = 'à';
+$lang['become_member'] = 'Devenir membre';
+
+
+// Header
+$lang['header_book_date'] = 'Réserver date';
+$lang['header_aboutus'] = 'A propos';
+$lang['header_seeall_notices'] = 'Voir toutes les notifications';
+$lang['header_myaccount'] = 'Mon compte';
+$lang['header_mycalendar'] = 'Mon calendrier';
+$lang['header_mybookings'] = 'Mes réservations';
+$lang['header_myprofile'] = 'Mon profil';
+$lang['header_mycontacts'] = 'Mes contacts';
+$lang['header_book_a_date'] = 'Réserver une date';
+$lang['header_attend_show'] = 'Assister à un Concert';
+
+
+// Home
+$lang['home_slide1_txt'] = 'Trouvez des Scènes pour jouer live ...';
+$lang['home_slide1_txt2'] = 'A vous de jouer !!';
+$lang['home_slide1_txt3'] = 'Inscrivez-vous dès maintenant';
+$lang['home_slide2_txt'] = 'La musique c\'est en live';
+$lang['home_slide2_txt2'] = 'Le live c\'est sur scène';
+$lang['home_slide2_txt3'] = 'Les scènes sont sur b-onstage';
+$lang['home_slide2_txt4'] = 'Réservez une date pour jouer';
+$lang['home_title_concert'] = 'Les Concerts';
+$lang['home_title_stage'] = 'Les Scènes';
+$lang['home_title_artist'] = 'Les Artistes';
+$lang['home_seeall_shows'] = 'Voir tous les Concerts';
+$lang['home_seeall_stages'] = 'Voir toutes les Scènes';
+$lang['home_seeall_artist'] = 'Voir tous les Artistes';
+$lang['home_bottom_txt'] = 'Rechercher des dates pour jouer en live sur les Scènes b-onstage.';
+$lang['home_bottom_txt2'] = 'Rejoignez b-onstage, le réseau qui met en relation les Artistes et les Scènes.';
