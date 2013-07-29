@@ -16,4 +16,8 @@ $(function(){
 		});
 		notificationsOffset += 10;
 	});
+	
+	$('.loading').hide();
+	$('.content').show();
+	
 });

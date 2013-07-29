@@ -130,6 +130,8 @@ class Page extends CI_Controller {
 		//social links
 		$title_social_links = heading('Liens sociaux', 1 ,'class="title-page ui-corner-top"');
 		
+		unset($user_page['myspace']); // Unset myspace for now since we don;t have the logo
+		
 		$social_links = array(
 			array(
 				'id'			=> 'facebook',
