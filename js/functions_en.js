@@ -164,7 +164,7 @@ function init_footer(){
 							selectedList	: 1,
 							height			: 'auto'							
 						});							
-						$('#form-contact input:text, #form-contact textarea').fieldWidth(1.0);
+						//$('#form-contact input:text, #form-contact textarea').fieldWidth(1.0);
 						$('#form-contact').validate({
 							submitHandler: function(form) {																					
 								$.ajax({
@@ -211,14 +211,14 @@ function init_footer(){
 			buttons: 
 			[
 				{
-					text: 'Envoyer votre message',
+					text: 'Send your message',
 					'class':'ui-purple',					
 					click: function() {	
 						$('#form-contact').submit();							
 					}
 				},
 				{
-					text:'Annuler',
+					text:'Cancel',
 					click: function() {										
 						$( this ).remove();;																
 					}
