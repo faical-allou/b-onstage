@@ -51,7 +51,7 @@
 								</div>
 								<div class="modal-footer">
 									<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-									<button class="delete-stage btn btn-primary" data-stage-id="<?=$stage['id']?>" data-dismiss="modal">Delete</button>
+									<button class="delete-stage btn btn-primary" data-stage-id="<?=$stage['user_id']?>" data-dismiss="modal">Delete</button>
 								</div>
 							</div>
 						</td>
