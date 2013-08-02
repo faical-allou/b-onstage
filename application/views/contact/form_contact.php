@@ -1,8 +1,8 @@
-<h1 class="title fs-24 m-0 purple pb-10">Contactez-nous</h1>
+<h1 class="title fs-24 m-0 purple pb-10"><?php echo lang("footer_contactus") ?></h1>
 <form id="form-contact">
 	<div class="mb-20">
 		<div class="mb-5">
-			<label for="form-contact-name" class="fs-12 grey bold ts-white pl-2">Votre nom</label>								
+			<label for="form-contact-name" class="fs-12 grey bold ts-white pl-2"><?php echo lang("contactus_yourname") ?></label>								
 		</div>
 		<div>
 			<input type="text" id="form-contact-name" name="form-contact-name" class="input ui-corner-all fs-13 required" />
@@ -10,7 +10,7 @@
 	</div>
 	<div class="mb-20">
 		<div class="mb-5">
-			<label for="form-contact-email" class="fs-12 grey bold ts-white pl-2">Votre email</label>								
+			<label for="form-contact-email" class="fs-12 grey bold ts-white pl-2"><?php echo lang("contactus_youremail") ?></label>								
 		</div>
 		<div>
 			<input type="text" id="form-contact-email" name="form-contact-email" class="input ui-corner-all fs-13 required email"/>
@@ -19,32 +19,32 @@
 	<div class="mb-20 clearfix">	
 		<div class="left">
 			<select id="form-contact-subject-1" name="form-contact-subject-1" class="required">				
-					<option value="none">J'ai ...</option>
-					<option value="question">J'ai une question</option>
-					<option value="remarque">J'ai une remarque</option>
-					<option value="probleme">J'ai un problème</option>
-					<option value="urgence">J'ai une urgence</option>
-					<option value="plainte">J'ai une plainte</option>
+					<option value="none"><?php echo lang("contactus_subject_1") ?></option>
+					<option value="question"><?php echo lang("contactus_subject_2") ?></option>
+					<option value="remarque"><?php echo lang("contactus_subject_3") ?></option>
+					<option value="probleme"><?php echo lang("contactus_subject_4") ?></option>
+					<option value="urgence"><?php echo lang("contactus_subject_5") ?></option>
+					<option value="plainte"><?php echo lang("contactus_subject_6") ?></option>
 			</select>				
 		</div>	
 		<div class="right">
 			<select id="form-contact-subject-2" name="form-contact-subject-2" class="required">				
-				<option value="none">Au sujet de ...</option>
-				<option value="site">Au sujet du site</option>
-				<option value="inscription">Au sujet de mon inscription</option>
-				<option value="compte">Au sujet de mon compte</option>
-				<option value="demande-reservation">Au sujet de ma demande de réservation</option>
-				<option value="concert">Au sujet de mon concert</option>
-				<option value="frais reservation">Au sujet des frais de réservaiton</option>
-				<option value="annulation-reservation">Au sujet d'annulation de réservation</option>
-				<option value="annulation-concert">Au sujet d'annulation de concert</option>
-				<option value="autre-chose">Au sujet d'autre chose</option>				
+				<option value="none"><?php echo lang("contactus_subject2_1") ?></option>
+				<option value="site"><?php echo lang("contactus_subject2_2") ?></option>
+				<option value="inscription"><?php echo lang("contactus_subject2_3") ?></option>
+				<option value="compte"><?php echo lang("contactus_subject2_4") ?></option>
+				<option value="demande-reservation"><?php echo lang("contactus_subject2_5") ?></option>
+				<option value="concert"><?php echo lang("contactus_subject2_6") ?></option>
+				<option value="frais reservation"><?php echo lang("contactus_subject2_7") ?></option>
+				<option value="annulation-reservation"><?php echo lang("contactus_subject2_8") ?></option>
+				<option value="annulation-concert"><?php echo lang("contactus_subject2_9") ?></option>
+				<option value="autre-chose"><?php echo lang("contactus_subject2_10") ?></option>				
 			</select>										
 		</div>	
 	</div>						
 	<div>
 		<div class="mb-5">
-			<label for="form-contact-message" class="fs-12 grey bold ts-white pl-2">Votre message</label>								
+			<label for="form-contact-message" class="fs-12 grey bold ts-white pl-2"><?php echo lang("contactus_yourmsg") ?></label>								
 		</div>
 		<div>
 			<textarea id="form-contact-message" class="input fs-13 ui-corner-all required"></textarea>

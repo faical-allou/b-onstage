@@ -45,6 +45,7 @@ class Stage extends CI_Controller {
 		if(!$this->ion_auth->logged_in() || !$this->ion_auth->in_group('admin')){		
 			redirect('', 'refresh');
 		} else {		
+			
 			//header		
 			$header['title'] = 'Add stage | b-onstage';
 			$header['description'] = 'Add stage b-onstage';	
@@ -68,7 +69,8 @@ class Stage extends CI_Controller {
 			
 			$this->form_validation->set_rules('first-name', 'first name', 'trim|required');
 			$this->form_validation->set_rules('last-name', 'last name', 'trim|required');
-			$this->form_validation->set_rules('phone', 'phone', 'trim|required');			
+			$this->form_validation->set_rules('phone', 'phone', 'trim|required');	
+			$this->form_validation->set_rules('stagelang', 'language', 'trim|required');		
 			
 			if ($this->form_validation->run() == true){			
 				
@@ -85,6 +87,7 @@ class Stage extends CI_Controller {
 					'first_name'=> $this->input->post('first-name'),
 					'last_name'	=> $this->input->post('last-name'),
 					'phone'		=> $this->input->post('phone'),
+					'language'	=> $this->input->post('stagelang')
 					
 					
 				);
@@ -105,14 +108,27 @@ class Stage extends CI_Controller {
 					);
 					$this->ion_auth->update($insert_id, $update_data);	
 					
+					//determine lang file to use
+					include("/home/bonstage/dev.b-onstage/application/language/".$this->input->post('stagelang')."/general_lang.php");
+
+					
 					//send email to stage
 					$data = array(
 						'email'					=> $email,
 						'pseudo'				=> $username,
 						'password'				=> $password,
 						'url_profil'			=> 'http://www.b-onstage.com/page/'.$username,
-						'url_work'				=> 'http://www.b-onstage.com/how_does_this_work'
+						'url_work'				=> 'http://www.b-onstage.com/how_does_this_work',
+						'hello'					=> $lang['hello'],
+						'txt1'					=> $lang['signup_stage_confirmation_email_txt1'],
+						'txt2'					=> $lang['signup_stage_confirmation_email_txt2'],
+						'txt3'					=> $lang['signup_stage_confirmation_email_txt3'],
+						'txt4'					=> $lang['signup_stage_confirmation_email_txt4'],
+						'username'				=> $lang['username'],
+						'passwordtxt'			=> $lang['password'],
+						'clickhere'				=> $lang['clickhere']
 					);
+					
 					
 					//add notification
 					$this->notification_model->add($insert_id,'Bienvenue sur b-onstage',3);
@@ -121,7 +137,7 @@ class Stage extends CI_Controller {
 					$this->email->from('contact@b-onstage.com', 'b-onstage');
 					$this->email->to($email);
 					$this->email->cc('scenes@mybandonstage.com');
-					$this->email->subject('Confirmation de votre inscription à b-onstage');
+					$this->email->subject($lang['signup_stage_confirmation_email_subject']);
 					$this->email->message($html_message);
 					$this->email->send();
 						
@@ -231,7 +247,15 @@ class Stage extends CI_Controller {
 					'name'		=> 'phone',					
 					'id'		=> 'phone',
 					'value'		=> $this->form_validation->set_value('phone')
-				);			
+				);	
+				
+				//stagelang
+				$data['label_stagelang'] = 'Language';
+				$data['stagelang'] = array(											
+					'name'		=> 'stagelang',					
+					'id'		=> 'stagelang',
+					'value'		=> $this->form_validation->set_value('stagelang')
+				);		
 			
 				//footer
 				$footer['scripts'] = array(					
@@ -248,7 +272,7 @@ class Stage extends CI_Controller {
 	
 	public function delete(){
 		if(IS_AJAX){
-		
+			
 			$id = $_POST['stage_id'];
 			
 			//users
@@ -287,8 +311,6 @@ class Stage extends CI_Controller {
 			
 			//contact
 			$this->db->where('user_id', $id)->or_where('user_contact', $id)->delete('contacts');
-		
-			
 		
 		}	
 	}

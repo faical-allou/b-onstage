@@ -37,8 +37,8 @@ class About extends CI_Controller {
 	
 	public function index()
 	{
-		$this->header['title'] = 'A propos';
-		$this->header['description'] = 'A propos';			
+		$this->header['title'] = lang("aboutus_title");
+		$this->header['description'] = lang("aboutus_desc");		
 		$this->footer['scripts'] = array('js/main-about.js');
 		
 		$this->load->view('_header',$this->header);				
@@ -51,8 +51,8 @@ class About extends CI_Controller {
 	
 	public function about_us()
 	{
-		$this->header['title'] = 'Qui-sommes-nous?';
-		$this->header['description'] = 'Qui-sommes-nous?';				
+		$this->header['title'] = lang("whoweare_title");
+		$this->header['description'] = lang("whoweare_desc");			
 		$this->footer['scripts'] = array('js/main-about.js');
 		
 		$this->load->view('_header',$this->header);		
@@ -62,8 +62,8 @@ class About extends CI_Controller {
 	}
 	
 	public function how_does_this_work(){
-		$this->header['title'] = 'Comment ça marche?';
-		$this->header['description'] = 'Comment ça marche?';				
+		$this->header['title'] = lang("howitworks_title");
+		$this->header['description'] = lang("howitworks_desc");				
 		$this->footer['scripts'] = array('js/main-about.js');
 		
 		$this->load->view('_header',$this->header);		

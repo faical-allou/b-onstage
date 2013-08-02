@@ -1,7 +1,7 @@
 <div class="container_12 mt-50 mb-50">	
 	<div class="grid_4 push_4 grey-box bs-black ui-corner-all">
 		<div class="p-20 clearfix">			
-			<div class="fs-18 title purple mb-20">Connexion</div>
+			<div class="fs-18 title purple mb-20"><?php echo lang("login_header") ?></div>
 			<?=form_open($url_action,array('id'=>'signin-form'))?>
 			<!--email-->			
 			<div class="mb-10">
