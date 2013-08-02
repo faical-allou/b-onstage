@@ -221,8 +221,8 @@ class User extends CI_Controller {
 			redirect('user', 'refresh');
 		}else{
 			$header = array(		
-				'title'			=> 'Type de compte',
-				'description'	=> 'Choisissez un type de compte'
+				'title'			=> lang("signup_choice_title"),
+				'description'	=> lang("signup_choice_desc")
 			);		
 			$footer['scripts'] = array('js/main-signup-choice.js');
 
@@ -244,16 +244,16 @@ class User extends CI_Controller {
 						redirect('user', 'refresh');
 					}else{
 						$header = array(		
-							'title'			=> 'Inscription',
-							'description'	=> 'Mettre une description'
+							'title'			=> lang("signup_stage_title"),
+							'description'	=> lang("signup_stage_desc")
 						);		
 						
 						
-						$step['title'] = 'Créez un compte';
+						$step['title'] = lang("signup_stage_step_1_title");
 						$step['align_title'] = 'ta-l';
 						
 						$this->form_validation->set_error_delimiters('<div class="ui-state-error ui-corner-all fs-12 bold p-5 mt-10">', '</div>');			
-						$this->form_validation->set_rules('company', 'Nom de votre établissement', 'trim|required');			
+						$this->form_validation->set_rules('company', lang("signup_stage_step_1_form_field1"), 'trim|required');			
 						$this->form_validation->set_rules('email', 'lang:identity', 'trim|required|valid_email|is_unique[users.email]');
 						$this->form_validation->set_rules('terms_of_services', 'lang:terms_of_services', 'callback_terms_of_services');			
 						
@@ -268,20 +268,29 @@ class User extends CI_Controller {
 							$html_message = $this->parser->parse('user/email/confirm_pre_inscription', $data, TRUE);				
 							$this->email->from('contact@b-onstage.com', 'b-onstage');
 							$this->email->to($email);							
-							$this->email->subject('Pré-inscription à b-onstage');
+							$this->email->subject(lang("signup_stage_email_subject"));
 							$this->email->message($html_message);
 							$this->email->send();
 													
 							//envoi du mail à scenes@mybandonstage.com
+							// determine lang
+							if ($this->session->userdata('site_lang') == "english") {
+							  $pre_inscription_lang = "english";
+							} 
+							// Default FRENCH
+							else {
+							   $pre_inscription_lang = "french";
+							}
 							$data = array(
 								'email'		=> $email,
 								'company'	=> $company,
-								'tel'		=> $tel
+								'tel'		=> $tel,
+								'lang'		=> $pre_inscription_lang
 							);	
 							
 							$html_message = $this->parser->parse('user/email/send_pre_inscription', $data, TRUE);				
 							$this->email->from($email, $company);
-							$this->email->to('scenes@mybandonstage.com');							
+							$this->email->to('contact@b-onstage.com');	// 	PROD : scenes@mybandonstage.com  TEST : contact@b-onstage.com			
 							$this->email->subject('Demande d\'inscription | b-onstage');
 							$this->email->message($html_message);
 							$this->email->send();
@@ -300,7 +309,7 @@ class User extends CI_Controller {
 
 							//company
 							$data['company'] = array(						
-								'title'		=> 'Saisir votre nom d\'établissement',
+								'title'		=> lang("signup_stage_step_1_form_field1_title"),
 								'name'		=> 'company',
 								'class'		=> 'input ui-corner-all fs-13 grey',
 								'id'		=> 'company',
@@ -310,7 +319,7 @@ class User extends CI_Controller {
 							//email
 							$data['email'] = array(
 								'name'		=> 'email',
-								'title'		=> 'L\'adresse e-mail doit être valide et sera votre identifiant de connexion.',
+								'title'		=> lang("signup_stage_step_1_form_field2_title"),
 								'class'		=> 'input ui-corner-all fs-13 grey',
 								'id'		=> 'email',
 								'value'		=> $this->form_validation->set_value('email')
@@ -319,10 +328,10 @@ class User extends CI_Controller {
 							//tel
 							$data['tel'] = array(
 								'name'		=> 'tel',
-								'title'		=> 'Le numéro de téléphone est falcutatif, mais nous permettra de vous contacter pour mettre en pla ce votre inscription et activation de votre compte',
+								'title'		=> lang("signup_stage_step_1_form_field3_title"),
 								'class'		=> 'input ui-corner-all fs-13 grey',
 								'id'		=> 'tel',
-								'value'		=> $this->form_validation->set_value('tel')
+								'value'		=> $this->input->post('tel')
 							);
 							
 							//terms of services
@@ -334,14 +343,14 @@ class User extends CI_Controller {
 								'class'		=> 'left mt-2'
 							);
 
-							$data['text_terms_of_services'] = 'J\'accepte les '.anchor(site_url('terms_of_services'),'Conditions générales d\'utilisation',array('class'=>'purple')).' de b-onstage';				
+							$data['text_terms_of_services'] = lang("signup_form_accept");				
 							
 							//submit signup form
 							$data['submit'] = array(
 								'name'		=> 'button-register',
 								'class'		=> 'ui-purple',
 								'id'		=> 'submit-signup',
-								'value'		=> 'Valider la pré-inscription'
+								'value'		=> lang("signup_stage_step_1_form_submit")
 							);
 								
 							$footer['scripts'] = array('js/main-signup-stage.js');
@@ -362,11 +371,11 @@ class User extends CI_Controller {
 					}else{	
 						//var header
 						$header['doctype'] = 'html5';
-						$header['title'] = 'Pré-inscription terminée';
-						$header['description'] = 'Mettre une description';
+						$header['title'] = lang("signup_stage_step2_title");
+						$header['description'] = lang("signup_stage_step2_desc");
 
 						//var step
-						$step['title'] = 'Pré-inscription terminée';
+						$step['title'] = lang("signup_stage_step_2_title");
 						$step['align_title'] = 'ta-c';
 						
 						$footer['scripts'] = array('js/main-signup-stage.js');
@@ -401,15 +410,15 @@ class User extends CI_Controller {
 					//var header
 					$this->header['doctype'] = 'html5';
 					$this->header['title'] = $this->lang->line('signup_title');
-					$this->header['description'] = 'Mettre une description';
+					$this->header['description'] = $this->lang->line('signup_title');
 
 					//var step
-					$this->step['title'] = 'Créez un compte';
+					$this->step['title'] = lang("signup_header");
 					$this->step['align_title'] = 'ta-l';
-
+					
 					$this->form_validation->set_error_delimiters('<div class="ui-state-error ui-corner-all fs-12 bold p-5 mt-10">', '</div>');
 					//$this->form_validation->set_rules('groups_menu','lang:groups_menu', 'required|callback_groups_menu');
-					$this->form_validation->set_rules('company', 'Nom d\'artiste', 'trim|required|is_unique[users.company]');
+					$this->form_validation->set_rules('company', lang("signup_form_artist_name"), 'trim|required|is_unique[users.company]');
 					$this->form_validation->set_rules('username', 'lang:username', 'trim|required|xss_clean||min_length[5]|max_length[25]|is_unique[users.username]');
 					$this->form_validation->set_rules('email', 'lang:identity', 'trim|required|valid_email|is_unique[users.email]');
 					$this->form_validation->set_rules('password', 'lang:password', 'trim|required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|max_length[' . $this->config->item('max_password_length', 'ion_auth') . ']|matches[password_confirm]');
@@ -467,7 +476,7 @@ class User extends CI_Controller {
 						
 						//company
 						$this->data['company'] = array(						
-							'title'		=> 'Saisir votre nom d\'artiste',
+							'title'		=> lang("signup_form_title1"),
 							'name'		=> 'company',
 							'class'		=> 'input ui-corner-all fs-13 grey',
 							'id'		=> 'company',
@@ -476,7 +485,7 @@ class User extends CI_Controller {
 						
 						//username
 						$this->data['username'] = array(
-							'title'		=> 'Vous pouvez utiliser des lettres et des chiffres mais pas d\'espace ni de caractères spéciaux.',
+							'title'		=> lang("signup_form_title2"),
 							'name'		=> 'username',
 							'class'		=> 'input ui-corner-all fs-13 grey',
 							'id'		=> 'username',
@@ -486,7 +495,7 @@ class User extends CI_Controller {
 						//email
 						$this->data['email'] = array(
 							'name'		=> 'email',
-							'title'		=> 'L\'adresse e-mail doit être valide et sera votre identifiant de connexion.',
+							'title'		=> lang("signup_form_title3"),
 							'class'		=> 'input ui-corner-all fs-13 grey',
 							'id'		=> 'email',
 							'value'		=> $this->form_validation->set_value('email')
@@ -495,7 +504,7 @@ class User extends CI_Controller {
 						//password
 						$this->data['password'] = array(
 							'name'		=> 'password',
-							'title'		=> 'Utilisez au moins sept caractères. Évitez d\'indiquer un mot de passe que vous utilisez déjà sur un autre site ou qui serait trop évident tel que le nom de votre animal.',
+							'title'		=> lang("signup_form_title4"),
 							'class'		=> 'input ui-corner-all fs-13 grey',
 							'id'		=> 'password',
 							'value'		=> $this->form_validation->set_value('password')
@@ -503,7 +512,7 @@ class User extends CI_Controller {
 
 						//password confirm
 						$this->data['password_confirm'] = array(
-							'title'		=> 'Confirmez votre mot de passe précedemment saisi.',
+							'title'		=> lang("signup_form_title5"),
 							'name'		=> 'password_confirm',							
 							'class'		=> 'input ui-corner-all fs-13 grey',
 							'id'		=> 'password_confirm',
@@ -519,14 +528,14 @@ class User extends CI_Controller {
 							'class'		=> 'left mt-2'
 						);
 
-						$this->data['text_terms_of_services'] = 'J\'accepte les '.anchor(site_url('terms_of_services'),'Conditions générales d\'utilisation',array('class'=>'purple')).' de b-onstage';
+						$this->data['text_terms_of_services'] = lang("signup_form_accept");
 
 						//submit signup form
 						$this->data['submit'] = array(
 							'name'		=> 'button-register',
 							'class'		=> 'ui-purple',
 							'id'		=> 'submit-signup',
-							'value'		=> 'Etape suivante'
+							'value'		=> lang("signup_form_next")
 						);
 
 						$this->footer['scripts'] = array('js/main-signup.js');
@@ -548,11 +557,11 @@ class User extends CI_Controller {
 					{
 						//var header
 						$this->header['doctype'] = 'html5';
-						$this->header['title'] = 'Activez votre compte';
-						$this->header['description'] = 'Mettre une description';
+						$this->header['title'] = lang("signup_active_title");
+						$this->header['description'] = lang("signup_active_desc");
 
 						//var step
-						$this->step['title'] = 'Activez voter compte';
+						$this->step['title'] = lang("signup_active_title");
 						$this->step['align_title'] = 'ta-c';
 						
 						$this->footer['scripts'] = array('js/main-activate.js');
@@ -588,7 +597,7 @@ class User extends CI_Controller {
 						//var header
 						$this->header['doctype'] = 'html5';
 						$this->header['title'] = $this->lang->line('signup_terminate_title');
-						$this->header['description'] = 'Vos premiers pas sur b-onstage';						
+						$this->header['description'] = lang("signup_terminate_desc");						
 
 						//var step
 						$this->step['title'] = $this->lang->line('signup_terminate_title');
@@ -2161,9 +2170,9 @@ class User extends CI_Controller {
 			$this->email->subject('Formulaire contact | '.$data['subject_1'].' | '.$data['subject_2']);
 			$this->email->message($html_message);
 			if($this->email->send())
-				echo json_encode(array('status' => 'SUCCESS', 'msg' => 'Email envoyée avec succès, une réponse vous sera donné dans les plus brefs délais.'));
+				echo json_encode(array('status' => 'SUCCESS', 'msg' => lang("contactus_email_success")));
 			else
-				echo json_encode(array('status' => 'ERROR', 'msg' => 'Une erreur s\'est produite, veuillez réessayer ultérieurement.'));		
+				echo json_encode(array('status' => 'ERROR', 'msg' => lang("contactus_email_error")));		
 		}
 	}
 	

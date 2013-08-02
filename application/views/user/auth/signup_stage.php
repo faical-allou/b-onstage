@@ -2,19 +2,17 @@
 	<!--description-->
 	<div class="grid_6 push_1 mt-50 mb-20">	
 		<ul class="signup-list fs-16">
-			<li><span class="grey title">Vous voulez que votre établissement devienne une Scène sur le réseau b-onstage? Remplissez le formulaire ci-contre.</span></li>		
-			<li><span class="grey title">Vous serez ensuite contacté par notre équipe, afin notamment de vous aider à créer un profil qui ressemble à votre scène.</span></li>		
-			<li><span class="grey title">Nous mettons à votre disposition un espace pour créer vos évènements, trouver les Artistes qui se produiront sur votre Scène et gérer le tout depuis votre profil.</span></li>						
+			<?php echo lang("signup_stage_step_1_txt") ?>						
 		</ul>
 	</div>
 	<!--form-->
 	<div class="grid_4 push_2 grey-box bs-black ui-corner-all mb-20">
 		<div class="p-20">			
-			<div class="fs-18 title purple mb-20">Je m'inscris en tant que scène</div>
+			<div class="fs-18 title purple mb-20"><?php echo lang("signup_stage_step_1_form_title") ?></div>
 			<?=form_open(site_url('signup_stage'),array('id'=>'signup-form'))?>
 			<!--company-->
 			<div class="mb-10">			
-				<div class="mb-5"><?=form_label('Nom d\'établissement', 'company',$attrs_label)?></div>
+				<div class="mb-5"><?=form_label(lang("signup_stage_step_1_form_field1"), 'company',$attrs_label)?></div>
 				<div><?=form_input($company).form_error($company['name'])?></div>					
 			</div>	
 			<!--email-->			
@@ -24,7 +22,7 @@
 			</div>	
 			<!--tel-->			
 			<div class="mb-20">
-				<div class="mb-5"><?=form_label('Téléphone (facultatif)', 'tel',$attrs_label)?></div>
+				<div class="mb-5"><?=form_label(lang("signup_stage_step_1_form_field3"), 'tel',$attrs_label)?></div>
 				<div><?=form_input($tel).form_error($tel['name'])?></div>			
 			</div>	
 			<!--terms of services-->

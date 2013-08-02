@@ -49,6 +49,21 @@
 				<!--country-->
 				<label><?=$label_country?></label>
 				<?=form_input($country).form_error($country['name'])?>
+                
+                <!--lang-->
+				<?php //Include lang config file
+				include("/home/bonstage/dev.b-onstage/application/config/lang.php");
+				
+				?><label><?=$label_stagelang?></label>
+				<select name="stagelang" id="stagelang">
+                    <option value="">*****Choose a language*****</option>
+                    <?php 
+					foreach($lang_counts as $key => $value){
+					?><option value="<?php echo $value["name"] ?>" <?php if(isset($_POST["stagelang"]) && $_POST["stagelang"] == $value["name"]){ ?>selected="selected"<?php }  ?>><?php echo $value["name"] ?></option><?php 
+					}
+					?>
+                </select>
+				<?=form_error($stagelang['name'])?>
 			</fieldset>	
 			
 			<!--stage contact-->

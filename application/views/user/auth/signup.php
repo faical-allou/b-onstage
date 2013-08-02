@@ -5,28 +5,24 @@
 			<div class="db left m-10">
 				<?=img(site_url('img/auth/icon-network.png'))?>
 			</div>	
-			<p class="grey fs-16 title ts-white">Faites-vous connaitre à travers le réseau b-onstage.</p>
-			<p class="grey fs-16 title ts-white">Gérez votre profil.</p>							
-			<p class="grey fs-16 title ts-white">Ajoutez photos, vidéos, contenu...</p>			
+			<?php echo lang("signup_txt1") ?>			
 		</div>
 		<div class="sep"></div>
 		<div class="clearfix mt-50">
 			<div class="db left m-10">
 				<?=img(site_url('img/auth/icon-calendar.png'))?>
 			</div>
-			<p class="grey fs-16 title ts-white">Réservez des Dates et organisez vos Concerts.</p>							
-			<p class="grey fs-16 title ts-white">Gérez vos réservations grâce aux notifications sur votre profil.</p>	
-			<p class="grey fs-16 title ts-white">Jouez votre musique live sur les Scènes b-onstage ...</p>	
+			<?php echo lang("signup_txt2") ?>
 		</div>				
 	</div>
 	<!--form-->
 	<div class="grid_4 grey-box bs-black ui-corner-all">						
 		<div class="p-20">			
-			<div class="fs-18 title purple mb-20">Je m'inscris en tant qu'Artiste</div>
+			<div class="fs-18 title purple mb-20"><?php echo lang("signup_form_header") ?></div>
 			<?=form_open(site_url('signup'),array('id'=>'signup-form'))?>				
 			<!--company-->
 			<div class="mb-10">			
-				<div class="mb-5"><?=form_label('Nom d\'Artiste', 'company',$attrs_label)?></div>
+				<div class="mb-5"><?=form_label(lang("signup_form_artist_name"), 'company',$attrs_label)?></div>
 				<div><?=form_input($company).form_error($company['name'])?></div>					
 			</div>	
 			<!--username-->		

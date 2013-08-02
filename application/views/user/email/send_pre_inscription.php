@@ -4,6 +4,7 @@
 	<p style="font-size:15px;font-family:'Arial',sans-serif;color:#3a3a3a;"><strong>Email : </strong><?=$email?></p>
 	<p style="font-size:15px;font-family:'Arial',sans-serif;color:#3a3a3a;"><strong>Etablissement : </strong><?=$company?></p>
 	<p style="font-size:15px;font-family:'Arial',sans-serif;color:#3a3a3a;"><strong>Tel : </strong><?=$tel?></p>
+	<p style="font-size:15px;font-family:'Arial',sans-serif;color:#3a3a3a;"><strong>Lang : </strong><?=$lang?></p>
 	
 </body>
 </html>
