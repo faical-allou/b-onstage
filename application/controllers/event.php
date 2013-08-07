@@ -10,6 +10,9 @@ class Event extends CI_Controller {
 		$this->load->model('reservation_model');
 		$this->load->model('user_model');
 		$this->load->model('concert_model');
+		$this->load->library('session');
+		include("/home/bonstage/dev.b-onstage/application/config/lang.php");
+		$this->lang_counts = $lang_counts;
 		
 		//var user
 		$this->user = ($this->ion_auth->logged_in()) ? $this->ion_auth->user()->row_array() : null;	
@@ -55,12 +58,12 @@ class Event extends CI_Controller {
 			'concert'				=> $concert,
 			'location'				=> $concert['stage_address'].', '.$concert['stage_zip'].' '.$concert['stage_city'].', '.$concert['stage_country'],
 			'date'					=> date('j', $time_start).' '.get_month(date('n', $time_start)),
-			'schedule'				=> date('G\hi',$time_start).' à '.date('G\hi', $time_end),
-			'title_infos'			=> 'Infos concert',
-			'title_artist'			=> 'Infos groupe / artiste',
+			'schedule'				=> date('G\hi',$time_start).' '.lang("to2").' '.date('G\hi', $time_end),
+			'title_infos'			=> lang("shows_showinfo"),
+			'title_artist'			=> lang("shows_artistinfo"),
 			'stage_link'			=> empty($concert['stage_web_address']) ? site_url('page/'.$concert['stage_username']) : site_url($concert['stage_web_address']),
 			'artist_link'			=> empty($concert['artist_web_address']) ? site_url('page/'.$concert['artist_username']) : site_url($concert['artist_web_address']),
-			'artist_website'		=> empty($concert['artist_website']) ? '<i class="fs-12">Pas de site officiel</i>' : anchor($concert['artist_website'], preg_replace('#^https?://#', '', $concert['artist_website']), array('class' => 'purple bold')),
+			'artist_website'		=> empty($concert['artist_website']) ? '<i class="fs-12">'.lang("shows_nosite").'</i>' : anchor($concert['artist_website'], preg_replace('#^https?://#', '', $concert['artist_website']), array('class' => 'purple bold')),
 			'artist_facebook'		=> empty($concert['artist_facebook']) ? '' : anchor($concert['artist_facebook'],'<span aria-hidden="true" class="icon-facebook fs-24 grey mr-5"></span>'),
 			'artist_twitter'		=> empty($concert['artist_twitter']) ? '' : anchor($concert['artist_twitter'],'<span aria-hidden="true" class="icon-twitter fs-24 grey mr-5"></span>'),
 			'artist_google_plus'	=> empty($concert['artist_google_plus']) ? '' : anchor($concert['artist_google_plus'],'<span aria-hidden="true" class="icon-google-plus fs-24 grey mr-5"></span>'),
@@ -96,14 +99,14 @@ class Event extends CI_Controller {
 		else{
 			//variable $this->header
 			$this->header['doctype'] = 'html5';
-			$this->header['title'] = 'Créer un évènement';
-			$this->header['description'] = 'Mettre une description';								
+			$this->header['title'] = lang("user_calendar_create_title");
+			$this->header['description'] = lang("user_calendar_create_desc");							
 			
 			/**********DATA**********/
 			$this->data['add_url'] = site_url('event/add');
 			$this->data['success_url'] = site_url('user/calendar');
-			$this->data['success_message'] = 'Evènement enregistré avec succès';
-			$this->data['error_message'] = "Erreur détéctée, veuillez réessayer...";
+			$this->data['success_message'] = lang("users_calendar_create_success");
+			$this->data['error_message'] =  str_replace("'", "\\'", lang("error_retry"));
 			
 			/*****USER*****/
 			$this->data['user'] = $this->user;		
@@ -120,10 +123,10 @@ class Event extends CI_Controller {
 				'name'			=> 'ev-title',
 				'id'			=> 'ev-title',
 				'value'			=> '',
-				'placeholder'	=> 'Saisir un titre',				
+				'placeholder'	=> lang("users_calendar_create_input_title"),				
 				'size'			=> 50,
 				'class' 		=> 'input fs-16 bold grey ui-corner-all',
-				'data-default'	=> 'Concert au '.$this->user['company']
+				'data-default'	=> lang("users_calendar_concert_at").' '.$this->user['company']
 			);					
 		
 			/*****START DATE*****/
@@ -167,7 +170,7 @@ class Event extends CI_Controller {
 			);
 			
 			/*****RECCURENCE*****/
-			$this->data['label_reccurence'] = 'Récurrence...';
+			$this->data['label_reccurence'] = lang("users_calendar_create_recurrence");
 			$this->data['reccurence'] = array(
 				'name'			=> 'ev-reccurence',
 				'id'			=> 'ev-reccurence',			
@@ -178,10 +181,10 @@ class Event extends CI_Controller {
 			
 			/**********EVENT DETAILS**********/
 			/*****DETAIL TITLE*****/
-			$this->data['ev_details_title'] ='Détails de l\'évènement';
+			$this->data['ev_details_title'] =lang("users_calendar_create_eventdetails");
 			
 			/*****LOACTION*****/
-			$this->data['label_location'] = 'Lieu';
+			$this->data['label_location'] = lang("users_calendar_create_location");
 			$this->data['location'] = array(
 				'name'			=> 'ev-location',
 				'id'			=> 'ev-location',
@@ -190,12 +193,12 @@ class Event extends CI_Controller {
 			
 			/*****MUSICAL GENRE*****/
 			$musical_genre = $this->genre_model->get_all();	
-			$this->data['label_musical_genre'] = 'Genre musical recherché';
+			$this->data['label_musical_genre'] = lang("users_calendar_create_genre");
 			$this->data['musical_genre'] = array(						
 				'id'		=> 'ev-musical-genre',
 				'name'		=> 'ev-musical-genre',				
 				'selected'	=> '',
-				'js'		=> 'style="width:300px" class="ui-corner-all" id="ev-musical-genre" multiple data-placeholder="Choisissez un genre musical"',
+				'js'		=> 'style="width:300px" class="ui-corner-all" id="ev-musical-genre" multiple data-placeholder="'.lang("users_calendar_create_choose_musical_genre").'"',
 				'options'	=> $musical_genre
 			);			
 			
@@ -211,7 +214,7 @@ class Event extends CI_Controller {
 			);			
 			
 			/*****PAYMENT TYPE*****/
-			$this->data['label_payment_type'] = 'Rémunération de l\'artiste';
+			$this->data['label_payment_type'] = lang("users_calendar_create_payment");
 			$this->data['payment_type'] = array(
 				'id'				=> 'ev-payment-type',
 				'value'					=> '',					
@@ -226,7 +229,7 @@ class Event extends CI_Controller {
 				'class'		=> 'fs-13 grey normal ml-5'				
 			);
 			//non rémunéré
-			$this->data['label_payment_type_1'] = 'Non rémunéré';
+			$this->data['label_payment_type_1'] = lang("users_calendar_create_non_renum");
 			$this->data['payment_type_1'] = array(
 				'name'		=> 'payment-type-1',
 				'id'		=> 'payment-type-1',
@@ -235,7 +238,7 @@ class Event extends CI_Controller {
 				'style'		=> 'vertical-align:middle;margin-top:-3px;'	
 			);
 			//payment amount
-			$this->data['label_payment_type_2'] = 'Cachet de';
+			$this->data['label_payment_type_2'] = lang("users_calendar_create_cachet");
 			$this->data['payment_type_2'] = array(
 				'name'		=> 'payment-type-2',
 				'id'		=> 'payment-type-2',
@@ -251,7 +254,7 @@ class Event extends CI_Controller {
 				'size'		=> 4				
 			);
 			//percent drink
-			$this->data['label_payment_type_3'] = '% des consommations vendues';
+			$this->data['label_payment_type_3'] = '% '.lang("users_calendar_create_conso");
 			$this->data['payment_type_3'] = array(
 				'name'		=> 'payment-type-3',
 				'id'		=> 'payment-type-3',
@@ -267,7 +270,7 @@ class Event extends CI_Controller {
 				'size'			=> 2
 			);
 			//percent entry
-			$this->data['label_payment_type_4'] = '% sur la billeterie';
+			$this->data['label_payment_type_4'] = '% '.lang("users_calendar_create_tickets");
 			$this->data['payment_type_4'] = array(
 				'name'		=> 'payment-type-4',
 				'id'		=> 'payment-type-4',
@@ -283,7 +286,7 @@ class Event extends CI_Controller {
 				'size'			=> 2
 			);
 			//refund fees
-			$this->data['label_payment_type_5'] = 'Remboursement des frais de réservation';
+			$this->data['label_payment_type_5'] = lang("users_calendar_create_remb");
 			$this->data['payment_type_5'] = array(
 				'name'		=> 'payment-type-5',
 				'id'		=> 'payment-type-5',
@@ -292,7 +295,7 @@ class Event extends CI_Controller {
 				'style'		=> 'vertical-align:middle;margin-top:-3px;'	
 			);		
 			/*****ENTRY*****/
-			$this->data['label_entry'] = 'Prix des entrées';	
+			$this->data['label_entry'] = lang("users_calendar_create_price");	
 			$this->data['entry'] = array(
 				'name'			=> 'ev-entry',
 				'id'			=> 'ev-entry',
@@ -303,7 +306,7 @@ class Event extends CI_Controller {
 			);					
 			
 			/*****DESCRIPTION*****/	
-			$this->data['label_description'] = 'Description';	
+			$this->data['label_description'] = lang("desc");	
 			$this->data['description'] = array(						
 				'id' => 'ev-description',
 				'value' => ''				
@@ -353,7 +356,7 @@ class Event extends CI_Controller {
 				/**********HEADER**********/
 				$this->header['doctype'] = 'html5';
 				$this->header['title'] = $event['title'];
-				$this->header['description'] = 'Mettre une description';										
+				$this->header['description'] = lang("user_calendar_event_edit_desc");										
 				
 				/**********INIT DATA**********/
 				/*****EVENT*****/
@@ -362,19 +365,19 @@ class Event extends CI_Controller {
 				/******URL ET MSG*****/
 				$this->data['update_url'] = site_url('event/update');
 				$this->data['success_url'] = site_url('user/calendar');
-				$this->data['success_message'] = 'Evènement modifié avec succès';
-				$this->data['error_message'] = "Erreur détéctée, veuillez réessayer...";
+				$this->data['success_message'] = lang("users_calendar_edit_success");
+				$this->data['error_message'] = str_replace("'", "\\'", lang("error_retry"));
 				
 				/*****LABEL TITLE*****/
-				$this->data['ev_details_title'] = 'Détails de l\'évènement';
+				$this->data['ev_details_title'] = lang("users_calendar_create_eventdetails");
 				
 				/*****LABELS DETAILS*****/
-				$this->data['label_location'] = 'Lieu';
-				$this->data['label_musical_genre'] = 'Genre musical recherché';
-				$this->data['label_reservation'] = 'Montant de la réservation';
-				$this->data['label_payment_type'] = 'Rémunération de l\'artiste';
-				$this->data['label_entry'] = 'Prix des entrées';
-				$this->data['label_description'] = 'Description';
+				$this->data['label_location'] = lang("users_calendar_create_location");
+				$this->data['label_musical_genre'] = lang("users_calendar_create_genre");
+				$this->data['label_reservation'] = lang("users_calendar_create_book");
+				$this->data['label_payment_type'] = lang("users_calendar_create_payment");
+				$this->data['label_entry'] = lang("users_calendar_create_price");
+				$this->data['label_description'] = lang("desc");
 				
 				switch($event['status']){
 					case 'open' :											
@@ -394,7 +397,7 @@ class Event extends CI_Controller {
 							'placeholder'	=> 'Saisir un titre',
 							'size'			=> 50,
 							'class' 		=> 'input fs-16 bold grey ui-corner-all',
-							'data-default'	=> 'Concert au '.$this->user['company']
+							'data-default'	=> lang("users_calendar_concert_at").' '.$this->user['company']
 						);					
 			
 						/*****START DATE*****/
@@ -438,7 +441,7 @@ class Event extends CI_Controller {
 						);
 				
 						/*****RECCURENCE*****/
-						$this->data['label_reccurence'] = 'Récurrence...';
+						$this->data['label_reccurence'] = lang("users_calendar_create_recurrence");
 						$this->data['reccurence'] = array(
 							'name'			=> 'ev-reccurence',
 							'id'			=> 'ev-reccurence',			
@@ -465,7 +468,7 @@ class Event extends CI_Controller {
 						$this->data['musical_genre'] = array(						
 							'id'		=> 'ev-musical-genre',
 							'name'		=> 'ev-musical-genre',
-							'js'		=> 'style="width:300px" class="ui-corner-all required" id="ev-musical-genre" multiple data-placeholder="Choisissez un genre musical"',
+							'js'		=> 'style="width:300px" class="ui-corner-all required" id="ev-musical-genre" multiple data-placeholder="'.lang("users_calendar_create_choose_musical_genre").'"',
 							'options'	=> $musical_genre, 
 							'selected'	=> $musical_genre_selected
 						);			
@@ -494,7 +497,7 @@ class Event extends CI_Controller {
 							'class'		=> 'fs-13 grey normal ml-5'				
 						);
 						//non rémunéré
-						$this->data['label_payment_type_1'] = 'Non rémunéré';
+						$this->data['label_payment_type_1'] = lang("users_calendar_create_non_renum");
 						$this->data['payment_type_1'] = array(
 							'name'		=> 'payment-type-1',
 							'id'		=> 'payment-type-1',
@@ -503,7 +506,7 @@ class Event extends CI_Controller {
 							'style'		=> 'vertical-align:middle;margin-top:-3px;'	
 						);
 						//payment amount
-						$this->data['label_payment_type_2'] = 'Cachet de';
+						$this->data['label_payment_type_2'] = lang("users_calendar_create_cachet");
 						$this->data['payment_type_2'] = array(
 							'name'		=> 'payment-type-2',
 							'id'		=> 'payment-type-2',
@@ -519,7 +522,7 @@ class Event extends CI_Controller {
 							'size'		=> 4				
 						);
 						//percent drink
-						$this->data['label_payment_type_3'] = '% des consommations vendues';
+						$this->data['label_payment_type_3'] = '% '.lang("users_calendar_create_conso");
 						$this->data['payment_type_3'] = array(
 							'name'		=> 'payment-type-3',
 							'id'		=> 'payment-type-3',
@@ -535,7 +538,7 @@ class Event extends CI_Controller {
 							'size'		=> 2
 						);
 						//percent entry
-						$this->data['label_payment_type_4'] = '% sur la billeterie';
+						$this->data['label_payment_type_4'] = '% '.lang("users_calendar_create_tickets");
 						$this->data['payment_type_4'] = array(
 							'name'		=> 'payment-type-4',
 							'id'		=> 'payment-type-4',
@@ -551,7 +554,7 @@ class Event extends CI_Controller {
 							'size'		=> 2
 						);
 						//refund fees
-						$this->data['label_payment_type_5'] = 'Remboursement des frais de réservation';
+						$this->data['label_payment_type_5'] = lang("users_calendar_create_remb");
 						$this->data['payment_type_5'] = array(
 							'name'		=> 'payment-type-5',
 							'id'		=> 'payment-type-5',
@@ -591,7 +594,7 @@ class Event extends CI_Controller {
 						/*****SCHEDULE END*****/
 						$se = date_format($date_end, 'H:i');						
 						
-						$event_date = ($ds == $de) ? $ds.' de '.$ss.' à '.$se : 'Le '.$ds.' à '.$ss.' au '.$de.' à '.$se; 
+						$event_date = ($ds == $de) ? $ds.' '.lang("de").' '.$ss.' '.lang("to2").' '.$se : 'Le '.$ds.' à '.$ss.' au '.$de.' à '.$se; 
 						
 						$this->data['event_date'] =  heading('<span aria-hidden="true" class="icon-calendar fs-16 grey ml-5 mr-5"></span>'.$event_date,2,'class="fs-18 title grey"');
 						
@@ -617,17 +620,17 @@ class Event extends CI_Controller {
 						/*****PAYMENT TYPE*****/	
 						$payment_type = array();
 						switch($event['payment_type']){
-							case 1 : array_push($payment_type, 'Non renseigné'); break;
+							case 1 : array_push($payment_type, lang("notset")); break;
 							case 2 : array_push($payment_type, 'Non remunéré'); break;				
 							case 3 : 
 								if($event['payment_amount'] > 0)
-									array_push($payment_type, 'Chachet de '.round($event['payment_amount'],2).' €');
+									array_push($payment_type, lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' €');
 								if($event['percent_drink'] > 0)
-									array_push($payment_type, round($event['percent_drink'],2).'% sur les consommations');
+									array_push($payment_type, round($event['percent_drink'],2).'% '.lang("users_calendar_create_conso"));
 								if($event['percent_entry'] > 0)
-									array_push($payment_type, round($event['percent_entry'],2).'% sur la billeterie');
+									array_push($payment_type, round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets"));
 								if($event['refund_fees'] > 0)
-									array_push($payment_type, 'Remboursement des frais de réservation');
+									array_push($payment_type, lang("users_calendar_create_remb"));
 								break;
 							default : break;
 						}
@@ -656,18 +659,18 @@ class Event extends CI_Controller {
 					case 'pending':																
 						$tmpl_ev_reservations = array('table_open' => '<table border="0" cellpadding="0" cellspacing="0" class="table-reservations">');
 						$this->table->set_template($tmpl_ev_reservations); 
-						$this->table->set_heading(array('Nom', 'Ville', 'Genre musical', 'Action'));
+						$this->table->set_heading(array(lang("last_name"), lang("city"), lang("users_calendar_genre"), lang("action")));
 						$reservations = $this->reservation_model->get_by_event_id($event['id']);																			
 						foreach($reservations as $reservation){										
 							$artist = $this->user_model->get($reservation['artist_id']);														
 							$artist_name = (!empty($artist['company'])) ? $artist['company'] : $artist['username'];
-							$artist_city = (!empty($artist['city'])) ? $artist['city'] : 'Non renseigné';						
+							$artist_city = (!empty($artist['city'])) ? $artist['city'] : lang("notset");						
 							$artist_url_link = (!empty($artist['web_address'])) ? site_url($artist['web_address']) : site_url('page/'.$artist['username']);
 							$artist_avatar = site_url($artist['avatar']); 
 							$musical_genre = 'Jazz';								
-							$artist_link = anchor($artist_url_link,'<span aria-hidden="true" class="icon-user fs-13 ts-white"></span>', array('class' => 'button-user-link mr-20', 'title' => 'voir profil'));
-							$valid_artist = '<a href="javascript:void(0);" class="button-valid-artist mr-20" data-reservation-id="'.$reservation['id'].'" title="valider"><span aria-hidden="true" class="icon-checkmark fs-13 ts-white"></span></a>';								
-							$delete_artist = '<a href="javascript:void(0)" class="button-delete-artist" data-reservation-id="'.$reservation['id'].'" title="refuser"><span aria-hidden="true" class="icon-cancel fs-11 ts-white"></span></a>';																					
+							$artist_link = anchor($artist_url_link,'<span aria-hidden="true" class="icon-user fs-13 ts-white"></span>', array('class' => 'button-user-link mr-20', 'title' => lang("users_contact_seeprofile")));
+							$valid_artist = '<a href="javascript:void(0);" class="button-valid-artist mr-20" data-reservation-id="'.$reservation['id'].'" title="'.lang("validate").'"><span aria-hidden="true" class="icon-checkmark fs-13 ts-white"></span></a>';								
+							$delete_artist = '<a href="javascript:void(0)" class="button-delete-artist" data-reservation-id="'.$reservation['id'].'" title="'.lang("refuse").'"><span aria-hidden="true" class="icon-cancel fs-11 ts-white"></span></a>';																					
 							$this->table->add_row(
 								anchor($artist_url_link, img(array('src' => $artist_avatar, 'width' => '32px', 'class' => 'mr-10')).$artist_name, array('class' => 'grey')),
 								$artist_city,
@@ -675,7 +678,7 @@ class Event extends CI_Controller {
 								'<div>'.$artist_link.$valid_artist.$delete_artist.'</div>'								
 							);		
 						}
-						$this->data['ev_reservations_title'] = 'Demandes de réservation ('.count($reservations).')';	
+						$this->data['ev_reservations_title'] = lang("users_rese_request").' ('.count($reservations).')';	
 						$this->data['ev_reservations'] = $this->table->generate();		
 
 						$this->footer['scripts'] = array('js/datatable/jquery.dataTables.min.js','js/event.js','js/main-edit-event.js');
@@ -684,11 +687,11 @@ class Event extends CI_Controller {
 					case 'accepted':																	
 						$tmpl_ev_reservations = array('table_open' => '<table border="0" cellpadding="0" cellspacing="0" class="table-reservations">');
 						$this->table->set_template($tmpl_ev_reservations); 
-						$this->table->set_heading(array('Nom', 'Ville', 'Genre musical', 'Etat'));						
+						$this->table->set_heading(array(lang("last_name"), lang("city"), lang("users_calendar_genre"), 'Etat'));						
 					
 						$valid_artist = $this->user_model->get($event['artist_id']);
 						$valid_artist_name = (!empty($valid_artist['company'])) ? $valid_artist['company'] : $valid_artist['username'];
-						$valid_artist_city = (!empty($valid_artist['city'])) ? $valid_artist['city'] : 'Non renseigné';						
+						$valid_artist_city = (!empty($valid_artist['city'])) ? $valid_artist['city'] : lang("notset");						
 						$valid_artist_link = (!empty($valid_artist['web_address'])) ? site_url($valid_artist['web_address']) : site_url('page/'.$valid_artist['username']);
 						$valid_artist_avatar = site_url($valid_artist['avatar']); 
 						$musical_genre = 'Jazz';														
@@ -696,14 +699,14 @@ class Event extends CI_Controller {
 							anchor($valid_artist_link, img(array('src' => $valid_artist_avatar, 'width' => '32px', 'class' => 'mr-10')).$valid_artist_name, array('class' => 'grey')),
 							$valid_artist_city,
 							$musical_genre,
-							'En attente de paiement'
+							lang("users_rese_status1")
 						);				
 												
 						$reservations = $this->reservation_model->get_by_event_id($event['id']);
 						foreach($reservations as $reservation){							
 							$artist = $this->user_model->get($reservation['artist_id']);														
 							$artist_name = (!empty($artist['company'])) ? $artist['company'] : $artist['username'];
-							$artist_city = (!empty($artist['city'])) ? $artist['city'] : 'Non renseigné';						
+							$artist_city = (!empty($artist['city'])) ? $artist['city'] : lang("notset");						
 							$artist_link = (!empty($artist['web_address'])) ? site_url($artist['web_address']) : site_url('page/'.$artist['username']);
 							$artist_avatar = site_url($artist['avatar']); 
 							$musical_genre = 'Jazz';															
@@ -711,10 +714,10 @@ class Event extends CI_Controller {
 								anchor($artist_link, img(array('src' => $artist_avatar, 'width' => '32px', 'class' => 'mr-10')).$artist_name, array('class' => 'purple')),
 								$artist_city,
 								$musical_genre,
-								'En liste d\'attente'
+								lang("users_rese_pendingtxt2")
 							);		
 						}
-						$this->data['ev_reservations_title'] = 'Réservation en attente de paiement';	
+						$this->data['ev_reservations_title'] = lang("users_rese_pendingtxt");	
 						$this->data['ev_reservations'] = $this->table->generate();	
 
 						$this->footer['scripts'] = array('js/datatable/jquery.dataTables.min.js','js/event.js','js/main-edit-event.js');
@@ -728,7 +731,7 @@ class Event extends CI_Controller {
 						$artist_link = (!empty($artist['web_address'])) ? site_url($artist['web_address']) : site_url('page/'.$artist['username']);
 						$artist_button_link = anchor($artist_link, 'Voir le profil', array('id' => 'button-artist-link', 'class' => 'ui-green'));
 						$artist_name = (!empty($artist['company'])) ? $artist['company'] : $artist['username'];
-						$artist_city = (!empty($artist['city'])) ? $artist['city'] : 'Non renseigné';
+						$artist_city = (!empty($artist['city'])) ? $artist['city'] : lang("notset");
 						$artist_country = (!empty($artist['country'])) ? $artist['country'] : '';						
 						$artist_location = '<p class="grey fs-12 pl-2"><strong>Originaire de : </strong>'.$artist_city.', '.$artist_country.'</p>';																		
 						$artist_musical_genre = '<p class="grey fs-12 pl-2"><strong>Genre musical : </strong>Rumba congolaise</p>';
@@ -866,33 +869,42 @@ class Event extends CI_Controller {
 			$ss = date_format($date_start, 'H:i');	
 			$de = date_format($date_end,'d/m/Y');
 			$se = date_format($date_end, 'H:i');
-			$event_date = ($ds == $de) ? $ds.' de '.$ss.' à '.$se : 'Le '.$ds.' à '.$ss.' au '.$de.' à '.$se; 
+			$event_date = ($ds == $de) ? $ds.' '.lang("de").' '.$ss.' '.lang("to2").' '.$se : 'Le '.$ds.' à '.$ss.' au '.$de.' à '.$se; 
 			
 			/*****MUSICAL GENRES*****/
+			//Determine row name depending on lang loaded
+			if($this->session->userdata('lang_loaded') == "french"){$rowname = 'name';}
+			else {
+				foreach($this->lang_counts as $key => $value){
+					if($this->session->userdata('lang_loaded') == $value["name"]){
+						$rowname = 'name_'.$value["id"];
+					}
+				}
+			}
 			$musical_genres = array();
 			$genres_ids = explode('|', $event['genre_id']);
-			$query = $this->db->select('name')
+			$query = $this->db->select($rowname)
 							->from('musical_genres')
 							->where_in('id', $genres_ids)
 							->get();
 			foreach ($query->result_array() as $row)
-				array_push($musical_genres, ucfirst($row['name']));			
+				array_push($musical_genres, ucfirst($row[$rowname]));			
 			
 			
 			/*****PAYMENT TYPE*****/
 			$payment_type = array();
 			switch($event['payment_type']){
-				case 1 : array_push($payment_type, 'Non renseigné'); break;
+				case 1 : array_push($payment_type, lang("notset")); break;
 				case 2 : array_push($payment_type, 'Non remunéré'); break;				
 				case 3 : 
 					if($event['payment_amount'] > 0)
-						array_push($payment_type, 'Chachet de '.round($event['payment_amount'],2).' €');
+						array_push($payment_type, lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' €');
 					if($event['percent_drink'] > 0)
-						array_push($payment_type, round($event['percent_drink'],2).'% sur les consommations');
+						array_push($payment_type, round($event['percent_drink'],2).'% '.lang("users_calendar_create_conso"));
 					if($event['percent_entry'] > 0)
-						array_push($payment_type, round($event['percent_entry'],2).'% sur la billeterie');
+						array_push($payment_type, round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets"));
 					if($event['refund_fees'] > 0)
-						array_push($payment_type, 'Remboursement des frais de réservation');
+						array_push($payment_type, lang("users_calendar_create_remb"));
 					break;
 				default : break;
 			}		

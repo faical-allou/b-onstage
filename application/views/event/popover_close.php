@@ -10,16 +10,16 @@
 			<dt>Artiste / groupe</dt>
 			<dd><?=anchor($artist_link, $artist_name, array('class' => 'green bold fs-12'))?></dd>
 			<!--musical genre-->
-			<dt>Genre musical</dt>
+			<dt><?php echo lang("users_calendar_genre") ?></dt>
 			<dd><?=$musical_genres?></dd>	
 			<!--payment type-->
-			<dt>Rémunération de l'artiste</dt>
+			<dt><?php echo lang("users_calendar_create_payment") ?></dt>
 			<dd><?=$payment_type?></dd>				
 			<!--reservation-->
-			<dt>Montant de la réservation</dt>
+			<dt><?php echo lang("users_calendar_create_book") ?></dt>
 			<dd><?=round($event['reservation'],2)?> €</dd>	
 			<!--entry-->
-			<dt>Prix des entrées</dt>
+			<dt><?php echo lang("users_calendar_create_price") ?></dt>
 			<dd><?=round($event['entry'],2)?> €</dd>
 		</dl>
 	</div>

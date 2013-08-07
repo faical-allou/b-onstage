@@ -7,21 +7,21 @@
 	<div class="content clearfix">
 		<dl>
 		<!--musical genre-->
-		<dt>Genre musical</dt>
+		<dt><?php echo lang("users_calendar_genre") ?></dt>
 		<dd><?=$musical_genres?></dd>	
 		<!--payment type-->
-		<dt>Rémunération de l'artiste</dt>
+		<dt><?php echo lang("users_calendar_create_payment") ?></dt>
 		<dd><?=$payment_type?></dd>				
 		<!--reservation-->
-		<dt>Montant de la réservation</dt>
+		<dt><?php echo lang("users_calendar_create_book") ?></dt>
 		<dd><?=round($event['reservation'],2)?> €</dd>	
 		<!--entry-->
-		<dt>Prix des entrées</dt>
+		<dt><?php echo lang("users_calendar_create_price") ?></dt>
 		<dd><?=round($event['entry'],2)?> €</dd>
 	</dl>
 	</div>
 	<div class="footer clearfix">	
-		<span class="right"><a href="<?=site_url('/event/edit/'.$event['id'])?>" class="more-event-details ui-yellow">Voir <?=$count_reservations?> demande(s) de réservation</a></span>		
+		<span class="right"><a href="<?=site_url('/event/edit/'.$event['id'])?>" class="more-event-details ui-yellow"><?php echo lang("see") ?> <?=$count_reservations?> <?php echo lang("users_rese_seereq") ?></a></span>		
 	</div>
 </div>	
 <script type="text/javascript">

@@ -3,7 +3,7 @@
 		<div>
 			<!--date et heure-->
 			<div class="title mb-20 clearfix bg-white ui-corner-all bs-black fs-24" style="padding:.6em 1em;">
-				Le <span class="purple"><?=$date?></span> de <span class="purple"><?=$schedule?></span>, <?=anchor($artist_link, ucfirst($concert['artist_company']), array('class' => 'purple')).' en concert au '.anchor($stage_link, $concert['stage_company'], array('class' => 'purple'))?>				
+				<?php echo lang("the") ?> <span class="purple"><?=$date?></span> <?php echo lang("de") ?> <span class="purple"><?=$schedule?></span>, <?=anchor($artist_link, ucfirst($concert['artist_company']), array('class' => 'purple')).' '.lang("shows_inshowat").' '.anchor($stage_link, $concert['stage_company'], array('class' => 'purple'))?>				
 			</div>		
 			
 			<!--infos concert-->
@@ -14,7 +14,7 @@
 							<td width="75%" class="va-t ui-corner-all bg-white bs-black">
 								<div class="p-20">
 									<div class="mb-20 fs-18 title">
-										Infos scène
+										<?php echo lang("shows_stageinfo") ?>
 									</div>									
 									<div class="clearfix mb-20">
 										<div class="left">
@@ -23,7 +23,7 @@
 										<div class="left ml-20">
 											<div class="mb-10 fs-18 title grey"><?=anchor($stage_link, $concert['stage_company'], array('class' => 'purple'))?></div>
 											<p class="fs-12 grey bold"><span aria-hidden="true" class="icon-location mr-5"></span><?=$location?></p>
-											<div><?=anchor($stage_link, 'Voir scène', array('id' => 'show-stage-profil','class' => 'ui-purple'))?></div>
+											<div><?=anchor($stage_link, lang("seestage"), array('id' => 'show-stage-profil','class' => 'ui-purple'))?></div>
 										</div>
 									</div>
 								</div>
@@ -31,7 +31,7 @@
 							<td width="25%" class="va-t ta-c">
 								<div class="p-20 ml-20 mb-20 ui-corner-all bg-white bs-black">
 									<div class="mb-10 fs-18 title grey">
-										Prix entrée
+										<?php echo lang("users_rese_enterprice") ?>
 									</div>
 									<div class="fs-18 purple title grey">
 										<?=round($concert['entry'], 2)?>€						
@@ -39,7 +39,7 @@
 								</div>
 								<div class="p-20 ml-20 ui-corner-all bg-white bs-black">
 									<div class="mb-10 fs-18 title grey">
-										Genre musical
+										<?php echo lang("users_calendar_genre") ?>
 									</div>
 									<div class="fs-18 purple title">
 										<?=$genres?>
@@ -66,18 +66,18 @@
 										<div class="left ml-20">
 											<div class="mb-10 fs-18 title grey"><?=anchor($artist_link, ucfirst($concert['artist_company']), array('class' => 'purple'))?></div>
 											<p class="fs-12 grey bold"><span aria-hidden="true" class="icon-location mr-5"></span><?=$concert['artist_city'].', '.$concert['artist_country']?></p>
-											<div><?=anchor($artist_link, 'Voir artiste', array('id' => 'show-artist-profil','class' => 'ui-purple'))?></div>
+											<div><?=anchor($artist_link, lang("shows_seeartist"), array('id' => 'show-artist-profil','class' => 'ui-purple'))?></div>
 										</div>
 									</div>	
 									<div style="border-top:1px solid #ffffff;">													
-										<p class="grey fs-12"><strong>Site officiel : </strong><?=$artist_website?></p>
-										<p class="grey fs-12"><strong>Liens sociaux : </strong></p>
+										<p class="grey fs-12"><strong><?php echo lang("users_page_website") ?> : </strong><?=$artist_website?></p>
+										<p class="grey fs-12"><strong><?php echo lang("users_page_socialmed") ?> : </strong></p>
 										<div>
 											<?=$artist_facebook.$artist_twitter.$artist_google_plus?>
 										</div>
 									</div>
 									<div>	
-										<p class="grey fs-12"><strong>Description :</strong></p>
+										<p class="grey fs-12"><strong><?php echo lang("desc") ?> :</strong></p>
 										<p class="grey fs-12"><?=$artist_description?></p>															
 									</div>
 								</div>
@@ -85,7 +85,7 @@
 							<td width="40%" class="va-t">								
 								<!--sound-->
 								<div class="ml-20 p-20 ui-corner-all bg-white bs-black">
-									<div class="fs-18 mb-10 title grey">Les sons du groupe</div>
+									<div class="fs-18 mb-10 title grey"><?php echo lang("shows_bandsound") ?></div>
 									<div id="sound-player" class="jp-player ui-corner-bottom"></div>
 									<div class="jp-audio hidden mb-10" style="border:none;">
 										<div class="jp-type-playlist ui-corner-all border-grey-1">
@@ -130,7 +130,7 @@
 											<?=$tracks?>
 										<?php } else { ?>
 											<div class="p-10">
-												<i class="fs-12">Aucun son à écouter.</i>
+												<i class="fs-12"><?php echo lang("users_page_sons_nosound") ?></i>
 											</div>
 										<?php } ?>										
 									</div>

@@ -39,9 +39,9 @@ $(function(){
 		
 		
 		$.countdown.regional['fr'] = {
-			labels: ['Années', 'Mois', 'Semaines', 'Jours', 'Heures', 'Minutes', 'Secondes'],
-			labels1: ['Année', 'Mois', 'Semaine', 'Jour', 'Heure', 'Minute', 'Seconde'],
-			compactLabels: ['a', 'm', 's', 'j'],
+			labels: [document.getElementById("calendar_years").innerHTML, document.getElementById("calendar_months").innerHTML, document.getElementById("calendar_weeks").innerHTML, document.getElementById("calendar_days").innerHTML, document.getElementById("calendar_hours").innerHTML, document.getElementById("calendar_minutes").innerHTML, document.getElementById("calendar_seconds").innerHTML],
+			labels1: [document.getElementById("calendar_year").innerHTML, document.getElementById("calendar_month").innerHTML, document.getElementById("calendar_week").innerHTML, document.getElementById("calendar_day").innerHTML, document.getElementById("calendar_hour").innerHTML, document.getElementById("calendar_minute").innerHTML, document.getElementById("calendar_second").innerHTML],
+			compactLabels: [document.getElementById("calendar_y").innerHTML, document.getElementById("calendar_m").innerHTML, document.getElementById("calendar_w").innerHTML, document.getElementById("calendar_d").innerHTML],
 			whichLabels: function(amount) {
 				return (amount > 1 ? 0 : 1);
 			},
@@ -124,7 +124,7 @@ $(function(){
 			buttons: 
 			[
 				{
-					text	: 'Valider',								
+					text	: document.getElementById("validatetxt").innerHTML,								
 					'class'	: 'ui-purple',									
 					click: function() {									
 						$.ajax({
@@ -149,7 +149,7 @@ $(function(){
 					}		
 				},
 				{
-					text:'Annuler',
+					text:document.getElementById("canceltxt").innerHTML,
 					click: function() {																				
 						$(this).dialog('close').remove();															
 					}

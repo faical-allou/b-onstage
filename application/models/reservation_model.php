@@ -85,12 +85,23 @@ class Reservation_model extends CI_Model
 		
 		$event['genres'] = array();
 		$genres_ids = explode('|', $event['genre_id']);
-		$query = $this->db->select('name')
+		//Include config lang
+		include("/home/bonstage/dev.b-onstage/application/config/lang.php");
+		//Determine row name depending on lang loaded
+		if($this->session->userdata('lang_loaded') == "french"){$rowname = '';}
+		else {
+			foreach($lang_counts as $key => $value){
+				if($this->session->userdata('lang_loaded') == $value["name"]){
+					$rowname = '_'.$value["id"];
+				}
+			}
+		}
+		$query = $this->db->select('name'.$rowname)
 							->from('musical_genres')
 							->where_in('id', $genres_ids)
 							->get();
 		foreach ($query->result_array() as $row)
-			array_push($event['genres'],ucfirst($row['name']));
+			array_push($event['genres'],ucfirst($row['name'.$rowname]));
 		
 		$event['payment'] = array();
 		switch($event['payment_type']){
@@ -102,13 +113,13 @@ class Reservation_model extends CI_Model
 				break;
 			case 3 :
 				if($event['payment_amount'] > 0)
-					array_push($event['payment'], 'Cachet de '.round($event['payment_amount'],2).' €');
+					array_push($event['payment'], lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' €');
 				if($event['percent_drink'] > 0)
-					array_push($event['payment'], round($event['percent_drink'],2).'% sur les consommations');
+					array_push($event['payment'], round($event['percent_drink'],2).'% '.lang("users_calendar_create_conso"));
 				if($event['percent_entry'] > 0)
-					array_push($event['payment'], round($event['percent_entry'],2).'% sur la billeterie');
+					array_push($event['payment'], round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets"));
 				if($event['refund_fees'] > 0)
-					array_push($event['payment'], 'Remboursement des frais de réservation');
+					array_push($event['payment'], lang("users_calendar_create_remb"));
 				break;
 			default : break;
 		}			
@@ -198,14 +209,14 @@ class Reservation_model extends CI_Model
 	public function warning_msg($event_status, $event_artist_id, $reservation_artist_id, $date_start){
 		switch($event_status){
 			case 'pending' :
-				$msg = 'Voulez-vous annuler cette réservation ?';
+				$msg = lang("users_rese_cancel_conf");
 				break;
 			case 'accepted' : 
 				//si event_artist_id = reservation_artist_id
 				if($event_artist_id == $reservation_artist_id)					
-					$msg = 'Il n\'est pas conseillé d\'annuler la réservation à ce stade. Cette scène pourrait ne pas accepter vos futures demandes. Etes-vous certain de vouloir annuler ?';
+					$msg = lang("users_rese_cancel_txt1");
 				else
-					$msg = 'Voulez-vous annuler cette réservation ?';					
+					$msg = lang("users_rese_cancel_conf");					
 				break;
 			case 'close' : 
 				$date_time_start = new DateTime($date_start);
@@ -215,11 +226,11 @@ class Reservation_model extends CI_Model
 				
 				//si annule avant 2 semaines ou 15 jours
 				if($days > 15)
-					$msg = 'Il n\'est pas conseillé d\'annuler la réservation à ce stade. Vos frais de réservations vous seront remboursés (une fois les frais de gestion de 20€ déduits). De plus cette scène pourrait ne pas accepter vos future demandes. Etes-vous certain de vouloir annuler ?';
+					$msg = lang("users_rese_cancel_txt2");
 				else if(($days <= 15) && ($days >= 2))
-					$msg = 'Il n\'est pas conseillé d\'annuler la réservation à ce stade. Vos frais de réservation ne vous seront pas remboursés. De plus cette scène pourrait ne pas accepter vos future demandes. Etes-vous certain de vouloir annuler?';
+					$msg = lang("users_rese_cancel_txt3");
 				else if($days < 2)
-					$msg = 'Il est très fortement conseillé de ne pas annuler à ce stade! Vos frais de réservations ne vous seront pas remboursés, et le concert sera affiché en statut "Annulé, No-show" et b-onstage se réserve le droit de porter une mention "No-show" sur votre profil. De plus cette scène pourrait ne pas accepter vos future demandes. Etes-vous certain de vouloir annuler?';								
+					$msg = lang("users_rese_cancel_txt4");								
 				break;
 			default : break;	
 		}

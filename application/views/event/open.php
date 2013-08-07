@@ -1,3 +1,18 @@
+<?php 
+//Include config lang
+include("/home/bonstage/dev.b-onstage/application/config/lang.php");
+foreach($lang_counts as $key => $value){
+if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value["id"];}
+}
+
+?><div id="lang_loaded_id" style="display:none"><?php echo $lang_id ?></div>
+<div id="validate" style="display:none"><?php echo ucfirst(lang("validate")) ?></div>
+<div id="canceltxt" style="display:none"><?php echo lang("cancel") ?></div>
+<div id="users_calendar_create_non_renum" style="display:none"><?php echo lang("users_calendar_create_non_renum") ?></div>
+<div id="users_calendar_create_cachet" style="display:none"><?php echo lang("users_calendar_create_cachet") ?></div>
+<div id="users_calendar_create_conso" style="display:none"><?php echo lang("users_calendar_create_conso") ?></div>
+<div id="users_calendar_create_tickets" style="display:none"><?php echo lang("users_calendar_create_tickets") ?></div>
+<div id="users_calendar_create_remb" style="display:none"><?php echo lang("users_calendar_create_remb") ?></div>
 <div class="container_12" id="event">
 	<!--form create event-->
 	<div class="grid_12 mt-20 mb-20 ui-corner-all bg-white bs-black">
@@ -8,10 +23,10 @@
 		<div>	
 			<!--event action-->	
 			<div class="ev-action top p-20 ui-corner-top">						
-				<span><?=anchor(site_url('user/calendar'),'Retour calendrier',array('class'=>'button-return-calendar', 'title' => 'Retour calendrier'))?></span>
-				<span class="ml-5"><button class="button-update-event ui-purple">ENREGISTRER LES MODIFICATIONS</button></span>							
+				<span><?=anchor(site_url('user/calendar'),lang("users_calendar_back"),array('class'=>'button-return-calendar', 'title' => lang("users_calendar_back")))?></span>
+				<span class="ml-5"><button class="button-update-event ui-purple"><?php echo lang("save_change") ?></button></span>							
 				<span class="ml-5">
-					<a href="javascript:void(0);" class="button-delete-event">Supprimer</a>
+					<a href="javascript:void(0);" class="button-delete-event"><?php echo lang("delete") ?></a>
 				</span>	
 			</div>				
 				
@@ -25,7 +40,7 @@
 						<span id="w-ev-date-start"><?=form_input($date_start)?></span>
 						<span id="w-ev-schedule-start"><?=form_input($schedule_start)?></span>
 					</span>
-					<span class="mr-2 grey fs-12 bold">à</span>
+					<span class="mr-2 grey fs-12 bold"><?php echo lang("to2") ?></span>
 					<span>				
 						<span id="w-ev-schedule-end"><?=form_input($schedule_end)?></span>
 						<span id="w-ev-date-end"><?=form_input($date_end)?></span>
@@ -64,7 +79,7 @@
 									<td>
 										<div>
 											<span id="<?=$payment_type['id']?>" class="grey"><?=$payment_type['value']?></span>
-											<span><a href="javascript:void(0)" id="update-payment-type" class="purple fs-12 bold pl-10">Modifier</a></span>
+											<span><a href="javascript:void(0)" id="update-payment-type" class="purple fs-12 bold pl-10"><?php echo lang("modify") ?></a></span>
 										</div>	
 									</td>							
 								</tr>	
@@ -97,9 +112,9 @@
 			
 			<!--event action-->	
 			<div class="ev-action bottom p-20 ui-corner-bottom">						
-				<span><?=anchor(site_url('user/calendar'),'Retour calendrier',array('class'=>'button-return-calendar', 'title' => 'Retour calendrier'))?></span>
-				<span class="ml-5"><button class="button-update-event ui-purple">ENREGISTRER LES MODIFICATIONS</button></span>							
-				<span class="ml-5"><?=anchor(site_url('user/calendar'),'Supprimer',array('class'=>'button-delete-event'))?></span>
+				<span><?=anchor(site_url('user/calendar'),lang("users_calendar_back"),array('class'=>'button-return-calendar', 'title' => lang("users_calendar_back")))?></span>
+				<span class="ml-5"><button class="button-update-event ui-purple"><?php echo lang("save_change") ?></button></span>							
+				<span class="ml-5"><a href="javascript:void(0);" class="button-delete-event"><?php echo lang("delete") ?></a></span>
 			</div>	
 		</div>	
 	</form>
@@ -133,7 +148,7 @@
 					<?=form_label($label_payment_type_5, $payment_type_5['id'], $attrs_label_payment_type)?>
 				</div>
 				<div class="fs-13 bold">
-					Résumé : 
+					<?php echo lang("resume") ?> : 
 					<span id="resume-payment-type"></span>
 				</div>
 			</div>	

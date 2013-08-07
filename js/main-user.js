@@ -24,10 +24,10 @@
 		//init accordion
 		$('.show-form').on('click',function(event){
 			$($(event.target).data('show-id')).toggle('slide',{direction:'up'},200,function(){
-				if(event.target.innerHTML == 'Modifier')
-					$(event.target).empty().html('Masquer');
+				if(event.target.innerHTML == document.getElementById("modify_txt").innerHTML)
+					$(event.target).empty().html(document.getElementById("hide_txt").innerHTML);
 				else
-					$(event.target).empty().html('Modifier');
+					$(event.target).empty().html(document.getElementById("modify_txt").innerHTML);
 			});
 		});	
 	
@@ -74,9 +74,9 @@
 			},
 			messages: {
 				'input-username'	:{
-					required	: 'Ce champ est obligatoire',
-					minlength	: jQuery.format('Ce champ doit contenir au minimum {0} caractères'),
-					maxlength	: jQuery.format('Ce champ doit contenir au maximum {0} caractères')
+					required	: document.getElementById("requiered_txt").innerHTML,
+					minlength	: jQuery.format(document.getElementById("mincharacters_txt").innerHTML+' {0} '+document.getElementById("characters_txt").innerHTML),
+					maxlength	: jQuery.format(document.getElementById("maxcharacters_txt").innerHTML+' {0} '+document.getElementById("characters_txt").innerHTML)
 				}
 			},		
 			errorPlacement: function(error, element) {
@@ -211,9 +211,9 @@
 			},
 			messages: {
 				'input-company'	:{
-					required	: 'Ce champ est obligatoire',
-					minlength	: jQuery.format('Ce champ doit contenir au minimum {0} caractères'),
-					maxlength	: jQuery.format('Ce champ doit contenir au maximum {0} caractères')
+					required	: document.getElementById("requiered_txt").innerHTML,
+					minlength	: jQuery.format(document.getElementById("mincharacters_txt").innerHTML+' {0} '+document.getElementById("characters_txt").innerHTML),
+					maxlength	: jQuery.format(document.getElementById("maxcharacters_txt").innerHTML+' {0} '+document.getElementById("characters_txt").innerHTML)
 				}
 			},		
 			errorPlacement: function(error, element) {
@@ -266,7 +266,7 @@
 			},
 			messages: {
 				'input-url-profil'	:{
-					required	: 'Ce champ est obligatoire'				
+					required	: document.getElementById("requiered_txt").innerHTML				
 				}
 			},		
 			errorPlacement: function(error, element) {

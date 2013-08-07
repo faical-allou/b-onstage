@@ -9,8 +9,13 @@
 				parent = $(this);
 				user_id = options.user_id;
 				user_state = options.user_state;																
+				sc_client_id = '68139674690a8e456179aa74ca065667';	
+				sc_secret_id = '8922d4688dbee416effbc0927d2280f0';
+				/*
+				//PROD
 				sc_client_id = '5daaabb2aecacbce6f1af0c2df08fa9f';	
-				sc_secret_id = '6eaa28602492e3340859b7db399cda7b';				
+				sc_secret_id = '6eaa28602492e3340859b7db399cda7b';	
+				*/		
 				
 				/********** INIT PLAYER**********/	
 				parent.sound('init_player');				
@@ -227,7 +232,7 @@
 								})
 								.bind('uploadComplete', function(event, file){	
 
-									$('#upload-infos-' + file.id).empty().append('<span aria-hidden="true" class="icon-checkmark green mr-5 fs-16"></span>Piste téléchargée');
+									$('#upload-infos-' + file.id).empty().append('<span aria-hidden="true" class="icon-checkmark green mr-5 fs-16"></span>'+document.getElementById("users_page_sons_addtrack_success").innerHTML);
 									$('#progressbar-' + file.id).remove();
 									$('#button-add-tracks').show();
 									$(this).swfupload('startUpload');
@@ -285,7 +290,7 @@
 					buttons	: 
 					[
 						{
-							text	: 'Ajouter',
+							text	: document.getElementById("addtxt").innerHTML,
 							id		: 'button-add-tracks',						
 							'class'	: 'ui-purple',									
 							click	: function() {							
@@ -293,7 +298,7 @@
 							}
 						},
 						{
-							text	:'Annuler',						
+							text	:document.getElementById("canceltxt").innerHTML,						
 							click	: function() {											
 								$('#upload-tracks').swfupload('destroy');										
 								dialog_add_tracks.remove();										
@@ -377,8 +382,8 @@
 					//initialise
 					SC.initialize({
 						client_id		: sc_client_id,							
-						redirect_uri	: 'http://www.b-onstage.com/user/redirect_sc'
-					});
+						redirect_uri	: 'http://www.dev.b-onstage.com/user/redirect_sc'
+					}); /*PROD : redirect_uri	: 'http://www.b-onstage.com/user/redirect_sc' */
 					
 					//connect and add sc
 					SC.connect(function() {													
@@ -423,7 +428,7 @@
 											buttons		: 
 											[
 												{
-													text	: 'Ajouter',								
+													text	: document.getElementById("addtxt").innerHTML,								
 													'class'	: 'ui-purple',									
 													click	: function() {		
 														//get playlists
@@ -468,7 +473,7 @@
 													}
 												},
 												{
-													text:'Annuler',
+													text:document.getElementById("canceltxt").innerHTML,
 													click: function() {																				
 														$dialog_add_sc.remove();																											
 													}
@@ -506,7 +511,7 @@
 					SC.get('/users/' + sc_user_id, function(me) { 
 						sc_user = me;					
 						
-						$dialog_synchr_sc = $('<div id="dialog-synchr-sc"><div class="p-20"><p class="grey fs-12 bold">Voulez-vous synchroniser ce compte?</p></div></div>');
+						$dialog_synchr_sc = $('<div id="dialog-synchr-sc"><div class="p-20"><p class="grey fs-12 bold">'+document.getElementById("users_page_sons_soundcloud_syncconf").innerHTML+'</p></div></div>');
 						$('body').append($dialog_synchr_sc);						
 											
 						$dialog_synchr_sc.dialog({
@@ -519,7 +524,7 @@
 							buttons		: 
 							[
 								{
-									text	: 'Synchroniser',								
+									text	: document.getElementById("synctxt").innerHTML,								
 									'class'	: 'ui-purple',									
 									click	: function() {		
 										//delete sc user
@@ -577,7 +582,7 @@
 									}
 								},
 								{
-									text:'Annuler',
+									text:document.getElementById("canceltxt").innerHTML,
 									click: function() {																				
 										$dialog_synchr_sc.remove();																											
 									}
@@ -598,7 +603,7 @@
 			return this.each(function() {			
 				var sc_user_id = options.sc_user_id;	
 				
-				$dialog_delete_sc = $('<div id="dialog-delete-sc"><div class="p-20"><p class="grey fs-12 bold">Voulez-vous vraiment supprimer ce compte?</p></div></div>');
+				$dialog_delete_sc = $('<div id="dialog-delete-sc"><div class="p-20"><p class="grey fs-12 bold">'+document.getElementById("users_page_sons_soundcloud_delconf").innerHTML+'</p></div></div>');
 				$('body').append($dialog_delete_sc);
 				
 				$dialog_delete_sc.dialog({
@@ -631,7 +636,7 @@
 							}
 						},
 						{
-							text:'Annuler',
+							text:document.getElementById("canceltxt").innerHTML,
 							click: function() {																				
 								$dialog_delete_sc.remove();																											
 							}

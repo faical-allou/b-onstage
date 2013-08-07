@@ -21,7 +21,7 @@
 
 	//Add helper object
 	F.helpers.buttons = {
-		tpl: '<div id="fancybox-buttons"><ul><li><a class="btnPrev" title="Previous" href="javascript:;"></a></li><li><a class="btnPlay" title="Start slideshow" href="javascript:;"></a></li><li><a class="btnNext" title="Next" href="javascript:;"></a></li><li><a class="btnToggle" title="Toggle size" href="javascript:;"></a></li><li><a class="btnClose" title="Close" href="javascript:jQuery.fancybox.close();"></a></li></ul></div>',
+		tpl: '<div id="fancybox-buttons"><ul><li><a class="btnPrev" title="'+document.getElementById("prevtxt").innerHTML+'" href="javascript:;"></a></li><li><a class="btnPlay" title="'+document.getElementById("startslideshow").innerHTML+'" href="javascript:;"></a></li><li><a class="btnNext" title="'+document.getElementById("nexttxt").innerHTML+'" href="javascript:;"></a></li><li><a class="btnToggle" title="'+document.getElementById("togglesize").innerHTML+'" href="javascript:;"></a></li><li><a class="btnClose" title="'+document.getElementById("closetxt").innerHTML+'" href="javascript:jQuery.fancybox.close();"></a></li></ul></div>',
 		list: null,
 		buttons: {},
 

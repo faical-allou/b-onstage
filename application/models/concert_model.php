@@ -43,12 +43,23 @@ class Concert_model extends CI_Model
 		//get musical genre	
 		$concert['genres'] = array();
 		$genres_ids = explode('|', $concert['genre_id']);
-		$query = $this->db->select('name')
+		//Include config lang
+		include("/home/bonstage/dev.b-onstage/application/config/lang.php");
+		//Determine row name depending on lang loaded
+		if($this->session->userdata('lang_loaded') == "french"){$rowname = '';}
+		else {
+			foreach($lang_counts as $key => $value){
+				if($this->session->userdata('lang_loaded') == $value["name"]){
+					$rowname = '_'.$value["id"];
+				}
+			}
+		}
+		$query = $this->db->select('name'.$rowname)
 							->from('musical_genres')
 							->where_in('id', $genres_ids)
 							->get();
 		foreach ($query->result_array() as $row)
-			array_push($concert['genres'], ucfirst($row['name']));			
+			array_push($concert['genres'], ucfirst($row['name'.$rowname]));			
 		
 		
 		//get artist members

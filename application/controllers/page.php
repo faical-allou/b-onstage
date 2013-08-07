@@ -77,58 +77,58 @@ class Page extends CI_Controller {
 			$user_state = 2;
 				
 		//get all infos
-		$title_infos = heading('Informations générales', 1 ,'class="title-page ui-corner-top ui-corner-top"');
+		$title_infos = heading(lang("users_page_generalinfo"), 1 ,'class="title-page ui-corner-top ui-corner-top"');
 		
 		$infos = array(
 			//company
 			array(
 				'id'			=> 'company',
-				'title'			=> ($user_group_page == 'stage') ? 'Etablissement' : 'Nom du groupe',
+				'title'			=> ($user_group_page == 'stage') ? lang("users_page_stage") : lang("users_page_band"),
 				'val'			=> !empty($user_page['company']) ? $user_page['company'] : '',				
 				'type'			=> 'text',
-				'form_label'	=> ($user_group_page == 'stage') ? 'Saisir votre nom d\'établissement' : 'Saisir votre nom de groupe',
+				'form_label'	=> ($user_group_page == 'stage') ? lang("signup_stage_step_1_form_field1_title") : lang("signup_form_title1"),
 				'input_type'	=> 'text',
 				'form_msg'		=> 'Ex: Wu tang clan, Manu chao ...',
-				'msg'			=> ($user_group_page == 'stage') ? 'Saisir votre nom d\'établissement' : 'Saisir votre nom de groupe'
+				'msg'			=> ($user_group_page == 'stage') ? lang("signup_stage_step_1_form_field1_title") : lang("signup_form_title1")
 			),
 			//country
 			array(
 				'id'			=> 'country',
-				'title'			=> 'Pays',
+				'title'			=> lang("country"),
 				'val'			=> !empty($user_page['country']) ? $user_page['country'] : '',
 				'type'			=> 'text',
-				'form_label'	=> 'Saisir votre pays',
+				'form_label'	=> lang("users_page_inputcountry"),
 				'input_type'	=> 'text',
 				'form_msg'		=> 'Ex: France, Canada ...',
-				'msg'			=> 'Saisir votre pays'
+				'msg'			=> lang("users_page_inputcountry")
 			),
 			//city
 			array(
 				'id'			=> 'city',
-				'title'			=> 'Ville',
+				'title'			=> lang("city"),
 				'val'			=> !empty($user_page['city']) ? $user_page['city'] : '',
 				'type'			=> 'text',
-				'form_label'	=> 'Saisir votre ville',
+				'form_label'	=> lang("users_page_inputcity"),
 				'input_type'	=> 'text',
 				'form_msg'		=> 'Ex: Paris, Montréal ...',
-				'msg'			=> 'Saisir votre ville'
+				'msg'			=> lang("users_page_inputcity")
 			),
 			//website
 			array(
 				'id'			=> 'website',
-				'title'			=> 'Site officiel',
+				'title'			=> lang("users_page_website"),
 				'val'			=> !empty($user_page['website']) ? $user_page['website'] : '',
 				'type'			=> 'url',
-				'form_label'	=> 'Saisir le lien de votre site officiel',				
+				'form_label'	=> lang("users_page_inputwebsite"),				
 				'input_type'	=> 'url',
 				'form_msg'		=> 'Ex: http://www.monsite.com',
-				'msg'			=> 'Saisir le lien de votre site officiel'
+				'msg'			=> lang("users_page_inputwebsite")
 			)
 		);	
 		$empty_infos = empty($user_page['company']) && empty($user_page['country']) && empty($user_page['city']) && empty($user_page['website']);
 		
 		//social links
-		$title_social_links = heading('Liens sociaux', 1 ,'class="title-page ui-corner-top"');
+		$title_social_links = heading(lang("users_page_socialmed"), 1 ,'class="title-page ui-corner-top"');
 		
 		$social_links = array(
 			array(
@@ -137,10 +137,10 @@ class Page extends CI_Controller {
 				'logo'			=> '<span aria-hidden="true" class="fs-50 grey icon-facebook"></span>',
 				'val' 			=> !empty($user_page['facebook']) ? $user_page['facebook'] : '',				
 				'type'			=> 'logo',
-				'form_label'	=> 'Saisir le lien de votre page facebook',
+				'form_label'	=> lang("users_page_inputsocialmed1"),
 				'input_type'	=> 'url',
 				'form_msg'		=> 'Ex: http://www.monfacebook.com',
-				'msg'			=> 'Saisir le lien de votre page facebook'
+				'msg'			=> lang("users_page_inputsocialmed1")
 			),
 			//myspace
 			array(
@@ -149,10 +149,10 @@ class Page extends CI_Controller {
 				'logo'			=> '<span aria-hidden="true" class="fs-50 grey icon-twitter"></span>',
 				'val'			=> !empty($user_page['myspace']) ? $user_page['myspace'] : '',
 				'type'			=> 'logo',
-				'form_label'	=> 'Saisir le lien de votre Myspace',
+				'form_label'	=> lang("users_page_inputsocialmed2"),
 				'input_type'	=> 'url',
 				'form_msg'		=> 'Ex: http://www.monmyspace.com',
-				'msg'			=> 'Saisir le lien de votre Myspace'
+				'msg'			=> lang("users_page_inputsocialmed2")
 			),
 			//twitter
 			array(
@@ -161,10 +161,10 @@ class Page extends CI_Controller {
 				'logo'			=> '<span aria-hidden="true" class="fs-50 grey icon-twitter"></span>',
 				'val'			=> !empty($user_page['twitter']) ? $user_page['twitter'] : '',
 				'type'			=> 'logo',
-				'form_label'	=> 'Saisir le lien de votre compte Twitter',
+				'form_label'	=> lang("users_page_inputsocialmed3"),
 				'input_type'	=> 'url',
 				'form_msg'		=> 'Ex: http://www.montwitter.com',
-				'msg'			=> 'Saisir le lien de votre compte Twitter'
+				'msg'			=> lang("users_page_inputsocialmed3")
 			),
 			//google plus
 			array(
@@ -173,17 +173,17 @@ class Page extends CI_Controller {
 				'logo'			=> '<span aria-hidden="true" class=" fs-50 grey icon-google-plus"></span>',
 				'val'			=> !empty($user_page['google_plus']) ? $user_page['google_plus'] : '',
 				'type'			=> 'logo',
-				'form_label'	=> 'Saisir le lien de votre profil Google +',
+				'form_label'	=> lang("users_page_inputsocialmed4"),
 				'input_type'	=> 'url',
 				'form_msg'		=> 'Ex: http://www.mongoogleplus.com',
-				'msg'			=> 'Saisir le lien de votre profil Google +'
+				'msg'			=> lang("users_page_inputsocialmed4")
 			)
 		);	
 		$empty_social_links = empty($user_page['facebook']) && empty($user_page['myspace']) && empty($user_page['twitter']) && empty($user_page['google_plus']);
 
 		
 		//description : biographie pour les groupes		
-		$title_description = ($user_group_page == 'stage') ? heading('Description', 1 ,'class="title-page ui-corner-top"') : heading('Biographie', 1 ,'class="title-page ui-corner-top"');		
+		$title_description = ($user_group_page == 'stage') ? heading(lang("desc"), 1 ,'class="title-page ui-corner-top"') : heading(lang("bio"), 1 ,'class="title-page ui-corner-top"');		
 		$description = !empty($user_page['description']) ? $user_page['description'] : '';
 			
 		
@@ -192,7 +192,7 @@ class Page extends CI_Controller {
 		$nb_concerts = count($concerts);	
 		//list_open_concerts = liste des concerts à venir
 		//list_close_concerts = liste des concerts passés, joués				
-		$title_concerts = 'Concerts à venir ('.$nb_concerts.')';	
+		$title_concerts = lang("users_page_shows_upcoming").' ('.$nb_concerts.')';	
 		$list_concerts = '';				
 				
 		foreach($concerts as $concert){
@@ -228,7 +228,7 @@ class Page extends CI_Controller {
 		$medias = $this->media_model->get_all($user_page['id']);				
 		
 		/**********SOUND**********/
-		$title_sounds = heading('<span aria-hidden="true" class="icon-music fs-14"></span> Sons', 1 ,'class="title-page ui-corner-top"');
+		$title_sounds = heading('<span aria-hidden="true" class="icon-music fs-14"></span> '.lang("users_page_menu3"), 1 ,'class="title-page ui-corner-top"');
 		$all_sound = $this->sound_model->get($user_page['id']);
 		$sound = array();
 		$sound['tracks'] = '';
@@ -309,7 +309,7 @@ class Page extends CI_Controller {
 		
 				
 		/**********VIDEOS**********/		
-		$title_videos = heading('Vidéos', 1 ,'class="title-page ui-corner-top"');							
+		$title_videos = heading(lang("users_page_menu4"), 1 ,'class="title-page ui-corner-top"');							
 		$videos = array();		
 		
 		$videos['yt_feed_count'] = 0;				
@@ -467,7 +467,7 @@ class Page extends CI_Controller {
 		
 		/*****GET TWITTER INFOS*****/			$twitter = array();		if(TWITTER_SCREEN_NAME){
 			$twitter_screen_name = TWITTER_SCREEN_NAME;
-			$twitter_data = $this->_get_data('http://api.twitter.com/1/users/show.json?screen_name='.$twitter_screen_name);
+			$twitter_data = $this->_get_data('http://api.twitter.com/1.1/users/show.json?screen_name='.$twitter_screen_name);
 			$tweets = $this->_get_data('http://api.twitter.com/1/statuses/user_timeline.json?screen_name='.$twitter_screen_name.'&count=5'); 
 			$twitter = array(
 				'link'			=> TWITTER_LINK,
@@ -486,7 +486,7 @@ class Page extends CI_Controller {
 		//var header		
 		$this->header['doctype'] = 'html5';
 		$this->header['title'] = empty($user_page['company']) ? $username : $user_page['company']. ' | b-onstage';
-		$this->header['description'] = 'Mettre une description';		
+		$this->header['description'] = lang("user_page_desc");		
 		
 		$data = array(			
 			'user_page'					=> $user_page,

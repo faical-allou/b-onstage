@@ -12,27 +12,27 @@
 			<div class="mb-10"><?=anchor($sc_user['permalink_url'],$sc_user['username'], array('class' => 'fs-18 grey bold ts-white'))?></div>													
 			<div class="mb-10 grey bold">			
 				<span aria-hidden="true" class="icon-music fs-14"></span>
-				<span class="ml-5 mr-10 fs-14"><?=$sc_user['track_count']?> pistes</span>			
+				<span class="ml-5 mr-10 fs-14"><?=$sc_user['track_count']?> <?php echo strtolower(lang("users_page_sons_track")) ?></span>			
 			</div>	
 			<!--button-->			
 			<div>			
-				<span><button data-tracks-id="sc-tracks-<?=$sc_user['id']?>" class="sc-tracks-listen">Ecouter</button></span>
-				<span><button class="sc-synchro-user" data-sc-user-id="<?=$sc_user['id']?>">Synchroniser</button></span>
-				<span><button class="sc-delete-user" data-sc-user-id="<?=$sc_user['id']?>">Supprimer</button></span>
+				<span style="display:none"><button data-tracks-id="sc-tracks-<?=$sc_user['id']?>" class="sc-tracks-listen"><?php echo lang("listen") ?></button></span>
+				<span><button class="sc-synchro-user" data-sc-user-id="<?=$sc_user['id']?>"><?php echo lang("sync") ?></button></span>
+				<span><button class="sc-delete-user" data-sc-user-id="<?=$sc_user['id']?>"><?php echo lang("delete") ?></button></span>
 			</div>		
 		</div>		
 	</header>
 	
 	<?php if($sc_user['track_count'] == 0) { ?>
 	<div class="p-20">
-		<p class="grey fs-15"><i>Aucune pistes disponibles.</i></p>
+		<p class="grey fs-15"><i><?php echo lang("users_page_sons_notrack") ?></i></p>
 	</div>
 	<?php } else {?>	
 	
 	<!--tracks-->
 	<div>
 		<div class="m-10 fs-12 bold clearfix">			
-			<span class="right">Afficher</span>	
+			<span class="right"><?php echo lang("show") ?></span>	
 		</div>	
 		<ul class="sc-tracks" id="sc-tracks-<?=$sc_user['id']?>">
 			<?php foreach($sc_tracks as $sc_track){ 	

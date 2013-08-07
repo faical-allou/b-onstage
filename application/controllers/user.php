@@ -17,6 +17,9 @@ class User extends CI_Controller {
 		$this->load->model('genre_model');
 		$this->load->model('reservation_model');
 		$this->load->model('notification_model');
+		$this->load->library('session');
+		include("/home/bonstage/dev.b-onstage/application/config/lang.php");
+		$this->lang_counts = $lang_counts;
 
 		//init vars
 		if($this->ion_auth->logged_in()){
@@ -51,8 +54,8 @@ class User extends CI_Controller {
 		{
 			/*****HEADER*****/
 			$this->header['doctype'] = 'html5';
-			$this->header['title'] = 'Mes paramètres de compte';
-			$this->header['description'] = 'Mettre une description';			
+			$this->header['title'] = lang("user_home_title");
+			$this->header['description'] = lang("user_home_desc");			
 			
 			//$this->header['genres'] = $this->genre_model->get_all();
 
@@ -63,7 +66,7 @@ class User extends CI_Controller {
 			$this->data['attrs_label'] = array('class' => 'grey fs-12 bold pl-2');
 			
 			/*username*/
-			$this->data['label_username'] = 'Saisir un nom d\'utilisateur';
+			$this->data['label_username'] = lang("users_home_username_txt");
 			$this->data['input_username'] = array(
 				'id'			=> 'input-username',
 				'name'			=> 'input-username',
@@ -72,7 +75,7 @@ class User extends CI_Controller {
 			
 			/*password*/
 			//old password
-			$this->data['label_old_password'] = 'Ancien mot de passe';
+			$this->data['label_old_password'] = lang("users_home_passwrod_old");
 			$this->data['old_password'] = array(
 				'class'		=> 'input ui-corner-all fs-13 grey',
 				'name'		=> 'old-password',
@@ -80,7 +83,7 @@ class User extends CI_Controller {
 			);
 
 			//new password
-			$this->data['label_new_password'] = 'Nouveau mot de passe';
+			$this->data['label_new_password'] = lang("users_home_passwrod_new");
 			$this->data['new_password'] = array(
 				'class'		=> 'input ui-corner-all fs-13 grey',
 				'name'		=> 'new-password',
@@ -89,7 +92,7 @@ class User extends CI_Controller {
 			);
 
 			//new password confirm
-			$this->data['label_new_confirm_password'] = 'Confirmer le mot de passe';
+			$this->data['label_new_confirm_password'] = lang("users_home_passwrod_conf");
 			$this->data['new_confirm_password'] = array(
 				'class'		=> 'input ui-corner-all fs-13 grey',
 				'name'		=> 'new-password-confirm',
@@ -98,7 +101,7 @@ class User extends CI_Controller {
 			);
 
 			/*company*/
-			$this->data['label_company'] = 'Saisir un nom de groupe';
+			$this->data['label_company'] = lang("users_home_input_artist_name");
 			$this->data['input_company'] = array(
 				'id'			=> 'input-company',
 				'name'			=> 'input-company',
@@ -106,7 +109,7 @@ class User extends CI_Controller {
 			);
 			
 			/*url profil*/
-			$this->data['label_url_profil'] = 'L\'adresse de votre profil sera la suivante';
+			$this->data['label_url_profil'] = lang("users_home_url");
 			$this->data['label_prefix_url_profil'] = site_url();
 			$this->data['input_url_profil'] = array(
 				'id'			=> 'input-url-profil',
@@ -659,12 +662,12 @@ class User extends CI_Controller {
 			if(!$this->ion_auth->change_password($this->session->userdata($this->config->item('identity', 'ion_auth')), $old_password, $new_password))
 				throw new Exception('BD_ERROR');
 			
-			echo json_encode(array('status' => 'SUCCESS', 'msg' => 'Mot de passe modifié avec succès.'));						
+			echo json_encode(array('status' => 'SUCCESS', 'msg' => lang("users_home_passwrod_success")));						
 			//$this->logout();							
 		
 		} catch (Exception $e) {
 			switch($e->getMessage()){				
-				case 'BD_ERROR'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => 'Une erreur s\'est produite, veuillez essayez ultérieurement.'));break;								
+				case 'BD_ERROR'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => lang("error_retry")));break;								
 				case 'NOT_AJAX' 		: show_404();break;
 				case 'LOGIN'			: redirect('login', 'refresh');break;
 				default					: break;
@@ -903,12 +906,12 @@ class User extends CI_Controller {
 			if(!$this->db->update('users', array('company' => $company)))
 				throw new Exception('BD_ERROR');
 					
-			echo json_encode(array('status' => 'SUCCESS', 'msg' => 'Nom du groupe modifié avec succès.'));						
+			echo json_encode(array('status' => 'SUCCESS', 'msg' => lang("users_home_input_artist_name_success")));						
 		
 		} catch (Exception $e) {
 			switch($e->getMessage()){				
-				case 'EXIST'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => 'Le nom du groupe existe déjà.'));break;								
-				case 'BD_ERROR'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => 'Une erreur s\'est produite, veuillez réessayer plus tard.'));break;				
+				case 'EXIST'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => lang("users_home_input_artist_name_error1")));break;								
+				case 'BD_ERROR'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => lang("error_retry")));break;				
 				case 'NOT_AJAX' 		: show_404();break;
 				case 'LOGIN'			: redirect('login', 'refresh');break;
 				default					: break;
@@ -935,13 +938,13 @@ class User extends CI_Controller {
 			if(!$this->db->update('users', array('username' => $username)))
 				throw new Exception('BD_ERROR');
 					
-			echo json_encode(array('status' => 'SUCCESS', 'msg' => 'Nom d\'utilisateur modifié avec succès.'));						
+			echo json_encode(array('status' => 'SUCCESS', 'msg' => lang("users_home_username_success")));						
 		
 		} catch (Exception $e) {
 			switch($e->getMessage()){				
-				case 'EXIST'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => 'Le nom d\'utilisateur existe déjà.'));break;								
-				case 'BD_ERROR'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => 'Une erreur s\'est produite, veuillez réessayer plus tard.'));break;
-				case 'USERNAME_ERROR'	: echo json_encode(array('status' => $e->getMessage(), 'msg' => 'Champ saisie invalide, il ne doit pas y avoir d\'espace ni de caractères spéciaux.'));break;
+				case 'EXIST'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => lang("users_home_username_error1")));break;								
+				case 'BD_ERROR'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => lang("users_home_username_error2")));break;
+				case 'USERNAME_ERROR'	: echo json_encode(array('status' => $e->getMessage(), 'msg' => lang("users_home_username_error3")));break;
 				case 'NOT_AJAX' 		: show_404();break;
 				case 'LOGIN'			: redirect('login', 'refresh');break;
 				default					: break;
@@ -969,13 +972,13 @@ class User extends CI_Controller {
 			if(!$this->db->update('users', array('web_address' => $web_address)))
 				throw new Exception('BD_ERROR');
 					
-			echo json_encode(array('status' => 'SUCCESS', 'msg' => 'Url du profil modifiée avec succès.'));						
+			echo json_encode(array('status' => 'SUCCESS', 'msg' => lang("users_home_url_success")));						
 		
 		} catch (Exception $e) {
 			switch($e->getMessage()){				
-				case 'EXIST'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => 'Url du profil existe déjà.'));break;								
-				case 'BD_ERROR'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => 'Une erreur s\'est produite, veuillez réessayer plus tard.'));break;
-				case 'URL_PROFIL_ERROR'	: echo json_encode(array('status' => $e->getMessage(), 'msg' => 'Champ saisie invalide, il ne doit pas y avoir d\'espace ni de caractères spéciaux.'));break;
+				case 'EXIST'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => lang("users_home_url_error1")));break;								
+				case 'BD_ERROR'			: echo json_encode(array('status' => $e->getMessage(), 'msg' => lang("error_retry")));break;
+				case 'URL_PROFIL_ERROR'	: echo json_encode(array('status' => $e->getMessage(), 'msg' => lang("users_home_username_error3")));break;
 				case 'NOT_AJAX' 		: show_404();break;
 				case 'LOGIN'			: redirect('login', 'refresh');break;
 				default					: break;
@@ -992,20 +995,20 @@ class User extends CI_Controller {
 		else {
 
 			$this->form_validation->set_error_delimiters('<div class="ui-state-error ui-corner-all dib fs-12 bold p-5 mt-10">', '</div>');
-			$this->form_validation->set_rules('first_name', 'Prénom');
-			$this->form_validation->set_rules('last_name', 'Nom');
-			$this->form_validation->set_rules('address', 'Adresse');
-			$this->form_validation->set_rules('zip', 'Code Postal');
-			$this->form_validation->set_rules('city', 'Ville');
-			$this->form_validation->set_rules('country', 'Pays');
-			$this->form_validation->set_rules('phone', 'Téléphone');
+			$this->form_validation->set_rules('first_name', lang("first_name"));
+			$this->form_validation->set_rules('last_name', lang("last_name"));
+			$this->form_validation->set_rules('address', lang("address"));
+			$this->form_validation->set_rules('zip', lang("postalcode"));
+			$this->form_validation->set_rules('city', lang("city"));
+			$this->form_validation->set_rules('country', lang("country"));
+			$this->form_validation->set_rules('phone', lang("phone"));
 
 			if ($this->form_validation->run() == false)
 			{
 				//var header
 				$this->header['doctype'] = 'html5';
-				$this->header['title'] = 'Modifier mes coordonnées';
-				$this->header['description'] = 'Mettre une description';
+				$this->header['title'] = lang("user_update_information_title");
+				$this->header['description'] = lang("user_update_information_desc");
 				
 				//var message
 				$this->data['message'] =($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message'));
@@ -1182,10 +1185,10 @@ class User extends CI_Controller {
 				unlink($src);
 				$update_data = array('cover' => $dest);
 				$this->ion_auth->update($user_id, $update_data);
-				echo json_encode(array('status' => 'OK', 'file' => site_url($dest), 'msg' => 'Photo de couverture mise à jour'));
+				echo json_encode(array('status' => 'OK', 'file' => site_url($dest), 'msg' => lang("users_page_modpic_success")));
 			}
 			else
-				echo json_encode(array('status' => 'ERROR', 'msg' => 'Une erreur s\'est produite, veuillez réessayer'));
+				echo json_encode(array('status' => 'ERROR', 'msg' => lang("error_retry")));
 		}
 		else
 			show_404('error_general');
@@ -1236,10 +1239,10 @@ class User extends CI_Controller {
 				unlink($src);
 				$update_data = array('avatar' => $dest);
 				$this->ion_auth->update($user_id, $update_data);
-				echo json_encode(array('status' => 'OK', 'file' => site_url($dest), 'msg' => 'Avatar mis à jour'));
+				echo json_encode(array('status' => 'OK', 'file' => site_url($dest), 'msg' => lang("users_page_modava_success")));
 			}
 			else
-				echo json_encode(array('status' => 'ERROR', 'msg' => 'Une erreur s\'est produite, veuillez réessayer'));
+				echo json_encode(array('status' => 'ERROR', 'msg' => lang("error_retry")));
 		}
 		else
 			show_404('error_general');
@@ -1251,8 +1254,8 @@ class User extends CI_Controller {
 			redirect('login', 'refresh');
 		}
 		else{
-			$this->header['title'] = 'Mes réservations';
-			$this->header['description'] = 'Mettre une description';			
+			$this->header['title'] = lang("user_rese_title");
+			$this->header['description'] = lang("user_rese_desc");			
 			
 			$reservations = $this->reservation_model->get_by_artist_id($this->user['id']);
 			$pending_reservations = '';
@@ -1266,32 +1269,41 @@ class User extends CI_Controller {
 				$payment_type = array();				
 				switch($reservation['payment_type']){
 					case 1 :
-						array_push($payment_type, 'Non renseigné');
+						array_push($payment_type, lang("notset"));
 						break;
 					case 2 :
-						array_push($payment_type, 'Non rémunéré');
+						array_push($payment_type, lang("users_calendar_create_non_renum"));
 						break;
 					case 3 :
 						if($reservation['payment_amount'] > 0)
-							array_push($payment_type,'Cachet de '.round($reservation['payment_amount'],2).'€');
+							array_push($payment_type,lang("users_calendar_create_cachet").' '.round($reservation['payment_amount'],2).'€');
 						if($reservation['percent_drink'] > 0)
-							array_push($payment_type, round($reservation['percent_drink'],2).'% sur les consommations');
+							array_push($payment_type, round($reservation['percent_drink'],2).'% '.lang("users_calendar_create_conso"));
 						if($reservation['percent_entry'] > 0)
-							array_push($payment_type,round($reservation['percent_entry'],2).'% sur la billeterie');
+							array_push($payment_type,round($reservation['percent_entry'],2).'% '.lang("users_calendar_create_tickets"));
 						if($reservation['refund_fees'])
-							array_push($payment_type,'Remboursement des frais de réservation');
+							array_push($payment_type,lang("users_calendar_create_remb"));
 						break;
 					default : break;
 				}
 				//musical genre
+				//Determine row name depending on lang loaded
+				if($this->session->userdata('lang_loaded') == "french"){$rowname = 'name';}
+				else {
+					foreach($this->lang_counts as $key => $value){
+						if($this->session->userdata('lang_loaded') == $value["name"]){
+							$rowname = 'name_'.$value["id"];
+						}
+					}
+				}
 				$musical_genre = array();
 				$genres_ids = explode('|', $reservation['genre_id']);
-				$query = $this->db->select('name')
+				$query = $this->db->select($rowname)
 							->from('musical_genres')
 							->where_in('id', $genres_ids)
 							->get();
 				foreach ($query->result_array() as $row)
-					array_push($musical_genre, ucfirst($row['name']));
+					array_push($musical_genre, ucfirst($row[$rowname]));
 					
 				//data
 				$data = array(					
@@ -1365,8 +1377,8 @@ class User extends CI_Controller {
 
 			//variable header
 			$this->header['doctype'] = 'html5';
-			$this->header['title'] = 'Gestion du calendrier';
-			$this->header['description'] = 'Mettre une description';			
+			$this->header['title'] = lang("user_calendar_title");
+			$this->header['description'] = lang("user_calendar_desc");			
 
 			//variable data
 			
@@ -1375,14 +1387,14 @@ class User extends CI_Controller {
 
 			//button add event
 			$user_group = $this->ion_auth->in_group('stage') ? 'stage' : 'artist';
-			$this->data['button_create_event'] = ($user_group == 'stage') ? anchor(site_url('event/create'),'CREER EVENEMENT', array('class' => 'ui-red', 'id' => 'button-create-event')) : '';
+			$this->data['button_create_event'] = ($user_group == 'stage') ? anchor(site_url('event/create'),lang("users_calendar_addevent"), array('class' => 'ui-red', 'id' => 'button-create-event')) : '';
 
 			//filtres
 			list($events_open, $events_pending, $events_accepted, $events_close) = $this->event_model->get_events('','', $this->user['id']);
 
 			$this->data['filter_open'] = array(
 				'id'			=> 'filter-open',
-				'title'			=> 'Filter les évènements ouverts',
+				'title'			=> lang("users_calendar_open_txt"),
 				'counter'		=> count($events_open),
 				'color'			=> 'blue',
 				'checkbox'		=> array(
@@ -1391,12 +1403,12 @@ class User extends CI_Controller {
 					'value'			=> 'open',
 					'ckecked'		=> FALSE
 					),
-				'label'			=> 'Ouvert'
+				'label'			=> lang("open")
 			);
 
 			$this->data['filter_pending'] = array(
 				'id'			=> 'filter-pending',
-				'title'			=> 'Filter les évènements ayant des demandes de réservations',
+				'title'			=> lang("users_calendar_req_inprocess_txt"),
 				'counter'		=> count($events_pending),
 				'color'			=> 'yellow',
 				'checkbox'		=> array(
@@ -1405,12 +1417,12 @@ class User extends CI_Controller {
 					'value'			=> 'pending',
 					'ckecked'		=> FALSE
 					),
-				'label'			=> 'Demandes en cours'
+				'label'			=> lang("req_inprocess")
 			);
 
 			$this->data['filter_accepted'] = array(
 				'id'			=> 'filter-accepted',
-				'title'			=> 'Filtrer les évènements en attente de validation',
+				'title'			=> lang("users_calendar_awaiting_txt"),
 				'counter'		=> count($events_accepted),
 				'color'			=> 'orange',
 				'checkbox'		=> array(
@@ -1419,12 +1431,12 @@ class User extends CI_Controller {
 					'value'			=> 'accepted',
 					'ckecked'		=> FALSE
 					),
-				'label'			=> 'En attente'
+				'label'			=> lang("awaiting")
 			);
 
 			$this->data['filter_close'] = array(
 				'id'			=> 'filter-close',
-				'title'			=> 'Filtrer les évènements confirmés',
+				'title'			=> lang("users_calendar_confirmed_txt"),
 				'counter'		=> count($events_close),
 				'color'			=> 'green',
 				'checkbox'		=> array(
@@ -1433,7 +1445,7 @@ class User extends CI_Controller {
 					'value'			=> 'close',
 					'ckecked'		=> FALSE
 					),
-				'label'			=> 'Confirmé'
+				'label'			=> lang("confirmed")
 			);
 
 			//switch
@@ -1452,7 +1464,7 @@ class User extends CI_Controller {
 			$events = $this->event_model->get_by_user_id($this->user['id']);
 			$tmpl_ev_list = array('table_open' => '<table border="0" cellpadding="0" cellspacing="0" class="table-event-list">');
 			$this->table->set_template($tmpl_ev_list);
-			$this->table->set_heading(array('Date', 'Horaire', 'Infos', 'Action'));
+			$this->table->set_heading(array(lang("date"), lang("schedule"), lang("infos"), lang("action")));
 
 			foreach($events as $event){
 				/*****EVENT STATUS*****/
@@ -1470,12 +1482,21 @@ class User extends CI_Controller {
 				$title = $event['title'];
 
 				/*****MUSICAL GENRES*****/
+				//Determine row name depending on lang loaded
+				if($this->session->userdata('lang_loaded') == "french"){$rowname = 'name';}
+				else {
+					foreach($this->lang_counts as $key => $value){
+						if($this->session->userdata('lang_loaded') == $value["name"]){
+							$rowname = 'name_'.$value["id"];
+						}
+					}
+				}
 				$tabs_genre = explode('|', $event['genre_id']);
 				$musical_genres = '';
 				foreach($tabs_genre as $genre_id){
 					if($genre_id != ''){
 						$musical_genre = $this->genre_model->get_by_id($genre_id);
-						$musical_genres .= $musical_genre['name'].', ';
+						$musical_genres .= $musical_genre[$rowname].', ';
 					}
 				}
 
@@ -1483,16 +1504,16 @@ class User extends CI_Controller {
 				$payment_type = '';
 				switch($event['payment_type']){
 					case 1 :
-						$payment_type = 'Non renseigné';
+						$payment_type = lang("notset");
 						break;
 					case 2 :
-						$payment_type = 'Non rémunéré';
+						$payment_type = lang("users_calendar_create_non_renum");
 						break;
 					case 3 :
-						$payment_type.= ($event['payment_amount'] > 0) ? 'Cachet de '.round($event['payment_amount'],2).' € + ' : '';
-						$payment_type.= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'% sur les consommations + ' : '';
-						$payment_type.= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% sur la billeterie + ' : '';
-						$payment_type.= ($event['refund_fees'] > 0) ? 'Remboursement des frais de réservation' : '';
+						$payment_type.= ($event['payment_amount'] > 0) ? lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' € + ' : '';
+						$payment_type.= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'% '.lang("users_calendar_create_conso").' + ' : '';
+						$payment_type.= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets").' + ' : '';
+						$payment_type.= ($event['refund_fees'] > 0) ? lang("users_calendar_create_remb") : '';
 						break;
 					default : break;
 				}
@@ -1515,10 +1536,10 @@ class User extends CI_Controller {
 							$schedule,
 							'<a href="javascript:void(0)" class="blue link-more-info"><span aria-hidden="true" class="fs-8 mr-5 icon-plus"></span>'.$title.'</a>'.
 							'<div class="normal grey hidden">'.
-								'<p><strong>Genre musical : </strong>'.$musical_genres.'</p>'.
-								'<p><strong>Rémunération de l\'artiste : </strong>'.$payment_type.'</p>'.
-								'<p><strong>Montant de la réservation : </strong>'.$reservation.'</p>'.
-								'<p><strong>Prix des entrées : </strong>'.$entry.'</p>'.
+								'<p><strong>'.lang("users_calendar_genre").' : </strong>'.$musical_genres.'</p>'.
+								'<p><strong>'.lang("users_calendar_create_payment").' : </strong>'.$payment_type.'</p>'.
+								'<p><strong>'.lang("users_calendar_create_book").' : </strong>'.$reservation.'</p>'.
+								'<p><strong>'.lang("users_calendar_create_price").' : </strong>'.$entry.'</p>'.
 							'</div>',
 							'<div class="link-action">'.
 							anchor(site_url('event/edit/'.$event['id']), '<span aria-hidden="true" class="fs-13 mr-10 icon-pencil"></span>').
@@ -1538,11 +1559,11 @@ class User extends CI_Controller {
 							$schedule,
 							'<a href="javascript:void(0)" class="yellow link-more-info"><span aria-hidden="true" class="fs-8 mr-5 icon-plus"></span>'.$title.'</a>'.
 							'<div class="normal grey hidden">'.
-							'<p><strong>Nbr. de demandes de réservation : </strong>'.$count_reservations.'</p>'.
-							'<p><strong>Genre musical : </strong>'.$musical_genres.'</p>'.
-							'<p><strong>Rémunération de l\'artiste : </strong>'.$payment_type.'</p>'.
-							'<p><strong>Montant de la réservation : </strong>'.$reservation.'</p>'.
-							'<p><strong>Prix des entrées : </strong>'.$entry.'</p>'.
+							'<p><strong>'.lang("users_rese_amount").' : </strong>'.$count_reservations.'</p>'.
+							'<p><strong>'.lang("users_calendar_genre").' : </strong>'.$musical_genres.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_payment").' : </strong>'.$payment_type.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_book").' : </strong>'.$reservation.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_price").' : </strong>'.$entry.'</p>'.
 							'</div>',
 							'<div class="link-action">'.
 							anchor(site_url('event/edit/'.$event['id']), '<span aria-hidden="true" class="fs-13 mr-10 icon-pencil"></span>').
@@ -1738,8 +1759,8 @@ class User extends CI_Controller {
 			
 			//variable header
 			$this->header['doctype'] = 'html5';
-			$this->header['title'] = $this->data['title'] = 'Mes contacts';
-			$this->header['description'] = 'Mes contacts';
+			$this->header['title'] = $this->data['title'] = lang("user_contact_title");
+			$this->header['description'] = lang("user_contact_desc");
 			
 			$this->data['contacts'] = $contacts;
 
@@ -1782,8 +1803,8 @@ class User extends CI_Controller {
 
 			//variable header
 			$this->header['doctype'] = 'html5';
-			$this->header['title'] = $this->data['title'] = 'Notifications';
-			$this->header['description'] = 'Mes notifications';			
+			$this->header['title'] = $this->data['title'] = lang("user_notifs_title");
+			$this->header['description'] = lang("user_notifs_desc");		
 
 			//var data			
 			$this->data['notifications'] = $notifications['notifications'];
@@ -2199,9 +2220,9 @@ class User extends CI_Controller {
 			$this->email->subject($data['subject']);
 			$this->email->message($html_message);
 			if($this->email->send())		
-				echo json_encode(array('status' => 'SUCCESS', 'msg' => 'Message envoyé avec succès'));
+				echo json_encode(array('status' => 'SUCCESS', 'msg' => lang("users_contact_send_success")));
 			else
-				echo json_encode(array('status' => 'ERROR', 'msg' => 'Une erreur s\'est produite, veuillez réessayer ultérieurement.'));		
+				echo json_encode(array('status' => 'ERROR', 'msg' => lang("error_retry")));		
 		}
 	}
 	

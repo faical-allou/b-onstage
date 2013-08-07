@@ -6,7 +6,7 @@
 				open				: true,
 				alert_class			: 'alert',
 				link_class			: 'alert-link',
-				link_text			: 'Afficher les recommendations',
+				link_text			: document.getElementById("showrecom").innerHTML,
 				description_class	: 'alert-description ui-corner-all',
 				close_class			: 'alert-close ui-corner-tr ui-corner-bl',
 				close_text			: 'x'	

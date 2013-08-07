@@ -28,21 +28,21 @@ class Reservation extends CI_Controller {
 					'pseudo'				=> $artist['username'],
 					'reservation_id'		=> $reservation_id,
 					'stage_name'			=> $stage['company'],
-					'event_date'			=> date_format($event_date,'d/m/Y').' à '.date_format($event_date,'H:i'),  
+					'event_date'			=> date_format($event_date,'d/m/Y').' '.lang("to2").' '.date_format($event_date,'H:i'),  
 					'url_profil'			=> (!empty($artist['web_address'])) ? site_url($artist['web_address']) : site_url('page/'.$artist['username']),
 					'url_new_reservation'	=> site_url('concert')
 				);
 				$html_message = $this->parser->parse('user/email/delete_reservation', $data, TRUE);				
-				$this->email->from('ni.raffin@gmail.com	', 'b-onstage');
+				$this->email->from('contact@b-onstage.com	', 'b-onstage');
 				$this->email->to($artist['email']);
-				$this->email->cc('ni.raffin@gmail.com');
-				$this->email->subject('Demande de réservation refusée');
+				$this->email->cc('contact@b-onstage.com');
+				$this->email->subject(lang("users_rese_refuse_email_subject"));
 				$this->email->message($html_message);
 				$this->email->send();		
-				echo json_encode(array('status' => true, 'msg' => 'Suppression réussie'));			
+				echo json_encode(array('status' => true, 'msg' => lang("users_rese_refuse_success")));			
 			}
 			else{
-				echo json_encode(array('status' => false, 'msg' => 'Une erreur s\'est produite, veuillez réessayer'));
+				echo json_encode(array('status' => false, 'msg' => lang("error_retry")));
 			}
 		}
 		else
@@ -73,12 +73,12 @@ class Reservation extends CI_Controller {
 				$from_name = 'b-onstage';
 				$to = $artist['email'];
 				$cc = 'contact@b-onstage.com';				
-				$subject = 'Demande de réservation acceptée';				
+				$subject = lang("users_rese_accepted_email_subject");				
 				$data = array(
 					'pseudo'				=> $artist['username'],
 					'reservation_id'		=> $reservation_id,					
 					'stage_name'			=> $stage['company'],
-					'event_date'			=> date_format($event_date,'d/m/Y').' à '.date_format($event_date,'H:i'),  
+					'event_date'			=> date_format($event_date,'d/m/Y').' '.lang("to2").' '.date_format($event_date,'H:i'),  
 					'reservation'			=> round($event['reservation'],2),
 					'url_account'			=> site_url('user/reservations')
 				);
@@ -96,10 +96,10 @@ class Reservation extends CI_Controller {
 				if(!$this->notification_model->add($artist['id'], $text_notification, $link_notification, $avatar_notification, $priority_notification))
 					throw new Exception('ERROR_NOTIFICATION');								
 						
-				echo json_encode(array('status' => 'SUCCESS', 'msg' => 'Demande de réservation validée avec succès'));
+				echo json_encode(array('status' => 'SUCCESS', 'msg' => lang("users_rese_validate_success")));
 				
 			}catch (Exception $e) {
-				echo json_encode(array('status' => $e->getMessage(), 'msg' => 'Une erreur s\'est produite veuillez réessayer ultérieurement'));
+				echo json_encode(array('status' => $e->getMessage(), 'msg' => lang("error_retry")));
 			}
 		}
 		else
@@ -118,9 +118,9 @@ class Reservation extends CI_Controller {
 			$event_artist_id = $_POST['event_artist_id'];
 			$date_start = $_POST['date_start'];
 			if($this->reservation_model->cancel($reservation_id, $event_id, $event_status, $reservation_artist_id, $event_artist_id))
-				echo json_encode(array('status' => 'SUCCESS', 'msg' => 'Votre demande de réservation a été annulée avec succès.'));
+				echo json_encode(array('status' => 'SUCCESS', 'msg' => lang("users_rese_cancel_success")));
 			else
-				echo json_encode(array('status' => 'ERROR', 'msg' => 'Une erreur s\est produite, veuillez réessayer plus tard.'));
+				echo json_encode(array('status' => 'ERROR', 'msg' => lang("error_retry")));
 		}		
 	}
 	
@@ -147,17 +147,17 @@ class Reservation extends CI_Controller {
 		if(IS_AJAX){							
 			try{
 				if (!$this->ion_auth->logged_in())
-					throw new Exception('<p class="title fs-16 grey">Pour réserver une Date, il faut être un Artiste b-onstage.</p><p class="title grey fs-16">'.anchor(site_url('login'),'Connectez-vous', array('class' => 'purple')).' ou '.anchor(site_url('signup_choice'),'Inscrivez-vous', array('class' => 'purple')).' pour jouer live.</p>');
+					throw new Exception('<p class="title fs-16 grey">'.lang("book_error1").'</p><p class="title grey fs-16">'.anchor(site_url('login'),lang("connect"), array('class' => 'purple')).' '.lang("or").' '.anchor(site_url('signup_choice'),lang("aboutus_header3_aboutus"), array('class' => 'purple')).' '.lang("book_error1_1").'</p>');
 				
 				if(!$this->ion_auth->in_group('artist'))
-					throw new Exception('<p class="title fs-16">Les demandes de réservation de Scène ne sont faisable que par les Artistes.</p>');			
+					throw new Exception('<p class="title fs-16">'.lang("book_error2").'</p>');			
 				
 				$infos = $this->reservation_model->request($event_id);
 				$time_start = strtotime($infos['date_start']);
 				$time_end = strtotime($infos['date_end']);
 				$data = array(
 					'company'		=> $infos['stage_company'],
-					'date'			=> date('j', $time_start).' '.get_month(date('n',$time_start)).' de '.date('G\hi', $time_start).' à '.date('G\hi', $time_end),
+					'date'			=> date('j', $time_start).' '.get_month(date('n',$time_start)).' '.lang("de").' '.date('G\hi', $time_start).' '.lang("to2").' '.date('G\hi', $time_end),
 					'genres'		=> implode(', ',$infos['genres']),
 					'reservation'	=> round($infos['reservation'],2).' €',
 					'payment'		=> implode(', ', $infos['payment']),
@@ -195,12 +195,12 @@ class Reservation extends CI_Controller {
 				$from_name = 'b-onstage';
 				$to = $artist['email'];
 				$cc = 'contact@b-onstage.com';				
-				$subject = 'Votre demande de reservation n°'.$reservation_id;
+				$subject = lang("book_req_email_artist_subject").$reservation_id;
 				$data = array(
 					'pseudo'	=> $artist['username'],
 					'location'	=> $stage['company'],
 					'date'		=> date('d/m/Y', strtotime($event['date_start'])),
-					'schedule'	=> date('G\Hi', strtotime($event['date_start'])).' à'.date('G\Hi', strtotime($event['date_end']))
+					'schedule'	=> date('G\Hi', strtotime($event['date_start'])).' '.lang("to2").' '.date('G\Hi', strtotime($event['date_end']))
 				);	
 				$msg = $this->parser->parse('user/email/send_reservation', $data, TRUE);								
 				if(!$this->user_model->send_email($from, $from_name, $to, $cc, $subject, $msg))
@@ -216,7 +216,7 @@ class Reservation extends CI_Controller {
 				
 				//send email to stage
 				$to = $stage['email'];
-				$subject = 'Vous avez reçu une demande de réservation';
+				$subject = lang("book_req_email_stage_subject");
 				$data = array(
 					'pseudo'		=> $stage['username'],
 					'pseudo_artist'	=> $artist['username'],
@@ -235,10 +235,10 @@ class Reservation extends CI_Controller {
 				if(!$this->notification_model->add($stage['id'], $text_notification, $link_notification, $avatar_notification, $priority_notification))
 					throw new Exception('ERROR_NOTIFICATION');
 				
-				echo json_encode(array('status' => 'SUCCESS', 'msg' => 'Votre demande a bien été prise en compte'));			
+				echo json_encode(array('status' => 'SUCCESS', 'msg' => lang("book_req_success")));			
 				
 			}catch (Exception $e) {
-				echo json_encode(array('status' => $e->getMessage(), 'msg' => 'Une erreur s\'est produite veuillez réessayer ultérieurement'));
+				echo json_encode(array('status' => $e->getMessage(), 'msg' => lang("error_retry")));
 			}			
 		}
 	}

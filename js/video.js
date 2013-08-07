@@ -47,7 +47,7 @@
 							$('#form-add-yt-video').validate({
 								submitHandler: function(form) {				
 									ytUrl = $('#id-yt-video').val();									
-									vUrl = ytUrl.match(/http\:\/\/www\.youtube\.com\/watch\?v=([\w-]{11})/)[1];									
+									vUrl = ytUrl.match(/[a-z]\:\/\/www\.youtube\.com\/watch\?v=([\w-]{11})/)[1];									
 									yt_url = 'http://gdata.youtube.com/feeds/api/videos/' + vUrl;
 									yt_type = $('#id-yt-video').data('type');
 									$.ajax({
@@ -93,14 +93,14 @@
 						buttons: 
 						[
 							{
-								text: 'Valider',					
+								text: document.getElementById("validatetxt").innerHTML,					
 								'class':'ui-purple',					
 								click: function() {
 									 $('#form-add-yt-video').submit();											 
 								}
 							},
 							{
-								text:'Annuler',
+								text:document.getElementById("canceltxt").innerHTML,
 								click: function() {											
 									$( this ).dialog( "close" );	
 								}
@@ -216,14 +216,14 @@
 						buttons: 
 						[
 							{
-								text: 'Valider',					
+								text: document.getElementById("validatetxt").innerHTML,					
 								'class':'ui-purple',					
 								click: function() {
 									 $('#form-add-yt-flux').submit();											 
 								}
 							},
 							{
-								text:'Annuler',
+								text:document.getElementById("canceltxt").innerHTML,
 								click: function() {											
 									$( this ).dialog('close');	
 								}

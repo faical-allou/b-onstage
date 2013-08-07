@@ -163,7 +163,7 @@
 							buttons: 
 							[
 								{
-									text	: 'Valider',
+									text	: document.getElementById("validatetxt").innerHTML,
 									id		: 'confirm-update-cover',	
 									'class'	: 'ui-purple',									
 									click	: function() {			
@@ -192,7 +192,7 @@
 									}
 								},
 								{
-									text:'Annuler',
+									text:document.getElementById("canceltxt").innerHTML,
 									click: function() {	
 										if(jcrop_api)
 											jcrop_api.destroy();
@@ -312,7 +312,7 @@
 							buttons: 
 							[
 								{
-									text	: 'Valider',
+									text	: document.getElementById("validatetxt").innerHTML,
 									id		: 'confirm-update-avatar',	
 									'class'	: 'ui-purple',									
 									click: function() {			
@@ -337,7 +337,7 @@
 									}
 								},
 								{
-									text	:'Annuler',
+									text	:document.getElementById("canceltxt").innerHTML,
 									click	: function() {											
 										dialog_upload_avatar.dialog('close');
 									}
@@ -413,14 +413,14 @@
 						buttons: 
 						[
 							{
-								text: 'Valider',					
+								text: document.getElementById("validatetxt").innerHTML,					
 								'class':'ui-purple',					
 								click: function() {
 									 $('#form-update-info-' + id_info).submit();											 
 								}
 							},
 							{
-								text:'Annuler',
+								text:document.getElementById("canceltxt").innerHTML,
 								click: function() {											
 									$( this ).dialog( "close" );	
 								}

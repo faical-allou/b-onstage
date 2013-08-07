@@ -17,15 +17,15 @@
 								</p>
 							</div>								
 							<div>
-								<?=anchor($contact['contact_link'],'Voir profil', array('class' => 'contact-link'))?>
-								<button class="send-msg" data-email-to="<?=$contact['contact_email']?>">Envoyer message</button>
-								<button class="delete-contact" data-contact-id="<?=$contact['contact_id']?>">Supprimer</button>
+								<?=anchor($contact['contact_link'],lang("users_contact_seeprofile"), array('class' => 'contact-link'))?>
+								<button class="send-msg" data-email-to="<?=$contact['contact_email']?>"><?php echo lang("users_contact_sendmsg") ?></button>
+								<button class="delete-contact" data-contact-id="<?=$contact['contact_id']?>"><?php echo lang("delete") ?></button>
 							</div>	
 						</div>
 					</div>
 		<?php } } else {?>
 			<div class="p-20">
-				<p class="grey fs-15"><i>Aucun contact enregistré.</i></p>
+				<p class="grey fs-15"><i><?php echo lang("users_contact_notfound") ?></i></p>
 			</div>	
 		<?php } ?>		
 	</div>
@@ -36,15 +36,10 @@
 				<?=img(array('src' => site_url($user['avatar']), 'class' => 'ui-corner-all', 'width' => '100%'))?>
 			</div>
 			<div class="mb-20">
-				<?=anchor($user_link,'Afficher mon profil', array('id' => 'show-profil', 'class'=>'ui-purple', 'style' => 'width:100%;font-size:1em;'))?>
+				<?=anchor($user_link,lang("users_home_show_profile"), array('id' => 'show-profil', 'class'=>'ui-purple', 'style' => 'width:100%;font-size:1em;'))?>
 			</div>
 			<div class="recommendations">
-				<p class="grey fs-12 bold">Remplissez votre profil!</p>
-				<p class="grey fs-12 bold">Les profils les plus consultés sont ceux qui ont le plus de contenu...</p>
-				<p class="grey fs-12 bold">...Alors, mettez des images de vous sur votre profil.</p>
-				<p class="grey fs-12 bold">Pour faire leur choix, les Scènes vont vouloir vous écouter...</p>
-				<p class="grey fs-12 bold">...Alors mettez votre musique.</p>
-				<p class="grey fs-12 bold">Importez aussi vos photos, vos vidéos...</p>
+				<?php echo lang("users_home_profile_txt") ?>
 			</div>
 		</div>
 	</div>

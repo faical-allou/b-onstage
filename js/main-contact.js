@@ -44,7 +44,7 @@ $(function() {
 							send_msg_dialog
 							.append(data)
 							.dialog('option','position','center');						
-							$('#form-msg-subject').fieldWidth(1.0);
+							//$('#form-msg-subject').fieldWidth(1.0);
 							$('#form-msg-message').redactor({
 								buttons : ['bold', 'italic', 'fontcolor', '|','unorderedlist', 'orderedlist', 'outdent', 'indent', '|', 'link', '|', 'alignment', '|', 'horizontalrule'],
 								lang : 'fr'
@@ -91,14 +91,14 @@ $(function() {
 				buttons: 
 				[
 					{
-						text	: 'Envoyer',								
+						text	: document.getElementById("submittxt").innerHTML,								
 						'class'	: 'ui-purple',									
 						click: function() {		
 							$('#form-msg').submit();
 						}
 					},
 					{
-						text:'Annuler',
+						text:document.getElementById("canceltxt").innerHTML,
 						click: function() {																				
 							$(this).remove();															
 						}
@@ -121,13 +121,13 @@ $(function() {
 				modal			: true,
 				open			: function(){							
 					$(this)
-					.append('<p class="fs-12 bold">Voulez vous vraiment supprimer ce contact ?</p>')
+					.append('<p class="fs-12 bold">'+document.getElementById("users_contact_del_conf").innerHTML+'</p>')
 					.dialog('option','position','center');
 				},
 				buttons: 
 				[
 					{
-						text	: 'Supprimer',								
+						text	: document.getElementById("deletetxt").innerHTML,								
 						'class'	: 'ui-purple',									
 						click: function() {									
 							$.ajax({
@@ -155,7 +155,7 @@ $(function() {
 						}
 					},
 					{
-						text:'Annuler',
+						text:document.getElementById("canceltxt").innerHTML,
 						click: function() {																				
 							$(this).remove();															
 						}

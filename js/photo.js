@@ -153,7 +153,7 @@
 							buttons		:
 							[
 								{
-									text	: 'Valider',					
+									text	: document.getElementById("validatetxt").innerHTML,					
 									'class'	: 'ui-purple',										
 									click	: function() {			
 										try
@@ -285,7 +285,7 @@
 									}
 								},
 								{
-									text:'Annuler',
+									text:document.getElementById("canceltxt").innerHTML,
 									click: function() {			
 										$('#upload-photo').swfupload('destroy');								
 										$dialog_add_photos.remove();
@@ -438,14 +438,14 @@
 						buttons: 
 						[
 							{
-								text: 'Valider',					
+								text: document.getElementById("validatetxt").innerHTML,					
 								'class':'ui-purple',					
 								click: function() {
 									 $('#form-add-pi-user').submit();											 
 								}
 							},
 							{
-								text:'Annuler',
+								text:document.getElementById("canceltxt").innerHTML,
 								click: function() {											
 									$( this ).dialog( "close" );	
 								}
@@ -462,7 +462,7 @@
 					$('body').on('click', 'a.delete-pi-user', function(event){						
 						event.preventDefault();
 						piUserId = $(this).data('id');
-						var dialogDeletePiUser = $('<div><p class="fs-16 title grey">Supprimer ce compte picasa ?</div>')
+						var dialogDeletePiUser = $('<div><p class="fs-16 title grey">'+document.getElementById("users_page_picasa_delconf").innerHTML+'</div>')
 						.dialog({
 							autoOpen	: true,
 							resizable	: false,
@@ -472,7 +472,7 @@
 							buttons: 
 							[
 								{
-									text: 'Supprimer',					
+									text: document.getElementById("deletetxt").innerHTML,					
 									'class':'ui-purple',					
 									click: function() {
 										$.ajax({
@@ -502,7 +502,7 @@
 									}
 								},
 								{
-									text:'Annuler',
+									text:document.getElementById("canceltxt").innerHTML,
 									click: function() {											
 										$(this).remove();	
 									}

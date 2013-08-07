@@ -106,12 +106,12 @@
 						});
 					},
 					buttonText : {
-						today : 'Aujourd\'hui'						
+						today : document.getElementById("today_txt").innerHTML						
 					},
-					monthNames : ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
-					monthNamesShort : ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'],
-					dayNames : ['Dimanche', 'Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],
-					dayNamesShort : ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+					monthNames : [document.getElementById("month_1_name").innerHTML, document.getElementById("month_2_name").innerHTML, document.getElementById("month_3_name").innerHTML, document.getElementById("month_4_name").innerHTML, document.getElementById("month_5_name").innerHTML, document.getElementById("month_6_name").innerHTML, document.getElementById("month_7_name").innerHTML, document.getElementById("month_8_name").innerHTML, document.getElementById("month_9_name").innerHTML, document.getElementById("month_10_name").innerHTML, document.getElementById("month_11_name").innerHTML, document.getElementById("month_12_name").innerHTML],
+					monthNamesShort : [document.getElementById("shortmonth_1_name").innerHTML, document.getElementById("shortmonth_2_name").innerHTML, document.getElementById("shortmonth_3_name").innerHTML, document.getElementById("shortmonth_4_name").innerHTML, document.getElementById("shortmonth_5_name").innerHTML, document.getElementById("shortmonth_6_name").innerHTML, document.getElementById("shortmonth_7_name").innerHTML, document.getElementById("shortmonth_8_name").innerHTML, document.getElementById("shortmonth_9_name").innerHTML, document.getElementById("shortmonth_10_name").innerHTML, document.getElementById("shortmonth_11_name").innerHTML, document.getElementById("shortmonth_12_name").innerHTML],
+					dayNames : [document.getElementById("day_1_name").innerHTML, document.getElementById("day_2_name").innerHTML, document.getElementById("day_3_name").innerHTML, document.getElementById("day_4_name").innerHTML, document.getElementById("day_5_name").innerHTML, document.getElementById("day_6_name").innerHTML, document.getElementById("day_7_name").innerHTML],
+					dayNamesShort : [document.getElementById("shortday_1_name").innerHTML, document.getElementById("shortday_2_name").innerHTML, document.getElementById("shortday_3_name").innerHTML, document.getElementById("shortday_4_name").innerHTML, document.getElementById("shortday_5_name").innerHTML, document.getElementById("shortday_6_name").innerHTML, document.getElementById("shortday_7_name").innerHTML],
 					titleFormat: {
 						month: 'MMMM yyyy',
 						week: "d[ MMMM][ yyyy]{ - d MMMM yyyy}",

@@ -4,8 +4,8 @@
 		<div>	
 			<!--event action-->	
 			<div class="ev-action top p-20 ui-corner-top">						
-				<span><?=anchor(site_url('user/calendar'),'Retour calendrier',array('class'=>'button-return-calendar', 'title' => 'Retour calendrier'))?></span>				
-				<span class="ml-5"><?=anchor(site_url('user/calendar'),'Supprimer',array('class'=>'button-delete-event'))?></span>
+				<span><?=anchor(site_url('user/calendar'),lang("users_calendar_back"),array('class'=>'button-return-calendar', 'title' => lang("users_calendar_back")))?></span>				
+				<span class="ml-5"><?=anchor(site_url('user/calendar'),lang("delete"),array('class'=>'button-delete-event'))?></span>
 			</div>	
 			
 			<!--event content-->
@@ -106,8 +106,8 @@
 			
 			<!--event action-->	
 			<div class="ev-action bottom p-20 ui-corner-bottom">						
-				<span><?=anchor(site_url('user/calendar'),'Retour calendrier',array('class'=>'button-return-calendar', 'title' => 'Retour calendrier'))?></span>				
-				<span class="ml-5"><?=anchor(site_url('user/calendar'),'Supprimer',array('class'=>'button-delete-event'))?></span>
+				<span><?=anchor(site_url('user/calendar'),lang("users_calendar_back"),array('class'=>'button-return-calendar', 'title' => lang("users_calendar_back")))?></span>				
+				<span class="ml-5"><?=anchor(site_url('user/calendar'),lang("delete"),array('class'=>'button-delete-event'))?></span>
 			</div>	
 		</div>	
 	</div>

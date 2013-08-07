@@ -35,7 +35,7 @@
 					selectedList		: 5,
 					height				: 'auto',
 					width				: 'auto',						
-					noneSelectedText	: 'Trier par genre musical'					
+					noneSelectedText	: document.getElementById("shows_sortby3").innerHTML					
 				})
 				.change(function(event){
 					selected_options = $(this).val() || [];
@@ -263,7 +263,7 @@
 							order_by			: order_by
 						},
 						success		: function(data){														
-							text = (data.count_event == 0) ? '<h1 class="grey title fs-18 pl-20">Aucun résultat n\'a été trouvé.</h1>' : data.text;
+							text = (data.count_event == 0) ? '<h1 class="grey title fs-18 pl-20">'+document.getElementById("noresultfound").innerHTML+'</h1>' : data.text;
 							$('#list-concert')
 								.empty()
 								.append(text)	
@@ -301,7 +301,7 @@
 						buttons: 
 						[
 							{
-								text	: 'Valider',								
+								text	: document.getElementById("validatetxt").innerHTML,								
 								'class'	: 'ui-purple',									
 								click: function() {									
 									if($('#accept-terms').prop('checked')){
@@ -337,7 +337,7 @@
 								}
 							},
 							{
-								text:'Annuler',
+								text:document.getElementById("canceltxt").innerHTML,
 								click: function() {																				
 									$(this).dialog('close').remove();															
 								}

@@ -50,7 +50,7 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'bonstage';
-$db['default']['password'] = 'O=gc0Fwf_d$.';
+$db['default']['password'] = 'e-KV&*pWKnTk';
 $db['default']['database'] = 'bonstage_dev';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

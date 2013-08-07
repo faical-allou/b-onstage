@@ -22,11 +22,11 @@ class Contact_model extends CI_Model
 					->count_all_results();			
 		
 		if (($doublon == 0) && ($this->db->insert($this->table, $data)))
-			return array('status' => true, 'msg' => 'Contact ajouté avec succès');
+			return array('status' => true, 'msg' => lang("users_contact_add_success"));
 		else if ($doublon > 0)
-			return array('status' => false, 'msg' => 'Ce contact est déjà présent dans vos contacts');
+			return array('status' => false, 'msg' => lang("users_contact_add_error1"));
 		else
-			return array('status' => false, 'msg' => 'Une erreur s\'est produite, veuillez réessayer');	
+			return array('status' => false, 'msg' => lang("error_retry"));	
 		
 	}
 	
@@ -45,8 +45,8 @@ class Contact_model extends CI_Model
 	
 	public function delete($contact_id){
 		if($this->db->delete($this->table, array('id' => $contact_id)))
-			return array('status' => 'SUCCESS', 'msg' => 'Contact supprimé avec succès');
+			return array('status' => 'SUCCESS', 'msg' => lang("users_contact_del_success"));
 		else	
-			return array('status' => 'SUCCESS', 'msg' => 'Une erreur s\'est produite, veuillez réessayer plus tard.');
+			return array('status' => 'SUCCESS', 'msg' => lang("error_retry"));
 	}
 }

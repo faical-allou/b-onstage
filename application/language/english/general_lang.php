@@ -61,6 +61,17 @@ $lang['signup_choice_title'] = 'Type de compteEN';
 $lang['signup_active_title'] = 'Activez votre compteEN';
 $lang['signup_stage_title'] = 'InscriptionEN';
 $lang['signup_stage_step2_title'] = 'Pré-inscription terminéeEN';
+$lang['user_home_title'] = 'Mes paramètres de compteEN';
+$lang['user_update_information_title'] = 'ENModifier mes coordonnées';
+$lang['user_calendar_title'] = 'ENGestion du calendrier';
+$lang['user_calendar_create_title'] = 'ENCréer un évènement';
+$lang['user_contact_title'] = 'ENMes contacts';
+$lang['user_notifs_title'] = 'ENNotifications';
+$lang['user_rese_title'] = 'ENMes réservations';
+$lang['user_artist_title'] = 'ENLes artistes | b-onstage';
+$lang['user_stage_title'] = 'ENLes scènes | b-onstage';
+$lang['user_shows_title'] = 'ENProgrammation';
+$lang['user_book_title'] = 'ENOu jouer ma musique ?';
 
 // Page descriptions
 $lang['home_desc'] = 'Mettre une descriptionEN';
@@ -74,6 +85,19 @@ $lang['signup_active_desc'] = 'Activez voter compteEN';
 $lang['signup_terminate_desc'] = 'Vos premiers pas sur b-onstageEN';
 $lang['signup_stage_desc'] = 'Mettre une descriptionEN';
 $lang['signup_stage_step2_desc'] = 'Mettre une descriptionEN';
+$lang['user_home_desc'] = 'Mettre une descriptionEN';
+$lang['user_update_information_desc'] = 'ENMettre une description';
+$lang['user_calendar_desc'] = 'ENMettre une description';
+$lang['user_calendar_create_desc'] = 'ENMettre une description';
+$lang['user_calendar_event_edit_desc'] = 'ENMettre une description';
+$lang['user_contact_desc'] = 'ENMes contacts';
+$lang['user_notifs_desc'] = 'ENMes notifications';
+$lang['user_page_desc'] = 'ENMettre une description';
+$lang['user_rese_desc'] = 'ENMettre une description';
+$lang['user_artist_desc'] = 'ENTous les artistes présent sur b-onstage';
+$lang['user_stage_desc'] = 'ENTous les artistes présent sur b-onstage';
+$lang['user_shows_desc'] = 'ENMettre une description';
+$lang['user_book_desc'] = 'ENMettre une description';
 
 // General
 $lang['hello'] = 'Hello';
@@ -88,9 +112,80 @@ $lang['logout'] = 'Logout';
 $lang['from'] = 'from';
 $lang['to'] = 'to';
 $lang['in'] = 'in';
+$lang['to2'] = 'to';
+$lang['at'] = 'at';
+$lang['de'] = 'from';
 $lang['submit'] = 'Submit';
 $lang['become_member'] = 'Become member';
 $lang['clickhere'] = 'click-here';
+$lang['modify'] = 'Modify';
+$lang['address'] = 'Address';
+$lang['postalcode'] = 'Postal code';
+$lang['city'] = 'City';
+$lang['country'] = 'Country';
+$lang['phone'] = 'Telephone';
+$lang['hide'] = 'Hide';
+$lang['validate'] = 'validate';
+$lang['requieredfield'] = 'ENCe champ est obligatoire';
+$lang['mincharacters'] = 'ENCe champ doit contenir au minimum';
+$lang['maxcharacters'] = 'ENCe champ doit contenir au maximum';
+$lang['characters'] = 'ENcaractères';
+$lang['error_retry'] = 'ENUne erreur s\'est produite, veuillez essayez ultérieurement.';
+$lang['calendar'] = 'Calendar';
+$lang['list'] = 'List';
+$lang['open'] = 'Open';
+$lang['req_inprocess'] = 'Requests in process';
+$lang['awaiting'] = 'Awaiting';
+$lang['confirmed'] = 'Confirmed';
+$lang['today'] = 'Today';
+$lang['date'] = 'Date';
+$lang['schedule'] = 'Schedule';
+$lang['infos'] = 'Infos';
+$lang['action'] = 'Action';
+$lang['save'] = 'SAVE';
+$lang['save_change'] = 'SAVE CHANGES';
+$lang['desc'] = 'Description';
+$lang['bio'] = 'ENBiographie';
+$lang['notset'] = 'ENNon renseigné';
+$lang['resume'] = 'ENRésumé';
+$lang['cancel'] = 'Cancel';
+$lang['delete'] = 'Delete';
+$lang['plus'] = 'Plus';
+$lang['follow'] = 'Follow';
+$lang['flux'] = 'ENFlux';
+$lang['views'] = 'views';
+$lang['prev'] = 'Previous';
+$lang['play'] = 'Play';
+$lang['pause'] = 'Pause';
+$lang['stop'] = 'Stop';
+$lang['mute'] = 'Mute';
+$lang['unmute'] = 'Unmute';
+$lang['repeat'] = 'Repeat';
+$lang['repeatoff'] = 'Repeat off';
+$lang['showplaylist'] = 'Show playlist';
+$lang['startslideshow'] = 'Start slideshow';
+$lang['next'] = 'Next';
+$lang['togglesize'] = 'Toggle size';
+$lang['close'] = 'Close';
+$lang['albums'] = 'enalbum(s)';
+$lang['youhave'] = 'You have';
+$lang['showrecom'] = 'ENAfficher les recommendations';
+$lang['seestage'] = 'See stage';
+$lang['refuse'] = 'refuse';
+$lang['see'] = 'See';
+$lang['add'] = 'Add';
+$lang['playlists'] = 'Playlists';
+$lang['listen'] = 'Listen';
+$lang['sync'] = 'Synchronize';
+$lang['show'] = 'Show';
+$lang['noresultfound'] = 'ENAucun résultat trouvé';
+$lang['sortby'] = 'Sort by';
+$lang['showmoreresults'] = 'ENAfficher plus de résultats';
+$lang['the'] = 'The';
+$lang['step'] = 'ENEtape';
+$lang['connect'] = 'ENConnectez-vous';
+$lang['or'] = 'or';
+
 
 // Header
 $lang['header_book_date'] = 'Réserver dateEN';
@@ -189,7 +284,7 @@ $lang['footer_copyright'] = 'Copyright &copy; 2013 b-onstage. Tous droits réser
 
 // Contact us
 $lang['contactus_subject'] = 'Subject';
-$lang['contactus_message'] = 'Message';
+$lang['contactus_message'] = 'ENMessage';
 $lang['contactus_yourname'] = 'Votre nomEN';
 $lang['contactus_youremail'] = 'Votre emailEN';
 $lang['contactus_yourmsg'] = 'Votre messageEN';
@@ -496,3 +591,407 @@ $lang['signup_stage_confirmation_email_txt4'] = '<p style="font-size:15px;font-f
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous rencontrez des problèmes avec notre site ou nos services, écrivez-nous à l’adresse à l\'adresse support@b-onstage.com.</p>
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de nous améliorer et d\'essayer de rendre b-onstage le plus utile et agreable pour vous, nous vous encourageons à nous envoyez toutes vos suggestions à l\'adresse suggestion@b-onstage.com.</p>
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous ne souhaitez plus recevoir de mail de b-onstage, Cliquez-ici.</p>';	
+
+
+// Users home
+$lang['users_home_title1'] = 'Paramètres générauxEN';
+$lang['users_home_email'] = 'Adresse électroniqueEN';
+$lang['users_home_artist_name'] = 'Nom du groupe / artisteEN';
+$lang['users_home_stage_name'] = 'Nom de la scène / barEN';
+$lang['users_home_stage_name_short'] = 'ENNom de la scène';
+$lang['users_home_url'] = 'Url page profilEN';
+$lang['users_home_title2'] = 'Mes coordonnéesEN';
+$lang['users_home_txt_bottom'] = 'ENcoordonnées visibles dans le profil.';
+$lang['users_home_modify'] = 'ENModifier coordonnées';
+$lang['users_home_show_profile'] = 'ENAfficher mon profil';
+$lang['users_home_profile_txt'] = '<p class="grey fs-12 bold">ENRemplissez votre profil!</p>
+				<p class="grey fs-12 bold">Les profils les plus consultés sont ceux qui ont le plus de contenu...</p>
+				<p class="grey fs-12 bold">...Alors, mettez des images de vous sur votre profil.</p>
+				<p class="grey fs-12 bold">Pour faire leur choix, les Scènes vont vouloir vous écouter...</p>
+				<p class="grey fs-12 bold">...Alors mettez votre musique.</p>
+				<p class="grey fs-12 bold">Importez aussi vos photos, vos vidéos...</p>';
+$lang['users_home_username_txt'] = 'ENSaisir un nom d\'utilisateur';
+$lang['users_home_username_success'] = 'ENNom d\'utilisateur modifié avec succès.';
+$lang['users_home_username_error1'] = 'ENLe nom d\'utilisateur existe déjà.';
+$lang['users_home_username_error2'] = 'ENUne erreur s\'est produite, veuillez réessayer plus tard.';
+$lang['users_home_username_error3'] = 'ENChamp saisie invalide, il ne doit pas y avoir d\'espace ni de caractères spéciaux.';
+$lang['users_home_passwrod_old'] = 'ENAncien mot de passe';
+$lang['users_home_passwrod_new'] = 'ENNouveau mot de passe';
+$lang['users_home_passwrod_conf'] = 'ENConfirmer le mot de passe';
+$lang['users_home_passwrod_success'] = 'ENMot de passe modifié avec succès.';
+$lang['users_home_input_artist_name'] = 'ENSaisir un nom de groupe';
+$lang['users_home_input_artist_name_success'] = 'ENNom du groupe modifié avec succès.';
+$lang['users_home_input_artist_name_error1'] = 'ENLe nom du groupe existe déjà.';
+$lang['users_home_url'] = 'ENL\'adresse de votre profil sera la suivante';
+$lang['users_home_url_success'] = 'ENUrl du profil modifiée avec succès.';
+$lang['users_home_url_error1'] = 'ENUrl du profil existe déjà.';
+$lang['users_home_input_artist_name_error2'] = 'ENAucun nom de groupe / artiste enregistré';
+$lang['users_home_input_artist_name_error3'] = 'ENAucun nom de scène enregistré';
+$lang['users_home_no_fname'] = 'ENAucun prénom enregistré';
+$lang['users_home_no_lname'] = 'ENAucun nom enregistré';
+$lang['users_home_no_addr'] = 'ENAucune adresse enregistrée';
+$lang['users_home_no_pcode'] = 'ENAucun code postal enregistré';
+$lang['users_home_no_city'] = 'ENAucune ville enregistrée';
+$lang['users_home_no_country'] = 'ENAucun pays renseigné';
+$lang['users_home_no_tel'] = 'ENAucun téléphone enregistré';
+$lang['users_header_mynotif'] = 'ENMes notifications';
+
+
+// Users calendar
+$lang['users_calendar_addevent'] = 'CREATE EVENT';
+$lang['users_calendar_open_txt'] = 'ENFilter les évènements ouverts';
+$lang['users_calendar_req_inprocess_txt'] = 'ENFilter les évènements ayant des demandes de réservations';
+$lang['users_calendar_awaiting_txt'] = 'ENFiltrer les évènements en attente de validation';
+$lang['users_calendar_confirmed_txt'] = 'ENFiltrer les évènements confirmés';
+$lang['users_calendar_list_nodata'] = 'No data found.';
+$lang['users_calendar_create_success'] = 'ENEvènement enregistré avec succès';
+$lang['users_calendar_back'] = 'Back to calendar';
+$lang['users_calendar_create_input_title'] = 'ENSaisir un titre';
+$lang['users_calendar_create_recurrence'] = 'Recurrence...';
+$lang['users_calendar_create_eventdetails'] = 'ENDétails de l\'évènement';
+$lang['users_calendar_create_location'] = 'Location';
+$lang['users_calendar_create_genre'] = 'ENGenre musical recherché';
+$lang['users_calendar_create_book'] = 'ENMontant de la réservation';
+$lang['users_calendar_create_payment'] = 'ENRémunération de l\'artiste';
+$lang['users_calendar_create_price'] = 'ENPrix des entrées';
+$lang['users_calendar_create_choose_musical_genre'] = 'ENChoisissez un genre musical';
+$lang['users_calendar_create_non_renum'] = 'ENNon rémunéré';
+$lang['users_calendar_create_cachet'] = 'ENCachet de';
+$lang['users_calendar_create_conso'] = 'ENdes consommations vendues';
+$lang['users_calendar_create_tickets'] = 'ENsur la billeterie';
+$lang['users_calendar_create_remb'] = 'ENRemboursement des frais de réservation';
+$lang['users_calendar_concert_at'] = 'ENConcert au';
+$lang['users_calendar_genre'] = 'ENGenre musical';
+$lang['users_calendar_event_mod_del'] = 'ENModifier / supprimer l\'évènement';
+$lang['users_calendar_edit_success'] = 'ENEvènement modifié avec succès';
+$lang['users_calendar_event_del_conf'] = 'ENVoulez-vous supprimer cet évènement ?';
+$lang['users_calendar_event_del_error1'] = 'ENVous n\'êtes pas propriétaire de cet évènement, il vous est donc impossible de le supprimer';
+$lang['users_calendar_event_del_success'] = 'ENEvènement supprimé avec succès';
+
+
+//Users Contact
+$lang['users_contact_notfound'] = 'ENAucun contact enregistré.';
+$lang['users_contact_seeprofile'] = 'ENVoir profil';
+$lang['users_contact_sendmsg'] = 'ENEnvoyer message';
+$lang['users_contact_del_conf'] = 'ENVoulez vous vraiment supprimer ce contact ?';
+$lang['users_contact_send_success'] = 'ENMessage envoyé avec succès';
+$lang['users_contact_del_success'] = 'ENContact supprimé avec succès';
+$lang['users_contact_add'] = 'ENAjouter à mes contacts';
+$lang['users_contact_add_error1'] = 'ENCe contact est déjà présent dans vos contacts';
+$lang['users_contact_add_success'] = 'ENContact ajouté avec succès';
+
+
+//User notifs
+$lang['users_notifs_notfound'] = 'ENAucune notification';
+$lang['users_notifs_seemore'] = 'ENVoir plus de notifications';
+
+
+//Users page
+$lang['users_page_modpic'] = 'ENModifier la photo de couverture';
+$lang['users_page_modava'] = 'ENModifier avatar';
+$lang['users_page_pic'] = 'ENPhoto de couverture';
+$lang['users_page_ava'] = 'ENPhoto de profil';
+$lang['users_page_ison'] = 'ENest sur';
+$lang['users_page_comwith'] = 'ENCommuniquez avec';
+$lang['users_page_signup'] = 'ENen vous inscrivant.';
+$lang['users_page_menu1'] = 'ENProfil';
+$lang['users_page_menu2'] = 'ENConcerts';
+$lang['users_page_menu3'] = 'ENSons';
+$lang['users_page_menu4'] = 'ENVidéos';
+$lang['users_page_menu5'] = 'ENPhotos';
+$lang['users_page_modpro'] = 'ENModifier profil';
+$lang['users_page_generalinfo'] = 'ENInformations générales';
+$lang['users_page_stage'] = 'ENEtablissement';
+$lang['users_page_band'] = 'ENNom du groupe';
+$lang['users_page_inputcountry'] = 'ENSaisir votre pays';
+$lang['users_page_inputcity'] = 'ENSaisir votre ville';
+$lang['users_page_website'] = 'ENSite officiel';
+$lang['users_page_inputwebsite'] = 'ENSaisir le lien de votre site officiel';
+$lang['users_page_socialmed'] = 'ENLiens sociaux';
+$lang['users_page_socialmed_notfound'] = 'ENAucun liens sociaux disponibles';
+$lang['users_page_desc_notfound'] = 'ENAucune description disponible';
+$lang['users_page_inputsocialmed1'] = 'ENSaisir le lien de votre page facebook';
+$lang['users_page_inputsocialmed2'] = 'ENSaisir le lien de votre Myspace';
+$lang['users_page_inputsocialmed3'] = 'ENSaisir le lien de votre compte Twitter';
+$lang['users_page_inputsocialmed4'] = 'ENSaisir le lien de votre profil Google +';
+$lang['users_page_followus'] = 'ENSuivez b-onstage';
+$lang['users_page_onsocmed1'] = 'on Twitter';
+$lang['users_page_onsocmed2'] = 'on Facebook';
+$lang['users_page_onsocmed4'] = 'on Google+';
+$lang['users_page_socmedfollowers1'] = 'Twitter Followers';
+$lang['users_page_socmedfollowers2'] = 'Facebook Fans';
+$lang['users_page_socmedfollowers3'] = 'Google + Followers';
+$lang['users_page_modpic_success'] = 'ENPhoto de couverture mise à jour';
+$lang['users_page_modava_success'] = 'ENAvatar mis à jour';
+$lang['users_page_modpro_txt'] = 'ENCliquez sur la partie de votre profil que vous voulez modifier';
+$lang['users_page_modpro_txtdone'] = 'ENModifications terminées';
+$lang['users_page_modpro_noinfo'] = 'ENAucune informations disponibles';
+$lang['users_page_shows_upcoming'] = 'ENConcerts à venir';
+$lang['users_page_shows_notfound'] = 'ENAucun concert à venir pour le moment';
+$lang['users_page_videos_txt'] = '<p class="title purple fs-16">ENRecommendations pour ajouter une vidéo</p>
+								<p class="grey fs-12 bold">Ajoutez vos vidéos à votre profil. Vous pouvez par exemple y mettre des vidéos de vos concerts, de vos clips, etc.</p> 
+								<p class="grey fs-12 bold">Cliquez sur J\'ajoute une vidéo. Copiez l\'adresse du lien vidéo Youtube.</p> 
+								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p>';
+$lang['users_page_videos_addtitle'] = 'ENAjouter une vidéo Youtube';
+$lang['users_page_videos_add'] = 'ENJ\'ajoute une vidéo';
+$lang['users_page_videos_input'] = 'ENSaisir l\'url de votre vidéo Youtube.';
+$lang['users_page_videos_notfound'] = 'ENAucune vidéo enregistré';
+$lang['users_page_flux_addtitle'] = 'ENAjouter un utilisateur Youtube';
+$lang['users_page_flux_add'] = 'ENJ\'ajoute un flux de vidéos';
+$lang['users_page_flux_input'] = 'ENSaisir le nom d\'utilisateur situé dans l\'url de la page Youtube.';
+$lang['users_page_flux_notfound'] = 'ENAucun flux enregistré';
+$lang['users_page_media_add_success'] = 'ENMédia ajouté avec succès';
+$lang['users_page_media_add_error1'] = 'ENCe média est déjà enregistré';
+$lang['users_page_flux_deleted'] = 'ENFlux supprimé avec succès';
+$lang['users_page_videos_deleted'] = 'ENVidéo supprimé avec succès';
+$lang['users_page_picasa_txt'] = '<p class="title purple fs-16">ENRecommendations pour ajouter des photos</p>
+								<p class="grey fs-12 bold">Ajoutez vos photos à votre profil. Vous pouvez par exemple y mettre des photos de votre groupe, de vos concerts, etc.</p>
+								<p class="grey fs-12 bold">Cliquez sur J\'ajoute un compte Picasa. Entrez l\'adresse mail de votre compte Picasa.</p> 
+								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p>';
+$lang['users_page_picasa_addtitle'] = 'ENAjouter un compte picasa';
+$lang['users_page_picasa_add'] = 'ENJ\'ajoute un compte Picasa';
+$lang['users_page_picasa_input'] = 'ENSaisir l\'adresse mail de votre compte Picasa.';
+$lang['users_page_picasa_notfound'] = 'ENAucun compte picasa enregistré';
+$lang['users_page_picasa_add_success'] = 'ENCompte picasa ajouté avec succès';
+$lang['users_page_picasa_add_error1'] = 'ENCe compte picasa est déjà enregistré';
+$lang['users_page_picasa_deleted'] = 'ENCompte picasa supprimé avec succès';
+$lang['users_page_picasa_album_notfound'] = 'ENAucun album pour ce compte picasa';
+$lang['users_page_picasa_delconf'] = 'ENSupprimer ce compte picasa ?';
+$lang['users_page_sons_txt'] = '<div class="title fs-16 purple">ENRecommendations pour ajouter de la musique</div>
+								<p class="grey fs-12 bold">Afin de vous démarquer, il est important que les Scènes puissent vous écouter.</p>
+								<p class="grey fs-12 bold">Ajoutez vos sons à votre profil. Pour cela, il y a deux façons de faire:</p>
+								<ul style="list-style:square;margin-left:20px;">	
+									<li class="purple fs-12 bold"><span class="grey">Depuis votre Ordinateur: cliquez sur J\'ajoute des pistes audio, choisissez le fichiers sur votre ordinateur. Seuls les fichiers MP3 de moins de 20Mo sont acceptés.</span></li>
+									<li class="purple fs-12 bold"><span class="grey">Depuis votre compte Soundcloud: cliquez sur J\'ajoute un compte Souncloud, entrez vos informations Soundcloud.</span></li>
+								</ul>	
+								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p>';
+$lang['users_page_sons_track'] = 'ENPistes';
+$lang['users_page_sons_addtrack'] = 'ENJ\'ajoute des pistes audio';
+$lang['users_page_sons_addsoundcloud'] = 'ENJ\'ajoute un compte Soundcloud';
+$lang['users_page_sons_addtrack_success'] = 'ENPiste téléchargée';
+$lang['users_page_sons_nosound'] = 'ENAucun son à écouter.';
+$lang['users_page_sons_notrack'] = 'ENAucune pistes disponibles.';
+$lang['users_page_sons_soundcloud_delconf'] = 'ENVoulez-vous vraiment supprimer ce compte Soundcloud ?';
+$lang['users_page_sons_soundcloud_syncconf'] = 'ENVoulez-vous synchroniser ce compte?';
+
+
+//Users reservations
+$lang['users_rese_payfees'] = 'ENPayer les frais de réservation';
+$lang['users_rese_seeshow'] = 'ENVoir concert';
+$lang['users_rese_showended'] = 'ENConcert terminé';
+$lang['users_rese_youplayin'] = 'ENVous jouez dans';
+$lang['users_rese_is_expired'] = 'ENDélai dépassé';
+$lang['users_rese_delayfees'] = 'ENDélai pour payer les frais de réservation';
+$lang['users_rese_cancel'] = 'ENAnnuler réservation';
+$lang['users_rese_enterprice'] = 'ENPrix entrée';
+$lang['users_rese_fees'] = 'ENFrais de réservation';
+$lang['users_rese_renumartist'] = 'ENRémunération artiste';
+$lang['users_rese_status1'] = 'ENEn attente de paiement';
+$lang['users_rese_status2'] = 'ENFermée';
+$lang['users_rese_status3'] = 'ENEn attente de validation';
+$lang['users_rese_needpay'] = 'ENréservations en attente de paiement des frais de réservations.';
+$lang['users_rese_needpaytxt'] = '<p class="grey fs-12 bold">ENIl vous est fortement conseillé de les traiter avant que le délai soit dépassé.</p>
+				<p class="grey fs-12 bold">Si la mention <span class="purple">"Délai dépassé"</span> apparaît sur l\'une de vos réservations cela signifie que le délai de 48h pour payer les frais de réservations est écoulé. De ce fait la réservation est annulée et est remise dans la rubrique <a href="'.site_url('concerts').'" class="purple bold">"Réservez date".</a></p>';
+$lang['users_rese_closedtxt'] = '<p class="purple">ENRecommendations reservation fermée</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>';
+$lang['users_rese_tovalidatetxt'] = '<p class="purple">ENRecommendations en attente de validation</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>';
+$lang['users_rese_cancel_conf'] = 'ENVoulez-vous annuler cette réservation ?';
+$lang['users_rese_cancel_txt1'] = 'ENIl n\'est pas conseillé d\'annuler la réservation à ce stade. Cette scène pourrait ne pas accepter vos futures demandes. Etes-vous certain de vouloir annuler ?';
+$lang['users_rese_cancel_txt2'] = 'ENIl n\'est pas conseillé d\'annuler la réservation à ce stade. Vos frais de réservations vous seront remboursés (une fois les frais de gestion de 20€ déduits). De plus cette scène pourrait ne pas accepter vos future demandes. Etes-vous certain de vouloir annuler ?';
+$lang['users_rese_cancel_txt3'] = 'ENIl n\'est pas conseillé d\'annuler la réservation à ce stade. Vos frais de réservation ne vous seront pas remboursés. De plus cette scène pourrait ne pas accepter vos future demandes. Etes-vous certain de vouloir annuler?';
+$lang['users_rese_cancel_txt4'] = 'ENIl est très fortement conseillé de ne pas annuler à ce stade! Vos frais de réservations ne vous seront pas remboursés, et le concert sera affiché en statut "Annulé, No-show" et b-onstage se réserve le droit de porter une mention "No-show" sur votre profil. De plus cette scène pourrait ne pas accepter vos future demandes. Etes-vous certain de vouloir annuler?';
+$lang['users_rese_cancel_success'] = 'ENVotre demande de réservation a été annulée avec succès.';
+$lang['users_rese_request'] = 'ENDemandes de réservation';
+$lang['users_rese_validate_artist'] = 'ENValider cet artiste';
+$lang['users_rese_refuse_artist'] = 'ENVoulez-vous refuser cet artiste?';
+$lang['users_rese_refuse_success'] = 'ENSuppression réussie';
+$lang['users_rese_validate_success'] = 'ENDemande de réservation validée avec succès';
+$lang['users_rese_pendingtxt'] = 'ENRéservation en attente de paiement';
+$lang['users_rese_pendingtxt2'] = 'ENEn liste d\'attente';
+$lang['users_rese_refuse_email_subject'] = 'ENDemande de réservation refusée';
+$lang['users_rese_refuse_email_txt1'] = 'ENDésolé! Votre demande de réservation suivante <strong>n’a pas été retenue:</strong>';
+$lang['users_rese_refuse_email_txt2'] = 'ENCode de réservation';
+$lang['users_rese_refuse_email_txt3'] = 'ENEn attendant votre prochaine réservation, pensez à améliorer votre profil. Vous pouvez y ajouter votre musique , vos vidéos, vos photos, etc.</p>
+
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Pensez à bien vous présenter et n’oubliez pas que c’est votre vitrine!</p>
+
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Pour vous rendre sur votre profil,';
+$lang['users_rese_refuse_email_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">ENÀ bientôt.</p>
+
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
+
+	<br />
+
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Merci de ne pas utiliser la fonction "Répondre" de votre messagerie.</p>	
+
+	<br />
+
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous rencontrez des problèmes avec notre site ou nos services, écrivez-nous à l’adresse à l\'adresse support@b-onstage.com.</p>
+
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de nous améliorer et d\'essayer de rendre b-onstage le plus utile et agreable pour vous, nous vous encourageons à nous envoyez toutes vos suggestions à l\'adresse suggestion@b-onstage.com.</p>
+
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous ne souhaitez plus recevoir de mail de b-onstage, Cliquez-ici.</p>';
+$lang['users_rese_refuse_email_txt5'] = 'ENpour faire une nouvelle réservation';
+$lang['users_rese_seereq'] = 'ENdemande(s) de réservation';
+$lang['users_rese_amount'] = 'ENNbr. de demandes de réservation';
+$lang['users_rese_accepted_email_subject'] = 'ENDemande de réservation acceptée';
+$lang['users_rese_accepted_email_txt1'] = 'ENFélicitations! Votre demande de réservation suivante <strong>à été acceptée :</strong>';
+$lang['users_rese_accepted_email_txt2'] = 'ENATTENTION !! Vous avez 48 heures pour valider cette réservation et effectuer le paiement depuis votre espace b-onstage. Passé ce délais, votre réservation sera annulée!!';
+$lang['users_rese_accepted_email_txt3'] = 'ENCliquez ici pour voir votre réservation dans votre espace b-onstage';
+$lang['users_rese_accepted_email_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">ENMaintenant..... c’est à vous de jouer!!</p>
+
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
+
+	<br />
+
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Merci de ne pas utiliser la fonction "Répondre" de votre messagerie.</p>	
+
+	<br />
+
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous rencontrez des problèmes avec notre site ou nos services, écrivez-nous à l’adresse à l\'adresse support@b-onstage.com.</p>
+
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de nous améliorer et d\'essayer de rendre b-onstage le plus utile et agreable pour vous, nous vous encourageons à nous envoyez toutes vos suggestions à l\'adresse suggestion@b-onstage.com.</p>
+
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous ne souhaitez plus recevoir de mail de b-onstage, Cliquez-ici.</p>';
+	
+
+// Artists page
+$lang['artists_searchby'] = 'ENRechercher artiste/groupe';
+$lang['artists_searchbycity'] = 'ENRechercher par ville';
+$lang['artists_searchresutls'] = 'ENRésultats de la recherche';
+$lang['artists_searchshowmore'] = 'ENAfficher plus d\'artistes / groupes';
+
+// Stage page
+$lang['stages_searchshowmore'] = 'ENAfficher plus de scènes';
+$lang['stages_searchby'] = 'ENRechercher par nom';
+
+
+// Shows page
+$lang['shows_sortby1'] = 'ENTrier par date';
+$lang['shows_sortby2'] = 'ENTrier par prix entrée';
+$lang['shows_sortby3'] = 'ENTrier par genre musical';
+$lang['shows_inshow'] = 'ENen concert';
+$lang['shows_seeshow'] = 'ENVoir Concert';
+$lang['shows_showinfo'] = 'ENInfos concert';
+$lang['shows_inshowat'] = 'ENen concert au';
+$lang['shows_stageinfo'] = 'ENInfos scène';
+$lang['shows_artistinfo'] = 'ENInfos groupe / artiste';
+$lang['shows_seeartist'] = 'ENVoir artiste';
+$lang['shows_nosite'] = 'ENPas de site officiel';
+$lang['shows_bandsound'] = 'ENLes sons du groupe';
+
+
+// Book page
+$lang['book_filterresults'] = 'ENFiltrer les résultats';
+$lang['book_bysort1'] = 'ENPar genre musical';
+$lang['book_bysort2'] = 'ENPar tranche';
+$lang['book_bysort3'] = 'ENPar type de rémunération';
+$lang['book_bysort2_1'] = 'ENRéservation entre';
+$lang['book_bysort2_2'] = 'ENPrix entrée entre';
+$lang['book_bysort2_3'] = 'ENHoraire entre';
+$lang['book_steptxt1'] = 'ENChoisissez une Date et cliquez sur <strong>"Demande de réservation"</strong>.';
+$lang['book_steptxt2'] = 'ENUne fois sélectionné par la Scène, vous avez <strong>48 heures</strong> pour valider votre réservation.';
+$lang['book_steptxt3'] = 'ENLe jour du Concert, présentez-vous et <strong>c\'est à vous de jouer!</strong>';
+$lang['book_organiser'] = 'ENest l\'organisateur de ce Concert';
+$lang['book_button1'] = 'ENVoir ma réservation';
+$lang['book_button2'] = 'ENDemande de réservation';
+$lang['book_error1'] = 'ENPour réserver une Date, il faut être un Artiste b-onstage.';
+$lang['book_error1_1'] = 'ENpour jouer live.';
+$lang['book_error2'] = 'ENLes demandes de réservation de Scène ne sont faisable que par les Artistes.';
+$lang['book_req_txt1'] = '<p class="bold">ENVous êtes sur le point d’envoyer une demande de réservation pour vous produire en concert.</p>
+	<p class="bold">Voici les détails de la date que souhaitez réserver :</p>';
+$lang['book_req_showdate'] = 'ENDate du concert';
+$lang['book_req_txt2'] = '<p class="bold">ENUne fois validée votre demande de réservation sera envoyée à la scène. Vous ne devrez payer les frais de réservation qu’une fois votre demande de réservation acceptée par la scène. Vous recevrez alors un email (et une notification sur votre profil) lorsque votre demande aura été acceptée.</p>';
+$lang['book_req_agree'] = 'ENEn cochant cette case, je reconnais avoir lu et accepté <a href="#" class="purple">les conditions d’utilisations.</a>';
+$lang['book_req_success'] = 'ENVotre demande a bien été prise en compte';
+$lang['book_req_email_artist_subject'] = 'ENVotre demande de reservation n°';
+$lang['book_req_email_artist_txt1'] = 'ENVous avez fait la demande de réservation suivante :';
+$lang['book_req_email_artist_txt2'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">ENCliquez ici pour voir votre réservation dans votre espace b-onstage.</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">La réservation a été communiquée à la scène que vous avez demandé.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Nous vous informerons dès que votre réservation aura été acceptée ou refusée.</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Bonne chance!!</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si votre demande est acceptée vous recevrez un email pour vous demander d’effectuer le paiement. Vous aurez alors 48h pour effectuer le paiement, sans quoi nous serons contraint d’annuler votre reservation.</p>	
+	<!--Tant que cette réservation n’a pas été acceptée par la scène, vous pouvez l’annuler en cliquant sur le lien suivant : Annuler ma réservation-->
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">À bientôt.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
+	<br />
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Merci de ne pas utiliser la fonction "Répondre" de votre messagerie.</p>		
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous rencontrez des problèmes avec notre site ou nos services, écrivez-nous à l’adresse à l\'adresse support@b-onstage.com.</p>
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de nous améliorer et d\'essayer de rendre b-onstage le plus utile et agreable pour vous, nous vous encourageons à nous envoyez toutes vos suggestions à l\'adresse suggestion@b-onstage.com.</p>
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous ne souhaitez plus recevoir de mail de b-onstage, Cliquez-ici.</p>';
+$lang['book_req_email_stage_subject'] = 'ENVous avez reçu une demande de réservation';
+$lang['book_req_email_stage_txt1'] = 'ENVous avez reçu la demande de';
+$lang['book_req_email_stage_txt2'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">EN<a href="/user/calendar"><strong>Cliquez ici</strong></a> pour accéder à votre calendrier dans votre espace b-onstage.</p>';
+$lang['book_req_email_stage_txt3'] = 'ENCet artiste souhaite se produire dans votre établissement le';
+$lang['book_req_email_stage_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">ENVoir la fiche de l’artiste sur b-onstage.com</p>	
+		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Vous pouvez valider cette réservation (et ainsi sélectionner l’artiste), ou la laisser dans la liste de réservation. Cela vous permettra d’accepter cette réservation plus tard, si vous le souhaitez.</p>	
+		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Cliquez-ici pour voir la liste de vos demandes de réservation dans votre espace b-onstage.</p>	
+		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous acceptez une réservation, un mail sera envoyé à l’artiste. Il aura alors 48h pour effectuer le paiement, sans quoi nous annulerons sa réservation et nous vous en avertirons.</p>	
+		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">L\'équipe b-onstage.</p>
+		<br />
+		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Merci de ne pas utiliser la fonction "Répondre" de votre messagerie.</p>		
+		<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous rencontrez des problèmes avec notre site ou nos services, écrivez-nous à l’adresse à l\'adresse support@b-onstage.com.</p>
+		<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de nous améliorer et d\'essayer de rendre b-onstage le plus utile et agreable pour vous, nous vous encourageons à nous envoyez toutes vos suggestions à l\'adresse suggestion@b-onstage.com.</p>
+		<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous ne souhaitez plus recevoir de mail de b-onstage, Cliquez-ici.</p>';
+
+
+// Calendar months and day names
+$lang['calendar_month_1'] = 'January';
+$lang['calendar_month_2'] = 'February';
+$lang['calendar_month_3'] = 'March';
+$lang['calendar_month_4'] = 'April';
+$lang['calendar_month_5'] = 'May';
+$lang['calendar_month_6'] = 'June';
+$lang['calendar_month_7'] = 'July';
+$lang['calendar_month_8'] = 'August';
+$lang['calendar_month_9'] = 'September';
+$lang['calendar_month_10'] = 'October';
+$lang['calendar_month_11'] = 'November';
+$lang['calendar_month_12'] = 'December';
+$lang['calendar_shortmonth_1'] = 'jan.';
+$lang['calendar_shortmonth_2'] = 'feb.';
+$lang['calendar_shortmonth_3'] = 'mar.';
+$lang['calendar_shortmonth_4'] = 'apr.';
+$lang['calendar_shortmonth_5'] = 'may';
+$lang['calendar_shortmonth_6'] = 'jun.';
+$lang['calendar_shortmonth_7'] = 'jul.';
+$lang['calendar_shortmonth_8'] = 'aug.';
+$lang['calendar_shortmonth_9'] = 'sept.';
+$lang['calendar_shortmonth_10'] = 'oct.';
+$lang['calendar_shortmonth_11'] = 'nov.';
+$lang['calendar_shortmonth_12'] = 'dec.';
+$lang['calendar_day_1'] = 'Sunday';
+$lang['calendar_day_2'] = 'Monday';
+$lang['calendar_day_3'] = 'Tuesday';
+$lang['calendar_day_4'] = 'Wednesday';
+$lang['calendar_day_5'] = 'Thursday';
+$lang['calendar_day_6'] = 'Friday';
+$lang['calendar_day_7'] = 'Saturday';
+$lang['calendar_shortday_1'] = 'Sun';
+$lang['calendar_shortday_2'] = 'Mon';
+$lang['calendar_shortday_3'] = 'Tue';
+$lang['calendar_shortday_4'] = 'Wed';
+$lang['calendar_shortday_5'] = 'Thu';
+$lang['calendar_shortday_6'] = 'Fri';
+$lang['calendar_shortday_7'] = 'Sat';
+$lang['calendar_year'] = 'ENAnnée';
+$lang['calendar_years'] = 'ENAnnées';
+$lang['calendar_month'] = 'ENMois';
+$lang['calendar_months'] = 'ENMois';
+$lang['calendar_week'] = 'ENSemaine';
+$lang['calendar_weeks'] = 'ENSemaines';
+$lang['calendar_day'] = 'ENJour';
+$lang['calendar_days'] = 'ENJours';
+$lang['calendar_hour'] = 'ENHeure';
+$lang['calendar_hours'] = 'ENHeures';
+$lang['calendar_minute'] = 'ENMinute';
+$lang['calendar_minutes'] = 'ENMinutes';
+$lang['calendar_second'] = 'ENSeconde';
+$lang['calendar_seconds'] = 'ENSecondes';
+$lang['calendar_y'] = 'y';
+$lang['calendar_m'] = 'm';
+$lang['calendar_w'] = 'w';
+$lang['calendar_d'] = 'd';
