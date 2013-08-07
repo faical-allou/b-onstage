@@ -9,11 +9,11 @@
 		</div>
 		<div class="mb-10 grey bold">			
 			<span aria-hidden="true" class="icon-music fs-16"></span>
-			<span class="ml-5 fs-16"><?=$track_count?> pistes</span>			
+			<span class="ml-5 fs-16"><?=$track_count?> <?php echo strtolower(lang("users_page_sons_track")) ?></span>			
 		</div>	
 		<div class="mb-10 grey bold">			
 			<span aria-hidden="true" class="icon-playlist fs-16"></span>
-			<span class="ml-5 fs-16"><?=$playlist_count?> playlists</span>		
+			<span class="ml-5 fs-16"><?=$playlist_count?> <?php echo strtolower(lang("playlists")) ?></span>		
 		</div>
 	</div>		
 </div>

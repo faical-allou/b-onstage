@@ -278,13 +278,13 @@ class Media_model extends CI_Model
 				throw new Exception($error);
 			}	
 				
-			$result = array('msg' => 'Compte picasa ajouté avec succès', 'status' => 'SUCCESS', 'id' => $this->db->insert_id());			
+			$result = array('msg' => lang("users_page_picasa_add_success"), 'status' => 'SUCCESS', 'id' => $this->db->insert_id());			
 			
 			return $result;	
 		}catch(Exception $e){			
 			switch($e->getMessage()){
-				case 'ERROR_BD'	: return array('status' => $e->getMessage(), 'msg' => 'Une erreur s\'est produite, veuillez réessayer plus tard'); break;
-				case 'EXIST'	: return array('status' => $e->getMessage(), 'msg' => 'Ce compte picasa est déjà enregistré'); break;
+				case 'ERROR_BD'	: return array('status' => $e->getMessage(), 'msg' => lang("error_retry")); break;
+				case 'EXIST'	: return array('status' => $e->getMessage(), 'msg' => lang("users_page_picasa_add_error1")); break;
 				default			: break;
 			}	
 		}	
@@ -293,9 +293,9 @@ class Media_model extends CI_Model
 	function delete_pi_user($id){
 		
 		if($this->db->delete('pi_photos', array('id' => $id)))
-			$result = array('msg' => 'Compte picasa supprimé avec succès', 'status' => 'SUCCESS');
+			$result = array('msg' => lang("users_page_picasa_deleted"), 'status' => 'SUCCESS');
 		else
-			$result = array('msg' => 'Une erreur s\'est prosuite, veuillez réessayer plus tard', 'status' => 'ERROR');		
+			$result = array('msg' => lang("error_retry"), 'status' => 'ERROR');		
 			
 		return $result;
 	}
@@ -338,12 +338,12 @@ class Media_model extends CI_Model
 			);		
 			$html = $this->load->view('page/tpl_yt_video', $data ,true);
 			
-			return array('status' => 'SUCCESS', 'msg' => 'Média ajouté avec succès', 'html' => $html);
+			return array('status' => 'SUCCESS', 'msg' => lang("users_page_media_add_success"), 'html' => $html);
 			
 		}catch(Exception $e){			
 			switch($e->getMessage()){
-				case 'ERROR_BD'	: return array('status' => $e->getMessage(), 'msg' => 'Une erreur s\'est produite, veuillez réessayer plus tard'); break;
-				case 'EXIST'	: return array('status' => $e->getMessage(), 'msg' => 'Ce média est déjà enregistré'); break;
+				case 'ERROR_BD'	: return array('status' => $e->getMessage(), 'msg' => lang("error_retry")); break;
+				case 'EXIST'	: return array('status' => $e->getMessage(), 'msg' => lang("users_page_media_add_error1")); break;
 				default			: break;
 			}	
 		}
@@ -401,12 +401,12 @@ class Media_model extends CI_Model
 			
 			$html= $this->load->view('page/tpl_yt_feed', $data ,true);
 			
-			return array('status' => 'SUCCESS', 'msg' => 'Média ajouté avec succès', 'html' => $html);
+			return array('status' => 'SUCCESS', 'msg' => lang("users_page_media_add_success"), 'html' => $html);
 			
 		}catch(Exception $e){			
 			switch($e->getMessage()){
-				case 'ERROR_BD'	: return array('status' => $e->getMessage(), 'msg' => 'Une erreur s\'est produite, veuillez réessayer plus tard'); break;
-				case 'EXIST'	: return array('status' => $e->getMessage(), 'msg' => 'Ce média est déjà enregistré'); break;
+				case 'ERROR_BD'	: return array('status' => $e->getMessage(), 'msg' => lang("error_retry")); break;
+				case 'EXIST'	: return array('status' => $e->getMessage(), 'msg' => lang("users_page_media_add_error1")); break;
 				default			: break;
 			}	
 		}			
@@ -414,16 +414,16 @@ class Media_model extends CI_Model
 	
 	public function delete_yt_video($id){
 		if($this->db->delete('yt_medias', array('id' => $id)))
-			return array('status' => 'SUCCESS', 'msg' => 'Vidéo supprimé avec succès');
+			return array('status' => 'SUCCESS', 'msg' => lang("users_page_videos_deleted"));
 		else
-			return array('status' => 'ERROR', 'msg' => 'Une erreur s\'est produite, veuillez réessayer plus tard');	
+			return array('status' => 'ERROR', 'msg' => lang("error_retry"));	
 	}
 	
 	public function delete_yt_feed($id){
 		if($this->db->delete('yt_medias', array('id' => $id)))
-			return array('status' => 'SUCCESS', 'msg' => 'Flux supprimé avec succès');
+			return array('status' => 'SUCCESS', 'msg' => lang("users_page_flux_deleted"));
 		else
-			return array('status' => 'ERROR', 'msg' => 'Une erreur s\'est produite, veuillez réessayer plus tard');	
+			return array('status' => 'ERROR', 'msg' => lang("error_retry"));	
 	}
 	
 	private function _get_data($json_url='',$array = false){

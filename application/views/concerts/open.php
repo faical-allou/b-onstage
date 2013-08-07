@@ -1,3 +1,16 @@
+<?php 
+//Include config lang
+include("/home/bonstage/dev.b-onstage/application/config/lang.php");
+//Determine row name depending on lang loaded
+if($this->session->userdata('lang_loaded') == "french"){$rowname = '';}
+else {
+	foreach($lang_counts as $key => $value){
+		if($this->session->userdata('lang_loaded') == $value["name"]){
+			$rowname = '_'.$value["id"];
+		}
+	}
+}
+?>
 <script type="text/javascript">
 var status = '<?=$status?>';
 var per_page = <?=$per_page?>;
@@ -11,49 +24,49 @@ var entry_max = <?=$entry_max?>;
 	<div class="grid_12 ui-corner-all bs-black bg-white mb-20">
 		<table width="100%"><tbody><tr>
 			<td class="filter-concert">				
-				<div class="p-10 fs-16 white title bg-purple ui-corner-tl">Filtrer les résultats</div>					
+				<div class="p-10 fs-16 white title bg-purple ui-corner-tl"><?php echo lang("book_filterresults") ?></div>					
 				<div class="inner">	
 					<!--filter sort-->
 					<div class="p-20">
-						<div class="mb-10 purple title fs-16">Trier par</div>
+						<div class="mb-10 purple title fs-16"><?php echo lang("sortby") ?></div>
 						<div><?=form_dropdown($filter_sort['name'], $filter_sort['options'], $filter_sort['selected'], $filter_sort['js'])?></div>
 					</div>
 					<!--genre musical-->
 					<div class="p-20">
-						<div class="mb-10 purple title fs-16">Par genre musical</div>
+						<div class="mb-10 purple title fs-16"><?php echo lang("book_bysort1") ?></div>
 						<div>
 							<select id="filter-genre" name="filter-genre" multiple="multiple">						
 								<?php foreach($genres as $genre){ ?>
-								<option value="<?=$genre['id']?>"><?=$genre['name']?></option>
+								<option value="<?=$genre['id']?>"><?=$genre['name'.$rowname]?></option>
 								<?php } ?>
 							</select>				
 						</div>
 					</div>		
 					<!--daterange silder-->
 					<div class="p-20">
-						<div class="mb-10 purple title fs-16">Par tranche</div>
+						<div class="mb-10 purple title fs-16"><?php echo lang("book_bysort2") ?></div>
 						<!--reservation-->
 						<div class="mb-20">
-							<div class="mb-10 grey fs-12 bold">Réservation entre <span id="filter-reservation"></span></div>				
+							<div class="mb-10 grey fs-12 bold"><?php echo lang("book_bysort2_1") ?> <span id="filter-reservation"></span></div>				
 							<div class="ml-5 mr-5" id="slider-range-reservation"></div>					
 						</div>					
 						
 						<!--entry-->				
 						<div class="mb-20">
-							<div class="mb-10 grey fs-12 bold">Prix entrée entre <span id="filter-entry"></span></div>
+							<div class="mb-10 grey fs-12 bold"><?php echo lang("book_bysort2_1") ?> <span id="filter-entry"></span></div>
 							<div class="ml-5 mr-5" id="slider-range-entry"></div>
 						</div>
 						
 						<!--schedule-->
 						<div class="mb-10">
-							<div class="mb-10 grey fs-12 bold">Horaire entre <span id="filter-schedule"></span></div>
+							<div class="mb-10 grey fs-12 bold"><?php echo lang("book_bysort2_1") ?> <span id="filter-schedule"></span></div>
 							<div class="ml-5 mr-5" id="slider-range-schedule"></div>
 						</div>
 					</div>
 
 					<!--payment type-->
 					<div class="p-20">					
-						<div class="mb-10 purple title fs-16">Par type de rémunération</div>
+						<div class="mb-10 purple title fs-16"><?php echo lang("book_bysort3") ?></div>
 						<div id="filter-payment">
 							<!--payment amount-->
 							<div class="fs-12 grey bold mb-10">
@@ -86,27 +99,27 @@ var entry_max = <?=$entry_max?>;
 			</td>	
 			<td class="result-concert">						
 				<!--title-->
-				<div class="p-10 fs-16 white title bg-purple ui-corner-tr">Résultats de la recherche</div>										
+				<div class="p-10 fs-16 white title bg-purple ui-corner-tr"><?php echo lang("artists_searchresutls") ?></div>										
 				
 				<!--header-->				
 				<div class="recommendations m-10">
 					<div class="dt" style="width:100%;">
 						<div class="dtc ta-c">
 							<div class="p-10">
-								<div class="title fs-24">Etape 1</div>
-								<p class="grey fs-12">Choisissez une Date et cliquez sur <strong>"Demande de réservation"</strong>.</p>
+								<div class="title fs-24"><?php echo lang("step") ?> 1</div>
+								<p class="grey fs-12"><?php echo lang("book_steptxt1") ?></p>
 							</div>	
 						</div>
 						<div class="dtc ta-c">
 							<div class="p-10">
-								<div class="title fs-24">Etape 2</div>
-								<p class="grey fs-12">Une fois sélectionné par la Scène, vous avez <strong>48 heures</strong> pour valider votre réservation.</p>
+								<div class="title fs-24"><?php echo lang("step") ?> 2</div>
+								<p class="grey fs-12"><?php echo lang("book_steptxt2") ?></p>
 							</div>	
 						</div>
 						<div class="dtc ta-c">
 							<div class="p-10">
-								<div class="title fs-24">Etape 3</div>
-								<p class="grey fs-12">Le jour du Concert, présentez-vous et <strong>c'est à vous de jouer!</strong></p>
+								<div class="title fs-24"><?php echo lang("step") ?> 3</div>
+								<p class="grey fs-12"><?php echo lang("book_steptxt3") ?></p>
 							</div>	
 						</div>							
 					</div>
@@ -119,10 +132,10 @@ var entry_max = <?=$entry_max?>;
 				<footer>				
 					<!--if no results-->
 					<?php if($count_events == 0) { ?>
-						<h1 class="grey fs-18 title pl-20">Aucun résultat n'a été trouvé.</h1>
+						<h1 class="grey fs-18 title pl-20"><?php echo lang("noresultfound") ?></h1>
 					<?php } else { ?>				
 					<!--show more results-->
-					<div id="more-concert" class="p-10 <?=(($count_events <= $per_page) ? 'hidden' : '')?>"><button style="width:100%;">Afficher plus de résultats</button></div>
+					<div id="more-concert" class="p-10 <?=(($count_events <= $per_page) ? 'hidden' : '')?>"><button style="width:100%;"><?php echo lang("showmoreresults") ?></button></div>
 					<div id="loader-more-concert" class="p-10">
 						<?=img(site_url('img/loader/1.gif'))?>
 					</div>		

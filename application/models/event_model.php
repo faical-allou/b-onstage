@@ -97,15 +97,26 @@ class Event_model extends CI_Model
 		}		
 		
 		// Add music genres to the event
+		//Include config lang
+		include("/home/bonstage/dev.b-onstage/application/config/lang.php");
+		//Determine row name depending on lang loaded
+		if($this->session->userdata('lang_loaded') == "french"){$rowname = '';}
+		else {
+			foreach($lang_counts as $key => $value){
+				if($this->session->userdata('lang_loaded') == $value["name"]){
+					$rowname = '_'.$value["id"];
+				}
+			}
+		}
 		foreach ($events as $key => $event) {
 			$events[$key]['genres'] = array();
 			$genres_ids = explode('|', $event['genre_id']);
-			$query = $this->db->select('name')
+			$query = $this->db->select('name'.$rowname)
 								->from('musical_genres')
 								->where_in('id', $genres_ids)
 								->get();
 			foreach ($query->result_array() as $row)
-				array_push($events[$key]['genres'],ucfirst($row['name']));
+				array_push($events[$key]['genres'],ucfirst($row['name'.$rowname]));
 		}
 		
 		return $events;
@@ -294,15 +305,15 @@ class Event_model extends CI_Model
 				default: break;
 			}
 			
-			return json_encode(array('status' => 'SUCCESS', 'msg' => 'Evènement supprimé avec succès'));	
+			return json_encode(array('status' => 'SUCCESS', 'msg' => lang("users_calendar_event_del_success")));	
 		
 		}catch (Exception $e) {
 			switch($e->getMessage()){
 				case 'ERROR' :
-					return json_encode(array('status' => 'ERROR', 'msg' => 'Une erreur s\'est produite, veuillez réessayer ultérieurement'));	
+					return json_encode(array('status' => 'ERROR', 'msg' => lang("error_retry")));	
 					break;
 				case 'ACCESS_DENIED' :
-					return json_encode(array('status' => 'ERROR', 'msg' => 'Vous n\'êtes pas propriétaire de cet évènement, il vous est donc impossible de le supprimer'));	
+					return json_encode(array('status' => 'ERROR', 'msg' => lang("users_calendar_event_del_error1")));	
 					break;	
 				default : break;
 			}

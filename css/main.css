@@ -748,7 +748,7 @@ page
 /*soudcloud*/
 .sc-user{border-bottom:1px solid #eaeaea;border-top:1px solid #fff;}
 .sc-user header{position:relative;min-height:100px;background-color:#f5f5f5;border-bottom:1px solid #eaeaea;}
-.sc-user-avatar{position:absolute;width:100px;height:100%;}
+.sc-user-avatar{float:left; margin-right:15px;}
 .sc-user-infos{margin-left:120px;}
 .sc-menu{
 	width:100%;

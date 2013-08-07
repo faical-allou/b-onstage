@@ -90,13 +90,13 @@ class Concerts extends CI_Controller {
 		switch($status){
 			case 'open':		
 				//var header			
-				$this->header['title'] = 'Ou jouer ma musique ?';
-				$this->header['description'] = 'Recherchez des sc�nes o� jouer. Trouvez des groupes et artistes pour vos soir�es. D�couvrez les concerts sur Paris, Montr�al, Berlin, Los Angeles.';
+				$this->header['title'] = lang("user_book_title");
+				$this->header['description'] = lang("user_book_desc");
 				
 				//input filter
 				$filter_remuneration = array(
 					//payment amount
-					'label_filter_payment_amount'	=> 'Cachet de XXX €',
+					'label_filter_payment_amount'	=> lang("users_calendar_create_cachet").' XXX €',
 					'input_filter_payment_amount'	=>array(
 						'name'		=> 'filter-payment-amount',
 						'id'		=> 'filter-payment-amount',
@@ -105,7 +105,7 @@ class Concerts extends CI_Controller {
 						'style'		=> 'vertical-align:middle;margin-top:-3px;'
 					),
 					//percent drink
-					'label_filter_percent_drink'	=> ' de surcharge sur les boissons',
+					'label_filter_percent_drink'	=> '% '.lang("users_calendar_create_conso"),
 					'input_filter_percent_drink'	=>array(
 						'name'		=> 'filter-percent-drink',
 						'id'		=> 'filter-percent-drink',
@@ -114,7 +114,7 @@ class Concerts extends CI_Controller {
 						'style'	=> 'vertical-align:middle;margin-top:-3px;'
 					),
 					//percent entry
-					'label_filter_percent_entry'	=> '% sur la billeterie',
+					'label_filter_percent_entry'	=> '% '.lang("users_calendar_create_tickets"),
 					'input_filter_percent_entry'	=>array(
 						'name'		=> 'filter-percent-entry',
 						'id'		=> 'filter-percent-entry',
@@ -123,7 +123,7 @@ class Concerts extends CI_Controller {
 						'style'		=> 'vertical-align:middle;margin-top:-3px;'
 					),
 					//refund fees
-					'label_filter_refund_fees'	=> 'Remboursement des frais de réservations',
+					'label_filter_refund_fees'	=> lang("users_calendar_create_remb"),
 					'input_filter_refund_fees'	=>array(
 						'name'		=> 'filter-refund-fees',
 						'id'		=> 'filter-refund-fees',
@@ -132,7 +132,7 @@ class Concerts extends CI_Controller {
 						'style'		=> 'vertical-align:middle;margin-top:-3px;'
 					),
 					//non rémunéré
-					'label_filter_remuneration'	=> 'Non rémunéré',
+					'label_filter_remuneration'	=> lang("users_calendar_create_non_renum"),
 					'input_filter_remuneration'	=>array(
 						'name'		=> 'filter-remuneration',
 						'id'		=> 'filter-remuneration',
@@ -143,12 +143,12 @@ class Concerts extends CI_Controller {
 				);
 					
 				$filter_sort = array(
-					'label'		=> 'Trier par',
+					'label'		=> lang("sortby"),
 					'name'		=> 'filter-sort',
 					'options'	=> array(
-						'date_start'	=> 'Date',
-						'reservation'	=> 'Frais de réservation',
-						'entry'			=> 'Prix entrée'
+						'date_start'	=> lang("date"),
+						'reservation'	=> lang("users_rese_fees"),
+						'entry'			=> lang("users_rese_enterprice")
 					),
 					'selected'	=> 'date_start',
 					'js'		=> 'id="filter-sort"'
@@ -157,16 +157,16 @@ class Concerts extends CI_Controller {
 				foreach ($events as $event) {
 					switch($event['payment_type']){
 						case 1 : 
-							$payment_type = 'Non renseigné';
+							$payment_type = lang("notset");
 							break;
 						case 2 :
-							$payment_type = 'Non rémunéré';
+							$payment_type = lang("users_calendar_create_non_renum");
 							break;
 						case 3 :
-							$payment_type = ($event['payment_amount'] > 0) ? 'Cachet de '.round($event['payment_amount'],2).' €'.br() : '';
-							$payment_type .= ($event['percent_drink'] > 0) ? $event['percent_drink'].' de surcharge sur les boissons'.br() : '';
-							$payment_type .= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% sur la billeterie'.br() : '';
-							$payment_type .= ($event['refund_fees'] > 0) ? 'Remboursement des frais de réservation' : '';
+							$payment_type = ($event['payment_amount'] > 0) ? lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' €'.br() : '';
+							$payment_type .= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'% '.lang("users_calendar_create_conso").br() : '';
+							$payment_type .= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets").br() : '';
+							$payment_type .= ($event['refund_fees'] > 0) ? lang("users_calendar_create_remb") : '';
 							break;
 						default : break;
 					}								
@@ -209,16 +209,16 @@ class Concerts extends CI_Controller {
 			break;
 			case 'close' : 
 				//var header			
-				$this->header['title'] = 'Programmation';
-				$this->header['description'] = 'Recherchez des sc�nes o� jouer. Trouvez des groupes et artistes pour vos soir�es. D�couvrez les concerts sur Paris, Montr�al, Berlin, Los Angeles.';
+				$this->header['title'] = lang("user_shows_title");
+				$this->header['description'] = lang("user_shows_desc");
 				
 				//var input filter
 				$filter_sort = array(
-					'label'		=> 'Trier par',
+					'label'		=> lang("sortby"),
 					'name'		=> 'filter-sort',
 					'options'	=> array(
-						'date_start'	=> 'Trier par date',					
-						'entry'			=> 'Trier par prix entrée'
+						'date_start'	=> lang("shows_sortby1"),					
+						'entry'			=> lang("shows_sortby2")
 					),
 					'selected'	=> '',
 					'js'		=> 'id="filter-sort"'
@@ -294,16 +294,16 @@ class Concerts extends CI_Controller {
 					foreach($events as $event){				
 						switch($event['payment_type']){
 							case 1 : 
-								$payment_type = 'Non renseigné';
+								$payment_type = lang("notset");
 								break;
 							case 2 :
-								$payment_type = 'Non rémunéré';
+								$payment_type = lang("users_calendar_create_non_renum");
 								break;
 							case 3 :
 								$payment_type = ($event['payment_amount'] > 0) ? 'Cachet de '.round($event['payment_amount'],2).' €'.br() : '';
-								$payment_type .= ($event['percent_drink'] > 0) ? $event['percent_drink'].' de surcharge sur les boissons'.br() : '';
-								$payment_type .= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% sur la billeterie'.br() : '';
-								$payment_type .= ($event['refund_fees'] > 0) ? 'Remboursement des frais de réservation' : '';
+								$payment_type .= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'% '.lang("users_calendar_create_conso").br() : '';
+								$payment_type .= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets").br() : '';
+								$payment_type .= ($event['refund_fees'] > 0) ? lang("users_calendar_create_remb") : '';
 								break;
 							default : break;
 						}			

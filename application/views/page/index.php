@@ -7,30 +7,30 @@
 			<div id="top-header-page">			
 				<!--cover page-->
 				<div id="cover-page">		
-					<?=img(array('src' => site_url($user_page['cover'].'?'.time()), 'width' => '100%', 'title' => 'Photo de couverture','id' => 'img-cover', 'class' => 'ui-corner-top'))?>				
+					<?=img(array('src' => site_url($user_page['cover'].'?'.time()), 'width' => '100%', 'title' => lang("users_page_pic"),'id' => 'img-cover', 'class' => 'ui-corner-top'))?>				
 					<?php if($user_state == 2){?>					
-						<div id="update-upload-cover" class="title fs-18 white rgba-black-8">Modifier la photo de couverture</div>						
+						<div id="update-upload-cover" class="title fs-18 white rgba-black-8"><?php echo lang("users_page_modpic") ?></div>						
 					<?php } ?>
 				</div>
 				
 				<!--avatar page-->
 				<div id="avatar-page" class="ui-corner-all">
-					<?=img(array('src' => site_url($user_page['avatar'].'?'.time()),'width' => '100%', 'title' => 'Photo de profil', 'id'=>'img-avatar', 'class' => 'ui-corner-all'))?>
+					<?=img(array('src' => site_url($user_page['avatar'].'?'.time()),'width' => '100%', 'title' => lang("users_page_ava"), 'id'=>'img-avatar', 'class' => 'ui-corner-all'))?>
 					<?php if($user_state == 2){ ?>
-						<div id="update-upload-avatar" class="title fs-18 white rgba-black-8 ui-corner-bottom">Modifier avatar</div>
+						<div id="update-upload-avatar" class="title fs-18 white rgba-black-8 ui-corner-bottom"><?php echo lang("users_page_modava") ?></div>
 					<?php } ?>
 				</div>	
 
 				<?php if($user_state==0){ ?>
 					<div id="auth-page" class="p-a rgba-white-8 p-10 ui-corner-all">
-						<h3 class=" m-0 title grey"><?=$user_page['company']?> est sur b-onstage</h3>
-						<p class="grey fs-12 bold">Communiquez avec <?=$user_page['company']?> en vous inscrivant.</p>
+						<h3 class=" m-0 title grey"><?=$user_page['company']?> <?php echo lang("users_page_ison") ?> b-onstage</h3>
+						<p class="grey fs-12 bold"><?php echo lang("users_page_comwith") ?> <?=$user_page['company']?> <?php echo lang("users_page_signup") ?></p>
 						<div class="mt-10">
 							<span>
-								<a href="<?=site_url('signup_choice')?>" class="ui-dark">Inscription</a>
+								<a href="<?=site_url('signup_choice')?>" class="ui-dark"><?php echo lang("signup_stage_title") ?></a>
 							</span>
 							<span class="ml-5">								
-								<?=anchor(site_url('login/'.urlencode(uri_string())), 'Connexion', array('class'=>'ui-purple'))?>								
+								<?=anchor(site_url('login/'.urlencode(uri_string())), lang("signin_title"), array('class'=>'ui-purple'))?>								
 							</span>	
 						</div>
 					</div>
@@ -47,13 +47,13 @@
 				<!--menu page-->
 				<div id="menu-page" class="left">
 					<ul>
-						<li><a href="javascript:void(0);" id="menu-page-profil" data-content-id="content-profil" class="grey fs-16 ui-corner-bl">Profil</a></li>						
-						<li><a href="javascript:void(0);" id="menu-page-concert" data-content-id="content-concert" class="grey fs-16">Concerts</a></li>						
+						<li><a href="javascript:void(0);" id="menu-page-profil" data-content-id="content-profil" class="grey fs-16 ui-corner-bl"><?php echo lang("users_page_menu1") ?></a></li>						
+						<li><a href="javascript:void(0);" id="menu-page-concert" data-content-id="content-concert" class="grey fs-16"><?php echo lang("users_page_menu2") ?></a></li>						
 						<?php if($user_group_page == 'artist') { ?>
-						<li><a href="javascript:void(0);" id="menu-page-sound" data-content-id="content-sound" class="grey fs-16">Sons</a></li>						
+						<li><a href="javascript:void(0);" id="menu-page-sound" data-content-id="content-sound" class="grey fs-16"><?php echo lang("users_page_menu3") ?></a></li>						
 						<?php } ?>
-						<li><a href="javascript:void(0);" id="menu-page-video" data-content-id="content-video" class="grey fs-16">Vidéos</a></li>						
-						<li><a href="javascript:void(0);" id="menu-page-photo" data-content-id="content-photo" class="grey fs-16">Photos</a></li>						
+						<li><a href="javascript:void(0);" id="menu-page-video" data-content-id="content-video" class="grey fs-16"><?php echo lang("users_page_menu4") ?></a></li>						
+						<li><a href="javascript:void(0);" id="menu-page-photo" data-content-id="content-photo" class="grey fs-16"><?php echo lang("users_page_menu5") ?></a></li>						
 					</ul>
 				</div>
 				
@@ -61,15 +61,15 @@
 				<div id="action-page" class="right">
 				<?php if($user_state == 1){ ?>
 					<div id="dropdown-plus" class="wrapper-dropdown">
-						<div><span class="fs-16 title">Plus</span></div>
+						<div><span class="fs-16 title"><?php echo lang("plus") ?></span></div>
 						<ul class="dropdown ui-corner-all">
-							<li><a href="javascript:void(0);" id="button-send-msg" data-email-to="<?=$user_page['email']?>"><span aria-hidden="true" class="fs-14 icon-mail-3 mr-10"></span>Envoyer message</a></li>
-							<li><a href="javascript:void(0);" id="button-add-contact"><span aria-hidden="true" class="fs-14 icon-plus mr-10"></span>Ajouter à mes contacts</a></li>				
+							<li><a href="javascript:void(0);" id="button-send-msg" data-email-to="<?=$user_page['email']?>"><span aria-hidden="true" class="fs-14 icon-mail-3 mr-10"></span><?php echo lang("users_contact_sendmsg") ?></a></li>
+							<li><a href="javascript:void(0);" id="button-add-contact"><span aria-hidden="true" class="fs-14 icon-plus mr-10"></span><?php echo lang("users_contact_add") ?></a></li>				
 						</ul>
 					</div>				
 				<?php } else if($user_state == 2){?>
 					<a href="javascript:void(0);" id="button-edit-profile" class="grey fs-16 ui-corner-br">
-						<span class="icon-pencil fs-14 mr-5" aria-hidden="true"></span>Modifier profil
+						<span class="icon-pencil fs-14 mr-5" aria-hidden="true"></span><?php echo lang("users_page_modpro") ?>
 					</a>					
 				<?php } ?>
 				</div>
@@ -87,8 +87,8 @@
 							<li><a href="javascript:void(0);" class="jp-pause" tabindex="1">pause</a></li>
 							<li><a href="javascript:void(0);" class="jp-next" tabindex="1">next</a></li>
 							<li><a href="javascript:void(0);" class="jp-stop" tabindex="1">stop</a></li>
-							<li><a href="javascript:void(0);" class="jp-mute" tabindex="1" title="mute">mute</a></li>
-							<li><a href="javascript:void(0);" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>						
+							<li><a href="javascript:void(0);" class="jp-mute" tabindex="1" title="<?php echo lang("mute") ?>">mute</a></li>
+							<li><a href="javascript:void(0);" class="jp-unmute" tabindex="1" title="<?php echo lang("unmute") ?>">unmute</a></li>						
 						</ul>
 						<div class="jp-time-holder">
 							<div class="jp-current-time"></div>
@@ -103,10 +103,10 @@
 							<div class="jp-volume-bar-value"></div>
 						</div>
 						<ul class="jp-toggles">												
-							<li><a href="javascript:void(0);" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
-							<li><a href="javascript:void(0);" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+							<li><a href="javascript:void(0);" class="jp-repeat" tabindex="1" title="<?php echo lang("repeat") ?>">repeat</a></li>
+							<li><a href="javascript:void(0);" class="jp-repeat-off" tabindex="1" title="<?php echo lang("repeatoff") ?>">repeat off</a></li>
 							<!--button show playlist ajouté au plugin jplayer-->
-							<li><a href="javascript:void(0);" id="button-show-playlist" class="jp-show-playlist" tabindex="1" title="Show playlist">show</a></li>						
+							<li><a href="javascript:void(0);" id="button-show-playlist" class="jp-show-playlist" tabindex="1" title="<?php echo lang("showplaylist") ?>">show</a></li>						
 						</ul>
 					</div>
 					<div class="jp-playlist">
@@ -123,8 +123,8 @@
 		<!--finish mode edit-->
 		<div id="finished-editing" class="ui-corner-all bs-black mb-20">
 			<div class="clearfix p-10">				
-				<span class="right ml-5"><button id="button-finished-editing" class="ui-dark">Modifications terminées</button></span>	
-				<span class="right white fs-12 bold" style="padding:.6em 1em;">Cliquez sur la partie de votre profil que vous voulez modifier</span>
+				<span class="right ml-5"><button id="button-finished-editing" class="ui-dark"><?php echo lang("users_page_modpro_txtdone") ?></button></span>	
+				<span class="right white fs-12 bold" style="padding:.6em 1em;"><?php echo lang("users_page_modpro_txt") ?></span>
 			</div>	
 		</div>
 		
@@ -141,7 +141,7 @@
 					<?=$title_infos?>					
 					<div class="p-20">
 						<?php if($empty_infos) { ?>
-							<p class="grey fs-15"><i>Aucune informations disponibles</i></p>							
+							<p class="grey fs-15"><i><?php echo lang("users_page_modpro_noinfo") ?></i></p>							
 						<?php } ?>					
 
 						<?php foreach($infos as $info) { ?>							
@@ -182,7 +182,7 @@
 					<?=$title_social_links?>
 					<div class="p-20">
 						<?php if($empty_social_links) { ?>							
-							<p class="grey fs-15"><i>Aucun liens sociaux disponibles</i></p>							
+							<p class="grey fs-15"><i><?php echo lang("users_page_socialmed_notfound") ?></i></p>							
 						<?php } ?>							
 							<ul class="social-links">
 							<?php foreach($social_links as $social_link) { ?>							
@@ -222,7 +222,7 @@
 					<?=$title_description?>				
 					<div class="p-20">							
 						<?php if(empty($description)) { ?>
-							<p class="grey fs-15"><i>Aucune description disponible</i></p>														
+							<p class="grey fs-15"><i><?php echo lang("users_page_desc_notfound") ?></i></p>														
 						<?php } ?>																
 						<div id="description-page">
 							<?=$description?>							
@@ -242,7 +242,7 @@
 						</div>	
 					<?php } else { ?>
 						<div class="p-20">
-							<p class="fs-15 grey"><i>Aucun concert à venir pour le moment</i></p>
+							<p class="fs-15 grey"><i><?php echo lang("users_page_shows_notfound") ?></i></p>
 						</div>
 					<?php } ?>
 					
@@ -262,27 +262,20 @@
 						<?=$title_sounds?>						
 						<?php if($user_state == 2){?>
 							<div class="recommendations m-10">
-								<div class="title fs-16 purple">Recommendations pour ajouter de la musique</div>
-								<p class="grey fs-12 bold">Afin de vous démarquer, il est important que les Scènes puissent vous écouter.</p>
-								<p class="grey fs-12 bold">Ajoutez vos sons à votre profil. Pour cela, il y a deux façons de faire:</p>
-								<ul style="list-style:square;margin-left:20px;">	
-									<li class="purple fs-12 bold"><span class="grey">Depuis votre Ordinateur: cliquez sur J'ajoute des pistes audio, choisissez le fichiers sur votre ordinateur. Seuls les fichiers MP3 de moins de 20Mo sont acceptés.</span></li>
-									<li class="purple fs-12 bold"><span class="grey">Depuis votre compte Soundcloud: cliquez sur J'ajoute un compte Souncloud, entrez vos informations Soundcloud.</span></li>
-								</ul>	
-								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p> 
+								<?php echo lang("users_page_sons_txt") ?> 
 							</div>
 						<?php } ?>
 						<!--all sound-->
 						<div id="sound">
 							<ul class="sound-menu clearfix">								
-								<li class="active" data-content-id="#sound-tracks">Pistes (<span id="count-tracks"><?=$sound['count_tracks']?></span>)</li>								
+								<li class="active" data-content-id="#sound-tracks"><?php echo lang("users_page_sons_track") ?> (<span id="count-tracks"><?=$sound['count_tracks']?></span>)</li>								
 							</ul>
 							
 							<!--tracks-->
 							<div class="sound-content active" id="sound-tracks">																	
 								<?php if($user_state == 2){?>									
 									<div class="wrap-button-action p-10">								
-										<div><button id="button-add-sound">J'ajoute des pistes audio</button></div>								
+										<div><button id="button-add-sound"><?php echo lang("users_page_sons_addtrack") ?></button></div>								
 									</div>																
 								<?php }?>
 								<?php if($user_state != 2 && $sound['count_tracks'] == 0){ ?>
@@ -313,7 +306,7 @@
 						<?=$title_soundcloud?>
 						<?php if($user_state == 2){?>									
 							<div class="wrap-button-action p-10">								
-								<div><button id="button-add-sc">J'ajoute un compte Soundcloud</button></div>								
+								<div><button id="button-add-sc"><?php echo lang("users_page_sons_addsoundcloud") ?></button></div>								
 							</div>							
 						<?php }?>	
 						<div id="soundcloud">
@@ -331,27 +324,24 @@
 						<!--recommendations-->
 						<?php if($user_state == 2){?>
 							<div class="recommendations m-10">
-								<p class="title purple fs-16">Recommendations pour ajouter une vidéo</p>
-								<p class="grey fs-12 bold">Ajoutez vos vidéos à votre profil. Vous pouvez par exemple y mettre des vidéos de vos concerts, de vos clips, etc.</p> 
-								<p class="grey fs-12 bold">Cliquez sur J'ajoute une vidéo. Copiez l'adresse du lien vidéo Youtube.</p> 
-								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p>								
+								<?php echo lang("users_page_videos_txt") ?>								
 							</div>
 						<?php } ?>	
 						
 						<div id="yt-medias">
 							<ul class="clearfix">								
-								<li data-content-id="#yt-videos">Vidéos (<span id="count-video"><?=$videos['yt_video_count']?></span>)</li>
-								<li data-content-id="#yt-feeds">Flux (<span id="count-feed"><?=$videos['yt_feed_count']?></span>)</li>
+								<li data-content-id="#yt-videos"><?php echo lang("users_page_menu4") ?> (<span id="count-video"><?=$videos['yt_video_count']?></span>)</li>
+								<li data-content-id="#yt-feeds"><?php echo lang("flux") ?> (<span id="count-feed"><?=$videos['yt_feed_count']?></span>)</li>
 							</ul>
 							<div>
 								<!--yt videos-->
 								<div id="yt-videos">
 									<?php if($user_state == 2){?>									
 										<div class="wrap-button-action p-10">								
-											<div><button id="button-add-yt-video">J'ajoute une vidéo</button></div>								
+											<div><button id="button-add-yt-video"><?php echo lang("users_page_videos_add") ?></button></div>								
 										</div>												
-										<div id="dialog-add-yt-video" title="Ajouter une vidéo Youtube">										
-											<p class="mt-5 grey bold fs-12">Saisir l'url de votre vidéo Youtube.</p>
+										<div id="dialog-add-yt-video" title="<?php echo lang("users_page_videos_addtitle") ?>">										
+											<p class="mt-5 grey bold fs-12"><?php echo lang("users_page_videos_input") ?></p>
 											<div class="p-10">
 												<form action="" method="get" id="form-add-yt-video">
 													<div class="pt-5 pb-10">														
@@ -365,7 +355,7 @@
 									<div id="yt-videos-list">
 										<?php if(($user_state != 2) && ($videos['yt_video_count'] == 0)) { ?>
 											<div class="p-20">												
-												<p class="fs-15 grey"><i>Aucune vidéo enregistré</i></p>
+												<p class="fs-15 grey"><i><?php echo lang("users_page_videos_notfound") ?></i></p>
 											</div>	
 										<?php } else { ?>										
 											<?=$videos['yt_videos']?>
@@ -377,10 +367,10 @@
 								<div id="yt-feeds">
 									<?php if($user_state == 2){?>
 										<div class="wrap-button-action p-10">
-											<div><button id="button-add-yt-flux">J'ajoute un flux de vidéos</button></div>
+											<div><button id="button-add-yt-flux"><?php echo lang("users_page_flux_add") ?></button></div>
 										</div>
-										<div id="dialog-add-yt-flux" title="Ajouter un utilisateur Youtube">										
-											<p class="mt-5 grey bold fs-12">Saisir le nom d'utilisateur situé dans l'url de la page Youtube.</p>												
+										<div id="dialog-add-yt-flux" title="<?php echo lang("users_page_flux_addtitle") ?>">										
+											<p class="mt-5 grey bold fs-12"><?php echo lang("users_page_flux_input") ?></p>												
 											<div class="p-10">												
 												<form action="" method="get" id="form-add-yt-flux">												
 													<div class="pt-5 pb-10">
@@ -395,7 +385,7 @@
 									<div id="yt-feeds-list">
 										<?php if(($user_state != 2) && ($videos['yt_feed_count'] == 0)) { ?>
 											<div class="p-20">
-												<p class="fs-15 grey"><i>Aucun flux enregistré</i></p>
+												<p class="fs-15 grey"><i><?php echo lang("users_page_flux_notfound") ?></i></p>
 											</div>	
 										<?php } else { ?>										
 											<?=$videos['yt_feeds']?>
@@ -435,21 +425,18 @@
 						<?php if($user_state == 2){?>								
 							<!--recommendations-->						
 							<div class="recommendations m-10">
-								<p class="title purple fs-16">Recommendations pour ajouter des photos</p>
-								<p class="grey fs-12 bold">Ajoutez vos photos à votre profil. Vous pouvez par exemple y mettre des photos de votre groupe, de vos concerts, etc.</p>
-								<p class="grey fs-12 bold">Cliquez sur J'ajoute un compte Picasa. Entrez l'adresse mail de votre compte Picasa.</p> 
-								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p>
+								<?php echo lang("users_page_picasa_txt") ?>
 							</div>					
 						
 							<div class="wrap-button-action p-10">										
-								<div><button id="button-add-pi">J'ajoute un compte Picasa</button></div>								
+								<div><button id="button-add-pi"><?php echo lang("users_page_picasa_add") ?></button></div>								
 							</div>		
 							
 							<!--dialog add picasa user-->
-							<div id="dialog-add-pi" title="Ajouter un compte picasa">								
+							<div id="dialog-add-pi" title="<?php echo lang("users_page_picasa_addtitle") ?>">								
 								<div class="p-10">
 									<form action="" method="get" id="form-add-pi-user">
-									<div><label class="fs-12 grey bold" for="id-pi-user">Saisir l'adresse mail de votre compte Picasa</label></div>
+									<div><label class="fs-12 grey bold" for="id-pi-user"><?php echo lang("users_page_picasa_input") ?></label></div>
 									<div class="pt-10"><?=form_input(array('id'=>'id-pi-user', 'data-type' => 'user', 'name'=>'id-pi-user', 'type' => 'email', 'class' => 'required input input-text w-1 ui-corner-all', 'style' => 'width:90%;'))?></div>
 									<div><p class="fs-12 grey"><i>Ex : b-onstage@gmail.com</i></p></div>
 									<?=form_close()?>
@@ -460,7 +447,7 @@
 						<!--user picasa-->
 						<?php if(($user_state != 2) && ($photos['pi_users_count'] == 0)) { ?>
 							<div class="p-20">
-								<p class="fs-15 grey"><i>Aucun compte picasa enregistré</i></p>
+								<p class="fs-15 grey"><i><?php echo lang("users_page_picasa_notfound") ?></i></p>
 							</div>	
 						<?php } else { ?>										
 							<div id="pi-photos" class="clearfix">						
@@ -503,7 +490,7 @@
 	<!--sidebar page-->
 	<div id="sidebar" class="grid_3">		
 		<div class="bg-white ui-corner-all bs-black mb-20">
-			<div class="title white fs-16 p-10 ui-corner-top" style="border-bottom:1px solid #eaeaea;background-color:#3a3a3a;">Suivez b-onstage</div>
+			<div class="title white fs-16 p-10 ui-corner-top" style="border-bottom:1px solid #eaeaea;background-color:#3a3a3a;"><?php echo lang("users_page_followus") ?></div>
 			<ul id="social-followers">
 				<li>
 					<a href="<?=$twitter['link']?>">
@@ -511,7 +498,7 @@
 							<span aria-hidden="true" class="icon-twitter fs-32"></span>						
 							<span class="ml-20 fs-36 title purple"><?=$twitter['followers']?></span>
 						</div>						
-						<div class="fs-10 grey-2 bold">Twitter Followers</div>											
+						<div class="fs-10 grey-2 bold"><?php echo lang("users_page_socmedfollowers1") ?></div>											
 					</a>
 				</li>
 				<li>	
@@ -520,7 +507,7 @@
 							<span aria-hidden="true" class="icon-facebook fs-32"></span>						
 							<span class="ml-20 fs-36 title purple"><?=$facebook['likes']?></span>
 						</div>						
-						<div class="fs-10 grey-2 bold">Facebook Fans</div>
+						<div class="fs-10 grey-2 bold"><?php echo lang("users_page_socmedfollowers2") ?></div>
 					</a>
 				</li>
 				<li>	
@@ -529,7 +516,7 @@
 							<span aria-hidden="true" class="icon-google-plus fs-32"></span>						
 							<span class="ml-20 fs-36 title purple">0</span>
 						</div>						
-						<div class="fs-10 grey-2 bold">Google + Followers</div>
+						<div class="fs-10 grey-2 bold"><?php echo lang("users_page_socmedfollowers3") ?></div>
 					</a>	
 				</li>
 			</ul>
@@ -544,7 +531,7 @@
 			<div class="bg-white p-10">
 				<!--twitter-->
 				<div id="tabs-content-twitter" class="tabs-content">					
-					<p class="grey fs-16 title">Suivre <a href="<?=$twitter['link']?>" class="purple">b-onstage</a> sur Twitter</p>
+					<p class="grey fs-16 title"><?php echo lang("follow") ?> <a href="<?=$twitter['link']?>" class="purple">b-onstage</a> <?php echo lang("users_page_onsocmed1") ?></p>
 					<!--display tweets-->
 					<ul id="tweets-list">
 					<?php foreach($twitter['tweets'] as $tweet) { ?>
@@ -562,12 +549,12 @@
 				</div>
 				
 				<div id="tabs-content-facebook" class="tabs-content">
-					<p class="grey fs-16 title">Suivre <a href="<?=$facebook['link']?>" class="purple">b-onstage</a> sur Facebook</p>
+					<p class="grey fs-16 title"><?php echo lang("follow") ?> <a href="<?=$facebook['link']?>" class="purple">b-onstage</a> <?php echo lang("users_page_onsocmed2") ?></p>
 				</div>
 				
 				<!--google plus-->
 				<div id="tabs-content-google-plus" class="tabs-content">				
-					<p class="grey fs-16 title">Suivre <a href="<?=$google_plus['link']?>" class="purple">b-onstage</a> sur Google+</p>
+					<p class="grey fs-16 title"><?php echo lang("follow") ?> <a href="<?=$google_plus['link']?>" class="purple">b-onstage</a> <?php echo lang("users_page_onsocmed4") ?></p>
 					<div class="g-plus" data-width="200" data-href="https://plus.google.com/111325374571248434709" data-rel="publisher"></div>					
 					<script type="text/javascript">
 						window.___gcfg = {lang: 'fr'};

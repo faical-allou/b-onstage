@@ -15,10 +15,10 @@
 			</div>	
 			<div>
 				<ul class="action-menu clearfix ui-corner-bottom">
-					<li><a class="button-show-profil ui-corner-bl" href="<?=$artist_link?>">Voir profil</a></li> 
+					<li><a class="button-show-profil ui-corner-bl" href="<?=$artist_link?>"><?php echo lang("users_contact_seeprofile") ?></a></li> 
 					<?php if($artist_state) {?>
-						<li><a class="button-send-msg" href="javascript:void(0);" data-email-to="<?=$artist_email?>">Envoyer message</a></li>
-						<li><a class="button-add-contact" href="javascript:void(0);" data-contact-id="<?=$artist_id?>">Ajouter à mes contacts</a></li>	
+						<li><a class="button-send-msg" href="javascript:void(0);" data-email-to="<?=$artist_email?>"><?php echo lang("users_contact_sendmsg") ?></a></li>
+						<li><a class="button-add-contact" href="javascript:void(0);" data-contact-id="<?=$artist_id?>"><?php echo lang("users_contact_add") ?></a></li>	
 					<?php } ?>
 				</ul>		
 			</div>	

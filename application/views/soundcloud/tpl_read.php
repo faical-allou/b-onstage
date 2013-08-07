@@ -12,11 +12,11 @@
 			<div class="mb-10"><?=anchor($sc_user['permalink_url'],$sc_user['username'], array('class' => 'fs-18 grey bold ts-white'))?></div>													
 			<div class="mb-10 grey bold">			
 				<span aria-hidden="true" class="icon-music fs-14"></span>
-				<span class="ml-5 fs-14"><?=$sc_track_count?> pistes</span>							
+				<span class="ml-5 fs-14"><?=$sc_track_count?> <?php echo strtolower(lang("users_page_sons_track")) ?></span>							
 			</div>	
 			<!--button-->			
 			<div>			
-				<span><button data-tracks-id="sc-tracks-<?=$sc_user['id']?>" class="sc-tracks-listen">Ecouter</button></span>			
+				<span style="display:none"><button data-tracks-id="sc-tracks-<?=$sc_user['id']?>" class="sc-tracks-listen"><?php echo lang("listen") ?></button></span>			
 			</div>			
 		</div>		
 	</header>
@@ -24,7 +24,7 @@
 	
 	<?php if($sc_track_count == 0) { ?>
 	<div class="p-20">
-		<p class="grey fs-15"><i>Aucune pistes disponibles.</i></p>
+		<p class="grey fs-15"><i><?php echo lang("users_page_sons_notrack") ?></i></p>
 	</div>
 	<?php } else {?>	
 	<!--tracks-->

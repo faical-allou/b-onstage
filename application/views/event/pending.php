@@ -4,8 +4,8 @@
 		<div>	
 			<!--event action-->	
 			<div class="ev-action top p-20 ui-corner-top">						
-				<span><?=anchor(site_url('user/calendar'),'Retour calendrier',array('class'=>'button-return-calendar', 'title' => 'Retour calendrier'))?></span>				
-				<span class="ml-5"><?=anchor(site_url('user/calendar'),'Supprimer',array('class'=>'button-delete-event'))?></span>
+				<span><?=anchor(site_url('user/calendar'),lang("users_calendar_back"),array('class'=>'button-return-calendar', 'title' => lang("users_calendar_back")))?></span>				
+				<span class="ml-5"><?=anchor(site_url('user/calendar'),lang("delete"),array('class'=>'button-delete-event'))?></span>
 			</div>	
 			
 			<!--event content-->
@@ -26,9 +26,9 @@
 						<div id="ev-reservations">	
 							<div class="p-20 clearfix">
 								<span class="left">
-									<span class="mr-10"><span aria-hidden="true" class="icon-user fs-13 blue"></span><span class="ml-5 fs-15 grey">voir profil</span></span>								
-									<span class="mr-10"><span aria-hidden="true" class="icon-checkmark fs-13 green"></span><span class="ml-5 fs-15 grey">valider</span></span>								
-									<span><span aria-hidden="true" class="icon-cancel fs-11 red"></span><span class="ml-5 fs-15 grey">refuser</span></span>								
+									<span class="mr-10"><span aria-hidden="true" class="icon-user fs-13 blue"></span><span class="ml-5 fs-15 grey"><?php echo strtolower (lang("users_contact_seeprofile")) ?></span></span>								
+									<span class="mr-10"><span aria-hidden="true" class="icon-checkmark fs-13 green"></span><span class="ml-5 fs-15 grey"><?php echo lang("validate") ?></span></span>								
+									<span><span aria-hidden="true" class="icon-cancel fs-11 red"></span><span class="ml-5 fs-15 grey"><?php echo lang("refuse") ?></span></span>								
 								</span>	
 							</div>
 							<?=$ev_reservations?>
@@ -77,8 +77,8 @@
 			
 			<!--event action-->	
 			<div class="ev-action bottom p-20 ui-corner-bottom">						
-				<span><?=anchor(site_url('user/calendar'),'Retour calendrier',array('class'=>'button-return-calendar', 'title' => 'Retour calendrier'))?></span>				
-				<span class="ml-5"><?=anchor(site_url('user/calendar'),'Supprimer',array('class'=>'button-delete-event'))?></span>
+				<span><?=anchor(site_url('user/calendar'),lang("users_calendar_back"),array('class'=>'button-return-calendar', 'title' => lang("users_calendar_back")))?></span>				
+				<span class="ml-5"><?=anchor(site_url('user/calendar'),lang("delete"),array('class'=>'button-delete-event'))?></span>
 			</div>	
 		</div>	
 	</div>

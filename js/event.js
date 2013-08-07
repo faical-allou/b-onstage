@@ -48,7 +48,7 @@
 						open		: function(event, ui){		
 							switch(event_status){
 								case 'open': 
-									$(this).append('Voulez-vous supprimer cet évènement ?');
+									$(this).append(document.getElementById("users_calendar_event_del_conf").innerHTML);
 									break;
 								default : break;
 							}					
@@ -56,7 +56,7 @@
 						buttons: 
 						[
 							{
-								text	: 'Supprimer',
+								text	: document.getElementById("deletetxt").innerHTML,
 								'class'	: 'ui-purple',								
 								click: function() {	
 									$.ajax({
@@ -85,7 +85,7 @@
 								}
 							},
 							{
-								text	:'Annuler',
+								text	:document.getElementById("canceltxt").innerHTML,
 								click	: function() {										
 									dialog_delete_event.remove();
 								}
@@ -123,7 +123,7 @@
 						$('#ev-title').focus();
 						
 						/**********INIT DATETIME PICKER**********/								
-						$.datepicker.setDefaults($.datepicker.regional['fr']);
+						$.datepicker.setDefaults($.datepicker.regional[document.getElementById("lang_loaded_id").innerHTML]);
 						$('#ev-date-start')
 							.mask({
 								mask: '99/99/9999'
@@ -253,7 +253,7 @@
 							buttons: 
 							[
 								{
-									text: "Valider",								
+									text: document.getElementById("validate").innerHTML,								
 									'class':'ui-blue',
 									id:'confirm-payment-type',
 									click: function() {	
@@ -261,7 +261,7 @@
 									}
 								},
 								{
-									text:'Annuler',
+									text:document.getElementById("canceltxt").innerHTML,
 									click: function() {										
 										$( this ).dialog('close');																
 									}
@@ -323,23 +323,23 @@
 						$('#dialog-payment-type input:checkbox, #dialog-payment-type input:text').attr('disabled', false);						
 						$('#dialog-payment-type input:checkbox').parent().css('opacity',1);
 						$('#dialog-payment-type input:text').val('');						
-						payment_type.resume = 'Non renseigné';
+						payment_type.resume = document.getElementById("notset").innerHTML;
 						payment_type.value = 1;						
 					}
 					else if(checked_1 && !checked_2 && !checked_3 && !checked_4 && !checked_5){						
 						$('#dialog-payment-type input:checkbox:gt(0), #dialog-payment-type input:text').attr('disabled', true);
 						$('#dialog-payment-type input:checkbox:gt(0)').parent().css('opacity',0.4);
 						$('#dialog-payment-type input:text').val('');
-						payment_type.resume = 'Non rémunéré';
+						payment_type.resume = document.getElementById("users_calendar_create_non_renum").innerHTML;
 						payment_type.value = 2;
 					}
 					else if(!checked_1 && (checked_2 || checked_3 || checked_4 || checked_5)){
 						$('#dialog-payment-type input:checkbox:first').attr('disabled', true);
 						$('#dialog-payment-type input:checkbox:first').parent().css('opacity',0.4);	
-						resume_2 = (checked_2) ? 'Cachet de ' + $('#input-payment-type-2').val() + ' €' + (((checked_3) || (checked_4) || (checked_5)) ? ' + ' : '') : '';						
-						resume_3 = (checked_3) ? $('#input-payment-type-3').val() + ' de surcharge sur les boissons' + (((checked_4) || (checked_5)) ? ' + ' : '') : '';						
-						resume_4 = (checked_4) ? $('#input-payment-type-4').val() + ' % sur la billeterie' + ((checked_5) ? ' + ' : ''): '';						
-						resume_5 = (checked_5) ? 'Remboursement des frais de réservations' : '';
+						resume_2 = (checked_2) ? document.getElementById("users_calendar_create_cachet").innerHTML+' ' + $('#input-payment-type-2').val() + ' €' + (((checked_3) || (checked_4) || (checked_5)) ? ' + ' : '') : '';						
+						resume_3 = (checked_3) ? $('#input-payment-type-3').val() + ' % '+document.getElementById("users_calendar_create_conso").innerHTML + (((checked_4) || (checked_5)) ? ' + ' : '') : '';						
+						resume_4 = (checked_4) ? $('#input-payment-type-4').val() + ' % '+document.getElementById("users_calendar_create_tickets").innerHTML + ((checked_5) ? ' + ' : ''): '';						
+						resume_5 = (checked_5) ? document.getElementById("users_calendar_create_remb").innerHTML : '';
 						payment_type.resume = resume_2 + resume_3 + resume_4 + resume_5;						
 						payment_type.value = 3;
 					}												
@@ -527,12 +527,12 @@
 								draggable	: false,						
 								modal		: true,		
 								open		: function(){
-									$(this).append('Valider cet artiste');
+									$(this).append(document.getElementById("users_rese_validate_artist").innerHTML);
 								},								
 								buttons		: 
 								[
 									{
-										text	: 'Valider',								
+										text	: document.getElementById("validatetxt").innerHTML,								
 										'class'	:'ui-purple',									
 										click	: function() {																																
 											$.ajax({
@@ -559,7 +559,7 @@
 										}
 									},
 									{
-										text	:'Annuler',
+										text	:document.getElementById("canceltxt").innerHTML,
 										click	: function() {										
 											dialog_valid_artist.remove();													
 										}
@@ -581,12 +581,12 @@
 								draggable	: false,					
 								modal		:true,		
 								open		: function(){
-									$(this).append('Voulez-vous refuser cet artiste?');
+									$(this).append(document.getElementById("users_rese_refuse_artist").innerHTML);
 								},
 								buttons		: 
 								[
 									{
-										text	: 'Refuser',								
+										text	: document.getElementById("refuse").innerHTML,								
 										'class'	:'ui-purple',									
 										click	: function() {																							
 											$.ajax({
@@ -607,7 +607,7 @@
 										}
 									},
 									{
-										text	:'Annuler',
+										text	:document.getElementById("canceltxt").innerHTML,
 										click	: function() {										
 											dialog_delete_artist.remove();												
 										}

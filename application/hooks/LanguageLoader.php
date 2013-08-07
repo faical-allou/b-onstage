@@ -15,9 +15,11 @@ class LanguageLoader
         if ($site_lang) {
            $ci->lang->load('general',$ci->session->userdata('site_lang'));
 		   $ci->config->set_item('language',$ci->session->userdata('site_lang'));
+		   $ci->session->set_userdata('lang_loaded', $ci->session->userdata('site_lang'));
         } else {
            $ci->lang->load('general','french');
 		   $ci->config->set_item('language','french');
+		   $ci->session->set_userdata('lang_loaded', 'french');
         }
 		
     }

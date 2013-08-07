@@ -19,12 +19,12 @@
 			</span>
 			<!--name + album count-->
 			<span class="fs-12 bold grey">
-				<?=$name.' - '.$count.' album(s)'?>			
+				<?=$name.' - '.$count.' '.lang("albums")?>			
 			<span>
 		</a>	
 		
 		<!--delete user-->
-		<a href="javascript:void(0);" class="delete-pi-user right fs-12 bold grey" data-id="<?=$id?>">Supprimer</a>
+		<a href="javascript:void(0);" class="delete-pi-user right fs-12 bold grey" data-id="<?=$id?>"><?php echo lang("delete") ?></a>
 		
 	</div>
 	<?php if(isset($entry)) { ?>
@@ -43,7 +43,7 @@
 		</div>
 	<?php } else { ?>	
 		<div class="p-20">												
-			<p class="fs-15 grey"><i>Aucun album pour ce compte picasa</i></p>
+			<p class="fs-15 grey"><i><?php echo lang("users_page_picasa_album_notfound") ?></i></p>
 		</div>	
 	<?php } ?>	
 </div>
