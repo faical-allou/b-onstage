@@ -15,6 +15,8 @@ class Payonline extends CI_Controller {
 		$this->load->model('reservation_model');
 		$this->load->library('payline');
 		$this->payline->init(MERCHANT_ID, ACCESS_KEY, PROXY_HOST, PROXY_PORT, PROXY_LOGIN, PROXY_PASSWORD, PRODUCTION);
+		include("/home/bonstage/dev.b-onstage/application/config/lang.php");
+		$this->lang_counts = $lang_counts;
 	}
 
 	public function index($reservation_id,$event_id,$amount){
@@ -26,6 +28,13 @@ class Payonline extends CI_Controller {
 		$this->payline->returnURL = RETURN_URL;
 		$this->payline->cancelURL = CANCEL_URL;
 		$this->payline->notificationURL = NOTIFICATION_URL;
+		//Determine lang iso code depending on lang loaded
+		foreach($this->lang_counts as $key => $value){
+			if($this->session->userdata('lang_loaded') == $value["name"]){
+				$langiso = $value["isocode"];
+			}
+		}
+		$this->payline->languageCode = $langiso;
 
 		// PAYMENT
 		$payline_data = array();
