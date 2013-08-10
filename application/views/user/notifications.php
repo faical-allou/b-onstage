@@ -1,4 +1,11 @@
-<?php setlocale(LC_TIME, "fr_FR.UTF8");
+<?php 
+//Include config lang
+include("/home/bonstage/dev.b-onstage/application/config/lang.php");
+foreach($lang_counts as $key => $value){
+if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value["id"];}
+}
+
+setlocale(LC_TIME, $lang_id."_".strtoupper($lang_id).".UTF8");
 
 	if(!$offset){
 

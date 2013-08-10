@@ -660,6 +660,7 @@ class Ion_auth_model extends CI_Model
 			'ip_address' => inet_pton($ip_address),
 			'created_on' => time(),
 			'last_login' => time(),
+			'language'     => $this->session->userdata('lang_loaded'),
 			'active'     => ($manual_activation === false ? 1 : 0)
 		);
 

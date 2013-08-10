@@ -204,15 +204,15 @@ class Page extends CI_Controller {
 			$data = array(				
 				'date_concert'			=> $date_concert,
 				'title'					=> $concert['title'],
-				'description'			=> empty($concert['description']) ? '<p class="grey fs-12"><i>Aucune description disponible</i></p>' : $concert['description'],
+				'description'			=> empty($concert['description']) ? '<p class="grey fs-12"><i>'.lang("users_page_desc_notfound").'</i></p>' : $concert['description'],
 				'rows_name'				=> array(
-					($user_group_page == 'artist') ? 'Scène / salle' : 'Artiste / groupe',
-					'Prix des entrées',
-					'Autres infos'
+					($user_group_page == 'artist') ? lang("users_rese_scene_stage") : lang("users_rese_artist_band"),
+					lang("users_calendar_create_price"),
+					lang("otherinfos")
 				),
 				'cover_url'				=> site_url($concert['cover']),
 				'avatar_url'			=> site_url($concert['avatar']),
-				'title_company'			=> $user_group_page == 'artist' ? 'Scène' : 'Artiste',
+				'title_company'			=> $user_group_page == 'artist' ? lang("scene") : lang("artist"),
 				'company'				=> $concert['company'],
 				'link_url'				=> empty($concert['web_address']) ? site_url($concert['web_address']) : site_url('page/'.$concert['username']),
 				'location'				=> $concert['city'].', '.$concert['country'],

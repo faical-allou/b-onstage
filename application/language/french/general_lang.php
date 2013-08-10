@@ -102,6 +102,7 @@ $lang['user_artist_desc'] = 'Tous les artistes présent sur b-onstage';
 $lang['user_stage_desc'] = 'Tous les artistes présent sur b-onstage';
 $lang['user_shows_desc'] = 'Mettre une description';
 $lang['user_book_desc'] = 'Mettre une description';
+$lang['user_signin_desc'] = 'Mettre une description';
 
 // General
 $lang['hello'] = 'Bonjour';
@@ -189,6 +190,10 @@ $lang['the'] = 'Le';
 $lang['step'] = 'Etape';
 $lang['connect'] = 'Connectez-vous';
 $lang['or'] = 'ou';
+$lang['otherinfos'] = 'Autres infos';
+$lang['originaire_de'] = 'Originaire de';
+$lang['band_members'] = 'Les membres du groupe';
+$lang['choose_city'] = 'Choisir ville(s)';
 
 
 // Header
@@ -796,6 +801,7 @@ $lang['users_rese_enterprice'] = 'Prix entrée';
 $lang['users_rese_fees'] = 'Frais de réservation';
 $lang['users_rese_renumartist'] = 'Rémunération artiste';
 $lang['users_rese_status1'] = 'En attente de paiement';
+$lang['users_rese_status1_a'] = 'Artiste en attente de paiement';
 $lang['users_rese_status2'] = 'Fermée';
 $lang['users_rese_status3'] = 'En attente de validation';
 $lang['users_rese_needpay'] = 'réservations en attente de paiement des frais de réservations.';
@@ -865,6 +871,12 @@ $lang['users_rese_accepted_email_txt4'] = '<p style="font-size:15px;font-family:
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de nous améliorer et d\'essayer de rendre b-onstage le plus utile et agreable pour vous, nous vous encourageons à nous envoyez toutes vos suggestions à l\'adresse suggestion@b-onstage.com.</p>
 
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous ne souhaitez plus recevoir de mail de b-onstage, Cliquez-ici.</p>';
+$lang['users_rese_event_details'] = 'Détails sur l\'évènement';
+$lang['users_rese_artist_details'] = 'Détails sur l\'artiste / groupe';
+$lang['users_rese_artist_band'] = 'Artiste / groupe';
+$lang['users_rese_scene_stage'] = 'Scène / salle';
+$lang['users_rese_paid'] = 'Réservation payée';
+$lang['users_rese_pay_error'] = 'Erreur lors du paiment de la réservation';
 
 
 // Artists page
@@ -944,6 +956,14 @@ $lang['book_req_email_stage_txt4'] = '<p style="font-size:15px;font-family:\'Ari
 		<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous rencontrez des problèmes avec notre site ou nos services, écrivez-nous à l’adresse à l\'adresse support@b-onstage.com.</p>
 		<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de nous améliorer et d\'essayer de rendre b-onstage le plus utile et agreable pour vous, nous vous encourageons à nous envoyez toutes vos suggestions à l\'adresse suggestion@b-onstage.com.</p>
 		<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous ne souhaitez plus recevoir de mail de b-onstage, Cliquez-ici.</p>';
+
+
+// Notifications
+$lang['notifs_1'] = 'Votre demande de réservation a été soumise';
+$lang['notifs_2'] = 'Vous avez reçu une demande de réservation de';
+$lang['notifs_3'] = 'Bienvenue sur b-onstage';
+$lang['notifs_4'] = 'a accepté votre demande de réservation';
+
 
 // Calendar months and day names
 $lang['calendar_month_1'] = 'Janvier';

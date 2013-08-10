@@ -37,7 +37,7 @@ function init_search_bar(open){
 	});
 
 	/**********INIT DATE RANGE**********/
-	$.datepicker.setDefaults($.datepicker.regional['fr']);
+	$.datepicker.setDefaults($.datepicker.regional[document.getElementById("datepicker_lang").innerHTML]);
 
 	$('#wrapper-date-start').click(function(){
 		if(!$('#render-date-start').datepicker('widget').is(':visible'))
@@ -86,11 +86,11 @@ function init_search_bar(open){
 		height				: 'auto',
 		width				: 'auto',
 		classes				: 'search-city',
-		noneSelectedText	: 'Choisir ville(s)'
+		noneSelectedText	: document.getElementById("choose_city").innerHTML
 	})
 	.multiselectfilter({
 		label 				: '<span aria-hidden="true" class="fs-16 grey icon-search ml-5 mr-10"></span>',
-		placeholder			: 'Saisir une ville'
+		placeholder			: document.getElementById("users_page_inputcity").innerHTML
 	});
 
 	/**********INIT BUTTON SEARCH**********/
@@ -211,14 +211,14 @@ function init_footer(){
 			buttons: 
 			[
 				{
-					text: 'Envoyer votre message',
+					text: document.getElementById("users_contact_sendmsg").innerHTML,
 					'class':'ui-purple',					
 					click: function() {	
 						$('#form-contact').submit();							
 					}
 				},
 				{
-					text:'Annuler',
+					text:document.getElementById("canceltxt").innerHTML,
 					click: function() {										
 						$( this ).remove();;																
 					}

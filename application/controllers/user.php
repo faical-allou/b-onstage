@@ -143,11 +143,11 @@ class User extends CI_Controller {
 		//var header
 		$this->header['doctype'] = 'html5';
 		$this->header['title'] = $this->lang->line('signin_title');
-		$this->header['description'] = 'Mettre une description';
+		$this->header['description'] = lang("user_signin_desc");
 		
 		$this->form_validation->set_error_delimiters('<div class="ui-state-error ui-corner-all fs-12 bold p-5 mt-10">', '</div>');
-		$this->form_validation->set_rules('identity', 'Adresse électronique', 'required');
-		$this->form_validation->set_rules('password', 'Mot de passe', 'required');
+		$this->form_validation->set_rules('identity', lang("users_home_email"), 'required');
+		$this->form_validation->set_rules('password', lang("password"), 'required');
 
 		if ($this->form_validation->run() == true)
 		{			
@@ -276,14 +276,7 @@ class User extends CI_Controller {
 							$this->email->send();
 													
 							//envoi du mail à scenes@mybandonstage.com
-							// determine lang
-							if ($this->session->userdata('site_lang') == "english") {
-							  $pre_inscription_lang = "english";
-							} 
-							// Default FRENCH
-							else {
-							   $pre_inscription_lang = "french";
-							}
+							$pre_inscription_lang = $this->session->userdata('lang_loaded');
 							$data = array(
 								'email'		=> $email,
 								'company'	=> $company,
@@ -1583,11 +1576,11 @@ class User extends CI_Controller {
 							$schedule,
 							'<a href="javascript:void(0)" class="orange link-more-info"><span aria-hidden="true" class="fs-8 mr-5 icon-plus"></span>'.$title.'</a>'.
 							'<div class="normal grey hidden">'.
-							'<p><strong>Artiste en attente de paiement : </strong>'.$artist_name.'</p>'.
-							'<p><strong>Genre musical : </strong>'.$musical_genres.'</p>'.
-							'<p><strong>Rémunération de l\'artiste : </strong>'.$payment_type.'</p>'.
-							'<p><strong>Montant de la réservation : </strong>'.$reservation.'</p>'.
-							'<p><strong>Prix des entrées : </strong>'.$entry.'</p>'.
+							'<p><strong>'.lang("users_rese_status1_a").' : </strong>'.$artist_name.'</p>'.
+							'<p><strong>'.lang("users_calendar_genre").' : </strong>'.$musical_genres.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_payment").' : </strong>'.$payment_type.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_book").' : </strong>'.$reservation.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_price").' : </strong>'.$entry.'</p>'.
 							'</div>',
 							'<div class="link-action">'.
 							anchor(site_url('event/edit/'.$event['id']), '<span aria-hidden="true" class="fs-13 mr-10 icon-pencil"></span>').
@@ -1607,11 +1600,11 @@ class User extends CI_Controller {
 							$schedule,
 							'<a href="javascript:void(0)" class="green link-more-info"><span aria-hidden="true" class="fs-8 mr-5 icon-plus"></span>'.$title.'</a>'.
 							'<div class="normal grey hidden">'.
-							'<p><strong>Artiste / Groupe : </strong>'.$artist_name.'</p>'.
-							'<p><strong>Genre musical : </strong>'.$musical_genres.'</p>'.
-							'<p><strong>Rémunération de l\'artiste : </strong>'.$payment_type.'</p>'.
-							'<p><strong>Montant de la réservation : </strong>'.$reservation.'</p>'.
-							'<p><strong>Prix des entrées : </strong>'.$entry.'</p>'.
+							'<p><strong>'.lang("users_rese_status1_a").' : </strong>'.$artist_name.'</p>'.
+							'<p><strong>'.lang("users_calendar_genre").' : </strong>'.$musical_genres.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_payment").' : </strong>'.$payment_type.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_book").' : </strong>'.$reservation.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_price").' : </strong>'.$entry.'</p>'.
 							'</div>',
 							'<div class="link-action">'.
 							anchor(site_url('event/edit/'.$event['id']), '<span aria-hidden="true" class="fs-13 mr-10 icon-pencil"></span>').

@@ -49,6 +49,9 @@
 		</footer>
 		
 		
+        <div id="users_contact_sendmsg" style="display:none"><?php echo lang("users_contact_sendmsg") ?></div>
+        <div id="users_page_inputcity" style="display:none"><?php echo lang("users_page_inputcity") ?></div>
+        <div id="choose_city" style="display:none"><?php echo lang("choose_city") ?></div>
         <div id="noresultfound" style="display:none"><?php echo lang("noresultfound") ?></div>
         <div id="shows_sortby3" style="display:none"><?php echo lang("shows_sortby3") ?></div>
         <div id="users_page_sons_soundcloud_delconf" style="display:none"><?php echo lang("users_page_sons_soundcloud_delconf") ?></div>
@@ -104,17 +107,18 @@
 		}
 		
 		//Determine row name depending on lang loaded
-		if($this->session->userdata('lang_loaded') == "french"){$rowname = '';}
+		if($this->session->userdata('lang_loaded') == "french"){$rowname = ''; $datepicker_lang = "fr";}
 		else {
 			foreach($lang_counts as $key => $value){
 				if($this->session->userdata('lang_loaded') == $value["name"]){
 					$rowname = '_'.$value["id"];
+					$datepicker_lang = $value["datepickerid"];
 				}
 			}
 		}
 		?>
-        
-        <script src="<?=site_url('js/functions'.$rowname.'.js')?>"></script>
+        <div id="datepicker_lang" style="display:none"><?php echo $datepicker_lang ?></div>
+        <script src="<?=site_url('js/functions.js')?>"></script>
 		<script src="<?=site_url('js/chosen/chosen.jquery.min.js')?>"></script>
 		<script src="<?=site_url('js/chosen/ajax-chosen.min.js')?>"></script>
 		<script src="<?=site_url('js/selectbox/jquery.selectBox.min.js')?>"></script>

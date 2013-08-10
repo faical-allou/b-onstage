@@ -2,14 +2,12 @@
 	<div class="grid_12 bg-white bs-black ui-corner-all mt-20 mb-20">		
 		<div class="p-r">
 			<?php 
-			// English
-			if ($this->session->userdata('site_lang') == "english") { 
-				echo img(array('src' => site_url('img/about-english.jpg'), 'class'=> 'ui-corner-top', 'width' => '100%'));
-			} 
-			// French - Default
+			//Determine row name depending on lang loaded
+			if($this->session->userdata('lang_loaded') == "french"){$rowname = '';}
 			else {
-				echo img(array('src' => site_url('img/about.jpg'), 'class'=> 'ui-corner-top', 'width' => '100%'));
+				$rowname = '-'.$this->session->userdata('lang_loaded');
 			}
+			echo img(array('src' => site_url('img/about'.$rowname .'.jpg'), 'class'=> 'ui-corner-top', 'width' => '100%'));
 			?><ul id="about-menu">
 				<li><?=anchor(site_url('about'), lang("aboutus_link_aboutus"), array('id' => 'about-menu-1'))?></li>
 				<li><?=anchor(site_url('about_us'), lang("aboutus_link_whoweare"), array('id' => 'about-menu-2'))?></li>

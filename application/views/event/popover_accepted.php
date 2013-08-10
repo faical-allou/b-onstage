@@ -7,24 +7,24 @@
 	<div class="content clearfix">
 		<dl>
 			<!--artist-->
-			<dt>Artiste en attente de paiement</dt>
+			<dt><?php echo lang("users_rese_status1_a") ?></dt>
 			<dd><?=anchor($artist_link, $artist_name, array('class' => 'orange bold fs-12'))?></dd>
 			<!--musical genre-->
-			<dt>Genre musical</dt>
+			<dt><?php echo lang("users_calendar_genre") ?></dt>
 			<dd><?=$musical_genres?></dd>	
 			<!--payment type-->
-			<dt>Rémunération de l'artiste</dt>
+			<dt><?php echo lang("users_calendar_create_payment") ?></dt>
 			<dd><?=$payment_type?></dd>				
 			<!--reservation-->
-			<dt>Montant de la réservation</dt>
+			<dt><?php echo lang("users_calendar_create_book") ?></dt>
 			<dd><?=round($event['reservation'],2)?> €</dd>	
 			<!--entry-->
-			<dt>Prix des entrées</dt>
+			<dt><?php echo lang("users_calendar_create_price") ?></dt>
 			<dd><?=round($event['entry'],2)?> €</dd>
 		</dl>
 	</div>
 	<div class="footer clearfix">	
-		<span class="right"><a href="<?=site_url('/event/edit/'.$event['id'])?>" class="more-event-details ui-orange">Détails sur l'évènement</a></span>
+		<span class="right"><a href="<?=site_url('/event/edit/'.$event['id'])?>" class="more-event-details ui-orange"><?php echo lang("users_rese_event_details") ?></a></span>
 	</div>
 </div>	
 <script type="text/javascript">

@@ -1,14 +1,12 @@
 <div class="container_12 mb-50">
 	<div class="grid_12">
 		<img src="<?php 
-			// English
-			if ($this->session->userdata('site_lang') == "english") { 
-				echo site_url('img/signup-choice-english.png');
-			} 
-			// French - Default
+			//Determine row name depending on lang loaded
+			if($this->session->userdata('lang_loaded') == "french"){$rowname = '';}
 			else {
-				echo site_url('img/signup-choice.png');
+				$rowname = '-'.$this->session->userdata('lang_loaded');
 			}
+			echo site_url('img/signup-choice'.$rowname.'.png');
 			?>" width="100%" />
 	</div>	
 	
