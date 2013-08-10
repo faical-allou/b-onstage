@@ -54,13 +54,8 @@ class User extends CI_Controller {
 		{
 			/*****HEADER*****/
 			$this->header['doctype'] = 'html5';
-<<<<<<< HEAD
-			$this->header['title'] = 'Mes paramètres de compte';
-			$this->header['description'] = 'Recherchez des sc�nes o� jouer. Trouvez des groupes et artistes pour vos soir�es. D�couvrez les concerts sur Paris, Montr�al, Berlin, Los Angeles.';			
-=======
 			$this->header['title'] = lang("user_home_title");
 			$this->header['description'] = lang("user_home_desc");			
->>>>>>> Traduction final v1.0
 			
 			//$this->header['genres'] = $this->genre_model->get_all();
 
@@ -148,11 +143,11 @@ class User extends CI_Controller {
 		//var header
 		$this->header['doctype'] = 'html5';
 		$this->header['title'] = $this->lang->line('signin_title');
-		$this->header['description'] = 'Recherchez des sc�nes o� jouer. Trouvez des groupes et artistes pour vos soir�es. D�couvrez les concerts sur Paris, Montr�al, Berlin, Los Angeles.';
+		$this->header['description'] = lang("user_signin_desc");
 		
 		$this->form_validation->set_error_delimiters('<div class="ui-state-error ui-corner-all fs-12 bold p-5 mt-10">', '</div>');
-		$this->form_validation->set_rules('identity', 'Adresse électronique', 'required');
-		$this->form_validation->set_rules('password', 'Mot de passe', 'required');
+		$this->form_validation->set_rules('identity', lang("users_home_email"), 'required');
+		$this->form_validation->set_rules('password', lang("password"), 'required');
 
 		if ($this->form_validation->run() == true)
 		{			
@@ -281,14 +276,7 @@ class User extends CI_Controller {
 							$this->email->send();
 													
 							//envoi du mail à scenes@mybandonstage.com
-							// determine lang
-							if ($this->session->userdata('site_lang') == "english") {
-							  $pre_inscription_lang = "english";
-							} 
-							// Default FRENCH
-							else {
-							   $pre_inscription_lang = "french";
-							}
+							$pre_inscription_lang = $this->session->userdata('lang_loaded');
 							$data = array(
 								'email'		=> $email,
 								'company'	=> $company,
@@ -1012,13 +1000,8 @@ class User extends CI_Controller {
 			{
 				//var header
 				$this->header['doctype'] = 'html5';
-<<<<<<< HEAD
-				$this->header['title'] = 'Modifier mes coordonnées';
-				$this->header['description'] = 'Recherchez des sc�nes o� jouer. Trouvez des groupes et artistes pour vos soir�es. D�couvrez les concerts sur Paris, Montr�al, Berlin, Los Angeles.';
-=======
 				$this->header['title'] = lang("user_update_information_title");
 				$this->header['description'] = lang("user_update_information_desc");
->>>>>>> Traduction final v1.0
 				
 				//var message
 				$this->data['message'] =($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message'));
@@ -1264,13 +1247,8 @@ class User extends CI_Controller {
 			redirect('login', 'refresh');
 		}
 		else{
-<<<<<<< HEAD
-			$this->header['title'] = 'Mes réservations';
-			$this->header['description'] = 'Recherchez des sc�nes o� jouer. Trouvez des groupes et artistes pour vos soir�es. D�couvrez les concerts sur Paris, Montr�al, Berlin, Los Angeles.';			
-=======
 			$this->header['title'] = lang("user_rese_title");
 			$this->header['description'] = lang("user_rese_desc");			
->>>>>>> Traduction final v1.0
 			
 			$reservations = $this->reservation_model->get_by_artist_id($this->user['id']);
 			$pending_reservations = '';
@@ -1293,11 +1271,7 @@ class User extends CI_Controller {
 						if($reservation['payment_amount'] > 0)
 							array_push($payment_type,lang("users_calendar_create_cachet").' '.round($reservation['payment_amount'],2).'€');
 						if($reservation['percent_drink'] > 0)
-<<<<<<< HEAD
-							array_push($payment_type, $reservation['percent_drink'].' de surcharge sur les boissons');
-=======
 							array_push($payment_type, round($reservation['percent_drink'],2).'% '.lang("users_calendar_create_conso"));
->>>>>>> Traduction final v1.0
 						if($reservation['percent_entry'] > 0)
 							array_push($payment_type,round($reservation['percent_entry'],2).'% '.lang("users_calendar_create_tickets"));
 						if($reservation['refund_fees'])
@@ -1396,13 +1370,8 @@ class User extends CI_Controller {
 
 			//variable header
 			$this->header['doctype'] = 'html5';
-<<<<<<< HEAD
-			$this->header['title'] = 'Gestion du calendrier';
-			$this->header['description'] = 'Recherchez des sc�nes o� jouer. Trouvez des groupes et artistes pour vos soir�es. D�couvrez les concerts sur Paris, Montr�al, Berlin, Los Angeles.';			
-=======
 			$this->header['title'] = lang("user_calendar_title");
 			$this->header['description'] = lang("user_calendar_desc");			
->>>>>>> Traduction final v1.0
 
 			//variable data
 			
@@ -1534,17 +1503,10 @@ class User extends CI_Controller {
 						$payment_type = lang("users_calendar_create_non_renum");
 						break;
 					case 3 :
-<<<<<<< HEAD
-						$payment_type.= ($event['payment_amount'] > 0) ? 'Cachet de '.round($event['payment_amount'],2).' € + ' : '';
-						$payment_type.= ($event['percent_drink'] > 0) ? $event['percent_drink'].' de surcharge sur les boissons + ' : '';
-						$payment_type.= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% sur la billeterie + ' : '';
-						$payment_type.= ($event['refund_fees'] > 0) ? 'Remboursement des frais de réservation' : '';
-=======
 						$payment_type.= ($event['payment_amount'] > 0) ? lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' € + ' : '';
 						$payment_type.= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'% '.lang("users_calendar_create_conso").' + ' : '';
 						$payment_type.= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets").' + ' : '';
 						$payment_type.= ($event['refund_fees'] > 0) ? lang("users_calendar_create_remb") : '';
->>>>>>> Traduction final v1.0
 						break;
 					default : break;
 				}
@@ -1614,11 +1576,11 @@ class User extends CI_Controller {
 							$schedule,
 							'<a href="javascript:void(0)" class="orange link-more-info"><span aria-hidden="true" class="fs-8 mr-5 icon-plus"></span>'.$title.'</a>'.
 							'<div class="normal grey hidden">'.
-							'<p><strong>Artiste en attente de paiement : </strong>'.$artist_name.'</p>'.
-							'<p><strong>Genre musical : </strong>'.$musical_genres.'</p>'.
-							'<p><strong>Rémunération de l\'artiste : </strong>'.$payment_type.'</p>'.
-							'<p><strong>Montant de la réservation : </strong>'.$reservation.'</p>'.
-							'<p><strong>Prix des entrées : </strong>'.$entry.'</p>'.
+							'<p><strong>'.lang("users_rese_status1_a").' : </strong>'.$artist_name.'</p>'.
+							'<p><strong>'.lang("users_calendar_genre").' : </strong>'.$musical_genres.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_payment").' : </strong>'.$payment_type.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_book").' : </strong>'.$reservation.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_price").' : </strong>'.$entry.'</p>'.
 							'</div>',
 							'<div class="link-action">'.
 							anchor(site_url('event/edit/'.$event['id']), '<span aria-hidden="true" class="fs-13 mr-10 icon-pencil"></span>').
@@ -1638,11 +1600,11 @@ class User extends CI_Controller {
 							$schedule,
 							'<a href="javascript:void(0)" class="green link-more-info"><span aria-hidden="true" class="fs-8 mr-5 icon-plus"></span>'.$title.'</a>'.
 							'<div class="normal grey hidden">'.
-							'<p><strong>Artiste / Groupe : </strong>'.$artist_name.'</p>'.
-							'<p><strong>Genre musical : </strong>'.$musical_genres.'</p>'.
-							'<p><strong>Rémunération de l\'artiste : </strong>'.$payment_type.'</p>'.
-							'<p><strong>Montant de la réservation : </strong>'.$reservation.'</p>'.
-							'<p><strong>Prix des entrées : </strong>'.$entry.'</p>'.
+							'<p><strong>'.lang("users_rese_status1_a").' : </strong>'.$artist_name.'</p>'.
+							'<p><strong>'.lang("users_calendar_genre").' : </strong>'.$musical_genres.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_payment").' : </strong>'.$payment_type.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_book").' : </strong>'.$reservation.'</p>'.
+							'<p><strong>'.lang("users_calendar_create_price").' : </strong>'.$entry.'</p>'.
 							'</div>',
 							'<div class="link-action">'.
 							anchor(site_url('event/edit/'.$event['id']), '<span aria-hidden="true" class="fs-13 mr-10 icon-pencil"></span>').

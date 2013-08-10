@@ -541,7 +541,7 @@ function send_msg(email_to){
 					send_msg_dialog
 					.append(data)
 					.dialog('option','position','center');						
-					$('#form-msg-subject').fieldWidth(1.0);
+					//$('#form-msg-subject').fieldWidth(1.0);
 					$('#form-msg-message').redactor({
 						buttons : ['bold', 'italic', 'fontcolor', '|','unorderedlist', 'orderedlist', 'outdent', 'indent', '|', 'link', '|', 'alignment', '|', 'horizontalrule'],
 						lang : 'fr'
@@ -588,14 +588,14 @@ function send_msg(email_to){
 		buttons: 
 		[
 			{
-				text	: 'Envoyer',								
+				text	: document.getElementById("submittxt").innerHTML,								
 				'class'	: 'ui-purple',									
 				click: function() {		
 					$('#form-msg').submit();
 				}
 			},
 			{
-				text:'Annuler',
+				text:document.getElementById("canceltxt").innerHTML,
 				click: function() {																				
 					$(this).remove();															
 				}

@@ -301,7 +301,7 @@ class Ion_auth
 					$this->ci->ion_auth_model->trigger_events(array('post_account_creation', 'post_account_creation_successful', 'activation_email_successful'));
 					$this->set_message('activation_email_successful');
 
-					$this->ci->user_model->add_notification($user->id, 'Bienvenue sur b-onstage', 3);
+					$this->ci->user_model->add_notification($user->id, lang("notifs_3"), 3);
 
 					return $id;
 				}

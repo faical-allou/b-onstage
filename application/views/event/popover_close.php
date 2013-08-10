@@ -7,7 +7,7 @@
 	<div class="content clearfix">
 		<dl>
 			<!--artist-->
-			<dt>Artiste / groupe</dt>
+			<dt><?php echo lang("users_rese_artist_band") ?></dt>
 			<dd><?=anchor($artist_link, $artist_name, array('class' => 'green bold fs-12'))?></dd>
 			<!--musical genre-->
 			<dt><?php echo lang("users_calendar_genre") ?></dt>
@@ -24,7 +24,7 @@
 		</dl>
 	</div>
 	<div class="footer clearfix">	
-		<span class="right"><a href="<?=site_url('/event/edit/'.$event['id'])?>" class="more-event-details ui-green">Détails sur l'évènement</a></span>
+		<span class="right"><a href="<?=site_url('/event/edit/'.$event['id'])?>" class="more-event-details ui-green"><?php echo lang("users_rese_event_details") ?></a></span>
 	</div>
 </div>	
 <script type="text/javascript">

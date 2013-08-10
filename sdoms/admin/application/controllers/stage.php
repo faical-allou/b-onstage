@@ -131,7 +131,7 @@ class Stage extends CI_Controller {
 					
 					
 					//add notification
-					$this->notification_model->add($insert_id,'Bienvenue sur b-onstage',3);
+					$this->notification_model->add($insert_id,lang("notifs_3"),3);
 					
 					$html_message = $this->parser->parse('email/confirm_inscription', $data, TRUE);				
 					$this->email->from('contact@b-onstage.com', 'b-onstage');

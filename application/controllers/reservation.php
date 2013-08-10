@@ -89,7 +89,7 @@ class Reservation extends CI_Controller {
 				//add notification
 		
 				//add notification to stage		
-				$text_notification = anchor($stage_link, $stage['company'], array('class' => 'purple')).' a accepté votre demande de réservation';
+				$text_notification = anchor($stage_link, $stage['company'], array('class' => 'purple')).' '.lang("notifs_4");
 				$link_notification = '/user/reservations';
 				$avatar_notification = $stage['avatar'];
 				$priority_notification = 1;
@@ -207,7 +207,7 @@ class Reservation extends CI_Controller {
 					throw new Exception('ERROR_EMAIL');
 						
 				//add notification to artist		
-				$text_notification = 'Votre demande de réservation a été soumise';
+				$text_notification = lang("notifs_1");
 				$link_notification = '/user/reservations';
 				$avatar_notification = '/img/logo_128.png';
 				$priority_notification = 2;
@@ -228,7 +228,7 @@ class Reservation extends CI_Controller {
 					throw new Exception('ERROR_EMAIL');
 						
 				//add notification to stage		
-				$text_notification = 'Vous avez reçu une demande de réservation de '.anchor($artist_link, $artist['company'], array('class' => 'purple'));
+				$text_notification = lang("notifs_2").' '.anchor($artist_link, $artist['company'], array('class' => 'purple'));
 				$link_notification = '/event/edit/'.$event['id'];
 				$avatar_notification = $artist['avatar'];
 				$priority_notification = 2;
@@ -252,9 +252,9 @@ class Reservation extends CI_Controller {
 			$this->db->set('status', 'close');
 			$this->db->where('id', $event_id);
 			if($this->db->update('events'))
-				echo json_encode(array('status' => 'SUCCESS', 'msg' => 'Réservation payée'));
+				echo json_encode(array('status' => 'SUCCESS', 'msg' => lang("users_rese_paid")));
 			else	
-				echo json_encode(array('status' => 'ERROR', 'msg' => 'Erreur lors du paiment de la réservation'));		
+				echo json_encode(array('status' => 'ERROR', 'msg' => lang("users_rese_pay_error")));		
 		}
 	}
 }

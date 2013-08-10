@@ -3,8 +3,10 @@
 
 // Languages
 $lang_counts[] =  array('name'					=> 'english',
-					    'id'					=> 'en');
+					    'id'					=> 'en',
+						'datepickerid'			=> 'en-GB');
 $lang_counts[] =  array('name'				    => 'french',
-					    'id'					=> 'fr');
+					    'id'					=> 'fr',
+						'datepickerid'			=> 'fr');
 
 ?>
