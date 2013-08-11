@@ -117,6 +117,10 @@
 			}
 		}
 		?>
+        <div id="button_video" style="display:none"><?php echo 'button-upload-video'.$rowname.'.png'; ?></div>
+        <div id="button_track" style="display:none"><?php echo 'button-upload-track'.$rowname.'.png'; ?></div>
+        <div id="button_photo" style="display:none"><?php echo 'button-upload-photo'.$rowname.'.png'; ?></div>
+        <div id="button_upcover" style="display:none"><?php echo 'button-upload-cover'.$rowname.'.png'; ?></div>
         <div id="datepicker_lang" style="display:none"><?php echo $datepicker_lang ?></div>
         <script src="<?=site_url('js/functions.js')?>"></script>
 		<script src="<?=site_url('js/chosen/chosen.jquery.min.js')?>"></script>
