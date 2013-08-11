@@ -439,6 +439,7 @@
 						$('.edit-bloc').show();						
 						$('#description-page').redactor({
 							buttons : ['bold', 'italic', 'fontcolor', '|','unorderedlist', 'orderedlist', 'outdent', 'indent', '|', 'link', '|', 'alignment', '|', 'horizontalrule'],
+							lang : 'fr',
 							fixed	: true
 						});						
 					});		

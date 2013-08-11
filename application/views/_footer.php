@@ -48,7 +48,71 @@
 			</div>
 		</footer>
 		
-		
+		<div id="html_lang_txt" style="display:none"><?php echo lang("redactor_html") ?></div>
+        <div id="video_lang_txt" style="display:none"><?php echo lang("redactor_video") ?></div>
+        <div id="image_lang_txt" style="display:none"><?php echo lang("redactor_image") ?></div>
+        <div id="table_lang_txt" style="display:none"><?php echo lang("redactor_table") ?></div>
+        <div id="link_lang_txt" style="display:none"><?php echo lang("redactor_link") ?></div>
+        <div id="link_insert_lang_txt" style="display:none"><?php echo lang("redactor_link_insert") ?></div>
+        <div id="unlink_lang_txt" style="display:none"><?php echo lang("redactor_unlink") ?></div>
+        <div id="formatting_lang_txt" style="display:none"><?php echo lang("redactor_formatting") ?></div>
+        <div id="paragraph_lang_txt" style="display:none"><?php echo lang("redactor_paragraph") ?></div>
+        <div id="quote_lang_txt" style="display:none"><?php echo lang("redactor_quote") ?></div>
+        <div id="code_lang_txt" style="display:none"><?php echo lang("redactor_code") ?></div>
+        <div id="header1_lang_txt" style="display:none"><?php echo lang("redactor_header1") ?></div>
+        <div id="header2_lang_txt" style="display:none"><?php echo lang("redactor_header2") ?></div>
+        <div id="header3_lang_txt" style="display:none"><?php echo lang("redactor_header3") ?></div>
+        <div id="header4_lang_txt" style="display:none"><?php echo lang("redactor_header4") ?></div>
+        <div id="bold_lang_txt" style="display:none"><?php echo lang("redactor_bold") ?></div>
+        <div id="italic_lang_txt" style="display:none"><?php echo lang("redactor_italic") ?></div>
+        <div id="fontcolor_lang_txt" style="display:none"><?php echo lang("redactor_fontcolor") ?></div>
+        <div id="backcolor_lang_txt" style="display:none"><?php echo lang("redactor_backcolor") ?></div>
+        <div id="unorderedlist_lang_txt" style="display:none"><?php echo lang("redactor_unorderedlist") ?></div>
+        <div id="orderedlist_lang_txt" style="display:none"><?php echo lang("redactor_orderedlist") ?></div>
+        <div id="outdent_lang_txt" style="display:none"><?php echo lang("redactor_outdent") ?></div>
+        <div id="indent_lang_txt" style="display:none"><?php echo lang("redactor_indent") ?></div>
+        <div id="cancel_lang_txt" style="display:none"><?php echo lang("redactor_cancel") ?></div>
+        <div id="insert_lang_txt" style="display:none"><?php echo lang("redactor_insert") ?></div>
+        <div id="save_lang_txt" style="display:none"><?php echo lang("redactor_save") ?></div>
+        <div id="_delete_lang_txt" style="display:none"><?php echo lang("redactor__delete") ?></div>
+        <div id="insert_table_lang_txt" style="display:none"><?php echo lang("redactor_insert_table") ?></div>
+        <div id="insert_row_above_lang_txt" style="display:none"><?php echo lang("redactor_insert_row_above") ?></div>
+        <div id="insert_row_below_lang_txt" style="display:none"><?php echo lang("redactor_insert_row_below") ?></div>
+        <div id="insert_column_left_lang_txt" style="display:none"><?php echo lang("redactor_insert_column_left") ?></div>
+        <div id="insert_column_right_lang_txt" style="display:none"><?php echo lang("redactor_insert_column_right") ?></div>
+        <div id="delete_column_lang_txt" style="display:none"><?php echo lang("redactor_delete_column") ?></div>
+        <div id="delete_row_lang_txt" style="display:none"><?php echo lang("redactor_delete_row") ?></div>
+        <div id="delete_table_lang_txt" style="display:none"><?php echo lang("redactor_delete_table") ?></div>
+        <div id="rows_lang_txt" style="display:none"><?php echo lang("redactor_rows") ?></div>
+        <div id="columns_lang_txt" style="display:none"><?php echo lang("redactor_columns") ?></div>
+        <div id="add_head_lang_txt" style="display:none"><?php echo lang("redactor_add_head") ?></div>
+        <div id="delete_head_lang_txt" style="display:none"><?php echo lang("redactor_delete_head") ?></div>
+        <div id="title_lang_txt" style="display:none"><?php echo lang("redactor_title") ?></div>
+        <div id="image_position_lang_txt" style="display:none"><?php echo lang("redactor_image_position") ?></div>
+        <div id="none_lang_txt" style="display:none"><?php echo lang("redactor_none") ?></div>
+        <div id="left_lang_txt" style="display:none"><?php echo lang("redactor_left") ?></div>
+        <div id="right_lang_txt" style="display:none"><?php echo lang("redactor_right") ?></div>
+        <div id="image_web_link_lang_txt" style="display:none"><?php echo lang("redactor_image_web_link") ?></div>
+        <div id="text_lang_txt" style="display:none"><?php echo lang("redactor_text") ?></div>
+        <div id="mailto_lang_txt" style="display:none"><?php echo lang("redactor_mailto") ?></div>
+        <div id="web_lang_txt" style="display:none"><?php echo lang("redactor_web") ?></div>
+        <div id="video_html_code_lang_txt" style="display:none"><?php echo lang("redactor_video_html_code") ?></div>
+        <div id="file_lang_txt" style="display:none"><?php echo lang("redactor_file") ?></div>
+        <div id="upload_lang_txt" style="display:none"><?php echo lang("redactor_upload") ?></div>
+        <div id="download_lang_txt" style="display:none"><?php echo lang("redactor_download") ?></div>
+        <div id="choose_lang_txt" style="display:none"><?php echo lang("redactor_choose") ?></div>
+        <div id="or_choose_lang_txt" style="display:none"><?php echo lang("redactor_or_choose") ?></div>
+        <div id="drop_file_here_lang_txt" style="display:none"><?php echo lang("redactor_drop_file_here") ?></div>
+        <div id="align_left_lang_txt" style="display:none"><?php echo lang("redactor_align_left") ?></div>
+        <div id="align_center_lang_txt" style="display:none"><?php echo lang("redactor_align_center") ?></div>
+        <div id="align_right_lang_txt" style="display:none"><?php echo lang("redactor_align_right") ?></div>
+        <div id="align_justify_lang_txt" style="display:none"><?php echo lang("redactor_align_justify") ?></div>
+        <div id="horizontalrule_lang_txt" style="display:none"><?php echo lang("redactor_horizontalrule") ?></div>
+        <div id="deleted_lang_txt" style="display:none"><?php echo lang("redactor_deleted") ?></div>
+        <div id="anchor_lang_txt" style="display:none"><?php echo lang("redactor_anchor") ?></div>
+        <div id="link_new_tab_lang_txt" style="display:none"><?php echo lang("redactor_link_new_tab") ?></div>
+        <div id="underline_lang_txt" style="display:none"><?php echo lang("redactor_underline") ?></div>
+        <div id="alignment_lang_txt" style="display:none"><?php echo lang("redactor_alignment") ?></div>
         <div id="users_contact_sendmsg" style="display:none"><?php echo lang("users_contact_sendmsg") ?></div>
         <div id="users_page_inputcity" style="display:none"><?php echo lang("users_page_inputcity") ?></div>
         <div id="choose_city" style="display:none"><?php echo lang("choose_city") ?></div>
@@ -107,12 +171,13 @@
 		}
 		
 		//Determine row name depending on lang loaded
-		if($this->session->userdata('lang_loaded') == "french"){$rowname = ''; $datepicker_lang = "fr";}
+		if($this->session->userdata('lang_loaded') == "french"){$rowname = ''; $datepicker_lang = "fr"; $langloaded_id = 'fr';}
 		else {
 			foreach($lang_counts as $key => $value){
 				if($this->session->userdata('lang_loaded') == $value["name"]){
 					$rowname = '_'.$value["id"];
 					$datepicker_lang = $value["datepickerid"];
+					$langloaded_id = $value["id"];
 				}
 			}
 		}
@@ -122,13 +187,14 @@
         <div id="button_photo" style="display:none"><?php echo 'button-upload-photo'.$rowname.'.png'; ?></div>
         <div id="button_upcover" style="display:none"><?php echo 'button-upload-cover'.$rowname.'.png'; ?></div>
         <div id="datepicker_lang" style="display:none"><?php echo $datepicker_lang ?></div>
+        <div id="langloaded_id" style="display:none"><?php echo $langloaded_id ?></div>
         <script src="<?=site_url('js/functions.js')?>"></script>
 		<script src="<?=site_url('js/chosen/chosen.jquery.min.js')?>"></script>
 		<script src="<?=site_url('js/chosen/ajax-chosen.min.js')?>"></script>
 		<script src="<?=site_url('js/selectbox/jquery.selectBox.min.js')?>"></script>
 		<script src="<?=site_url('js/jquery.validate.min.js')?>"></script>
 		<script src="<?=site_url('js/redactor/redactor.min.js')?>"></script>
-		<script src="<?=site_url('js/redactor/langs/'.$lang_id.'.js')?>"></script>
+		<script src="<?=site_url('js/redactor/langs/fr.js')?>"></script>
 		<script src="<?=site_url('js/date-fr-FR.js')?>"></script>	
 		<script src="<?=site_url('js/badge.js')?>"></script>	
 		<script src="<?=site_url('js/jquery.ui.mask.js')?>"></script>
