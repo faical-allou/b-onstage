@@ -616,7 +616,7 @@
 					buttons		: 
 					[
 						{
-							text	: 'Supprimer',								
+							text	: document.getElementById("deletetxt").innerHTML,								
 							'class'	: 'ui-purple',									
 							click	: function() {		
 								$.ajax({
