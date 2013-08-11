@@ -172,7 +172,7 @@
 									file_queue_limit : 10,
 									flash_url : '/js/swfupload/swfupload.swf',
 									button_placeholder_id : 'button-upload-tracks',
-									button_image_url : '/js/swfupload/button/button-upload-track.png',
+									button_image_url : '/js/swfupload/button/'+document.getElementById("button_track").innerHTML,
 									button_width : 200,
 									button_height : 40,
 									button_cursor : SWFUpload.CURSOR.HAND,
