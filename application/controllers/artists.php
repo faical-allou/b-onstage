@@ -230,9 +230,25 @@ class Artists extends CI_Controller {
 
 		$twitter_screen_name = TWITTER_SCREEN_NAME;
 
-		$twitter_data = $this->_get_data('http://api.twitter.com/1/users/show.json?screen_name='.$twitter_screen_name);
-
-		$tweets = $this->_get_data('http://api.twitter.com/1/statuses/user_timeline.json?screen_name='.$twitter_screen_name.'&count=5'); 
+		require_once("php/twitter/twitteroauth.php"); //Path to twitteroauth library
+			 
+		$twitteruser = "$twitter_screen_name";
+		$notweets = 30;
+		$consumerkey = "KNCLl5AEDknEtZGwMaSkZA";
+		$consumersecret = "A5FFzpbFyuh4c9QwqZEX3P3W0uDzXX1hBWO2TeXeNU";
+		$accesstoken = "1110525398-FNncX6sagfgGzYTfzecwPDQo9GDFCWx09pBMxhb";
+		$accesstokensecret = "PIw8NobQ6nTTlQYlgHociw5LMUSSdvuIq5NH90FeU";
+		 
+		function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oauth_token_secret) {
+		  $connection = new TwitterOAuth($cons_key, $cons_secret, $oauth_token, $oauth_token_secret);
+		  return $connection;
+		}
+		 
+		$connection = getConnectionWithAccessToken($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);
+		 
+		$tweets = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=".$twitteruser."&count=".$notweets);			
+		
+		$twitter_data = $connection->get('https://api.twitter.com/1.1/users/show.json?screen_name='.$twitter_screen_name);
 
 		$twitter = array(
 
