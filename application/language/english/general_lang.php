@@ -228,56 +228,56 @@ $lang['home_bottom_txt2'] = 'Rejoignez b-onstage, le réseau qui met en relation
 
 
 // About us
-$lang['aboutus_link_aboutus'] = 'A proposEN';
-$lang['aboutus_link_whoweare'] = 'Qui sommes-nous ?EN';
-$lang['aboutus_link_howitworks'] = 'Comment ça marche ?EN';
-$lang['aboutus_header_aboutus'] = 'Pourquoi b-onstage ?EN';
+$lang['aboutus_link_aboutus'] = 'About';
+$lang['aboutus_link_whoweare'] = 'Who are we?';
+$lang['aboutus_link_howitworks'] = 'How it works?';
+$lang['aboutus_header_aboutus'] = 'Why b-onstage?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>ENParce qu’à l’heure d’Internet et du téléchargement de masse, <strong>les liens entre les Artistes et le public ont été coupés.</strong></p></li>
-				<li><p>Parce que l’industrie de la musique est en crise et que la vente de disque ne suffit plus <strong>pour vivre de son art.</strong></p></li>
-				<li><p>Parce que la musique n’est pas seulement une partition, mais aussi un univers et une atmosphère à partager.</p></li>
-				<li><p>Parce que la musique a toujours été, doit et devra toujours être une relation privilégiée avec le public.</p></li>
-				<li><p>Et parce qu’enfin, <strong>la vrai musique c’est le live</strong>, les Concerts, la Scène.</p></li>
+				<li><p>Because of the heavy downloading brought by the Internet, <strong>, links between Artists and the public have been broken.</strong></p></li>
+				<li><p>Because the music industry is in crisis and because the records sales <strong>are not enough anymore.</strong></p></li>
+				<li><p>Because music is not only a partition but also a universe to share with others.</p></li>
+				<li><p>Because music has always been a unique relation with the public and because it has to stay as such.</p></li>
+				<li><p>And of course, <strong>because real music is live</strong>, on stage.</p></li>
 			</ul>';
-$lang['aboutus_header2_aboutus'] = 'Et maintenant ?EN';
+$lang['aboutus_header2_aboutus'] = 'And now?';
 $lang['aboutus_txt2_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>ENIl est temps qu\'Internet se mette au service des musiciens.</p></li>
-				<li><p>Il est temps que les groupes rencontrent leur public.</p></li>
+				<li><p>It is high time, Internet is put to use by the Artists.</p></li>
+				<li><p>It is high time bands meet their public.</p></li>
 			</ul>';
-$lang['aboutus_header3_aboutus'] = 'Inscrivez-vousEN';
-$lang['aboutus_header4_aboutus'] = 'sur b-onstage et à vous de jouer !EN';
-$lang['aboutus_header_whoweare'] = 'Qui sommes-nous ?EN';
+$lang['aboutus_header3_aboutus'] = 'Sign-up';
+$lang['aboutus_header4_aboutus'] = 'on b-onstage!';
+$lang['aboutus_header_whoweare'] = 'Who are we?';
 $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
-				<li><p class="grey fs-15">ENMusiciens et programmeurs, nous avons créé notre compagnie, Mybandonstage, afin de promouvoir toutes les créations artistiques amateures.</p></li>		
-				<li><p class="grey fs-15">Nous avons conçu</strong> afin de <strong>mettre en contact les Artistes avec leur public</strong> en facilitant leurs démarches pour <strong>organiser des concerts.</strong></p></li>	
-				<li><p class="grey fs-15"><strong>Nous visitons toutes les Scènes</strong> (qui sont des établissements partenaires de b-onstage), nous prenons les photos et nous les référençons avec leurs descriptions pour assurer qu’<strong>on vous offre ce qu’on vous promet.</strong></p></li>
-				<li><p class="grey fs-15">En prenant en charge les transactions financières, <strong>nous garantissons que les paiements seront conformes.</strong></p></li>
-				<li><p class="grey fs-15">Nous proposons <strong>pour chaque concert des contrats spécialisés</strong> pour limiter les responsabilités équitablement et équilibrer les relations entre tous les intervenants.</p></li>	
-				<li><p class="grey fs-15">Nous assurons <strong>le suivi de tous nos partenaires et de tous les Artistes</strong>, nous répondons à tous les messages que nous recevons et nous sommes prêts à intervenir auprès de tous les organismes pour vous soutenir.</p></li>
+				<li><p class="grey fs-15">Musicians and programers, we founded mybandonstage to promote all amateur artistic performances.</p></li>		
+				<li><p class="grey fs-15">We conceived it to enable <strong>Artists to meet their public</strong> by making it easier to  <strong>organize a Concert.</strong></p></li>	
+				<li><p class="grey fs-15"><strong>We visit all stages</strong> (who we consider as partners), we take the photos and we list them <strong>to make sure what you see is what you get.</strong></p></li>
+				<li><p class="grey fs-15">We take care of the financial transactions, <strong>to secure the payments.</strong></p></li>
+				<li><p class="grey fs-15">We offer <strong>specialized contracts</strong> to limit liabilities and balance the relations.</p></li>	
+				<li><p class="grey fs-15">We follow up <strong>on all our partners and registered Artists</strong> and we answer every message we get. We are ready to side with you in all of your initiatives.</p></li>
 			</ul>';
 $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
-				<li><p>ENNous mettons gratuitement à votre disposition une plateforme de réservation en ligne permettant de vérifier la disponibilité d’une Scène et de la réserver pour vous y produire, faire votre Concert.</p></li>			
-				<li><p>Sur b-onstage vous utilisez notre outil de recherche pour trouvez les Scènes disponibles en fonction des dates et/ou des villes qui vous conviennent.</p></li>
-				<li><p>Envoyer une demande de réservation pour faire un Concert sur la Scène sélectionnée.</p></li>
-				<li><p>Nous vous notifierons une fois la réservation validée par la Scène.</p></li>	
-				<li class="nb"><p><strong>NB :</strong> Les Scènes sont susceptibles de recevoir un grand nombre de demandes de réservation. Complétez au mieux votre profil et soyez patients, cela peut prendre du temps avant que vous ne soyez sélectionnés par la Scène.</p></li>
-				<li><p>Pour valider complètement votre réservation, vous devrez procéder en ligne au paiement des frais de réservation.</p></li>
+				<li><p>We give you access to an online reservation platform to check the availabilities and book a date for a Concert.</p></li>			
+				<li><p>On b-onstage.com you can use our search engine to check the availabilities at certain date in a certain city.</p></li>
+				<li><p>Send a reservation request to organize a Concert to the chosen Stage.</p></li>
+				<li><p>We will let you know if you are selected.</p></li>	
+				<li class="nb"><p><strong>NB :</strong> Stages might receive a lot of requests. Complete your profile and be patient, it can take time before you are selected.</p></li>
+				<li><p>To finalize your reservation, we will have to pay the booking fee.</p></li>
 				<li class="nb">
-					<p><strong>NB :</strong> Les frais de réservation permet surtout de garantir que les deux parties tiennent leurs engagements et que le Concert se déroulent dans les meilleurs conditions.</p>
-					<p>Cela évite également que des Artistes peu sérieux dégradent les relations avec les Scènes, et qu’il y ait de moins en moins de lieu et de date à votre disposition.</p>					
+					<p><strong>NB :</strong> The booking fees are mostly there to make sure the Artists show up and to give the Stage owner some guarantee.</p>
+					<p>This is also to avoid having troublemakers causing damages.</p>					
 				</li>
-				<li><p>A réception du paiement des frais de réservations, tels qu’indiqués sur la page de la Scène, la réservation est définitive et vous serez notifié.</p></li>
-				<li><p>Une fois réservé les détails de votre Concert s\'afficheront et seront visible par le public.</p></li>
-				<li><p>Afin de vous protéger, et de vous garantir les meilleures conditions, nous avons conçu des contrats Artistes/Scènes (accord de prestation) que nous pouvons mettre à disposition sur simple demande.</p></li>
-				<li><p>Nous vous invitons à signer un contrat Artiste(s)/Scène, qui est un contrat de prestation avec la Scène qui pourra vous être envoyé. Ce contrat établit le lien juridique entre la Scène et l’Artiste, la société Mybandonstage n’intervenant, s’agissant de l’exécution des prestations artistiques et de location de salle, que comme intermédiaire de mise en relation via le site b-onstage.</p></li>
-				<li><p>Il vous suffit de vous présenter quelques heures avant le Concert pour vous préparer et la suite dépend de vous...</p></li>	
-				<li><p>Si vous voulez annuler, vous pouvez le faire sans conséquence tant que le paiement des frais de réservation n’a pas été réalisé.</p></li>
-				<li class="nb"><p>NB : Au cas où vous ne vous présentez pas le jour du Concert sans avoir annulé sur le site au moins 72 heures à l’avance, nous nous réservons le droit d’afficher le statut "No-Show" sur votre profil public.</p></li>
+				<li><p>Once the payment is made, the reservation is finalized and you will be notified.</p></li>
+				<li><p>The date you booked will then appear as a concert to the public.</p></li>
+				<li><p>In order to help you, we have drafted a contract Artist/Stage that we can forward you upon request.</p></li>
+				<li><p>This contract will provide the legal framework for the concert. mybandonstage is only an intermediary in this transaction.</p></li>
+				<li><p>You only have to show up few hours before and the rest is up to you...</p></li>	
+				<li><p>If you want to cancel, you can do it for free as long as the payment is not made.</p></li>
+				<li class="nb"><p>NB : In case of “No-Show”, without notice at least 72h before, we reserve the right to display “No-Show” on your profile.</p></li>
 				<li>
-					<p>Une fois payé, vous pouvez annuler jusqu’à :</p>
+					<p>After payment you can cancel with the following restrictions:</p>
 					<ul class="sub-about-list">
-						<li>Deux semaines avant la date du Concert, nous vous reverserons les frais de réservation moins nos frais de gestion.</li>						
-						<li>Passée cette limite de deux semaines avant la date du Concert, vous ne pouvez plus récupérer les frais de réservation, mais nous vous demandons de procéder à l’annulation tout de même pour éviter le statut "No-Show".</li>
+						<li>Until 2 weeks before the Concert, the booking fees are refundable but not the transaction fee.</li>						
+						<li>After two weeks, the booking fee is not refundable but we ask you to cancel anyway or we reserve the right to display “No-Show” on your profile.</li>
 					</ul>
 				</li>
 			</ul>';
