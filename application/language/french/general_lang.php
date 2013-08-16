@@ -115,6 +115,7 @@ $lang['signup'] = 'S\'inscrire';
 $lang['login'] = 'Se connecter';
 $lang['logout'] = 'Se déconnecter';
 $lang['from'] = 'du';
+$lang['sur'] = 'sur';
 $lang['to'] = 'au';
 $lang['in'] = 'à';
 $lang['to2'] = 'à';
