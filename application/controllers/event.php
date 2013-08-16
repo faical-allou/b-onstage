@@ -11,8 +11,7 @@ class Event extends CI_Controller {
 		$this->load->model('user_model');
 		$this->load->model('concert_model');
 		$this->load->library('session');
-		include("/home/bonstage/dev.b-onstage/application/config/lang.php");
-		$this->lang_counts = $lang_counts;
+		$this->lang_counts = $this->config->item('lang_counts');
 		
 		//var user
 		$this->user = ($this->ion_auth->logged_in()) ? $this->ion_auth->user()->row_array() : null;	

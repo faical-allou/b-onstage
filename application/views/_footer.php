@@ -164,16 +164,14 @@
 		<script src="<?=site_url('js/plugins.js')?>"></script>		
 		<script src="<?=site_url('js/dropdown.js')?>"></script>
 		<?php 
-		//Include config lang
-		include("/home/bonstage/dev.b-onstage/application/config/lang.php");
-		foreach($lang_counts as $key => $value){
+		foreach($this->config->item('lang_counts') as $key => $value){
 		if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value["id"];}
 		}
 		
 		//Determine row name depending on lang loaded
 		if($this->session->userdata('lang_loaded') == "french"){$rowname = ''; $datepicker_lang = "fr"; $langloaded_id = 'fr';}
 		else {
-			foreach($lang_counts as $key => $value){
+			foreach($this->config->item('lang_counts') as $key => $value){
 				if($this->session->userdata('lang_loaded') == $value["name"]){
 					$rowname = '_'.$value["id"];
 					$datepicker_lang = $value["datepickerid"];

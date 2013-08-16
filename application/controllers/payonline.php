@@ -15,8 +15,7 @@ class Payonline extends CI_Controller {
 		$this->load->model('reservation_model');
 		$this->load->library('payline');
 		$this->payline->init(MERCHANT_ID, ACCESS_KEY, PROXY_HOST, PROXY_PORT, PROXY_LOGIN, PROXY_PASSWORD, PRODUCTION);
-		include("/home/bonstage/dev.b-onstage/application/config/lang.php");
-		$this->lang_counts = $lang_counts;
+		$this->lang_counts = $this->config->item('lang_counts');
 	}
 
 	public function index($reservation_id,$event_id,$amount){
