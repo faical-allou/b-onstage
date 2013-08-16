@@ -194,13 +194,13 @@ class Artists extends CI_Controller {
 
 		/*****GET SOCIAL INFOS*****/
 
-		/*require_once('php/facebook/facebook.php');
+		require_once('php/facebook/facebook.php');
 
 		$fb = new Facebook(array(  
 
-			'appId'  => FACEBOOK_APP_ID,  
+			'appId'  => '167676780084738',  
 
-			'secret' => FACEBOOK_SECRET_ID,  
+			'secret' => 'd108291a4d518f9bc1549fa6934862f1',  
 
 			'cookie' => true
 
@@ -210,17 +210,25 @@ class Artists extends CI_Controller {
 
 			'method'	=> 'fql.query',  
 
-			'query'		=> 'select fan_count, page_url from page where page_id = '.FACEBOOK_ID 
+			'query'		=> 'select fan_count, page_url from page where page_id = 248858280036' 
 
-		));*/ 			
+		));	
+		
+		$fb_page_stream = $fb->api(array(  
+
+			'method'	=> 'fql.query',  
+
+			'query'		=> 'select message, created_time from stream where source_id = 248858280036 limit 0,5' 
+
+		));	
 
 		
 
 		$facebook = array(
 
 			'link'		=> FACEBOOK_LINK,//$fb_page[0]['page_url'],
-
-			'likes'		=> 0 //$fb_page[0]['fan_count']			
+			'likes'		=> $fb_page[0]['fan_count']		,
+			'alldata'	=> $fb_page_stream	
 
 		);
 
@@ -263,31 +271,19 @@ class Artists extends CI_Controller {
 		
 
 		/*****GET GOOGLE + INFOS*****/				
-
+		$google_plusid = '106404177515806059489';
+		$google_pluskey = 'AIzaSyCOZU1GHXMvyXdf1hc3qa4ChXmpWBCzflI';
+		$google_plus_feed = json_decode(file_get_contents('https://www.googleapis.com/plus/v1/people/'.$google_plusid.'/activities/public?key='.$google_pluskey));
+		$google_page_circle = 'https://www.googleapis.com/plus/v1/people/'.$google_plusid.'?key='.$google_pluskey.'';
+		$google_data = json_decode(file_get_contents($google_page_circle));
 		$google_plus = array(			
-
 			'id'		=> GOOGLE_ID,
-
 			'api_key'	=> GOOGLE_API_KEY,
-
-			'link'		=> GOOGLE_PLUS_LINK
+			'link'		=> GOOGLE_PLUS_LINK,
+			'google_plus_feed'		=> $google_plus_feed,
+			'google_data'		=> $google_data
 
 		);
-
-		
-
-		/*****GET GOOGLE INFOS*****/		
-
-		$google_plus = array(
-
-			'id'		=> GOOGLE_ID,
-
-			'api_key'	=> GOOGLE_API_KEY,
-
-			'link'		=> GOOGLE_PLUS_LINK
-
-		);
-
 		
 
 		$data = array(						

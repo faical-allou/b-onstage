@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php 
+//Include config lang
+include("/home/bonstage/dev.b-onstage/application/config/lang.php");
+foreach($lang_counts as $key => $value){
+if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value["id"];}
+}
+?><!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
@@ -54,7 +60,7 @@
 	  var js, fjs = d.getElementsByTagName(s)[0];
 	  if (d.getElementById(id)) return;
 	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=405185392913953";
+	  js.src = "//connect.facebook.net/<?php echo $lang_id."_".strtoupper($lang_id) ?>/all.js#xfbml=1&appId=405185392913953";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 	
