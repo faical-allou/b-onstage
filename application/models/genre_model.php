@@ -8,8 +8,7 @@ class Genre_model extends CI_Model
 		$this->load->database();
 		$this->table = 'musical_genres';
 		$this->load->library('session');
-		include("/home/bonstage/dev.b-onstage/application/config/lang.php");
-		$this->lang_counts = $lang_counts;
+		$this->lang_counts = $this->config->item('lang_counts');
 		
 	}
 	

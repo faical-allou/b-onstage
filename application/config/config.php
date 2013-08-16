@@ -74,6 +74,18 @@ $config['url_suffix'] = '';
 */
 $config['language']	= 'french';
 
+// Languages
+//ENGLISH
+$config['lang_counts'][] =  array('name'					=> 'english',
+									'id'					=> 'en',
+									'datepickerid'			=> 'en-GB',
+									'isocode'				=> 'eng');
+//FRENCH
+$config['lang_counts'][] =  array('name'				    => 'french',
+									'id'					=> 'fr',
+									'datepickerid'			=> 'fr',
+									'isocode'				=> 'fre');
+
 /*
 |--------------------------------------------------------------------------
 | Default Character Set

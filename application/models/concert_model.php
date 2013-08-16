@@ -43,12 +43,10 @@ class Concert_model extends CI_Model
 		//get musical genre	
 		$concert['genres'] = array();
 		$genres_ids = explode('|', $concert['genre_id']);
-		//Include config lang
-		include("/home/bonstage/dev.b-onstage/application/config/lang.php");
 		//Determine row name depending on lang loaded
 		if($this->session->userdata('lang_loaded') == "french"){$rowname = '';}
 		else {
-			foreach($lang_counts as $key => $value){
+			foreach($this->config->item('lang_counts') as $key => $value){
 				if($this->session->userdata('lang_loaded') == $value["name"]){
 					$rowname = '_'.$value["id"];
 				}

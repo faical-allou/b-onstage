@@ -1,7 +1,5 @@
 <?php 
-//Include config lang
-include("/home/bonstage/dev.b-onstage/application/config/lang.php");
-foreach($lang_counts as $key => $value){
+foreach($this->config->item('lang_counts') as $key => $value){
 if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value["id"];}
 }
 //Set local time lang
