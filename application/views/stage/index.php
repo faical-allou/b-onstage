@@ -1,4 +1,11 @@
-<script type="text/javascript">
+<?php 
+//Include config lang
+include("/home/bonstage/dev.b-onstage/application/config/lang.php");
+foreach($lang_counts as $key => $value){
+if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value["id"];}
+}
+setlocale(LC_TIME, $lang_id."_".strtoupper($lang_id).".UTF8");
+?><script type="text/javascript">
 	var page = <?=$page?>;
 	var per_page = <?=$per_page?>;
 </script>
@@ -96,7 +103,9 @@
 
 								<span aria-hidden="true" class="icon-google-plus fs-32"></span>						
 
-								<span class="ml-20 fs-36 title purple">0</span>
+								<span class="ml-20 fs-36 title purple"><?php
+                                echo $google_plus['google_data']->circledByCount;						
+								?></span>
 
 							</div>						
 
@@ -165,6 +174,21 @@
 					<div id="tabs-content-facebook" class="tabs-content">
 
 						<p class="grey fs-16 title"><?php echo lang("follow") ?> <a href="<?=$facebook['link']?>" class="purple">b-onstage</a> <?php echo lang("users_page_onsocmed2") ?></p>
+                        <?php 
+						foreach ($facebook['alldata'] as $item) {
+							//Hide empty posts
+							if(!empty($item['message'])){
+								echo '<ul id="tweets-list"><li>
+									<p class="grey-2 fs-12"><span class="purple">'.strftime('%d %B %Y @ %H:%I:%S',gmdate($item['created_time'])).' :</span>
+									'.$item['message'].'
+									</p>
+								</li></ul>';
+							}
+						}
+						?>
+                        <div align="center" style="margin-top:20px;">
+                        	<div class="fb-like" data-href="https://www.facebook.com/pages/BEWEB-Solutions/248858280036" data-width="200" data-layout="button_count" data-show-faces="true" data-send="true"></div>
+                        </div>
 
 					</div>
 
@@ -175,6 +199,17 @@
 					<div id="tabs-content-google-plus" class="tabs-content">				
 
 						<p class="grey fs-16 title"><?php echo lang("follow") ?> <a href="<?=$google_plus['link']?>" class="purple">b-onstage</a> <?php echo lang("users_page_onsocmed4") ?></p>
+                        
+                        <?php 
+						foreach ($google_plus['google_plus_feed']->items as $item) {
+							echo '<ul id="tweets-list"><li>
+									<p class="grey-2 fs-12"><span class="grey bold">'.$item->title.'</span>
+									<span class="purple">'.strftime('%d %B %Y @ %H:%I:%S',strtotime($item->published)).' :</span>'.
+									$item->object->content.'</p>
+	
+								</li></ul>';
+							}
+						?>
 
 						<div class="g-plus" data-width="200" data-href="https://plus.google.com/109498236972306503560" data-rel="publisher"></div>					
 
