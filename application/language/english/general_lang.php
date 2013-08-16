@@ -116,6 +116,7 @@ $lang['login'] = 'Login';
 $lang['logout'] = 'Logout';
 $lang['from'] = 'from';
 $lang['to'] = 'to';
+$lang['sur'] = 'on';
 $lang['in'] = 'in';
 $lang['to2'] = 'to';
 $lang['at'] = 'at';
