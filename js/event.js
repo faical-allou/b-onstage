@@ -337,7 +337,7 @@
 						$('#dialog-payment-type input:checkbox:first').attr('disabled', true);
 						$('#dialog-payment-type input:checkbox:first').parent().css('opacity',0.4);	
 						resume_2 = (checked_2) ? 'Cachet de ' + $('#input-payment-type-2').val() + ' €' + (((checked_3) || (checked_4) || (checked_5)) ? ' + ' : '') : '';						
-						resume_3 = (checked_3) ? $('#input-payment-type-3').val() + ' % des consommations vendues' + (((checked_4) || (checked_5)) ? ' + ' : '') : '';						
+						resume_3 = (checked_3) ? $('#input-payment-type-3').val() + ' de surcharge sur les boissons' + (((checked_4) || (checked_5)) ? ' + ' : '') : '';						
 						resume_4 = (checked_4) ? $('#input-payment-type-4').val() + ' % sur la billeterie' + ((checked_5) ? ' + ' : ''): '';						
 						resume_5 = (checked_5) ? 'Remboursement des frais de réservations' : '';
 						payment_type.resume = resume_2 + resume_3 + resume_4 + resume_5;						

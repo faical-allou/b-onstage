@@ -104,7 +104,7 @@ class Reservation_model extends CI_Model
 				if($event['payment_amount'] > 0)
 					array_push($event['payment'], 'Cachet de '.round($event['payment_amount'],2).' €');
 				if($event['percent_drink'] > 0)
-					array_push($event['payment'], round($event['percent_drink'],2).'% sur les consommations');
+					array_push($event['payment'], $event['percent_drink'].' de surcharge sur les boissons');
 				if($event['percent_entry'] > 0)
 					array_push($event['payment'], round($event['percent_entry'],2).'% sur la billeterie');
 				if($event['refund_fees'] > 0)

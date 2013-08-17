@@ -105,7 +105,7 @@ class Concerts extends CI_Controller {
 						'style'		=> 'vertical-align:middle;margin-top:-3px;'
 					),
 					//percent drink
-					'label_filter_percent_drink'	=> '% des consommations vendues',
+					'label_filter_percent_drink'	=> ' de surcharge sur les boissons',
 					'input_filter_percent_drink'	=>array(
 						'name'		=> 'filter-percent-drink',
 						'id'		=> 'filter-percent-drink',
@@ -164,7 +164,7 @@ class Concerts extends CI_Controller {
 							break;
 						case 3 :
 							$payment_type = ($event['payment_amount'] > 0) ? 'Cachet de '.round($event['payment_amount'],2).' €'.br() : '';
-							$payment_type .= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'% sur les consommations'.br() : '';
+							$payment_type .= ($event['percent_drink'] > 0) ? $event['percent_drink'].' de surcharge sur les boissons'.br() : '';
 							$payment_type .= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% sur la billeterie'.br() : '';
 							$payment_type .= ($event['refund_fees'] > 0) ? 'Remboursement des frais de réservation' : '';
 							break;
@@ -301,7 +301,7 @@ class Concerts extends CI_Controller {
 								break;
 							case 3 :
 								$payment_type = ($event['payment_amount'] > 0) ? 'Cachet de '.round($event['payment_amount'],2).' €'.br() : '';
-								$payment_type .= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'% sur les consommations'.br() : '';
+								$payment_type .= ($event['percent_drink'] > 0) ? $event['percent_drink'].' de surcharge sur les boissons'.br() : '';
 								$payment_type .= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% sur la billeterie'.br() : '';
 								$payment_type .= ($event['refund_fees'] > 0) ? 'Remboursement des frais de réservation' : '';
 								break;

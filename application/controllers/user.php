@@ -1266,7 +1266,7 @@ class User extends CI_Controller {
 						if($reservation['payment_amount'] > 0)
 							array_push($payment_type,'Cachet de '.round($reservation['payment_amount'],2).'€');
 						if($reservation['percent_drink'] > 0)
-							array_push($payment_type, round($reservation['percent_drink'],2).'% sur les consommations');
+							array_push($payment_type, $reservation['percent_drink'].' de surcharge sur les boissons');
 						if($reservation['percent_entry'] > 0)
 							array_push($payment_type,round($reservation['percent_entry'],2).'% sur la billeterie');
 						if($reservation['refund_fees'])
@@ -1481,7 +1481,7 @@ class User extends CI_Controller {
 						break;
 					case 3 :
 						$payment_type.= ($event['payment_amount'] > 0) ? 'Cachet de '.round($event['payment_amount'],2).' € + ' : '';
-						$payment_type.= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'% sur les consommations + ' : '';
+						$payment_type.= ($event['percent_drink'] > 0) ? $event['percent_drink'].' de surcharge sur les boissons + ' : '';
 						$payment_type.= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% sur la billeterie + ' : '';
 						$payment_type.= ($event['refund_fees'] > 0) ? 'Remboursement des frais de réservation' : '';
 						break;

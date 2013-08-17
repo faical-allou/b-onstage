@@ -251,7 +251,7 @@ class Event extends CI_Controller {
 				'size'		=> 4				
 			);
 			//percent drink
-			$this->data['label_payment_type_3'] = '% des consommations vendues';
+			$this->data['label_payment_type_3'] = 'de surcharge sur les boissons';
 			$this->data['payment_type_3'] = array(
 				'name'		=> 'payment-type-3',
 				'id'		=> 'payment-type-3',
@@ -263,7 +263,7 @@ class Event extends CI_Controller {
 				'name'		=> 'input-payment-type-3',
 				'id'		=> 'input-payment-type-3',
 				'value'			=> '',
-				'class' 		=> 'input grey ui-corner-all ml-5 number',
+				'class' 		=> 'input grey ui-corner-all ml-5',
 				'size'			=> 2
 			);
 			//percent entry
@@ -485,7 +485,7 @@ class Event extends CI_Controller {
 							'value'					=> '',					
 							'data-value'			=> $event['payment_type'],
 							'data-payment-amount'	=> round($event['payment_amount'],2),
-							'data-percent-drink'	=> round($event['percent_drink'],1),
+							'data-percent-drink'	=> $event['percent_drink'],
 							'data-percent-entry'	=> round($event['percent_entry'],1),
 							'data-refund-fees'		=> $event['refund_fees'],
 							'data-resume'			=> ''
@@ -519,7 +519,7 @@ class Event extends CI_Controller {
 							'size'		=> 4				
 						);
 						//percent drink
-						$this->data['label_payment_type_3'] = '% des consommations vendues';
+						$this->data['label_payment_type_3'] = 'de surcharge sur les boissons';
 						$this->data['payment_type_3'] = array(
 							'name'		=> 'payment-type-3',
 							'id'		=> 'payment-type-3',
@@ -530,8 +530,8 @@ class Event extends CI_Controller {
 						$this->data['input_payment_type_3'] = array(
 							'name'		=> 'input-payment-type-3',
 							'id'		=> 'input-payment-type-3',
-							'value'		=> round($event['percent_drink'],1),
-							'class' 	=> 'input grey ui-corner-all ml-5 number',
+							'value'		=> $event['percent_drink'],
+							'class' 	=> 'input grey ui-corner-all ml-5',
 							'size'		=> 2
 						);
 						//percent entry
@@ -623,7 +623,7 @@ class Event extends CI_Controller {
 								if($event['payment_amount'] > 0)
 									array_push($payment_type, 'Chachet de '.round($event['payment_amount'],2).' €');
 								if($event['percent_drink'] > 0)
-									array_push($payment_type, round($event['percent_drink'],2).'% sur les consommations');
+									array_push($payment_type, $event['percent_drink'].' de surcharge sur les boissons');
 								if($event['percent_entry'] > 0)
 									array_push($payment_type, round($event['percent_entry'],2).'% sur la billeterie');
 								if($event['refund_fees'] > 0)
@@ -888,7 +888,7 @@ class Event extends CI_Controller {
 					if($event['payment_amount'] > 0)
 						array_push($payment_type, 'Chachet de '.round($event['payment_amount'],2).' €');
 					if($event['percent_drink'] > 0)
-						array_push($payment_type, round($event['percent_drink'],2).'% sur les consommations');
+						array_push($payment_type, $event['percent_drink'].' de surcharge sur les boissons');
 					if($event['percent_entry'] > 0)
 						array_push($payment_type, round($event['percent_entry'],2).'% sur la billeterie');
 					if($event['refund_fees'] > 0)
