@@ -13,7 +13,7 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\.
 RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 
-RewriteCond %{REQUEST_URI} !^(/index\.php|/img|/js|/css|/users|/temp|/media|/members|sitemap\.xml|flash|/robots\.txt|BingSiteAuth\.xml|/favicon\.ico|/icons|/osticket|/test_payline|/sdoms)
+RewriteCond %{REQUEST_URI} !^(/index\.php|/img|/js|/css|/users|/temp|/media|/members|sitemap\.xml|flash|/robots\.txt|BingSiteAuth\.xml|/favicon\.ico|/icons|/osticket|/test_payline|/sdoms|/google)
 RewriteRule ^(.*)$ /index.php/$1 [L]
 
 </IfModule>
