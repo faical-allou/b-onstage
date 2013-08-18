@@ -97,7 +97,7 @@ class Event extends CI_Controller {
 			//variable $this->header
 			$this->header['doctype'] = 'html5';
 			$this->header['title'] = 'CrÃ©er un Ã©vÃ¨nement';
-			$this->header['description'] = 'Mettre une description';								
+			$this->header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';								
 			
 			/**********DATA**********/
 			$this->data['add_url'] = site_url('event/add');
@@ -353,7 +353,7 @@ class Event extends CI_Controller {
 				/**********HEADER**********/
 				$this->header['doctype'] = 'html5';
 				$this->header['title'] = $event['title'];
-				$this->header['description'] = 'Mettre une description';										
+				$this->header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';										
 				
 				/**********INIT DATA**********/
 				/*****EVENT*****/

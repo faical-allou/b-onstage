@@ -52,7 +52,7 @@ class User extends CI_Controller {
 			/*****HEADER*****/
 			$this->header['doctype'] = 'html5';
 			$this->header['title'] = 'Mes paramÃ¨tres de compte';
-			$this->header['description'] = 'Mettre une description';			
+			$this->header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';			
 			
 			//$this->header['genres'] = $this->genre_model->get_all();
 
@@ -140,7 +140,7 @@ class User extends CI_Controller {
 		//var header
 		$this->header['doctype'] = 'html5';
 		$this->header['title'] = $this->lang->line('signin_title');
-		$this->header['description'] = 'Mettre une description';
+		$this->header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';
 		
 		$this->form_validation->set_error_delimiters('<div class="ui-state-error ui-corner-all fs-12 bold p-5 mt-10">', '</div>');
 		$this->form_validation->set_rules('identity', 'Adresse Ã©lectronique', 'required');
@@ -245,7 +245,7 @@ class User extends CI_Controller {
 					}else{
 						$header = array(		
 							'title'			=> 'Inscription',
-							'description'	=> 'Mettre une description'
+							'description'	=> 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.'
 						);		
 						
 						
@@ -363,7 +363,7 @@ class User extends CI_Controller {
 						//var header
 						$header['doctype'] = 'html5';
 						$header['title'] = 'PrÃ©-inscription terminÃ©e';
-						$header['description'] = 'Mettre une description';
+						$header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';
 
 						//var step
 						$step['title'] = 'PrÃ©-inscription terminÃ©e';
@@ -401,7 +401,7 @@ class User extends CI_Controller {
 					//var header
 					$this->header['doctype'] = 'html5';
 					$this->header['title'] = $this->lang->line('signup_title');
-					$this->header['description'] = 'Mettre une description';
+					$this->header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';
 
 					//var step
 					$this->step['title'] = 'CrÃ©ez un compte';
@@ -549,7 +549,7 @@ class User extends CI_Controller {
 						//var header
 						$this->header['doctype'] = 'html5';
 						$this->header['title'] = 'Activez votre compte';
-						$this->header['description'] = 'Mettre une description';
+						$this->header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';
 
 						//var step
 						$this->step['title'] = 'Activez voter compte';
@@ -804,7 +804,7 @@ class User extends CI_Controller {
 				//var header
 				$this->header['doctype'] = 'html5';
 				$this->header['title'] = 'Modifier adresse Ã©lectronique';
-				$this->header['description'] = 'Mettre une description';				
+				$this->header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';				
 				
 				//var message
 				$this->data['message'] =($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message'));
@@ -996,7 +996,7 @@ class User extends CI_Controller {
 				//var header
 				$this->header['doctype'] = 'html5';
 				$this->header['title'] = 'Modifier mes coordonnÃ©es';
-				$this->header['description'] = 'Mettre une description';
+				$this->header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';
 				
 				//var message
 				$this->data['message'] =($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message'));
@@ -1243,7 +1243,7 @@ class User extends CI_Controller {
 		}
 		else{
 			$this->header['title'] = 'Mes rÃ©servations';
-			$this->header['description'] = 'Mettre une description';			
+			$this->header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';			
 			
 			$reservations = $this->reservation_model->get_by_artist_id($this->user['id']);
 			$pending_reservations = '';
@@ -1357,7 +1357,7 @@ class User extends CI_Controller {
 			//variable header
 			$this->header['doctype'] = 'html5';
 			$this->header['title'] = 'Gestion du calendrier';
-			$this->header['description'] = 'Mettre une description';			
+			$this->header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';			
 
 			//variable data
 			

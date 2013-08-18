@@ -91,7 +91,7 @@ class Concerts extends CI_Controller {
 			case 'open':		
 				//var header			
 				$this->header['title'] = 'Ou jouer ma musique ?';
-				$this->header['description'] = 'Mettre une description';
+				$this->header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';
 				
 				//input filter
 				$filter_remuneration = array(
@@ -210,7 +210,7 @@ class Concerts extends CI_Controller {
 			case 'close' : 
 				//var header			
 				$this->header['title'] = 'Programmation';
-				$this->header['description'] = 'Mettre une description';
+				$this->header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';
 				
 				//var input filter
 				$filter_sort = array(

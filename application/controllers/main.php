@@ -43,7 +43,7 @@ class Main extends CI_Controller {
 		//var header
 		$header['doctype'] = 'html5';
 		$header['title'] = 'Bienvenue sur b-onstage';
-		$header['description'] = 'Mettre une description';		
+		$header['description'] = 'Recherchez des scènes où jouer. Trouvez des groupes et artistes pour vos soirées. Découvrez les concerts sur Paris, Montréal, Berlin, Los Angeles.';		
 		
 		//var home		
 		$home['artists'] = array();
