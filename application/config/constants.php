@@ -81,14 +81,12 @@ define('IS_AJAX', isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVE
 
 
 /*soundcloud*/
+define('SC_CLIENT_ID', '63d6b7f211eb4199561feba72475cfeb');
+define('SC_SECRET_ID', 'f054c325af966fb78a6d116961ef06d2');
 //DEV
-define('SC_CLIENT_ID', '68139674690a8e456179aa74ca065667');
-define('SC_SECRET_ID', '8922d4688dbee416effbc0927d2280f0');
-define('SC_REDIRECT_URL', 'http://www.dev.b-onstage.com/user/redirect_sc');
+define('SC_REDIRECT_URL', 'http://trans.b-onstage.com/user/redirect_sc');
 //PROD
-//define('SC_CLIENT_ID', '5daaabb2aecacbce6f1af0c2df08fa9f');
-//define('SC_SECRET_ID', '6eaa28602492e3340859b7db399cda7b');
-//define('SC_REDIRECT_URL', 'http://www.b-onstage.com/user/redirect_sc');
+//define('SC_REDIRECT_URL', 'http://b-onstage.com/user/redirect_sc');
 
 
 
@@ -98,18 +96,20 @@ define('FACEBOOK_LINK','http://www.facebook.com/pages/B-onstage/146854152153423'
 
 define('FACEBOOK_ID','146854152153423');
 
-define('FACEBOOK_APP_ID','405185392913953');
+define('FACEBOOK_APP_ID','167676780084738');
 
-define('FACEBOOK_SECRET_ID','e6cb1dbd000c7a401153e3d0a2bcdf61');
+define('FACEBOOK_SECRET_ID','d108291a4d518f9bc1549fa6934862f1');
 
 
 
 /*twitter*/
 
 define('TWITTER_LINK','https://twitter.com/b_onstage');
-
 define('TWITTER_SCREEN_NAME','b_onstage');
-
+define('TWITTER_CONKEY','8HJ0jop92zxgKP4WKZuJpA');
+define('TWITTER_CONSEC','0acpR6OYrTJOzcrSSD8CthqJcmRp2w5U0f3MWb908rA');
+define('TWITTER_ACCTOK','1345303700-SOy4ZKduPfGaihD9haNieTeKj7wrh0X54Ale7zx');
+define('TWITTER_ACCSEC','2SeKRVA6p6sZXezfksll4nxG4kK1YAKCtIFZZ9F7Fs');
 
 
 /*google*/
@@ -118,4 +118,4 @@ define('GOOGLE_PLUS_LINK','https://plus.google.com/109498236972306503560/posts')
 
 define('GOOGLE_ID','109498236972306503560');
 
-define('GOOGLE_API_KEY', '4RV25Vor8uM1Fgq6gbeoNjkg');
+define('GOOGLE_API_KEY', 'AIzaSyAhFb_7ULRR3RQ3OwVgRxe7fqSOGEZIGY0');

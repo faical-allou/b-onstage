@@ -9,13 +9,8 @@
 				parent = $(this);
 				user_id = options.user_id;
 				user_state = options.user_state;																
-				sc_client_id = '68139674690a8e456179aa74ca065667';	
-				sc_secret_id = '8922d4688dbee416effbc0927d2280f0';
-				/*
-				//PROD
-				sc_client_id = '5daaabb2aecacbce6f1af0c2df08fa9f';	
-				sc_secret_id = '6eaa28602492e3340859b7db399cda7b';	
-				*/		
+				sc_client_id = document.getElementById("sc_client_id_txt").innerHTML;	
+				sc_secret_id = document.getElementById("sc_secret_id_txt").innerHTML;	
 				
 				/********** INIT PLAYER**********/	
 				parent.sound('init_player');				
@@ -382,8 +377,8 @@
 					//initialise
 					SC.initialize({
 						client_id		: sc_client_id,							
-						redirect_uri	: 'http://www.dev.b-onstage.com/user/redirect_sc'
-					}); /*PROD : redirect_uri	: 'http://www.b-onstage.com/user/redirect_sc' */
+						redirect_uri	:  document.getElementById("sc_redirect_uri_txt").innerHTML
+					}); 
 					
 					//connect and add sc
 					SC.connect(function() {													

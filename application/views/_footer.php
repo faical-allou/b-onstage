@@ -48,6 +48,9 @@
 			</div>
 		</footer>
 		
+		<div id="sc_client_id_txt" style="display:none"><?php echo SC_CLIENT_ID ?></div>
+		<div id="sc_secret_id_txt" style="display:none"><?php echo SC_SECRET_ID ?></div>
+		<div id="sc_redirect_uri_txt" style="display:none"><?php echo SC_REDIRECT_URL ?></div>
 		<div id="html_lang_txt" style="display:none"><?php echo lang("redactor_html") ?></div>
         <div id="video_lang_txt" style="display:none"><?php echo lang("redactor_video") ?></div>
         <div id="image_lang_txt" style="display:none"><?php echo lang("redactor_image") ?></div>

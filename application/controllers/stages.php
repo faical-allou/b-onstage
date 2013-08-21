@@ -20,6 +20,7 @@ class Stages extends CI_Controller {
 
 		$this->load->model('event_model');		
 
+		$this->load->model('social_model');
 		
 
 		//init vars
@@ -189,126 +190,8 @@ class Stages extends CI_Controller {
 		
 
 		/*****GET SOCIAL INFOS*****/
-		require_once('php/facebook/facebook.php');
-
-		$fb = new Facebook(array(  
-
-			'appId'  => '167676780084738',  
-
-			'secret' => 'd108291a4d518f9bc1549fa6934862f1',  
-
-			'cookie' => true
-
-		));  	
-
-		$fb_page = $fb->api(array(  
-
-			'method'	=> 'fql.query',  
-
-			'query'		=> 'select fan_count, page_url from page where page_id = 248858280036' 
-
-		));	
-		
-		$fb_page_stream = $fb->api(array(  
-
-			'method'	=> 'fql.query',  
-
-			'query'		=> 'select message, created_time from stream where source_id = 248858280036 limit 0,5' 
-
-		));	
-
-		
-
-		$facebook = array(
-
-			'link'		=> FACEBOOK_LINK,//$fb_page[0]['page_url'],
-			'likes'		=> $fb_page[0]['fan_count']		,
-			'alldata'	=> $fb_page_stream	
-
-		);
-
-		/*require_once('php/facebook/facebook.php');
-
-		$fb = new Facebook(array(  
-
-			'appId'  => FACEBOOK_APP_ID,  
-
-			'secret' => FACEBOOK_SECRET_ID,  
-
-			'cookie' => true
-
-		));  	
-
-		$fb_page = $fb->api(array(  
-
-			'method'	=> 'fql.query',  
-
-			'query'		=> 'select fan_count, page_url from page where page_id = '.FACEBOOK_ID 
-
-		)); 			
-
-		
-
-		$facebook = array(
-
-			'link'		=> FACEBOOK_LINK,//$fb_page[0]['page_url'],
-
-			'likes'		=> 0 //$fb_page[0]['fan_count']			
-
-		);*/
-
-		
-
-		/*****GET TWITTER INFOS*****/		
-
-		$twitter_screen_name = TWITTER_SCREEN_NAME;
-
-		require_once("php/twitter/twitteroauth.php"); //Path to twitteroauth library
-			 
-		$twitteruser = "$twitter_screen_name";
-		$notweets = 30;
-		$consumerkey = "KNCLl5AEDknEtZGwMaSkZA";
-		$consumersecret = "A5FFzpbFyuh4c9QwqZEX3P3W0uDzXX1hBWO2TeXeNU";
-		$accesstoken = "1110525398-FNncX6sagfgGzYTfzecwPDQo9GDFCWx09pBMxhb";
-		$accesstokensecret = "PIw8NobQ6nTTlQYlgHociw5LMUSSdvuIq5NH90FeU";
-		 
-		function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oauth_token_secret) {
-		  $connection = new TwitterOAuth($cons_key, $cons_secret, $oauth_token, $oauth_token_secret);
-		  return $connection;
-		}
-		 
-		$connection = getConnectionWithAccessToken($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);
-		 
-		$tweets = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=".$twitteruser."&count=".$notweets);			
-		$twitter_data = $connection->get('https://api.twitter.com/1.1/users/show.json?screen_name='.$twitter_screen_name);
-
-
-		$twitter = array(
-
-			'link'			=> TWITTER_LINK,
-
-			'followers'		=> $twitter_data->followers_count,
-
-			'tweets'		=> $tweets
-
-		);
-
-		
-
-		/*****GET GOOGLE + INFOS*****/				
-		$google_plusid = '106404177515806059489';
-		$google_pluskey = 'AIzaSyCOZU1GHXMvyXdf1hc3qa4ChXmpWBCzflI';
-		$google_plus_feed = json_decode(file_get_contents('https://www.googleapis.com/plus/v1/people/'.$google_plusid.'/activities/public?key='.$google_pluskey));
-		$google_page_circle = 'https://www.googleapis.com/plus/v1/people/'.$google_plusid.'?key='.$google_pluskey.'';
-		$google_data = json_decode(file_get_contents($google_page_circle));
-		$google_plus = array(			
-			'id'		=> GOOGLE_ID,
-			'api_key'	=> GOOGLE_API_KEY,
-			'link'		=> GOOGLE_PLUS_LINK,
-			'google_plus_feed'		=> $google_plus_feed,
-			'google_data'		=> $google_data
-
-		);
+		$social_sidebar = $this->social_model->get_all();
+		$social_sidebar = $this->load->view('social/tpl_sidebar', $social_sidebar, true);
 
 		
 
@@ -326,11 +209,7 @@ class Stages extends CI_Controller {
 
 			'page'				=> $page,
 
-			'twitter'			=> $twitter,
-
-			'facebook'			=> $facebook,
-
-			'google_plus'		=> $google_plus						
+			'social_sidebar'	=> $social_sidebar			
 
 		);
 
