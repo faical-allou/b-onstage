@@ -429,4 +429,43 @@ a.jp-hide-playlist:hover {
 	font-weight:bold;
 }
 
+
+ul.jp-toggles-mini {
+	list-style-type:none;	
+	overflow:hidden;
+	margin: 0;
+	position: absolute;
+	left: 360px;
+	top: 9px;
+}
+
+ul.jp-toggles-mini li {
+	display:block;
+	float:right;	
+	margin-right:5px;
+}
+
+ul.jp-toggles-mini li a {
+	display:block;
+	width:32px;
+	height:32px;
+	text-indent:-9999px;
+	line-height:100%; /* need this for IE6 */
+}
+
+div.jp-progress-mini {
+	overflow:hidden;
+	background-color:#ddd;
+	position: absolute;
+	top:17px;
+	height:16px;
+}
+div.jp-progress-mini {
+	left:210px;
+	width:140px;
+}
+
+div.jp-volume-bar-mini {
+	margin-left:-82px;
+}
 /* @end */

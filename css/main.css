@@ -735,6 +735,7 @@ page
 
 /*tracks*/
 .track{padding:10px 15px;font-size:12px;border-bottom:1px dotted #eaeaea;}
+.nobullet ul{ list-style: none;}
 .tracks > li:last-child{border-bottom:none;}
 .track:hover, .track.active{background-color:#f5f5f5;}
 .track:hover .track-play, .track:hover .track-title, .track:hover .track-duration, .track:hover .track-delete,

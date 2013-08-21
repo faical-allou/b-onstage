@@ -91,31 +91,31 @@
 										<div class="jp-type-playlist ui-corner-all border-grey-1">
 											<div class="jp-gui jp-interface">
 												<ul class="jp-controls">
-													<li><a href="javascript:void(0);" class="jp-previous" tabindex="1">previous</a></li>
+													<!--<li><a href="javascript:void(0);" class="jp-previous" tabindex="1">previous</a></li>-->
 													<li><a href="javascript:void(0);" class="jp-play" tabindex="1">play</a></li>
 													<li><a href="javascript:void(0);" class="jp-pause" tabindex="1">pause</a></li>
-													<li><a href="javascript:void(0);" class="jp-next" tabindex="1">next</a></li>
+													<!--<li><a href="javascript:void(0);" class="jp-next" tabindex="1">next</a></li>-->
 													<li><a href="javascript:void(0);" class="jp-stop" tabindex="1">stop</a></li>
-													<li><a href="javascript:void(0);" class="jp-mute" tabindex="1" title="mute">mute</a></li>
-													<li><a href="javascript:void(0);" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+													<li><a href="javascript:void(0);" class="jp-mute" tabindex="1" title="<?php echo lang("mute") ?>">mute</a></li>
+													<li><a href="javascript:void(0);" class="jp-unmute" tabindex="1" title="<?php echo lang("unmute") ?>">unmute</a></li>
 												</ul>
-												<div class="jp-time-holder">
+												<!--<div class="jp-time-holder">
 													<div class="jp-current-time"></div>
 													<div class="jp-duration"></div>
-												</div>
-												<div class="jp-progress left">
+												</div>-->
+												<div class="jp-progress-mini left">
 													<div class="jp-seek-bar">
 														<div class="jp-play-bar"></div>
 													</div>
 												</div>
-												<div class="jp-volume-bar">
+												<div class="jp-volume-bar jp-volume-bar-mini">
 													<div class="jp-volume-bar-value"></div>
 												</div>
-												<ul class="jp-toggles">												
-													<li><a href="javascript:void(0);" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
-													<li><a href="javascript:void(0);" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+												<ul class="jp-toggles-mini">												
+													<li><a href="javascript:void(0);" class="jp-repeat" tabindex="1" title="<?php echo lang("repeat") ?>">repeat</a></li>
+													<li><a href="javascript:void(0);" class="jp-repeat-off" tabindex="1" title="<?php echo lang("repeatoff") ?>">repeat off</a></li>
 													<!--button show playlist ajouté au plugin jplayer-->
-													<li><a href="javascript:void(0);" id="button-show-playlist" class="jp-show-playlist" tabindex="1" title="Show playlist">show</a></li>						
+													<!--<li><a href="javascript:void(0);" id="button-show-playlist" class="jp-show-playlist" tabindex="1" title="Show playlist">show</a></li>-->						
 												</ul>
 											</div>
 											<div class="jp-playlist">
@@ -127,7 +127,7 @@
 									</div>
 									<div>
 										<?php if($nb_tracks > 0) { ?>
-											<?=$tracks?>
+											<div class="nobullet"><ul><?=$tracks?></ul></div>
 										<?php } else { ?>
 											<div class="p-10">
 												<i class="fs-12"><?php echo lang("users_page_sons_nosound") ?></i>

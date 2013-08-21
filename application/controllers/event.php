@@ -10,6 +10,7 @@ class Event extends CI_Controller {
 		$this->load->model('reservation_model');
 		$this->load->model('user_model');
 		$this->load->model('concert_model');
+		$this->load->model('sound_model');		
 		$this->load->library('session');
 		$this->lang_counts = $this->config->item('lang_counts');
 		
@@ -47,9 +48,37 @@ class Event extends CI_Controller {
 	public function index($event_id){
 		
 		$concert = $this->concert_model->get($event_id);	
+		$all_sound = $this->sound_model->get($concert['artist_id']);
+		$sound = array();
+		$sound['tracks'] = '';
+		if(array_key_exists('tracks',$all_sound)){							
+			foreach($all_sound['tracks'] as $track){
+				$metadata = unserialize($track['metadata']);	
+				if($metadata['Encoding'] == 'CBR'){
+					$min_duration = floor($metadata['Length'] / 60);
+					$sec_duration = $metadata['Length'] % 60;
+					$duration = (($min_duration < 10) ? '0'.$min_duration : $min_duration).':'.(($sec_duration < 10) ? '0'.$sec_duration : $sec_duration);
+				} else
+					$duration ='00:00';
+			
+				$data = array(
+					'track'		=> $track,
+					'duration'	=> $duration
+				);	
+				
+				$sound['tracks'].= $this->load->view('sound/tpl_read',$data, true);					
+			}	
+			
+			$sound['count_tracks'] = count($all_sound['tracks']);			
+			
+		} else {		
+			$sound['count_tracks'] = 0;
+			$sound['tracks'] .= '<p class="grey fs-15"><i>Aucune piste disponible pour le moment.</i></p>';
+		}	
 		
 		$header['title'] = $concert['title'];
 		$header['description'] = $concert['description'];							
+		
 		
 		$time_start = strtotime($concert['date_start']);
 		$time_end = strtotime($concert['date_end']);		
@@ -67,7 +96,7 @@ class Event extends CI_Controller {
 			'artist_twitter'		=> empty($concert['artist_twitter']) ? '' : anchor($concert['artist_twitter'],'<span aria-hidden="true" class="icon-twitter fs-24 grey mr-5"></span>'),
 			'artist_google_plus'	=> empty($concert['artist_google_plus']) ? '' : anchor($concert['artist_google_plus'],'<span aria-hidden="true" class="icon-google-plus fs-24 grey mr-5"></span>'),
 			'artist_description'	=> empty($concert['artist_description']) ? '<i class="fs-12">Aucune description</i>' : $concert['artist_description'],
-			'tracks'				=> $this->load->view('sound/tpl_read',array('tracks' => $concert['tracks']), true),
+			'tracks'				=> $sound['tracks'],
 			'nb_tracks'				=> count($concert['tracks']),
 			'genres'				=> implode(', ',$concert['genres']),
 			'members'				=> $concert['members'],

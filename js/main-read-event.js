@@ -56,7 +56,7 @@ $(function(){
 			set_playlist(jPlayer, 'tracks', $(this).index());					
 		});
 		$('.track-play, .track-title').bind('click', function(){										
-			set_playlist(jPlayer, 'tracks', $('#' + $(this).data('track-id')).index());
+			set_playlist(jPlayer, 'tracks', $('#' + $(this).data('track-id')).index(), $(this));
 		});
 		$('.tracks-listen')
 		.button({icons:{primary : 'ui-icon-play'}})
@@ -70,18 +70,25 @@ $(function(){
 	});
 
 	/********** INIT FUNCTIONS **********/
-	function set_playlist(jPlayer, list_id, index, client_id){
+	function set_playlist(jPlayer, list_id, index, trackdata){
 		tracks_list = [];
 		start = index;	
-		$('#' + list_id + ' > li').slice(start).each(function() {		
-			track = $(this);
+		track = trackdata;
+		title = track.data('track-title');		
+		stream_url = track.data('url');
+		tracks_list.push({ 
+			title	: title,
+			mp3		: stream_url	
+		});
+		/*$('#' + list_id + ' > li').slice(start).each(function() {		
+			track = trackdata;
 			title = track.data('track-title');		
-			stream_url = track.data('stream-url');
+			stream_url = track.data('url');
 			tracks_list.push({ 
 				title	: title,
 				mp3		: stream_url	
 			});
-		});	
+		});	*/
 		if($('.jp-audio').hasClass('hidden'))
 			$('.jp-audio').removeClass('hidden');		
 		jPlayer.setPlaylist(tracks_list);
