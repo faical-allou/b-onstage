@@ -58,8 +58,13 @@ class Event extends CI_Controller {
 					$min_duration = floor($metadata['Length'] / 60);
 					$sec_duration = $metadata['Length'] % 60;
 					$duration = (($min_duration < 10) ? '0'.$min_duration : $min_duration).':'.(($sec_duration < 10) ? '0'.$sec_duration : $sec_duration);
-				} else
-					$duration ='00:00';
+				} 
+				elseif($metadata['Encoding']=='VBR') { 
+   				 //$duration = $metadata['Length'];
+				}
+				else {
+					$duration ='00:00'; 
+				}
 			
 				$data = array(
 					'track'		=> $track,

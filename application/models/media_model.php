@@ -50,13 +50,9 @@ class Media_model extends CI_Model
 			}			
 			
 			$metadata = unserialize($data['metadata']);
-			if($metadata['Encoding'] == 'CBR'){
-				$min_duration = floor($metadata['Length'] / 60);
-				$sec_duration = $metadata['Length'] % 60;
+			$min_duration = floor($metadata['playtime_seconds'] / 60);
+				$sec_duration = $metadata['playtime_seconds'] % 60;
 				$duration = (($min_duration < 10) ? '0'.$min_duration : $min_duration).':'.(($sec_duration < 10) ? '0'.$sec_duration : $sec_duration);
-			}
-			else
-				$duration ='00:00';	
 				
 			$add = array(
 				'id'		=> $this->db->insert_id(),

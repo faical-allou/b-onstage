@@ -238,12 +238,9 @@ class Page extends CI_Controller {
 		if(array_key_exists('tracks',$all_sound)){							
 			foreach($all_sound['tracks'] as $track){
 				$metadata = unserialize($track['metadata']);	
-				if($metadata['Encoding'] == 'CBR'){
-					$min_duration = floor($metadata['Length'] / 60);
-					$sec_duration = $metadata['Length'] % 60;
-					$duration = (($min_duration < 10) ? '0'.$min_duration : $min_duration).':'.(($sec_duration < 10) ? '0'.$sec_duration : $sec_duration);
-				} else
-					$duration ='00:00';
+				$min_duration = floor($metadata['playtime_seconds'] / 60);
+				$sec_duration = $metadata['playtime_seconds'] % 60;
+				$duration = (($min_duration < 10) ? '0'.$min_duration : $min_duration).':'.(($sec_duration < 10) ? '0'.$sec_duration : $sec_duration);
 			
 				$data = array(
 					'track'		=> $track,

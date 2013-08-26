@@ -1889,7 +1889,11 @@ class User extends CI_Controller {
 	//sound
 	function dialog_add_tracks(){
 		if(IS_AJAX){
-			$data = array('session_id' => $this->session->userdata('session_id'));
+			//$this->load->library('getid3/getid3');
+			//$ThisFileInfo		= $this->getid3->analyze('users/146/sound/GameJAM-bitcheeeezz.mp3');
+			$data = array('session_id' => $this->session->userdata('session_id')
+			//,'ThisFileInfo' => $ThisFileInfo
+			);
 			$result = $this->load->view('sound/tpl_dialog_add', $data, true);
 			echo $result;
 		}
@@ -1907,13 +1911,16 @@ class User extends CI_Controller {
 		if(IS_AJAX){
 			//get metadata (duration, etc..)
 			$this->load->library('mp3file', array('file_name' => './temp/'.$_POST['file_name']));
+			$this->load->library('getid3/getid3');
 			$data = array(
 				'user_id' 		=> $this->user['id'],
 				'playlist_id'	=> 0,
 				'title'			=> $_POST['title'],
 				'file_name'		=> $_POST['file_name'],
 				'url'			=> '/users/'.$this->user['id'].'/sound/'.$_POST['file_name'],
-				'metadata'		=> serialize($this->mp3file->get_metadata())
+//			'metadata'		=> serialize($this->mp3file->get_metadata())
+			'metadata'		=> serialize($this->getid3->analyze('./temp/'.$_POST['file_name']))
+
 			);
 			$result = $this->media_model->add_track($data);
 			echo json_encode($result);
