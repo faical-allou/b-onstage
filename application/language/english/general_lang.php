@@ -225,8 +225,8 @@ $lang['home_title_artist'] = 'Artists';
 $lang['home_seeall_shows'] = 'See all Concerts';
 $lang['home_seeall_stages'] = 'See all Stages';
 $lang['home_seeall_artist'] = 'See all Artists';
-$lang['home_bottom_txt'] = 'Chez availabilities to play live';
-$lang['home_bottom_txt2'] = 'Sign up to b-onstage, the open nework of Stages and Artists';
+$lang['home_bottom_txt'] = 'Check availabilities to book a Stage and play live';
+$lang['home_bottom_txt2'] = 'Sign up to b-onstage, the open network of Stages and Artists';
 
 
 // About us

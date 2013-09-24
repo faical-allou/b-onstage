@@ -5,7 +5,7 @@
 		<!--footer-->
 		<footer id="footer">
 			<div class="container_12 pt-20 pb-20">						
-				<div class="grid_4">
+				<div class="grid_4" style="width:280px;">
 					<dl>
 						<dt class="fs-16 title">b-onstage</dt>						
 						<dd><?=anchor(site_url('about'),lang("aboutus_link_aboutus"))?></dd>
@@ -14,7 +14,7 @@
 						<dd><a href="javascript:void(0)" id="contact_us"><?php echo lang("footer_contactus") ?></a></dd>
 					</dl>
 				</div>
-				<div class="grid_4">									
+				<div class="grid_4" style="width:280px;">									
 					<dl>
 						<dt class="title fs-16"><?php echo lang("footer_followus") ?></dt>
 						<dd>
@@ -24,14 +24,14 @@
 						</dd>
 					</dl>	
 				</div>
-				<div class="grid_4">		
+				<div class="grid_4" style="width:280px;">		
 					<dl>
 						<dt class="title fs-16"><?php echo lang("footer_legal") ?></dt>
 						<dd><?=anchor(site_url('terms_of_services'),lang("footer_legal_link1"))?></dd>						
 						<dd><?=anchor(site_url('legal'),lang("footer_legal_link2"))?></dd>
 					</dl>
 				</div>
-                <div class="grid_4">		
+                <div class="grid_4" style="width:280px;">		
 					<dl>
 						<dt class="title fs-16">Language</dt>
 						<dd><a href='/langswitch/switchLanguage/english'>English</a></dd>						
