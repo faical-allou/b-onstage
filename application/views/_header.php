@@ -72,9 +72,15 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 	<div id="header">
 		<!--menu principal-->
 		<div id="w-menu">
-			<div class="container_12">
+			<div id="top_lang_bar"><?php 
+			// english link : lang loaded is french
+			if($this->session->userdata('lang_loaded') == "french") { ?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/english'>English</a><?php  }
+			// french link : lang loaded is english
+			else { ?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/french'>Francais</a><?php }
+			?></div>
+            <div class="container_12">
 				<div class="grid_12">
-					<!--logo-->
+                    <!--logo-->
 					<?=anchor(base_url(), img(site_url('img/logo.png')), array('id' => 'logo', 'class' => 'left'))?>
 					<!--menu principal-->
 					<ul class="menu default left ml-30">

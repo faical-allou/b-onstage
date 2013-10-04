@@ -232,7 +232,7 @@ $lang['home_bottom_txt2'] = 'Sign up to b-onstage, the open network of Stages an
 // About us
 $lang['aboutus_link_aboutus'] = 'About';
 $lang['aboutus_link_whoweare'] = 'Who are we?';
-$lang['aboutus_link_howitworks'] = 'How it works?';
+$lang['aboutus_link_howitworks'] = 'How it works';
 $lang['aboutus_header_aboutus'] = 'Why b-onstage?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
 				<li><p>Because of the heavy downloading brought by the Internet, <strong>, links between Artists and the public have been broken.</strong></p></li>

@@ -224,14 +224,14 @@ $lang['home_title_artist'] = 'Les Artistes';
 $lang['home_seeall_shows'] = 'Voir tous les Concerts';
 $lang['home_seeall_stages'] = 'Voir toutes les Scènes';
 $lang['home_seeall_artist'] = 'Voir tous les Artistes';
-$lang['home_bottom_txt'] = 'Rechercher des dates pour jouer en live sur les Scènes b-onstage.';
+$lang['home_bottom_txt'] = 'Rechercher des dates pour jouer en live sur les Scènes <br />b-onstage.';
 $lang['home_bottom_txt2'] = 'Rejoignez b-onstage, le réseau qui met en relation les Artistes et les Scènes.';
 
 
 // About us
 $lang['aboutus_link_aboutus'] = 'A propos';
 $lang['aboutus_link_whoweare'] = 'Qui sommes-nous ?';
-$lang['aboutus_link_howitworks'] = 'Comment ça marche ?';
+$lang['aboutus_link_howitworks'] = 'Comment ça marche';
 $lang['aboutus_header_aboutus'] = 'Pourquoi b-onstage ?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
 				<li><p>Parce qu’à l’heure d’Internet et du téléchargement de masse, <strong>les liens entre les Artistes et le public ont été coupés.</strong></p></li>

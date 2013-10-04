@@ -107,7 +107,7 @@
 		<div class="grid_6 ta-c">	
 			<div class="p-20">
 				<?=img(array('src' => site_url('img/icons/home/calendar.png')))?>
-				<p class="fs-24 title white ta-c" style="height:70px"><?php echo lang("home_bottom_txt") ?></p>
+				<p class="fs-24 title white ta-c" style="height:70px;"><?php echo lang("home_bottom_txt") ?></p>
 				<a href="<?=site_url('concerts')?>" class="ui-dark action-home" style="font-size:1em;"><?php echo lang("header_book_a_date") ?></a>			
 			</div>	
 		</div>
