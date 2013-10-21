@@ -17,12 +17,10 @@ class Artist_model extends CI_Model{
 				->from('users as artist, groups, users_groups')									
 				->where('artist.id = users_groups.user_id', NULL, false)					
 				->where('groups.id = users_groups.group_id', NULL, false)
-				->where('groups.name', 'artist')			
+				->where('groups.name', 'artist')					
+				->like('artist.company', $name, 'after')
+				->like('artist.city', $location, 'after')	
 				->order_by('artist.created_on', 'desc');
-		if($name)
-			$this->db->like('artist.company', $name, 'after');
-		if($location)
-			$this->db->like('artist.city', $location, 'after');
 				
 		//if musical genre			
 		

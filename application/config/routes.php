@@ -44,7 +44,6 @@ $route['scaffolding_trigger'] = "";
 $route['login'] = 'user/login';
 $route['login/(:any)'] = 'user/login/$1';
 $route['logout'] = 'user/logout';
-//$route['auth/(:any)'] = 'user/$1';
 $route['signup_choice'] = 'user/signup_choice';
 $route['signup_stage'] = 'user/signup_stage/1';
 $route['registration_completed_stage'] = 'user/signup_stage/2';

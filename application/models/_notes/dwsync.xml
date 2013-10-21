@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="artist_model.php" server="b-onstage.com" local="130214963462192868" remote="130212969600000000" Dst="2" />
+<file name="contact_model.php" server="b-onstage.com" local="130214963468948690" remote="130212969600000000" Dst="2" />
+<file name="concert_model.php" server="b-onstage.com" local="130214963470710274" remote="130212969600000000" Dst="2" />
+<file name="genre_model.php" server="b-onstage.com" local="130214963476435439" remote="130212969600000000" Dst="2" />
+<file name="event_model.php" server="b-onstage.com" local="130214963480659220" remote="130212969600000000" Dst="2" />
+<file name="group_model.php" server="b-onstage.com" local="130214963480769375" remote="130177957800000000" Dst="2" />
+<file name="media_model.php" server="b-onstage.com" local="130215374540952290" remote="130215590400000000" Dst="2" />
+<file name="ion_auth_model.php" server="b-onstage.com" local="130214963487695547" remote="130212969600000000" Dst="2" />
+<file name="member_model.php" server="b-onstage.com" local="130214963492629983" remote="130177957800000000" Dst="2" />
+<file name="musical_genre_model.php" server="b-onstage.com" local="130214963492650027" remote="130177957800000000" Dst="2" />
+<file name="notification_model.php" server="b-onstage.com" local="130214963497754587" remote="130177957800000000" Dst="2" />
+<file name="sound_model.php" server="b-onstage.com" local="130214963501377849" remote="130177957800000000" Dst="2" />
+<file name="reservation_model.php" server="b-onstage.com" local="130214963502208609" remote="130212969600000000" Dst="2" />
+<file name="stage_model.php" server="b-onstage.com" local="130214963506992893" remote="130200749400000000" Dst="2" />
+<file name="transaction_model.php" server="b-onstage.com" local="130214963507103001" remote="130177957800000000" Dst="2" />
+<file name="user_model.php" server="b-onstage.com" local="130214963512607942" remote="130177957800000000" Dst="2" />
+<file name="social_model.php" server="b-onstage.com" local="130215254316823307" remote="130215469800000000" Dst="2" />
+<file name="reservation_model.php" server="b-onstage.com/trans.b-onstage/" local="130268592117891581" remote="130268808000000000" Dst="2" />
+</dwsync>

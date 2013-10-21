@@ -212,10 +212,9 @@ class Main extends CI_Controller {
 
 		$this->header['doctype'] = 'html5';
 
-		$this->header['title'] = lang("legal_title");
+		$this->header['title'] = 'Mentions légales';
 
-		$this->header['description'] = lang("legal_desc");
-	
+		$this->header['description'] = 'Meentions légales';		
 
 		
 
@@ -241,9 +240,9 @@ class Main extends CI_Controller {
 
 		$this->header['doctype'] = 'html5';
 
-		$this->header['title'] = lang("terms_of_services_title");
+		$this->header['title'] = 'Conditions générales d\'utilisations';
 
-		$this->header['description'] = lang("terms_of_services_desc");		
+		$this->header['description'] = 'Conditions générales d\'utilisations';		
 
 		
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="doAuthorization.php" server="b-onstage.com" local="130214966073240331" remote="130177957800000000" Dst="2" />
+<file name="doAuthorizationForm.html" server="b-onstage.com" local="130214966075732568" remote="130177957800000000" Dst="2" />
+<file name="doCapture.php" server="b-onstage.com" local="130214966075742581" remote="130177957800000000" Dst="2" />
+<file name="doCaptureForm.html" server="b-onstage.com" local="130214966075752620" remote="130177957800000000" Dst="2" />
+<file name="doCredit.php" server="b-onstage.com" local="130214966075762599" remote="130177957800000000" Dst="2" />
+<file name="doCreditForm.html" server="b-onstage.com" local="130214966088644199" remote="130177957800000000" Dst="2" />
+<file name="doDebit.php" server="b-onstage.com" local="130214966088694222" remote="130177957800000000" Dst="2" />
+<file name="doDebitForm.html" server="b-onstage.com" local="130214966088724279" remote="130177957800000000" Dst="2" />
+<file name="doReAuthorization.php" server="b-onstage.com" local="130214966088764302" remote="130177957800000000" Dst="2" />
+<file name="doReAuthorizationForm.html" server="b-onstage.com" local="130214966088784303" remote="130177957800000000" Dst="2" />
+<file name="doRefund.php" server="b-onstage.com" local="130214966088834378" remote="130177957800000000" Dst="2" />
+<file name="doReset.php" server="b-onstage.com" local="130214966101775993" remote="130177957800000000" Dst="2" />
+<file name="doResetForm.html" server="b-onstage.com" local="130214966101775993" remote="130177957800000000" Dst="2" />
+<file name="doScoringCheque.php" server="b-onstage.com" local="130214966101786002" remote="130177957800000000" Dst="2" />
+<file name="doScoringChequeForm.html" server="b-onstage.com" local="130214966101786002" remote="130177957800000000" Dst="2" />
+<file name="getBalance.php" server="b-onstage.com" local="130214966101816051" remote="130177957800000000" Dst="2" />
+<file name="doRefundForm.html" server="b-onstage.com" local="130214966101886084" remote="130177957800000000" Dst="2" />
+<file name="getBalanceForm.html" server="b-onstage.com" local="130214966115308178" remote="130177957800000000" Dst="2" />
+<file name="verifyAuthentication.php" server="b-onstage.com" local="130214966115308178" remote="130177957800000000" Dst="2" />
+<file name="getEncryptionKey.php" server="b-onstage.com" local="130214966115348192" remote="130177957800000000" Dst="2" />
+<file name="getEncryptionKeyForm.html" server="b-onstage.com" local="130214966115368544" remote="130177957800000000" Dst="2" />
+<file name="getMerchantSettings.php" server="b-onstage.com" local="130214966115388545" remote="130177957800000000" Dst="2" />
+<file name="getMerchantSettingsForm.html" server="b-onstage.com" local="130214966115408405" remote="130177957800000000" Dst="2" />
+<file name="verifyAuthenticationForm.html" server="b-onstage.com" local="130214966128289842" remote="130177957800000000" Dst="2" />
+<file name="verifyEnrollment.php" server="b-onstage.com" local="130214966128309851" remote="130177957800000000" Dst="2" />
+<file name="verifyEnrollmentForm.html" server="b-onstage.com" local="130214966128319856" remote="130177957800000000" Dst="2" />
+</dwsync>

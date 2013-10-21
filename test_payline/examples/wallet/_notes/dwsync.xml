@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="createWallet.php" server="b-onstage.com" local="130214966141361578" remote="130177957800000000" Dst="2" />
+<file name="createWalletForm.html" server="b-onstage.com" local="130214966141371608" remote="130177957800000000" Dst="2" />
+<file name="createWebWallet.php" server="b-onstage.com" local="130214966141401618" remote="130177957800000000" Dst="2" />
+<file name="createWebWalletForm.html" server="b-onstage.com" local="130214966141421632" remote="130177957800000000" Dst="2" />
+<file name="disablePaymentRecord.php" server="b-onstage.com" local="130214966142042327" remote="130177957800000000" Dst="2" />
+<file name="disableWallet.php" server="b-onstage.com" local="130214966154953804" remote="130177957800000000" Dst="2" />
+<file name="disablePaymentRecordForm.html" server="b-onstage.com" local="130214966154983831" remote="130177957800000000" Dst="2" />
+<file name="disableWalletForm.html" server="b-onstage.com" local="130214966155003844" remote="130177957800000000" Dst="2" />
+<file name="doImmediateWalletPayment.php" server="b-onstage.com" local="130214966155013858" remote="130177957800000000" Dst="2" />
+<file name="doImmediateWalletPaymentForm.html" server="b-onstage.com" local="130214966155043906" remote="130177957800000000" Dst="2" />
+<file name="doRecurrentWalletPayment.php" server="b-onstage.com" local="130214966155143975" remote="130177957800000000" Dst="2" />
+<file name="doRecurrentWalletPaymentForm.html" server="b-onstage.com" local="130214966167825386" remote="130177957800000000" Dst="2" />
+<file name="doScheduledWalletPayment.php" server="b-onstage.com" local="130214966167865439" remote="130177957800000000" Dst="2" />
+<file name="doScheduledWalletPaymentForm.html" server="b-onstage.com" local="130214966167895590" remote="130177957800000000" Dst="2" />
+<file name="enableWallet.php" server="b-onstage.com" local="130214966167915454" remote="130177957800000000" Dst="2" />
+<file name="enableWalletForm.html" server="b-onstage.com" local="130214966167925467" remote="130177957800000000" Dst="2" />
+<file name="getCards.php" server="b-onstage.com" local="130214966167965499" remote="130177957800000000" Dst="2" />
+<file name="getCardsForm.html" server="b-onstage.com" local="130214966181027247" remote="130177957800000000" Dst="2" />
+<file name="getPaymentRecord.php" server="b-onstage.com" local="130214966181067279" remote="130177957800000000" Dst="2" />
+<file name="getPaymentRecordForm.html" server="b-onstage.com" local="130214966181087301" remote="130177957800000000" Dst="2" />
+<file name="getWallet.php" server="b-onstage.com" local="130214966181117328" remote="130177957800000000" Dst="2" />
+<file name="getWalletForm.html" server="b-onstage.com" local="130214966181137363" remote="130177957800000000" Dst="2" />
+<file name="getWebWallet.php" server="b-onstage.com" local="130214966184500370" remote="130177957800000000" Dst="2" />
+<file name="getWebWalletForm.html" server="b-onstage.com" local="130214966198012541" remote="130177957800000000" Dst="2" />
+<file name="updateWallet.php" server="b-onstage.com" local="130214966198022550" remote="130177957800000000" Dst="2" />
+<file name="updateWalletForm.html" server="b-onstage.com" local="130214966198032542" remote="130177957800000000" Dst="2" />
+<file name="updateWebWallet.php" server="b-onstage.com" local="130214966198082578" remote="130177957800000000" Dst="2" />
+<file name="updateWebWalletForm.html" server="b-onstage.com" local="130214966198112888" remote="130177957800000000" Dst="2" />
+</dwsync>
