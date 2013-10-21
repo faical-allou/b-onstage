@@ -10,9 +10,9 @@ class Event extends CI_Controller {
 		$this->load->model('reservation_model');
 		$this->load->model('user_model');
 		$this->load->model('concert_model');
+		$this->load->model('sound_model');		
 		$this->load->library('session');
-		include("/home/bonstage/dev.b-onstage/application/config/lang.php");
-		$this->lang_counts = $lang_counts;
+		$this->lang_counts = $this->config->item('lang_counts');
 		
 		//var user
 		$this->user = ($this->ion_auth->logged_in()) ? $this->ion_auth->user()->row_array() : null;	
@@ -48,9 +48,42 @@ class Event extends CI_Controller {
 	public function index($event_id){
 		
 		$concert = $this->concert_model->get($event_id);	
+		$all_sound = $this->sound_model->get($concert['artist_id']);
+		$sound = array();
+		$sound['tracks'] = '';
+		if(array_key_exists('tracks',$all_sound)){							
+			foreach($all_sound['tracks'] as $track){
+				$metadata = unserialize($track['metadata']);	
+				if($metadata['Encoding'] == 'CBR'){
+					$min_duration = floor($metadata['Length'] / 60);
+					$sec_duration = $metadata['Length'] % 60;
+					$duration = (($min_duration < 10) ? '0'.$min_duration : $min_duration).':'.(($sec_duration < 10) ? '0'.$sec_duration : $sec_duration);
+				} 
+				elseif($metadata['Encoding']=='VBR') { 
+   				 //$duration = $metadata['Length'];
+				}
+				else {
+					$duration ='00:00'; 
+				}
+			
+				$data = array(
+					'track'		=> $track,
+					'duration'	=> $duration
+				);	
+				
+				$sound['tracks'].= $this->load->view('sound/tpl_read',$data, true);					
+			}	
+			
+			$sound['count_tracks'] = count($all_sound['tracks']);			
+			
+		} else {		
+			$sound['count_tracks'] = 0;
+			$sound['tracks'] .= '<p class="grey fs-15"><i>Aucune piste disponible pour le moment.</i></p>';
+		}	
 		
 		$header['title'] = $concert['title'];
 		$header['description'] = $concert['description'];							
+		
 		
 		$time_start = strtotime($concert['date_start']);
 		$time_end = strtotime($concert['date_end']);		
@@ -68,7 +101,7 @@ class Event extends CI_Controller {
 			'artist_twitter'		=> empty($concert['artist_twitter']) ? '' : anchor($concert['artist_twitter'],'<span aria-hidden="true" class="icon-twitter fs-24 grey mr-5"></span>'),
 			'artist_google_plus'	=> empty($concert['artist_google_plus']) ? '' : anchor($concert['artist_google_plus'],'<span aria-hidden="true" class="icon-google-plus fs-24 grey mr-5"></span>'),
 			'artist_description'	=> empty($concert['artist_description']) ? '<i class="fs-12">Aucune description</i>' : $concert['artist_description'],
-			'tracks'				=> $this->load->view('sound/tpl_read',array('tracks' => $concert['tracks']), true),
+			'tracks'				=> $sound['tracks'],
 			'nb_tracks'				=> count($concert['tracks']),
 			'genres'				=> implode(', ',$concert['genres']),
 			'members'				=> $concert['members'],
@@ -606,14 +639,23 @@ class Event extends CI_Controller {
 						);
 						
 						/*****MUSICAL GENRES*****/
+						//Determine row name depending on lang loaded
+						if($this->session->userdata('lang_loaded') == "french"){$rowname = 'name';}
+						else {
+							foreach($this->lang_counts as $key => $value){
+								if($this->session->userdata('lang_loaded') == $value["name"]){
+									$rowname = 'name_'.$value["id"];
+								}
+							}
+						}
 						$musical_genres = array();
 						$genres_ids = explode('|', $event['genre_id']);
-						$query = $this->db->select('name')
+						$query = $this->db->select($rowname)
 										->from('musical_genres')
 										->where_in('id', $genres_ids)
 										->get();
 						foreach ($query->result_array() as $row)
-							array_push($musical_genres, ucfirst($row['name']));
+							array_push($musical_genres, ucfirst($row[$rowname]));
 						$this->data['musical_genres'] = implode(', ', $musical_genres);				
 						
 							
@@ -621,7 +663,7 @@ class Event extends CI_Controller {
 						$payment_type = array();
 						switch($event['payment_type']){
 							case 1 : array_push($payment_type, lang("notset")); break;
-							case 2 : array_push($payment_type, 'Non remunéré'); break;				
+							case 2 : array_push($payment_type, lang("users_calendar_create_non_renum")); break;				
 							case 3 : 
 								if($event['payment_amount'] > 0)
 									array_push($payment_type, lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' €');
@@ -725,27 +767,27 @@ class Event extends CI_Controller {
 						break;												
 						
 					case 'close':			
-						$this->data['ev_artist_title'] = 'Détails sur l\'artiste / groupe';
+						$this->data['ev_artist_title'] = lang("users_rese_artist_details");
 						$artist = $this->user_model->get($event['artist_id']);												
 						$artist_avatar = img(array('src' => site_url($artist['avatar']),'class' => 'db', 'width' => '164px'));
 						$artist_link = (!empty($artist['web_address'])) ? site_url($artist['web_address']) : site_url('page/'.$artist['username']);
-						$artist_button_link = anchor($artist_link, 'Voir le profil', array('id' => 'button-artist-link', 'class' => 'ui-green'));
+						$artist_button_link = anchor($artist_link, lang("users_contact_seeprofile"), array('id' => 'button-artist-link', 'class' => 'ui-green'));
 						$artist_name = (!empty($artist['company'])) ? $artist['company'] : $artist['username'];
 						$artist_city = (!empty($artist['city'])) ? $artist['city'] : lang("notset");
 						$artist_country = (!empty($artist['country'])) ? $artist['country'] : '';						
-						$artist_location = '<p class="grey fs-12 pl-2"><strong>Originaire de : </strong>'.$artist_city.', '.$artist_country.'</p>';																		
-						$artist_musical_genre = '<p class="grey fs-12 pl-2"><strong>Genre musical : </strong>Rumba congolaise</p>';
-						$artist_website = (!empty($artist['website'])) ? '<p class="grey fs-12 pl-2"><strong>Site officiel : </strong>'.anchor($artist['website'], parse_url($artist['website'],  PHP_URL_HOST), array('class' => 'fs-12 green bold')).'</p>' : '';						
+						$artist_location = '<p class="grey fs-12 pl-2"><strong>'.lang("originaire_de").' : </strong>'.$artist_city.', '.$artist_country.'</p>';																		
+						$artist_musical_genre = '<p class="grey fs-12 pl-2"><strong>'.lang("users_calendar_genre").' : </strong>Rumba congolaise</p>';
+						$artist_website = (!empty($artist['website'])) ? '<p class="grey fs-12 pl-2"><strong>'.lang("users_page_website").' : </strong>'.anchor($artist['website'], parse_url($artist['website'],  PHP_URL_HOST), array('class' => 'fs-12 green bold')).'</p>' : '';						
 						$artist_facebook = (!empty($artist['facebook'])) ? anchor($artist['facebook'],'<span aria-hidden="true" class="icon-facebook"></span>', array('class'=>'m-10 fs-42')): '';
 						$artist_twitter = (!empty($artist['twitter'])) ? anchor($artist['twitter'],'<span aria-hidden="true" class="icon-twitter"></span>', array('class'=>'m-10 fs-42')) : '';
 						$artist_myspace = (!empty($artist['myspace'])) ? anchor($artist['myspace'],'myspace', array('class'=>'m-10')): '';
 						$artist_google_plus = (!empty($artist['google_plus'])) ? anchor($artist['google_plus'],'<span aria-hidden="true" class="icon-google-plus"></span>', array('class'=>'fs-42 m-10')): '';						
 						$artist_social_link = (!empty($artist_facebook) || !empty($artist_twitter) || !empty($artist_myspace) || !empty($artist_google_plus)) ? true : false;
-						$artist_social_link_title = 'Liens sociaux';
-						$artist_description_title = 'Description';
+						$artist_social_link_title = lang("users_page_socialmed");
+						$artist_description_title = lang("desc");
 						$artist_description = $artist['description'];							
 						$members = $this->member_model->get_all($artist['id']);
-						$members_title = 'Les membres du groupe ('.count($members).')';										
+						$members_title = lang("band_members").' ('.count($members).')';										
 						
 						$this->data['artist'] = array(
 							'avatar'			=> $artist_avatar,
@@ -895,7 +937,7 @@ class Event extends CI_Controller {
 			$payment_type = array();
 			switch($event['payment_type']){
 				case 1 : array_push($payment_type, lang("notset")); break;
-				case 2 : array_push($payment_type, 'Non remunéré'); break;				
+				case 2 : array_push($payment_type, lang("users_calendar_create_non_renum")); break;				
 				case 3 : 
 					if($event['payment_amount'] > 0)
 						array_push($payment_type, lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' €');

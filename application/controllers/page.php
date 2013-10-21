@@ -16,6 +16,7 @@ class Page extends CI_Controller {
 		$this->load->model('group_model');
 		$this->load->model('genre_model');		
 		$this->load->model('sound_model');		
+		$this->load->model('social_model');
 		
 		//init vars
 		if($this->ion_auth->logged_in()){
@@ -237,12 +238,9 @@ class Page extends CI_Controller {
 		if(array_key_exists('tracks',$all_sound)){							
 			foreach($all_sound['tracks'] as $track){
 				$metadata = unserialize($track['metadata']);	
-				if($metadata['Encoding'] == 'CBR'){
-					$min_duration = floor($metadata['Length'] / 60);
-					$sec_duration = $metadata['Length'] % 60;
-					$duration = (($min_duration < 10) ? '0'.$min_duration : $min_duration).':'.(($sec_duration < 10) ? '0'.$sec_duration : $sec_duration);
-				} else
-					$duration ='00:00';
+				$min_duration = floor($metadata['playtime_seconds'] / 60);
+				$sec_duration = $metadata['playtime_seconds'] % 60;
+				$duration = (($min_duration < 10) ? '0'.$min_duration : $min_duration).':'.(($sec_duration < 10) ? '0'.$sec_duration : $sec_duration);
 			
 				$data = array(
 					'track'		=> $track,
@@ -449,39 +447,8 @@ class Page extends CI_Controller {
 		
 		
 		/*****GET SOCIAL INFOS*****/
-		/*require_once('php/facebook/facebook.php');
-		$fb = new Facebook(array(  
-			'appId'  => FACEBOOK_APP_ID,  
-			'secret' => FACEBOOK_SECRET_ID,  
-			'cookie' => true
-		));  	
-		$fb_page = $fb->api(array(  
-			'method'	=> 'fql.query',  
-			'query'		=> 'select fan_count, page_url from page where page_id = '.FACEBOOK_ID 
-		));*/ 			
-		
-		$facebook = array(
-			'link'		=> FACEBOOK_LINK,//$fb_page[0]['page_url'],
-			'likes'		=> 0 //$fb_page[0]['fan_count']			
-		);
-		
-		/*****GET TWITTER INFOS*****/			$twitter = array();		if(TWITTER_SCREEN_NAME){
-			$twitter_screen_name = TWITTER_SCREEN_NAME;
-			$twitter_data = $this->_get_data('http://api.twitter.com/1.1/users/show.json?screen_name='.$twitter_screen_name);
-			$tweets = $this->_get_data('http://api.twitter.com/1/statuses/user_timeline.json?screen_name='.$twitter_screen_name.'&count=5'); 
-			$twitter = array(
-				'link'			=> TWITTER_LINK,
-				'followers'		=> @$twitter_data->followers_count,
-				'tweets'		=> $tweets
-			);		}
-		
-		/*****GET GOOGLE + INFOS*****/
-		//$google_plus_link = _get('https://plus.google.com/109498236972306503560/posts');				
-		$google_plus = array(			
-			'id'		=> GOOGLE_ID,
-			'api_key'	=> GOOGLE_API_KEY,			'link'		=> GOOGLE_PLUS_LINK
-			//'link'		=> $google_plus_link
-		);
+		$social_sidebar = $this->social_model->get_all();
+		$social_sidebar = $this->load->view('social/tpl_sidebar', $social_sidebar, true);
 		
 		//var header		
 		$this->header['doctype'] = 'html5';
@@ -515,9 +482,7 @@ class Page extends CI_Controller {
 			'photos'					=> $photos,						
 			'title_in_photos'			=> $title_in_photos,
 			'title_fl_photos'			=> $title_fl_photos,
-			'twitter'					=> $twitter,
-			'facebook'					=> $facebook,
-			'google_plus'				=> $google_plus
+			'social_sidebar'			=> $social_sidebar			
 		);
 		
 		$this->footer['scripts'] = array(

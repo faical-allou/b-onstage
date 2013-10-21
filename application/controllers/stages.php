@@ -20,6 +20,7 @@ class Stages extends CI_Controller {
 
 		$this->load->model('event_model');		
 
+		$this->load->model('social_model');
 		
 
 		//init vars
@@ -189,84 +190,8 @@ class Stages extends CI_Controller {
 		
 
 		/*****GET SOCIAL INFOS*****/
-
-		/*require_once('php/facebook/facebook.php');
-
-		$fb = new Facebook(array(  
-
-			'appId'  => FACEBOOK_APP_ID,  
-
-			'secret' => FACEBOOK_SECRET_ID,  
-
-			'cookie' => true
-
-		));  	
-
-		$fb_page = $fb->api(array(  
-
-			'method'	=> 'fql.query',  
-
-			'query'		=> 'select fan_count, page_url from page where page_id = '.FACEBOOK_ID 
-
-		));*/ 			
-
-		
-
-		$facebook = array(
-
-			'link'		=> FACEBOOK_LINK,//$fb_page[0]['page_url'],
-
-			'likes'		=> 0 //$fb_page[0]['fan_count']			
-
-		);
-
-		
-
-		/*****GET TWITTER INFOS*****/		
-
-		$twitter_screen_name = TWITTER_SCREEN_NAME;
-
-		$twitter_data = $this->_get_data('http://api.twitter.com/1/users/show.json?screen_name='.$twitter_screen_name);
-
-		$tweets = $this->_get_data('http://api.twitter.com/1/statuses/user_timeline.json?screen_name='.$twitter_screen_name.'&count=5'); 
-
-		$twitter = array(
-
-			'link'			=> TWITTER_LINK,
-
-			'followers'		=> $twitter_data->followers_count,
-
-			'tweets'		=> $tweets
-
-		);
-
-		
-
-		/*****GET GOOGLE + INFOS*****/				
-
-		$google_plus = array(			
-
-			'id'		=> GOOGLE_ID,
-
-			'api_key'	=> GOOGLE_API_KEY,
-
-			'link'		=> GOOGLE_PLUS_LINK
-
-		);
-
-		
-
-		/*****GET GOOGLE INFOS*****/		
-
-		$google_plus = array(
-
-			'id'		=> GOOGLE_ID,
-
-			'api_key'	=> GOOGLE_API_KEY,
-
-			'link'		=> GOOGLE_PLUS_LINK
-
-		);	
+		$social_sidebar = $this->social_model->get_all();
+		$social_sidebar = $this->load->view('social/tpl_sidebar', $social_sidebar, true);
 
 		
 
@@ -284,11 +209,7 @@ class Stages extends CI_Controller {
 
 			'page'				=> $page,
 
-			'twitter'			=> $twitter,
-
-			'facebook'			=> $facebook,
-
-			'google_plus'		=> $google_plus						
+			'social_sidebar'	=> $social_sidebar			
 
 		);
 
