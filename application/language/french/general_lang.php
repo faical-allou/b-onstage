@@ -12,6 +12,13 @@ $lang['password_change_successful'] = 'Le mot de passe a été changé avec succ
 $lang['password_change_unsuccessful'] = 'Impossible de changer le mot de passe';
 $lang['forgot_password_successful'] = 'Mail de réinitialisation du mot de passe envoyé';
 $lang['forgot_password_unsuccessful'] = 'Impossible de réinitialiser le mot de passe';
+$lang['forgot_password_email1_subject'] = 'Vérification pour Mot de passe oublié';
+$lang['forgot_password_email1_txt1'] = 'Réinitialiser le mot de';
+$lang['forgot_password_email1_txt2'] = 'S\'il vous plaît cliquer sur ce lien pour';
+$lang['forgot_password_email1_txt3'] = 'Réinitialiser votre mot de passe';
+$lang['forgot_password_email2_subject'] = 'Nouveau Mot de passe';
+$lang['forgot_password_email2_txt1'] = 'Nouveau Mot de passe de';
+$lang['forgot_password_email2_txt2'] = 'Votre mot de passe a été réinitialisé à';
 
 // Activation
 $lang['activate_successful'] = 'Compte activé';
@@ -250,7 +257,7 @@ $lang['aboutus_header4_aboutus'] = 'sur b-onstage et à vous de jouer !';
 $lang['aboutus_header_whoweare'] = 'Qui sommes-nous ?';
 $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
 				<li><p class="grey fs-15">Musiciens et programmeurs, nous avons créé notre compagnie, Mybandonstage, afin de promouvoir toutes les créations artistiques amateures.</p></li>		
-				<li><p class="grey fs-15">Nous avons conçu</strong> afin de <strong>mettre en contact les Artistes avec leur public</strong> en facilitant leurs démarches pour <strong>organiser des concerts.</strong></p></li>	
+				<li><p class="grey fs-15">Nous avons conçue</strong> afin de <strong>mettre en contact les Artistes avec leur public</strong> en facilitant leurs démarches pour <strong>organiser des concerts.</strong></p></li>	
 				<li><p class="grey fs-15"><strong>Nous visitons toutes les Scènes</strong> (qui sont des établissements partenaires de b-onstage), nous prenons les photos et nous les référençons avec leurs descriptions pour assurer qu’<strong>on vous offre ce qu’on vous promet.</strong></p></li>
 				<li><p class="grey fs-15">En prenant en charge les transactions financières, <strong>nous garantissons que les paiements seront conformes.</strong></p></li>
 				<li><p class="grey fs-15">Nous proposons <strong>pour chaque concert des contrats spécialisés</strong> pour limiter les responsabilités équitablement et équilibrer les relations entre tous les intervenants.</p></li>	
