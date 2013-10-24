@@ -76,7 +76,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 			// english link : lang loaded is french
 			if($this->session->userdata('lang_loaded') == "french") { ?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/english'>English</a><?php  }
 			// french link : lang loaded is english
-			else { ?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/french'>Francais</a><?php }
+			else { ?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/french'>Français</a><?php }
 			?></div>
             <div class="container_12">
 				<div class="grid_12">
