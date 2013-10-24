@@ -109,7 +109,7 @@ class Stage extends CI_Controller {
 					$this->ion_auth->update($insert_id, $update_data);	
 					
 					//determine lang file to use
-					include("/home/bonstage/trans.b-onstage/application/language/".$this->input->post('stagelang')."/general_lang.php");
+					include("/home/bonstage/public_html/application/language/".$this->input->post('stagelang')."/general_lang.php");
 
 					
 					//send email to stage

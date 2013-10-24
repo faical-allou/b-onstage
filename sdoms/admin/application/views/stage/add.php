@@ -52,7 +52,7 @@
                 
                 <!--lang-->
 				<?php //Include lang config file
-				include("/home/bonstage/trans.b-onstage/application/config/lang.php");
+				include("/home/bonstage/public_html/application/config/lang.php");
 				
 				?><label><?=$label_stagelang?></label>
 				<select name="stagelang" id="stagelang">
