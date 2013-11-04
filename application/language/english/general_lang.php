@@ -743,7 +743,7 @@ $lang['signup_terminate_success2'] ='<p>After that, it’s showtime !!!</p>
 $lang['signup_stage_step_1_title'] = 'Sign up';
 $lang['signup_stage_step_1_txt'] = '<li><span class="grey title">You want your venue to be listed on b-onstage? Please fill up the form.</span></li>		
 			<li><span class="grey title">One of our staff will contact you to organise a visit and create a profile. </span></li>		
-			<li><span class="grey title">Your account will gee you the opportunity to create events and find artists.</span></li>';
+			<li><span class="grey title">Your account will give you the opportunity to create events and find artists.</span></li>';
 $lang['signup_stage_step_1_form_title'] = 'I sign up as Stage';
 $lang['signup_stage_step_1_form_field1'] = 'Name';
 $lang['signup_stage_step_1_form_field1_title'] = 'Enter the name of your Stage';
