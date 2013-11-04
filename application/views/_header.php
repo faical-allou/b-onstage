@@ -72,12 +72,18 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 	<div id="header">
 		<!--menu principal-->
 		<div id="w-menu">
-			<div id="top_lang_bar"><?php 
+			<!--<div id="top_lang_bar"><?php 
 			// english link : lang loaded is french
-			if($this->session->userdata('lang_loaded') == "french") { ?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/english'>English</a><?php  }
+			if($this->session->userdata('lang_loaded') == "french") { 
+				$lang_switch_top_link ="english";
+				$lang_switch_top_txt ="English";
+				?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/english'>english</a><?php  }
 			// french link : lang loaded is english
-			else { ?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/french'>Français</a><?php }
-			?></div>
+			else { 
+				$lang_switch_top_link ="french";
+				$lang_switch_top_txt ="Français";
+				?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/french'>français</a><?php }
+			?></div>-->
             <div class="container_12">
 				<div class="grid_12">
                     <!--logo-->
@@ -96,10 +102,12 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 					<ul class="menu right">
 						<li><?=anchor(site_url('signup_choice'), lang("signup"), array('id' => 'menu-signup'))?></li>
 						<li><?=anchor(site_url('login'), lang("login"), array('id' => 'menu-signin'))?></li>
+                        <li><a href="/langswitch/switchLanguage/<?php echo $lang_switch_top_link ?>"><?php 
+							echo $lang_switch_top_txt ?></a></li>
 					</ul>
 					<?php } else { ?>
 					<ul class="profil-menu right">																		
-						<li>
+                        <li>
 							<div id="dropdown-notification" class="wrapper-dropdown ui-corner-all priority-<?=$notifications['topPriority']?>">
 								<div class="fs-16 title"><?=$notifications['nbUnread']?></div>
 								<ul class="dropdown">
@@ -146,7 +154,15 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 						</li>	
 						<!--<li><a href="#notifications-list" id="menu-notification" class="ui-corner-all priority-<?=$notifications['topPriority']?>"><?=$notifications['nbUnread']?></a></li>-->
 						
-					</ul>
+						<li class="ml-5"><div onMouseOver="logged_lan_lnk.style.color='#8e2c86'" 
+                                          onMouseOut="logged_lan_lnk.style.color='#fff'"
+                                          onClick="window.location.href = '/langswitch/switchLanguage/<?php 
+										  	echo $lang_switch_top_link ?>'" 
+                                              id="top_lang_bar_logged" class="ui-corner-all"><a 
+                                           id="logged_lan_lnk" class="fs-16 title" 
+                                           href="/langswitch/switchLanguage/<?php echo $lang_switch_top_link ?>"><?php
+							echo $lang_switch_top_txt ?></a></div></li>
+                    </ul>
 					<?php } ?>					
 				</div>
 			</div>

@@ -1945,10 +1945,18 @@ a.underline:hover{text-decoration:underline;}
    ========================================================================== */   
 .va-t{vertical-align:top;}
 
-#top_lang_bar{position:relative; float:right; padding:0 10px;height:50px;line-height:50px;}
-.top_lang_bar_link{font-family:"Open Sans Condensed", sans-serif;text-decoration:none;font-size:16px;color:#fff;}
+/*#top_lang_bar{padding:0 2px;height:50px;line-height:50px; border:0px #000 solid}
+.top_lang_bar_link{font-family:"Open Sans Condensed", sans-serif;text-decoration:none;color:#fff;}
 #top_lang_bar:hover{background:rgba(255,255,255,0.2);}
-
-
+*/
+#top_lang_bar_logged{	
+	margin:5px auto;
+	padding:3px 15px;	
+	background:rgba(255,255,255,0.2);
+	cursor:pointer;
+}
+#top_lang_bar_logged > a{color: #fff;}
+#top_lang_bar_logged{line-height:34px;height:34px;}
+#top_lang_bar_logged:hover, #top_lang_bar_logged > a:hover {background:#fff;color:#8e2c86;}
 
 
