@@ -559,56 +559,56 @@ $lang['signup_terminate_success2'] ='<p>After that, it’s showtime !!!</p>
 
 
 // signup stage
-$lang['signup_stage_step_1_title'] = 'Créez un compteEN';
-$lang['signup_stage_step_1_txt'] = '<li><span class="grey title">ENVous voulez que votre établissement devienne une Scène sur le réseau b-onstage? Remplissez le formulaire ci-contre.</span></li>		
-			<li><span class="grey title">Vous serez ensuite contacté par notre équipe, afin notamment de vous aider à créer un profil qui ressemble à votre scène.</span></li>		
-			<li><span class="grey title">Nous mettons à votre disposition un espace pour créer vos évènements, trouver les Artistes qui se produiront sur votre Scène et gérer le tout depuis votre profil.</span></li>';
-$lang['signup_stage_step_1_form_title'] = 'ENJe m\'inscris en tant que scène';
-$lang['signup_stage_step_1_form_field1'] = 'ENNom d\'établissement';
-$lang['signup_stage_step_1_form_field1_title'] = 'ENSaisir votre nom d\'établissement';
-$lang['signup_stage_step_1_form_field2_title'] = 'ENL\'adresse e-mail doit être valide et sera votre identifiant de connexion.';
-$lang['signup_stage_step_1_form_field3_title'] = 'ENLe numéro de téléphone est falcutatif, mais nous permettra de vous contacter pour mettre en pla ce votre inscription et activation de votre compte';
-$lang['signup_stage_step_1_form_field3'] = 'ENTéléphone (facultatif)';
-$lang['signup_stage_step_1_form_submit'] = 'ENValider la pré-inscription';
-$lang['signup_stage_step_2_title'] = 'ENPré-inscription terminée';
-$lang['signup_stage_step_2_txt'] = '<p class="fs-16 title">ENPré-inscription terminée</p>
-			<p class="fs-16 title">Nous avons bien reçu votre demande d\'inscription.</p>
-			<p class="fs-16 title">Vous serez contacté dans les prochains jours par notre équipe, afin de convenir d\'un rendez-vous.</p>
-			<p class="fs-16 title">Nous vous expliquerons alors comment le site fonctionne et nous vous assisterons dans la création de votre Profil b-onstage.</p>';
-$lang['signup_stage_email_subject'] = 'ENPré-inscription à b-onstage';
-$lang['signup_stage_email_txt'] = '	<h1 style="font-size:18px;font-family:\'Arial\',sans-serif;color:#8e2c86;">ENBonjour,</h1>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Nous avons bien reçu votre demande d\'inscription.</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Vous serez contacté dans les prochains jours par notre équipe, afin de convenir d\'un rendez-vous.</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Nous vous expliquerons alors comment le site fonctionne et nous vous assisterons dans la création de votre Profil b-onstage.</p>
+$lang['signup_stage_step_1_title'] = 'Sign up';
+$lang['signup_stage_step_1_txt'] = '<li><span class="grey title">You want your venue to be listed on b-onstage? Please fill up the form.</span></li>		
+			<li><span class="grey title">One of our staff will contact you to organise a visit and create a profile. </span></li>		
+			<li><span class="grey title">Your account will gee you the opportunity to create events and find artists.</span></li>';
+$lang['signup_stage_step_1_form_title'] = 'I sign up as Stage';
+$lang['signup_stage_step_1_form_field1'] = 'Name';
+$lang['signup_stage_step_1_form_field1_title'] = 'Enter the name of your Stage';
+$lang['signup_stage_step_1_form_field2_title'] = 'The email address will be used to connect next time';
+$lang['signup_stage_step_1_form_field3_title'] = 'The phone number is optional but it is better to keep you up to date';
+$lang['signup_stage_step_1_form_field3'] = 'Phone number';
+$lang['signup_stage_step_1_form_submit'] = 'Confirm';
+$lang['signup_stage_step_2_title'] = 'We have received your request';
+$lang['signup_stage_step_2_txt'] = '<p class="fs-16 title">Confirmed</p>
+			<p class="fs-16 title">We have received your request.</p>
+			<p class="fs-16 title">Our team will contact you soon to set up a visit.</p>
+			<p class="fs-16 title">We will explain you in more details ow it works and how you can benefit from it.</p>';
+$lang['signup_stage_email_subject'] = 'Registration';
+$lang['signup_stage_email_txt'] = '	<h1 style="font-size:18px;font-family:\'Arial\',sans-serif;color:#8e2c86;">Hi,</h1>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We have received your request.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Our team will contact you soon to set up a visit.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We will explain you in more details ow it works and how you can benefit from it.</p>
 	<br />
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">A bientôt</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">See you soon!</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>
 	<br />
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Merci de ne pas utiliser la fonction "Répondre" de votre messagerie.</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please do not reply to this email.</p>	
 	<br />
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous rencontrez des problèmes avec notre site ou nos services, écrivez-nous à l’adresse à l\'adresse support@b-onstage.com.</p>
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de nous améliorer et d\'essayer de rendre b-onstage le plus utile et agreable pour vous, nous vous encourageons à nous envoyez toutes vos suggestions à l\'adresse suggestion@b-onstage.com.</p>
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous ne souhaitez plus recevoir de mail de b-onstage, Cliquez-ici.</p>';
-$lang['signup_stage_confirmation_email_subject'] = 'ENConfirmation de votre inscription à b-onstage';
-$lang['signup_stage_confirmation_email_txt1'] = '<p style="font-size:18px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">ENBienvenue dans le réseau b-onstage,</p>	
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you see any problem with the website, please send an email to support@b-onstage.com.</p>
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We are improving the site everyday, if you want to send us a feedback please send us an email to suggestion@b-onstage.com.</p>
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you want to unsubscribe to all our email please click here.</p>';
+$lang['signup_stage_confirmation_email_subject'] = 'Confirmation of your registration';
+$lang['signup_stage_confirmation_email_txt1'] = '<p style="font-size:18px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Welcome to b-onstage,</p>	
 	<br />
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Rappel de vos identifiants :</p>';
-$lang['signup_stage_confirmation_email_txt2'] = 'ENVous pouvez désormais :</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Créer vos premier Évènements et Concert.</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Rechercher et communiquer avec des Artistes.</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Ajouter du contenu sur votre Profil (vidéos, photos)</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Pour vous rendre sur votre profil,';
-$lang['signup_stage_confirmation_email_txt3'] = 'ENPour comprendre comment b-onstage fonctionne,';
-$lang['signup_stage_confirmation_email_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">ENPour toute question ou demande d\'information sur nos services, écrivez-nous à l\'adresse info@b-onstage.com</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Maintenant..... c’est à vous de jouer!!</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Your credentials:</p>';
+$lang['signup_stage_confirmation_email_txt2'] = 'You can now:</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Create your own Events</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Search for artists</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Add content to your profile</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">To access your profile,';
+$lang['signup_stage_confirmation_email_txt3'] = 'To understand how b-onstage works,';
+$lang['signup_stage_confirmation_email_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please let us know if you need more information, sned us an email at: support@b-onstage.com</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Now… the Stage is yours</p>
 	<br/>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>
 	<br />
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Merci de ne pas utiliser la fonction "Répondre" de votre messagerie.</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please do not reply to this email.</p>	
 	<br />
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous rencontrez des problèmes avec notre site ou nos services, écrivez-nous à l’adresse à l\'adresse support@b-onstage.com.</p>
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de nous améliorer et d\'essayer de rendre b-onstage le plus utile et agreable pour vous, nous vous encourageons à nous envoyez toutes vos suggestions à l\'adresse suggestion@b-onstage.com.</p>
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous ne souhaitez plus recevoir de mail de b-onstage, Cliquez-ici.</p>';	
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you see any problem with the website, please send an email to support@b-onstage.com.</p>
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We are improving the site everyday, if you want to send us a feedback please send us an email to suggestion@b-onstage.com.</p>
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you want to unsubscribe to all our email please click here.</p>';	
 
 
 // Users home		
