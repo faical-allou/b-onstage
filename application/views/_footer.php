@@ -16,7 +16,7 @@
                                 <dd><a href="javascript:void(0)" id="contact_us"><?php echo lang("footer_contactus") ?></a></dd>
                             </dl>
                         </div>
-                        <div class="grid_4" style="width:auto;padding-left:180px">									
+                        <div class="grid_4 p-l-footer" style="width:auto">									
                             <dl>
                                 <dt class="title fs-16"><?php echo lang("footer_followus") ?></dt>
                                 <dd>
@@ -26,14 +26,14 @@
                                 </dd>
                             </dl>	
                         </div>
-                        <div class="grid_4" style="width:auto;padding-left:180px">									
+                        <div class="grid_4 p-l-footer" style="width:auto">									
                             <dl>
                                 <dt class="title fs-16"><?php echo lang("footer_legal") ?></dt>
                                 <dd><?=anchor(site_url('terms_of_services'),lang("footer_legal_link1"))?></dd>						
                                 <dd><?=anchor(site_url('legal'),lang("footer_legal_link2"))?></dd>
                             </dl>
                         </div>
-                        <div class="grid_4" style="width:auto;padding-left:180px">									
+                        <div class="grid_4 p-l-footer" style="width:auto">									
                             <dl>
                                 <dt class="title fs-16">Language</dt>
                                 <dd><a href='/langswitch/switchLanguage/english'>English</a></dd>						
@@ -210,5 +210,13 @@
 		<?php if(isset($scripts)){ foreach($scripts as $script){ ?>
 		<script src="<?=site_url($script)?>"></script>
 		<?php }} ?>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-43268260-1', 'b-onstage.com');
+		  ga('send', 'pageview');
+		</script>
 	</body>
 </html>
