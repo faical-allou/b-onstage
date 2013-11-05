@@ -1270,7 +1270,7 @@ class User extends CI_Controller {
 						if($reservation['payment_amount'] > 0)
 							array_push($payment_type,lang("users_calendar_create_cachet").' '.round($reservation['payment_amount'],2).'€');
 						if($reservation['percent_drink'] > 0)
-							array_push($payment_type, round($reservation['percent_drink'],2).'% '.lang("users_calendar_create_conso"));
+							array_push($payment_type, round($reservation['percent_drink'],2).'€ '.lang("users_calendar_create_conso"));
 						if($reservation['percent_entry'] > 0)
 							array_push($payment_type,round($reservation['percent_entry'],2).'% '.lang("users_calendar_create_tickets"));
 						if($reservation['refund_fees'])
@@ -1503,7 +1503,7 @@ class User extends CI_Controller {
 						break;
 					case 3 :
 						$payment_type.= ($event['payment_amount'] > 0) ? lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' € + ' : '';
-						$payment_type.= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'% '.lang("users_calendar_create_conso").' + ' : '';
+						$payment_type.= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'€ '.lang("users_calendar_create_conso").' + ' : '';
 						$payment_type.= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets").' + ' : '';
 						$payment_type.= ($event['refund_fees'] > 0) ? lang("users_calendar_create_remb") : '';
 						break;

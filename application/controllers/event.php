@@ -287,7 +287,7 @@ class Event extends CI_Controller {
 				'size'		=> 4				
 			);
 			//percent drink
-			$this->data['label_payment_type_3'] = '% '.lang("users_calendar_create_conso");
+			$this->data['label_payment_type_3'] = '€ '.lang("users_calendar_create_conso");
 			$this->data['payment_type_3'] = array(
 				'name'		=> 'payment-type-3',
 				'id'		=> 'payment-type-3',
@@ -555,7 +555,7 @@ class Event extends CI_Controller {
 							'size'		=> 4				
 						);
 						//percent drink
-						$this->data['label_payment_type_3'] = '% '.lang("users_calendar_create_conso");
+						$this->data['label_payment_type_3'] = '€ '.lang("users_calendar_create_conso");
 						$this->data['payment_type_3'] = array(
 							'name'		=> 'payment-type-3',
 							'id'		=> 'payment-type-3',
@@ -668,7 +668,7 @@ class Event extends CI_Controller {
 								if($event['payment_amount'] > 0)
 									array_push($payment_type, lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' €');
 								if($event['percent_drink'] > 0)
-									array_push($payment_type, round($event['percent_drink'],2).'% '.lang("users_calendar_create_conso"));
+									array_push($payment_type, round($event['percent_drink'],2).'€ '.lang("users_calendar_create_conso"));
 								if($event['percent_entry'] > 0)
 									array_push($payment_type, round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets"));
 								if($event['refund_fees'] > 0)
@@ -942,7 +942,7 @@ class Event extends CI_Controller {
 					if($event['payment_amount'] > 0)
 						array_push($payment_type, lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' €');
 					if($event['percent_drink'] > 0)
-						array_push($payment_type, round($event['percent_drink'],2).'% '.lang("users_calendar_create_conso"));
+						array_push($payment_type, round($event['percent_drink'],2).'€ '.lang("users_calendar_create_conso"));
 					if($event['percent_entry'] > 0)
 						array_push($payment_type, round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets"));
 					if($event['refund_fees'] > 0)
