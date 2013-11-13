@@ -126,12 +126,27 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 										}
 										$class .= $notification['read'] ? ' read' : ' unread';
 									?>
-										<li>
-											<div onclick="window.open('<?=$notification['link']?>','_SELF');" class="p-20 <?=$class?>">												
-												<img src="<?=site_url($notification['avatar'])?>" width="48px" class="ui-corner-all" />
-												<span class="fs-12 grey bold ml-10"><?=$notification['description']?></span>
-											</div>										
-										</li>
+										
+											<?php 
+											// no link and no notif image
+											if(empty($notification['avatar']) && empty($notification['link'])){
+												?><li style="cursor:default"><div class="p-20 
+														<?=$class?>">
+                                                   <span class="fs-12 grey bold ml-10"><?=$notification['description']?></span>
+												</div></li><?php
+                                                }
+											
+											// normal notif (w/ image and link)
+											else {
+													?><li><div onclick="window.open('<?=$notification['link']?>','_SELF');" class="p-20 
+														<?=$class?>">												
+													<img src="<?=site_url($notification['avatar'])?>" width="48px" 
+                                                    	class="ui-corner-all" />
+													<span class="fs-12 grey bold ml-10"><?=$notification['description']?></span>
+												</div></li><?php
+												}
+											?>										
+										
 									<?php } ?>									
 								</ul>
 							</div>
