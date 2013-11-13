@@ -588,6 +588,7 @@ class User extends CI_Controller {
 						);
 						$this->ion_auth->update($id, $update_data);						
 						$this->user['avatar'] = $url_avatar;						
+						$this->header['terminate_avatar'] = $url_avatar;
 						
 						//var header
 						$this->header['doctype'] = 'html5';

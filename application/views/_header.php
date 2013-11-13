@@ -138,7 +138,12 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 						</li>
 						<li class="ml-5">
 							<div id="dropdown-username" class="wrapper-dropdown ui-corner-all">
-								<div><?=img(array('src' => site_url($user['avatar'].'?'.time()),'class' => 'ui-corner-all db left','width' => '34px'))?><span class="ml-5 fs-16 title"><?=$user['username']?></span></div>
+								<div><?php
+                                if(isset($terminate_avatar)){
+									echo img(array('src' => site_url($terminate_avatar.'?'.time()),'class' => 'ui-corner-all db left','width' => '34px')); }
+								else{
+									echo img(array('src' => site_url($user['avatar'].'?'.time()),'class' => 'ui-corner-all db left','width' => '34px')); }
+								?><span class="ml-5 fs-16 title"><?=$user['username']?></span></div>
 								<ul class="dropdown">
 									<li><?=anchor(site_url('user'),'<span aria-hidden="true" class=" fs-14 icon-cog mr-10"></span>'.lang("header_myaccount"), array('class' => 'ui-corner-top'))?></li>
 									<?php if($user_group == 'stage') { ?>
