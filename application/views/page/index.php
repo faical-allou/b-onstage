@@ -258,7 +258,7 @@
 				<div class="clearfix bloc-page" id="content-sound">																										
 					
 					<!--sound-->
-					<div class="bg-white bs-black ui-corner-all mb-20">	
+					<div class="bg-white bs-black ui-corner-all mb-20" style="display:none">	
 						<?=$title_sounds?>						
 						<?php if($user_state == 2){?>
 							<div class="recommendations m-10">
@@ -305,7 +305,10 @@
 					<div class="bg-white bs-black ui-corner-all">	
 						<?=$title_soundcloud?>
 						<?php if($user_state == 2){?>									
-							<div class="wrap-button-action p-10">								
+							<div class="recommendations m-10">
+								<?php echo lang("users_page_sons_txt") ?> 
+							</div>
+                            <div class="wrap-button-action p-10">								
 								<div><button id="button-add-sc"><?php echo lang("users_page_sons_addsoundcloud") ?></button></div>								
 							</div>							
 						<?php }?>	

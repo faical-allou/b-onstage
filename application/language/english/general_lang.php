@@ -965,8 +965,8 @@ $lang['users_page_sons_txt'] = '<div class="title fs-16 purple">Recommendations 
 	<p class="grey fs-12 bold">Remember, the more content the more likely you are to be selected</p>	';
 $lang['users_page_sons_track'] = 'Track';
 $lang['users_page_sons_addtrack'] = ' add music';
-$lang['users_page_sons_addsoundcloud'] = 'Track uploaded';
-$lang['users_page_sons_addtrack_success'] = 'I add a Soundcloud account';
+$lang['users_page_sons_addsoundcloud'] = 'I add a Soundcloud account';
+$lang['users_page_sons_addtrack_success'] = 'Track uploaded';
 $lang['users_page_sons_nosound'] = 'No music yet';
 $lang['users_page_sons_notrack'] = 'No track available';
 $lang['users_page_sons_soundcloud_delconf'] = 'Do you really want to delete the account';

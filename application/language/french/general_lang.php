@@ -900,8 +900,8 @@ $lang['users_page_sons_txt'] = '<div class="title fs-16 purple">Recommendations 
 								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p>';
 $lang['users_page_sons_track'] = 'Pistes';
 $lang['users_page_sons_addtrack'] = 'J\'ajoute des pistes audio';
-$lang['users_page_sons_addsoundcloud'] = 'Piste téléchargée';
-$lang['users_page_sons_addtrack_success'] = 'J\'ajoute un compte Soundcloud';
+$lang['users_page_sons_addsoundcloud'] = 'J\'ajoute un compte Soundcloud';
+$lang['users_page_sons_addtrack_success'] = 'Piste téléchargée';
 $lang['users_page_sons_nosound'] = 'Aucun son à écouter.';
 $lang['users_page_sons_notrack'] = 'Aucune piste disponible.';
 $lang['users_page_sons_soundcloud_delconf'] = 'Voulez-vous vraiment supprimer ce compte Soundcloud ?';
