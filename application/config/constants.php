@@ -84,9 +84,9 @@ define('IS_AJAX', isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVE
 define('SC_CLIENT_ID', '63d6b7f211eb4199561feba72475cfeb');
 define('SC_SECRET_ID', 'f054c325af966fb78a6d116961ef06d2');
 //DEV
-define('SC_REDIRECT_URL', 'http://trans.b-onstage.com/user/redirect_sc');
+//define('SC_REDIRECT_URL', 'http://trans.b-onstage.com/user/redirect_sc');
 //PROD
-//define('SC_REDIRECT_URL', 'http://b-onstage.com/user/redirect_sc');
+define('SC_REDIRECT_URL', 'http://b-onstage.com/user/redirect_sc');
 
 
 
