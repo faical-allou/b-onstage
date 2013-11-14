@@ -56,7 +56,7 @@ class Stage extends CI_Controller {
 			
 			$this->form_validation->set_error_delimiters('<div class="text-error">', '</div>');			
 			
-			$this->form_validation->set_rules('username', 'username', 'trim|required|xss_clean||min_length[5]|max_length[25]|is_unique[users.username]');
+			$this->form_validation->set_rules('username', 'username', 'trim|required|xss_clean||min_length[5]|max_length[25]|is_unique[users.username]|is_unique[users.web_address]');
 			$this->form_validation->set_rules('email', 'identity', 'trim|required|valid_email|is_unique[users.email]');
 			$this->form_validation->set_rules('password', 'password', 'trim|required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|max_length[' . $this->config->item('max_password_length', 'ion_auth') . ']|matches[password_confirm]');
 			$this->form_validation->set_rules('password_confirm', 'confirm password', 'trim|required');
@@ -79,15 +79,16 @@ class Stage extends CI_Controller {
 				$password = $this->input->post('password');							
 						
 				$additional_data = array(
-					'company'	=> $this->input->post('company'),
-					'address'	=> $this->input->post('address'),
-					'zip'		=> $this->input->post('zip'),
-					'city'		=> $this->input->post('city'),
-					'country'	=> $this->input->post('country'),
-					'first_name'=> $this->input->post('first-name'),
-					'last_name'	=> $this->input->post('last-name'),
-					'phone'		=> $this->input->post('phone'),
-					'language'	=> $this->input->post('stagelang')
+					'company'		=> $this->input->post('company'),
+					'address'		=> $this->input->post('address'),
+					'zip'			=> $this->input->post('zip'),
+					'city'			=> $this->input->post('city'),
+					'country'		=> $this->input->post('country'),
+					'first_name'	=> $this->input->post('first-name'),
+					'last_name'		=> $this->input->post('last-name'),
+					'phone'			=> $this->input->post('phone'),
+					'language'		=> $this->input->post('stagelang'),
+					'web_address'	=> $this->input->post('username')
 					
 					
 				);
@@ -109,7 +110,7 @@ class Stage extends CI_Controller {
 					$this->ion_auth->update($insert_id, $update_data);	
 					
 					//determine lang file to use
-					include("/home/bonstage/public_html/application/language/".$this->input->post('stagelang')."/general_lang.php");
+					include("/home/bonstage/trans.b-onstage/application/language/".$this->input->post('stagelang')."/general_lang.php");
 
 					
 					//send email to stage
