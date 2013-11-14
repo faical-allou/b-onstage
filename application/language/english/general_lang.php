@@ -957,10 +957,10 @@ $lang['users_page_picasa_album_notfound'] = 'Account deleted';
 $lang['users_page_picasa_delconf'] = 'No album found';
 $lang['users_page_sons_txt'] = '<div class="title fs-16 purple">Recommendations to add music</div>	
 	<p class="grey fs-12 bold">Stages have to listen to your music to select you!</p>	
-	<p class="grey fs-12 bold"> There are 2 ways of uploading music:  </p>	
+	<p class="grey fs-12 bold"> Here is the way to upload music:  </p>	
 	<ul style="list-style:square;margin-left:20px;">	
-	<li class="purple fs-12 bold"><span class="grey">From your Computer: click on I add music and select the file.</span></li>	
-	<li class="purple fs-12 bold"><span class="grey"> From Soundcloud: Click on I add a Soundcloud account and enter the information.</span></li>	
+	<li class="purple fs-12 bold"><span class="grey">Upload your tracks to your Soundcloud account.</span></li>	
+	<li class="purple fs-12 bold"><span class="grey">Click on I add a Soundcloud account and enter the information (you can add multiple Soundcloud accounts).</span></li>	
 	</ul>	
 	<p class="grey fs-12 bold">Remember, the more content the more likely you are to be selected</p>	';
 $lang['users_page_sons_track'] = 'Track';

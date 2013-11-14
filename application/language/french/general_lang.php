@@ -892,10 +892,10 @@ $lang['users_page_picasa_album_notfound'] = 'Compte Picasa supprimé avec succè
 $lang['users_page_picasa_delconf'] = 'Aucun album pour ce compte Picasa  ';
 $lang['users_page_sons_txt'] = '<div class="title fs-16 purple">Recommendations pour ajouter de la musique</div>
 								<p class="grey fs-12 bold">Afin de vous démarquer, il est important que les Scènes puissent vous écouter.</p>
-								<p class="grey fs-12 bold">Ajoutez vos sons à votre profil. Pour cela, il y a deux façons de faire:</p>
+								<p class="grey fs-12 bold">Ajoutez vos sons à votre profil. Voici comment faire:</p>
 								<ul style="list-style:square;margin-left:20px;">	
-									<li class="purple fs-12 bold"><span class="grey">Depuis votre Ordinateur: cliquez sur J\'ajoute des pistes audio, choisissez le fichiers sur votre ordinateur. Seuls les fichiers MP3 de moins de 20Mo sont acceptés.</span></li>
-									<li class="purple fs-12 bold"><span class="grey">Depuis votre compte Soundcloud: cliquez sur J\'ajoute un compte Souncloud, entrez vos informations Soundcloud.</span></li>
+									<li class="purple fs-12 bold"><span class="grey">Télécharger vos morceaux sur votre compte Soundcloud.</span></li>
+									<li class="purple fs-12 bold"><span class="grey">Cliquez sur J\'ajoute un compte Souncloud, entrez vos informations Soundcloud (vous pouvez ajouter plusieurs comptes Soundcloud).</span></li>
 								</ul>	
 								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p>';
 $lang['users_page_sons_track'] = 'Pistes';
