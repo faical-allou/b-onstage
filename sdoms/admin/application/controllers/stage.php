@@ -7,7 +7,7 @@ class Stage extends CI_Controller {
 		$this->load->database();	
 		$this->load->model('stage_model');
 		$this->load->model('notification_model');
-			
+		$this->load->helper('language');	
 	}
 	/********** ADD STAGE **********/
 	public function index(){						
@@ -110,7 +110,7 @@ class Stage extends CI_Controller {
 					$this->ion_auth->update($insert_id, $update_data);	
 					
 					//determine lang file to use
-					include("/home/bonstage/trans.b-onstage/application/language/".$this->input->post('stagelang')."/general_lang.php");
+					include("/home/bonstage/public_html/application/language/".$this->input->post('stagelang')."/general_lang.php");
 
 					
 					//send email to stage
@@ -132,7 +132,7 @@ class Stage extends CI_Controller {
 					
 					
 					//add notification
-					$this->notification_model->add($insert_id,lang("notifs_3"),3);
+					$this->notification_model->add($insert_id,$lang['notifs_3'],3);
 					
 					$html_message = $this->parser->parse('email/confirm_inscription', $data, TRUE);				
 					$this->email->from('contact@b-onstage.com', 'b-onstage');
