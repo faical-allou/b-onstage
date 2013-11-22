@@ -918,6 +918,7 @@ $lang['users_rese_delayfees'] = 'Délai pour payer les frais de réservation';
 $lang['users_rese_cancel'] = 'Annuler réservation';
 $lang['users_rese_enterprice'] = 'Prix entrée';
 $lang['users_rese_fees'] = 'Frais de réservation';
+$lang['users_cost_ifselected'] = 'Frais de réservation';
 $lang['users_rese_renumartist'] = 'Rémunération artiste';
 $lang['users_rese_status1'] = 'En attente de paiement';
 $lang['users_rese_status1_a'] = 'Artiste en attente de paiement';

@@ -71,7 +71,7 @@
 						<td width="25%" class="va-t ta-c fs-12 grey">							
 							<div class="p-10">
 								<div class="mb-10 fs-16 title">
-									<?php echo lang("users_rese_fees") ?>
+									<?php echo lang("users_cost_ifselected") ?>
 								</div>
 								<div class="fs-18 purple title">
 									<?=round($event['reservation'], 2)?>€

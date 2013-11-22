@@ -983,6 +983,7 @@ $lang['users_rese_delayfees'] = 'Time left to pay';
 $lang['users_rese_cancel'] = 'Cancel reservation';
 $lang['users_rese_enterprice'] = 'Ticket price';
 $lang['users_rese_fees'] = 'Payback';
+$lang['users_cost_ifselected'] = 'Cost if Selected';
 $lang['users_rese_renumartist'] = 'Payback';
 $lang['users_rese_status1'] = 'Pending payment';
 $lang['users_rese_status1_a'] = 'Pending payment';
