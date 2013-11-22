@@ -78,7 +78,7 @@
 			<!--sound player-->
 			<?php if($user_group_page =='artist') { ?>
 			<div id="sound-player" class="jp-player ui-corner-bottom"></div>
-			<div class="jp-audio hidden">
+			<div class="jp-audio">
 				<div class="jp-type-playlist">
 					<div class="jp-gui jp-interface">
 						<ul class="jp-controls">
