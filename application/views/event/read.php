@@ -126,13 +126,16 @@
 										</div>	
 									</div>
 									<div>
-										<?php if($nb_tracks > 0) { ?>
-											<div class="nobullet"><ul><?=$tracks?></ul></div>
+										<?php if(strlen($sc_sounds) > 2 ) { ?>
+											<div id="soundcloud">
+												<?=$sc_sounds?>                                             
+                                            </div>
 										<?php } else { ?>
 											<div class="p-10">
 												<i class="fs-12"><?php echo lang("users_page_sons_nosound") ?></i>
 											</div>
-										<?php } ?>										
+										<?php } ?>	
+                                        										
 									</div>
 								</div>
 							</td> 

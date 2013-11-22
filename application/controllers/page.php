@@ -226,7 +226,7 @@ class Page extends CI_Controller {
 		
 		
 		/********** MEDIAS **********/
-		$medias = $this->media_model->get_all($user_page['id']);				
+		$medias = $this->media_model->get_all($user_page['id']);
 		
 		/**********SOUND**********/
 		$title_sounds = heading('<span aria-hidden="true" class="icon-music fs-14"></span> '.lang("users_page_menu3"), 1 ,'class="title-page ui-corner-top"');

@@ -10,6 +10,7 @@ class Event extends CI_Controller {
 		$this->load->model('reservation_model');
 		$this->load->model('user_model');
 		$this->load->model('concert_model');
+		$this->load->model('media_model');
 		$this->load->model('sound_model');		
 		$this->load->library('session');
 		$this->lang_counts = $this->config->item('lang_counts');
@@ -81,6 +82,36 @@ class Event extends CI_Controller {
 			$sound['tracks'] .= '<p class="grey fs-15"><i>Aucune piste disponible pour le moment.</i></p>';
 		}	
 		
+		$medias = $this->media_model->get_all($concert['artist_id']);
+		
+		$sc_sounds = 'Aucun utilisateur enregistré';			
+		if(array_key_exists('sc_sounds',$medias)){												
+			$sc_users = array();
+			$sc_tracks = array();			
+			$sc_track_count = 0;	
+			foreach($medias['sc_sounds'] as $sc_sound){					
+				switch($sc_sound['type']){
+					case 'user':
+						array_push($sc_users, unserialize($sc_sound['data']));						
+						break;
+					case 'track':
+						if($sc_sound['visible']){
+							$sc_track_count++;
+							array_push($sc_tracks, $sc_sound);				
+						}		
+						break;
+					default:break;						
+				}
+			}
+			
+			$data = array(
+				'sc_users' 			=> $sc_users,
+				'sc_tracks'			=> $sc_tracks,
+				'sc_track_count'	=> $sc_track_count	
+			);
+			$sc_sounds = $this->load->view('soundcloud/tpl_read', $data, true);
+		}	
+		
 		$header['title'] = $concert['title'];
 		$header['description'] = $concert['description'];							
 		
@@ -105,7 +136,8 @@ class Event extends CI_Controller {
 			'nb_tracks'				=> count($concert['tracks']),
 			'genres'				=> implode(', ',$concert['genres']),
 			'members'				=> $concert['members'],
-			'nb_members'			=> count($concert['members'])	
+			'nb_members'			=> count($concert['members']),
+			'sc_sounds'				=> $sc_sounds	
 		);
 		
 		$footer['scripts'] = array(
