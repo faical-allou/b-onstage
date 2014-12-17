@@ -203,6 +203,7 @@ $lang['otherinfos'] = 'Other infos';
 $lang['originaire_de'] = 'Originally from';
 $lang['band_members'] = 'Members of the band';
 $lang['choose_city'] = 'Choose city(ies)';
+$lang['choose_country'] = 'Choose country';
 
 
 // Header

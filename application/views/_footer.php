@@ -123,7 +123,9 @@
         <div id="alignment_lang_txt" style="display:none"><?php echo lang("redactor_alignment") ?></div>
         <div id="users_contact_sendmsg" style="display:none"><?php echo lang("users_contact_sendmsg") ?></div>
         <div id="users_page_inputcity" style="display:none"><?php echo lang("users_page_inputcity") ?></div>
+        <div id="users_page_inputcountry" style="display:none"><?php echo lang("users_page_inputcountry") ?></div>
         <div id="choose_city" style="display:none"><?php echo lang("choose_city") ?></div>
+        <div id="choose_country" style="display:none"><?php echo lang("choose_country") ?></div>
         <div id="noresultfound" style="display:none"><?php echo lang("noresultfound") ?></div>
         <div id="shows_sortby3" style="display:none"><?php echo lang("shows_sortby3") ?></div>
         <div id="users_page_sons_soundcloud_delconf" style="display:none"><?php echo lang("users_page_sons_soundcloud_delconf") ?></div>

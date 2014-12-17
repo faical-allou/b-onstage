@@ -63,14 +63,20 @@ class Main extends CI_Controller {
 			$search['search-date-end'] = date('Y-m-d', strtotime("+3 months"));		
 
 			$search['search-city'] = null;
+			
+			$search['search-country'] = null;
 
 		}
 
 		$cities = $this->event_model->get_stage_cities();	
+		$countries = $this->event_model->get_stage_countries();	
+		$city_by_country = $this->event_model->get_stage_cities_by_countries();	
 
 		$this->load->vars(array('search' => $search));	
 
 		$this->load->vars(array('cities' => $cities));			
+		$this->load->vars(array('countries' => $countries));			
+		$this->load->vars(array('city_by_country' => $city_by_country));			
 
 		
 
