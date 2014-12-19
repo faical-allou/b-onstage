@@ -203,6 +203,9 @@ $lang['originaire_de'] = 'Originaire de';
 $lang['band_members'] = 'Les membres du groupe';
 $lang['choose_city'] = 'Choisir ville(s)';
 $lang['choose_country'] = 'Choisir pays';
+$lang['checkall'] = 'Cocher tout';
+$lang['uncheckall'] = 'Décocher tout';
+$lang['selected'] = 'Sélectionné(s)';
 
 
 // Header

@@ -170,6 +170,9 @@
         <div id="canceltxt" style="display:none"><?php echo lang("cancel") ?></div>
         <div id="users_calendar_event_del_conf" style="display:none"><?php echo lang("users_calendar_event_del_conf") ?></div>
         <div id="users_contact_del_conf" style="display:none"><?php echo lang("users_contact_del_conf") ?></div>
+        <div id="searchbarcheckall" style="display:none"><?php echo lang("checkall") ?></div>
+        <div id="searchbaruncheckall" style="display:none"><?php echo lang("uncheckall") ?></div>
+        <div id="searchbarselected" style="display:none"><?php echo lang("selected") ?></div>
         
 		<script src="<?=site_url('js/plugins.js')?>"></script>		
 		<script src="<?=site_url('js/dropdown.js')?>"></script>

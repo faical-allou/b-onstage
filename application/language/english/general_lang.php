@@ -204,6 +204,9 @@ $lang['originaire_de'] = 'Originally from';
 $lang['band_members'] = 'Members of the band';
 $lang['choose_city'] = 'Choose city(ies)';
 $lang['choose_country'] = 'Choose country';
+$lang['checkall'] = 'Check all';
+$lang['uncheckall'] = 'Uncheck all';
+$lang['selected'] = 'Selected';
 
 
 // Header

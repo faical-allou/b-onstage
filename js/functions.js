@@ -80,11 +80,14 @@ function init_search_bar(open){
 	/*********INIT SEARCH CITY**********/
 	$('#search-city')
 	.multiselect({
-		header				: '',
+		header				: true,
 		multiple			: true,
-		selectedList		: 10,
+		selectedList		: 1,
+		selectedText 		: '# '+document.getElementById("searchbarselected").innerHTML,
 		height				: 'auto',
 		width				: 'auto',
+		checkAllText		: document.getElementById("searchbarcheckall").innerHTML,
+		uncheckAllText		: document.getElementById("searchbaruncheckall").innerHTML,
 		classes				: 'search-city',
 		noneSelectedText	: document.getElementById("choose_city").innerHTML
 	})
@@ -129,7 +132,12 @@ function init_search_bar(open){
 					})).attr('value', $(this).html())
 					.text($(this).html()));
 				});
+		
 		$("#search-city").multiselect("refresh");
+		if($("#search-city").val() == null) {	
+			$("#search-city").multiselect("checkAll");
+		}
+		
 	}
 	$('#search-country').change(function(){
 		
@@ -142,6 +150,7 @@ function init_search_bar(open){
 			
 			$("#search-city").multiselect("enable");
 			$("#search-city").empty();
+			
 			
 			if($("#currentcountry").val() == $("#search-country").val()){
 				$(".xxx"+$("#search-country").val()+"").each(function(){
@@ -159,12 +168,16 @@ function init_search_bar(open){
 				$('#search-city').append($('<option></option>').attr('value', $(this).html())
 					.text($(this).html()));
 				});
+				$("#search-city").multiselect("refresh");
+				$("#search-city").multiselect("checkAll");
+				
 			}
-			
-			
-	
+												
 
-			$("#search-city").multiselect("refresh");
+			$("#search-city").multiselect("refresh");						
+			
+			
+			
 		}	
 	});
 	

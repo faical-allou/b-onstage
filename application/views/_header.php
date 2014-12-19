@@ -234,6 +234,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 							</select>
                             
                             <select name="search-city[]" id="search-city" multiple="multiple">
+								
 								<?php if(isset($search['search-city'])) {
 									$tab = explode(',', $search['search-city']);
 									foreach($tab as $city){ ?>
