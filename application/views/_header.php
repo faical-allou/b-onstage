@@ -1,3 +1,4 @@
+<?php include_once("analyticstracking.php") ?>
 <?php 
 //Include config lang
 foreach($this->config->item('lang_counts') as $key => $value){
