@@ -50,7 +50,7 @@ setlocale(LC_TIME, $lang_id."_".strtoupper($lang_id).".UTF8");
 
 					<li>	
 
-						<a href="<?=$google_plus['link']?>">
+<!--						<a href="<?=$google_plus['link']?>">
 
 							<div>
 
@@ -65,7 +65,7 @@ setlocale(LC_TIME, $lang_id."_".strtoupper($lang_id).".UTF8");
 							<div class="fs-10 grey-2 bold"><?php echo lang("users_page_socmedfollowers3") ?></div>
 
 						</a>	
-
+-->
 					</li>
 
 				</ul>
@@ -82,8 +82,8 @@ setlocale(LC_TIME, $lang_id."_".strtoupper($lang_id).".UTF8");
 
 					<li id="tabs-menu-facebook" data-content-id="tabs-content-facebook"><span aria-hidden="true" class="icon-facebook fs-24"></span></li>
 
-					<li id="tabs-menu-google-plus" data-content-id="tabs-content-google-plus"><span aria-hidden="true" class="icon-google-plus-2 fs-24"></span></li>
-
+<!--					<li id="tabs-menu-google-plus" data-content-id="tabs-content-google-plus"><span aria-hidden="true" class="icon-google-plus-2 fs-24"></span></li>
+-->
 				</ul>
 
 				<div class="bg-white p-10">
@@ -147,11 +147,16 @@ setlocale(LC_TIME, $lang_id."_".strtoupper($lang_id).".UTF8");
 
 					
 
-					<!--google plus-->
+<!--					<!--google plus-->
 
 					<div id="tabs-content-google-plus" class="tabs-content">				
 
-						<p class="grey fs-16 title"><?php echo lang("follow") ?> <a href="<?=$google_plus['link']?>" class="purple">b-onstage</a> <?php echo lang("users_page_onsocmed4") ?></p>
+						<p class="grey fs-16 title">
+						<?php echo lang("follow") ?> 
+-->
+<!--						<a href="<?=$google_plus['link']?>" class="purple">b-onstage</a>    -->
+<!--
+						<?php echo lang("users_page_onsocmed4") ?></p>
                         
                          <?php 
 						
@@ -189,15 +194,15 @@ setlocale(LC_TIME, $lang_id."_".strtoupper($lang_id).".UTF8");
 
 						</script>
                        </div>
-
-					<!--facebook--
-
+-->
+					<!--facebook-->
+<!--
 					<div id="facebook-feed">
 
 						<div class="fb-activity" data-site="http://www.b-onstage.com" data-app-id="405185392913953" data-width="100%" data-height="300" data-header="true" data-recommendations="false"></div>
 
-					</div>-->	
-
+					</div>	
+-->
 				</div>
 
 			</div>

@@ -22,7 +22,7 @@
                                 <dd>
                                     <a href="javascript:void(0);" onclick="window.open('<?=FACEBOOK_LINK?>', '_BLANK');"><span aria-hidden="true" class="icon-facebook-2 fs-28 mr-5"></span></a>
                                     <a href="javascript:void(0);" onclick="window.open('<?=TWITTER_LINK?>', '_BLANK');"><span aria-hidden="true" class="icon-twitter-2 fs-28 mr-5"></span></a>
-                                    <a href="javascript:void(0);" onclick="window.open('<?=GOOGLE_PLUS_LINK?>', '_BLANK');"><span aria-hidden="true" class="icon-google-plus fs-28 mr-5"></span></a>							
+<!--                                    <a href="javascript:void(0);" onclick="window.open('<?=GOOGLE_PLUS_LINK?>', '_BLANK');"><span aria-hidden="true" class="icon-google-plus fs-28 mr-5"></span></a>		-->					
                                 </dd>
                             </dl>	
                         </div>

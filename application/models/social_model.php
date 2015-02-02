@@ -72,22 +72,22 @@ class Social_model extends CI_Model{
 			'tweets'		=> $tweets
 		);
 		
-		/*****GET GOOGLE + INFOS*****/				
-		$google_plusid = GOOGLE_ID;
-		$google_pluskey = GOOGLE_API_KEY;
-		$google_plus_feed = json_decode(file_get_contents('https://www.googleapis.com/plus/v1/people/'.$google_plusid.'/activities/public?key='.$google_pluskey));
-		$google_page_circle = 'https://www.googleapis.com/plus/v1/people/'.$google_plusid.'?key='.$google_pluskey.'';
-		$google_data = json_decode(file_get_contents($google_page_circle));
-		$google_plus = array(			
-			'id'				=> GOOGLE_ID,
-			'api_key'			=> GOOGLE_API_KEY,
-			'link'				=> GOOGLE_PLUS_LINK,
-			'google_plus_feed'	=> $google_plus_feed,
-			'google_data'		=> $google_data
+//		/*****GET GOOGLE + INFOS*****/				
+//		$google_plusid = GOOGLE_ID;
+//		$google_pluskey = GOOGLE_API_KEY;
+//		$google_plus_feed = json_decode(file_get_contents('https://www.googleapis.com/plus/v1/people/'.$google_plusid.'/activities/public?key='.$google_pluskey));
+//		$google_page_circle = 'https://www.googleapis.com/plus/v1/people/'.$google_plusid.'?key='.$google_pluskey.'';
+//		$google_data = json_decode(file_get_contents($google_page_circle));
+//		$google_plus = array(			
+//			'id'				=> GOOGLE_ID,
+//			'api_key'			=> GOOGLE_API_KEY,
+//			'link'				=> GOOGLE_PLUS_LINK,
+//			'google_plus_feed'	=> $google_plus_feed,
+//			'google_data'		=> $google_data
 
-		);
+//		);
 		
 		// RETURNS
-		return array('google_plus' => $google_plus, 'twitter' => $twitter, 'facebook' => $facebook);
+		return array(/*'google_plus' => $google_plus, */'twitter' => $twitter, 'facebook' => $facebook);
 	}
 }
