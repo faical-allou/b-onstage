@@ -205,7 +205,7 @@ $lang['choose_city'] = 'Choisir ville(s)';
 
 
 // Header
-$lang['header_book_date'] = 'Réserver date';
+$lang['header_book_date'] = 'Réserver une date';
 $lang['header_aboutus'] = 'A propos';
 $lang['header_seeall_notices'] = 'Voir toutes les notifications';
 $lang['header_myaccount'] = 'Mon compte';
@@ -236,8 +236,8 @@ $lang['home_title_artist'] = 'Les Artistes';
 $lang['home_seeall_shows'] = 'Voir tous les Concerts';
 $lang['home_seeall_stages'] = 'Voir toutes les Scènes';
 $lang['home_seeall_artist'] = 'Voir tous les Artistes';
-$lang['home_bottom_txt'] = 'Rechercher des dates pour jouer sur Scènes.';
-$lang['home_bottom_txt2'] = 'L\'inscription est gratuite. </br> Rejoignez b-onstage pour vous connecter aux Scènes.';
+$lang['home_bottom_txt'] = 'Rechercher des dates pour jouer sur Scène.';
+$lang['home_bottom_txt2'] = 'L\'inscription est gratuite. </br> Connectez vous aux Scènes.';
 
 
 // About us

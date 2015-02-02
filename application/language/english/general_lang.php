@@ -118,7 +118,7 @@ $lang['artists'] = 'Artists';
 $lang['artist'] = 'Artist';
 $lang['scenes'] = 'Stages';
 $lang['scene'] = 'Stage';
-$lang['shows'] = 'Shows';
+$lang['shows'] = 'Concerts';
 $lang['signup'] = 'Signup';
 $lang['login'] = 'Login';
 $lang['logout'] = 'Logout';
@@ -206,7 +206,7 @@ $lang['choose_city'] = 'Choose city(ies)';
 
 
 // Header
-$lang['header_book_date'] = 'Request a Reservation';
+$lang['header_book_date'] = 'Make a Reservation';
 $lang['header_aboutus'] = 'About';
 $lang['header_seeall_notices'] = 'Notifications';
 $lang['header_myaccount'] = 'My Account';
@@ -237,8 +237,8 @@ $lang['home_title_artist'] = 'Artists';
 $lang['home_seeall_shows'] = 'See all Concerts';
 $lang['home_seeall_stages'] = 'See all Stages';
 $lang['home_seeall_artist'] = 'See all Artists';
-$lang['home_bottom_txt'] = 'Check our Stages availability';
-$lang['home_bottom_txt2'] = 'Join the community </br> Sign up now, registration is free!';
+$lang['home_bottom_txt'] = 'Check our Stages\' availability';
+$lang['home_bottom_txt2'] = 'Join the community </br> Sign up for free now!';
 
 
 // About us
