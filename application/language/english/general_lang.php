@@ -130,7 +130,7 @@ $lang['to2'] = 'to';
 $lang['at'] = 'at';
 $lang['de'] = 'from';
 $lang['submit'] = 'Submit';
-$lang['become_member'] = 'Become member';
+$lang['become_member'] = 'Become a Member';
 $lang['clickhere'] = 'click-here';
 $lang['modify'] = 'Modify';
 $lang['address'] = 'Address';
@@ -220,20 +220,25 @@ $lang['header_attend_show'] = 'Attend a Concert';
 
 // Home		
 $lang['home_slide1_txt'] = 'Find Stages to play live ...';
-$lang['home_slide1_txt2'] = 'The stage is yours!';
-$lang['home_slide1_txt3'] = 'Sign up now';
-$lang['home_slide2_txt'] = 'Music is live';
-$lang['home_slide2_txt2'] = 'Live is on stage';
+$lang['home_slide1_txt2'] = 'The Stage is Yours!';
+$lang['home_slide1_txt3'] = 'Sign up for free!';
+$lang['home_slide2_txt'] = 'Music is Live';
+$lang['home_slide2_txt2'] = 'Live is on Stage';
 $lang['home_slide2_txt3'] = 'Stages are on b-onstage';
-$lang['home_slide2_txt4'] = 'Request a date to play';
+$lang['home_slide2_txt4'] = 'Request a date';
+
+$lang['home_slide3_txt'] = 'Don\'t wait to be discovered';
+$lang['home_slide3_txt2'] = 'Launch your career here';
+$lang['home_slide3_txt3'] = 'Join us Now!';
+
 $lang['home_title_concert'] = 'Concerts';
 $lang['home_title_stage'] = 'Stages';
 $lang['home_title_artist'] = 'Artists';
 $lang['home_seeall_shows'] = 'See all Concerts';
 $lang['home_seeall_stages'] = 'See all Stages';
 $lang['home_seeall_artist'] = 'See all Artists';
-$lang['home_bottom_txt'] = 'Check availabilities to book a Stage and play live';
-$lang['home_bottom_txt2'] = 'Sign up to b-onstage, the open network of Stages and Artists';
+$lang['home_bottom_txt'] = 'Check our Stages availability';
+$lang['home_bottom_txt2'] = 'Join the community </br> Sign up now, registration is free!';
 
 
 // About us
@@ -242,7 +247,7 @@ $lang['aboutus_link_whoweare'] = 'Who are we?';
 $lang['aboutus_link_howitworks'] = 'How it works';
 $lang['aboutus_header_aboutus'] = 'Why b-onstage?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>Because of the heavy downloading brought by the Internet, <strong>, links between Artists and the public have been broken.</strong></p></li>
+				<li><p>Because of the heavy downloading brought by the Internet, <strong>, links between Artists and the public were broken.</strong></p></li>
 				<li><p>Because the music industry is in crisis and because the records sales <strong>are not enough anymore.</strong></p></li>
 				<li><p>Because music is not only a partition but also a universe to share with others.</p></li>
 				<li><p>Because music has always been a unique relation with the public and because it has to stay as such.</p></li>
@@ -250,7 +255,7 @@ $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
 			</ul>';
 $lang['aboutus_header2_aboutus'] = 'And now?';
 $lang['aboutus_txt2_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>It is high time, Internet is put to use by the Artists.</p></li>
+				<li><p>It is high time, Internet is put to good use by the Artists.</p></li>
 				<li><p>It is high time bands meet their public.</p></li>
 			</ul>';
 $lang['aboutus_header3_aboutus'] = 'Sign-up';

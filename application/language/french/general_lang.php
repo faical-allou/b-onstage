@@ -1,23 +1,23 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 // Account Creation
-$lang['account_creation_successful'] = 'Compte créé avec succès';
+$lang['account_creation_successful'] = 'Le compte est créé!';
 $lang['account_creation_unsuccessful'] = 'Impossible de créer le compte';
 $lang['account_creation_duplicate_email'] = 'Email déjà utilisé ou invalide';
 $lang['account_creation_duplicate_username'] = 'Nom d\'utilisateur déjà utilisé ou invalide';
 
 
 // Password
-$lang['password_change_successful'] = 'Le mot de passe a été changé avec succès';
+$lang['password_change_successful'] = 'Le mot de passe a été changé!';
 $lang['password_change_unsuccessful'] = 'Impossible de changer le mot de passe';
-$lang['forgot_password_successful'] = 'Mail de réinitialisation du mot de passe envoyé';
+$lang['forgot_password_successful'] = 'Mail de réinitialisation envoyé';
 $lang['forgot_password_unsuccessful'] = 'Impossible de réinitialiser le mot de passe';
 $lang['forgot_password_email1_subject'] = 'Vérification pour Mot de passe oublié';
-$lang['forgot_password_email1_txt1'] = 'Réinitialiser le mot de';
-$lang['forgot_password_email1_txt2'] = 'S\'il vous plaît cliquer sur ce lien pour';
-$lang['forgot_password_email1_txt3'] = 'Réinitialiser votre mot de passe';
+$lang['forgot_password_email1_txt1'] = 'Réinitialiser le mot de passe';
+$lang['forgot_password_email1_txt2'] = 'Cliquer sur ce lien pour';
+$lang['forgot_password_email1_txt3'] = 'réinitialiser votre mot de passe';
 $lang['forgot_password_email2_subject'] = 'Nouveau Mot de passe';
-$lang['forgot_password_email2_txt1'] = 'Nouveau Mot de passe de';
+$lang['forgot_password_email2_txt1'] = 'Nouveau Mot de passe';
 $lang['forgot_password_email2_txt2'] = 'Votre mot de passe a été réinitialisé à';
 
 // Activation
@@ -31,7 +31,7 @@ $lang['activation_email_unsuccessful'] = 'Impossible d\'envoyer le mail d\'activ
 // Login / Logout
 $lang['login_successful'] = 'Connecté avec succès';
 $lang['login_unsuccessful'] = 'Vos identifiants sont incorrects. Merci de réessayer.';
-$lang['logout_successful'] = 'Déconnexion effectuée avec succès';
+$lang['logout_successful'] = 'Vous êtes déconnectés';
 
 // Account Changes
 $lang['update_successful'] = 'Compte utilisateur mis à jour avec succès';
@@ -220,19 +220,24 @@ $lang['header_attend_show'] = 'Assister à un Concert';
 // Home
 $lang['home_slide1_txt'] = 'Trouvez des Scènes pour jouer live ...';
 $lang['home_slide1_txt2'] = 'A vous de jouer !!';
-$lang['home_slide1_txt3'] = 'Inscrivez-vous dès maintenant';
+$lang['home_slide1_txt3'] = 'Inscrivez-vous!';
 $lang['home_slide2_txt'] = 'La musique c\'est en live';
 $lang['home_slide2_txt2'] = 'Le live c\'est sur scène';
 $lang['home_slide2_txt3'] = 'Les scènes sont sur b-onstage';
-$lang['home_slide2_txt4'] = 'Réservez une date pour jouer';
+$lang['home_slide2_txt4'] = 'Trouver une date';
+
+$lang['home_slide3_txt'] = 'N\'attendez plus d\'être découverts';
+$lang['home_slide3_txt2'] = 'Lancez vous avec b-onstage';
+$lang['home_slide3_txt3'] = 'Inscrivez vous!';
+
 $lang['home_title_concert'] = 'Les Concerts';
 $lang['home_title_stage'] = 'Les Scènes';
 $lang['home_title_artist'] = 'Les Artistes';
 $lang['home_seeall_shows'] = 'Voir tous les Concerts';
 $lang['home_seeall_stages'] = 'Voir toutes les Scènes';
 $lang['home_seeall_artist'] = 'Voir tous les Artistes';
-$lang['home_bottom_txt'] = 'Rechercher des dates pour jouer en live sur les Scènes <br />b-onstage.';
-$lang['home_bottom_txt2'] = 'Rejoignez b-onstage, le réseau qui met en relation les Artistes et les Scènes.';
+$lang['home_bottom_txt'] = 'Rechercher des dates pour jouer sur Scènes.';
+$lang['home_bottom_txt2'] = 'L\'inscription est gratuite. </br> Rejoignez b-onstage pour vous connecter aux Scènes.';
 
 
 // About us
