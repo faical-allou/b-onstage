@@ -2,29 +2,88 @@
 <!--slider-->	
 <div id="wrap-slider" class="mb-50 bs-black">
 	<div id="slider" class="royalSlider rsBlack">
+
+	<!--slide3-->
+		<div class="rsContent slide3">
+			<div class="bContainer ui-corner-all p-20">		
+				<div class="rsABlock fs-42 grey" data-move-effect="top" data-move-offset="500" data-speed="1000"><?php echo lang("home_slide3_txt") ?></div>
+				<div class="rsABlock fs-42 grey mb-20" data-move-effect="right" data-move-offset="500"  data-delay="1000" data-speed="1000"><?php echo lang("home_slide3_txt2") ?></div>				
+				<div class="rsABlock" data-move-effect="fade" data-delay="2000" data-speed="500"><a href="<?=site_url('signup')?>" class="ui-purple rsButton" style="font-size:1.6em;"><?php echo lang("home_slide3_txt3") ?></a></div>
+			</div>
+			<img class="rsABlock" data-move-effect="fade" data-delay="0000" src="/img/slide/img-slide-3.jpg" data-rsw="792" data-rsh="440">
+		</div>
+
 		<!--slide1-->
 		<div class="rsContent slide1">
 			<div class="bContainer ui-corner-all p-20">	
-				<div class="rsABlock fs-42 grey" data-move-effect="left" data-move-offset="500" data-easing="easeOutBack" data-speed="1000"><?php echo lang("home_slide1_txt") ?></div>				
-				<div class="rsABlock fs-32 grey mb-20" data-move-effect="right" data-move-offset="500" data-easing="easeOutBack" data-delay="500" data-speed="500"><?php echo lang("home_slide1_txt2") ?></div>				
-				<div class="rsABlock" data-move-effect="none" data-delay="1000" data-speed="500"><a href="<?=site_url('signup_choice')?>" class="ui-purple rsButton" style="font-size:1.6em;"><?php echo lang("home_slide1_txt3") ?></a></div>
+				<div class="rsABlock fs-42 grey" data-move-effect="left" data-move-offset="500"  data-speed="1000"><?php echo lang("home_slide1_txt") ?></div>				
+				<div class="rsABlock fs-32 grey mb-20" data-move-effect="right" data-move-offset="500" data-delay="500" data-speed="500"><?php echo lang("home_slide1_txt2") ?></div>				
+				<div class="rsABlock" data-move-effect="fade" data-delay="1000" data-speed="500"><a href="<?=site_url('signup')?>" class="ui-purple rsButton" style="font-size:1.6em;"><?php echo lang("home_slide1_txt3") ?></a></div>
 			</div>
-			<img class="rsABlock" data-move-effect="none" data-delay="1000" src="/img/slide/img-slide-1.png" data-rsw="792" data-rsh="440">
+			<img class="rsABlock" data-move-effect="fade" data-delay="1000" src="/img/slide/img-slide-1.png" data-rsw="792" data-rsh="440">
 		</div>
 		<!--slide2-->
 		<div class="rsContent slide2">
 			<div class="bContainer">	
-				<div class="rsABlock fs-32 white" data-move-effect="top" data-move-offset="500" data-easing="easeOutBack" data-speed="1000"><?php echo lang("home_slide2_txt") ?></div>
-				<div class="rsABlock fs-32 white" data-move-effect="right" data-move-offset="500" data-easing="easeOutBack" data-delay="1000" data-speed="1000"><?php echo lang("home_slide2_txt2") ?></div>				
-				<div class="rsABlock fs-32 white mb-20" data-move-effect="left" data-move-offset="300" data-easing="easeOutBack" data-delay="1000" data-speed="500"><?php echo lang("home_slide2_txt3") ?></div>				
-				<div class="rsABlock" data-move-effect="none" data-delay="1500" data-speed="500"><a href="<?=site_url('concerts')?>" class="ui-dark rsButton" style="font-size:1.6em;"><?php echo lang("home_slide2_txt4") ?></a></div>
+				<div class="rsABlock fs-32 white" data-move-effect="right" data-move-offset="500"  data-speed="1000"><?php echo lang("home_slide2_txt") ?></div>
+				<div class="rsABlock fs-32 white" data-move-effect="right" data-move-offset="500"  data-speed="1000"><?php echo lang("home_slide2_txt2") ?></div>				
+				<div class="rsABlock fs-32 white mb-20" data-move-effect="right" data-move-offset="300" data-delay="1000" data-speed="500"><?php echo lang("home_slide2_txt3") ?></div>				
+				<div class="rsABlock" data-move-effect="fade" data-delay="1500" data-speed="500"><a href="<?=site_url('concerts')?>" class="ui-dark rsButton" style="font-size:1.6em;"><?php echo lang("home_slide2_txt4") ?></a></div>
 			</div>
-			<img class="rsABlock" data-move-effect="none" data-delay="1500" src="/img/slide/img-slide-2.jpg" data-rsw="900" data-rsh="500">
+			<img class="rsABlock" data-move-effect="fade" data-delay="1500" src="/img/slide/img-slide-2.jpg" data-rsw="900" data-rsh="500">
 		</div>
+	
 	</div>	
 </div>	
 
 <div class="container_12 mb-50">
+
+	<!--last 5 artist-->
+	<div class="grid_4 home-bloc ui-corner-all bs-black">
+		<?=heading($title_artist, 2, 'class="home-title title"')?>		
+		<ul class="home-list">
+			<?php foreach($artists as $artist){ ?>				
+				<li>					
+					<div class="clearfix">
+						<div class="left"><?=img(array('src' => $artist['avatar'], 'width' => '64px'))?></div>
+						<div class="left ml-10">
+							<div>
+								<a href="<?=$artist['link']?>" class="fs-16 title grey"><?=$artist['name']?></a>
+							</div>
+							<p class="fs-12 grey bold"><span class="icon-location mr-5" aria-hidden="true"></span><?=$artist['location']?></p>
+						</div>
+					</div>					
+				</li>
+			<?php } ?>
+		</ul>		
+		<div class="p-20 ta-r">
+			<a href="<?=site_url('artists')?>" class="home-list-link"><?php echo lang("home_seeall_artist") ?></a>
+		</div>
+	</div>
+	
+	
+	<!--last 5 stages-->
+	<div class="grid_4 home-bloc ui-corner-all bs-black">
+		<?=heading($title_stage, 2, 'class="home-title title"')?>		
+		<ul class="home-list">
+			<?php foreach($stages as $stage){ ?>				
+				<li>					
+					<div class="clearfix">
+						<div class="left"><?=img(array('src' => $stage['avatar'], 'width' => '64px'))?></div>
+						<div class="left ml-10">
+							<div>
+								<a href="<?=$stage['link']?>" class="title fs-16 grey"><?=$stage['name']?></a>
+							</div>
+							<p class="fs-12 grey bold"><span class="icon-location mr-5" aria-hidden="true"></span><?=$stage['location']?></p>
+						</div>
+					</div>					
+				</li>
+			<?php } ?>
+		</ul>		
+		<div class="p-20 ta-c">
+			<a href="<?=site_url('stages')?>" class="home-list-link"><?php echo lang("home_seeall_stages") ?></a>
+		</div>
+	</div>	
 
 		
 </div>
