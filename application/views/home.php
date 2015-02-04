@@ -39,7 +39,7 @@
 <div class="container_12 mb-50">
 
 	<!--last 5 artist-->
-	<div class="grid_4 home-bloc ui-corner-all bs-black">
+	<div class="grid_6 home-bloc ui-corner-all bs-black">
 		<?=heading($title_artist, 2, 'class="home-title title"')?>		
 		<ul class="home-list">
 			<?php foreach($artists as $artist){ ?>				
@@ -63,7 +63,7 @@
 	
 	
 	<!--last 5 stages-->
-	<div class="grid_4 home-bloc ui-corner-all bs-black">
+	<div class="grid_6 home-bloc ui-corner-all bs-black">
 		<?=heading($title_stage, 2, 'class="home-title title"')?>		
 		<ul class="home-list">
 			<?php foreach($stages as $stage){ ?>				
