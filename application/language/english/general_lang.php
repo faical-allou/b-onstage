@@ -271,22 +271,17 @@ $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
 			</ul>';
 $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 				<li><p>We give you access to an online reservation platform to check the availabilities and book a date for a Concert.</p></li>			
-				<li><p>On b-onstage.com you can use our search engine to check the availabilities at certain date in a certain city.</p></li>
-				<li><p>Send a reservation request to organize a Concert to the chosen Stage.</p></li>
-				<li><p>We will let you know if you are selected.</p></li>	
-				<li class="nb"><p><strong>NB :</strong> Stages might receive a lot of requests. Complete your profile and be patient, it can take time before you are selected.</p></li>
-				<li><p>To finalize your reservation, we will have to pay the booking fee.</p></li>
+				<li><p>Here you can use our search engine to check the availabilities for certain dates in a chosen city. When your choice is done, send a reservation request.We will let you know if you are selected.</p></li>
+				<li class="nb"><p><strong>Note :</strong> Stages might receive a lot of requests. Complete your profile and be patient, it can take time before you are selected.</p></li>
+				<li><p>To finalize your reservation, you will have to pay the booking fee.</p></li>
 				<li class="nb">
-					<p><strong>NB :</strong> The booking fees are mostly there to make sure the Artists show up and to give the Stage owner some guarantee.</p>
-					<p>This is also to avoid having troublemakers causing damages.</p>					
+					<p><strong>Note :</strong> The booking fees are mostly there to make sure the Artists show up and to give the Stage owner some guarantee. This is also to avoid having troublemakers causing damages.</p>
 				</li>
-				<li><p>Once the payment is made, the reservation is finalized and you will be notified.</p></li>
-				<li><p>The date you booked will then appear as a concert to the public.</p></li>
-				<li><p>In order to help you, we have drafted a contract Artist/Stage that we can forward you upon request.</p></li>
-				<li><p>This contract will provide the legal framework for the concert. mybandonstage is only an intermediary in this transaction.</p></li>
+				<li><p>Once the payment is made, the reservation is finalized and you will be notified. The date you booked will then appear as a concert to the public.</p></li>
+				<li><p>In order to help you, we have drafted a contract Artist/Stage that we can forward you upon request. This contract will provide the legal framework for the concert. mybandonstage is only an intermediary in this transaction.</p></li>
 				<li><p>You only have to show up few hours before and the rest is up to you...</p></li>	
 				<li><p>If you want to cancel, you can do it for free as long as the payment is not made.</p></li>
-				<li class="nb"><p>NB : In case of “No-Show”, without notice at least 72h before, we reserve the right to display “No-Show” on your profile.</p></li>
+				<li class="nb"><p>Note : In case of “No-Show”, without notice at least 72h before, we reserve the right to display “No-Show” on your profile.</p></li>
 				<li>
 					<p>After payment you can cancel with the following restrictions:</p>
 					<ul class="sub-about-list">
@@ -303,6 +298,7 @@ $lang['footer_legal'] = 'Disclaimer';
 $lang['footer_legal_link1'] = 'General Terms and Conditions';
 $lang['footer_legal_link2'] = 'Legal Disclaimer';
 $lang['footer_copyright'] = 'Copyright &copy; 2013 b-onstage. All right reserved.';
+$lang['footer_madein'] = 'Proudly made and operating in Berlin and Paris';
 
 
 // Contact us		
