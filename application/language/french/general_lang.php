@@ -632,22 +632,22 @@ $lang['forgot_txt'] = 'Merci d’entrer votre email pour qu’on vous envoie un 
 // signup artist
 $lang['signup_choice_link1'] = 'Je m\'inscris en tant qu\'Artiste';
 $lang['signup_choice_link2'] = 'Je m\'inscris en tant que Scène';
-$lang['signup_header'] = 'Créez un compte';
-$lang['signup_txt1'] = '<p class="grey fs-16 title ts-white">Faites-vous connaitre à travers le réseau b-onstage.</p>
-			<p class="grey fs-16 title ts-white">Gérez votre profil.</p>							
-			<p class="grey fs-16 title ts-white">Ajoutez photos, vidéos, contenu...</p>';
-$lang['signup_txt2'] = '<p class="grey fs-16 title ts-white">Réservez des Dates et organisez vos Concerts.</p>							
-			<p class="grey fs-16 title ts-white">Gérez vos réservations grâce aux notifications sur votre profil.</p>	
-			<p class="grey fs-16 title ts-white">Jouez votre musique live sur les Scènes b-onstage ...</p>	';
-$lang['signup_form_header'] = 'Je m\'inscris en tant qu\'Artiste';
+$lang['signup_header'] = 'Créez votre compte en 3 étapes';
+$lang['signup_txt1'] = '<p class="grey fs-24 title ts-white">Plus de concerts veut dire:</p>
+			<p class="grey fs-16 title ts-white">Plus de visibilité et plus de fans!</p>							
+			<p class="grey fs-16 title ts-white">Une relation plus proche avec vos fans!</p>';
+$lang['signup_txt2'] = '<p class="grey fs-24 title ts-white">Bientôt vous pourrez:</p>							
+			<p class="grey fs-16 title ts-white">Réserver des dates et gérez vos réservations.</p>	
+			<p class="grey fs-16 title ts-white">Jouer votre musique live sur les Scènes b-onstage !</p>	';
+$lang['signup_form_header'] = 'Dites-nous en plus sur vous';
 $lang['signup_form_artist_name'] = 'Nom d\'Artiste';
 $lang['signup_form_accept'] = 'J\'accepte les '.anchor(site_url('terms_of_services'),'Conditions générales d\'utilisation',array('class'=>'purple')).' de b-onstage';
 $lang['signup_form_next'] = 'Etape suivante';
-$lang['signup_form_title1'] = 'Saisir votre nom d\'artiste';
-$lang['signup_form_title2'] = 'Vous pouvez utiliser des lettres et des chiffres mais pas d\'espace ni de caractères spéciaux.';
+$lang['signup_form_title1'] = 'C\'est sous ce nom la que vos fans vous trouveront';
+$lang['signup_form_title2'] = 'C\'est pour votre page sur b-onstage; utilisez des lettres et des chiffres mais pas d\'espace ni de caractères spéciaux.';
 $lang['signup_form_title3'] = 'L\'adresse e-mail doit être valide et sera votre identifiant de connexion.';
 $lang['signup_form_title4'] = 'Utilisez au moins sept caractères.';
-$lang['signup_form_title5'] = 'Confirmez votre mot de passe précedemment saisi.';
+$lang['signup_form_title5'] = 'Confirmez le mot de passe saisi au-dessus.';
 $lang['signup_active_txt'] = '<p>Vous allez recevoir un mail de confirmation dans quelques minutes. Suivez-en les informations pour valider votre compte.</p>
 		<p>Si vous ne le recevez pas, vérifiez votre courrier indésirable (ou Spam).</p>
 		<p>Sinon, contactez-nous à l\'adresse support@b-onstage.com, en detaillant le problème que vous rencontrez.</p>		';

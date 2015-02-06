@@ -20,10 +20,10 @@ $lang['forgot_password_email2_txt1'] 		 = 'New Password for';
 $lang['forgot_password_email2_txt2'] 		 = 'Your password has been reset to';
 
 // Activation
-$lang['activate_successful'] 		  	     = 'Account Activated';
+$lang['activate_successful'] 		  	     = 'You\re account is active, go get the gigs!';
 $lang['activate_unsuccessful'] 		 	     = 'Unable to Activate Account';
-$lang['deactivate_successful'] 		  	     = 'Account De-Activated';
-$lang['deactivate_unsuccessful'] 	  	     = 'Unable to De-Activate Account';
+$lang['deactivate_successful'] 		  	     = 'Account De-activated';
+$lang['deactivate_unsuccessful'] 	  	     = 'Unable to De-activate Account';
 $lang['activation_email_successful'] 	  	 = 'Activation Email Sent';
 $lang['activation_email_unsuccessful']   	 = 'Unable to Send Activation Email';
 
@@ -42,7 +42,7 @@ $lang['delete_unsuccessful'] 		 	     = 'Unable to Delete User';
 //labels
 $lang['first_name'] = 'First name';
 $lang['last_name'] = 'Last name';
-$lang['username'] = 'Username';
+$lang['username'] = 'Your nickname for b-onstage';
 $lang['identity'] = 'Email'; 
 $lang['password'] = 'Password';
 $lang['password_confirm'] = 'Confirm password';
@@ -55,7 +55,7 @@ $lang['terms_of_services'] = 'In order to use our services, you must agree to b-
 $lang['signin_title'] = 'Login';
 $lang['signup_title'] = 'Create account';
 $lang['signup_activate_title'] = 'Activate your account';
-$lang['signup_terminate_title'] = 'Terminate';
+$lang['signup_terminate_title'] = 'Enjoy!';
 
 //Notifications
 $lang['notify_account_created'] = 'Your registration is now validated';
@@ -699,25 +699,26 @@ $lang['forgot_txt'] = 'Please enter your email address so we can send you an ema
 // signup_choice		
 $lang['signup_choice_link1'] ='Sign up as Artist';
 $lang['signup_choice_link2'] ='Sign up as Stage';
-$lang['signup_header'] ='Sign up ';
-$lang['signup_txt1'] ='<p class="grey fs-16 title ts-white">Increase your fan base with b-onstage.</p>	
-	<p class="grey fs-16 title ts-white">Create your profile.</p>	
-	<p class="grey fs-16 title ts-white">Add photos, video and links...</p>';
-$lang['signup_txt2'] ='<p class="grey fs-16 title ts-white">Request a Date and organize Concerts.</p>	
-	<p class="grey fs-16 title ts-white">Manage your requests.</p>	
-	<p class="grey fs-16 title ts-white">Play live on our stages ...</p>';
-$lang['signup_form_header'] ='Register as Artist';
-$lang['signup_form_artist_name'] ='Name';
+$lang['signup_header'] ='Sign up in 3 easy steps';
+$lang['signup_txt1'] ='<p class="grey fs-24 title ts-white">More concerts means:</p>	
+	<p class="grey fs-16 title ts-white">More visbility and more fans!</p>	
+	<p class="grey fs-16 title ts-white">More engagement with your fans!</p>';
+$lang['signup_txt2'] ='<p class="grey fs-24 title ts-white">Soon you\'ll be able to: </p>	
+	<p class="grey fs-16 title ts-white">Request a date and manage your reservations.</p>	
+	<p class="grey fs-16 title ts-white">Play live on our Stages!</p>';
+$lang['signup_form_header'] ='Tell us who you are';
+$lang['signup_form_artist_name'] ='Your original Brand Name';
 $lang['signup_form_accept'] ='I accept '.anchor(site_url('terms_of_services'),'the General Terms and Conditions',array('class'=>'purple'));
-$lang['signup_form_next'] ='Next';
-$lang['signup_form_title1'] ='username';
-$lang['signup_form_title2'] ='No spaces and no symbols';
-$lang['signup_form_title3'] ='The email address must be verified';
+$lang['signup_form_next'] ='Next Step';
+$lang['signup_form_title1'] ='This is how you will appear on the website';
+$lang['signup_form_title2'] ='No spaces and no symbols please, it will be used to create your page';
+$lang['signup_form_title3'] ='We\'ll send you an email to make sure you\'re real';
 $lang['signup_form_title4'] ='Use at least seven characters';
-$lang['signup_form_title5'] ='Confirm your password  ';
-$lang['signup_active_txt'] ='<p>You will receive soon an email with instruction to validate your account.</p>	
+$lang['signup_form_title5'] ='Confirm your password ';
+$lang['signup_active_txt'] ='<p>You will receive an email with instruction to validate your account.</p>	
 	<p>If it doesn’t appear in your inbox please check your spam folder.</p>	
-	<p> In case of problem, please contact support@b-onstage.com </p>';
+	<p>If you have a problem, please contact support@b-onstage.com </p>
+	<p>Only one click away! </p>';
 $lang['signup_active_email_subj'] ='Activate your account    ';
 $lang['signup_active_email_txt1'] ='<h1 style="font-size:22px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">To validate your account b-onstage</h1>	
 	<br />	
