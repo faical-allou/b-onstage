@@ -22,7 +22,7 @@
                                 <dd>
                                     <a href="javascript:void(0);" onclick="window.open('<?=FACEBOOK_LINK?>', '_BLANK');"><span aria-hidden="true" class="icon-facebook-2 fs-28 mr-5"></span></a>
                                     <a href="javascript:void(0);" onclick="window.open('<?=TWITTER_LINK?>', '_BLANK');"><span aria-hidden="true" class="icon-twitter-2 fs-28 mr-5"></span></a>
-                                    <a href="javascript:void(0);" onclick="window.open('<?=GOOGLE_PLUS_LINK?>', '_BLANK');"><span aria-hidden="true" class="icon-google-plus fs-28 mr-5"></span></a>							
+<!--                                    <a href="javascript:void(0);" onclick="window.open('<?=GOOGLE_PLUS_LINK?>', '_BLANK');"><span aria-hidden="true" class="icon-google-plus fs-28 mr-5"></span></a>		-->					
                                 </dd>
                             </dl>	
                         </div>
@@ -46,9 +46,13 @@
 			</div>			
 			<div id="footer-bottom">
 				<div class="container_12">			
-					<div class="grid_12">
-						<p class="fs-12 bold white"><?php echo lang("footer_copyright") ?></p>					
+					<div class="grid_6">
+						<p class="fs-12 bold white"><?php echo lang("footer_copyright") ?></p>						 					
 					</div>
+					<div class="grid_6 ta-r">
+						<p class="fs-12 bold white"><?php echo lang("footer_madein") ?></p>
+					</div>
+					
 				</div>
 			</div>
 		</footer>

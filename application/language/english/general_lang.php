@@ -20,10 +20,10 @@ $lang['forgot_password_email2_txt1'] 		 = 'New Password for';
 $lang['forgot_password_email2_txt2'] 		 = 'Your password has been reset to';
 
 // Activation
-$lang['activate_successful'] 		  	     = 'Account Activated';
+$lang['activate_successful'] 		  	     = 'You\re account is active, go get the gigs!';
 $lang['activate_unsuccessful'] 		 	     = 'Unable to Activate Account';
-$lang['deactivate_successful'] 		  	     = 'Account De-Activated';
-$lang['deactivate_unsuccessful'] 	  	     = 'Unable to De-Activate Account';
+$lang['deactivate_successful'] 		  	     = 'Account De-activated';
+$lang['deactivate_unsuccessful'] 	  	     = 'Unable to De-activate Account';
 $lang['activation_email_successful'] 	  	 = 'Activation Email Sent';
 $lang['activation_email_unsuccessful']   	 = 'Unable to Send Activation Email';
 
@@ -42,7 +42,7 @@ $lang['delete_unsuccessful'] 		 	     = 'Unable to Delete User';
 //labels
 $lang['first_name'] = 'First name';
 $lang['last_name'] = 'Last name';
-$lang['username'] = 'Username';
+$lang['username'] = 'Your nickname for b-onstage';
 $lang['identity'] = 'Email'; 
 $lang['password'] = 'Password';
 $lang['password_confirm'] = 'Confirm password';
@@ -55,7 +55,7 @@ $lang['terms_of_services'] = 'In order to use our services, you must agree to b-
 $lang['signin_title'] = 'Login';
 $lang['signup_title'] = 'Create account';
 $lang['signup_activate_title'] = 'Activate your account';
-$lang['signup_terminate_title'] = 'Terminate';
+$lang['signup_terminate_title'] = 'Enjoy!';
 
 //Notifications
 $lang['notify_account_created'] = 'Your registration is now validated';
@@ -118,7 +118,7 @@ $lang['artists'] = 'Artists';
 $lang['artist'] = 'Artist';
 $lang['scenes'] = 'Stages';
 $lang['scene'] = 'Stage';
-$lang['shows'] = 'Shows';
+$lang['shows'] = 'Concerts';
 $lang['signup'] = 'Signup';
 $lang['login'] = 'Login';
 $lang['logout'] = 'Logout';
@@ -130,7 +130,7 @@ $lang['to2'] = 'to';
 $lang['at'] = 'at';
 $lang['de'] = 'from';
 $lang['submit'] = 'Submit';
-$lang['become_member'] = 'Become member';
+$lang['become_member'] = 'Become a Member';
 $lang['clickhere'] = 'click-here';
 $lang['modify'] = 'Modify';
 $lang['address'] = 'Address';
@@ -202,11 +202,11 @@ $lang['or'] = 'or';
 $lang['otherinfos'] = 'Other infos';
 $lang['originaire_de'] = 'Originally from';
 $lang['band_members'] = 'Members of the band';
-$lang['choose_city'] = 'Choose city(ies)';
+$lang['choose_city'] = 'City';
 
 
 // Header
-$lang['header_book_date'] = 'Request a Reservation';
+$lang['header_book_date'] = 'Make a Reservation';
 $lang['header_aboutus'] = 'About';
 $lang['header_seeall_notices'] = 'Notifications';
 $lang['header_myaccount'] = 'My Account';
@@ -220,20 +220,25 @@ $lang['header_attend_show'] = 'Attend a Concert';
 
 // Home		
 $lang['home_slide1_txt'] = 'Find Stages to play live ...';
-$lang['home_slide1_txt2'] = 'The stage is yours!';
-$lang['home_slide1_txt3'] = 'Sign up now';
-$lang['home_slide2_txt'] = 'Music is live';
-$lang['home_slide2_txt2'] = 'Live is on stage';
+$lang['home_slide1_txt2'] = 'The Stage is Yours!';
+$lang['home_slide1_txt3'] = 'Sign up for free!';
+$lang['home_slide2_txt'] = 'Music is Live';
+$lang['home_slide2_txt2'] = 'Live is on Stage';
 $lang['home_slide2_txt3'] = 'Stages are on b-onstage';
-$lang['home_slide2_txt4'] = 'Request a date to play';
+$lang['home_slide2_txt4'] = 'Request a date';
+
+$lang['home_slide3_txt'] = 'Don\'t wait to be discovered';
+$lang['home_slide3_txt2'] = 'Launch your career here';
+$lang['home_slide3_txt3'] = 'Join us Now!';
+
 $lang['home_title_concert'] = 'Concerts';
 $lang['home_title_stage'] = 'Stages';
 $lang['home_title_artist'] = 'Artists';
 $lang['home_seeall_shows'] = 'See all Concerts';
 $lang['home_seeall_stages'] = 'See all Stages';
 $lang['home_seeall_artist'] = 'See all Artists';
-$lang['home_bottom_txt'] = 'Check availabilities to book a Stage and play live';
-$lang['home_bottom_txt2'] = 'Sign up to b-onstage, the open network of Stages and Artists';
+$lang['home_bottom_txt'] = 'Check our Stages\' availability';
+$lang['home_bottom_txt2'] = 'Join the community </br> Sign up for free now!';
 
 
 // About us
@@ -242,7 +247,7 @@ $lang['aboutus_link_whoweare'] = 'Who are we?';
 $lang['aboutus_link_howitworks'] = 'How it works';
 $lang['aboutus_header_aboutus'] = 'Why b-onstage?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>Because of the heavy downloading brought by the Internet, <strong>, links between Artists and the public have been broken.</strong></p></li>
+				<li><p>Because of the heavy downloading brought by the Internet, <strong>, links between Artists and the public were broken.</strong></p></li>
 				<li><p>Because the music industry is in crisis and because the records sales <strong>are not enough anymore.</strong></p></li>
 				<li><p>Because music is not only a partition but also a universe to share with others.</p></li>
 				<li><p>Because music has always been a unique relation with the public and because it has to stay as such.</p></li>
@@ -250,7 +255,7 @@ $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
 			</ul>';
 $lang['aboutus_header2_aboutus'] = 'And now?';
 $lang['aboutus_txt2_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>It is high time, Internet is put to use by the Artists.</p></li>
+				<li><p>It is high time, Internet is put to good use by the Artists.</p></li>
 				<li><p>It is high time bands meet their public.</p></li>
 			</ul>';
 $lang['aboutus_header3_aboutus'] = 'Sign-up';
@@ -266,22 +271,17 @@ $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
 			</ul>';
 $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 				<li><p>We give you access to an online reservation platform to check the availabilities and book a date for a Concert.</p></li>			
-				<li><p>On b-onstage.com you can use our search engine to check the availabilities at certain date in a certain city.</p></li>
-				<li><p>Send a reservation request to organize a Concert to the chosen Stage.</p></li>
-				<li><p>We will let you know if you are selected.</p></li>	
-				<li class="nb"><p><strong>NB :</strong> Stages might receive a lot of requests. Complete your profile and be patient, it can take time before you are selected.</p></li>
-				<li><p>To finalize your reservation, we will have to pay the booking fee.</p></li>
+				<li><p>Here you can use our search engine to check the availabilities for certain dates in a chosen city. When your choice is done, send a reservation request.We will let you know if you are selected.</p></li>
+				<li class="nb"><p><strong>Note :</strong> Stages might receive a lot of requests. Complete your profile and be patient, it can take time before you are selected.</p></li>
+				<li><p>To finalize your reservation, you will have to pay the booking fee.</p></li>
 				<li class="nb">
-					<p><strong>NB :</strong> The booking fees are mostly there to make sure the Artists show up and to give the Stage owner some guarantee.</p>
-					<p>This is also to avoid having troublemakers causing damages.</p>					
+					<p><strong>Note :</strong> The booking fees are mostly there to make sure the Artists show up and to give the Stage owner some guarantee. This is also to avoid having troublemakers causing damages.</p>
 				</li>
-				<li><p>Once the payment is made, the reservation is finalized and you will be notified.</p></li>
-				<li><p>The date you booked will then appear as a concert to the public.</p></li>
-				<li><p>In order to help you, we have drafted a contract Artist/Stage that we can forward you upon request.</p></li>
-				<li><p>This contract will provide the legal framework for the concert. mybandonstage is only an intermediary in this transaction.</p></li>
+				<li><p>Once the payment is made, the reservation is finalized and you will be notified. The date you booked will then appear as a concert to the public.</p></li>
+				<li><p>In order to help you, we have drafted a contract Artist/Stage that we can forward you upon request. This contract will provide the legal framework for the concert. mybandonstage is only an intermediary in this transaction.</p></li>
 				<li><p>You only have to show up few hours before and the rest is up to you...</p></li>	
 				<li><p>If you want to cancel, you can do it for free as long as the payment is not made.</p></li>
-				<li class="nb"><p>NB : In case of “No-Show”, without notice at least 72h before, we reserve the right to display “No-Show” on your profile.</p></li>
+				<li class="nb"><p>Note : In case of “No-Show”, without notice at least 72h before, we reserve the right to display “No-Show” on your profile.</p></li>
 				<li>
 					<p>After payment you can cancel with the following restrictions:</p>
 					<ul class="sub-about-list">
@@ -298,6 +298,7 @@ $lang['footer_legal'] = 'Disclaimer';
 $lang['footer_legal_link1'] = 'General Terms and Conditions';
 $lang['footer_legal_link2'] = 'Legal Disclaimer';
 $lang['footer_copyright'] = 'Copyright &copy; 2013 b-onstage. All right reserved.';
+$lang['footer_madein'] = 'Proudly made and operating in Berlin and Paris';
 
 
 // Contact us		
@@ -694,25 +695,26 @@ $lang['forgot_txt'] = 'Please enter your email address so we can send you an ema
 // signup_choice		
 $lang['signup_choice_link1'] ='Sign up as Artist';
 $lang['signup_choice_link2'] ='Sign up as Stage';
-$lang['signup_header'] ='Sign up ';
-$lang['signup_txt1'] ='<p class="grey fs-16 title ts-white">Increase your fan base with b-onstage.</p>	
-	<p class="grey fs-16 title ts-white">Create your profile.</p>	
-	<p class="grey fs-16 title ts-white">Add photos, video and links...</p>';
-$lang['signup_txt2'] ='<p class="grey fs-16 title ts-white">Request a Date and organize Concerts.</p>	
-	<p class="grey fs-16 title ts-white">Manage your requests.</p>	
-	<p class="grey fs-16 title ts-white">Play live on our stages ...</p>';
-$lang['signup_form_header'] ='Register as Artist';
-$lang['signup_form_artist_name'] ='Name';
+$lang['signup_header'] ='Sign up in 3 easy steps';
+$lang['signup_txt1'] ='<p class="grey fs-24 title ts-white">More concerts means:</p>	
+	<p class="grey fs-16 title ts-white">More visbility and more fans!</p>	
+	<p class="grey fs-16 title ts-white">More engagement with your fans!</p>';
+$lang['signup_txt2'] ='<p class="grey fs-24 title ts-white">Soon you\'ll be able to: </p>	
+	<p class="grey fs-16 title ts-white">Request a date and manage your reservations.</p>	
+	<p class="grey fs-16 title ts-white">Play live on our Stages!</p>';
+$lang['signup_form_header'] ='Tell us who you are';
+$lang['signup_form_artist_name'] ='Your original Brand Name';
 $lang['signup_form_accept'] ='I accept '.anchor(site_url('terms_of_services'),'the General Terms and Conditions',array('class'=>'purple'));
-$lang['signup_form_next'] ='Next';
-$lang['signup_form_title1'] ='username';
-$lang['signup_form_title2'] ='No spaces and no symbols';
-$lang['signup_form_title3'] ='The email address must be verified';
+$lang['signup_form_next'] ='Next Step';
+$lang['signup_form_title1'] ='This is how you will appear on the website';
+$lang['signup_form_title2'] ='No spaces and no symbols please, it will be used to create your page';
+$lang['signup_form_title3'] ='We\'ll send you an email to make sure you\'re real';
 $lang['signup_form_title4'] ='Use at least seven characters';
-$lang['signup_form_title5'] ='Confirm your password  ';
-$lang['signup_active_txt'] ='<p>You will receive soon an email with instruction to validate your account.</p>	
+$lang['signup_form_title5'] ='Confirm your password ';
+$lang['signup_active_txt'] ='<p>You will receive an email with instruction to validate your account.</p>	
 	<p>If it doesn’t appear in your inbox please check your spam folder.</p>	
-	<p> In case of problem, please contact support@b-onstage.com </p>';
+	<p>If you have a problem, please contact support@b-onstage.com </p>
+	<p>Only one click away! </p>';
 $lang['signup_active_email_subj'] ='Activate your account    ';
 $lang['signup_active_email_txt1'] ='<h1 style="font-size:22px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">To validate your account b-onstage</h1>	
 	<br />	
@@ -891,8 +893,8 @@ $lang['users_page_modava'] = 'Modify the avatar';
 $lang['users_page_pic'] = 'Cover photo';
 $lang['users_page_ava'] = 'Profile photo';
 $lang['users_page_ison'] = 'is on';
-$lang['users_page_comwith'] = 'Communicate with';
-$lang['users_page_signup'] = 'sign up';
+$lang['users_page_comwith'] = 'To communicate with';
+$lang['users_page_signup'] = 'you need to sign in';
 $lang['users_page_menu1'] = 'Profile photo';
 $lang['users_page_menu2'] = 'Concerts';
 $lang['users_page_menu3'] = 'Sounds';

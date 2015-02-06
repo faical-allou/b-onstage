@@ -1,23 +1,23 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 // Account Creation
-$lang['account_creation_successful'] = 'Compte créé avec succès';
+$lang['account_creation_successful'] = 'Le compte est créé!';
 $lang['account_creation_unsuccessful'] = 'Impossible de créer le compte';
 $lang['account_creation_duplicate_email'] = 'Email déjà utilisé ou invalide';
 $lang['account_creation_duplicate_username'] = 'Nom d\'utilisateur déjà utilisé ou invalide';
 
 
 // Password
-$lang['password_change_successful'] = 'Le mot de passe a été changé avec succès';
+$lang['password_change_successful'] = 'Le mot de passe a été changé!';
 $lang['password_change_unsuccessful'] = 'Impossible de changer le mot de passe';
-$lang['forgot_password_successful'] = 'Mail de réinitialisation du mot de passe envoyé';
+$lang['forgot_password_successful'] = 'Mail de réinitialisation envoyé';
 $lang['forgot_password_unsuccessful'] = 'Impossible de réinitialiser le mot de passe';
 $lang['forgot_password_email1_subject'] = 'Vérification pour Mot de passe oublié';
-$lang['forgot_password_email1_txt1'] = 'Réinitialiser le mot de';
-$lang['forgot_password_email1_txt2'] = 'S\'il vous plaît cliquer sur ce lien pour';
-$lang['forgot_password_email1_txt3'] = 'Réinitialiser votre mot de passe';
+$lang['forgot_password_email1_txt1'] = 'Réinitialiser le mot de passe';
+$lang['forgot_password_email1_txt2'] = 'Cliquer sur ce lien pour';
+$lang['forgot_password_email1_txt3'] = 'réinitialiser votre mot de passe';
 $lang['forgot_password_email2_subject'] = 'Nouveau Mot de passe';
-$lang['forgot_password_email2_txt1'] = 'Nouveau Mot de passe de';
+$lang['forgot_password_email2_txt1'] = 'Nouveau Mot de passe';
 $lang['forgot_password_email2_txt2'] = 'Votre mot de passe a été réinitialisé à';
 
 // Activation
@@ -31,7 +31,7 @@ $lang['activation_email_unsuccessful'] = 'Impossible d\'envoyer le mail d\'activ
 // Login / Logout
 $lang['login_successful'] = 'Connecté avec succès';
 $lang['login_unsuccessful'] = 'Vos identifiants sont incorrects. Merci de réessayer.';
-$lang['logout_successful'] = 'Déconnexion effectuée avec succès';
+$lang['logout_successful'] = 'Vous êtes déconnectés';
 
 // Account Changes
 $lang['update_successful'] = 'Compte utilisateur mis à jour avec succès';
@@ -201,11 +201,11 @@ $lang['or'] = 'ou';
 $lang['otherinfos'] = 'Autres infos';
 $lang['originaire_de'] = 'Originaire de';
 $lang['band_members'] = 'Les membres du groupe';
-$lang['choose_city'] = 'Choisir ville(s)';
+$lang['choose_city'] = 'Ville';
 
 
 // Header
-$lang['header_book_date'] = 'Réserver date';
+$lang['header_book_date'] = 'Réserver une date';
 $lang['header_aboutus'] = 'A propos';
 $lang['header_seeall_notices'] = 'Voir toutes les notifications';
 $lang['header_myaccount'] = 'Mon compte';
@@ -220,19 +220,24 @@ $lang['header_attend_show'] = 'Assister à un Concert';
 // Home
 $lang['home_slide1_txt'] = 'Trouvez des Scènes pour jouer live ...';
 $lang['home_slide1_txt2'] = 'A vous de jouer !!';
-$lang['home_slide1_txt3'] = 'Inscrivez-vous dès maintenant';
+$lang['home_slide1_txt3'] = 'Inscrivez-vous!';
 $lang['home_slide2_txt'] = 'La musique c\'est en live';
 $lang['home_slide2_txt2'] = 'Le live c\'est sur scène';
 $lang['home_slide2_txt3'] = 'Les scènes sont sur b-onstage';
-$lang['home_slide2_txt4'] = 'Réservez une date pour jouer';
+$lang['home_slide2_txt4'] = 'Trouver une date';
+
+$lang['home_slide3_txt'] = 'N\'attendez plus d\'être découverts';
+$lang['home_slide3_txt2'] = 'Lancez vous avec b-onstage';
+$lang['home_slide3_txt3'] = 'Inscrivez vous!';
+
 $lang['home_title_concert'] = 'Les Concerts';
 $lang['home_title_stage'] = 'Les Scènes';
 $lang['home_title_artist'] = 'Les Artistes';
 $lang['home_seeall_shows'] = 'Voir tous les Concerts';
 $lang['home_seeall_stages'] = 'Voir toutes les Scènes';
 $lang['home_seeall_artist'] = 'Voir tous les Artistes';
-$lang['home_bottom_txt'] = 'Rechercher des dates pour jouer en live sur les Scènes <br />b-onstage.';
-$lang['home_bottom_txt2'] = 'Rejoignez b-onstage, le réseau qui met en relation les Artistes et les Scènes.';
+$lang['home_bottom_txt'] = 'Rechercher des dates pour jouer sur Scène.';
+$lang['home_bottom_txt2'] = 'L\'inscription est gratuite. </br> Connectez vous aux Scènes.';
 
 
 // About us
@@ -266,21 +271,17 @@ $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
 $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 				<li><p>Nous mettons gratuitement à votre disposition une plateforme de réservation en ligne permettant de vérifier la disponibilité d’une Scène et de la réserver pour vous y produire, faire votre Concert.</p></li>			
 				<li><p>Sur b-onstage vous utilisez notre outil de recherche pour trouvez les Scènes disponibles en fonction des dates et/ou des villes qui vous conviennent.</p></li>
-				<li><p>Envoyer une demande de réservation pour faire un Concert sur la Scène sélectionnée.</p></li>
-				<li><p>Nous vous notifierons une fois la réservation validée par la Scène.</p></li>	
-				<li class="nb"><p><strong>NB :</strong> Les Scènes sont susceptibles de recevoir un grand nombre de demandes de réservation. Complétez au mieux votre profil et soyez patients, cela peut prendre du temps avant que vous ne soyez sélectionnés par la Scène.</p></li>
+				<li><p>Envoyer une demande de réservation pour faire un Concert sur la Scène sélectionnée. Nous vous notifierons une fois la réservation validée par la Scène.</p></li>
+				<li class="nb"><p><strong>Note :</strong> Les Scènes sont susceptibles de recevoir un grand nombre de demandes de réservation. Complétez au mieux votre profil et soyez patients, cela peut prendre du temps avant que vous ne soyez sélectionnés par la Scène.</p></li>
 				<li><p>Pour valider complètement votre réservation, vous devrez procéder en ligne au paiement des frais de réservation.</p></li>
 				<li class="nb">
-					<p><strong>NB :</strong> Les frais de réservation permet surtout de garantir que les deux parties tiennent leurs engagements et que le Concert se déroulent dans les meilleurs conditions.</p>
-					<p>Cela évite également que des Artistes peu sérieux dégradent les relations avec les Scènes, et qu’il y ait de moins en moins de lieu et de date à votre disposition.</p>					
+					<p><strong>Note :</strong> Les frais de réservation permet surtout de garantir que les deux parties tiennent leurs engagements et que le Concert se déroulent dans les meilleurs conditions. Cela évite également que des Artistes peu sérieux dégradent les relations avec les Scènes, et qu’il y ait de moins en moins de lieu et de date à votre disposition.</p>
 				</li>
-				<li><p>A réception du paiement des frais de réservations, tels qu’indiqués sur la page de la Scène, la réservation est définitive et vous serez notifié.</p></li>
-				<li><p>Une fois réservé les détails de votre Concert s\'afficheront et seront visible par le public.</p></li>
-				<li><p>Afin de vous protéger, et de vous garantir les meilleures conditions, nous avons conçu des contrats Artistes/Scènes (accord de prestation) que nous pouvons mettre à disposition sur simple demande.</p></li>
-				<li><p>Nous vous invitons à signer un contrat Artiste(s)/Scène, qui est un contrat de prestation avec la Scène qui pourra vous être envoyé. Ce contrat établit le lien juridique entre la Scène et l’Artiste, la société Mybandonstage n’intervenant, s’agissant de l’exécution des prestations artistiques et de location de salle, que comme intermédiaire de mise en relation via le site b-onstage.</p></li>
+				<li><p>A réception du paiement des frais de réservations, tels qu’indiqués sur la page de la Scène, la réservation est définitive et vous serez notifié. Une fois réservé les détails de votre Concert s\'afficheront et seront visible par le public.</p></li>
+				<li><p>Afin de vous protéger, et de vous garantir les meilleures conditions, nous avons conçu des contrats Artistes/Scènes (accord de prestation) que nous pouvons mettre à disposition sur simple demande. Nous vous invitons à signer un contrat Artiste(s)/Scène, qui est un contrat de prestation avec la Scène qui pourra vous être envoyé. Ce contrat établit le lien juridique entre la Scène et l’Artiste, la société Mybandonstage n’intervenant, s’agissant de l’exécution des prestations artistiques et de location de salle, que comme intermédiaire de mise en relation via le site b-onstage.</p></li>
 				<li><p>Il vous suffit de vous présenter quelques heures avant le Concert pour vous préparer et la suite dépend de vous...</p></li>	
 				<li><p>Si vous voulez annuler, vous pouvez le faire sans conséquence tant que le paiement des frais de réservation n’a pas été réalisé.</p></li>
-				<li class="nb"><p>NB : Au cas où vous ne vous présentez pas le jour du Concert sans avoir annulé sur le site au moins 72 heures à l’avance, nous nous réservons le droit d’afficher le statut "No-Show" sur votre profil public.</p></li>
+				<li class="nb"><p>Note : Au cas où vous ne vous présentez pas le jour du Concert sans avoir annulé sur le site au moins 72 heures à l’avance, nous nous réservons le droit d’afficher le statut "No-Show" sur votre profil public.</p></li>
 				<li>
 					<p>Une fois payé, vous pouvez annuler jusqu’à :</p>
 					<ul class="sub-about-list">
@@ -298,6 +299,7 @@ $lang['footer_legal'] = 'Légal';
 $lang['footer_legal_link1'] = 'Conditions générales d\'utilisation';
 $lang['footer_legal_link2'] = 'Mentions légales';
 $lang['footer_copyright'] = 'Copyright &copy; 2013 b-onstage. Tous droits réservés.';
+$lang['footer_madein'] = 'Proudly made and operating in Berlin and Paris';
 
 
 // Contact us		
@@ -627,22 +629,22 @@ $lang['forgot_txt'] = 'Merci d’entrer votre email pour qu’on vous envoie un 
 // signup artist
 $lang['signup_choice_link1'] = 'Je m\'inscris en tant qu\'Artiste';
 $lang['signup_choice_link2'] = 'Je m\'inscris en tant que Scène';
-$lang['signup_header'] = 'Créez un compte';
-$lang['signup_txt1'] = '<p class="grey fs-16 title ts-white">Faites-vous connaitre à travers le réseau b-onstage.</p>
-			<p class="grey fs-16 title ts-white">Gérez votre profil.</p>							
-			<p class="grey fs-16 title ts-white">Ajoutez photos, vidéos, contenu...</p>';
-$lang['signup_txt2'] = '<p class="grey fs-16 title ts-white">Réservez des Dates et organisez vos Concerts.</p>							
-			<p class="grey fs-16 title ts-white">Gérez vos réservations grâce aux notifications sur votre profil.</p>	
-			<p class="grey fs-16 title ts-white">Jouez votre musique live sur les Scènes b-onstage ...</p>	';
-$lang['signup_form_header'] = 'Je m\'inscris en tant qu\'Artiste';
+$lang['signup_header'] = 'Créez votre compte en 3 étapes';
+$lang['signup_txt1'] = '<p class="grey fs-24 title ts-white">Plus de concerts veut dire:</p>
+			<p class="grey fs-16 title ts-white">Plus de visibilité et plus de fans!</p>							
+			<p class="grey fs-16 title ts-white">Une relation plus proche avec vos fans!</p>';
+$lang['signup_txt2'] = '<p class="grey fs-24 title ts-white">Bientôt vous pourrez:</p>							
+			<p class="grey fs-16 title ts-white">Réserver des dates et gérez vos réservations.</p>	
+			<p class="grey fs-16 title ts-white">Jouer votre musique live sur les Scènes b-onstage !</p>	';
+$lang['signup_form_header'] = 'Dites-nous en plus sur vous';
 $lang['signup_form_artist_name'] = 'Nom d\'Artiste';
 $lang['signup_form_accept'] = 'J\'accepte les '.anchor(site_url('terms_of_services'),'Conditions générales d\'utilisation',array('class'=>'purple')).' de b-onstage';
 $lang['signup_form_next'] = 'Etape suivante';
-$lang['signup_form_title1'] = 'Saisir votre nom d\'artiste';
-$lang['signup_form_title2'] = 'Vous pouvez utiliser des lettres et des chiffres mais pas d\'espace ni de caractères spéciaux.';
+$lang['signup_form_title1'] = 'C\'est sous ce nom la que vos fans vous trouveront';
+$lang['signup_form_title2'] = 'C\'est pour votre page sur b-onstage; utilisez des lettres et des chiffres mais pas d\'espace ni de caractères spéciaux.';
 $lang['signup_form_title3'] = 'L\'adresse e-mail doit être valide et sera votre identifiant de connexion.';
 $lang['signup_form_title4'] = 'Utilisez au moins sept caractères.';
-$lang['signup_form_title5'] = 'Confirmez votre mot de passe précedemment saisi.';
+$lang['signup_form_title5'] = 'Confirmez le mot de passe saisi au-dessus.';
 $lang['signup_active_txt'] = '<p>Vous allez recevoir un mail de confirmation dans quelques minutes. Suivez-en les informations pour valider votre compte.</p>
 		<p>Si vous ne le recevez pas, vérifiez votre courrier indésirable (ou Spam).</p>
 		<p>Sinon, contactez-nous à l\'adresse support@b-onstage.com, en detaillant le problème que vous rencontrez.</p>		';

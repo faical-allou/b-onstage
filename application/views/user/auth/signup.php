@@ -1,19 +1,24 @@
 <div class="container_12 mb-50">		
 	<!--description-->
 	<div class="grid_8">
-		<div class="clearfix mt-50">			
-			<div class="db left m-10">
-				<?=img(site_url('img/auth/icon-network.png'))?>
-			</div>	
-			<?php echo lang("signup_txt1") ?>			
-		</div>
-		<div class="sep"></div>
 		<div class="clearfix mt-50">
 			<div class="db left m-10">
+				</br>
 				<?=img(site_url('img/auth/icon-calendar.png'))?>
 			</div>
 			<?php echo lang("signup_txt2") ?>
 		</div>				
+
+		<div class="sep"></div>
+		
+		<div class="clearfix mt-50">			
+			<div class="db left m-10">
+				</br>
+				<?=img(site_url('img/auth/icon-network.png'))?>
+			</div>	
+			<?php echo lang("signup_txt1") ?>			
+		</div>
+
 	</div>
 	<!--form-->
 	<div class="grid_4 grey-box bs-black ui-corner-all">						
@@ -56,7 +61,7 @@
 				</div>
 			</div>
 			<!--submit-->
-			<div class="ta-r"><?=form_submit($submit)?></div>
+			<div class="ta-c"><?=form_submit($submit)?></div>
 			<?=form_close()?>
 		</div>	
 	</div>	

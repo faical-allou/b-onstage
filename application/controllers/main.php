@@ -98,8 +98,6 @@ class Main extends CI_Controller {
 
 		$artists = $this->artist_model->get_all('','','',5,1);
 
-		asort($artists['artists']);
-
 		foreach($artists['artists'] as $artist){
 
 			$data = array(

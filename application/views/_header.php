@@ -91,8 +91,8 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 					<?=anchor(base_url(), img(site_url('img/logo.png')), array('id' => 'logo', 'class' => 'left'))?>
 					<!--menu principal-->
 					<ul class="menu default left ml-30">
-						<li><?=anchor(base_url(), '<span aria-hidden="true" class="icon-home"></span>' , array('id' => 'menu-home'))?></li>
-						<li><?=anchor(site_url('concerts/oujouer'), lang("header_book_date") , array('id' => 'menu-concert'))?></li>
+<!--						<li><?=anchor(base_url(), '<span aria-hidden="true" class="icon-home"></span>' , array('id' => 'menu-home'))?></li>
+-->						<li><?=anchor(site_url('concerts/oujouer'), lang("header_book_date") , array('id' => 'menu-concert'))?></li>
 						<li><?=anchor(site_url('concerts/programmation'), lang("shows"), array('id' => 'menu-programmation'))?></li>
 						<li><?=anchor(site_url('stages'), lang("scenes"), array('id' => 'menu-stage'))?></li>
 						<li><?=anchor(site_url('artists'), lang("artists") , array('id' => 'menu-artist'))?></li>
