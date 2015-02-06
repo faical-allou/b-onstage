@@ -901,9 +901,9 @@ about, about us and contact
 }
 
 .about{padding:10px 20px 20px 20px;}
-.about-list{list-style-type: square;margin-left:20px;}
+.about-list{list-style-type: circle;margin-left:20px;}
 .about-list > li {color:#8e2c86;}
-.about-list > li.nb{border:1px solid #8e2c86;background-color:#f3e9f3;padding:0 10px;list-style:none;margin:0;}
+.about-list > li.nb{border:1px solid #605E66;background-color:#F6F2FF;padding:0 10px;list-style:none;margin:0;}
 .about-list > li > p{font-size:15px;color:#1a1a1a;}
 .sub-about-list{list-style-type:none;margin-left:20px;}
 .sub-about-list > li{font-size:15px;color:#1a1a1a;}
