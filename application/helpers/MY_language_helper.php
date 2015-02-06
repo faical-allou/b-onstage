@@ -11,7 +11,7 @@
 			$CI->session->set_userdata('language', $CI->input->get_post('hl'));
 			
 		if( ! $CI->session->userdata('language'))
-			$CI->session->set_userdata('language', 'french');
+			$CI->session->set_userdata('language', 'english');
 		
 		$CI->lang->load('general', $CI->session->userdata('language'));
 		$CI->lang->load('form_validation', $CI->session->userdata('language'));
