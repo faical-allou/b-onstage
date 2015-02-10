@@ -697,7 +697,7 @@ $lang['signup_choice_link1'] ='Sign up as Artist';
 $lang['signup_choice_link2'] ='Sign up as Stage';
 $lang['signup_header'] ='Sign up in 3 easy steps';
 $lang['signup_txt1'] ='<p class="grey fs-24 title ts-white">More concerts means:</p>	
-	<p class="grey fs-16 title ts-white">More visbility and more fans!</p>	
+	<p class="grey fs-16 title ts-white">More visibility and more fans!</p>	
 	<p class="grey fs-16 title ts-white">More engagement with your fans!</p>';
 $lang['signup_txt2'] ='<p class="grey fs-24 title ts-white">Soon you\'ll be able to: </p>	
 	<p class="grey fs-16 title ts-white">Request a date and manage your reservations.</p>	
