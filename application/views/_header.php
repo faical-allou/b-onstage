@@ -101,7 +101,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 					<!--account menu-->
 					<?php if(empty($user)) { ?>
 					<ul class="menu right">
-						<li><?=anchor(site_url('signup_choice'), lang("signup"), array('id' => 'menu-signup'))?></li>
+						<li><?=anchor(site_url('signup'), lang("signup"), array('id' => 'menu-signup'))?></li>
 						<li><?=anchor(site_url('login'), lang("login"), array('id' => 'menu-signin'))?></li>
                         <li><a href="/langswitch/switchLanguage/<?php echo $lang_switch_top_link ?>"><?php 
 							echo $lang_switch_top_txt ?></a></li>

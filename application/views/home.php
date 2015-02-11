@@ -100,7 +100,7 @@
 			<div class="p-20">
 				<?=img(array('src' => site_url('img/icons/home/network.png')))?>
 				<p class="fs-24 title white ta-c" style="height:70px"><?php echo lang("home_bottom_txt2") ?></p>
-				<a href="<?=site_url('signup_choice')?>" class="ui-dark action-home" style="font-size:1em;"><?php echo lang("become_member") ?></a>			
+				<a href="<?=site_url('signup')?>" class="ui-dark action-home" style="font-size:1em;"><?php echo lang("become_member") ?></a>			
 			</div>	
 		</div>
 	</div>
