@@ -82,3 +82,12 @@ ExpiresByType text/javascript           "access plus 2 months"
 
 </IfModule>
 AuthUserFile "/home/bonstage/.htpasswds/public_html/passwd"
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 78.110.60.230
+deny from 104.28.25.43
+deny from 217.23.8.124
