@@ -61,7 +61,10 @@
 				</div>
 			</div>
 			<!--submit-->
-			<div class="ta-c"><?=form_submit($submit)?></div>
+			<div class="ta-r">
+			<?=form_submit($submit)?>
+			<? mail("faical.allou@mybandonstage.com", "Notif b-onstage signup", $email['value'])?>
+			</div>
 			<?=form_close()?>
 		</div>	
 	</div>	
