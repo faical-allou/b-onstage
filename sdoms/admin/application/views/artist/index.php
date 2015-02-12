@@ -38,6 +38,9 @@
 						<td><?=$artist['city']?></td>
 						<!--country-->
 						<td><?=$artist['country']?></td>
+						<!--created on-->
+						<td><?=$artist['created_on']?></td>
+						
 						<!--action-->
 						<td>
 							<a href="#artist-<?=$artist['user_id']?>" data-toggle="modal"><i class="icon-trash"></i></a>

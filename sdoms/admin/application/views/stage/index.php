@@ -38,6 +38,9 @@
 						<td><?=$stage['city']?></td>						
 						<!--country-->
 						<td><?=$stage['country']?></td>
+						<!--created on-->
+						<td><?=$stage['created_on']?></td>
+						
 						<!--action-->
 						<td>
 							<a href="#stage-<?=$stage['id']?>" data-toggle="modal"><i class="icon-trash"></i></a>
