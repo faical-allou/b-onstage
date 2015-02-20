@@ -291,6 +291,18 @@ $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 				</li>
 			</ul>';
 
+$lang['home_howitworks_title'] = 'How it works:';
+
+$lang['home_howitworks_list'] = '<ul class="home-howitworks">
+				<li><p>Sign up and complete your profile</p></li>
+				<li><p>Book a Stage for the date you want</p></li>
+				<li><p>We\'ll confirm if you are selected</p></li>
+				<li><p>...The Stage is Yours!</p></li>
+			</ul>';
+
+
+
+
 // Footer
 $lang['footer_contactus'] = 'Contact-us';
 $lang['footer_followus'] = 'Follow us';

@@ -248,6 +248,12 @@ home
 .home-list > li a:hover{text-decoration:underline;}
 .home-list-link{position:absolute;bottom:20px;left:20px;right:20px;}
 
+.home-howitworks{list-style-type: decimal;margin-left:1px;font-family: "Open Sans Condensed";}
+.home-howitworks > li {border-bottom:1px dashed #eaeaea;padding:2px 20px; display:list-item}
+.home-howitworks > li:last-child{border-bottom:none;}
+
+
+
 /* ==========================================================================
 sign up
 ========================================================================== */
@@ -901,7 +907,7 @@ about, about us and contact
 }
 
 .about{padding:10px 20px 20px 20px;}
-.about-list{list-style-type: circle;margin-left:20px;}
+.about-list{list-style-type: disc;margin-left:20px;}
 .about-list > li {color:#8e2c86;}
 .about-list > li.nb{border:1px solid #605E66;background-color:#F6F2FF;padding:0 10px;list-style:none;margin:0;}
 .about-list > li > p{font-size:15px;color:#1a1a1a;}

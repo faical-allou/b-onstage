@@ -83,10 +83,24 @@
 		<div class="p-20 ta-c">
 			<a href="<?=site_url('stages')?>" class="home-list-link"><?php echo lang("home_seeall_stages") ?></a>
 		</div>
-	</div>	
-
-		
+	</div>			
 </div>
+
+<div class="bg-white">
+	<div class="container_12 pt-50 pb-50">
+		<div class="grid_8 ta-c">	
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/-XdRr16bg_U?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
+		</div>	
+		
+		<div class="grid_4">	
+			<div class="fs-24 ta-c bold"><?php echo lang("home_howitworks_title")?></div>	 
+			<div class="fs-18 ta-l bold"><?php echo lang("home_howitworks_list")?></div>
+		</div>	
+	</div>
+</div>
+
+
+
 <div class="bg-purple">
 	<div class="container_12 pt-50 pb-50">
 		<div class="grid_6 ta-c">	
@@ -105,5 +119,4 @@
 		</div>
 	</div>
 </div>	
-
 
