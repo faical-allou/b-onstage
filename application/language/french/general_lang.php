@@ -292,6 +292,16 @@ $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 			</ul>';
 
 
+$lang['home_howitworks_title'] = 'Comment ca marche:';
+
+$lang['home_howitworks_list'] = '<ul class="home-howitworks">
+				<li><p>Enregistre toi et complète ton profil</p></li>
+				<li><p>Reserve une scène à la date qui te convient</p></li>
+				<li><p>Nous te confirmons si tu es choisi</p></li>
+				<li><p>...A Toi de Jouer!</p></li>
+			</ul>';
+
+
 // Footer
 $lang['footer_contactus'] = 'Contactez-nous';
 $lang['footer_followus'] = 'Nous suivre';
