@@ -6,31 +6,40 @@
 	<!--slide3-->
 		<div class="rsContent slide3">
 			<div class="bContainer ui-corner-all p-20">		
-				<div class="rsABlock fs-42 grey" data-move-effect="top" data-move-offset="500" data-speed="1000"><?php echo lang("home_slide3_txt") ?></div>
-				<div class="rsABlock fs-42 grey mb-20" data-move-effect="right" data-move-offset="500"  data-delay="1000" data-speed="1000"><?php echo lang("home_slide3_txt2") ?></div>				
-				<div class="rsABlock" data-move-effect="fade" data-delay="2000" data-speed="500"><a href="<?=site_url('signup')?>" class="ui-purple rsButton" style="font-size:1.6em;"><?php echo lang("home_slide3_txt3") ?></a></div>
+				<div class=" fs-36 bold grey"><?php echo lang("home_slide3_txt") ?></div>
+				<div class=" fs-36 bold grey mb-20"><?php echo lang("home_slide3_txt2") ?></div>				
+				<div class="ui-green rsButton" style="font-size:1em;"> 
+					<a href="<?=site_url('signup')?>" >
+					<?php echo lang("home_slide3_txt3") ?></a>
+				</div>
 			</div>
-			<img class="rsABlock" data-move-effect="fade" data-delay="0000" src="/img/slide/img-slide-3.jpg" data-rsw="792" data-rsh="440">
+			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-3.jpg" data-rsw="792" data-rsh="440">
 		</div>
 
 		<!--slide1-->
 		<div class="rsContent slide1">
 			<div class="bContainer ui-corner-all p-20">	
-				<div class="rsABlock fs-42 grey" data-move-effect="left" data-move-offset="500"  data-speed="1000"><?php echo lang("home_slide1_txt") ?></div>				
-				<div class="rsABlock fs-32 grey mb-20" data-move-effect="right" data-move-offset="500" data-delay="500" data-speed="500"><?php echo lang("home_slide1_txt2") ?></div>				
-				<div class="rsABlock" data-move-effect="fade" data-delay="1000" data-speed="500"><a href="<?=site_url('signup')?>" class="ui-purple rsButton" style="font-size:1.6em;"><?php echo lang("home_slide1_txt3") ?></a></div>
+				<div class=" fs-36 bold grey"><?php echo lang("home_slide1_txt") ?></div>				
+				<div class=" fs-36 bold grey mb-20"><?php echo lang("home_slide1_txt2") ?></div>				
+				<div class="ui-green rsButton" style="font-size:1em;">
+					<a href="<?=site_url('signup')?>" >
+					<?php echo lang("home_slide1_txt3") ?></a>
+				</div>
 			</div>
-			<img class="rsABlock" data-move-effect="fade" data-delay="1000" src="/img/slide/img-slide-1.png" data-rsw="792" data-rsh="440">
+			<img class="rsABlock" data-move-effect="fade"  src="/img/slide/img-slide-1.png" data-rsw="792" data-rsh="440">
 		</div>
 		<!--slide2-->
 		<div class="rsContent slide2">
 			<div class="bContainer">	
-				<div class="rsABlock fs-32 white" data-move-effect="right" data-move-offset="500"  data-speed="1000"><?php echo lang("home_slide2_txt") ?></div>
-				<div class="rsABlock fs-32 white" data-move-effect="right" data-move-offset="500"  data-speed="1000"><?php echo lang("home_slide2_txt2") ?></div>				
-				<div class="rsABlock fs-32 white mb-20" data-move-effect="right" data-move-offset="300" data-delay="1000" data-speed="500"><?php echo lang("home_slide2_txt3") ?></div>				
-				<div class="rsABlock" data-move-effect="fade" data-delay="1500" data-speed="500"><a href="<?=site_url('concerts')?>" class="ui-dark rsButton" style="font-size:1.6em;"><?php echo lang("home_slide2_txt4") ?></a></div>
+				<div class=" fs-32 bold white"><?php echo lang("home_slide2_txt") ?></div>
+				<div class=" fs-32 bold white"><?php echo lang("home_slide2_txt2") ?></div>				
+				<div class=" fs-32 bold white mb-20"><?php echo lang("home_slide2_txt3") ?></div>				
+				<div class="ui-white rsButton" style="font-size:1em;">
+					<a href="<?=site_url('concerts')?>" ">
+					<?php echo lang("home_slide2_txt4") ?></a>
+				</div>
 			</div>
-			<img class="rsABlock" data-move-effect="fade" data-delay="1500" src="/img/slide/img-slide-2.jpg" data-rsw="900" data-rsh="500">
+			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-2.jpg" data-rsw="900" data-rsh="500">
 		</div>
 	
 	</div>	
@@ -45,7 +54,7 @@
 			<?php foreach($artists as $artist){ ?>				
 				<li>					
 					<div class="clearfix">
-						<div class="left"><?=img(array('src' => $artist['avatar'], 'width' => '64px'))?></div>
+						<div class="left"><?=img(array('src' => $artist['avatar'], 'width' => '128px'))?></div>
 						<div class="left ml-10">
 							<div>
 								<a href="<?=$artist['link']?>" class="fs-16 title grey"><?=$artist['name']?></a>
@@ -69,7 +78,7 @@
 			<?php foreach($stages as $stage){ ?>				
 				<li>					
 					<div class="clearfix">
-						<div class="left"><?=img(array('src' => $stage['avatar'], 'width' => '64px'))?></div>
+						<div class="left"><?=img(array('src' => $stage['avatar'], 'width' => '128px'))?></div>
 						<div class="left ml-10">
 							<div>
 								<a href="<?=$stage['link']?>" class="title fs-16 grey"><?=$stage['name']?></a>
@@ -92,15 +101,15 @@
 		<div class="grid_6 ta-c">	
 			<div class="p-20">
 				<?=img(array('src' => site_url('img/icons/home/calendar.png')))?>
-				<p class="fs-24 title white ta-c" style="height:70px;"><?php echo lang("home_bottom_txt") ?></p>
-				<a href="<?=site_url('concerts')?>" class="ui-dark action-home" style="font-size:1em;"><?php echo lang("header_book_a_date") ?></a>			
+				<p class="fs-24  white ta-c" style="height:70px;"><?php echo lang("home_bottom_txt") ?></p>
+				<a href="<?=site_url('concerts')?>" class="ui-white action-home" style="font-size:1em;"><?php echo lang("header_book_a_date") ?></a>			
 			</div>	
 		</div>
 		<div class="grid_6 ta-c">			
 			<div class="p-20">
 				<?=img(array('src' => site_url('img/icons/home/network.png')))?>
-				<p class="fs-24 title white ta-c" style="height:70px"><?php echo lang("home_bottom_txt2") ?></p>
-				<a href="<?=site_url('signup')?>" class="ui-dark action-home" style="font-size:1em;"><?php echo lang("become_member") ?></a>			
+				<p class="fs-24  white ta-c" style="height:70px"><?php echo lang("home_bottom_txt2") ?></p>
+				<a href="<?=site_url('signup')?>" class="ui-white action-home" style="font-size:1em;"><?php echo lang("become_member") ?></a>			
 			</div>	
 		</div>
 	</div>
