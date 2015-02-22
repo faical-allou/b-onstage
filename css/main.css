@@ -266,6 +266,8 @@ sign up
 #signup-steps ul > li:last-child{margin-left:0;right:0;left:auto;}
 #signup-steps .active{background:#1a1a1a;color:#fff;}
 
+#fb-login-button{}
+
 /* ==========================================================================
 sign in
 ========================================================================== */

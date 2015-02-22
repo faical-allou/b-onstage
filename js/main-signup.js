@@ -17,7 +17,7 @@
 	
 	
 	/**********INIT TOOLTIP**********/
-	$(document).tooltip({
+	$('#signup-form').tooltip({
 		position:{
 			my: 'right-10',
 			at: 'left',
@@ -27,6 +27,6 @@
 		},
 		tooltipClass : 'ui-dark'
 	});
-		
+
 });
 
