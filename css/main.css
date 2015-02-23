@@ -226,7 +226,7 @@ slider
 
 .slide3 .bContainer {top: 5%;left:5%;text-align:left;}
 .slide1 .bContainer {top: 5%;left:5%;text-align:left;}
-.slide2 .bContainer{top:5%;right:5%;text-align:left;}
+.slide2 .bContainer{top:10%;right:5%;text-align:left;}
 
 .slide3 img {right: 0;top: 0;position: absolute;}
 .slide1 img {right: 0;top: 0;position: absolute;}

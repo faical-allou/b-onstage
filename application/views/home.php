@@ -31,7 +31,6 @@
 		<!--slide2-->
 		<div class="rsContent slide2">
 			<div class="bContainer">	
-				<div class=" fs-32 bold white"><?php echo lang("home_slide2_txt") ?></div>
 				<div class=" fs-32 bold white"><?php echo lang("home_slide2_txt2") ?></div>				
 				<div class=" fs-32 bold white mb-20"><?php echo lang("home_slide2_txt3") ?></div>				
 				<div class="ui-green rsButton" style="font-size:1em;">

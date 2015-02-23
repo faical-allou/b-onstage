@@ -224,7 +224,7 @@ $lang['home_slide1_txt2'] = 'The Stage is Yours!';
 $lang['home_slide1_txt3'] = 'Sign up for free!';
 
 $lang['home_slide2_txt'] = 'Music is Live';
-$lang['home_slide2_txt2'] = 'Live is on Stage';
+$lang['home_slide2_txt2'] = 'Live Music is on Stage';
 $lang['home_slide2_txt3'] = 'Stages are on b-onstage';
 $lang['home_slide2_txt4'] = 'Request a date';
 
