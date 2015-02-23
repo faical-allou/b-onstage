@@ -7,26 +7,26 @@
 		<div class="rsContent slide3">
 			<div class="bContainer ui-corner-all p-20">		
 				<div class=" fs-36 bold grey"><?php echo lang("home_slide3_txt") ?></div>
-				<div class=" fs-36 bold grey mb-20"><?php echo lang("home_slide3_txt2") ?></div>				
+				<div class=" fs-24 bold grey mb-20"><?php echo lang("home_slide3_txt2") ?></div>				
 				<div class="ui-green rsButton" style="font-size:1em;"> 
 					<a href="<?=site_url('signup')?>" >
 					<?php echo lang("home_slide3_txt3") ?></a>
 				</div>
 			</div>
-			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-3.jpg" data-rsw="792" data-rsh="440">
+			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-3.jpg" data-rsw="1024" data-rsh="685">
 		</div>
 
 		<!--slide1-->
 		<div class="rsContent slide1">
 			<div class="bContainer ui-corner-all p-20">	
-				<div class=" fs-36 bold grey"><?php echo lang("home_slide1_txt") ?></div>				
-				<div class=" fs-36 bold grey mb-20"><?php echo lang("home_slide1_txt2") ?></div>				
+				<div class=" fs-36 bold white"><?php echo lang("home_slide1_txt") ?></div>				
+				<div class=" fs-36 bold white mb-20"><?php echo lang("home_slide1_txt2") ?></div>				
 				<div class="ui-green rsButton" style="font-size:1em;">
 					<a href="<?=site_url('signup')?>" >
 					<?php echo lang("home_slide1_txt3") ?></a>
 				</div>
 			</div>
-			<img class="rsABlock" data-move-effect="fade"  src="/img/slide/img-slide-1.png" data-rsw="792" data-rsh="440">
+			<img class="rsABlock" data-move-effect="fade"  src="/img/slide/img-slide-test.jpg" data-rsw="900" data-rsh="500">
 		</div>
 		<!--slide2-->
 		<div class="rsContent slide2">
@@ -34,12 +34,12 @@
 				<div class=" fs-32 bold white"><?php echo lang("home_slide2_txt") ?></div>
 				<div class=" fs-32 bold white"><?php echo lang("home_slide2_txt2") ?></div>				
 				<div class=" fs-32 bold white mb-20"><?php echo lang("home_slide2_txt3") ?></div>				
-				<div class="ui-white rsButton" style="font-size:1em;">
+				<div class="ui-green rsButton" style="font-size:1em;">
 					<a href="<?=site_url('concerts')?>" ">
 					<?php echo lang("home_slide2_txt4") ?></a>
 				</div>
 			</div>
-			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-2.jpg" data-rsw="900" data-rsh="500">
+			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-test2.jpg" data-rsw="900" data-rsh="500">
 		</div>
 	
 	</div>	
@@ -54,7 +54,7 @@
 			<?php foreach($artists as $artist){ ?>				
 				<li>					
 					<div class="clearfix">
-						<div class="left"><?=img(array('src' => $artist['avatar'], 'width' => '64px'))?></div>
+						<div class="left"><?=img(array('src' => $artist['avatar'], 'width' => '128px'))?></div>
 						<div class="left ml-10">
 							<div>
 								<a href="<?=$artist['link']?>" class="fs-16 title grey"><?=$artist['name']?></a>
@@ -78,7 +78,7 @@
 			<?php foreach($stages as $stage){ ?>				
 				<li>					
 					<div class="clearfix">
-						<div class="left"><?=img(array('src' => $stage['avatar'], 'width' => '64px'))?></div>
+						<div class="left"><?=img(array('src' => $stage['avatar'], 'width' => '128px'))?></div>
 						<div class="left ml-10">
 							<div>
 								<a href="<?=$stage['link']?>" class="title fs-16 grey"><?=$stage['name']?></a>

@@ -219,16 +219,17 @@ $lang['header_attend_show'] = 'Attend a Concert';
 
 
 // Home		
-$lang['home_slide1_txt'] = 'Find Stages to play live ...';
+$lang['home_slide1_txt'] = 'Find venues to play live ...';
 $lang['home_slide1_txt2'] = 'The Stage is Yours!';
 $lang['home_slide1_txt3'] = 'Sign up for free!';
+
 $lang['home_slide2_txt'] = 'Music is Live';
 $lang['home_slide2_txt2'] = 'Live is on Stage';
 $lang['home_slide2_txt3'] = 'Stages are on b-onstage';
 $lang['home_slide2_txt4'] = 'Request a date';
 
-$lang['home_slide3_txt'] = 'Don\'t wait to be discovered';
-$lang['home_slide3_txt2'] = 'Launch your career here';
+$lang['home_slide3_txt'] = 'Now you can book venues for your shows';
+$lang['home_slide3_txt2'] = 'Become your own promoter!';
 $lang['home_slide3_txt3'] = 'Join us Now!';
 
 $lang['home_title_concert'] = 'Concerts';
@@ -247,7 +248,7 @@ $lang['aboutus_link_whoweare'] = 'Who are we?';
 $lang['aboutus_link_howitworks'] = 'How it works';
 $lang['aboutus_header_aboutus'] = 'Why b-onstage?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>Because of the heavy downloading brought by the Internet, <strong>, links between Artists and the public were broken.</strong></p></li>
+				<li><p>Because of the heavy downloading brought by the Internet, <strong>links between Artists and the public were broken.</strong></p></li>
 				<li><p>Because the music industry is in crisis and because the records sales <strong>are not enough anymore.</strong></p></li>
 				<li><p>Because music is not only a partition but also a universe to share with others.</p></li>
 				<li><p>Because music has always been a unique relation with the public and because it has to stay as such.</p></li>
@@ -262,32 +263,33 @@ $lang['aboutus_header3_aboutus'] = 'Sign-up';
 $lang['aboutus_header4_aboutus'] = 'on b-onstage!';
 $lang['aboutus_header_whoweare'] = 'Who are we?';
 $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
-				<li><p class="grey fs-15">Musicians and programers, we founded mybandonstage to promote all amateur artistic performances.</p></li>		
-				<li><p class="grey fs-15">We conceived it to enable <strong>Artists to meet their public</strong> by making it easier to  <strong>organize a Concert.</strong></p></li>	
-				<li><p class="grey fs-15"><strong>We visit all stages</strong> (who we consider as partners), we take the photos and we list them <strong>to make sure what you see is what you get.</strong></p></li>
+				<li><p class="grey fs-15">Musicians and programers, we founded mybandonstage to promote amateur music.</p></li>		
+				<li><p class="grey fs-15">We conceived it to enable <strong>Artists to meet their public</strong> by making it easier to  <strong>organize Concerts.</strong></p></li>	
+				<li><p class="grey fs-15"><strong>We visit all venues</strong> (who we consider as partners), we take the photos and we list them <strong>to make sure what you see is what you get.</strong></p></li>
 				<li><p class="grey fs-15">We take care of the financial transactions, <strong>to secure the payments.</strong></p></li>
 				<li><p class="grey fs-15">We offer <strong>specialized contracts</strong> to limit liabilities and balance the relations.</p></li>	
 				<li><p class="grey fs-15">We follow up <strong>on all our partners and registered Artists</strong> and we answer every message we get. We are ready to side with you in all of your initiatives.</p></li>
 			</ul>';
 $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 				<li><p>We give you access to an online reservation platform to check the availabilities and book a date for a Concert.</p></li>			
-				<li><p>Here you can use our search engine to check the availabilities for certain dates in a chosen city. When your choice is done, send a reservation request.We will let you know if you are selected.</p></li>
+				<li><p>When your choice is done, send a reservation request. We will let you know if you are selected.</p></li>
 				<li class="nb"><p><strong>Note :</strong> Stages might receive a lot of requests. Complete your profile and be patient, it can take time before you are selected.</p></li>
 				<li><p>To finalize your reservation, you will have to pay the booking fee.</p></li>
 				<li class="nb">
 					<p><strong>Note :</strong> The booking fees are mostly there to make sure the Artists show up and to give the Stage owner some guarantee. This is also to avoid having troublemakers causing damages.</p>
 				</li>
 				<li><p>Once the payment is made, the reservation is finalized and you will be notified. The date you booked will then appear as a concert to the public.</p></li>
-				<li><p>In order to help you, we have drafted a contract Artist/Stage that we can forward you upon request. This contract will provide the legal framework for the concert. mybandonstage is only an intermediary in this transaction.</p></li>
+				<li><p>In order to help you, we have drafted a contract Artist/Stage that we can forward you upon request. This contract will provide the legal framework for the concert; mybandonstage is only an intermediary in this transaction.</p></li>
 				<li><p>You only have to show up few hours before and the rest is up to you...</p></li>	
 				<li><p>If you want to cancel, you can do it for free as long as the payment is not made.</p></li>
-				<li class="nb"><p>Note : In case of “No-Show”, without notice at least 72h before, we reserve the right to display “No-Show” on your profile.</p></li>
 				<li>
 					<p>After payment you can cancel with the following restrictions:</p>
 					<ul class="sub-about-list">
 						<li>Until 2 weeks before the Concert, the booking fees are refundable but not the transaction fee.</li>						
 						<li>After two weeks, the booking fee is not refundable but we ask you to cancel anyway or we reserve the right to display “No-Show” on your profile.</li>
 					</ul>
+				<li class="nb"><p>Note : In case of “No-Show”, without notice at least 72h before, we reserve the right to display “No-Show” on your profile.</p></li>
+
 				</li>
 			</ul>';
 

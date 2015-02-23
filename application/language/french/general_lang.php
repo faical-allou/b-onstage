@@ -221,13 +221,14 @@ $lang['header_attend_show'] = 'Assister à un Concert';
 $lang['home_slide1_txt'] = 'Trouvez des Scènes pour jouer live ...';
 $lang['home_slide1_txt2'] = 'A vous de jouer !!';
 $lang['home_slide1_txt3'] = 'Inscrivez-vous!';
+
 $lang['home_slide2_txt'] = 'La musique c\'est en live';
 $lang['home_slide2_txt2'] = 'Le live c\'est sur scène';
 $lang['home_slide2_txt3'] = 'Les scènes sont sur b-onstage';
 $lang['home_slide2_txt4'] = 'Trouver une date';
 
-$lang['home_slide3_txt'] = 'N\'attendez plus d\'être découverts';
-$lang['home_slide3_txt2'] = 'Lancez vous avec b-onstage';
+$lang['home_slide3_txt'] = 'Réservez une Scène pour votre show';
+$lang['home_slide3_txt2'] = 'Lancez vous avec b-onstage!';
 $lang['home_slide3_txt3'] = 'Inscrivez vous!';
 
 $lang['home_title_concert'] = 'Les Concerts';
