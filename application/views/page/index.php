@@ -47,7 +47,7 @@
 				<!--menu page-->
 				<div id="menu-page" class="left">
 					<ul>
-						<li><a href="javascript:void(0);" id="menu-page-profil" data-content-id="content-profil" class="grey fs-16 ui-corner-bl"><?php echo lang("users_page_menu1") ?></a></li>						
+						<li><a id="menu-page-profil" data-content-id="content-profil" class="grey fs-16 ui-corner-bl"><?php echo lang("users_page_menu1") ?></a></li>						
 <!--						<li><a href="javascript:void(0);" id="menu-page-concert" data-content-id="content-concert" class="grey fs-16"><?php echo lang("users_page_menu2") ?></a></li>						
 						<?php if($user_group_page == 'artist') { ?>
 						<li><a href="javascript:void(0);" id="menu-page-sound" data-content-id="content-sound" class="grey fs-16"><?php echo lang("users_page_menu3") ?></a></li>						
