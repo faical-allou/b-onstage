@@ -21,7 +21,7 @@
 					<tr>
 						<td width="60%" class="va-t">
 							<div class="left">			
-								<?=img(array('src' => site_url($event['stage_avatar']), 'title' => $event['stage_company'], 'width' => '50px', 'class'=>' mr-5 bs-black-thumbnail'))?>
+								<?=img(array('src' => site_url($event['stage_avatar']), 'title' => $event['stage_company'], 'width' => '128px', 'class'=>' mr-5 bs-black-thumbnail'))?>
 							</div>	
 							<div class="left ml-20">
 								<div class="mb-10 fs-18 title grey"><?=anchor($stage_link, $event['stage_company'], array('class' => 'purple'))?> <?php echo lang("book_organiser") ?></div>
@@ -33,7 +33,7 @@
 								<?php if($reserved) { ?>
 									<a href="<?=site_url('user/reservations')?>" class="show-reservation ui-purple" style="font-size:1em;"><?php echo lang("book_button1") ?></a> 
 								<?php } else { ?>
-									<button class="book-concert ui-purple" data-event-id="<?=$event['id']?>" data-stage-id="<?=$event['stage_id']?>" style="font-size:1em;"><?php echo lang("book_button2") ?></button>					
+									<button class="book-concert ui-green" data-event-id="<?=$event['id']?>" data-stage-id="<?=$event['stage_id']?>" style="font-size:1em;"><?php echo lang("book_button2") ?></button>					
 								<?php } ?>
 							</div>
 						</td>
