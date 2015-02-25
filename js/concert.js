@@ -169,7 +169,7 @@
 						);		
 					}
 				});
-				$('#filter-schedule').text('00h00 et 23h59');						
+				$('#filter-schedule').text('00h00 - 23h59');						
 				
 				//sort filter
 				$('#filter-sort').multiselect({					
