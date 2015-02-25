@@ -98,7 +98,7 @@
 
 							reservation_min = ui.values[0];
 							reservation_max = ui.values[1];
-							$('#filter-reservation').text(reservation_min + '€ et ' + reservation_max + '€');							
+							$('#filter-reservation').text(reservation_min + '€ - ' + reservation_max + '€');							
 							
 							time_out_id = window.setTimeout(
 								function(){															
@@ -108,7 +108,7 @@
 							);	
 						}
 					});
-					$('#filter-reservation').text(reservation_min + '€ et ' + reservation_max + '€' );
+					$('#filter-reservation').text(reservation_min + '€ - ' + reservation_max + '€' );
 				}
 				
 				//range entry								
@@ -124,7 +124,7 @@
 								
 						entry_min = ui.values[0];
 						entry_max = ui.values[1];
-						$('#filter-entry').text(entry_min + '€ et ' + entry_max + '€');	
+						$('#filter-entry').text(entry_min + '€ - ' + entry_max + '€');	
 						
 						time_out_id = window.setTimeout(
 							function(){														
@@ -134,7 +134,7 @@
 						);			
 					}
 				});
-				$('#filter-entry').text(entry_min + '€ et ' + entry_max + '€' );
+				$('#filter-entry').text(entry_min + '€ - ' + entry_max + '€' );
 				
 				//range schedule
 				$('#slider-range-schedule').slider({
@@ -157,7 +157,7 @@
 						minutes_end = minutes_end.replace(/\d+/g, leading_zero);
 						hours_end = hours_end.replace(/\d+/g, leading_zero);							
 						
-						$('#filter-schedule').text(hours_start + 'h' + minutes_start + ' et ' + hours_end + 'h' + minutes_end);																
+						$('#filter-schedule').text(hours_start + 'h' + minutes_start + ' - ' + hours_end + 'h' + minutes_end);																
 						
 						time_out_id = window.setTimeout(
 							function(){							

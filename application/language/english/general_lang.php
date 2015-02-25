@@ -999,7 +999,7 @@ $lang['users_rese_needpaytxt'] = '<p class="grey fs-12 bold">We recommend you to
 $lang['users_rese_closedtxt'] = '<p class="purple">The date is closed   </p>	
 		
 	';
-$lang['users_rese_tovalidatetxt'] = '<p class="purple">ENRecommendations en attente de validation</p>	
+$lang['users_rese_tovalidatetxt'] = '<p class="purple">Recommendations en attente de validation</p>	
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>	
 	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>';
 $lang['users_rese_cancel_conf'] = 'Do you want to cancel this reservation?';
@@ -1099,12 +1099,12 @@ $lang['book_filterresults'] = 'Filter results';
 $lang['book_bysort1'] = 'by genre';
 $lang['book_bysort2'] = 'by interval';
 $lang['book_bysort3'] = 'Payback';
-$lang['book_bysort2_1'] = 'Ticket price';
+$lang['book_bysort2_1'] = 'Booking between';
 $lang['book_bysort2_2'] = 'Time';
 $lang['book_bysort2_3'] = 'by type of payback';
 $lang['book_steptxt1'] = 'Chose a date and click <strong>"Reservation request"</strong>.';
 $lang['book_steptxt2'] = 'Once selected you’ll have <strong>48h</strong> to validate';
-$lang['book_steptxt3'] = 'On the D-day,  <strong>”the stage is yours”</strong>';
+$lang['book_steptxt3'] = '<strong>”the Stage is Yours”</strong>';
 $lang['book_organiser'] = 'hosts the Concert';
 $lang['book_button1'] = 'Check my request';
 $lang['book_button2'] = 'Send a request';
