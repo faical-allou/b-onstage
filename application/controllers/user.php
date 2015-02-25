@@ -7,7 +7,21 @@ class User extends CI_Controller {
 		parent::__construct();
 		//var user
 		$this->user = ($this->ion_auth->logged_in()) ? $this->ion_auth->user()->row_array() : null;
-		
+			$log_fb = 0;
+			
+			if (
+				isset($_GET['n'], $_GET['u'], $_GET['e'], $_GET['p'], $_GET['fb']) 
+				)
+			{
+			$name_fb = $_GET['n'];
+			$username_fb = $_GET['u'];
+			$email_fb = $_GET['e'];
+			$password_fb = $_GET['p'];
+			$log_fb = $_GET['fb'];
+
+// 			echo $name_fb . $username_fb . $email_fb . $password_fb . $log_fb;
+				};
+			
 		$this->load->library('parser');
 		$this->load->model('member_model');
 		$this->load->model('media_model');
@@ -45,6 +59,7 @@ class User extends CI_Controller {
 
 	//index function
 	function index(){
+
 		if (!$this->ion_auth->logged_in())
 		{
 			redirect('login', 'refresh');
@@ -71,7 +86,7 @@ class User extends CI_Controller {
 				'name'			=> 'input-username',
 				'class'			=> 'input ui-corner-all fs-13 grey mr-10'
 			);
-			
+			  			  
 			/*password*/
 			//old password
 			$this->data['label_old_password'] = lang("users_home_passwrod_old");
@@ -135,6 +150,9 @@ class User extends CI_Controller {
 			$this->load->view('_footer', $this->footer);
 		}
 	}
+
+		
+
 
 	//login
 	function login($continue=''){	
@@ -420,6 +438,7 @@ class User extends CI_Controller {
 					$this->form_validation->set_rules('password_confirm', 'lang:password_confirm', 'trim|required');
 					$this->form_validation->set_rules('terms_of_services', 'lang:terms_of_services', 'callback_terms_of_services');
 
+					
 					if ($this->form_validation->run() == true)
 					{
 						$username = $this->input->post('username');
@@ -441,6 +460,7 @@ class User extends CI_Controller {
 						else
 							$groups = array('2');//groupe artist*/
 					}
+					
 					if ($this->form_validation->run() == true && $this->ion_auth->register($username, $password, $email, $additional_data,$groups))
 					{
 						$this->session->set_flashdata('email', $email);

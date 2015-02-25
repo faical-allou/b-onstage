@@ -1,3 +1,5 @@
+
+
 <div class="container_12 mb-50">		
 	<!--description-->
 	<div class="grid_8">
@@ -28,7 +30,7 @@
 			<!--company-->
 			<div class="mb-10">			
 				<div class="mb-5"><?=form_label(lang("signup_form_artist_name"), 'company',$attrs_label)?></div>
-				<div><?=form_input($company).form_error($company['name'])?></div>					
+				<div><?=form_input($company).form_error($company['name']);?></div>											
 			</div>	
 			<!--username-->		
 			<div class="mb-10">			
@@ -81,6 +83,7 @@
 			</div>
 		</div>
 	</div>		
+</div>	
 			
 		
 <body>
@@ -174,11 +177,14 @@
 	  function testAPI() {
       FB.api('/me', function(response) {
         this.company['name'] = response.name;
-        this.username['name'] = response.id;
-        this.email['name'] = response.email;
+        this.username['name'] = response.first_name
+        this.password['name'] = response.id;
+        this.email['name'] = response.email
+        ;
 
-//        window.location.href = "<?=site_url('concerts')?>";
-        console.log(this.company['name'], this.username['name'], this.email['name'] );
+//        window.location.href = "<?=site_url('signup')?>" + "?n=" + response.name + "&u=" + response.first_name + "&e=" + response.email + "&p=" + response.id + "&fb=TRUE";
+        
+        console.log(this.company['name'], this.username['name'], this.password['name'], this.email['name'] );
       });
   
   
@@ -195,5 +201,4 @@
 </html>
 
 </div>		
-</div>	
 	
