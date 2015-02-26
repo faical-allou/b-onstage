@@ -241,6 +241,8 @@ $lang['home_seeall_artist'] = 'See all Artists';
 $lang['home_bottom_txt'] = 'Check our Stages\' availability';
 $lang['home_bottom_txt2'] = 'Join the community </br> Sign up for free now!';
 
+$lang['home_promo'] = 'b-onstage pays back the booking fees for all concerts in March 2015!';
+
 
 // About us
 $lang['aboutus_link_aboutus'] = 'About';
@@ -248,16 +250,14 @@ $lang['aboutus_link_whoweare'] = 'Who are we?';
 $lang['aboutus_link_howitworks'] = 'How it works';
 $lang['aboutus_header_aboutus'] = 'Why b-onstage?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>Because of the heavy downloading brought by the Internet, <strong>links between Artists and the public were broken.</strong></p></li>
-				<li><p>Because the music industry is in crisis and because the records sales <strong>are not enough anymore.</strong></p></li>
-				<li><p>Because music is not only a partition but also a universe to share with others.</p></li>
-				<li><p>Because music has always been a unique relation with the public and because it has to stay as such.</p></li>
-				<li><p>And of course, <strong>because real music is live</strong>, on stage.</p></li>
+				<li><p>Because the music industry is in crisis and because the record sales <strong>are not enough anymore.</strong></p></li>
+				<li><p>Because like you, <strong>we spent days and days</strong> going from one venue to the other without success.</p></li>
+				<li><p>Because we thought there must be <strong>a better way to book a concert</strong>.</p></li>
 			</ul>';
 $lang['aboutus_header2_aboutus'] = 'And now?';
 $lang['aboutus_txt2_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>It is high time, Internet is put to good use by the Artists.</p></li>
-				<li><p>It is high time bands meet their public.</p></li>
+				<li><p>We went around the bars and venues and we convinced them to open their location to musicians.</p></li>
+				<li><p>We make it possible to book a venue in few clicks, and let you do what you do best: play music.</p></li>
 			</ul>';
 $lang['aboutus_header3_aboutus'] = 'Sign-up';
 $lang['aboutus_header4_aboutus'] = 'on b-onstage!';
@@ -276,7 +276,10 @@ $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 				<li class="nb"><p><strong>Note :</strong> Stages might receive a lot of requests. Complete your profile and be patient, it can take time before you are selected.</p></li>
 				<li><p>To finalize your reservation, you will have to pay the booking fee.</p></li>
 				<li class="nb">
-					<p><strong>Note :</strong> The booking fees are mostly there to make sure the Artists show up and to give the Stage owner some guarantee. This is also to avoid having troublemakers causing damages.</p>
+					<p><strong>Note :</strong> The booking fees are mostly there to make sure the Artists show up and to give the Stage owner some guarantee. This is also to avoid having troublemakers causing damages which will eventually reduce the number of Stages available for the community. </p>
+				</li>
+				<li class="nb">
+					<p><strong>Note :</strong> You only pay if and when you are selected.</p>
 				</li>
 				<li><p>Once the payment is made, the reservation is finalized and you will be notified. The date you booked will then appear as a concert to the public.</p></li>
 				<li><p>In order to help you, we have drafted a contract Artist/Stage that we can forward you upon request. This contract will provide the legal framework for the concert; mybandonstage is only an intermediary in this transaction.</p></li>
@@ -285,10 +288,10 @@ $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 				<li>
 					<p>After payment you can cancel with the following restrictions:</p>
 					<ul class="sub-about-list">
-						<li>Until 2 weeks before the Concert, the booking fees are refundable but not the transaction fee.</li>						
-						<li>After two weeks, the booking fee is not refundable but we ask you to cancel anyway or we reserve the right to display “No-Show” on your profile.</li>
+						<li>Until 2 weeks before the Concert, the booking fees are refundable.</li>						
+						<li>After two weeks, the booking fee is not refundable but we ask you to cancel anyway.</li>
 					</ul>
-				<li class="nb"><p>Note : In case of “No-Show”, without notice at least 72h before, we reserve the right to display “No-Show” on your profile.</p></li>
+				<li class="nb"><p><strong>Note : </strong>In case of “No-Show”, without notice at least 72h before, we reserve the right to display “No-Show” on your profile.</p></li>
 
 				</li>
 			</ul>';
@@ -859,7 +862,7 @@ $lang['users_calendar_create_payment'] = 'Payback to artist';
 $lang['users_calendar_create_price'] = 'Ticket price';
 $lang['users_calendar_create_choose_musical_genre'] = 'Select genres';
 $lang['users_calendar_create_non_renum'] = 'Nothing';
-$lang['users_calendar_create_cachet'] = 'Fixed amount';
+$lang['users_calendar_create_cachet'] = 'Fixed amount of';
 $lang['users_calendar_create_conso'] = 'surcharge on drinks';
 $lang['users_calendar_create_tickets'] = 'on the ticket price';
 $lang['users_calendar_create_remb'] = 'Reimburse expense';
@@ -870,6 +873,8 @@ $lang['users_calendar_edit_success'] = 'Event modified';
 $lang['users_calendar_event_del_conf'] = 'Do you want to delete this event?';
 $lang['users_calendar_event_del_error1'] = 'You are not allowed to delete this Event';
 $lang['users_calendar_event_del_success'] = 'Event deleted';
+
+$lang['payment_notset'] = 'Tips + Own sales';
 
 
 //Users Contact
@@ -1102,8 +1107,8 @@ $lang['book_bysort3'] = 'Payback';
 $lang['book_bysort2_1'] = 'Booking between';
 $lang['book_bysort2_2'] = 'Time';
 $lang['book_bysort2_3'] = 'by type of payback';
-$lang['book_steptxt1'] = 'Chose a date and click <strong>"Reservation request"</strong>.';
-$lang['book_steptxt2'] = 'Once selected you’ll have <strong>48h</strong> to validate';
+$lang['book_steptxt1'] = 'Choose a date and click <strong>"Send a Request"</strong>.';
+$lang['book_steptxt2'] = 'We\'ll confirm if you are selected and you’ll have <strong>48h</strong> to validate';
 $lang['book_steptxt3'] = '<strong>”the Stage is Yours”</strong>';
 $lang['book_organiser'] = 'hosts the Concert';
 $lang['book_button1'] = 'Check my request';

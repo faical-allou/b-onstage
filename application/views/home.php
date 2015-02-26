@@ -1,6 +1,14 @@
 
+	<div class="container_12 ta-c pt-10 pb-10 mb-30">
+	<a href="<?=site_url('concerts')."?t=promo"?>" class="home-promo-link ui-green fs-16">
+		<?php echo lang("home_promo") ?>
+		</a>
+	
+	</div>
+
+
 <!--slider-->	
-<div id="wrap-slider" class="mb-50 bs-black">
+<div id="wrap-slider" class="mb-30 bs-black">
 	<div id="slider" class="royalSlider rsBlack">
 
 	<!--slide3-->
@@ -44,8 +52,11 @@
 	</div>	
 </div>	
 
-<div class="container_12 mb-50">
 
+	
+
+
+<div class="container_12 mb-50">
 	<!--last 5 artist-->
 	<div class="grid_6 home-bloc ui-corner-all bs-black">
 		<?=heading($title_artist, 2, 'class="home-title title"')?>		

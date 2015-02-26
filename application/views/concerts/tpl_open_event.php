@@ -53,7 +53,7 @@
 								<div class="mb-10 fs-16 title">
 									<?php echo lang("users_rese_renumartist") ?>
 								</div>
-								<div>
+								<div class="fs-18 purple title">
 									<?=$payment_type?>
 								</div>								
 							</div>	

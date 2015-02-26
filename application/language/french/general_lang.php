@@ -239,6 +239,8 @@ $lang['home_seeall_artist'] = 'Voir tous les Artistes';
 $lang['home_bottom_txt'] = 'Rechercher des dates pour jouer sur Scène.';
 $lang['home_bottom_txt2'] = 'L\'inscription est gratuite. </br> Connectez vous aux Scènes.';
 
+$lang['home_promo'] = 'b-onstage vous rembourse vos frais de réservation pour tous vos concerts en Mars 2015!';
+
 
 // About us
 $lang['aboutus_link_aboutus'] = 'A propos';
@@ -246,17 +248,19 @@ $lang['aboutus_link_whoweare'] = 'Qui sommes-nous ?';
 $lang['aboutus_link_howitworks'] = 'Comment ça marche';
 $lang['aboutus_header_aboutus'] = 'Pourquoi b-onstage ?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>Parce qu’à l’heure d’Internet et du téléchargement de masse, <strong>les liens entre les Artistes et le public ont été coupés.</strong></p></li>
 				<li><p>Parce que l’industrie de la musique est en crise et que la vente de disque ne suffit plus <strong>pour vivre de son art.</strong></p></li>
-				<li><p>Parce que la musique n’est pas seulement une partition, mais aussi un univers et une atmosphère à partager.</p></li>
-				<li><p>Parce que la musique a toujours été, doit et devra toujours être une relation privilégiée avec le public.</p></li>
-				<li><p>Et parce qu’enfin, <strong>la vrai musique c’est le live</strong>, les Concerts, la Scène.</p></li>
+				<li><p>Parce que comme vous, <strong>nous avons passé des journées</strong> à aller de bar en bar pour trouver où jouer.</p></li>
+				<li><p>Parce que nous pensons qu\'il y a <strong>une meilleure façon de trouver une Scène</strong>.</p></li>
 			</ul>';
+
+
 $lang['aboutus_header2_aboutus'] = 'Et maintenant ?';
 $lang['aboutus_txt2_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>Il est temps qu\'Internet se mette au service des musiciens.</p></li>
-				<li><p>Il est temps que les groupes rencontrent leur public.</p></li>
+				<li><p>Nous avons visité des bars et salles et nous les avons convaincus de recevoir plus de musiciens.</p></li>
+				<li><p>Nous vous donnons la possibilité de réserver une scène en quelques clicks.</p></li>
 			</ul>';
+
+
 $lang['aboutus_header3_aboutus'] = 'Inscrivez-vous';
 $lang['aboutus_header4_aboutus'] = 'sur b-onstage et à vous de jouer !';
 $lang['aboutus_header_whoweare'] = 'Qui sommes-nous ?';
@@ -271,23 +275,27 @@ $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
 $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 				<li><p>Nous mettons gratuitement à votre disposition une plateforme de réservation en ligne permettant de vérifier la disponibilité d’une Scène et de la réserver pour vous y produire, faire votre Concert.</p></li>			
 				<li><p>Sur b-onstage vous utilisez notre outil de recherche pour trouvez les Scènes disponibles en fonction des dates et/ou des villes qui vous conviennent.</p></li>
-				<li><p>Envoyer une demande de réservation pour faire un Concert sur la Scène sélectionnée. Nous vous notifierons une fois la réservation validée par la Scène.</p></li>
+				<li><p>Vous envoyez une demande de réservation pour faire un Concert sur la Scène sélectionnée. Nous vous notifierons une fois la réservation validée par la Scène.</p></li>
 				<li class="nb"><p><strong>Note :</strong> Les Scènes sont susceptibles de recevoir un grand nombre de demandes de réservation. Complétez au mieux votre profil et soyez patients, cela peut prendre du temps avant que vous ne soyez sélectionnés par la Scène.</p></li>
 				<li><p>Pour valider complètement votre réservation, vous devrez procéder en ligne au paiement des frais de réservation.</p></li>
 				<li class="nb">
 					<p><strong>Note :</strong> Les frais de réservation permet surtout de garantir que les deux parties tiennent leurs engagements et que le Concert se déroulent dans les meilleurs conditions. Cela évite également que des Artistes peu sérieux dégradent les relations avec les Scènes, et qu’il y ait de moins en moins de lieu et de date à votre disposition.</p>
 				</li>
+				<li class="nb">
+					<p><strong>Note :</strong> Vous ne payez que quand êtes choisis pour le concert.</p>
+				</li>
 				<li><p>A réception du paiement des frais de réservations, tels qu’indiqués sur la page de la Scène, la réservation est définitive et vous serez notifié. Une fois réservé les détails de votre Concert s\'afficheront et seront visible par le public.</p></li>
 				<li><p>Afin de vous protéger, et de vous garantir les meilleures conditions, nous avons conçu des contrats Artistes/Scènes (accord de prestation) que nous pouvons mettre à disposition sur simple demande. Nous vous invitons à signer un contrat Artiste(s)/Scène, qui est un contrat de prestation avec la Scène qui pourra vous être envoyé. Ce contrat établit le lien juridique entre la Scène et l’Artiste, la société Mybandonstage n’intervenant, s’agissant de l’exécution des prestations artistiques et de location de salle, que comme intermédiaire de mise en relation via le site b-onstage.</p></li>
 				<li><p>Il vous suffit de vous présenter quelques heures avant le Concert pour vous préparer et la suite dépend de vous...</p></li>	
 				<li><p>Si vous voulez annuler, vous pouvez le faire sans conséquence tant que le paiement des frais de réservation n’a pas été réalisé.</p></li>
-				<li class="nb"><p>Note : Au cas où vous ne vous présentez pas le jour du Concert sans avoir annulé sur le site au moins 72 heures à l’avance, nous nous réservons le droit d’afficher le statut "No-Show" sur votre profil public.</p></li>
 				<li>
-					<p>Une fois payé, vous pouvez annuler jusqu’à :</p>
+					<p>Une fois le paiement fait, vous pouvez annuler jusqu’à :</p>
 					<ul class="sub-about-list">
-						<li>Deux semaines avant la date du Concert, nous vous reverserons les frais de réservation moins nos frais de gestion.</li>						
+						<li>Deux semaines avant la date du Concert, nous vous reverserons les frais de réservation.</li>						
 						<li>Passée cette limite de deux semaines avant la date du Concert, vous ne pouvez plus récupérer les frais de réservation, mais nous vous demandons de procéder à l’annulation tout de même pour éviter le statut "No-Show".</li>
 					</ul>
+				<li class="nb"><p><strong>Note :</strong>Au cas où vous ne vous présentez pas le jour du Concert sans avoir annulé sur le site au moins 72 heures à l’avance, nous nous réservons le droit d’afficher le statut "No-Show" sur votre profil public.</p></li>
+	
 				</li>
 			</ul>';
 
@@ -803,6 +811,8 @@ $lang['users_calendar_event_del_conf'] = 'Voulez-vous supprimer cet évènement 
 $lang['users_calendar_event_del_error1'] = 'Vous n\'êtes pas propriétaire de cet évènement, il vous est donc impossible de le supprimer';
 $lang['users_calendar_event_del_success'] = 'Evènement supprimé avec succès';
 
+$lang['payment_notset'] = 'Pourboire + Ventes propres';
+
 
 //Users Contact
 $lang['users_contact_notfound'] = 'Aucun contact enregistré.';
@@ -1030,7 +1040,7 @@ $lang['book_bysort2_1']	 = 'Réservation entre';
 $lang['book_bysort2_2']	 = 'Prix entrée entre';
 $lang['book_bysort2_3']	 = 'Horaire entre';
 $lang['book_bysort3']	 = 'Par type de rémunération';
-$lang['book_steptxt1']	 = 'Choisissez une Date et cliquez sur <strong>"Demande de réservation"</strong>.';
+$lang['book_steptxt1']	 = 'Choisissez une date et cliquez sur <strong>"Demande de réservation"</strong>.';
 $lang['book_steptxt2']	 = 'Une fois sélectionné par la Scène, vous avez <strong>48 heures</strong> pour valider votre réservation.';
 $lang['book_steptxt3']	 = 'Le jour du Concert, présentez-vous et <strong>c\'est à vous de jouer!</strong>';
 $lang['book_organiser']	 = 'est l\'organisateur';

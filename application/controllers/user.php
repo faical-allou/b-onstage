@@ -1263,7 +1263,7 @@ class User extends CI_Controller {
 				$payment_type = array();				
 				switch($reservation['payment_type']){
 					case 1 :
-						array_push($payment_type, lang("notset"));
+						array_push($payment_type, lang("payment_notset"));
 						break;
 					case 2 :
 						array_push($payment_type, lang("users_calendar_create_non_renum"));
@@ -1498,7 +1498,7 @@ class User extends CI_Controller {
 				$payment_type = '';
 				switch($event['payment_type']){
 					case 1 :
-						$payment_type = lang("notset");
+						$payment_type = lang("payment_notset");
 						break;
 					case 2 :
 						$payment_type = lang("users_calendar_create_non_renum");
