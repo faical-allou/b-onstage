@@ -25,8 +25,8 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 	<?=link_tag(site_url('js/royalslider/skins/black/rs-black.css'), 'stylesheet')?>
 	<?=link_tag(site_url('css/normalize.css'), 'stylesheet')?>
 	<?=link_tag(site_url('css/main.css'), 'stylesheet')?>
-	<style>@import url(/css/960.min.css) (max-width:1279px);</style>
-	<style>@import url(/css/1200.min.css) (min-width:1280px);</style>
+	<style>@import url(/css/960.min.css) (max-width:1023px);</style>
+	<style>@import url(/css/1200.min.css) (min-width:1024px);</style>
 	
 	<!--jquery, jquery ui-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -197,7 +197,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 		<div class="content">
 			<!--search bar-->
 			<div id="search-bar" class="container_12">
-				<div class="grid_12 mb-20 mt-20">
+				<div class="grid_12 mb-0 mt-10">
 					<form action="/concerts" method="post">
 						<!--search status-->
 						<span>

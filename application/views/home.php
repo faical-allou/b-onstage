@@ -1,5 +1,5 @@
 
-	<div class="container_12 ta-c pt-10 pb-10 mb-30">
+	<div class="container_12 ta-c pt-10 pb-10 mb-0">
 	<a href="<?=site_url('concerts')."?t=promo"?>" class="home-promo-link ui-green fs-16">
 		<?php echo lang("home_promo") ?>
 		</a>
