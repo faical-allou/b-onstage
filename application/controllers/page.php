@@ -147,7 +147,7 @@ class Page extends CI_Controller {
 			array(
 				'id'			=> 'myspace',
 				'title'			=> 'Myspace',
-				'logo'			=> '<span aria-hidden="true" class="fs-50 grey icon-twitter"></span>',
+				'logo'			=> '<span aria-hidden="true" class="fs-50 grey icon-link"></span>',
 				'val'			=> !empty($user_page['myspace']) ? $user_page['myspace'] : '',
 				'type'			=> 'logo',
 				'form_label'	=> lang("users_page_inputsocialmed2"),
