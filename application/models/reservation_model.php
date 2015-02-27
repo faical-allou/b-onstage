@@ -104,7 +104,7 @@ class Reservation_model extends CI_Model
 		$event['payment'] = array();
 		switch($event['payment_type']){
 			case 1 : 
-				array_push($event['payment'],lang("payment_notset");
+				array_push($event['payment'],lang("payment_notset"));
 				break;
 			case 2 :
 				array_push($event['payment'],lang("users_calendar_create_non_renum"));
