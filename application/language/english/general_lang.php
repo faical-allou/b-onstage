@@ -1124,7 +1124,7 @@ $lang['book_req_agree'] = 'I have read and I accept the <a href="#" class="purpl
 $lang['book_req_success'] = 'Your request has been sent';
 $lang['book_req_email_artist_subject'] = 'Your reservation number:';
 $lang['book_req_email_artist_txt1'] = 'You have requested:';
-$lang['book_req_email_artist_txt2'] = 'Click here to check your request.	
+$lang['book_req_email_artist_txt2'] = '
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Your request was sent to the Stage.</p>	
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We will inform you wether your request is accepted or rejected.</p>	
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Good Luck!!</p>	

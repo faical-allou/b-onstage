@@ -947,7 +947,7 @@ $lang['users_rese_cancel_txt2'] = 'Il n\'est pas conseillé d\'annuler la réser
 $lang['users_rese_cancel_txt3'] = 'Il n\'est pas conseillé d\'annuler la réservation à ce stade. Vos frais de réservation ne vous seront pas remboursés. De plus cette scène pourrait ne pas accepter vos futures demandes. Etes-vous certain de vouloir annuler?';
 $lang['users_rese_cancel_txt4'] = 'Il est très fortement conseillé de ne pas annuler à ce stade! Vos frais de réservation ne vous seront pas remboursés, et le concert sera affiché en statut "Annulé, No-show" et b-onstage se réserve le droit de porter une mention "No-show" sur votre profil. De plus cette scène pourrait ne pas accepter vos futures demandes. Etes-vous certain de vouloir annuler?';
 $lang['users_rese_cancel_success'] = 'Votre demande de réservation a été annulée avec succès.';
-$lang['users_rese_request'] = 'Demandes de réservation';
+$lang['users_rese_request'] = 'Demande de réservation';
 $lang['users_rese_validate_artist'] = 'Valider cet artiste';
 $lang['users_rese_refuse_artist'] = 'Demande de réservation validée avec succès';
 $lang['users_rese_refuse_success'] = 'Voulez-vous refuser cet artiste?';
@@ -958,24 +958,15 @@ $lang['users_rese_refuse_email_subject'] = 'Demande de réservation refusée';
 $lang['users_rese_refuse_email_txt1'] = 'Désolé! Votre demande de réservation suivante <strong>n’a pas été retenue:</strong>';
 $lang['users_rese_refuse_email_txt2'] = 'Code de réservation  ';
 $lang['users_rese_refuse_email_txt3'] = 'En attendant votre prochaine réservation, pensez à améliorer votre profil. Vous pouvez y ajouter votre musique , vos vidéos, vos photos, etc.</p>
-
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Pensez à bien vous présenter et n’oubliez pas que c’est votre vitrine!</p>
-
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Pour vous rendre sur votre profil,';
 $lang['users_rese_refuse_email_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">À bientôt.</p>
-
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
-
 	<br />
-
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Merci de ne pas utiliser la fonction "Répondre" de votre messagerie.</p>	
-
 	<br />
-
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous rencontrez des problèmes avec notre site ou nos services, écrivez-nous à l’adresse à l\'adresse support@b-onstage.com.</p>
-
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de nous améliorer et d\'essayer de rendre b-onstage le plus utile et agreable pour vous, nous vous encourageons à nous envoyez toutes vos suggestions à l\'adresse suggestion@b-onstage.com.</p>
-
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous ne souhaitez plus recevoir de mail de b-onstage, Cliquez-ici.</p>';
 $lang['users_rese_refuse_email_txt5'] = 'pour faire une nouvelle réservation';
 $lang['users_rese_seereq'] = 'demande(s) de réservation';
@@ -1057,7 +1048,7 @@ $lang['book_req_agree']	 = 'En cochant cette case, je reconnais avoir lu et acce
 $lang['book_req_success']	 = 'Votre demande a bien été prise en compte';
 $lang['book_req_email_artist_subject']	 = 'Votre demande de réservation n°';
 $lang['book_req_email_artist_txt1']	 = 'Vous avez fait la demande de réservation suivante :';
-$lang['book_req_email_artist_txt2']	 = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Cliquez ici pour voir votre réservation dans votre espace b-onstage.</p>	
+$lang['book_req_email_artist_txt2']	 = '	
 		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">La réservation a été communiquée à la Scène que vous avez demandée. </p>	
 		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Nous vous informerons dès que votre réservation aura été acceptée ou refusée.</p>	
 		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Bonne chance!!</p>	
