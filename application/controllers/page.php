@@ -166,7 +166,7 @@ class Page extends CI_Controller {
 				'input_type'	=> 'url',
 				'form_msg'		=> 'Ex: http://www.mongoogleplus.com',
 				'msg'			=> lang("users_page_inputsocialmed4")
-			)
+			),
 			//myspace
 			array(
 				'id'			=> 'myspace',
