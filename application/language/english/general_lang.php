@@ -1137,7 +1137,7 @@ $lang['book_req_email_artist_txt2'] = '
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you see any problem with the website, please send an email to support@b-onstage.com.</p>	
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We are improving the site everyday, if you want to send us a feedback please send us an email to suggestion@b-onstage.com,</p>	
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you want to unsubscribe to all our email please click here. </p>';
-$lang['book_req_email_stage_subject'] = '	You received a request';
+$lang['book_req_email_stage_subject'] = 'You received a request';
 $lang['book_req_email_stage_txt1'] = 'You have received a request from';
 $lang['book_req_email_stage_txt2'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;"><a href="/user/calendar"><strong>Click here</strong></a> to check your calendar</p>';
 $lang['book_req_email_stage_txt3'] = 'This Artists is interested by your Stage';
