@@ -1,3 +1,8 @@
+<?php
+ini_set('display_errors', 0);
+error_reporting(0); 
+?>
+
 <?php foreach($sc_users as $sc_user){ ?>
 <div class="sc-user">
 	<!--header-->
