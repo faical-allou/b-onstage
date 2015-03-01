@@ -63,11 +63,19 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 	  js.src = "//connect.facebook.net/<?php echo $lang_id."_".strtoupper($lang_id) ?>/all.js#xfbml=1&appId=405185392913953";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
 	
 	<!--servor message-->
 	<div id="w-servor-message">
 		<div id="servor-message" class="fs-18 title white ui-corner-all bs-black"></div>
 	</div>
+	
+	<?php
+	error_reporting(0);
+	?>
+
 
 	<!--header-->
 	<div id="header">
