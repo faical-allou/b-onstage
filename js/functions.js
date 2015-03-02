@@ -80,8 +80,8 @@ function init_search_bar(open){
 	/*********INIT SEARCH CITY**********/
 	$('#search-city')
 	.multiselect({
-		header				: '',
-		multiple			: true,
+		header				: false,
+		multiple			: false,
 		selectedList		: 10,
 		height				: 'auto',
 		width				: 'auto',
