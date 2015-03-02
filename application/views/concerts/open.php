@@ -22,7 +22,7 @@ var entry_max = <?=$entry_max?>;
 	<div class="grid_12 ui-corner-all bs-black bg-white mb-20">
 		<table width="100%"><tbody><tr>
 			<td class="filter-concert">				
-				<div class="p-10 fs-16 white title bg-purple ui-corner-tl"><?php echo lang("book_filterresults") ?></div>					
+				<div class="p-10 fs-16 white title bg-black ui-corner-tl"><?php echo lang("book_filterresults") ?></div>					
 				<div class="inner">	
 					<!--filter sort-->
 					<div class="p-20">
@@ -97,7 +97,7 @@ var entry_max = <?=$entry_max?>;
 			</td>	
 			<td class="result-concert">						
 				<!--title-->
-				<div class="p-10 fs-16 white title bg-purple ui-corner-tr"><?php echo lang("artists_searchresutls") ?></div>										
+				<div class="p-10 fs-16 white title bg-black ui-corner-tr"><?php echo lang("artists_searchresutls") ?></div>										
 				
 				<!--header-->				
 				<div class="recommendations m-10">

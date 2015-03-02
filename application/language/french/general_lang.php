@@ -216,6 +216,8 @@ $lang['header_mycontacts'] = 'Mes contacts';
 $lang['header_book_a_date'] = 'Réserver une date';
 $lang['header_attend_show'] = 'Assister à un Concert';
 
+$lang['search_from'] = 'Rechercher du';
+
 
 // Home
 $lang['home_slide1_txt'] = 'Trouvez des Scènes pour jouer live ...';
@@ -229,6 +231,10 @@ $lang['home_slide2_txt4'] = 'Trouver une date';
 $lang['home_slide3_txt'] = 'Réservez une Scène pour votre show';
 $lang['home_slide3_txt2'] = 'Lancez vous avec b-onstage!';
 $lang['home_slide3_txt3'] = 'Inscrivez vous!';
+
+$lang['home_slide4_txt'] = 'b-onstage rembourse les frais';
+$lang['home_slide4_txt2'] = 'pour tous les concerts en mars!';
+$lang['home_slide4_txt3'] = 'Monter sur Scène!';
 
 $lang['home_title_concert'] = 'Les Concerts';
 $lang['home_title_stage'] = 'Les Scènes';
@@ -1007,6 +1013,7 @@ $lang['artists_searchshowmore'] = 'Afficher plus d\'Artistes';
 // Stage page
 $lang['stages_searchshowmore'] = 'Afficher plus de Scènes';
 $lang['stages_searchby'] = 'Rechercher par nom';
+$lang['stages_searchresutls'] 	='Resultats de la recherche';
 
 
 // Shows page
