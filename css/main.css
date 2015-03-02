@@ -150,7 +150,7 @@ menu
 	background:#8e2c86;/*url(/img/w-menu.png) repeat-x;*/
 	z-index:9999;
 }
-#logo{display:block;width:75px;height:50px;}
+#logo{display:block;width:50px;height:50px;}
 .menu{display:block;}
 .menu > li {display:inline;}
 .menu > li > a{font-family:"Open Sans Condensed", sans-serif;text-decoration:none;float:left;display:block;padding:0 10px;height:50px;line-height:50px;font-size:16px;color:#fff;}
