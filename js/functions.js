@@ -94,7 +94,7 @@ function init_search_bar(open){
 	});
 
 	/**********INIT BUTTON SEARCH**********/
-/*	$('#button-search-concert').button();  */
+	$('#button-search-concert').button(); 
 }
 
 function init_search_form(id_search_menu){

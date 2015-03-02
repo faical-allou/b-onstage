@@ -225,7 +225,7 @@ slider
 .slide1{background:#000000;}
 .slide2{background:#000000;}
 
-.slide4 .bContainer {top:10%;right:5%;text-align:left;}
+.slide4 .bContainer {top:10%;right:5%;text-align:left;background:rgba(255,255,255,0.2);}
 .slide3 .bContainer {top: 5%;left:5%;text-align:left;}
 .slide1 .bContainer {top: 5%;left:5%;text-align:left;}
 .slide2 .bContainer {top:10%;right:5%;text-align:left;}
@@ -234,8 +234,6 @@ slider
 .slide3 img {right: 0;top: 0;position: absolute;}
 .slide1 img {right: 0;top: 0;position: absolute;}
 .slide2 img {left:0;top:0;position: absolute;}
-
-.slide3 .rsArrow {background-color: #000000}
 
 
 /* ==========================================================================

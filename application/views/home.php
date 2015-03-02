@@ -9,9 +9,11 @@
 			<div class="bContainer ui-corner-all p-20">		
 				<div class=" fs-36 bold white"><?php echo lang("home_slide4_txt") ?></div>
 				<div class=" fs-24 bold white mb-20"><?php echo lang("home_slide4_txt2") ?></div>				
-				<div class="ui-green rsButton" style="font-size:1em;"> 
+				<div class="ta-c">
+				<span class="ui-green rsButton" style="font-size:1em;"> 
 					<a href="<?=site_url('concerts/?=promo')?>" >
 					<?php echo lang("home_slide4_txt3") ?></a>
+				</span>
 				</div>
 			</div>
 			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-4.png" data-rsw="900" data-rsh="500">
