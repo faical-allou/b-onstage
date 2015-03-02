@@ -234,7 +234,7 @@ $lang['home_slide3_txt3'] = 'Inscrivez vous!';
 
 $lang['home_slide4_txt'] = 'b-onstage rembourse les frais';
 $lang['home_slide4_txt2'] = 'pour tous les concerts en mars!';
-$lang['home_slide4_txt3'] = 'Monter sur Scène!';
+$lang['home_slide4_txt3'] = 'Montez sur Scène!';
 
 $lang['home_title_concert'] = 'Les Concerts';
 $lang['home_title_stage'] = 'Les Scènes';
