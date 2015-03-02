@@ -4,18 +4,17 @@
 </script>
 
 <div id="stage">
-	<div class="container_12">
+<!--	<div class="container_12">
 		<div class="grid_12 mt-20 mb-20">		
-			<!--filter name-->			
-			<form action="" id="search-form-stage">
+ 			<form action="" id="search-form-stage">
 				<?=form_input($filter_name)?>
 				<?=form_input($filter_location)?>
-				<button type="submit" id="search-stage" class="ui-purple"><span aria-hidden="true" class="icon-search fs-16 pl-20 pr-20"></span></button>			
+				<button type="submit" id="search-stage" class="ui-purple"><span aria-hidden="true" class="icon-search fs-16"></span></button>			
 			</form>		
 		</div>
 	</div>
-	<div class="container_12">	
-		<div class="grid_9 mb-20">	
+-->	<div class="container_12">	
+		<div class="grid_9 mb-20 mt-20">	
 			<!--artists list-->
 			<div class="bs-black">
 				<div class="fs-16 p-10 white title bg-black ui-corner-top"><?php echo lang("stages_searchresutls") ?></div> 

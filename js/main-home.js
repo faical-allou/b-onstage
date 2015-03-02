@@ -14,8 +14,6 @@
 	
 	$('.action-home').button();		
 	
-	$('.home-promo-link').button();		
-	
 	$('#slider .rsButton').button();
 	
 	$('#container > .loading').toggle();
