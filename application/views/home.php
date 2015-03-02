@@ -1,15 +1,21 @@
 
-	<div class="container_12 ta-c pt-10 pb-10 mb-0">
-	<a href="<?=site_url('concerts')."?t=promo"?>" class="home-promo-link ui-green fs-16">
-		<?php echo lang("home_promo") ?>
-		</a>
-	
-	</div>
-
 
 <!--slider-->	
 <div id="wrap-slider" class="mb-30 bs-black">
 	<div id="slider" class="royalSlider rsBlack">
+
+	<!--slide4-->
+		<div class="rsContent slide4">
+			<div class="bContainer ui-corner-all p-20">		
+				<div class=" fs-36 bold white"><?php echo lang("home_slide4_txt") ?></div>
+				<div class=" fs-24 bold white mb-20"><?php echo lang("home_slide4_txt2") ?></div>				
+				<div class="ui-green rsButton" style="font-size:1em;"> 
+					<a href="<?=site_url('concerts/?=promo')?>" >
+					<?php echo lang("home_slide4_txt3") ?></a>
+				</div>
+			</div>
+			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-4.png" data-rsw="900" data-rsh="500">
+		</div>
 
 	<!--slide3-->
 		<div class="rsContent slide3">
@@ -24,18 +30,6 @@
 			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-3.jpg" data-rsw="1024" data-rsh="685">
 		</div>
 
-		<!--slide1-->
-		<div class="rsContent slide1">
-			<div class="bContainer ui-corner-all p-20">	
-				<div class=" fs-36 bold white"><?php echo lang("home_slide1_txt") ?></div>				
-				<div class=" fs-36 bold white mb-20"><?php echo lang("home_slide1_txt2") ?></div>				
-				<div class="ui-green rsButton" style="font-size:1em;">
-					<a href="<?=site_url('signup')?>" >
-					<?php echo lang("home_slide1_txt3") ?></a>
-				</div>
-			</div>
-			<img class="rsABlock" data-move-effect="fade"  src="/img/slide/img-slide-test.jpg" data-rsw="900" data-rsh="500">
-		</div>
 		<!--slide2-->
 		<div class="rsContent slide2">
 			<div class="bContainer">	
@@ -48,6 +42,20 @@
 			</div>
 			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-test2.jpg" data-rsw="900" data-rsh="500">
 		</div>
+
+		<!--slide1-->
+		<div class="rsContent slide1">
+			<div class="bContainer ui-corner-all p-20">	
+				<div class=" fs-36 bold white"><?php echo lang("home_slide1_txt") ?></div>				
+				<div class=" fs-36 bold white mb-20"><?php echo lang("home_slide1_txt2") ?></div>				
+				<div class="ui-green rsButton" style="font-size:1em;">
+					<a href="<?=site_url('signup')?>" >
+					<?php echo lang("home_slide1_txt3") ?></a>
+				</div>
+			</div>
+			<img class="rsABlock" data-move-effect="fade"  src="/img/slide/img-slide-test.jpg" data-rsw="900" data-rsh="500">
+		</div>
+
 	
 	</div>	
 </div>	

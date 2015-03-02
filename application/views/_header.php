@@ -88,9 +88,11 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
             <div class="container_12">
 				<div class="grid_12">
                     <!--logo-->
+					<div > 
 					<?=anchor(base_url(), img(site_url('img/logo.png')), array('id' => 'logo', 'class' => 'left'))?>
+					</div>
 					<!--menu principal-->
-					<ul class="menu default left ml-30">
+					<ul class="menu default left">
 <!--						<li><?=anchor(base_url(), '<span aria-hidden="true" class="icon-home"></span>' , array('id' => 'menu-home'))?></li>
 -->						<li><?=anchor(site_url('concerts/oujouer'), lang("header_book_date") , array('id' => 'menu-concert'))?></li>
 <!--					<li><?=anchor(site_url('concerts/programmation'), lang("shows"), array('id' => 'menu-programmation'))?></li>
@@ -197,16 +199,16 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 		<div class="content">
 			<!--search bar-->
 			<div id="search-bar" class="container_12">
-				<div class="grid_12 mb-0 mt-10">
+				<div class="grid_12 mb-10 mt-10">
 					<form action="/concerts" method="post">
 						<!--search status-->
-						<span>
+<!--						<span>
 							<select name="search-status" id="search-status" multiple="multiple">
 								<option value="open" <?=($search['search-status']=='open') ? 'selected' : ''?>><?php echo lang("header_book_a_date") ?></option>
 								<option value="close" <?=($search['search-status']=='close') ? 'selected' : ''?>><?php echo lang("header_attend_show") ?></option>
 							</select>
-						</span>
-						<span class="fs-16 grey bold ml-2 mr-2"><?php echo lang("from") ?></span>
+-->						</span>
+						<span class="fs-16 grey bold ml-2 mr-2"><?php echo lang("search_from") ?></span>
 						<!--date range -->
 						<div id="wrapper-date-start" class="wrapper-search-date bg-white ui-corner-all">
 							<input class="ui-corner-left" type="text" size="8" maxlength="10" name="render-date-start" id="render-date-start" readonly value="<?=date('d/m/Y', strtotime($search['search-date-start']))?>" />
@@ -221,6 +223,8 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 						</div>
 						<!--search city-->
 						<span class="fs-16 grey bold ml-2 mr-2"><?php echo lang("in") ?></span>
+						
+						
 						<span>
 							<select name="search-city[]" id="search-city" multiple="multiple">
 								<?php if(isset($search['search-city'])) {
@@ -237,6 +241,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 								<?php } ?>
 							</select>
 						</span>
+						
 						<span>
 							<button id="button-search-concert" class="ui-dark"><span aria-hidden="true" class="fs-16 icon-search"></span></button>
 						</span>

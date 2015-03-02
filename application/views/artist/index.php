@@ -36,7 +36,7 @@
 
 			<div class="bs-black">
 
-				<div class="fs-16 p-10 white title bg-purple ui-corner-top"><?php echo lang("artists_searchresutls") ?></div> 
+				<div class="fs-16 p-10 white title bg-black ui-corner-top"><?php echo lang("artists_searchresutls") ?></div> 
 
 				<div id="artists-list" class="clearfix">
 

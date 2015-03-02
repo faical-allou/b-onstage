@@ -61,8 +61,8 @@ button.ui-button-icon-only { width: 5em; } /* button elements seem to need a lit
 button.ui-button-icons-only { width: 3.7em; } 
 
 /*button text element */
-.ui-button .ui-button-text { display: block; line-height: 1.4;  }
-.ui-button-text-only .ui-button-text { padding: .6em 1em; }
+.ui-button .ui-button-text { display: block; line-height: 1;  }
+.ui-button-text-only .ui-button-text { padding: .3em .3em .3em .3em; }
 .ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .6em; text-indent: -9999999px; }
 .ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .6em 1em .6em 2.1em; }
 .ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .6em 2.1em .6em 1em; }
@@ -1203,24 +1203,24 @@ body .ui-tooltip { border-width:1px; }
 
 
 /*multiselect*/
-.ui-multiselect { padding:.6em 1em; text-align:left;}
+.ui-multiselect { padding:.2em .2em; text-align:left; max-width:112px}
 
 /*search status, search city*/
 .ui-multiselect.search-status,.ui-multiselect.search-city {font-size:1em;}
 
 .ui-multiselect span.ui-icon { float:right; }
-.ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
+.ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px;max-width:100px }
 .ui-multiselect-single .ui-multiselect-checkboxes label { padding:5px !important }
 
-.ui-multiselect-header { margin-bottom:3px; padding:3px 0 3px 4px;}
+.ui-multiselect-header {display:none; margin-bottom:3px; padding:3px 0 3px 4px;}
 .ui-multiselect-header ul { font-size:0.9em;}
-.ui-multiselect-header ul li { float:left; padding:0 10px 0 0;}
+.ui-multiselect-header ul li { float:left; padding:0 0px 0 0;}
 .ui-multiselect-header a { text-decoration:none;}
 .ui-multiselect-header a:hover { text-decoration:underline;}
 .ui-multiselect-header span.ui-icon { float:left;}
 .ui-multiselect-header li.ui-multiselect-close { float:right; text-align:right; padding-right:0;}
 
-.ui-multiselect-menu { display:none; padding:5px; position:absolute; z-index:10000; text-align: left;}
+.ui-multiselect-menu { display:none; padding:5px; position:absolute; z-index:10000; text-align: left; max-width:100px}
 
 /*search status, search city*/
 .ui-multiselect-menu.search-status, .ui-multiselect-menu.search-city{font-weight:bold;margin-top:-3px;border:1px solid #aaa;}
