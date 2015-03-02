@@ -199,7 +199,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 		<div class="content">
 			<!--search bar-->
 			<div id="search-bar" class="container_12">
-				<div class="grid_12 mb-10 mt-10 pt-5">
+				<div class="grid_12 mb-10 mt-10 va-t">
 					<form action="/concerts" method="post">
 						<!--search status-->
 <!--						<span>
@@ -243,7 +243,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 						</span>
 						
 						<span>
-							<button id="button-search-concert" class="ui-dark pt-0"><span aria-hidden="true" class="fs-16 icon-search"></span></button>
+							<button id="button-search-concert" class="ui-dark"><span aria-hidden="true" class="fs-16 icon-search"></span></button>
 						</span>
 					</form>
 				</div>
