@@ -65,6 +65,8 @@ $lang['home_title'] = 'Bienvenue sur b-onstage';
 $lang['aboutus_title'] = 'A propos';
 $lang['whoweare_title'] = 'Qui sommes-nous?';
 $lang['howitworks_title'] = 'Comment ça marche?';
+$lang['howimakemoney_title'] = 'Qu\'est-ce que j\'y gagne';
+
 $lang['terms_of_services_title'] = 'Conditions générales d\'utilisations';
 $lang['legal_title'] = 'Mentions légales';
 $lang['signup_choice_title'] = 'Type de compte';
@@ -89,6 +91,8 @@ $lang['home_desc'] = 'Mettre une description';
 $lang['aboutus_desc'] = 'A propos';
 $lang['whoweare_desc'] = 'Qui sommes-nous?';
 $lang['howitworks_desc'] = 'Comment ça marche?';
+$lang['howimakemoney_desc'] = 'Qu\'est-ce que j\'y gagne?';
+
 $lang['terms_of_services_desc'] = 'Conditions générales d\'utilisations';
 $lang['legal_desc'] = 'Mentions légales';
 $lang['signup_choice_desc'] = 'Choisissez un type de compte';
@@ -252,6 +256,8 @@ $lang['home_promo'] = 'b-onstage vous rembourse vos frais de réservation pour t
 $lang['aboutus_link_aboutus'] = 'A propos';
 $lang['aboutus_link_whoweare'] = 'Qui sommes-nous ?';
 $lang['aboutus_link_howitworks'] = 'Comment ça marche';
+$lang['aboutus_link_howimakemoney'] = 'Qu\'est-ce que j\'y gagne';
+
 $lang['aboutus_header_aboutus'] = 'Pourquoi b-onstage ?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
 				<li><p>Parce que l’industrie de la musique est en crise et que la vente de disque ne suffit plus <strong>pour vivre de son art.</strong></p></li>
@@ -274,8 +280,7 @@ $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
 				<li><p class="grey fs-15">Musiciens et programmeurs, nous avons créé notre compagnie, Mybandonstage, afin de promouvoir toutes les créations artistiques amateures.</p></li>		
 				<li><p class="grey fs-15">Nous avons conçue</strong> afin de <strong>mettre en contact les Artistes avec leur public</strong> en facilitant leurs démarches pour <strong>organiser des concerts.</strong></p></li>	
 				<li><p class="grey fs-15"><strong>Nous visitons toutes les Scènes</strong> (qui sont des établissements partenaires de b-onstage), nous prenons les photos et nous les référençons avec leurs descriptions pour assurer qu’<strong>on vous offre ce qu’on vous promet.</strong></p></li>
-				<li><p class="grey fs-15">En prenant en charge les transactions financières, <strong>nous garantissons que les paiements seront conformes.</strong></p></li>
-				<li><p class="grey fs-15">Nous proposons <strong>pour chaque concert des contrats spécialisés</strong> pour limiter les responsabilités équitablement et équilibrer les relations entre tous les intervenants.</p></li>	
+				<li><p class="grey fs-15">Nous pouvons vous proposer <strong>pour chaque concert des contrats spécialisés</strong> pour limiter les responsabilités équitablement et équilibrer les relations entre tous les intervenants.</p></li>	
 				<li><p class="grey fs-15">Nous assurons <strong>le suivi de tous nos partenaires et de tous les Artistes</strong>, nous répondons à tous les messages que nous recevons et nous sommes prêts à intervenir auprès de tous les organismes pour vous soutenir.</p></li>
 			</ul>';
 $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
@@ -304,6 +309,17 @@ $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 	
 				</li>
 			</ul>';
+
+$lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
+				<li><p>b-onstage vous donne l\'opportunité de jouer devant vos fans <strong> et les habitués de la Scène</strong>. Chaque nouveau fan est une nouvelle opportunité.</p></li>			
+				<li><p>A moins que cela ne soit explicitement spécifié vous avez<strong> toujours </strong> le droit de recevoir des pourboires, de vendre des CDs et autres goodies pendant et après le show.</p></li>			
+				<li><p><strong>Certains événements sont rémunérés</strong> avec des conditions données par la Scène et nous les affichons comme tels, b-onstage ne prend aucun frais sur cette transaction, tout est pour vous.</p></li>			
+				<li><p>Nous vous encourageons à <strong>contribuer à la communauté</strong> en organisant un maximum de concerts, même si les garanties sont faibles au début. Plus nous organiserons de concerts avec succès plus nous pourrons offrir de concerts rémunérés.</p></li>			
+				<li><p>Paie garantie ou pas <strong>donnez toujours le meilleur de vous-même</strong>, commencez dès que possible et prenez soin de votre historique sur la plateforme, cela augmentera vos chances pour les évènements les plus convoités.</p></li>
+				<li><p>De temps en temps <strong>b-onstage organise des évenements avec des prix à la clé</strong>, inscrivez-vous et nous vous tiendrons informés.</p></li>				
+				</li>
+			</ul>';
+
 
 
 // Footer

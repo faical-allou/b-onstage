@@ -66,6 +66,8 @@ $lang['home_title'] = 'Welcome to b-onstage';
 $lang['aboutus_title'] = 'About';
 $lang['whoweare_title'] = 'Who are we?';
 $lang['howitworks_title'] = 'How it works';
+$lang['howimakemoney_title'] = 'How I make money';
+
 $lang['terms_of_services_title'] = 'General Terms and Conditions';
 $lang['legal_title'] = 'Legal notice';
 $lang['signup_choice_title'] = 'Type of account';
@@ -90,6 +92,8 @@ $lang['home_desc'] = 'add description';
 $lang['aboutus_desc'] = 'About';
 $lang['whoweare_desc'] = 'Who we are';
 $lang['howitworks_desc'] = 'How it works';
+$lang['howimakemoney_desc'] = 'How I make money';
+
 $lang['terms_of_services_desc'] = 'General terms and conditions';
 $lang['legal_desc'] = 'Legal notice';
 $lang['signup_choice_desc'] = 'Chose a type of account';
@@ -254,6 +258,8 @@ $lang['home_promo'] = 'b-onstage pays back the booking fees for all concerts in 
 $lang['aboutus_link_aboutus'] = 'About';
 $lang['aboutus_link_whoweare'] = 'Who are we?';
 $lang['aboutus_link_howitworks'] = 'How it works';
+$lang['aboutus_link_howimakemoney'] = 'How I make money';
+
 $lang['aboutus_header_aboutus'] = 'Why b-onstage?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
 				<li><p>Because the music industry is in crisis and because the record sales <strong>are not enough anymore.</strong></p></li>
@@ -272,8 +278,7 @@ $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
 				<li><p class="grey fs-15">Musicians and programers, we founded mybandonstage to promote amateur music.</p></li>		
 				<li><p class="grey fs-15">We conceived it to enable <strong>Artists to meet their public</strong> by making it easier to  <strong>organize Concerts.</strong></p></li>	
 				<li><p class="grey fs-15"><strong>We visit all venues</strong> (who we consider as partners), we take the photos and we list them <strong>to make sure what you see is what you get.</strong></p></li>
-				<li><p class="grey fs-15">We take care of the financial transactions, <strong>to secure the payments.</strong></p></li>
-				<li><p class="grey fs-15">We offer <strong>specialized contracts</strong> to limit liabilities and balance the relations.</p></li>	
+				<li><p class="grey fs-15">We can offer <strong>specialized contracts</strong> to limit liabilities and balance the relations.</p></li>	
 				<li><p class="grey fs-15">We follow up <strong>on all our partners and registered Artists</strong> and we answer every message we get. We are ready to side with you in all of your initiatives.</p></li>
 			</ul>';
 $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
@@ -301,6 +306,17 @@ $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 
 				</li>
 			</ul>';
+
+$lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
+				<li><p>b-onstage gives you the opportunity to get in front of your fans <strong> and the venues\' regulars</strong>. More fans means more opportunities to make money.</p></li>			
+				<li><p>Unless specified you will <strong> always be able to collect tips, sell CDs and other goodies</strong> during and after the show.</p></li>			
+				<li><p><strong>Some events are paid</strong> with conditions set by the venue and will be advertized as such, b-onstage does not take any of this money, it\'s all yours.</p></li>			
+				<li><p>We encourage you to <strong>start contributing to the community</strong> by going for the events even with limited return. More successful events means more paid events eventually.</p></li>			
+				<li><p>Garanteed pay or not, <strong>always put a good show</strong>, start as soon as you can and build up your record on the platform. You\'ll have better chances to be selected for the coveted events.</p></li>
+				<li><p>From time to time <strong>b-onstage will organize events and will offer prizes</strong> so sign up and we\'ll keep you informed!</p></li>				
+				</li>
+			</ul>';
+
 
 // Footer
 $lang['footer_contactus'] = 'Contact-us';
