@@ -262,7 +262,7 @@ $lang['aboutus_link_howimakemoney'] = 'How I make money';
 
 $lang['aboutus_header_aboutus'] = 'Why b-onstage?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>Because the music industry is in crisis and because the record sales <strong>are not enough anymore.</strong></p></li>
+				<li><p>Because the record sales <strong>are not enough anymore.</strong></p></li>
 				<li><p>Because like you, <strong>we spent days and days</strong> going from one venue to the other without success.</p></li>
 				<li><p>Because we thought there must be <strong>a better way to book a concert</strong>.</p></li>
 			</ul>';

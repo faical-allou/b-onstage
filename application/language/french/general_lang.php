@@ -260,8 +260,8 @@ $lang['aboutus_link_howimakemoney'] = 'Qu\'est-ce que j\'y gagne';
 
 $lang['aboutus_header_aboutus'] = 'Pourquoi b-onstage ?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>Parce que l’industrie de la musique est en crise et que la vente de disque ne suffit plus <strong>pour vivre de son art.</strong></p></li>
-				<li><p>Parce que comme vous, <strong>nous avons passé des journées</strong> à aller de bar en bar pour trouver où jouer.</p></li>
+				<li><p>Parce que la vente de disque ne suffit plus <strong>pour vivre de sa musique.</strong></p></li>
+				<li><p>Parce que comme vous, <strong>nous avons passé des journées entières</strong> à aller de bar en bar pour trouver où jouer sans grand succès.</p></li>
 				<li><p>Parce que nous pensons qu\'il y a <strong>une meilleure façon de trouver une Scène</strong>.</p></li>
 			</ul>';
 
@@ -277,7 +277,7 @@ $lang['aboutus_header3_aboutus'] = 'Inscrivez-vous';
 $lang['aboutus_header4_aboutus'] = 'sur b-onstage et à vous de jouer !';
 $lang['aboutus_header_whoweare'] = 'Qui sommes-nous ?';
 $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
-				<li><p class="grey fs-15">Musiciens et programmeurs, nous avons créé notre compagnie, Mybandonstage, afin de promouvoir toutes les créations artistiques amateures.</p></li>		
+				<li><p class="grey fs-15">Musiciens et programmeurs, nous avons créé Mybandonstage, pour promouvoir toutes les créations artistiques amateures.</p></li>		
 				<li><p class="grey fs-15">Nous avons conçue</strong> afin de <strong>mettre en contact les Artistes avec leur public</strong> en facilitant leurs démarches pour <strong>organiser des concerts.</strong></p></li>	
 				<li><p class="grey fs-15"><strong>Nous visitons toutes les Scènes</strong> (qui sont des établissements partenaires de b-onstage), nous prenons les photos et nous les référençons avec leurs descriptions pour assurer qu’<strong>on vous offre ce qu’on vous promet.</strong></p></li>
 				<li><p class="grey fs-15">Nous pouvons vous proposer <strong>pour chaque concert des contrats spécialisés</strong> pour limiter les responsabilités équitablement et équilibrer les relations entre tous les intervenants.</p></li>	
