@@ -186,7 +186,7 @@ notifications
 search-bar
 ========================================================================== */
 #search-bar{display:none;}
-.wrapper-search-date{border:1px solid #d9d9d9;border-top:1px solid #c0c0c0;display:inline-block;cursor:pointer;}
+.wrapper-search-date{border:1px solid #d9d9d9;border-top:1px solid #c0c0c0;display:inline-block;cursor:pointer;  text-align:center;  display:inline-block;}
 .wrapper-search-date:hover{
 	border:1px solid #b9b9b9;
 	border-top:1px solid #a0a0a0;
@@ -201,6 +201,7 @@ search-bar
 	box-shadow:0px 0px 8px #c0c0c0;
 }
 .wrapper-search-date > input:first-child{border:none;padding:.2em .2em .2em .2em;font-size:16px;background:#fff;font-weight:bold;position:relative;min-width:90px}
+
 
 /* ==========================================================================
 sidebar
@@ -226,8 +227,8 @@ slider
 .slide2{background:#000000;}
 
 .slide4 .bContainer {top:10%;right:5%;text-align:left;background:rgba(255,255,255,0.2);}
-.slide3 .bContainer {top: 5%;left:5%;text-align:left;}
-.slide1 .bContainer {top: 5%;left:5%;text-align:left;}
+.slide3 .bContainer {top: 5%;left:74px;text-align:left;}
+.slide1 .bContainer {top: 5%;left:74px;text-align:left;}
 .slide2 .bContainer {top:10%;right:5%;text-align:left;}
 
 .slide4 img {left:0;top:0;position: absolute;}

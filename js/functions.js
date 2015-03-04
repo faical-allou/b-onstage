@@ -49,7 +49,7 @@ function init_search_bar(open){
 		minDate			: Date.today(),
 		altFormat		: 'yy-mm-dd',
 		altField		: '#search-date-start',
-		numberOfMonths	: 2,
+		numberOfMonths	: 1,
 		beforeShow		: function(input, inst){
 			inst.dpDiv.css({marginTop:'5px', marginLeft:'-1px'}).addClass('bs-black');
 		},
@@ -68,7 +68,7 @@ function init_search_bar(open){
 		minDate			: Date.today(),
 		altFormat		: 'yy-mm-dd',
 		altField		: '#search-date-end',
-		numberOfMonths	: 2,
+		numberOfMonths	: 1,
 		beforeShow		: function(input, inst){
 			inst.dpDiv.css({marginTop:'5px', marginLeft:'-1px'}).addClass('bs-black');
 		},

@@ -54,7 +54,7 @@ $lang['terms_of_services'] = 'Pour utiliser nos services, vous devez accepter le
 $lang['signin_title'] = 'Connexion';
 $lang['signup_title'] = 'Créer un compte';
 $lang['signup_activate_title'] = 'Activer votre compte';
-$lang['signup_terminate_title'] = 'A Vous de Jouer!';
+$lang['signup_terminate_title'] = 'A vous de Jouer!';
 
 //Notifications
 $lang['notify_account_created'] = 'Votre inscription est maintenant validée';
@@ -277,8 +277,8 @@ $lang['aboutus_header3_aboutus'] = 'Inscrivez-vous';
 $lang['aboutus_header4_aboutus'] = 'sur b-onstage et à vous de jouer !';
 $lang['aboutus_header_whoweare'] = 'Qui sommes-nous ?';
 $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
-				<li><p class="grey fs-15">Musiciens et programmeurs, nous avons créé Mybandonstage, pour promouvoir toutes les créations artistiques amateures.</p></li>		
-				<li><p class="grey fs-15">Nous avons conçue</strong> afin de <strong>mettre en contact les Artistes avec leur public</strong> en facilitant leurs démarches pour <strong>organiser des concerts.</strong></p></li>	
+				<li><p class="grey fs-15">Musiciens et programmeurs, nous avons créé b-onstage pour aider les musiciens à lancer leur carrière.</p></li>		
+				<li><p class="grey fs-15">Nous l\'avons conçu dans le but de </strong> faciliter les démarches pour <strong>organiser des concerts.</strong></p></li>	
 				<li><p class="grey fs-15"><strong>Nous visitons toutes les Scènes</strong> (qui sont des établissements partenaires de b-onstage), nous prenons les photos et nous les référençons avec leurs descriptions pour assurer qu’<strong>on vous offre ce qu’on vous promet.</strong></p></li>
 				<li><p class="grey fs-15">Nous pouvons vous proposer <strong>pour chaque concert des contrats spécialisés</strong> pour limiter les responsabilités équitablement et équilibrer les relations entre tous les intervenants.</p></li>	
 				<li><p class="grey fs-15">Nous assurons <strong>le suivi de tous nos partenaires et de tous les Artistes</strong>, nous répondons à tous les messages que nous recevons et nous sommes prêts à intervenir auprès de tous les organismes pour vous soutenir.</p></li>
@@ -311,11 +311,12 @@ $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 			</ul>';
 
 $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
+				<li><p>Nous nous déplaçons pour que vous n\'ayez pas à le faire. <strong>Cela vous évite de marcher pendant des jours</strong> et qui vous fait gagner du temps et de l\'argent.</p></li>			
 				<li><p>b-onstage vous donne l\'opportunité de jouer devant vos fans <strong> et les habitués de la Scène</strong>. Chaque nouveau fan est une nouvelle opportunité.</p></li>			
-				<li><p>A moins que cela ne soit explicitement spécifié vous avez<strong> toujours </strong> le droit de recevoir des pourboires, de vendre des CDs et autres goodies pendant et après le show.</p></li>			
-				<li><p><strong>Certains événements sont rémunérés</strong> avec des conditions données par la Scène et nous les affichons comme tels, b-onstage ne prend aucun frais sur cette transaction, tout est pour vous.</p></li>			
-				<li><p>Nous vous encourageons à <strong>contribuer à la communauté</strong> en organisant un maximum de concerts, même si les garanties sont faibles au début. Plus nous organiserons de concerts avec succès plus nous pourrons offrir de concerts rémunérés.</p></li>			
-				<li><p>Paie garantie ou pas <strong>donnez toujours le meilleur de vous-même</strong>, commencez dès que possible et prenez soin de votre historique sur la plateforme, cela augmentera vos chances pour les évènements les plus convoités.</p></li>
+				<li><p>A moins que cela ne soit explicitement spécifié vous pouvez<strong> toujours recevoir des pourboires, vendre des CDs et autres goodies</strong>  pendant et après le show.</p></li>			
+				<li><p><strong>Certains événements sont rémunérés</strong> avec des conditions données par la Scène (cachet fixe, surcharge sur les boissons, part de la billeterie ou défraiement) et nous les affichons comme tels. b-onstage ne prend aucun frais sur cette transaction, tout est pour vous.</p></li>			
+				<li><p><strong>Contribuez à la communauté</strong> en organisant un maximum de concerts, même si les garanties sont faibles au début. Plus nous organiserons de concerts avec succès plus nous pourrons offrir de concerts rémunérés.</p></li>			
+				<li><p><strong>Donnez toujours le meilleur de vous-même</strong>, commencez dès que possible et prenez soin de votre historique sur la plateforme, cela augmentera vos chances plus tard pour les évènements les plus convoités.</p></li>
 				<li><p>De temps en temps <strong>b-onstage organise des évenements avec des prix à la clé</strong>, inscrivez-vous et nous vous tiendrons informés.</p></li>				
 				</li>
 			</ul>';
@@ -824,7 +825,7 @@ $lang['users_calendar_create_non_renum'] = 'Non rémunéré';
 $lang['users_calendar_create_cachet'] = 'Cachet de';
 $lang['users_calendar_create_conso'] = 'de surcharge sur les boissons';
 $lang['users_calendar_create_tickets'] = 'sur la billeterie';
-$lang['users_calendar_create_remb'] = 'Remboursement des frais de réservation';
+$lang['users_calendar_create_remb'] = 'Défraiement';
 $lang['users_calendar_concert_at'] = 'Concert au';
 $lang['users_calendar_genre'] = 'Genre musical';
 $lang['users_calendar_event_mod_del'] = 'Modifier / supprimer l\'évènement';
@@ -1047,13 +1048,13 @@ $lang['shows_nosite'] = 'Pas de site officiel';
 $lang['shows_bandsound'] = 'Les sons du groupe';
 
 // Book page			
-$lang['book_filterresults']	 = 'Filtrer les résultats';
-$lang['book_bysort1']	 = 'Par genre musical';
-$lang['book_bysort2']	 = 'Par tranche';
+$lang['book_filterresults']	 = 'Filtrer et trier les résultats';
+$lang['book_bysort1']	 = 'Filtrer le genre musical';
+$lang['book_bysort2']	 = 'Filtrer par intervalles';
+$lang['book_bysort3']	 = 'Filtrer par type de rémunération';
 $lang['book_bysort2_1']	 = 'Réservation entre';
 $lang['book_bysort2_2']	 = 'Prix entrée entre';
 $lang['book_bysort2_3']	 = 'Horaire entre';
-$lang['book_bysort3']	 = 'Par type de rémunération';
 $lang['book_steptxt1']	 = 'Choisissez une date et cliquez sur <strong>"Réserver"</strong>.';
 $lang['book_steptxt2']	 = 'Une fois sélectionné par la Scène, vous avez <strong>48 heures</strong> pour valider votre réservation.';
 $lang['book_steptxt3']	 = 'Le jour du Concert, présentez-vous et <strong>c\'est à vous de jouer!</strong>';

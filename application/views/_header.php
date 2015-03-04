@@ -92,8 +92,8 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 					<?=anchor(base_url(), img(site_url('img/logo.png')), array('id' => 'logo', 'class' => 'left'))?>
 					</div>
 					<!--menu principal-->
-					<ul class="menu default left">
-<!--						<li><?=anchor(base_url(), '<span aria-hidden="true" class="icon-home"></span>' , array('id' => 'menu-home'))?></li>
+					<ul class="menu default left ml-10">
+<!--					<li><?=anchor(base_url(), '<span aria-hidden="true" class="icon-home"></span>' , array('id' => 'menu-home'))?></li>
 -->						<li><?=anchor(site_url('concerts/oujouer'), lang("header_book_date") , array('id' => 'menu-concert'))?></li>
 <!--					<li><?=anchor(site_url('concerts/programmation'), lang("shows"), array('id' => 'menu-programmation'))?></li>
 -->						<li><?=anchor(site_url('stages'), lang("scenes"), array('id' => 'menu-stage'))?></li>
@@ -221,6 +221,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 							<span aria-hidden="true" class="fs-14 icon-calendar mr-10"></span>
 							<input type="hidden" name="search-date-end" id="search-date-end" value="<?=$search['search-date-end']?>" />
 						</div>
+
 						<!--search city-->
 						<span class="fs-16 grey bold ml-2 mr-2"><?php echo lang("in") ?></span>
 						
