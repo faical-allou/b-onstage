@@ -341,8 +341,8 @@ concert
 .line-concert > div.inner:hover{-moz-box-shadow:0 2px 8px #b7b7b7;-webkit-box-shadow:0 2px 8px #b7b7b7;box-shadow:0 2px 8px #b7b7b7;background-color:#fafafa;}
 .line-concert .bottom-dotted{border-bottom:1px dotted #eaeaea;}
 .line-concert .right-dotted{border-right:1px dotted #eaeaea;}
-.date-concert, .schedule-concert{font-size:1.2em;padding:.6em 1em;}
-.title-concert{padding:5px 10px;margin-left:10px;}
+.date-concert, .schedule-concert{padding:.6em 1em;}
+.title-concert{padding:.6em 1em;margin-left:10px;}
 
 /* ==========================================================================
 stage

@@ -124,7 +124,7 @@ var entry_max = <?=$entry_max?>;
 				</div>			
 					
 				<!--event list-->							
-				<div id="list-concert"><?=$events_list?></div>
+				<div id="list-concert" class="bold" ><?=$events_list?></div>
 				
 				<!--footer-->
 				<footer>				

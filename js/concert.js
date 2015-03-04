@@ -200,6 +200,10 @@
 					event_id = $(event.currentTarget).data('event-id');					
 					reservation_request($(this), event_id, stage_id);					
 				});				
+
+				//init reservation requets
+				$('.request-info').button();
+
 				
 				/**********INIT SHOW MORE CONCERT**********/
 				$('#more-concert > button:first')

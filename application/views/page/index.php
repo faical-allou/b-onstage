@@ -27,11 +27,13 @@
 						<p class="grey fs-12 bold"><?php echo lang("users_page_comwith") ?> <?=$user_page['company']?> <?php echo lang("users_page_signup") ?></p>
 						<div class="mt-10">
 							<span>
-								<a href="<?=site_url('signup_choice')?>" class="ui-dark"><?php echo lang("signup_stage_title") ?></a>
+								<a href="<?=site_url('signup')?>" class="ui-purple"><?php echo lang("signup_stage_title") ?></a>
 							</span>
 							<span class="ml-5">								
 								<?=anchor(site_url('login/'.urlencode(uri_string())), lang("signin_title"), array('class'=>'ui-purple'))?>								
 							</span>	
+							<a class="ml-5 ui-dark" href="javascript:void(0)" id="contact_us"><?php echo lang("request_info") ?></a> 
+
 						</div>
 					</div>
 				<?php } ?>	
