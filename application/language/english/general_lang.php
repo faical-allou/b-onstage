@@ -307,7 +307,6 @@ $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 				</li>
 			</ul>';
 
-<<<<<<< HEAD
 $lang['home_howitworks_title'] = 'How it works:';
 
 $lang['home_howitworks_list'] = '<ul class="home-howitworks">
@@ -320,12 +319,11 @@ $lang['home_howitworks_list'] = '<ul class="home-howitworks">
 
 
 
-=======
 $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
-				<li><p>We did the leg work so you don\'t have to. <strong>You don\'t have to distribute demos for days</strong>, it saves time and money. </p></li>			
+				<li><p>We did the leg work so you don\'t have to. <strong>You don\'t have to distribute demos for days</strong>, it saves you time and money. </p></li>			
 				<li><p>b-onstage gives you the opportunity to get in front of your fans <strong> and the venues\' regulars</strong>. More fans means more opportunities to make money.</p></li>			
 				<li><p>Unless specified you will <strong> always be able to collect tips, sell CDs and other goodies</strong> during and after the show.</p></li>			
-				<li><p><strong>Some events are paid</strong> with conditions set by the Stage (fixed amount, surcharge on drinks, share of the box office, or reimbursing the expenses) and will be advertized as such. b-onstage does not take any of this money, it\'s all yours.</p></li>			
+				<li><p><strong>Some events are paid</strong> with conditions set by the Stage (fixed amount, surcharge on drinks, share of the box office, or reimbursment of the expenses) and will be advertized as such. b-onstage does not take any of this money, it\'s all yours.</p></li>			
 				<li><p><strong>Start contributing to the community</strong> by doing as many concerts as possible even with limited return. More successful events means more paid events eventually.</p></li>			
 				<li><p><strong>Always put a good show</strong>, start as soon as you can and build up your record on the platform. You\'ll have better chances to be selected later for the coveted events.</p></li>
 				<li><p>From time to time <strong>b-onstage will organize events and will offer prizes</strong> so sign up and we\'ll keep you informed!</p></li>				
@@ -333,7 +331,6 @@ $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 			</ul>';
 
 
->>>>>>> design
 // Footer
 $lang['footer_contactus'] = 'Contact-us';
 $lang['footer_followus'] = 'Follow us';

@@ -66,7 +66,7 @@
 	
 
 
-<div class="container_12 mb-50">
+<div class="container_12 mb-30">
 	<!--last 5 artist-->
 	<div class="grid_6 home-bloc ui-corner-all bs-black">
 		<?=heading($title_artist, 2, 'class="home-title title"')?>		

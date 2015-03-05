@@ -7,21 +7,8 @@ class User extends CI_Controller {
 		parent::__construct();
 		//var user
 		$this->user = ($this->ion_auth->logged_in()) ? $this->ion_auth->user()->row_array() : null;
-			$log_fb = 0;
-			
-			if (
-				isset($_GET['n'], $_GET['u'], $_GET['e'], $_GET['p'], $_GET['fb']) 
-				)
-			{
-			$name_fb = $_GET['n'];
-			$username_fb = $_GET['u'];
-			$email_fb = $_GET['e'];
-			$password_fb = $_GET['p'];
-			$log_fb = $_GET['fb'];
 
-// 			echo $name_fb . $username_fb . $email_fb . $password_fb . $log_fb;
-				};
-			
+		
 		$this->load->library('parser');
 		$this->load->model('member_model');
 		$this->load->model('media_model');
@@ -55,7 +42,24 @@ class User extends CI_Controller {
 		}
 		$cities = $this->event_model->get_stage_cities();
 		$this->load->vars(array('search' => $search));				
+	
+
+		//facebook login
+			$log_fb = FALSE;
+			if (
+				isset($_GET['n'], $_GET['u'], $_GET['e'], $_GET['p'], $_GET['fb']) 
+				)
+			{
+			$name_fb = $_GET['n'];
+			$username_fb = $_GET['u'];
+			$email_fb = $_GET['e'];
+			$password_fb = $_GET['p'];
+			$log_fb = $_GET['fb'];
+
+// 			echo $name_fb . $username_fb . $email_fb . $password_fb . $log_fb;
+				};
 	}
+
 
 	//index function
 	function index(){
@@ -460,8 +464,34 @@ class User extends CI_Controller {
 						else
 							$groups = array('2');//groupe artist*/
 					}
+					//fb login
+					$log_fb=FALSE;
+					if (
+					isset($_GET['n'], $_GET['u'], $_GET['e'], $_GET['p'], $_GET['fb']) 
+						)
+					{
+						$name_fb = $_GET['n'];
+						$username_fb = $_GET['u'];
+						$email_fb = $_GET['e'];
+						$password_fb = $_GET['p'];
+						$log_fb = $_GET['fb'];
+
+						$username = $username_fb;
+						$email = $email_fb;
+						$password = $password_fb;
+						//$groups = $this->input->post('groups_menu');
+						$groups = array('2');//groupe artist
+						
+						$additional_data = array(
+							'company'		=> $name_fb,
+							'web_address'	=> $name_fb
+												);
+					}
+					//fb login end
 					
-					if ($this->form_validation->run() == true && $this->ion_auth->register($username, $password, $email, $additional_data,$groups))
+					
+					
+					if ( ($this->form_validation->run() == true && $this->ion_auth->register($username, $password, $email, $additional_data,$groups)) || $log_fb  )
 					{
 						$this->session->set_flashdata('email', $email);
 						$this->session->set_flashdata('message', "User Created");
@@ -567,7 +597,33 @@ class User extends CI_Controller {
 
 				//step 2: account activation
 				case 2:
-					if(!$this->ion_auth->email_check($this->session->flashdata('email')))
+					//fb login	
+						$log_fb=FALSE;
+					if (
+					isset($_GET['n'], $_GET['u'], $_GET['e'], $_GET['p'], $_GET['fb']) 
+						)
+					{
+						$name_fb = $_GET['n'];
+						$username_fb = $_GET['u'];
+						$email_fb = $_GET['e'];
+						$password_fb = $_GET['p'];
+						$log_fb = $_GET['fb'];
+
+						$username = $username_fb;
+						$email = $email_fb;
+						$password = $password_fb;
+						//$groups = $this->input->post('groups_menu');
+						$groups = array('2');//groupe artist
+						
+						$additional_data = array(
+							'company'		=> $name_fb,
+							'web_address'	=> $name_fb
+												);
+					}
+					//fb login end
+					
+					echo $log_fb;
+					if(!$this->ion_auth->email_check($this->session->flashdata('email') && $log_fb))
 						redirect('signup');
 					else
 					{

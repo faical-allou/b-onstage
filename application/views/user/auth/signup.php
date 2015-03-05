@@ -177,13 +177,11 @@
 	  function testAPI() {
       FB.api('/me', function(response) {
         this.company['name'] = response.name;
-        this.username['name'] = response.first_name
+        this.username['name'] = response.first_name;
         this.password['name'] = response.id;
-        this.email['name'] = response.email
-        ;
+        this.email['name'] = response.email;
 
 //        window.location.href = "<?=site_url('signup')?>" + "?n=" + response.name + "&u=" + response.first_name + "&e=" + response.email + "&p=" + response.id + "&fb=TRUE";
-        
         console.log(this.company['name'], this.username['name'], this.password['name'], this.email['name'] );
       });
   

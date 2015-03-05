@@ -322,7 +322,6 @@ $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 			</ul>';
 
 
-<<<<<<< HEAD
 $lang['home_howitworks_title'] = 'Comment ca marche:';
 
 $lang['home_howitworks_list'] = '<ul class="home-howitworks">
@@ -332,8 +331,6 @@ $lang['home_howitworks_list'] = '<ul class="home-howitworks">
 				<li><p>...A Toi de Jouer!</p></li>
 			</ul>';
 
-=======
->>>>>>> design
 
 // Footer
 $lang['footer_contactus'] = 'Contactez-nous';
