@@ -8,7 +8,7 @@ setlocale(LC_TIME, $lang_id."_".strtoupper($lang_id).".UTF8");
 
 			<div class="bg-white ui-corner-all bs-black mb-20">
 
-				<div class="title white fs-16 p-10 ui-corner-top" style="border-bottom:1px solid #eaeaea;background-color:#3a3a3a;"><?php echo lang("users_page_followus") ?></div>
+				<div class="title white fs-16 p-10 ui-corner-top" style="border-bottom:1px solid #eaeaea;background-color:#000000;"><?php echo lang("users_page_followus") ?></div>
 
 				<ul id="social-followers">
 

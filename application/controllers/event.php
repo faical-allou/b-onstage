@@ -694,7 +694,7 @@ class Event extends CI_Controller {
 						/*****PAYMENT TYPE*****/	
 						$payment_type = array();
 						switch($event['payment_type']){
-							case 1 : array_push($payment_type, lang("notset")); break;
+							case 1 : array_push($payment_type, lang("payment_notset")); break;
 							case 2 : array_push($payment_type, lang("users_calendar_create_non_renum")); break;				
 							case 3 : 
 								if($event['payment_amount'] > 0)
@@ -968,7 +968,7 @@ class Event extends CI_Controller {
 			/*****PAYMENT TYPE*****/
 			$payment_type = array();
 			switch($event['payment_type']){
-				case 1 : array_push($payment_type, lang("notset")); break;
+				case 1 : array_push($payment_type, lang("payment_notset")); break;
 				case 2 : array_push($payment_type, lang("users_calendar_create_non_renum")); break;				
 				case 3 : 
 					if($event['payment_amount'] > 0)

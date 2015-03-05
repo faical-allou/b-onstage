@@ -61,7 +61,7 @@ class About extends CI_Controller {
 		$this->load->view('_footer', $this->footer);		
 	}
 	
-	public function how_does_this_work(){
+	public function how_does_it_work(){
 		$this->header['title'] = lang("howitworks_title");
 		$this->header['description'] = lang("howitworks_desc");				
 		$this->footer['scripts'] = array('js/main-about.js');
@@ -70,5 +70,16 @@ class About extends CI_Controller {
 		//$this->load->view('about/menu');
 		$this->load->view('about/work');
 		$this->load->view('_footer', $this->footer);		
-	}		
+	}	
+	public function how_i_make_money(){
+		$this->header['title'] = lang("howimakemoney_title");
+		$this->header['description'] = lang("howimakemoney_desc");				
+		$this->footer['scripts'] = array('js/main-about.js');
+		
+		$this->load->view('_header',$this->header);		
+		//$this->load->view('about/menu');
+		$this->load->view('about/money');
+		$this->load->view('_footer', $this->footer);		
+	}	
+		
 }

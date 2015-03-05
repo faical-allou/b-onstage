@@ -9,9 +9,6 @@
 	<p><strong><?php echo lang("users_rese_fees") ?> : </strong><?=$reservation?></p>
 	<p><strong><?php echo lang("users_rese_renumartist") ?> : </strong><?=$payment?></p>
 </div>	
-<div class="p-5">
-	<?php echo lang("book_req_txt1") ?>
-</div>
 <div class="p-5 grey">	
 	<?=form_checkbox($checkbox)?>
 	<label class="bold" for="<?=$checkbox['id']?>"><?php echo lang("book_req_agree") ?></label>

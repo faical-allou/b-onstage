@@ -22,7 +22,7 @@ var entry_max = <?=$entry_max?>;
 	<div class="grid_12 ui-corner-all bs-black bg-white mb-20">
 		<table width="100%"><tbody><tr>
 			<td class="filter-concert">				
-				<div class="p-10 fs-16 white title bg-purple ui-corner-tl"><?php echo lang("book_filterresults") ?></div>					
+				<div class="p-10 fs-16 white title bg-black ui-corner-tl"><?php echo lang("book_filterresults") ?></div>					
 				<div class="inner">	
 					<!--filter sort-->
 					<div class="p-20">
@@ -51,13 +51,13 @@ var entry_max = <?=$entry_max?>;
 						
 						<!--entry-->				
 						<div class="mb-20">
-							<div class="mb-10 grey fs-12 bold"><?php echo lang("book_bysort2_1") ?> <span id="filter-entry"></span></div>
+							<div class="mb-10 grey fs-12 bold"><?php echo lang("book_bysort2_2") ?> <span id="filter-entry"></span></div>
 							<div class="ml-5 mr-5" id="slider-range-entry"></div>
 						</div>
 						
 						<!--schedule-->
 						<div class="mb-10">
-							<div class="mb-10 grey fs-12 bold"><?php echo lang("book_bysort2_1") ?> <span id="filter-schedule"></span></div>
+							<div class="mb-10 grey fs-12 bold"><?php echo lang("book_bysort2_3") ?> <span id="filter-schedule"></span></div>
 							<div class="ml-5 mr-5" id="slider-range-schedule"></div>
 						</div>
 					</div>
@@ -97,7 +97,7 @@ var entry_max = <?=$entry_max?>;
 			</td>	
 			<td class="result-concert">						
 				<!--title-->
-				<div class="p-10 fs-16 white title bg-purple ui-corner-tr"><?php echo lang("artists_searchresutls") ?></div>										
+				<div class="p-10 fs-16 white title bg-black ui-corner-tr"><?php echo lang("artists_searchresutls") ?></div>										
 				
 				<!--header-->				
 				<div class="recommendations m-10">
@@ -124,7 +124,7 @@ var entry_max = <?=$entry_max?>;
 				</div>			
 					
 				<!--event list-->							
-				<div id="list-concert"><?=$events_list?></div>
+				<div id="list-concert" class="bold" ><?=$events_list?></div>
 				
 				<!--footer-->
 				<footer>				

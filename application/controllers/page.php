@@ -143,18 +143,6 @@ class Page extends CI_Controller {
 				'form_msg'		=> 'Ex: http://www.monfacebook.com',
 				'msg'			=> lang("users_page_inputsocialmed1")
 			),
-			//myspace
-			array(
-				'id'			=> 'myspace',
-				'title'			=> 'Myspace',
-				'logo'			=> '<span aria-hidden="true" class="fs-50 grey icon-twitter"></span>',
-				'val'			=> !empty($user_page['myspace']) ? $user_page['myspace'] : '',
-				'type'			=> 'logo',
-				'form_label'	=> lang("users_page_inputsocialmed2"),
-				'input_type'	=> 'url',
-				'form_msg'		=> 'Ex: http://www.monmyspace.com',
-				'msg'			=> lang("users_page_inputsocialmed2")
-			),
 			//twitter
 			array(
 				'id'			=> 'twitter',
@@ -178,7 +166,19 @@ class Page extends CI_Controller {
 				'input_type'	=> 'url',
 				'form_msg'		=> 'Ex: http://www.mongoogleplus.com',
 				'msg'			=> lang("users_page_inputsocialmed4")
-			)
+			),
+			//myspace
+			array(
+				'id'			=> 'myspace',
+				'title'			=> 'Myspace',
+				'logo'			=> '<span aria-hidden="true" class="fs-50 grey icon-link-2"></span>',
+				'val'			=> !empty($user_page['myspace']) ? $user_page['myspace'] : '',
+				'type'			=> 'logo',
+				'form_label'	=> lang("users_page_inputsocialmed2"),
+				'input_type'	=> 'url',
+				'form_msg'		=> 'Ex: http://www.monmyspace.com',
+				'msg'			=> lang("users_page_inputsocialmed2")
+			),
 		);	
 		$empty_social_links = empty($user_page['facebook']) && empty($user_page['myspace']) && empty($user_page['twitter']) && empty($user_page['google_plus']);
 

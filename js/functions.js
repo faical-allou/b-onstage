@@ -49,7 +49,7 @@ function init_search_bar(open){
 		minDate			: Date.today(),
 		altFormat		: 'yy-mm-dd',
 		altField		: '#search-date-start',
-		numberOfMonths	: 2,
+		numberOfMonths	: 1,
 		beforeShow		: function(input, inst){
 			inst.dpDiv.css({marginTop:'5px', marginLeft:'-1px'}).addClass('bs-black');
 		},
@@ -68,7 +68,7 @@ function init_search_bar(open){
 		minDate			: Date.today(),
 		altFormat		: 'yy-mm-dd',
 		altField		: '#search-date-end',
-		numberOfMonths	: 2,
+		numberOfMonths	: 1,
 		beforeShow		: function(input, inst){
 			inst.dpDiv.css({marginTop:'5px', marginLeft:'-1px'}).addClass('bs-black');
 		},
@@ -80,8 +80,8 @@ function init_search_bar(open){
 	/*********INIT SEARCH CITY**********/
 	$('#search-city')
 	.multiselect({
-		header				: '',
-		multiple			: true,
+		header				: false,
+		multiple			: false,
 		selectedList		: 10,
 		height				: 'auto',
 		width				: 'auto',
@@ -94,7 +94,7 @@ function init_search_bar(open){
 	});
 
 	/**********INIT BUTTON SEARCH**********/
-	$('#button-search-concert').button();
+	$('#button-search-concert').button(); 
 }
 
 function init_search_form(id_search_menu){

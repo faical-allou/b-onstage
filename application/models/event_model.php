@@ -332,8 +332,8 @@ class Event_model extends CI_Model
 					->where('events.stage_id = users.id', NULL, false)
 					->where('groups.name', 'stage')
 					->group_by('city')
-					->order_by('nb','desc');
-					
+					->order_by('city');
+							
 		if($city)
 			$this->db->like('city', $city, 'after');
 			

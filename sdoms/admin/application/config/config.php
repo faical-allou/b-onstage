@@ -366,7 +366,7 @@ $config['proxy_ips'] = '';
 |--------------------------------------------------------------------------
 */
 
-$config['reserved_url'] = array('about', 'about_us', 'concerts', 'event', 'main', 'page','reservation', 'stages', 'upload', 'user','login','logout','signup','activate','registration_completed','concerts','stage','404_override','how_does_this_work','legal','terms_of_services');
+$config['reserved_url'] = array('about', 'about_us', 'concerts', 'event', 'main', 'page','reservation', 'stages', 'upload', 'user','login','logout','signup','activate','registration_completed','concerts','stage','404_override','how_does_it_work','legal','terms_of_services');
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */

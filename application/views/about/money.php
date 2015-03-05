@@ -2,7 +2,7 @@
 	<div class="grid_12 bg-white bs-black ui-corner-all mt-20 mb-20">		
 		<div class="p-r">
 			<?php 
-			echo img(array('src' => site_url('img/about-work.png'), 'class'=> 'ui-corner-top', 'width' => '100%'));
+			echo img(array('src' => site_url('img/about-money.png'), 'class'=> 'ui-corner-top', 'width' => '100%'));
 			?>
 			<ul id="about-menu">
 				<li><?=anchor(site_url('about'), lang("aboutus_link_aboutus"), array('id' => 'about-menu-1'))?></li>
@@ -12,11 +12,14 @@
 			</ul>		
 		</div>
 		<div class="about">	
-			<?php echo lang("aboutus_txt_howitworks") ?>
+			<?php echo lang("aboutus_txt_howimakemoney") ?>
 		</div>
+		<div class="about">
+			<?=heading(anchor(site_url('signup'),lang("aboutus_header3_aboutus"), array('class' => 'purple')).' '.lang("aboutus_header4_aboutus"), 2, 'class="fs-24 title grey"')?>	
+		</div>	
 	</div>
 </div>
 
 <script>
-	var about_menu_id = 'about-menu-3';
+	var about_menu_id = 'about-menu-4';
 </script>

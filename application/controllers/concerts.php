@@ -157,7 +157,7 @@ class Concerts extends CI_Controller {
 				foreach ($events as $event) {
 					switch($event['payment_type']){
 						case 1 : 
-							$payment_type = lang("notset");
+							$payment_type = lang("payment_notset");
 							break;
 						case 2 :
 							$payment_type = lang("users_calendar_create_non_renum");
@@ -294,13 +294,13 @@ class Concerts extends CI_Controller {
 					foreach($events as $event){				
 						switch($event['payment_type']){
 							case 1 : 
-								$payment_type = lang("notset");
+								$payment_type = lang("payment_notset");
 								break;
 							case 2 :
 								$payment_type = lang("users_calendar_create_non_renum");
 								break;
 							case 3 :
-								$payment_type = ($event['payment_amount'] > 0) ? 'Cachet de '.round($event['payment_amount'],2).' €'.br() : '';
+								$payment_type = ($event['payment_amount'] > 0) ? lang("users_calendar_create_cachet").round($event['payment_amount'],2).' €'.br() : '';
 								$payment_type .= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'€ '.lang("users_calendar_create_conso").br() : '';
 								$payment_type .= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets").br() : '';
 								$payment_type .= ($event['refund_fees'] > 0) ? lang("users_calendar_create_remb") : '';

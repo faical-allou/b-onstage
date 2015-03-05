@@ -119,7 +119,7 @@ class Stage extends CI_Controller {
 						'pseudo'				=> $username,
 						'password'				=> $password,
 						'url_profil'			=> 'http://www.b-onstage.com/page/'.$username,
-						'url_work'				=> 'http://www.b-onstage.com/how_does_this_work',
+						'url_work'				=> 'http://www.b-onstage.com/how_does_it_work',
 						'hello'					=> $lang['hello'],
 						'txt1'					=> $lang['signup_stage_confirmation_email_txt1'],
 						'txt2'					=> $lang['signup_stage_confirmation_email_txt2'],

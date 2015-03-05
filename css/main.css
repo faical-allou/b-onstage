@@ -150,7 +150,7 @@ menu
 	background:#8e2c86;/*url(/img/w-menu.png) repeat-x;*/
 	z-index:9999;
 }
-#logo{display:block;width:220px;height:50px;}
+#logo{display:block;width:50px;height:50px;}
 .menu{display:block;}
 .menu > li {display:inline;}
 .menu > li > a{font-family:"Open Sans Condensed", sans-serif;text-decoration:none;float:left;display:block;padding:0 10px;height:50px;line-height:50px;font-size:16px;color:#fff;}
@@ -186,7 +186,7 @@ notifications
 search-bar
 ========================================================================== */
 #search-bar{display:none;}
-.wrapper-search-date{border:1px solid #d9d9d9;border-top:1px solid #c0c0c0;display:inline-block;cursor:pointer;}
+.wrapper-search-date{border:1px solid #d9d9d9;border-top:1px solid #c0c0c0;display:inline-block;cursor:pointer;  text-align:center;  display:inline-block;}
 .wrapper-search-date:hover{
 	border:1px solid #b9b9b9;
 	border-top:1px solid #a0a0a0;
@@ -200,7 +200,8 @@ search-bar
 	-webkit-box-shadow:0px 0px 8px #c0c0c0;
 	box-shadow:0px 0px 8px #c0c0c0;
 }
-.wrapper-search-date > input:first-child{border:none;padding:.6em 0 .6em 1em;font-size:16px;background:#fff;font-weight:bold;position:relative;}
+.wrapper-search-date > input:first-child{border:none;padding:.2em .2em .2em .2em;font-size:16px;background:#fff;font-weight:bold;position:relative;min-width:90px}
+
 
 /* ==========================================================================
 sidebar
@@ -215,36 +216,37 @@ slider
 #slider{margin:0 auto;height:500px;width:100%;}
 .rsContent {color: #FFF;float: left;}
 .bContainer {position: absolute;z-index:200;}
-.rsABlock {position: relative;display: block;left: auto;top: auto;font-family: "Open Sans Condensed", sans-serif;}
+.rsABlock {position: relative;display: block;left: auto;top: auto;font-family: "Open Sans Condensed", sans-serif; }
 .blockHeadline {font-size: 42px;line-height: 50px;}
 .blockSubHeadline {font-size: 32px;line-height: 40px}
 .txtCent {text-align: center;width: 100%;}
 
-.slide1{background:#fff;}
-.slide2{background:#8e2c86;}
+.slide4{background:#000000;}
 .slide3{background:#fff;}
+.slide1{background:#000000;}
+.slide2{background:#000000;}
 
-.slide1 .bContainer {top: 15%;left:10%;text-align:left;background:rgba(255,255,255,0.8);}
-.slide2 .bContainer{top:15%;right:5%;text-align:left;}
-.slide3 .bContainer {top: 5%;left:5%;text-align:left;}
+.slide4 .bContainer {top:10%;right:5%;text-align:left;background:rgba(255,255,255,0.2);}
+.slide3 .bContainer {top: 5%;left:74px;text-align:left;}
+.slide1 .bContainer {top: 5%;left:74px;text-align:left;}
+.slide2 .bContainer {top:10%;right:5%;text-align:left;}
 
+.slide4 img {left:0;top:0;position: absolute;}
+.slide3 img {right: 0;top: 0;position: absolute;}
 .slide1 img {right: 0;top: 0;position: absolute;}
 .slide2 img {left:0;top:0;position: absolute;}
-.slide3 img {right: 0;top: 0;position: absolute;}
-
-.slide3 .rsArrow {background-color: #FFF}
 
 
 /* ==========================================================================
 home
 ========================================================================== */
-.home-bloc{position:relative;min-height:600px;background-color:#fff;display: inline-block;}
+.home-bloc{position:relative;min-height:900px;background-color:#fff;display: inline-block;}
 
 .home-title{border-bottom:1px solid #eaeaea;padding:15px 20px;font-size:24px;color:#1a1a1a;margin:0;}
 .home-list{}
 .home-list > li {border-bottom:1px dashed #eaeaea;padding:10px 20px;display:block;}
 .home-list > li:hover{background-color:#f5f5f5;}
-.home-list > li:last-child{border-bottom:none;}
+.home-list > li:last-child{border-bottom:2px;}
 .home-list > li a:hover{text-decoration:underline;}
 .home-list-link{position:absolute;bottom:20px;left:20px;right:20px;}
 
@@ -348,8 +350,8 @@ concert
 .line-concert > div.inner:hover{-moz-box-shadow:0 2px 8px #b7b7b7;-webkit-box-shadow:0 2px 8px #b7b7b7;box-shadow:0 2px 8px #b7b7b7;background-color:#fafafa;}
 .line-concert .bottom-dotted{border-bottom:1px dotted #eaeaea;}
 .line-concert .right-dotted{border-right:1px dotted #eaeaea;}
-.date-concert, .schedule-concert{font-size:1.2em;padding:.6em 1em;}
-.title-concert{padding:5px 10px;margin-left:10px;}
+.date-concert, .schedule-concert{padding:.6em 1em;}
+.title-concert{padding:.6em 1em;margin-left:10px;}
 
 /* ==========================================================================
 stage
@@ -911,7 +913,7 @@ about, about us and contact
 .about{padding:10px 20px 20px 20px;}
 .about-list{list-style-type: disc;margin-left:20px;}
 .about-list > li {color:#8e2c86;}
-.about-list > li.nb{border:1px solid #605E66;background-color:#F6F2FF;padding:0 10px;list-style:none;margin:0;}
+.about-list > li.nb{background-color:#F6F2FF;padding:0 10px;list-style:none;margin:0;}
 .about-list > li > p{font-size:15px;color:#1a1a1a;}
 .sub-about-list{list-style-type:none;margin-left:20px;}
 .sub-about-list > li{font-size:15px;color:#1a1a1a;}
@@ -1119,6 +1121,11 @@ you can use the generic selector below, but it's slower:
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
+.icon-search:{
+	padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+
 .icon-new-tab:before {
 	content: "\e002";
 }
@@ -1763,6 +1770,18 @@ you can use the generic selector below, but it's slower:
 .bg-grey-2{background-color:#eaeaea;}
 .bg-black{background-color:#1a1a1a;}
 .bg-purple{background-color:#8e2c86;}
+.bg-green{background-color:#3a6730;}
+.bg-red{background-color:#cf3d36;}
+.bg-orange{background-color:#f7931e;}
+.bg-yellow{background-color:#ffc900;}
+
+
+.red{color:#cf3d36;}
+.purple{color:#8e2c86;}
+.green{color:#3a6730;}
+.orange{color:#f7931e;}
+.yellow{color:#ffc900;}
+
 
 /*border color*/
 .border-none{border:none;}

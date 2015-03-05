@@ -27,11 +27,13 @@
 						<p class="grey fs-12 bold"><?php echo lang("users_page_comwith") ?> <?=$user_page['company']?> <?php echo lang("users_page_signup") ?></p>
 						<div class="mt-10">
 							<span>
-								<a href="<?=site_url('signup_choice')?>" class="ui-dark"><?php echo lang("signup_stage_title") ?></a>
+								<a href="<?=site_url('signup')?>" class="ui-purple"><?php echo lang("signup_stage_title") ?></a>
 							</span>
 							<span class="ml-5">								
 								<?=anchor(site_url('login/'.urlencode(uri_string())), lang("signin_title"), array('class'=>'ui-purple'))?>								
 							</span>	
+							<a class="ml-5 ui-dark" href="javascript:void(0)" id="contact_us"><?php echo lang("request_info") ?></a> 
+
 						</div>
 					</div>
 				<?php } ?>	
@@ -47,13 +49,13 @@
 				<!--menu page-->
 				<div id="menu-page" class="left">
 					<ul>
-						<li><a href="javascript:void(0);" id="menu-page-profil" data-content-id="content-profil" class="grey fs-16 ui-corner-bl"><?php echo lang("users_page_menu1") ?></a></li>						
-						<li><a href="javascript:void(0);" id="menu-page-concert" data-content-id="content-concert" class="grey fs-16"><?php echo lang("users_page_menu2") ?></a></li>						
+						<li><a id="menu-page-profil" data-content-id="content-profil" class="grey fs-16 ui-corner-bl"><?php echo lang("users_page_menu1") ?></a></li>						
+<!--						<li><a href="javascript:void(0);" id="menu-page-concert" data-content-id="content-concert" class="grey fs-16"><?php echo lang("users_page_menu2") ?></a></li>		-->				
 						<?php if($user_group_page == 'artist') { ?>
 						<li><a href="javascript:void(0);" id="menu-page-sound" data-content-id="content-sound" class="grey fs-16"><?php echo lang("users_page_menu3") ?></a></li>						
 						<?php } ?>
 						<li><a href="javascript:void(0);" id="menu-page-video" data-content-id="content-video" class="grey fs-16"><?php echo lang("users_page_menu4") ?></a></li>						
-						<li><a href="javascript:void(0);" id="menu-page-photo" data-content-id="content-photo" class="grey fs-16"><?php echo lang("users_page_menu5") ?></a></li>						
+<!--						<li><a href="javascript:void(0);" id="menu-page-photo" data-content-id="content-photo" class="grey fs-16"><?php echo lang("users_page_menu5") ?></a></li>			-->			
 					</ul>
 				</div>
 				

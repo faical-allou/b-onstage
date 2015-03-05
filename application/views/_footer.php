@@ -12,7 +12,8 @@
                                 <dt class="fs-16 title">b-onstage</dt>						
                                 <dd><?=anchor(site_url('about'),lang("aboutus_link_aboutus"))?></dd>
                                 <dd><?=anchor(site_url('about_us'),lang("aboutus_link_whoweare"))?></dd>
-                                <dd><?=anchor(site_url('how_does_this_work'),lang("aboutus_link_howitworks"))?></dd>												
+                                <dd><?=anchor(site_url('how_does_it_work'),lang("aboutus_link_howitworks"))?></dd>												
+                                <dd><?=anchor(site_url('how_i_make_money'),lang("aboutus_link_howimakemoney"))?></dd>												
                                 <dd><a href="javascript:void(0)" id="contact_us"><?php echo lang("footer_contactus") ?></a></dd>
                             </dl>
                         </div>

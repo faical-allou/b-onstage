@@ -54,7 +54,7 @@ $lang['terms_of_services'] = 'Pour utiliser nos services, vous devez accepter le
 $lang['signin_title'] = 'Connexion';
 $lang['signup_title'] = 'Créer un compte';
 $lang['signup_activate_title'] = 'Activer votre compte';
-$lang['signup_terminate_title'] = 'Terminé';
+$lang['signup_terminate_title'] = 'A vous de Jouer!';
 
 //Notifications
 $lang['notify_account_created'] = 'Votre inscription est maintenant validée';
@@ -65,6 +65,8 @@ $lang['home_title'] = 'Bienvenue sur b-onstage';
 $lang['aboutus_title'] = 'A propos';
 $lang['whoweare_title'] = 'Qui sommes-nous?';
 $lang['howitworks_title'] = 'Comment ça marche?';
+$lang['howimakemoney_title'] = 'Qu\'est-ce que j\'y gagne';
+
 $lang['terms_of_services_title'] = 'Conditions générales d\'utilisations';
 $lang['legal_title'] = 'Mentions légales';
 $lang['signup_choice_title'] = 'Type de compte';
@@ -89,6 +91,8 @@ $lang['home_desc'] = 'Mettre une description';
 $lang['aboutus_desc'] = 'A propos';
 $lang['whoweare_desc'] = 'Qui sommes-nous?';
 $lang['howitworks_desc'] = 'Comment ça marche?';
+$lang['howimakemoney_desc'] = 'Qu\'est-ce que j\'y gagne?';
+
 $lang['terms_of_services_desc'] = 'Conditions générales d\'utilisations';
 $lang['legal_desc'] = 'Mentions légales';
 $lang['signup_choice_desc'] = 'Choisissez un type de compte';
@@ -216,19 +220,25 @@ $lang['header_mycontacts'] = 'Mes contacts';
 $lang['header_book_a_date'] = 'Réserver une date';
 $lang['header_attend_show'] = 'Assister à un Concert';
 
+$lang['search_from'] = 'Rechercher du';
+
 
 // Home
 $lang['home_slide1_txt'] = 'Trouvez des Scènes pour jouer live ...';
 $lang['home_slide1_txt2'] = 'A vous de jouer !!';
 $lang['home_slide1_txt3'] = 'Inscrivez-vous!';
-$lang['home_slide2_txt'] = 'La musique c\'est en live';
+
 $lang['home_slide2_txt2'] = 'Le live c\'est sur scène';
 $lang['home_slide2_txt3'] = 'Les scènes sont sur b-onstage';
 $lang['home_slide2_txt4'] = 'Trouver une date';
 
-$lang['home_slide3_txt'] = 'N\'attendez plus d\'être découverts';
-$lang['home_slide3_txt2'] = 'Lancez vous avec b-onstage';
+$lang['home_slide3_txt'] = 'Réservez une Scène pour votre show';
+$lang['home_slide3_txt2'] = 'Lancez vous avec b-onstage!';
 $lang['home_slide3_txt3'] = 'Inscrivez vous!';
+
+$lang['home_slide4_txt'] = 'b-onstage rembourse les frais';
+$lang['home_slide4_txt2'] = 'pour tous les concerts en mars!';
+$lang['home_slide4_txt3'] = 'Montez sur Scène!';
 
 $lang['home_title_concert'] = 'Les Concerts';
 $lang['home_title_stage'] = 'Les Scènes';
@@ -239,59 +249,80 @@ $lang['home_seeall_artist'] = 'Voir tous les Artistes';
 $lang['home_bottom_txt'] = 'Rechercher des dates pour jouer sur Scène.';
 $lang['home_bottom_txt2'] = 'L\'inscription est gratuite. </br> Connectez vous aux Scènes.';
 
+$lang['home_promo'] = 'b-onstage vous rembourse vos frais de réservation pour tous vos concerts en Mars 2015!';
+
 
 // About us
 $lang['aboutus_link_aboutus'] = 'A propos';
 $lang['aboutus_link_whoweare'] = 'Qui sommes-nous ?';
 $lang['aboutus_link_howitworks'] = 'Comment ça marche';
+$lang['aboutus_link_howimakemoney'] = 'Qu\'est-ce que j\'y gagne';
+
 $lang['aboutus_header_aboutus'] = 'Pourquoi b-onstage ?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>Parce qu’à l’heure d’Internet et du téléchargement de masse, <strong>les liens entre les Artistes et le public ont été coupés.</strong></p></li>
-				<li><p>Parce que l’industrie de la musique est en crise et que la vente de disque ne suffit plus <strong>pour vivre de son art.</strong></p></li>
-				<li><p>Parce que la musique n’est pas seulement une partition, mais aussi un univers et une atmosphère à partager.</p></li>
-				<li><p>Parce que la musique a toujours été, doit et devra toujours être une relation privilégiée avec le public.</p></li>
-				<li><p>Et parce qu’enfin, <strong>la vrai musique c’est le live</strong>, les Concerts, la Scène.</p></li>
+				<li><p>Parce que la vente de disque ne suffit plus <strong>pour vivre de sa musique.</strong></p></li>
+				<li><p>Parce que comme vous, <strong>nous avons passé des journées entières</strong> à aller de bar en bar pour trouver où jouer sans grand succès.</p></li>
+				<li><p>Parce que nous pensons qu\'il y a <strong>une meilleure façon de trouver une Scène</strong>.</p></li>
 			</ul>';
+
+
 $lang['aboutus_header2_aboutus'] = 'Et maintenant ?';
 $lang['aboutus_txt2_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>Il est temps qu\'Internet se mette au service des musiciens.</p></li>
-				<li><p>Il est temps que les groupes rencontrent leur public.</p></li>
+				<li><p>Nous avons visité des bars et salles et nous les avons convaincus de recevoir plus de musiciens.</p></li>
+				<li><p>Nous vous donnons la possibilité de réserver une scène en quelques clicks.</p></li>
 			</ul>';
+
+
 $lang['aboutus_header3_aboutus'] = 'Inscrivez-vous';
 $lang['aboutus_header4_aboutus'] = 'sur b-onstage et à vous de jouer !';
 $lang['aboutus_header_whoweare'] = 'Qui sommes-nous ?';
 $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
-				<li><p class="grey fs-15">Musiciens et programmeurs, nous avons créé notre compagnie, Mybandonstage, afin de promouvoir toutes les créations artistiques amateures.</p></li>		
-				<li><p class="grey fs-15">Nous avons conçue</strong> afin de <strong>mettre en contact les Artistes avec leur public</strong> en facilitant leurs démarches pour <strong>organiser des concerts.</strong></p></li>	
+				<li><p class="grey fs-15">Musiciens et programmeurs, nous avons créé b-onstage pour aider les musiciens à lancer leur carrière.</p></li>		
+				<li><p class="grey fs-15">Nous l\'avons conçu dans le but de </strong> faciliter les démarches pour <strong>organiser des concerts.</strong></p></li>	
 				<li><p class="grey fs-15"><strong>Nous visitons toutes les Scènes</strong> (qui sont des établissements partenaires de b-onstage), nous prenons les photos et nous les référençons avec leurs descriptions pour assurer qu’<strong>on vous offre ce qu’on vous promet.</strong></p></li>
-				<li><p class="grey fs-15">En prenant en charge les transactions financières, <strong>nous garantissons que les paiements seront conformes.</strong></p></li>
-				<li><p class="grey fs-15">Nous proposons <strong>pour chaque concert des contrats spécialisés</strong> pour limiter les responsabilités équitablement et équilibrer les relations entre tous les intervenants.</p></li>	
+				<li><p class="grey fs-15">Nous pouvons vous proposer <strong>pour chaque concert des contrats spécialisés</strong> pour limiter les responsabilités équitablement et équilibrer les relations entre tous les intervenants.</p></li>	
 				<li><p class="grey fs-15">Nous assurons <strong>le suivi de tous nos partenaires et de tous les Artistes</strong>, nous répondons à tous les messages que nous recevons et nous sommes prêts à intervenir auprès de tous les organismes pour vous soutenir.</p></li>
 			</ul>';
 $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 				<li><p>Nous mettons gratuitement à votre disposition une plateforme de réservation en ligne permettant de vérifier la disponibilité d’une Scène et de la réserver pour vous y produire, faire votre Concert.</p></li>			
 				<li><p>Sur b-onstage vous utilisez notre outil de recherche pour trouvez les Scènes disponibles en fonction des dates et/ou des villes qui vous conviennent.</p></li>
-				<li><p>Envoyer une demande de réservation pour faire un Concert sur la Scène sélectionnée. Nous vous notifierons une fois la réservation validée par la Scène.</p></li>
+				<li><p>Vous envoyez une demande de réservation pour faire un Concert sur la Scène sélectionnée. Nous vous notifierons une fois la réservation validée par la Scène.</p></li>
 				<li class="nb"><p><strong>Note :</strong> Les Scènes sont susceptibles de recevoir un grand nombre de demandes de réservation. Complétez au mieux votre profil et soyez patients, cela peut prendre du temps avant que vous ne soyez sélectionnés par la Scène.</p></li>
 				<li><p>Pour valider complètement votre réservation, vous devrez procéder en ligne au paiement des frais de réservation.</p></li>
 				<li class="nb">
 					<p><strong>Note :</strong> Les frais de réservation permet surtout de garantir que les deux parties tiennent leurs engagements et que le Concert se déroulent dans les meilleurs conditions. Cela évite également que des Artistes peu sérieux dégradent les relations avec les Scènes, et qu’il y ait de moins en moins de lieu et de date à votre disposition.</p>
 				</li>
+				<li class="nb">
+					<p><strong>Note :</strong> Vous ne payez que quand êtes choisis pour le concert.</p>
+				</li>
 				<li><p>A réception du paiement des frais de réservations, tels qu’indiqués sur la page de la Scène, la réservation est définitive et vous serez notifié. Une fois réservé les détails de votre Concert s\'afficheront et seront visible par le public.</p></li>
 				<li><p>Afin de vous protéger, et de vous garantir les meilleures conditions, nous avons conçu des contrats Artistes/Scènes (accord de prestation) que nous pouvons mettre à disposition sur simple demande. Nous vous invitons à signer un contrat Artiste(s)/Scène, qui est un contrat de prestation avec la Scène qui pourra vous être envoyé. Ce contrat établit le lien juridique entre la Scène et l’Artiste, la société Mybandonstage n’intervenant, s’agissant de l’exécution des prestations artistiques et de location de salle, que comme intermédiaire de mise en relation via le site b-onstage.</p></li>
 				<li><p>Il vous suffit de vous présenter quelques heures avant le Concert pour vous préparer et la suite dépend de vous...</p></li>	
 				<li><p>Si vous voulez annuler, vous pouvez le faire sans conséquence tant que le paiement des frais de réservation n’a pas été réalisé.</p></li>
-				<li class="nb"><p>Note : Au cas où vous ne vous présentez pas le jour du Concert sans avoir annulé sur le site au moins 72 heures à l’avance, nous nous réservons le droit d’afficher le statut "No-Show" sur votre profil public.</p></li>
 				<li>
-					<p>Une fois payé, vous pouvez annuler jusqu’à :</p>
+					<p>Une fois le paiement fait, vous pouvez annuler jusqu’à :</p>
 					<ul class="sub-about-list">
-						<li>Deux semaines avant la date du Concert, nous vous reverserons les frais de réservation moins nos frais de gestion.</li>						
+						<li>Deux semaines avant la date du Concert, nous vous reverserons les frais de réservation.</li>						
 						<li>Passée cette limite de deux semaines avant la date du Concert, vous ne pouvez plus récupérer les frais de réservation, mais nous vous demandons de procéder à l’annulation tout de même pour éviter le statut "No-Show".</li>
 					</ul>
+				<li class="nb"><p><strong>Note :</strong>Au cas où vous ne vous présentez pas le jour du Concert sans avoir annulé sur le site au moins 72 heures à l’avance, nous nous réservons le droit d’afficher le statut "No-Show" sur votre profil public.</p></li>
+	
+				</li>
+			</ul>';
+
+$lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
+				<li><p>Nous nous déplaçons pour que vous n\'ayez pas à le faire. <strong>Cela vous évite de marcher pendant des jours</strong> et qui vous fait gagner du temps et de l\'argent.</p></li>			
+				<li><p>b-onstage vous donne l\'opportunité de jouer devant vos fans <strong> et les habitués de la Scène</strong>. Chaque nouveau fan est une nouvelle opportunité.</p></li>			
+				<li><p>A moins que cela ne soit explicitement spécifié vous pouvez<strong> toujours recevoir des pourboires, vendre des CDs et autres goodies</strong>  pendant et après le show.</p></li>			
+				<li><p><strong>Certains événements sont rémunérés</strong> avec des conditions données par la Scène (cachet fixe, surcharge sur les boissons, part de la billeterie ou défraiement) et nous les affichons comme tels. b-onstage ne prend aucun frais sur cette transaction, tout est pour vous.</p></li>			
+				<li><p><strong>Contribuez à la communauté</strong> en organisant un maximum de concerts, même si les garanties sont faibles au début. Plus nous organiserons de concerts avec succès plus nous pourrons offrir de concerts rémunérés.</p></li>			
+				<li><p><strong>Donnez toujours le meilleur de vous-même</strong>, commencez dès que possible et prenez soin de votre historique sur la plateforme, cela augmentera vos chances plus tard pour les évènements les plus convoités.</p></li>
+				<li><p>De temps en temps <strong>b-onstage organise des évenements avec des prix à la clé</strong>, inscrivez-vous et nous vous tiendrons informés.</p></li>				
 				</li>
 			</ul>';
 
 
+<<<<<<< HEAD
 $lang['home_howitworks_title'] = 'Comment ca marche:';
 
 $lang['home_howitworks_list'] = '<ul class="home-howitworks">
@@ -301,6 +332,8 @@ $lang['home_howitworks_list'] = '<ul class="home-howitworks">
 				<li><p>...A Toi de Jouer!</p></li>
 			</ul>';
 
+=======
+>>>>>>> design
 
 // Footer
 $lang['footer_contactus'] = 'Contactez-nous';
@@ -804,7 +837,7 @@ $lang['users_calendar_create_non_renum'] = 'Non rémunéré';
 $lang['users_calendar_create_cachet'] = 'Cachet de';
 $lang['users_calendar_create_conso'] = 'de surcharge sur les boissons';
 $lang['users_calendar_create_tickets'] = 'sur la billeterie';
-$lang['users_calendar_create_remb'] = 'Remboursement des frais de réservation';
+$lang['users_calendar_create_remb'] = 'Défraiement';
 $lang['users_calendar_concert_at'] = 'Concert au';
 $lang['users_calendar_genre'] = 'Genre musical';
 $lang['users_calendar_event_mod_del'] = 'Modifier / supprimer l\'évènement';
@@ -812,6 +845,8 @@ $lang['users_calendar_edit_success'] = 'L’Évènement a été modifié';
 $lang['users_calendar_event_del_conf'] = 'Voulez-vous supprimer cet évènement ?';
 $lang['users_calendar_event_del_error1'] = 'Vous n\'êtes pas propriétaire de cet évènement, il vous est donc impossible de le supprimer';
 $lang['users_calendar_event_del_success'] = 'Evènement supprimé avec succès';
+
+$lang['payment_notset'] = 'Pourboire + Ventes propres';
 
 
 //Users Contact
@@ -947,7 +982,7 @@ $lang['users_rese_cancel_txt2'] = 'Il n\'est pas conseillé d\'annuler la réser
 $lang['users_rese_cancel_txt3'] = 'Il n\'est pas conseillé d\'annuler la réservation à ce stade. Vos frais de réservation ne vous seront pas remboursés. De plus cette scène pourrait ne pas accepter vos futures demandes. Etes-vous certain de vouloir annuler?';
 $lang['users_rese_cancel_txt4'] = 'Il est très fortement conseillé de ne pas annuler à ce stade! Vos frais de réservation ne vous seront pas remboursés, et le concert sera affiché en statut "Annulé, No-show" et b-onstage se réserve le droit de porter une mention "No-show" sur votre profil. De plus cette scène pourrait ne pas accepter vos futures demandes. Etes-vous certain de vouloir annuler?';
 $lang['users_rese_cancel_success'] = 'Votre demande de réservation a été annulée avec succès.';
-$lang['users_rese_request'] = 'Demandes de réservation';
+$lang['users_rese_request'] = 'Demande de réservation';
 $lang['users_rese_validate_artist'] = 'Valider cet artiste';
 $lang['users_rese_refuse_artist'] = 'Demande de réservation validée avec succès';
 $lang['users_rese_refuse_success'] = 'Voulez-vous refuser cet artiste?';
@@ -958,24 +993,15 @@ $lang['users_rese_refuse_email_subject'] = 'Demande de réservation refusée';
 $lang['users_rese_refuse_email_txt1'] = 'Désolé! Votre demande de réservation suivante <strong>n’a pas été retenue:</strong>';
 $lang['users_rese_refuse_email_txt2'] = 'Code de réservation  ';
 $lang['users_rese_refuse_email_txt3'] = 'En attendant votre prochaine réservation, pensez à améliorer votre profil. Vous pouvez y ajouter votre musique , vos vidéos, vos photos, etc.</p>
-
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Pensez à bien vous présenter et n’oubliez pas que c’est votre vitrine!</p>
-
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Pour vous rendre sur votre profil,';
 $lang['users_rese_refuse_email_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">À bientôt.</p>
-
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
-
 	<br />
-
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Merci de ne pas utiliser la fonction "Répondre" de votre messagerie.</p>	
-
 	<br />
-
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous rencontrez des problèmes avec notre site ou nos services, écrivez-nous à l’adresse à l\'adresse support@b-onstage.com.</p>
-
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de nous améliorer et d\'essayer de rendre b-onstage le plus utile et agreable pour vous, nous vous encourageons à nous envoyez toutes vos suggestions à l\'adresse suggestion@b-onstage.com.</p>
-
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous ne souhaitez plus recevoir de mail de b-onstage, Cliquez-ici.</p>';
 $lang['users_rese_refuse_email_txt5'] = 'pour faire une nouvelle réservation';
 $lang['users_rese_seereq'] = 'demande(s) de réservation';
@@ -1016,6 +1042,7 @@ $lang['artists_searchshowmore'] = 'Afficher plus d\'Artistes';
 // Stage page
 $lang['stages_searchshowmore'] = 'Afficher plus de Scènes';
 $lang['stages_searchby'] = 'Rechercher par nom';
+$lang['stages_searchresutls'] 	='Resultats de la recherche';
 
 
 // Shows page
@@ -1033,19 +1060,21 @@ $lang['shows_nosite'] = 'Pas de site officiel';
 $lang['shows_bandsound'] = 'Les sons du groupe';
 
 // Book page			
-$lang['book_filterresults']	 = 'Filtrer les résultats';
-$lang['book_bysort1']	 = 'Par genre musical';
-$lang['book_bysort2']	 = 'Par tranche';
+$lang['book_filterresults']	 = 'Filtrer et trier les résultats';
+$lang['book_bysort1']	 = 'Filtrer le genre musical';
+$lang['book_bysort2']	 = 'Filtrer par intervalles';
+$lang['book_bysort3']	 = 'Filtrer par type de rémunération';
 $lang['book_bysort2_1']	 = 'Réservation entre';
 $lang['book_bysort2_2']	 = 'Prix entrée entre';
 $lang['book_bysort2_3']	 = 'Horaire entre';
-$lang['book_bysort3']	 = 'Par type de rémunération';
-$lang['book_steptxt1']	 = 'Choisissez une Date et cliquez sur <strong>"Demande de réservation"</strong>.';
+$lang['book_steptxt1']	 = 'Choisissez une date et cliquez sur <strong>"Réserver"</strong>.';
 $lang['book_steptxt2']	 = 'Une fois sélectionné par la Scène, vous avez <strong>48 heures</strong> pour valider votre réservation.';
 $lang['book_steptxt3']	 = 'Le jour du Concert, présentez-vous et <strong>c\'est à vous de jouer!</strong>';
-$lang['book_organiser']	 = 'est l\'organisateur de ce Concert';
+$lang['book_organiser']	 = 'est l\'organisateur';
 $lang['book_button1']	 = 'Voir ma réservation';
-$lang['book_button2']	 = 'Demande de réservation';
+$lang['book_button2']	 = 'Réserver';
+$lang['request_info']	 = 'Demander des infos';
+
 $lang['book_error1']	 = 'Pour réserver une Date, il faut être un Artiste b-onstage.';
 $lang['book_error1_1']	 = 'pour jouer live.';
 $lang['book_error2']	 = 'Les demandes de réservation de Scène ne sont faisables que par les Artistes.';
@@ -1057,7 +1086,7 @@ $lang['book_req_agree']	 = 'En cochant cette case, je reconnais avoir lu et acce
 $lang['book_req_success']	 = 'Votre demande a bien été prise en compte';
 $lang['book_req_email_artist_subject']	 = 'Votre demande de réservation n°';
 $lang['book_req_email_artist_txt1']	 = 'Vous avez fait la demande de réservation suivante :';
-$lang['book_req_email_artist_txt2']	 = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Cliquez ici pour voir votre réservation dans votre espace b-onstage.</p>	
+$lang['book_req_email_artist_txt2']	 = '	
 		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">La réservation a été communiquée à la Scène que vous avez demandée. </p>	
 		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Nous vous informerons dès que votre réservation aura été acceptée ou refusée.</p>	
 		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Bonne chance!!</p>	
@@ -1118,13 +1147,20 @@ $lang['calendar_shortmonth_9'] = 'sept.';
 $lang['calendar_shortmonth_10'] = 'oct.';
 $lang['calendar_shortmonth_11'] = 'nov.';
 $lang['calendar_shortmonth_12'] = 'déc.';
-$lang['calendar_shortday_1'] = 'Dim';
-$lang['calendar_shortday_2'] = 'Lun';
-$lang['calendar_shortday_3'] = 'Mar';
-$lang['calendar_shortday_4'] = 'Mer';
-$lang['calendar_shortday_5'] = 'Jeu';
-$lang['calendar_shortday_6'] = 'Ven';
-$lang['calendar_shortday_7'] = 'Sam';
+$lang['calendar_day_0'] = 'Dimanche';
+$lang['calendar_day_1'] = 'Lundi';
+$lang['calendar_day_2'] = 'Mardi';
+$lang['calendar_day_3'] = 'Mercredi';
+$lang['calendar_day_4'] = 'Jeudi';
+$lang['calendar_day_5'] = 'Vendredi';
+$lang['calendar_day_6'] = 'Samedi';
+$lang['calendar_shortday_0'] = 'Dim';
+$lang['calendar_shortday_1'] = 'Lun';
+$lang['calendar_shortday_2'] = 'Mar';
+$lang['calendar_shortday_3'] = 'Mer';
+$lang['calendar_shortday_4'] = 'Jeu';
+$lang['calendar_shortday_5'] = 'Ven';
+$lang['calendar_shortday_6'] = 'Sam';
 $lang['calendar_year'] = 'Année';
 $lang['calendar_years'] = 'Années';
 $lang['calendar_month'] = 'Mois';
