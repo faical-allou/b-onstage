@@ -232,12 +232,12 @@ $lang['home_slide1_txt'] = 'Trouvez des Scènes pour jouer live ...';
 $lang['home_slide1_txt2'] = 'A vous de jouer !!';
 $lang['home_slide1_txt3'] = 'Inscrivez-vous!';
 
-$lang['home_slide2_txt2'] = 'Le live c\'est sur scène';
+$lang['home_slide2_txt2'] = 'Tu veux jouer sur Scène?';
 $lang['home_slide2_txt3'] = 'Les scènes sont sur b-onstage';
 $lang['home_slide2_txt4'] = 'Trouver une date';
 
-$lang['home_slide3_txt'] = 'Réservez une Scène pour votre show';
-$lang['home_slide3_txt2'] = 'Lancez vous avec b-onstage!';
+$lang['home_slide3_txt'] = 'Vous pouvez trouver une scène en quelques clicks';
+$lang['home_slide3_txt2'] = 'Plus besoin de marcher des heures dans la ville!';
 $lang['home_slide3_txt3'] = 'Inscrivez vous!';
 
 $lang['home_slide4_txt'] = 'b-onstage rembourse les frais';
@@ -707,7 +707,7 @@ $lang['signup_active_email_txt3'] = '<p style="font-size:15px;font-family:\'Aria
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de nous améliorer et d\'essayer de rendre b-onstage le plus utile et agreable pour vous, nous vous encourageons à nous envoyez toutes vos suggestions à l\'adresse suggestion@b-onstage.com.</p>
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous ne souhaitez plus recevoir de mail de b-onstage, Cliquez-ici.</p>';
 $lang['signup_terminate_success'] = '<p>Votre inscription est maintenant validée. Bienvenue dans la communauté b-onstage!</p>
-		<p>N\'oubliez pas que c\'est vous qui en êtes le principal acteur!!</p>
+		<p>N\'oubliez pas que c\'est vous qui en êtes l\'acteur principal!!</p>
 		<p>Si vous avez des suggestions, n\'hésitez pas à nous les envoyer à l\'adresse  suggestion@mybandonstage.com. Nous y-sommes trè attentifs. Le site est en constante amélioration, afin de le rendre le plus utile et pratique possible pour vous.</p>		
 		<p>Vous allez maintenant pouvoir completer votre profil.</p>
 		<p>N\'oubliez pas que c\'est à vous de vous mettre en avant. Créez une description, ajoutez votre musique, vos videos et vos photos..</p>';

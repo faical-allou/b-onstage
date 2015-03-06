@@ -233,13 +233,13 @@ $lang['home_slide1_txt'] = 'Find venues to play live ...';
 $lang['home_slide1_txt2'] = 'The Stage is Yours!';
 $lang['home_slide1_txt3'] = 'Sign up for free!';
 
-$lang['home_slide2_txt'] = 'Music is Live';
-$lang['home_slide2_txt2'] = 'Live Music is on Stage';
+$lang['home_slide2_txt'] = 'You want to play live?';
+$lang['home_slide2_txt2'] = 'You don\'t know where to play?';
 $lang['home_slide2_txt3'] = 'Stages are on b-onstage';
-$lang['home_slide2_txt4'] = 'Request a date';
+$lang['home_slide2_txt4'] = 'Apply Now!';
 
-$lang['home_slide3_txt'] = 'Now you can book venues for your shows';
-$lang['home_slide3_txt2'] = 'Become your own promoter!';
+$lang['home_slide3_txt'] = 'Now you can book venues in few clicks...';
+$lang['home_slide3_txt2'] = 'You don\'t have to walk around the city to get a gig!';
 $lang['home_slide3_txt3'] = 'Join us Now!';
 
 $lang['home_slide4_txt'] = 'b-onstage pays back the fee';
