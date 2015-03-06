@@ -118,8 +118,8 @@ function init_search_bar(open){
 		$('#button-search-concert').button("enable");
 		}	
 	});
-
-
+	
+	
 }
 
 function init_search_form(id_search_menu){
