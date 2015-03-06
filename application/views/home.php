@@ -115,6 +115,7 @@
 	</div>			
 </div>
 
+<!--
 <div class="bg-white">
 	<div class="container_12 pt-50 pb-50">
 		<div class="grid_8 ta-c">	
@@ -124,10 +125,13 @@
 		<div class="grid_4">	
 			<div class="fs-24 ta-c bold"><?php echo lang("home_howitworks_title")?></div>	 
 			<div class="fs-18 ta-l bold"><?php echo lang("home_howitworks_list")?></div>
+			<div class="ta-c bold">
+			<a href="<?=site_url('signup')?>" class="ta-c ui-green action-home" style="font-size:1em;"><?php echo lang("home_slide3_txt3") ?></a>			
+			</div>
 		</div>	
 	</div>
 </div>
-
+-->
 
 
 <div class="bg-purple">

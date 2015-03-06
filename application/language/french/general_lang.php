@@ -205,11 +205,12 @@ $lang['or'] = 'ou';
 $lang['otherinfos'] = 'Autres infos';
 $lang['originaire_de'] = 'Originaire de';
 $lang['band_members'] = 'Les membres du groupe';
-$lang['choose_city'] = 'Choisir ville(s)';
-$lang['choose_country'] = 'Choisir pays';
+$lang['choose_city'] = 'Ville';
+$lang['choose_country'] = 'Pays';
 $lang['checkall'] = 'Cocher tout';
 $lang['uncheckall'] = 'Décocher tout';
 $lang['selected'] = 'Sélectionné(s)';
+$lang['where'] = 'Où?';
 
 
 // Header
@@ -228,15 +229,16 @@ $lang['search_from'] = 'Rechercher du';
 
 
 // Home
-$lang['home_slide1_txt'] = 'Trouvez des Scènes pour jouer live ...';
+$lang['home_slide1_txt'] = 'Trouvez des Scènes pour jouer en live ...';
 $lang['home_slide1_txt2'] = 'A vous de jouer !!';
 $lang['home_slide1_txt3'] = 'Inscrivez-vous!';
 
-$lang['home_slide2_txt2'] = 'Tu veux jouer sur Scène?';
-$lang['home_slide2_txt3'] = 'Les scènes sont sur b-onstage';
+$lang['home_slide2_txt'] = 'Tu veux jouer en live?';
+$lang['home_slide2_txt2'] = 'Tu ne trouves pas de Scène?';
+$lang['home_slide2_txt3'] = 'Les Scènes sont sur b-onstage';
 $lang['home_slide2_txt4'] = 'Trouver une date';
 
-$lang['home_slide3_txt'] = 'Vous pouvez trouver une scène en quelques clicks';
+$lang['home_slide3_txt'] = 'Vous pouvez organiser un concert en quelques clicks';
 $lang['home_slide3_txt2'] = 'Plus besoin de marcher des heures dans la ville!';
 $lang['home_slide3_txt3'] = 'Inscrivez vous!';
 
@@ -245,8 +247,8 @@ $lang['home_slide4_txt2'] = 'pour tous les concerts en mars!';
 $lang['home_slide4_txt3'] = 'Montez sur Scène!';
 
 $lang['home_title_concert'] = 'Les Concerts';
-$lang['home_title_stage'] = 'Les Scènes';
-$lang['home_title_artist'] = 'Les Artistes';
+$lang['home_title_stage'] = 'Les Scènes qui nous font confiance';
+$lang['home_title_artist'] = 'Les Artistes que nous servons';
 $lang['home_seeall_shows'] = 'Voir tous les Concerts';
 $lang['home_seeall_stages'] = 'Voir toutes les Scènes';
 $lang['home_seeall_artist'] = 'Voir tous les Artistes';
@@ -332,7 +334,7 @@ $lang['home_howitworks_list'] = '<ul class="home-howitworks">
 				<li><p>Enregistre toi et complète ton profil</p></li>
 				<li><p>Reserve une scène à la date qui te convient</p></li>
 				<li><p>Nous te confirmons si tu es choisi</p></li>
-				<li><p>...A Toi de Jouer!</p></li>
+				<li><p>......A Toi de Jouer!</p></li>
 			</ul>';
 
 

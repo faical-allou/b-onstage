@@ -43,11 +43,11 @@ class User extends CI_Controller {
 		$cities = $this->event_model->get_stage_cities();
 		$this->load->vars(array('search' => $search));				
 
-					//fb login
+/*					//fb login
 	
-		$GLOBALS['log_fb']=FALSE;
-		$GLOBALS['name_fb'] = "Paul";
-		$GLOBALS['username_fb'] = "superuser";
+ 		$GLOBALS['log_fb']=FALSE;
+ 		$GLOBALS['name_fb'] = "Paul";
+ 		$GLOBALS['username_fb'] = "superuser";
 		$GLOBALS['email_fb'] = "@l.com";
 		$GLOBALS['password_fb'] = "123";
 		
@@ -63,7 +63,7 @@ class User extends CI_Controller {
 
 					}
 					//fb login end
-	
+*/	
 	}
 
 	//index function
@@ -71,7 +71,7 @@ class User extends CI_Controller {
 
 		if (!$this->ion_auth->logged_in())
 		{
-//			redirect('login', 'refresh');
+			redirect('login', 'refresh');
 		}
 		else
 		{
@@ -428,7 +428,6 @@ class User extends CI_Controller {
 
 			//step 1: signup
 			case 1:
-				echo $id = $this->user['id'];
 				if ($this->ion_auth->logged_in()){
 					redirect('user', 'refresh');
 				}else{	
@@ -474,16 +473,16 @@ class User extends CI_Controller {
 					}
 
 					
-					if ( ($this->form_validation->run() == true && $this->ion_auth->register($username, $password, $email, $additional_data,$groups)) || $GLOBALS['log_fb'] )
+					if ( ($this->form_validation->run() == true && $this->ion_auth->register($username, $password, $email, $additional_data,$groups))) //|| $GLOBALS['log_fb'] )
 					{
 
 						$this->session->set_flashdata('email', $email);
 						$this->session->set_flashdata('message', "User Created");
 						
-							if ( isset($GLOBALS['log_fb']) ) 
+/*							if ( isset($GLOBALS['log_fb']) ) 
 							{redirect('activate'. "?n=" . $GLOBALS['name_fb'] . "&u=" . $username = $GLOBALS['username_fb'] . "&e=" . $GLOBALS['email_fb'] . "&p=" . $GLOBALS['password_fb'] . "&fb=TRUE", 'refresh');}
 							else 
-							{redirect('activate', 'refresh');}
+*/							redirect('activate', 'refresh');
 					}
 					else
 					{
@@ -587,7 +586,7 @@ class User extends CI_Controller {
 				//step 2: account activation
 				case 2:
 					
-					if ( isset($GLOBALS['log_fb']))
+/*					if ( isset($GLOBALS['log_fb']))
 						{
 						$username = $GLOBALS['username_fb'];
 						$email = $GLOBALS['email_fb'];
@@ -602,9 +601,10 @@ class User extends CI_Controller {
 						}
 					
 					$GLOBALS['id']=$this->ion_auth->register($username, $password, $email, $additional_data, $groups);
-
-					if(!$this->ion_auth->email_check($this->session->flashdata('email')) && !$GLOBALS['log_fb'])
+*/
+					if (!$this->ion_auth->email_check($this->session->flashdata('email'))) //&& !$GLOBALS['log_fb'])
 						{
+						die(print_r("redirect to sign up", true ));
 						redirect('signup');
 						}
 
@@ -626,12 +626,12 @@ class User extends CI_Controller {
 						$this->load->view('_footer');
 					
   					}
-					if($GLOBALS['log_fb'])	
+/*					if($GLOBALS['log_fb'])	
   						{
   						$activation_code = $this->ion_auth_model->activation_code;
   						redirect('user/activate/'. $GLOBALS['id'] .'/'. $activation_code);
  						}
-					
+*/					
 
 					break;
 

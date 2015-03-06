@@ -206,11 +206,12 @@ $lang['or'] = 'or';
 $lang['otherinfos'] = 'Other infos';
 $lang['originaire_de'] = 'Originally from';
 $lang['band_members'] = 'Members of the band';
-$lang['choose_city'] = 'Choose city(ies)';
-$lang['choose_country'] = 'Choose country';
+$lang['choose_city'] = 'City';
+$lang['choose_country'] = 'Country';
 $lang['checkall'] = 'Check all';
 $lang['uncheckall'] = 'Uncheck all';
 $lang['selected'] = 'Selected';
+$lang['where'] = 'Where?';
 
 
 // Header
@@ -234,7 +235,7 @@ $lang['home_slide1_txt2'] = 'The Stage is Yours!';
 $lang['home_slide1_txt3'] = 'Sign up for free!';
 
 $lang['home_slide2_txt'] = 'You want to play live?';
-$lang['home_slide2_txt2'] = 'You don\'t know where to play?';
+$lang['home_slide2_txt2'] = 'You don\'t find where to play?';
 $lang['home_slide2_txt3'] = 'Stages are on b-onstage';
 $lang['home_slide2_txt4'] = 'Apply Now!';
 
@@ -247,8 +248,8 @@ $lang['home_slide4_txt2'] = 'for all concerts in March!';
 $lang['home_slide4_txt3'] = 'Get on the Stage!';
 
 $lang['home_title_concert'] = 'Concerts';
-$lang['home_title_stage'] = 'Stages';
-$lang['home_title_artist'] = 'Artists';
+$lang['home_title_stage'] = 'Stages who trust us';
+$lang['home_title_artist'] = 'Artists we serve';
 $lang['home_seeall_shows'] = 'See all Concerts';
 $lang['home_seeall_stages'] = 'See all Stages';
 $lang['home_seeall_artist'] = 'See all Artists';
@@ -317,7 +318,7 @@ $lang['home_howitworks_list'] = '<ul class="home-howitworks">
 				<li><p>Sign up and complete your profile</p></li>
 				<li><p>Book a Stage for the date you want</p></li>
 				<li><p>We\'ll confirm if you are selected</p></li>
-				<li><p>...The Stage is Yours!</p></li>
+				<li><p>......The Stage is Yours!</p></li>
 			</ul>';
 
 

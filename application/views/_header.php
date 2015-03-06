@@ -223,7 +223,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 						</div>
 
 						<!--search city-->
-						<span class="fs-16 grey bold ml-2 mr-2"><?php echo lang("in") ?></span>
+						<span class="fs-16 grey bold ml-2 mr-2"><?php echo lang("where") ?></span>
 						
 						
 						<span>

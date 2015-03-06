@@ -81,7 +81,7 @@ function init_search_bar(open){
 	$('#search-city')
 	.multiselect({
 		header				: true,
-		multiple			: true,
+		multiple			: false,
 		selectedList		: 1,
 		selectedText 		: '# '+document.getElementById("searchbarselected").innerHTML,
 		height				: 'auto',

@@ -68,17 +68,13 @@
 			</div>
 			<?=form_close()?>
 			
-			<script>
-				
-			</script>
-			
-				<div class="ta-r">
+<!--				<div class="ta-r">
 						<fb:login-button size="large" auto_logout_link="true" scope="public_profile,email";>
 							login facebook
 						<?=form_submit($submit)?>	
 						</fb:login-button>
-				</div>
-<!--				<div id="status">  -->
+					</div>
+-->				
 			</div>
 		</div>
 	</div>		
@@ -88,7 +84,7 @@
 <body>
 
 <script>
-  // This is called with the results from from FB.getLoginStatus().
+/*  // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -193,6 +189,7 @@
   
   
   }
+  */
 </script>
 
 
