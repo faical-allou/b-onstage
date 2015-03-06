@@ -227,7 +227,20 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 						
 						
 						<span>
-							<select name="search-city[]" id="search-city" multiple="multiple">
+							<select name="search-country[]" id="search-country" multiple="multiple">
+								<?php
+								foreach($countries as $country){
+								?>
+									<option value="<?=$country['country']?>"<?php 
+										if(isset($search['search-country']) && $search['search-country'] == $country['country']) { 
+										?> selected<?php 
+										} 
+										?>><?=$country['country']?></option>
+								<?php } ?>
+							</select>
+                            
+                            <select name="search-city[]" id="search-city" multiple="multiple">
+								
 								<?php if(isset($search['search-city'])) {
 									$tab = explode(',', $search['search-city']);
 									foreach($tab as $city){ ?>
@@ -238,9 +251,29 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 								foreach($cities as $city){
 									if(empty($city['city']) or @in_array($city['city'],$tab)) continue;
 								?>
-									<option value="<?=$city['city']?>"><?=$city['city']?></option>
+									<!--<option value="<?=$city['city']?>"><?=$city['city']?></option>-->
 								<?php } ?>
 							</select>
+                            <?php if (isset($search['search-country'])){
+							?><input type="hidden" id="currentcountry" value="<?php echo $search['search-country'] ?>"><?php 
+							} ?> 
+                            <?php 
+							foreach($city_by_country as $city_by_countries){
+								if(isset($search['search-city'])) {
+									if (strpos($search['search-city'],$city_by_countries['city']) === false) {
+										echo "<div id=\"".$city_by_countries['country']."\" class=\"".$city_by_countries['country']."\" style=\"display:none\">".$city_by_countries['city']."</div>";
+										}
+									else {
+										echo "<div id=\"".$city_by_countries['country']."\" class=\"xxx".$city_by_countries['country']."\" style=\"display:none\">".$city_by_countries['city']."</div>";
+										}	
+									
+								}
+								else {
+									echo "<div id=\"".$city_by_countries['country']."\" class=\"".$city_by_countries['country']."\" style=\"display:none\">".$city_by_countries['city']."</div>";
+								}
+							}
+							?>
+                            
 						</span>
 						
 						<span>

@@ -1206,7 +1206,8 @@ body .ui-tooltip { border-width:1px; }
 .ui-multiselect { padding: .2em .2em; text-align:left;}
 
 /*search status, search city*/
-.ui-multiselect.search-status,.ui-multiselect.search-city {font-size:1em;}
+.ui-multiselect.search-status,.ui-multiselect.search-city,.ui-multiselect.search-country {font-size:1em;}
+.ui-multiselect.search-country {width:220px !important;}
 
 .ui-multiselect span.ui-icon { float:right; }
 .ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
@@ -1223,7 +1224,7 @@ body .ui-tooltip { border-width:1px; }
 .ui-multiselect-menu {display:none; padding:5px; position:absolute; z-index:10000; text-align: left;}
 
 /*search status, search city*/
-.ui-multiselect-menu.search-status, .ui-multiselect-menu.search-city{font-weight:bold;margin-top:-3px;border:1px solid #aaa;}
+.ui-multiselect-menu.search-status, .ui-multiselect-menu.search-city, .ui-multiselect-menu.search-country{font-weight:bold;margin-top:-3px;border:1px solid #aaa;}
 
 .ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:auto;}
 .ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; padding:.6em 1em;}

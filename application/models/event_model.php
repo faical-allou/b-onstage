@@ -341,6 +341,41 @@ class Event_model extends CI_Model
 	}
 		
 	
+	public function get_stage_countries($country = ''){
+	
+		//no limit
+		$this->db->select('country, COUNT( users.id ) AS nb')
+					->from('users, groups, users_groups, events')
+					->where('users.id=user_id', NULL, false)
+					->where('groups.id=group_id', NULL, false)
+					->where('events.stage_id = users.id', NULL, false)
+					->where('groups.name', 'stage')
+					->group_by('country')
+					->order_by('nb','desc');
+					
+		if($country)
+			$this->db->like('country', $country, 'after');
+			
+		return $this->db->get()->result_array();
+	}
+	
+	public function get_stage_cities_by_countries($city_by_country = ''){
+	
+		//no limit
+		$this->db->select('city,country, COUNT( users.id ) AS nb')
+					->from('users, groups, users_groups, events')
+					->where('users.id=user_id', NULL, false)
+					->where('groups.id=group_id', NULL, false)
+					->where('events.stage_id = users.id', NULL, false)
+					->where('groups.name', 'stage')
+					->group_by('city')
+					->order_by('nb','desc');
+					
+		if($city_by_country)
+			$this->db->like('country', $city_by_country, 'after');
+			
+		return $this->db->get()->result_array();
+	}
 	
 	
 	
