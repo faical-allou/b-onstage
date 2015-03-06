@@ -83,6 +83,7 @@ function init_search_bar(open){
 		header				: true,
 		multiple			: true,
 		selectedList		: 1,
+		selectedText 		: '# '+document.getElementById("searchbarselected").innerHTML,
 		height				: 'auto',
 		width				: 'auto',
 		classes				: 'search-city',
@@ -94,7 +95,29 @@ function init_search_bar(open){
 	});
 
 	/**********INIT BUTTON SEARCH**********/
-	$('#button-search-concert').button(); 
+	$('#button-search-concert').button();
+	if($("#search-city").val() == null) {	
+			$('#button-search-concert').button({disabled:true});
+		}
+	else {
+		$('#button-search-concert').button("enable");
+		}
+	$('#search-city').change(function(){
+	if($("#search-city").val() == null) {	
+			$('#button-search-concert').button({disabled:true});
+		}
+	else {
+		$('#button-search-concert').button("enable");
+		}	
+	});
+	$('#search-country').change(function(){
+	if($("#search-city").val() == null) {	
+			$('#button-search-concert').button({disabled:true});
+		}
+	else {
+		$('#button-search-concert').button("enable");
+		}	
+	});
 }
 
 function init_search_form(id_search_menu){
