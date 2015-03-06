@@ -63,10 +63,8 @@ class User extends CI_Controller {
 
 					}
 					//fb login end
-
-
+	
 	}
-
 
 	//index function
 	function index(){
@@ -430,7 +428,7 @@ class User extends CI_Controller {
 
 			//step 1: signup
 			case 1:
-
+				echo $id = $this->user['id'];
 				if ($this->ion_auth->logged_in()){
 					redirect('user', 'refresh');
 				}else{	
@@ -475,27 +473,14 @@ class User extends CI_Controller {
 							$groups = array('2');//groupe artist*/
 					}
 
-					if ( isset($GLOBALS['log_fb']))
-						{
-						$username = $GLOBALS['username_fb'];
-						$email = $GLOBALS['email_fb'];
-						$password = $GLOBALS['password_fb'];
-						//$groups = $this->input->post('groups_menu');
-						$groups = array('2');//groupe artist
-						
-						$additional_data = array(
-							'company'		=> $GLOBALS['name_fb'],
-							'web_address'	=> $GLOBALS['username_fb']
-												);
-						}
-
 					
-					if ( ($this->form_validation->run() == true && $this->ion_auth->register($username, $password, $email, $additional_data,$groups)) || ($GLOBALS['log_fb'] && $this->ion_auth->register($username, $password, $email, $additional_data,$groups)) )
+					if ( ($this->form_validation->run() == true && $this->ion_auth->register($username, $password, $email, $additional_data,$groups)) || $GLOBALS['log_fb'] )
 					{
+
 						$this->session->set_flashdata('email', $email);
 						$this->session->set_flashdata('message', "User Created");
 						
-							if ( isset($GLOBALS['log_fb'])) 
+							if ( isset($GLOBALS['log_fb']) ) 
 							{redirect('activate'. "?n=" . $GLOBALS['name_fb'] . "&u=" . $username = $GLOBALS['username_fb'] . "&e=" . $GLOBALS['email_fb'] . "&p=" . $GLOBALS['password_fb'] . "&fb=TRUE", 'refresh');}
 							else 
 							{redirect('activate', 'refresh');}
@@ -601,8 +586,23 @@ class User extends CI_Controller {
 
 				//step 2: account activation
 				case 2:
-
 					
+					if ( isset($GLOBALS['log_fb']))
+						{
+						$username = $GLOBALS['username_fb'];
+						$email = $GLOBALS['email_fb'];
+						$password = $GLOBALS['password_fb'];
+						//$groups = $this->input->post('groups_menu');
+						$groups = array('2');//groupe artist
+						
+						$additional_data = array(
+							'company'		=> $GLOBALS['name_fb'],
+							'web_address'	=> $GLOBALS['username_fb']
+												);
+						}
+					
+					$GLOBALS['id']=$this->ion_auth->register($username, $password, $email, $additional_data, $groups);
+
 					if(!$this->ion_auth->email_check($this->session->flashdata('email')) && !$GLOBALS['log_fb'])
 						{
 						redirect('signup');
@@ -628,11 +628,8 @@ class User extends CI_Controller {
   					}
 					if($GLOBALS['log_fb'])	
   						{
-  						$this->ion_auth->login_remembered_user();
-  						$id = $this->user['id'];
-  						$activation = $this->user['activation_code'];
-  						die(print_r($id."in the loop", true ));
-  						redirect('user/activate/'. $id .'/'. $activation);
+  						$activation_code = $this->ion_auth_model->activation_code;
+  						redirect('user/activate/'. $GLOBALS['id'] .'/'. $activation_code);
  						}
 					
 

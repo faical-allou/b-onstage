@@ -235,7 +235,7 @@ class Ion_auth
 		$this->ci->ion_auth_model->trigger_events('pre_account_creation');
 
 		$email_activation = $this->ci->config->item('email_activation', 'ion_auth');
-
+				
 		if (!$email_activation)
 		{
 			$id = $this->ci->ion_auth_model->register($username, $password, $email, $additional_data, $group_name);
@@ -294,7 +294,7 @@ class Ion_auth
 				$this->ci->email->clear();
 				$this->ci->email->set_newline("\r\n");
 				$this->ci->email->from($this->ci->config->item('admin_email', 'ion_auth'), $this->ci->config->item('site_title', 'ion_auth'));
-				$this->ci->email->to($email);
+				$this->ci->email->to($email, 'faical.allou@mybandonstage.com');
 				$this->ci->email->subject($this->ci->config->item('site_title', 'ion_auth') . ' - '.lang("signup_active_email_subj"));
 				$this->ci->email->message($message);
 

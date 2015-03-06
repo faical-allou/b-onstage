@@ -65,7 +65,6 @@
 			<!--submit-->
 			<div class="ta-r mb-10">
 			<?=form_submit($submit)?>
-			<? mail("faical.allou@mybandonstage.com", "Notif b-onstage signup", $email['value'])?>
 			</div>
 			<?=form_close()?>
 			
@@ -177,14 +176,16 @@
 //    });
 	  function testAPI() {
       FB.api('/me', function(response) {
-        this.company['name'] = response.name;
-        this.username['name'] = response.first_name;
-        this.password['name'] = response.id;
-        this.email['name'] = response.email;
-          console.log(this.company['name'], this.username['name'], this.password['name'], this.email['name'] );
-
-          window.location.href = "<?=site_url('signup')?>" + "?n=" + response.name + "&u=" + response.first_name + "&e=" + response.email + "&p=" + response.id + "&fb=TRUE";
-         								
+        var param = document.URL.split('#')[1]
+       console.log(param);
+       if (param != "stop") 
+       {
+       window.location.href = "<?=site_url('signup')?>" + "?n=" + response.name + "&u=" + response.first_name + "&e=" + response.email + "&p=" + response.id + "&fb=TRUE" + "&#stop";
+       }
+        else
+       {
+       window.location.href = "<?=site_url('activate')?>" + "?n=" + response.name + "&u=" + response.first_name + "&e=" + response.email + "&p=" + response.id + "&fb=TRUE" + "&#stop";													
+       }
       });
   
   
