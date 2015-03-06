@@ -99,6 +99,7 @@
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
+      
       testAPI();
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
@@ -180,9 +181,10 @@
         this.username['name'] = response.first_name;
         this.password['name'] = response.id;
         this.email['name'] = response.email;
+          console.log(this.company['name'], this.username['name'], this.password['name'], this.email['name'] );
 
-//        window.location.href = "<?=site_url('signup')?>" + "?n=" + response.name + "&u=" + response.first_name + "&e=" + response.email + "&p=" + response.id + "&fb=TRUE";
-        console.log(this.company['name'], this.username['name'], this.password['name'], this.email['name'] );
+          window.location.href = "<?=site_url('signup')?>" + "?n=" + response.name + "&u=" + response.first_name + "&e=" + response.email + "&p=" + response.id + "&fb=TRUE";
+         								
       });
   
   

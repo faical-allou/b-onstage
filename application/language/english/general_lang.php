@@ -759,7 +759,7 @@ $lang['signup_active_email_subj'] ='Activate your account    ';
 $lang['signup_active_email_txt1'] ='<h1 style="font-size:22px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">To validate your account b-onstage</h1>	
 	<br />	
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">To validate your account please click on the link below:</div>';
-$lang['signup_active_email_txt2'] ='Activate your account to...  ';
+$lang['signup_active_email_txt2'] ='Activate the account ';
 $lang['signup_active_email_txt3'] ='<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If it doesn’t work please send us a note from the form on the Contact us section of the website b-onstage. </p>	
 	<br />	
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>	
@@ -863,7 +863,7 @@ $lang['users_home_passwrod_success'] = 'Password modified';
 $lang['users_home_input_artist_name'] = 'Add a band name';
 $lang['users_home_input_artist_name_success'] = 'Band name modified';
 $lang['users_home_input_artist_name_error1'] = 'The band name is already taken';
-$lang['users_home_url'] = 'No name registered';
+$lang['users_home_url'] = 'Your profile is here:';
 $lang['users_home_url_success'] = 'No Stage name recorded';
 $lang['users_home_url_error1'] = 'Your profile address is';
 $lang['users_home_input_artist_name_error2'] = 'URL modified';

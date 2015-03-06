@@ -692,7 +692,7 @@ $lang['signup_active_email_subj'] = 'Activez votre compte';
 $lang['signup_active_email_txt1'] = '<h1 style="font-size:22px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Pour valider votre inscription b-onstage</h1>	
 	<br />
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Afin de valider votre inscription à b-onstage et d\'activer votre compte, veuillez cliquer sur le lien ci-dessous:</div>';
-$lang['signup_active_email_txt2'] = 'Activez votre compte pour ';	
+$lang['signup_active_email_txt2'] = 'Activez le compte ';	
 $lang['signup_active_email_txt3'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si cela ne fonctionne toujours pas, allez sur le site b-onstage.com et écrivez-nous à l\'aide de la rubrique Contactez-nous, en détaillant le problème que vous rencontrez.</p>
 	<br />	
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
@@ -774,7 +774,7 @@ $lang['users_home_email'] = 'Adresse électronique';
 $lang['users_home_artist_name'] = 'Nom du groupe / artiste';
 $lang['users_home_stage_name'] = 'Nom de la scène / bar';
 $lang['users_home_stage_name_short'] = 'Nom de la scène';
-$lang['users_home_url'] = 'Url page profil';
+$lang['users_home_url'] = 'Votre profil est ici:';
 $lang['users_home_title2'] = 'Mes coordonnées';
 $lang['users_home_txt_bottom'] = 'coordonnées visibles dans le profil.';
 $lang['users_home_modify'] = 'Modifier coordonnées';
@@ -799,7 +799,6 @@ $lang['users_home_input_artist_name_success'] = 'Nom du groupe modifié avec suc
 $lang['users_home_input_artist_name_error1'] = 'Le nom du groupe existe déjà.';
 $lang['users_home_input_artist_name_error2'] = 'Aucun nom de groupe / artiste enregistré';
 $lang['users_home_input_artist_name_error3'] = 'Aucun nom de scène enregistré';
-$lang['users_home_url'] = 'L\'adresse de votre profil sera la suivante';
 $lang['users_home_url_success'] = 'Url du profil modifiée avec succès.';
 $lang['users_home_url_error1'] = 'Url du profil existe déjà.';
 $lang['users_home_no_fname'] = 'Aucun prénom enregistré';
