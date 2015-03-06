@@ -47,7 +47,7 @@ class Concerts extends CI_Controller {
 		//set session vars				
 		if($post and $this->form_validation->run()){			
 			foreach ($post as $key => $value) {
-				if($value and in_array($key, array('search-date-start', 'search-date-end', 'search-city', 'search-status')))
+				if($value and in_array($key, array('search-date-start', 'search-date-end', 'search-country' , 'search-city', 'search-status')))
 					if(is_array($value))
 						$search[$key] = implode(',' , $value);
 					else
@@ -63,10 +63,15 @@ class Concerts extends CI_Controller {
 		$date_start = isset($search['search-date-start']) ? $search['search-date-start'].' 00:00:00' : date('Y-m-d 00:00:00');
 		$date_end = isset($search['search-date-end']) ? $search['search-date-end'].' 23:59:59' : date('Y-m-d 23:59:59', strtotime("+1 years"));  			
 		$status = isset($search['search-status']) ? $search['search-status'] : 'open';				
+		
 		$cities = $this->event_model->get_stage_cities();
+		$countries = $this->event_model->get_stage_countries();	
+		$city_by_country = $this->event_model->get_stage_cities_by_countries();	
 		//load vars
 		$this->load->vars(array('search' => $search));				
 		$this->load->vars(array('cities' => $cities));				
+		$this->load->vars(array('countries' => $countries));			
+		$this->load->vars(array('city_by_country' => $city_by_country));			
 		
 		//Get all musical genres	
 		$genres = $this->musical_genre_model->get(0,'');		

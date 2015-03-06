@@ -86,6 +86,8 @@ function init_search_bar(open){
 		selectedText 		: '# '+document.getElementById("searchbarselected").innerHTML,
 		height				: 'auto',
 		width				: 'auto',
+		checkAllText		: document.getElementById("searchbarcheckall").innerHTML,
+		uncheckAllText		: document.getElementById("searchbaruncheckall").innerHTML,
 		classes				: 'search-city',
 		noneSelectedText	: document.getElementById("choose_city").innerHTML
 	})
@@ -93,6 +95,93 @@ function init_search_bar(open){
 		label 				: '<span aria-hidden="true" class="fs-16 grey icon-search ml-5 mr-10"></span>',
 		placeholder			: document.getElementById("users_page_inputcity").innerHTML
 	});
+	$("#search-city").multiselect("disable");	
+	
+	/*********INIT SEARCH COUNTRY**********/
+	$('#search-country')
+	.multiselect({
+		header				: '',
+		multiple			: false,
+		selectedList		: 10,
+		height				: 'auto',
+		width				: 'auto',
+		classes				: 'search-country',
+		noneSelectedText	: document.getElementById("choose_country").innerHTML
+	})
+	.multiselectfilter({
+		label 				: '<span aria-hidden="true" class="fs-16 grey icon-search ml-5 mr-10"></span>',
+		placeholder			: document.getElementById("users_page_inputcountry").innerHTML
+	});
+	
+	if($("#search-country").val() == null) {	
+		$("#search-city").multiselect("disable");
+	}
+	else {
+		$("#search-city").multiselect("enable");
+		if($("#search-city").val() == null) {	
+			$("#search-city").empty();
+		}
+		else {
+			//$("#search-city").multiselect("disable");
+		}
+			$("."+$("#search-country").val()+"").each(function(){
+				$('#search-city').append($('<option></option>').attr("selected",(function(){
+					if($("#search-country").val() == $(this).html()) {	
+						$("#search-city").multiselect("disable");
+					}
+					})).attr('value', $(this).html())
+					.text($(this).html()));
+				});
+		
+		$("#search-city").multiselect("refresh");
+		if($("#search-city").val() == null) {	
+			$("#search-city").multiselect("checkAll");
+		}
+		
+	}
+	$('#search-country').change(function(){
+		
+		
+		
+		if($("#search-country").val() == null) {	
+			$("#search-city").multiselect("disable");
+		}
+		else {
+			
+			$("#search-city").multiselect("enable");
+			$("#search-city").empty();
+			
+			
+			if($("#currentcountry").val() == $("#search-country").val()){
+				$(".xxx"+$("#search-country").val()+"").each(function(){
+				$('#search-city').append($('<option></option>').attr('selected','selected').attr('value', $(this).html())
+					.text($(this).html()));
+				});
+				
+				$("."+$("#search-country").val()+"").each(function(){
+				$('#search-city').append($('<option></option>').attr('value', $(this).html())
+					.text($(this).html()));
+				});
+			}
+			else {
+				$("."+$("#search-country").val()+"").each(function(){
+				$('#search-city').append($('<option></option>').attr('value', $(this).html())
+					.text($(this).html()));
+				});
+				$("#search-city").multiselect("refresh");
+				$("#search-city").multiselect("checkAll");
+				
+			}
+												
+
+			$("#search-city").multiselect("refresh");						
+			
+			
+			
+		}	
+	});
+	
+	
 
 	/**********INIT BUTTON SEARCH**********/
 	$('#button-search-concert').button();

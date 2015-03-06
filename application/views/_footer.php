@@ -127,7 +127,9 @@
         <div id="alignment_lang_txt" style="display:none"><?php echo lang("redactor_alignment") ?></div>
         <div id="users_contact_sendmsg" style="display:none"><?php echo lang("users_contact_sendmsg") ?></div>
         <div id="users_page_inputcity" style="display:none"><?php echo lang("users_page_inputcity") ?></div>
+        <div id="users_page_inputcountry" style="display:none"><?php echo lang("users_page_inputcountry") ?></div>
         <div id="choose_city" style="display:none"><?php echo lang("choose_city") ?></div>
+        <div id="choose_country" style="display:none"><?php echo lang("choose_country") ?></div>
         <div id="noresultfound" style="display:none"><?php echo lang("noresultfound") ?></div>
         <div id="shows_sortby3" style="display:none"><?php echo lang("shows_sortby3") ?></div>
         <div id="users_page_sons_soundcloud_delconf" style="display:none"><?php echo lang("users_page_sons_soundcloud_delconf") ?></div>
@@ -172,6 +174,9 @@
         <div id="canceltxt" style="display:none"><?php echo lang("cancel") ?></div>
         <div id="users_calendar_event_del_conf" style="display:none"><?php echo lang("users_calendar_event_del_conf") ?></div>
         <div id="users_contact_del_conf" style="display:none"><?php echo lang("users_contact_del_conf") ?></div>
+        <div id="searchbarcheckall" style="display:none"><?php echo lang("checkall") ?></div>
+        <div id="searchbaruncheckall" style="display:none"><?php echo lang("uncheckall") ?></div>
+        <div id="searchbarselected" style="display:none"><?php echo lang("selected") ?></div>
         
 		<script src="<?=site_url('js/plugins.js')?>"></script>		
 		<script src="<?=site_url('js/dropdown.js')?>"></script>
