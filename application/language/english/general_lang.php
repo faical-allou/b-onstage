@@ -247,6 +247,11 @@ $lang['home_slide4_txt'] = 'b-onstage pays back the fee';
 $lang['home_slide4_txt2'] = 'for all concerts in March!';
 $lang['home_slide4_txt3'] = 'Get on the Stage!';
 
+$lang['home_slide5_txt'] = 'Je ne parle pas français';
+$lang['home_slide5_txt2'] = 'We do and we help you in Paris';
+$lang['home_slide5_txt3'] = '';
+$lang['home_slide5_txt4'] = 'Get a gig Now!';
+
 $lang['home_title_concert'] = 'Concerts';
 $lang['home_title_stage'] = 'Stages who trust us';
 $lang['home_title_artist'] = 'Artists we serve';
