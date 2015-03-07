@@ -324,8 +324,8 @@ $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 				<li><p>Nous nous déplaçons pour que vous n\'ayez pas à le faire. <strong>Cela vous évite de marcher pendant des jours</strong> et qui vous fait gagner du temps et de l\'argent.</p></li>			
 				<li><p>b-onstage vous donne l\'opportunité de jouer devant vos fans <strong> et les habitués de la Scène</strong>. Chaque nouveau fan est une nouvelle opportunité.</p></li>			
-				<li><p>A moins que cela ne soit explicitement spécifié vous pouvez<strong> toujours recevoir des pourboires, vendre des CDs et autres goodies</strong>  pendant et après le show.</p></li>			
-				<li><p><strong>Certains événements sont rémunérés</strong> avec des conditions données par la Scène (cachet fixe, surcharge sur les boissons, part de la billeterie ou défraiement) et nous les affichons comme tels. b-onstage ne prend aucun frais sur cette transaction, tout est pour vous.</p></li>			
+				<li><p>Vous pouvez<strong> toujours recevoir des pourboires, vendre des CDs et autres goodies</strong>  pendant et après le show.</p></li>			
+				<li><p><strong>Certains événements sont rémunérés</strong> avec des conditions données par la Scène (cachet fixe, surcharge sur les boissons, part de la billeterie ou défraiement) et nous les affichons comme tels. b-onstage fait tout pour vous avoir les meilleures conditions et ne prend aucun frais sur cette transaction, tout est pour vous.</p></li>			
 				<li><p><strong>Contribuez à la communauté</strong> en organisant un maximum de concerts, même si les garanties sont faibles au début. Plus nous organiserons de concerts avec succès plus nous pourrons offrir de concerts rémunérés.</p></li>			
 				<li><p><strong>Donnez toujours le meilleur de vous-même</strong>, commencez dès que possible et prenez soin de votre historique sur la plateforme, cela augmentera vos chances plus tard pour les évènements les plus convoités.</p></li>
 				<li><p>De temps en temps <strong>b-onstage organise des évenements avec des prix à la clé</strong>, inscrivez-vous et nous vous tiendrons informés.</p></li>				
