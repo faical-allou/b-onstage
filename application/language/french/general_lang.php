@@ -249,7 +249,7 @@ $lang['home_slide4_txt3'] = 'Montez sur Scène!';
 $lang['home_slide5_txt'] = 'Ich liebe dich...';
 $lang['home_slide5_txt2'] = 'On vous aime aussi!';
 $lang['home_slide5_txt3'] = 'et on vous aide à jouer à Berlin';
-$lang['home_slide5_txt4'] = 'Trouver un Scène';
+$lang['home_slide5_txt4'] = 'Trouver une Scène';
 
 $lang['home_title_concert'] = 'Les Concerts';
 $lang['home_title_stage'] = 'Les Scènes qui nous font confiance';
