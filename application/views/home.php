@@ -11,7 +11,7 @@
 				<div class=" fs-24 bold grey"><?php echo lang("home_slide5_txt2") ?></div>				
 				<div class=" fs-24 bold grey mb-20"><?php echo lang("home_slide5_txt3") ?></div>				
 				<span class="ui-green rsButton" style="font-size:1em;"> 
-					<a href="<?=site_url('concerts/?=slide1')?>" >
+					<a href="<?=site_url('concerts/?t=slide1')?>" >
 					<?php echo lang("home_slide5_txt4") ?></a>
 				</span>
 			</div>
@@ -26,7 +26,7 @@
 				<div class=" fs-24 bold white mb-20"><?php echo lang("home_slide4_txt2") ?></div>				
 				<div class="ta-c">
 				<span class="ui-green rsButton" style="font-size:1em;"> 
-					<a href="<?=site_url('concerts/?=promo')?>" >
+					<a href="<?=site_url('concerts/?t=promo')?>" >
 					<?php echo lang("home_slide4_txt3") ?></a>
 				</span>
 				</div>
@@ -40,7 +40,7 @@
 				<div class=" fs-32 bold grey"><?php echo lang("home_slide3_txt") ?></div>
 				<div class=" fs-24 bold grey mb-20"><?php echo lang("home_slide3_txt2") ?></div>				
 				<div class="ui-green rsButton" style="font-size:1em;"> 
-					<a href="<?=site_url('signup/?=slide3')?>" >
+					<a href="<?=site_url('signup/?t=slide3')?>" >
 					<?php echo lang("home_slide3_txt3") ?></a>
 				</div>
 			</div>
@@ -77,6 +77,21 @@
 	</div>	
 </div>	
 
+<div class="bg-white bs-black">
+	<div class="container_12 pt-50 pb-50 mb-30 ">
+		<div class="grid_8 ta-c">	
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/kIHGjqx4ecc?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=0&controls=0" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
+		</div>	
+		
+		<div class="grid_4">	
+			<div class="fs-24 ta-c bold"><?php echo lang("home_howitworks_title")?></div>	 
+			<div class="fs-18 ta-l mb-10 bold"><?php echo lang("home_howitworks_list")?></div>
+			<div class="ta-c bold">
+			<a href="<?=site_url('signup/?t=video')?>" class="ta-c ui-green action-home" style="font-size:1em;"><?php echo lang("home_slide3_txt3") ?></a>			
+			</div>
+		</div>	
+	</div>
+</div>
 
 	
 
@@ -101,7 +116,7 @@
 			<?php } ?>
 		</ul>		
 		<div class="p-20 ta-r">
-			<a href="<?=site_url('artists/?=tab')?>" class="home-list-link"><?php echo lang("home_seeall_artist") ?></a>
+			<a href="<?=site_url('artists/?t=tab')?>" class="home-list-link"><?php echo lang("home_seeall_artist") ?></a>
 		</div>
 	</div>
 	
@@ -125,28 +140,11 @@
 			<?php } ?>
 		</ul>		
 		<div class="p-20 ta-c">
-			<a href="<?=site_url('stages/?=tab')?>" class="home-list-link"><?php echo lang("home_seeall_stages") ?></a>
+			<a href="<?=site_url('stages/?t=tab')?>" class="home-list-link"><?php echo lang("home_seeall_stages") ?></a>
 		</div>
 	</div>			
 </div>
 
-<!--
-<div class="bg-white">
-	<div class="container_12 pt-50 pb-50">
-		<div class="grid_8 ta-c">	
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/-XdRr16bg_U?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
-		</div>	
-		
-		<div class="grid_4">	
-			<div class="fs-24 ta-c bold"><?php echo lang("home_howitworks_title")?></div>	 
-			<div class="fs-18 ta-l bold"><?php echo lang("home_howitworks_list")?></div>
-			<div class="ta-c bold">
-			<a href="<?=site_url('signup')?>" class="ta-c ui-green action-home" style="font-size:1em;"><?php echo lang("home_slide3_txt3") ?></a>			
-			</div>
-		</div>	
-	</div>
-</div>
--->
 
 
 <div class="bg-purple">
@@ -155,14 +153,14 @@
 			<div class="p-20">
 				<?=img(array('src' => site_url('img/icons/home/calendar.png')))?>
 				<p class="fs-24  white ta-c" style="height:70px;"><?php echo lang("home_bottom_txt") ?></p>
-				<a href="<?=site_url('concerts/?=footer')?>" class="ui-white action-home" style="font-size:1em;"><?php echo lang("header_book_a_date") ?></a>			
+				<a href="<?=site_url('concerts/?t=footer')?>" class="ui-white action-home" style="font-size:1em;"><?php echo lang("header_book_a_date") ?></a>			
 			</div>	
 		</div>
 		<div class="grid_6 ta-c">			
 			<div class="p-20">
 				<?=img(array('src' => site_url('img/icons/home/network.png')))?>
 				<p class="fs-24  white ta-c" style="height:70px"><?php echo lang("home_bottom_txt2") ?></p>
-				<a href="<?=site_url('signup/?=footer')?>" class="ui-white action-home" style="font-size:1em;"><?php echo lang("become_member") ?></a>			
+				<a href="<?=site_url('signup/?t=footer')?>" class="ui-white action-home" style="font-size:1em;"><?php echo lang("become_member") ?></a>			
 			</div>	
 		</div>
 	</div>

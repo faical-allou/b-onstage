@@ -65,7 +65,7 @@ $lang['home_title'] = 'Bienvenue sur b-onstage';
 $lang['aboutus_title'] = 'A propos';
 $lang['whoweare_title'] = 'Qui sommes-nous?';
 $lang['howitworks_title'] = 'Comment ça marche?';
-$lang['howimakemoney_title'] = 'Qu\'est-ce que j\'y gagne';
+$lang['howimakemoney_title'] = 'Qu\'est-ce que j\'y gagne?';
 
 $lang['terms_of_services_title'] = 'Conditions générales d\'utilisations';
 $lang['legal_title'] = 'Mentions légales';
@@ -133,7 +133,7 @@ $lang['to2'] = 'à';
 $lang['at'] = 'à';
 $lang['de'] = 'de';
 $lang['submit'] = 'Envoyer';
-$lang['become_member'] = 'Devenir membre';
+$lang['become_member'] = 'S\'inscrire';
 $lang['clickhere'] = 'cliquez-ici';
 $lang['modify'] = 'Modifier';
 $lang['address'] = 'Adresse';
@@ -251,23 +251,33 @@ $lang['home_slide5_txt2'] = 'On vous aime aussi!';
 $lang['home_slide5_txt3'] = 'et on vous aide à jouer à Berlin';
 $lang['home_slide5_txt4'] = 'Trouver une Scène';
 
+$lang['home_promo'] = 'b-onstage vous rembourse vos frais de réservation pour tous vos concerts en Mars 2015!';
+
+$lang['home_howitworks_title'] = 'Comment ca marche?';
+
+$lang['home_howitworks_list'] = '<ul class="home-howitworks">
+				<li><p>Enregistrez vous et complètez votre profil</p></li>
+				<li><p>Reservez une scène à la date qui vous convient</p></li>
+				<li><p>Attendez que nous confirmions votre sélection</p></li>
+				<li><p>......A Vous de Jouer!</p></li>
+			</ul>';
+
 $lang['home_title_concert'] = 'Les Concerts';
 $lang['home_title_stage'] = 'Les Scènes qui nous font confiance';
 $lang['home_title_artist'] = 'Les Artistes que nous servons';
 $lang['home_seeall_shows'] = 'Voir tous les Concerts';
 $lang['home_seeall_stages'] = 'Voir toutes les Scènes';
 $lang['home_seeall_artist'] = 'Voir tous les Artistes';
-$lang['home_bottom_txt'] = 'Rechercher des dates pour jouer sur Scène.';
-$lang['home_bottom_txt2'] = 'L\'inscription est gratuite. </br> Connectez vous aux Scènes.';
+$lang['home_bottom_txt'] = 'Réservez une Scène en quelques clicks, </br>Gardez votre énergie pour les répétitions';
+$lang['home_bottom_txt2'] = 'L\'inscription est gratuite, </br> Connectez vous à l\'international';
 
-$lang['home_promo'] = 'b-onstage vous rembourse vos frais de réservation pour tous vos concerts en Mars 2015!';
 
 
 // About us
 $lang['aboutus_link_aboutus'] = 'A propos';
 $lang['aboutus_link_whoweare'] = 'Qui sommes-nous ?';
-$lang['aboutus_link_howitworks'] = 'Comment ça marche';
-$lang['aboutus_link_howimakemoney'] = 'Qu\'est-ce que j\'y gagne';
+$lang['aboutus_link_howitworks'] = 'Comment ça marche?';
+$lang['aboutus_link_howimakemoney'] = 'Qu\'est-ce que j\'y gagne?';
 
 $lang['aboutus_header_aboutus'] = 'Pourquoi b-onstage ?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
@@ -299,12 +309,12 @@ $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 				<li><p>Sur b-onstage vous utilisez notre outil de recherche pour trouvez les Scènes disponibles en fonction des dates et/ou des villes qui vous conviennent.</p></li>
 				<li><p>Vous envoyez une demande de réservation pour faire un Concert sur la Scène sélectionnée. Nous vous notifierons une fois la réservation validée par la Scène.</p></li>
 				<li class="nb"><p><strong>Note :</strong> Les Scènes sont susceptibles de recevoir un grand nombre de demandes de réservation. Complétez au mieux votre profil et soyez patients, cela peut prendre du temps avant que vous ne soyez sélectionnés par la Scène.</p></li>
-				<li><p>Pour valider complètement votre réservation, vous devrez procéder en ligne au paiement des frais de réservation.</p></li>
+				<li><p>Pour valider votre réservation, vous devrez procéder au paiement en ligne des frais de réservation.</p></li>
 				<li class="nb">
-					<p><strong>Note :</strong> Les frais de réservation permet surtout de garantir que les deux parties tiennent leurs engagements et que le Concert se déroulent dans les meilleurs conditions. Cela évite également que des Artistes peu sérieux dégradent les relations avec les Scènes, et qu’il y ait de moins en moins de lieu et de date à votre disposition.</p>
+					<p><strong>Note :</strong> Les frais de réservation permettent surtout de garantir que les deux parties tiennent leurs engagements et que le Concert se déroulent dans les meilleures conditions. Cela évite également que des Artistes peu sérieux dégradent les relations avec les Scènes, et qu’il y ait de moins en moins de lieu et de date à votre disposition.</p>
 				</li>
 				<li class="nb">
-					<p><strong>Note :</strong> Vous ne payez que quand êtes choisis pour le concert.</p>
+					<p><strong>Note :</strong> Vous ne payez que quand et si vous êtes choisis pour le concert.</p>
 				</li>
 				<li><p>A réception du paiement des frais de réservations, tels qu’indiqués sur la page de la Scène, la réservation est définitive et vous serez notifié. Une fois réservé les détails de votre Concert s\'afficheront et seront visible par le public.</p></li>
 				<li><p>Afin de vous protéger, et de vous garantir les meilleures conditions, nous avons conçu des contrats Artistes/Scènes (accord de prestation) que nous pouvons mettre à disposition sur simple demande. Nous vous invitons à signer un contrat Artiste(s)/Scène, qui est un contrat de prestation avec la Scène qui pourra vous être envoyé. Ce contrat établit le lien juridique entre la Scène et l’Artiste, la société Mybandonstage n’intervenant, s’agissant de l’exécution des prestations artistiques et de location de salle, que comme intermédiaire de mise en relation via le site b-onstage.</p></li>
@@ -333,14 +343,6 @@ $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 			</ul>';
 
 
-$lang['home_howitworks_title'] = 'Comment ca marche:';
-
-$lang['home_howitworks_list'] = '<ul class="home-howitworks">
-				<li><p>Enregistre toi et complète ton profil</p></li>
-				<li><p>Reserve une scène à la date qui te convient</p></li>
-				<li><p>Nous te confirmons si tu es choisi</p></li>
-				<li><p>......A Toi de Jouer!</p></li>
-			</ul>';
 
 
 // Footer

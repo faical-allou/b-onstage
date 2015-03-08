@@ -65,8 +65,8 @@ $lang['notify_account_created'] = 'Your registration is now validated';
 $lang['home_title'] = 'Welcome to b-onstage';
 $lang['aboutus_title'] = 'About';
 $lang['whoweare_title'] = 'Who are we?';
-$lang['howitworks_title'] = 'How it works';
-$lang['howimakemoney_title'] = 'How I make money';
+$lang['howitworks_title'] = 'How does it work?';
+$lang['howimakemoney_title'] = 'How do I make money?';
 
 $lang['terms_of_services_title'] = 'General Terms and Conditions';
 $lang['legal_title'] = 'Legal notice';
@@ -90,9 +90,9 @@ $lang['user_book_title'] = 'Where to play	';
 // Page descriptions		
 $lang['home_desc'] = 'add description';
 $lang['aboutus_desc'] = 'About';
-$lang['whoweare_desc'] = 'Who we are';
-$lang['howitworks_desc'] = 'How it works';
-$lang['howimakemoney_desc'] = 'How I make money';
+$lang['whoweare_desc'] = 'Who are we?';
+$lang['howitworks_desc'] = 'How does it work?';
+$lang['howimakemoney_desc'] = 'How do I make money?';
 
 $lang['terms_of_services_desc'] = 'General terms and conditions';
 $lang['legal_desc'] = 'Legal notice';
@@ -134,7 +134,7 @@ $lang['to2'] = 'to';
 $lang['at'] = 'at';
 $lang['de'] = 'from';
 $lang['submit'] = 'Submit';
-$lang['become_member'] = 'Become a Member';
+$lang['become_member'] = 'Sign up Now!';
 $lang['clickhere'] = 'click-here';
 $lang['modify'] = 'Modify';
 $lang['address'] = 'Address';
@@ -252,23 +252,32 @@ $lang['home_slide5_txt2'] = 'We do and we help you in Paris';
 $lang['home_slide5_txt3'] = '';
 $lang['home_slide5_txt4'] = 'Get a gig Now!';
 
+$lang['home_promo'] = 'b-onstage pays back the booking fees for all concerts in March 2015!';
+
 $lang['home_title_concert'] = 'Concerts';
 $lang['home_title_stage'] = 'Stages who trust us';
 $lang['home_title_artist'] = 'Artists we serve';
 $lang['home_seeall_shows'] = 'See all Concerts';
 $lang['home_seeall_stages'] = 'See all Stages';
 $lang['home_seeall_artist'] = 'See all Artists';
-$lang['home_bottom_txt'] = 'Check our Stages\' availability';
-$lang['home_bottom_txt2'] = 'Join the community </br> Sign up for free now!';
+$lang['home_bottom_txt'] = 'Book a Stage in few clicks, </br>Save your energy for the rehearsal';
+$lang['home_bottom_txt2'] = 'Sign up, it\'s free </br> Connect to Stages at home and abroad';
 
-$lang['home_promo'] = 'b-onstage pays back the booking fees for all concerts in March 2015!';
+$lang['home_howitworks_title'] = 'How does it work?';
+
+$lang['home_howitworks_list'] = '<ul class="home-howitworks">
+				<li><p>Sign up and complete your profile</p></li>
+				<li><p>Book a Stage for the date you want</p></li>
+				<li><p>Wait, we\'ll confirm if you are selected</p></li>
+				<li><p>......The Stage is Yours!</p></li>
+			</ul>';
 
 
 // About us
 $lang['aboutus_link_aboutus'] = 'About';
 $lang['aboutus_link_whoweare'] = 'Who are we?';
-$lang['aboutus_link_howitworks'] = 'How it works';
-$lang['aboutus_link_howimakemoney'] = 'How I make money';
+$lang['aboutus_link_howitworks'] = 'How does it works?';
+$lang['aboutus_link_howimakemoney'] = 'How do I make money?';
 
 $lang['aboutus_header_aboutus'] = 'Why b-onstage?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
@@ -315,15 +324,6 @@ $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 				<li class="nb"><p><strong>Note : </strong>In case of “No-Show”, without notice at least 72h before, we reserve the right to display “No-Show” on your profile.</p></li>
 
 				</li>
-			</ul>';
-
-$lang['home_howitworks_title'] = 'How it works:';
-
-$lang['home_howitworks_list'] = '<ul class="home-howitworks">
-				<li><p>Sign up and complete your profile</p></li>
-				<li><p>Book a Stage for the date you want</p></li>
-				<li><p>We\'ll confirm if you are selected</p></li>
-				<li><p>......The Stage is Yours!</p></li>
 			</ul>';
 
 
