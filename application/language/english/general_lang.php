@@ -248,7 +248,7 @@ $lang['home_slide4_txt2'] = 'for all concerts in March!';
 $lang['home_slide4_txt3'] = 'Get on the Stage!';
 
 $lang['home_slide5_txt'] = 'Je ne parle pas français';
-$lang['home_slide5_txt2'] = 'We do and we help you in Paris';
+$lang['home_slide5_txt2'] = 'We do and we serve you in Paris as well';
 $lang['home_slide5_txt3'] = '';
 $lang['home_slide5_txt4'] = 'Get a gig Now!';
 

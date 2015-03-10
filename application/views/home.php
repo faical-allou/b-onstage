@@ -11,7 +11,7 @@
 				<div class=" fs-24 bold grey"><?php echo lang("home_slide5_txt2") ?></div>				
 				<div class=" fs-24 bold grey mb-20"><?php echo lang("home_slide5_txt3") ?></div>				
 				<span class="ui-green rsButton" style="font-size:1em;"> 
-					<a href="<?=site_url('concerts/?t=slide1')?>" >
+					<a href="<?=site_url('concerts/?t=slide5')?>" >
 					<?php echo lang("home_slide5_txt4") ?></a>
 				</span>
 			</div>
@@ -26,7 +26,7 @@
 				<div class=" fs-24 bold white mb-20"><?php echo lang("home_slide4_txt2") ?></div>				
 				<div class="ta-c">
 				<span class="ui-green rsButton" style="font-size:1em;"> 
-					<a href="<?=site_url('concerts/?t=promo')?>" >
+					<a href="<?=site_url('concerts/?t=slide4')?>" >
 					<?php echo lang("home_slide4_txt3") ?></a>
 				</span>
 				</div>
@@ -93,7 +93,25 @@
 	</div>
 </div>
 
-	
+<div class="bg-purple">
+	<div class="container_12 pt-50 pb-50 mb-30">
+		<div class="grid_6 ta-c">	
+			<div class="p-20">
+				<?=img(array('src' => site_url('img/icons/home/calendar.png')))?>
+				<p class="fs-24  white ta-c" style="height:70px;"><?php echo lang("home_bottom_txt") ?></p>
+				<a href="<?=site_url('concerts/?t=pband')?>" class="ui-white action-home" style="font-size:1em;"><?php echo lang("header_book_a_date") ?></a>			
+			</div>	
+		</div>
+		<div class="grid_6 ta-c">			
+			<div class="p-20">
+				<?=img(array('src' => site_url('img/icons/home/network.png')))?>
+				<p class="fs-24  white ta-c" style="height:70px"><?php echo lang("home_bottom_txt2") ?></p>
+				<a href="<?=site_url('signup/?t=pband')?>" class="ui-white action-home" style="font-size:1em;"><?php echo lang("become_member") ?></a>			
+			</div>	
+		</div>
+	</div>
+</div>	
+
 
 
 <div class="container_12 mb-30">
@@ -146,23 +164,4 @@
 </div>
 
 
-
-<div class="bg-purple">
-	<div class="container_12 pt-50 pb-50">
-		<div class="grid_6 ta-c">	
-			<div class="p-20">
-				<?=img(array('src' => site_url('img/icons/home/calendar.png')))?>
-				<p class="fs-24  white ta-c" style="height:70px;"><?php echo lang("home_bottom_txt") ?></p>
-				<a href="<?=site_url('concerts/?t=footer')?>" class="ui-white action-home" style="font-size:1em;"><?php echo lang("header_book_a_date") ?></a>			
-			</div>	
-		</div>
-		<div class="grid_6 ta-c">			
-			<div class="p-20">
-				<?=img(array('src' => site_url('img/icons/home/network.png')))?>
-				<p class="fs-24  white ta-c" style="height:70px"><?php echo lang("home_bottom_txt2") ?></p>
-				<a href="<?=site_url('signup/?t=footer')?>" class="ui-white action-home" style="font-size:1em;"><?php echo lang("become_member") ?></a>			
-			</div>	
-		</div>
-	</div>
-</div>	
 
