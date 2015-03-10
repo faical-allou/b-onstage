@@ -87,7 +87,7 @@ $lang['user_book_title'] = 'Ou jouer ma musique ?	';
 		
 		
 // Page descriptions		
-$lang['home_desc'] = 'Sur b-onstage les musiciens réservent des scènes pour leur show';
+$lang['home_desc'] = 'Sur b-onstage les musiciens réservent des scènes pour leurs concerts';
 $lang['aboutus_desc'] = 'A propos';
 $lang['whoweare_desc'] = 'Qui sommes-nous?';
 $lang['howitworks_desc'] = 'Comment ça marche?';

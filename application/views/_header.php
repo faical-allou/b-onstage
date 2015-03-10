@@ -16,7 +16,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 	<meta name="description" content="<?=$description?>">	
 	<meta name="viewport" content="width = device-width, initial-scale = 1.0" />
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+	
 	<!--css-->
 	<?=link_tag(site_url('css/default/jquery-ui-1.9.0.custom.css'), 'stylesheet')?>
 	<?=link_tag(site_url('js/chosen/chosen.css'), 'stylesheet')?>		
