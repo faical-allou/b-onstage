@@ -268,8 +268,8 @@ $lang['home_title_artist'] = 'Les Artistes que nous servons';
 $lang['home_seeall_shows'] = 'Voir tous les Concerts';
 $lang['home_seeall_stages'] = 'Voir toutes les Scènes';
 $lang['home_seeall_artist'] = 'Voir tous les Artistes';
-$lang['home_bottom_txt'] = 'Réservez une Scène en quelques clicks, </br>Gardez votre énergie pour les répétitions';
-$lang['home_bottom_txt2'] = 'L\'inscription est gratuite, </br> Connectez vous à l\'international';
+$lang['home_bottom_txt'] = 'Réservez une Scène en deux clicks, </br>Gardez votre énergie pour les répétitions';
+$lang['home_bottom_txt2'] = 'L\'inscription est gratuite et le restera, </br> Connectez vous aux scènes à l\'international';
 
 
 
