@@ -1,12 +1,12 @@
 
 
 <!--slider-->	
-<div id="wrap-slider" class="mb-30 bs-black">
-	<div id="slider" class="royalSlider rsBlack">
+<div id="wrap-slider" class="mb-30 bs-black ">
+	<div id="slider" class="royalSlider rsBlack ">
 
 	<!--slide5-->
-		<div class="rsContent slide5">
-			<div class="bContainer ui-corner-all p-20">		
+		<div class="rsContent slide5 db">
+			<div class="bContainer ui-corner-all p-20 db">		
 				<div class=" fs-32 italic bold grey"><?php echo lang("home_slide5_txt") ?></div>
 				<div class=" fs-24 bold grey"><?php echo lang("home_slide5_txt2") ?></div>				
 				<div class=" fs-24 bold grey mb-20"><?php echo lang("home_slide5_txt3") ?></div>				
@@ -15,7 +15,7 @@
 					<?php echo lang("home_slide5_txt4") ?></a>
 				</span>
 			</div>
-			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-5.png" imageAlignCenter data-rsw="900" data-rsh="500">
+			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-5.png">
 		</div>
 
 
@@ -78,14 +78,14 @@
 </div>	
 
 <div class="bg-white bs-black">
-	<div class="container_12 pt-50 pb-50 mb-30 ">
-		<div class="grid_8 ta-c">	
-			<iframe width="640" height="360" src="https://www.youtube.com/embed/kIHGjqx4ecc?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=0&controls=0" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
+	<div class="container_12 pt-50 pb-50 mb-30 ta-c">
+		<div id="home-video" class="grid_9 ta-c ">	
+			<iframe width="480" height="270" src="https://www.youtube.com/embed/kIHGjqx4ecc?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=0&controls=0" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
 		</div>	
 		
-		<div class="grid_4">	
-			<div class="fs-24 ta-c bold"><?php echo lang("home_howitworks_title")?></div>	 
-			<div class="fs-18 ta-l mb-10 bold"><?php echo lang("home_howitworks_list")?></div>
+		<div class="grid_3">	
+			<div class="fs-18 ta-c bold"><?php echo lang("home_howitworks_title")?></div>	 
+			<div class="fs-16 ta-l mb-10 bold"><?php echo lang("home_howitworks_list")?></div>
 			<div class="ta-c bold">
 			<a href="<?=site_url('signup/?t=video')?>" class="ta-c ui-green action-home" style="font-size:1em;"><?php echo lang("home_slide3_txt3") ?></a>			
 			</div>
@@ -99,14 +99,14 @@
 			<div class="p-20">
 				<?=img(array('src' => site_url('img/icons/home/calendar.png')))?>
 				<p class="fs-24  white ta-c" style="height:70px;"><?php echo lang("home_bottom_txt") ?></p>
-				<a href="<?=site_url('concerts/?t=pband')?>" class="ui-white action-home" style="font-size:1em;"><?php echo lang("header_book_a_date") ?></a>			
+				<a href="<?=site_url('concerts/?t=pband')?>" class="ui-white action-home mt-10" style="font-size:1em;"><?php echo lang("header_book_a_date") ?></a>			
 			</div>	
 		</div>
 		<div class="grid_6 ta-c">			
 			<div class="p-20">
 				<?=img(array('src' => site_url('img/icons/home/network.png')))?>
 				<p class="fs-24  white ta-c" style="height:70px"><?php echo lang("home_bottom_txt2") ?></p>
-				<a href="<?=site_url('signup/?t=pband')?>" class="ui-white action-home" style="font-size:1em;"><?php echo lang("become_member") ?></a>			
+				<a href="<?=site_url('signup/?t=pband')?>" class="ui-white action-home mt-10" style="font-size:1em;"><?php echo lang("become_member") ?></a>			
 			</div>	
 		</div>
 	</div>
@@ -114,9 +114,9 @@
 
 
 
-<div class="container_12 mb-30">
+<div class="container_12 mb-30 db">
 	<!--last 5 artist-->
-	<div class="grid_6 home-bloc ui-corner-all bs-black">
+	<div class="grid_6 home-bloc ui-corner-all bs-black di">
 		<?=heading($title_artist, 2, 'class="home-title title"')?>		
 		<ul class="home-list">
 			<?php foreach($artists as $artist){ ?>				
@@ -140,7 +140,7 @@
 	
 	
 	<!--last 5 stages-->
-	<div class="grid_6 home-bloc ui-corner-all bs-black">
+	<div class="grid_6 home-bloc ui-corner-all bs-black di">
 		<?=heading($title_stage, 2, 'class="home-title title"')?>		
 		<ul class="home-list">
 			<?php foreach($stages as $stage){ ?>				
