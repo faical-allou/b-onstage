@@ -88,7 +88,7 @@ $lang['user_book_title'] = 'Where to play	';
 		
 		
 // Page descriptions		
-$lang['home_desc'] = 'add description';
+$lang['home_desc'] = 'b-onstage is where musicians book venues for their show';
 $lang['aboutus_desc'] = 'About';
 $lang['whoweare_desc'] = 'Who are we?';
 $lang['howitworks_desc'] = 'How does it work?';
