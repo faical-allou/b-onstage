@@ -25,7 +25,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 	<?=link_tag(site_url('js/royalslider/skins/black/rs-black.css'), 'stylesheet')?>
 	<?=link_tag(site_url('css/normalize.css'), 'stylesheet')?>
 	<?=link_tag(site_url('css/main.css'), 'stylesheet')?>
-	<style>@import url(/css/720.min.css) (max-width:800px);</style>
+	<style>@import url(/css/720.min.css) (max-width:959px);</style>
 
         <style>@import url(/css/960.css) (min-width:960px) and (max-width:1199px);</style>
 	<style>@import url(/css/1200.min.css) (min-width:1200px);</style>

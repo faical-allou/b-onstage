@@ -62,7 +62,7 @@
 					<?=form_error($terms_of_services['name'])?>
 				</div>
 -->			</div>
-            		<span class="fs-12 grey bold ml-20 mb-10 db" style="line-height:19px;"><?=$text_terms_of_services?></span>
+            		<span class="fs-12 grey bold ml-20 mb-10 db pr-5" style="line-height:19px;"><?=$text_terms_of_services?></span>
 
 			<!--submit-->
 			<div class="ta-r mb-10 mr-10">

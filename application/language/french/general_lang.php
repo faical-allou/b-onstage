@@ -691,7 +691,7 @@ $lang['signup_txt2'] = '<p class="grey fs-24 title ts-white">Bientôt vous pourr
 			<p class="grey fs-16 title ts-white">Jouer votre musique live sur les Scènes b-onstage !</p>	';
 $lang['signup_form_header'] = 'Dites-nous en plus sur vous';
 $lang['signup_form_artist_name'] = 'Nom d\'Artiste';
-$lang['signup_form_accept'] = 'En cliquant sur le boutton ci-dessous, </br>j\'accepte les '.anchor(site_url('terms_of_services'),'Conditions générales d\'utilisation',array('class'=>'purple'));
+$lang['signup_form_accept'] = 'En cliquant sur le boutton ci-dessous,</br>j\'accepte les '.anchor(site_url('terms_of_services'),'Conditions générales d\'utilisation',array('class'=>'purple'));
 $lang['signup_form_next'] = 'Etape suivante';
 $lang['signup_form_title1'] = 'C\'est sous ce nom la que vos fans vous trouveront';
 $lang['signup_form_title2'] = 'C\'est pour votre page sur b-onstage; utilisez des lettres et des chiffres mais pas d\'espace ni de caractères spéciaux.';

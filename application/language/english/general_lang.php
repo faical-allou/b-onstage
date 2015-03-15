@@ -754,7 +754,7 @@ $lang['signup_txt2'] ='<p class="grey fs-24 title ts-white">Soon you\'ll be able
 	<p class="grey fs-16 title ts-white">Play live on our Stages!</p>';
 $lang['signup_form_header'] ='Tell us who you are';
 $lang['signup_form_artist_name'] ='Your original Brand Name';
-$lang['signup_form_accept'] ='By clicking on the button below, I accept '.anchor(site_url('terms_of_services'),'the General Terms and Conditions',array('class'=>'purple'));
+$lang['signup_form_accept'] ='By clicking on the button below,</br>I accept '.anchor(site_url('terms_of_services'),'the General Terms and Conditions',array('class'=>'purple'));
 $lang['signup_form_next'] ='Next Step';
 $lang['signup_form_title1'] ='This is how you will appear on the website';
 $lang['signup_form_title2'] ='No spaces and no symbols please, it will be used to create your page';
