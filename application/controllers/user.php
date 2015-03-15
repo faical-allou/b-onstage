@@ -442,24 +442,27 @@ class User extends CI_Controller {
 					
 					$this->form_validation->set_error_delimiters('<div class="ui-state-error ui-corner-all fs-12 bold p-5 mt-10">', '</div>');
 					//$this->form_validation->set_rules('groups_menu','lang:groups_menu', 'required|callback_groups_menu');
-					$this->form_validation->set_rules('company', lang("signup_form_artist_name"), 'trim|required|is_unique[users.company]');
-					$this->form_validation->set_rules('username', 'lang:username', 'trim|required|xss_clean||min_length[5]|max_length[25]|is_unique[users.username]|is_unique[users.web_address]');
+//					$this->form_validation->set_rules('company', lang("signup_form_artist_name"), 'trim|required|is_unique[users.company]');
+//					$this->form_validation->set_rules('username', 'lang:username', 'trim|required|xss_clean||min_length[5]|max_length[25]|is_unique[users.username]|is_unique[users.web_address]');
 					$this->form_validation->set_rules('email', 'lang:identity', 'trim|required|valid_email|is_unique[users.email]');
-					$this->form_validation->set_rules('password', 'lang:password', 'trim|required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|max_length[' . $this->config->item('max_password_length', 'ion_auth') . ']|matches[password_confirm]');
-					$this->form_validation->set_rules('password_confirm', 'lang:password_confirm', 'trim|required');
-					$this->form_validation->set_rules('terms_of_services', 'lang:terms_of_services', 'callback_terms_of_services');
+					$this->form_validation->set_rules('password', 'lang:password', 'trim|required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|max_length[' . $this->config->item('max_password_length', 'ion_auth'));
+//					$this->form_validation->set_rules('password_confirm', 'lang:password_confirm', 'trim|required');
+//					$this->form_validation->set_rules('terms_of_services', 'lang:terms_of_services', 'callback_terms_of_services');
 
 					
 					if ($this->form_validation->run() == true)
 					{
-						$username = $this->input->post('username');
+						
 						$email = $this->input->post('email');
 						$password = $this->input->post('password');
+                                                $temp_email = explode( "@" , $email);
+                                                echo $temp_email[0];
 						//$groups = $this->input->post('groups_menu');
 						$groups = array('2');//groupe artist
 						
+                                                $username = preg_replace("/[^a-zA-Z0-9]+/", "", $temp_email[0]);
 						$additional_data = array(
-							'company'		=> $this->input->post('company'),
+							'company'		=> $temp_email[0],
 							'web_address'	=> $this->input->post('username')
 						);	
 						/*$additional_data = array('first_name' => $this->input->post('first_name'),

@@ -1,12 +1,12 @@
 <?php
 
-$lang['required']			= "Le champ %s est requis.";
+$lang['required']			= "Nous avons vraiment besoin de cette info.";
 $lang['isset']				= "Le champ %s doit avoir une valeur.";
-$lang['valid_email']		= "Le champ %s doit contenir une adresse email valide.";
+$lang['valid_email']		= "Il doit y avoir une erreur, je ne reconnais pas d'addresse email.";
 $lang['valid_emails']		= "Le champ %s ne peut contenir que des adresses email valides.";
 $lang['valid_url']			= "Le champ %s doit contenir une URL valide.";
 $lang['valid_ip']			= "Le champ %s doit contenir une IP valide.";
-$lang['min_length']			= "Le champ %s doit contenir au moins %s caract&egrave;res.";
+$lang['min_length']			= "Votre %s doit contenir au moins %s caract&egrave;res.";
 $lang['max_length']			= "Le champ %s ne peut contenir plus de %s caract&egrave;res.";
 $lang['exact_length']		= "Le champ %s doit contenir exactement %s caract&egrave;res.";
 $lang['alpha']				= "Le champ %s ne peut contenir que des caract&egrave;res alphab&eacute;tiques.";
@@ -17,7 +17,7 @@ $lang['is_numeric']			= "Le champ %s ne peut contenir que de signes du type nomb
 $lang['integer']			= "Le champ %s doit contenir un integer.";
 $lang['regex_match']		= "Le champ %s field n'utilise pas le bon format.";
 $lang['matches']			= "Le champ %s doit correspondre au champ %s.";
-$lang['is_unique'] 			= "Le champ %s existe d&eacute;j&agrave;. Essayez-en un autre";
+$lang['is_unique'] 			= "Nous avons déjà quelqu'un sous ce nom là. Essayez-en un autre.";
 $lang['is_natural']			= "Le champ %s ne peut contenir que des nombres positifs.";
 $lang['is_natural_no_zero']	= "Le champ %s ne peut contenir que des nombres plus grand que z&eacute;.";
 $lang['decimal']			= "Le champ %s doit contenir un nombre d&eacute;cimal.";
