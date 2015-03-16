@@ -3,7 +3,7 @@
 		<!--event-date + event book button + title-->
 		<div class="mb-20 clearfix">		
 			<div class="date-concert title left">				
-				<?=lang("calendar_day_".date_format($date_start, "w"))." ", date_format($date_start, "j")?>							
+				<?=lang("calendar_day_".date_format($date_start, "w"))." ".date_format($date_start, "j")?>							
 				<?=get_month(date_format($date_start, 'n'))?>				
 			</div>
 			<div class="schedule-concert title left ml-10">

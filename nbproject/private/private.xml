@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/macbookpro/Sites/b-onstage_new/application/views/_header.php</file>
+            <file>file:/Users/macbookpro/Sites/b-onstage_new/application/views/user/auth/signup_steps_artist.php</file>
+            <file>file:/Users/macbookpro/Sites/b-onstage_new/application/models/ion_auth_model.php</file>
+            <file>file:/Users/macbookpro/Sites/b-onstage_new/application/views/_footer.php</file>
+            <file>file:/Users/macbookpro/Sites/b-onstage_new/application/views/user/auth/signup.php</file>
+            <file>file:/Users/macbookpro/Sites/b-onstage_new/application/controllers/user.php</file>
+            <file>file:/Users/macbookpro/Sites/b-onstage_new/css/main.css</file>
+        </group>
     </open-files>
 </project-private>

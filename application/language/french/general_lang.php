@@ -698,8 +698,8 @@ $lang['signup_form_title2'] = 'C\'est pour votre page sur b-onstage; utilisez de
 $lang['signup_form_title3'] = 'L\'adresse e-mail doit être valide et sera votre identifiant de connexion.';
 $lang['signup_form_title4'] = 'Utilisez au moins sept caractères.';
 $lang['signup_form_title5'] = 'Confirmez le mot de passe saisi au-dessus.';
-$lang['signup_active_txt'] = '<p>Vous allez recevoir un mail de confirmation dans quelques minutes. Suivez-en les informations pour valider votre compte.</p>
-		<p>Si vous ne le recevez pas, vérifiez votre courrier indésirable (ou Spam).</p>
+$lang['signup_active_txt'] = '<p>Vous allez recevoir un mail de confirmation dans quelques minutes. Suivez les informations pour valider votre compte.</p>
+		<p style="font-weight:bold;">Si vous ne le recevez pas, vérifiez votre courrier indésirable (ou Spam).</p>
 		<p>Sinon, contactez-nous à l\'adresse support@b-onstage.com, en detaillant le problème que vous rencontrez.</p>		';
 $lang['signup_active_email_subj'] = 'Activez votre compte';
 $lang['signup_active_email_txt1'] = '<h1 style="font-size:22px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Pour valider votre inscription b-onstage</h1>	

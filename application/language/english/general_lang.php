@@ -762,8 +762,8 @@ $lang['signup_form_title3'] ='We\'ll send you an email to make sure you\'re real
 $lang['signup_form_title4'] ='Use at least seven characters';
 $lang['signup_form_title5'] ='Confirm your password ';
 $lang['signup_active_txt'] ='<p>You will receive an email with instruction to validate your account.</p>	
-	<p>If it doesn’t appear in your inbox please check your spam folder.</p>	
-	<p>If you have a problem, please contact support@b-onstage.com </p>
+	<p>If it doesn’t appear in your inbox please <strong>check your spam folder.</p>	
+	<p style="font-weight:bold;">If you have a problem, please contact support@b-onstage.com </p>
 	<p>Only one click away! </p>';
 $lang['signup_active_email_subj'] ='Activate your account    ';
 $lang['signup_active_email_txt1'] ='<h1 style="font-size:22px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">To validate your account b-onstage</h1>	
