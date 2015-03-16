@@ -55,6 +55,28 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 		var searchDateStart = <?=(isset($search['search-date-start'])) ? "'".$search['search-date-start']."'" : 'null'?>;
 		var searchDateEnd	= <?=(isset($search['search-date-end'])) ? "'".$search['search-date-end']."'"	: 'null'?>;
 	</script>
+		
+		<!-- Pixel Facebook -->
+	<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  					}
+	_fbq.push(['addPixelId', '612773968823742']);
+						})();
+	window._fbq = window._fbq || [];
+	window._fbq.push(['track', 'PixelInitialized', {}]);
+	</script>
+<noscript>
+<img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=612773968823742&amp;ev=PixelInitialized" /></noscript>
+
+
+
 
 </head>
 <body>
