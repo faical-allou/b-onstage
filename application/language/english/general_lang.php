@@ -730,12 +730,12 @@ $lang['terms_of_services_txt'] = '<p>This contract provides the conditions of us
 <p>These Terms are governed by French law. In case of a dispute over their interpretation, the Parisian courts will have jurisdiction.</p>';
 			
 // legal
-$lang['legal_header'] = 'Mentions légalesEN';
-$lang['legal_txt'] = '<p><strong>ENMybandonstage</strong> est une société au capital de 15000 euros inscrite au Registre du Commerce et des Sociétés de PAU sous le numéro 538 826 330.</p>
-			<p><strong>Siège social :</strong> Rue des camélias 64000 PAU - FRANCE (contact@b-onstage.com).</p>
-			<p><strong>Directeur de la publication :</strong>  M. Faiçal ALLOU.</p>
-			<p>La société Mybandonstage est soumise au droit français.</p>
-			<p><strong>Hébergeur :</strong>PlanetHoster LLC, 150 Pierre Mercure, Montreal, Quebec, H1A 5A9, Canada.</p>';
+$lang['legal_header'] = 'Legal Notice';
+$lang['legal_txt'] = '<p><strong>Mybandonstage</strong> is a company with 15000 euros in capital registered at the Registre du Commerce et des Sociétés in PAU under the number 538 826 330.</p>
+			<p><strong>Headquarter :</strong> Rue des camélias 64000 PAU - FRANCE (contact@b-onstage.com).</p>
+			<p><strong>Director:</strong>  M. Faiçal ALLOU.</p>
+			<p>Mybandonstage is an SARL under French Law.</p>
+			<p><strong>Hosting :</strong>PlanetHoster LLC, 150 Pierre Mercure, Montreal, Quebec, H1A 5A9, Canada.</p>';
 			
 // Login
 $lang['login_header'] = 'Connection';
@@ -1058,9 +1058,9 @@ $lang['users_rese_cancel_txt4'] = 'We highly recommend to not cancel. If you do,
 $lang['users_rese_cancel_success'] = 'Your request has been cancelled';
 $lang['users_rese_request'] = 'Reservation request';
 $lang['users_rese_validate_artist'] = 'Validate this artist';
-$lang['users_rese_refuse_artist'] = 'Reservation accepted';
-$lang['users_rese_refuse_success'] = 'Do you want to reject?';
-$lang['users_rese_validate_success'] = 'Request rejected';
+$lang['users_rese_refuse_artist'] = 'Do you want to reject the request?';
+$lang['users_rese_refuse_success'] = 'Request rejected';
+$lang['users_rese_validate_success'] = 'Reservation accepted';
 $lang['users_rese_pendingtxt'] = 'Reservation pending payment';
 $lang['users_rese_pendingtxt2'] = 'Waiting list';
 $lang['users_rese_refuse_email_subject'] = 'Request rejected   ';

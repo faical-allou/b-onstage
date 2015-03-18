@@ -22,17 +22,17 @@
 				</div>	
 
 				<?php if($user_state==0){ ?>
-					<div id="auth-page" class="p-a rgba-white-8 p-10 ui-corner-all">
+					<div id="auth-page" class="p-a rgba-white-8 p-5 ui-corner-all">
 						<h3 class=" m-0 title grey"><?=$user_page['company']?> <?php echo lang("users_page_ison") ?> b-onstage</h3>
 						<p class="grey fs-12 bold"><?php echo lang("users_page_comwith") ?> <?=$user_page['company']?> <?php echo lang("users_page_signup") ?></p>
-						<div class="mt-10">
+						<div class="mt-10 ta-r">
 							<span>
 								<a href="<?=site_url('signup')?>" class="ui-purple"><?php echo lang("signup_stage_title") ?></a>
 							</span>
 							<span class="ml-5">								
 								<?=anchor(site_url('login/'.urlencode(uri_string())), lang("signin_title"), array('class'=>'ui-purple'))?>								
 							</span>	
-							<a class="ml-5 ui-dark" href="javascript:void(0)" id="contact_us"><?php echo lang("request_info") ?></a> 
+							<a class="ml-5 ui-dark mt-10" href="javascript:void(0)" id="contact_us"><?php echo lang("request_info") ?></a> 
 
 						</div>
 					</div>
@@ -103,20 +103,19 @@
 						</div>
 						<div class="jp-volume-bar">
 							<div class="jp-volume-bar-value"></div>
-						</div>
+<!-- 						</div>
 						<ul class="jp-toggles">												
 							<li><a href="javascript:void(0);" class="jp-repeat" tabindex="1" title="<?php echo lang("repeat") ?>">repeat</a></li>
 							<li><a href="javascript:void(0);" class="jp-repeat-off" tabindex="1" title="<?php echo lang("repeatoff") ?>">repeat off</a></li>
-							<!--button show playlist ajouté au plugin jplayer-->
 							<li><a href="javascript:void(0);" id="button-show-playlist" class="jp-show-playlist" tabindex="1" title="<?php echo lang("showplaylist") ?>">show</a></li>						
 						</ul>
 					</div>
-					<div class="jp-playlist">
+ 					<div class="jp-playlist">
 						<ul>
 							<li></li>
 						</ul>	
 					</div>
-				</div>	
+ -->				</div>	
 			</div>	
 			<?php } ?>
 		</header>	
@@ -499,10 +498,11 @@
 <!--jPlayer-->
 <link rel="stylesheet" href="<?=site_url('js/jplayer/skin/blue/jplayer.blue.css')?>" type="text/css" media="screen" />
 
-<!--fancybox-->
+<!--fancybox
 <link rel="stylesheet" href="<?=site_url('js/fancybox/source/jquery.fancybox.css?v=2.0.6')?>" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?=site_url('js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.2')?>" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?=site_url('js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=2.0.6')?>" type="text/css" media="screen" />
+-->
 
 <!--redactor-->
 <link rel="stylesheet" href="<?=site_url('js/redactor/redactor.css')?>" type="text/css" media="screen" />

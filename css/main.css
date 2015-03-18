@@ -859,6 +859,8 @@ a.pi-album:hover{-moz-box-shadow:0px 0px 8px #dadada;-webkit-box-shadow:0px 0px 
 .pi-album-thumbnail{}
 .pi-album-description{position:absolute;left:0;right:0;bottom:0;height:40px;background-color:#fff;height:48px;}
 
+
+
 /*social followers*/
 #social-followers{width:100%;display:block;}
 #social-followers > li > a{display:block;padding:10px 20px;color:#1a1a1a;border-bottom:1px solid #eaeaea;background-color:#fff;} 

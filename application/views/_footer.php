@@ -204,21 +204,21 @@
         <div id="button_upcover" style="display:none"><?php echo 'button-upload-cover'.$rowname.'.png'; ?></div>
         <div id="datepicker_lang" style="display:none"><?php echo $datepicker_lang ?></div>
         <div id="langloaded_id" style="display:none"><?php echo $langloaded_id ?></div>
-        <script src="<?=site_url('js/functions.js')?>"></script>
-		<script src="<?=site_url('js/chosen/chosen.jquery.min.js')?>"></script>
-		<script src="<?=site_url('js/chosen/ajax-chosen.min.js')?>"></script>
-		<script src="<?=site_url('js/selectbox/jquery.selectBox.min.js')?>"></script>
-		<script src="<?=site_url('js/jquery.validate.min.js')?>"></script>
-		<script src="<?=site_url('js/redactor/redactor.min.js')?>"></script>
-		<script src="<?=site_url('js/redactor/langs/fr.js')?>"></script>
-		<script src="<?=site_url('js/date-fr-FR.js')?>"></script>	
-		<script src="<?=site_url('js/badge.js')?>"></script>	
-		<script src="<?=site_url('js/jquery.ui.mask.js')?>"></script>
-		<script src="<?=site_url('js/timepicker/jquery.timepicker.min.js')?>"></script>
-		<script src="<?=site_url('js/jquery-ui-i18n.min.js')?>"></script>	
+        <script src="<?=site_url('js/functions.js')?>" defer></script>
+		<script src="<?=site_url('js/chosen/chosen.jquery.min.js')?>" defer></script>
+		<script src="<?=site_url('js/chosen/ajax-chosen.min.js')?>" defer></script>
+		<script src="<?=site_url('js/selectbox/jquery.selectBox.min.js')?>" defer></script>
+		<script src="<?=site_url('js/jquery.validate.min.js')?>" defer></script>
+		<script src="<?=site_url('js/redactor/redactor.min.js')?>" defer></script>
+		<script src="<?=site_url('js/redactor/langs/fr.js')?>" defer></script>
+		<script src="<?=site_url('js/date-fr-FR.js')?>" defer></script>	
+		<script src="<?=site_url('js/badge.js')?>" defer></script>	
+		<script src="<?=site_url('js/jquery.ui.mask.js')?>" defer></script>
+		<script src="<?=site_url('js/timepicker/jquery.timepicker.min.js')?>" defer></script>
+		<script src="<?=site_url('js/jquery-ui-i18n.min.js')?>" defer></script>	
 		
 		<?php if(isset($scripts)){ foreach($scripts as $script){ ?>
-		<script src="<?=site_url($script)?>"></script>
+		<script src="<?=site_url($script)?>" defer></script>
 		<?php }} ?>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -227,6 +227,6 @@
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		  ga('create', 'UA-43268260-1', 'b-onstage.com');
 		  ga('send', 'pageview');
-		</script>
+		</script defer>
 	</body>
 </html>
