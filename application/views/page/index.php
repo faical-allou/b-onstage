@@ -498,11 +498,11 @@
 <!--jPlayer-->
 <link rel="stylesheet" href="<?=site_url('js/jplayer/skin/blue/jplayer.blue.css')?>" type="text/css" media="screen" />
 
-<!--fancybox
+<!--fancybox-->
 <link rel="stylesheet" href="<?=site_url('js/fancybox/source/jquery.fancybox.css?v=2.0.6')?>" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?=site_url('js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.2')?>" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?=site_url('js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=2.0.6')?>" type="text/css" media="screen" />
--->
+
 
 <!--redactor-->
 <link rel="stylesheet" href="<?=site_url('js/redactor/redactor.css')?>" type="text/css" media="screen" />

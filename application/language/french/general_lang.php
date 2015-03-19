@@ -248,16 +248,16 @@ $lang['home_slide4_txt3'] = 'Montez sur Scène!';
 
 $lang['home_slide5_txt'] = 'Ich liebe dich...';
 $lang['home_slide5_txt2'] = 'On vous aime aussi!';
-$lang['home_slide5_txt3'] = 'et on vous aide à jouer à Berlin';
+$lang['home_slide5_txt3'] = 'et on vous aide à Paris comme à Berlin';
 $lang['home_slide5_txt4'] = 'Trouver une Scène';
 
 $lang['home_promo'] = 'b-onstage vous rembourse vos frais de réservation pour tous vos concerts en Mars 2015!';
 
-$lang['home_howitworks_title'] = 'Comment ca marche?';
+$lang['home_howitworks_title'] = 'Comment ça marche?';
 
 $lang['home_howitworks_list'] = '<ul class="home-howitworks">
-				<li><p>Enregistrez vous et complètez votre profil</p></li>
-				<li><p>Reservez une scène à la date qui vous convient</p></li>
+				<li><p>Enregistrez vous et complétez votre profil</p></li>
+				<li><p>Réservez une scène à la date qui vous convient</p></li>
 				<li><p>Attendez que nous confirmions votre sélection</p></li>
 				<li><p>......A Vous de Jouer!</p></li>
 			</ul>';
