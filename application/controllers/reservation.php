@@ -159,7 +159,7 @@ class Reservation extends CI_Controller {
 					'company'		=> $infos['stage_company'],
 					'date'			=> date('j', $time_start).' '.get_month(date('n',$time_start)).' '.lang("de").' '.date('G\hi', $time_start).' '.lang("to2").' '.date('G\hi', $time_end),
 					'genres'		=> implode(', ',$infos['genres']),
-					'reservation'	=> round($infos['reservation'],2).' €',
+					'reservation'	=> round($infos['reservation'],2),
 					'payment'		=> implode(', ', $infos['payment']),
 					'checkbox'		=> array(
 						'id'		=> 'accept-terms',

@@ -85,14 +85,14 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 								<tr>
 									<td width="25%" align="right"><strong><?=form_label($label_reservation,$reservation['id'])?></strong></td>
 									<td>
-										<div><?=form_input($reservation)?><strong> € </strong></div>
+										<div><?=form_input($reservation)?></div>
 									</td>		
 								</tr>
 								<!--event entry-->
 								<tr>								
 									<td width="25%" align="right"><strong><?=form_label($label_entry, $entry['id'])?></strong></td>
 									<td>
-										<div><?=form_input($entry)?><strong> € </strong></div>
+										<div><?=form_input($entry)?></div>
 									</td>
 								</tr>
 								<!--event description-->							
@@ -129,7 +129,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 				<div class="mb-20">
 					<?=form_checkbox($payment_type_2)?>
 					<?=form_label($label_payment_type_2, $payment_type_2['id'], $attrs_label_payment_type)?>
-					<?=form_input($input_payment_type_2)?> €
+					<?=form_input($input_payment_type_2)?> 
 				</div>
 				<div class="mb-20">
 					<?=form_checkbox($payment_type_3)?>

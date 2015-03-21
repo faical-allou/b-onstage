@@ -217,7 +217,7 @@ class Page extends CI_Controller {
 				'company'				=> $concert['company'],
 				'link_url'				=> empty($concert['web_address']) ? site_url($concert['web_address']) : site_url('page/'.$concert['username']),
 				'location'				=> $concert['city'].', '.$concert['country'],
-				'entry'					=> empty($concert['entry']) ? 'Gratuit' : round($concert['entry'],2).' €',
+				'entry'					=> empty($concert['entry']) ? 'Gratuit' : round($concert['entry'],2),
 				'concert_url'			=> site_url('event/'.$concert['id'])				
 			);
 

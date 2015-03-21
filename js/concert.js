@@ -98,7 +98,7 @@
 
 							reservation_min = ui.values[0];
 							reservation_max = ui.values[1];
-							$('#filter-reservation').text(reservation_min + '€ - ' + reservation_max + '€');							
+							$('#filter-reservation').text(reservation_min + ' - ' + reservation_max);							
 							
 							time_out_id = window.setTimeout(
 								function(){															
@@ -108,7 +108,7 @@
 							);	
 						}
 					});
-					$('#filter-reservation').text(reservation_min + '€ - ' + reservation_max + '€' );
+					$('#filter-reservation').text(reservation_min + ' - ' + reservation_max );
 				}
 				
 				//range entry								
@@ -124,7 +124,7 @@
 								
 						entry_min = ui.values[0];
 						entry_max = ui.values[1];
-						$('#filter-entry').text(entry_min + '€ - ' + entry_max + '€');	
+						$('#filter-entry').text(entry_min + ' - ' + entry_max);	
 						
 						time_out_id = window.setTimeout(
 							function(){														
@@ -134,7 +134,7 @@
 						);			
 					}
 				});
-				$('#filter-entry').text(entry_min + '€ - ' + entry_max + '€' );
+				$('#filter-entry').text(entry_min + '- ' + entry_max );
 				
 				//range schedule
 				$('#slider-range-schedule').slider({
@@ -234,7 +234,9 @@
 							$('#list-concert').append(data.text);
 							$('.show-reservation').button();
 							$('.book-concert').button();								
+							$('.request-info').button();
 							$('#loader-more-concert').hide();
+							
 							if( data.count_event >= o.per_page)
 								$('#more-concert').removeClass('hidden');
 						}
@@ -274,6 +276,7 @@
 								.animate({opacity:1},400);	
 							$('.show-reservation').button();								
 							$('.book-concert').button();
+							$('.request-info').button();
 							$('.show-concert').button();	
 							if( data.count_event >= o.per_page)
 								$('#more-concert').removeClass('hidden');							

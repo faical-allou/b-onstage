@@ -19,16 +19,16 @@
 			<table width="100%">
 				<tbody>
 					<tr>
-						<td width="60%" class="va-t">
+						<td width="60%" class="va-t ta-l">
 							<div class="left">			
 								<?=img(array('src' => site_url($event['stage_avatar']), 'title' => $event['stage_company'], 'width' => '128px', 'class'=>' mr-5 bs-black-thumbnail'))?>
 							</div>	
 							<div class="left ml-20">
-								<div class="mb-10 fs-18 title grey"><?=anchor($stage_link, $event['stage_company'], array('class' => 'purple'))?> <?php echo lang("book_organiser") ?></div>
+								<div class="mt-10 mb-10 fs-18 title grey"><?=anchor($stage_link, $event['stage_company'], array('class' => 'purple'))?> <?php echo lang("book_organiser") ?></div>
 								<p class="fs-12 grey bold"><span aria-hidden="true" class="icon-location mr-5"></span><?=$event_location?></p>
 							</div>
 						</td>
-						<td width="40%" class="ta-l">
+						<td width="40%" class="ta-l va-t">
 							<div>
 								<?php if($reserved) { ?>
 									<a href="<?=site_url('user/reservations')?>" class="show-reservation ui-purple" style="font-size:1em;"><?php echo lang("book_button1") ?></a> 

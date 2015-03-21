@@ -101,7 +101,7 @@ class Concerts extends CI_Controller {
 				//input filter
 				$filter_remuneration = array(
 					//payment amount
-					'label_filter_payment_amount'	=> lang("users_calendar_create_cachet").' XXX €',
+					'label_filter_payment_amount'	=> lang("users_calendar_create_cachet"),
 					'input_filter_payment_amount'	=>array(
 						'name'		=> 'filter-payment-amount',
 						'id'		=> 'filter-payment-amount',
@@ -110,7 +110,7 @@ class Concerts extends CI_Controller {
 						'style'		=> 'vertical-align:middle;margin-top:-3px;'
 					),
 					//percent drink
-					'label_filter_percent_drink'	=> '€ '.lang("users_calendar_create_conso"),
+					'label_filter_percent_drink'	=> ' '.lang("users_calendar_create_conso"),
 					'input_filter_percent_drink'	=>array(
 						'name'		=> 'filter-percent-drink',
 						'id'		=> 'filter-percent-drink',
@@ -168,8 +168,8 @@ class Concerts extends CI_Controller {
 							$payment_type = lang("users_calendar_create_non_renum");
 							break;
 						case 3 :
-							$payment_type = ($event['payment_amount'] > 0) ? lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' €'.br() : '';
-							$payment_type .= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'€ '.lang("users_calendar_create_conso").br() : '';
+							$payment_type = ($event['payment_amount'] > 0) ? lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' '.br() : '';
+							$payment_type .= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).' '.lang("users_calendar_create_conso").br() : '';
 							$payment_type .= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets").br() : '';
 							$payment_type .= ($event['refund_fees'] > 0) ? lang("users_calendar_create_remb") : '';
 							break;
@@ -181,7 +181,7 @@ class Concerts extends CI_Controller {
 						'date_end'			=> date_create($event['date_end']),
 						'event_location'	=> $event['stage_city'].', '.$event['stage_country'],
 						'event_genres'		=> implode(', ',$event['genres']),
-						'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' €' : 'Gratuit',	
+						'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : 'Gratuit',	
 						'payment_type'		=> $payment_type,
 						'stage_link'		=> !empty($event['stage_web_address']) ?  site_url($event['stage_web_address']) : site_url('page/'.$event['stage_username']),
 						'reserved'			=> in_array($this->user['id'], $event['reservations_artist_id']) ? true : false
@@ -236,7 +236,7 @@ class Concerts extends CI_Controller {
 						'date_end'			=> date_create($event['date_end']),
 						'event_location'	=> $event['stage_city'].', '.$event['stage_country'],
 						'event_genres'		=> implode(', ',$event['genres']),	
-						'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' €' : 'Gratuit',
+						'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : 'Gratuit',
 						'stage_link'		=> !empty($event['stage_web_address']) ?  site_url($event['stage_web_address']) : site_url('page/'.$event['stage_username']),
 						'artist_link'		=> !empty($event['artist_web_address']) ?  site_url($event['artist_web_address']) : site_url('page/'.$event['artist_username'])
 					);
@@ -305,8 +305,8 @@ class Concerts extends CI_Controller {
 								$payment_type = lang("users_calendar_create_non_renum");
 								break;
 							case 3 :
-								$payment_type = ($event['payment_amount'] > 0) ? lang("users_calendar_create_cachet").round($event['payment_amount'],2).' €'.br() : '';
-								$payment_type .= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).'€ '.lang("users_calendar_create_conso").br() : '';
+								$payment_type = ($event['payment_amount'] > 0) ? lang("users_calendar_create_cachet").round($event['payment_amount'],2).' '.br() : '';
+								$payment_type .= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).' '.lang("users_calendar_create_conso").br() : '';
 								$payment_type .= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets").br() : '';
 								$payment_type .= ($event['refund_fees'] > 0) ? lang("users_calendar_create_remb") : '';
 								break;
@@ -317,7 +317,7 @@ class Concerts extends CI_Controller {
 							'date_start'		=> date_create($event['date_start']),
 							'date_end'			=> date_create($event['date_end']),
 							'payment_type'		=> $payment_type,
-							'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' €' : 'Gratuit',
+							'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : 'Gratuit',
 							'event_location'	=> $event['stage_city'].', '.$event['stage_country'],
 							'event_genres'		=> implode(', ',$event['genres']),
 							'stage_link'		=> !empty($event['stage_web_address']) ?  site_url($event['stage_web_address']) : site_url('page/'.$event['stage_username']),
@@ -334,7 +334,7 @@ class Concerts extends CI_Controller {
 							'date_end'			=> date_create($event['date_end']),
 							'event_location'	=> $event['stage_city'].', '.$event['stage_country'],
 							'event_genres'		=> implode(', ',$event['genres']),
-							'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' €' : 'Gratuit',								
+							'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : 'Gratuit',								
 							'stage_link'		=> !empty($event['stage_web_address']) ?  site_url($event['stage_web_address']) : site_url('page/'.$event['stage_username']),
 							'artist_link'		=> !empty($event['artist_web_address']) ?  site_url($event['artist_web_address']) : site_url('page/'.$event['artist_username'])
 							);			

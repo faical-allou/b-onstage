@@ -82,7 +82,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 									<div><input type="text" name="ev-reservation" value="" id="ev-reservation" placeholder="50" 
                                     size="4" class="input fs-13 grey ui-corner-all required number" 
                                     onfocus="this.placeholder=''" onblur="if(this.placeholder == '') { this.placeholder='50'}">
-									<?php /*echo form_input($reservation) */ ?><strong> € </strong></div>
+									<?php /*echo form_input($reservation) */ ?></div>
 								</td>		
 							</tr>
 							<!--event entry-->
@@ -92,7 +92,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 									<div><input type="text" name="ev-entry" value="" id="ev-entry" placeholder="0" size="4" 
                                     class="input fs-13 grey ui-corner-all required number"
                                     onfocus="this.placeholder=''" onblur="if(this.placeholder == '') { this.placeholder='0'}">
-									<?php /*echo form_input($entry)*/ ?><strong> € </strong></div>
+									<?php /*echo form_input($entry)*/ ?></div>
 								</td>
 							</tr>
 							<!--event description-->							
@@ -127,7 +127,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 			<div class="mb-20">
 				<?=form_checkbox($payment_type_2)?>
 				<?=form_label($label_payment_type_2, $payment_type_2['id'], $attrs_label_payment_type)?>
-				<?=form_input($input_payment_type_2)?> €
+				<?=form_input($input_payment_type_2)?>
 			</div>
 			<div class="mb-20">
 				<?=form_checkbox($payment_type_3)?>

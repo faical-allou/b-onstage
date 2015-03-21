@@ -111,9 +111,9 @@ class Reservation_model extends CI_Model
 				break;
 			case 3 :
 				if($event['payment_amount'] > 0)
-					array_push($event['payment'], lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' €');
+					array_push($event['payment'], lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2));
 				if($event['percent_drink'] > 0)
-					array_push($event['payment'], round($event['percent_drink'],2).'€ '.lang("users_calendar_create_conso"));
+					array_push($event['payment'], round($event['percent_drink'],2).' '.lang("users_calendar_create_conso"));
 				if($event['percent_entry'] > 0)
 					array_push($event['payment'], round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets"));
 				if($event['refund_fees'] > 0)

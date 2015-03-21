@@ -17,10 +17,10 @@
 			<dd><?=$payment_type?></dd>				
 			<!--reservation-->
 			<dt><?php echo lang("users_calendar_create_book") ?></dt>
-			<dd><?=round($event['reservation'],2)?> €</dd>	
+			<dd><?=round($event['reservation'],2)?></dd>	
 			<!--entry-->
 			<dt><?php echo lang("users_calendar_create_price") ?></dt>
-			<dd><?=round($event['entry'],2)?> €</dd>
+			<dd><?=round($event['entry'],2)?></dd>
 		</dl>
 	</div>
 	<div class="footer clearfix">	

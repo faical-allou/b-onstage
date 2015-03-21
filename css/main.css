@@ -233,7 +233,7 @@ slider
 .slide1 .bContainer {left: 5%; text-align:left;display:block;}
 .slide2 .bContainer {right:5%; text-align:left;display:block;}
 
-.slide5 img {margin-left: auto; margin-right: auto; position:relative; height:auto;width:inherit;max-width: 720px}
+.slide5 img {margin-left: auto; margin-right: 0; position:relative; height:auto;width:inherit;max-width: 720px}
 .slide4 img {margin-left: 0; margin-right: auto; position:relative; height:auto;width:inherit;max-width: 720px}
 .slide3 img {margin-left: auto; margin-right: 0; position:relative; height:auto;width:inherit;max-width: 720px}
 .slide2 img {margin-left: auto; margin-right: auto; position:relative; height:auto;width:inherit;max-width: 720px}
