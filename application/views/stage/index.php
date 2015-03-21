@@ -33,8 +33,8 @@
     	  controlUI.style.borderRadius = '3px';
     	  controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
     	  controlUI.style.cursor = 'pointer';
-    	  controlUI.style.marginBottom = '30px';
-    	  controlUI.style.marginLeft = '0px';
+    	  controlUI.style.marginBottom = '20px';
+    	  controlUI.style.marginRight = '5px';
     	  controlUI.style.textAlign = 'center';
     	  controlDiv.appendChild(controlUI);
 
@@ -46,11 +46,11 @@
     	  controlText.style.lineHeight = '38px';
     	  controlText.style.paddingLeft = '5px';
     	  controlText.style.paddingRight = '5px';
-    	  controlText.innerHTML = 'Paris';
+    	  controlText.innerHTML = " Paris ";
     	  controlUI.appendChild(controlText);
 
     	  // Setup the click event listeners: simply set the map to
-    	  // Chicago
+    	  // Paris
     	  google.maps.event.addDomListener(controlUI, 'click', function() {
     	    map.setCenter(new google.maps.LatLng(48.8588589,2.3470599));
     	    map.setZoom(11)
@@ -67,8 +67,8 @@
     	    	  controlUI.style.borderRadius = '3px';
     	    	  controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
     	    	  controlUI.style.cursor = 'pointer';
-    	    	  controlUI.style.marginBottom = '30px';
-    	    	  controlUI.style.marginLeft = '5px';
+    	    	  controlUI.style.marginBottom = '20px';
+    	    	  controlUI.style.marginRight = '5px';
     	    	  controlUI.style.textAlign = 'center';
     	    	  controlDiv.appendChild(controlUI);
 
@@ -85,7 +85,7 @@
     	    	  controlUI.appendChild(controlText);
 
     	    	  // Setup the click event listeners: simply set the map to
-    	    	  // Chicago
+    	    	  // Berlin
     	    	  google.maps.event.addDomListener(controlUI, 'click', function() {
     	    	    map.setCenter(new google.maps.LatLng(52.5075419,13.4251364));
     	    	    map.setZoom(11)
@@ -206,10 +206,10 @@
               var centerBerlin = new CenterBerlin(centerControlDiv2, map);
               
               centerControlDiv1.index = 1;
-              centerControlDiv2.index = 1;
+              centerControlDiv2.index = 2;
               
-              map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(centerControlDiv1);
-              map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(centerControlDiv2);
+              map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(centerControlDiv1);
+              map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(centerControlDiv2);
               
               
           };
