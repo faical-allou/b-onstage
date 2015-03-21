@@ -4,9 +4,11 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 }
 //Set local time lang
 setlocale(LC_TIME, $lang_id."_".strtoupper($lang_id).".UTF8");
-?><div class="grid_3" id="sidebar">
+?>
 
-			<div class="bg-white ui-corner-all bs-black mb-20">
+<div class="grid_3" id="sidebar">
+
+			<div class="bg-white ui-corner-all bs-black mb-20 mt-20">
 
 				<div class="title white fs-16 p-10 ui-corner-top" style="border-bottom:1px solid #eaeaea;background-color:#000000;"><?php echo lang("users_page_followus") ?></div>
 
