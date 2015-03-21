@@ -33,8 +33,8 @@
     	  controlUI.style.borderRadius = '3px';
     	  controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
     	  controlUI.style.cursor = 'pointer';
-    	  controlUI.style.marginBottom = '25px';
-    	  controlUI.style.marginLeft = '5px';
+    	  controlUI.style.marginBottom = '30px';
+    	  controlUI.style.marginLeft = '0px';
     	  controlUI.style.textAlign = 'center';
     	  controlDiv.appendChild(controlUI);
 
@@ -67,7 +67,7 @@
     	    	  controlUI.style.borderRadius = '3px';
     	    	  controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
     	    	  controlUI.style.cursor = 'pointer';
-    	    	  controlUI.style.marginBottom = '25px';
+    	    	  controlUI.style.marginBottom = '30px';
     	    	  controlUI.style.marginLeft = '5px';
     	    	  controlUI.style.textAlign = 'center';
     	    	  controlDiv.appendChild(controlUI);
