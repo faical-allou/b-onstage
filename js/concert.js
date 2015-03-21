@@ -134,7 +134,7 @@
 						);			
 					}
 				});
-				$('#filter-entry').text(entry_min + '- ' + entry_max );
+				$('#filter-entry').text(entry_min + ' - ' + entry_max );
 				
 				//range schedule
 				$('#slider-range-schedule').slider({
