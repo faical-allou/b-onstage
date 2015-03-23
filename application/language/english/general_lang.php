@@ -1127,7 +1127,7 @@ $lang['shows_bandsound'] 	='Songs';
 
 
 // Book page		
-$lang['book_filterresults'] = 'Filter and sort results';
+$lang['book_filterresults'] = 'Filter results';
 $lang['book_bysort1'] = 'Filter by genre';
 $lang['book_bysort2'] = 'Filter by interval';
 $lang['book_bysort3'] = 'Filter by remuneration';

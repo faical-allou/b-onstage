@@ -235,14 +235,14 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 						<span class="fs-14 grey bold ml-2 mr-2"><?php echo lang("search_from") ?></span>
 						<!--date range -->
 						<div id="wrapper-date-start" class="wrapper-search-date bg-white ui-corner-all">
-							<input class="ui-corner-left" type="text" size="8" maxlength="10" name="render-date-start" id="render-date-start" readonly value="<?=date('d/m/Y', strtotime($search['search-date-start']))?>" />
-							<span aria-hidden="true" class="fs-12 icon-calendar mr-10"></span>
+							<input class="ui-corner-left ta-c " type="text" size="9" maxlength="10" name="render-date-start" id="render-date-start" readonly value="<?=date('d/m/Y', strtotime($search['search-date-start']))?>" />
+							<span aria-hidden="true" class="fs-12 icon-calendar mr-5"></span>
 							<input type="hidden" name="search-date-start" id="search-date-start" value="<?=$search['search-date-start']?>" />
 						</div>
 						<span class="fs-14 grey bold ml-2 mr-2"><?php echo lang("to") ?></span>
 						<div id="wrapper-date-end" class="wrapper-search-date bg-white ui-corner-all">
-							<input class="ui-corner-left" type="text" size="8" maxlength="10" name="render-date-end" id="render-date-end" readonly value="<?=date('d/m/Y', strtotime($search['search-date-end']))?>" />
-							<span aria-hidden="true" class="fs-12 icon-calendar mr-10"></span>
+							<input class="ui-corner-left ta-c" type="text" size="9" maxlength="10" name="render-date-end" id="render-date-end" readonly value="<?=date('d/m/Y', strtotime($search['search-date-end']))?>" />
+							<span aria-hidden="true" class="fs-12 icon-calendar mr-5"></span>
 							<input type="hidden" name="search-date-end" id="search-date-end" value="<?=$search['search-date-end']?>" />
 						</div>
 

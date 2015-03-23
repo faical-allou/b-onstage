@@ -1069,7 +1069,7 @@ $lang['shows_nosite'] = 'Pas de site officiel';
 $lang['shows_bandsound'] = 'Les sons du groupe';
 
 // Book page			
-$lang['book_filterresults']	 = 'Filtrer et trier les résultats';
+$lang['book_filterresults']	 = 'Filtrer les résultats';
 $lang['book_bysort1']	 = 'Filtrer le genre musical';
 $lang['book_bysort2']	 = 'Filtrer par intervalles';
 $lang['book_bysort3']	 = 'Filtrer par type de rémunération';
