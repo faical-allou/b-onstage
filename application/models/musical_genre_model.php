@@ -16,7 +16,7 @@ class Musical_genre_model extends CI_Model{
 		
 		} else {
 			//return array of all genres
-			$genres = $this->db->from('musical_genres')->get()->result_array();					
+			$genres = $this->db->from('musical_genres')->order_by('id')->get()->result_array();					
 			return $genres;	
 		}
 		if($separator){

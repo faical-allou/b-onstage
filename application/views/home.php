@@ -1,7 +1,22 @@
 
+<div class="bg-white bs-black">
+	<div class="container_12 pt-50 pb-50 ta-c">
+		<div id="home-video" class="grid_9 ta-c ">	
+			<iframe width="480" height="270" src="https://www.youtube.com/embed/kIHGjqx4ecc?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=0&controls=0" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
+		</div>	
+		
+		<div class="grid_3">	
+			<div class="fs-18 ta-c bold"><?php echo lang("home_howitworks_title")?></div>	 
+			<div class="fs-16 ta-l mb-10 bold"><?php echo lang("home_howitworks_list")?></div>
+			<div class="ta-c bold">
+			<a href="<?=site_url('signup/?t=video')?>" class="ta-c ui-green action-home" style="font-size:1em;"><?php echo lang("home_slide3_txt3") ?></a>			
+			</div>
+		</div>	
+	</div>
+</div>
 
 <!--slider-->	
-<div id="wrap-slider" class="mb-30 bs-black ">
+<div id="wrap-slider">
 	<div id="slider" class="royalSlider rsBlack ">
 
 	<!--slide5-->
@@ -73,25 +88,10 @@
 			<img class="rsABlock" data-move-effect="fade"  src="/img/slide/img-slide-test.jpg" data-rsw="900" data-rsh="500">
 		</div>
 -->
-	
 	</div>	
 </div>	
 
-<div class="bg-white bs-black">
-	<div class="container_12 pt-50 pb-50 mb-30 ta-c">
-		<div id="home-video" class="grid_9 ta-c ">	
-			<iframe width="480" height="270" src="https://www.youtube.com/embed/kIHGjqx4ecc?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=0&controls=0" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
-		</div>	
-		
-		<div class="grid_3">	
-			<div class="fs-18 ta-c bold"><?php echo lang("home_howitworks_title")?></div>	 
-			<div class="fs-16 ta-l mb-10 bold"><?php echo lang("home_howitworks_list")?></div>
-			<div class="ta-c bold">
-			<a href="<?=site_url('signup/?t=video')?>" class="ta-c ui-green action-home" style="font-size:1em;"><?php echo lang("home_slide3_txt3") ?></a>			
-			</div>
-		</div>	
-	</div>
-</div>
+
 
 <div class="bg-purple">
 	<div class="container_12 pt-20 pb-50 mb-30">

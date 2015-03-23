@@ -168,7 +168,7 @@ class Concerts extends CI_Controller {
 							$payment_type = lang("users_calendar_create_non_renum");
 							break;
 						case 3 :
-							$payment_type = ($event['payment_amount'] > 0) ? lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).' '.br() : '';
+							$payment_type = ($event['payment_amount'] > 0) ? lang("users_calendar_create_cachet").' '.round($event['payment_amount'],2).'€ '.br() : '';
 							$payment_type .= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).' '.lang("users_calendar_create_conso").br() : '';
 							$payment_type .= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets").br() : '';
 							$payment_type .= ($event['refund_fees'] > 0) ? lang("users_calendar_create_remb") : '';

@@ -1,7 +1,7 @@
 /*
  * HTML5 Boilerplate
  *
- * What follows is the result of much research on cross-browser styling.
+ * What follows is the result of much re on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
@@ -185,8 +185,8 @@ notifications
 /* ==========================================================================
 search-bar
 ========================================================================== */
-#search-bar{display:none; line-height: 200%;}
-.wrapper-search-date{border:1px solid #d9d9d9;border-top:1px solid #c0c0c0;display:inline-block;cursor:pointer;  text-align:center;  display:inline-block;}
+#search-bar{display:none; line-height: 100%;}
+.wrapper-search-date{border:1px solid #d9d9d9;border-top:1px solid #c0c0c0;cursor:pointer;  text-align:center; display:inline-block; position: relative}
 .wrapper-search-date:hover{
 	border:1px solid #b9b9b9;
 	border-top:1px solid #a0a0a0;
@@ -200,8 +200,9 @@ search-bar
 	-webkit-box-shadow:0px 0px 8px #c0c0c0;
 	box-shadow:0px 0px 8px #c0c0c0;
 }
-.wrapper-search-date > input:first-child{border:none;padding:.2em .2em .2em .2em;font-size:16px;background:#fff;font-weight:bold;position:relative;min-width:90px}
+.wrapper-search-date > input:first-child{border:none;padding:.2em .2em .2em .2em;font-size:16px;font-weight: bold; background:#fff;position:relative;min-width:60px}
 
+.search-button{border:1px solid #d9d9d9;border-top:1px solid #c0c0c0;display:inline-block;cursor:pointer;  text-align:center;  display:inline-block; }
 
 /* ==========================================================================
 sidebar
@@ -212,8 +213,8 @@ sidebar
 /* ==========================================================================
 slider
 ========================================================================== */
-#wrap-slider {height:auto;}
-#slider{margin:0 auto;width: auto;}
+#wrap-slider {height:auto; max-height:500px;overflow:hidden}
+#slider{height:auto; max-height:500px;width: auto;overflow:hidden; position:float;}
 .rsContent {color: #FFF;float: left;}
 .bContainer {position: absolute;z-index:200;height:auto;display:block;}
 .rsABlock {position: relative;display: block;left: auto;top: auto;font-family: "Open Sans Condensed", sans-serif; }
@@ -227,17 +228,17 @@ slider
 .slide1{background:#000000;}
 .slide2{background:#000000;}
 
-.slide5 .bContainer {left: 5%; text-align:left;background:rgba(255,255,255,0.8);display:block;}
-.slide4 .bContainer {right:5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
-.slide3 .bContainer {left: 5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
-.slide1 .bContainer {left: 5%; text-align:left;display:block;}
-.slide2 .bContainer {right:5%; text-align:left;display:block;}
+.slide5 .bContainer {top: 5%; left: 5%; text-align:left;background:rgba(255,255,255,0.8);display:block;}
+.slide4 .bContainer {top: 5%; right:5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
+.slide3 .bContainer {top: 5%; left: 5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
+.slide1 .bContainer {top: 5%; left: 5%; text-align:left;display:block;}
+.slide2 .bContainer {top: 5%; right:5%; text-align:left;display:block;}
 
-.slide5 img {margin-left: auto; margin-right: 0; position:relative; height:auto;width:inherit;max-width: 720px}
-.slide4 img {margin-left: 0; margin-right: auto; position:relative; height:auto;width:inherit;max-width: 720px}
-.slide3 img {margin-left: auto; margin-right: 0; position:relative; height:auto;width:inherit;max-width: 720px}
-.slide2 img {margin-left: auto; margin-right: auto; position:relative; height:auto;width:inherit;max-width: 720px}
-.slide1 img {margin-left: auto; margin-right: auto; position:relative; height:auto;width:inherit;max-width: 720px}
+.slide5 img {margin-left: auto; margin-right: 0; position:float; height:auto;width:inherit;max-width: 900px}
+.slide4 img {margin-left: 0; margin-right: auto; position:relative; height:auto;width:inherit;max-width: 900px}
+.slide3 img {margin-left: auto; margin-right: 0; position:relative; height:auto;width:inherit;max-width: 900px}
+.slide2 img {margin-left: auto; margin-right: auto; position:relative; height:auto;width:inherit;max-width: 900px}
+.slide1 img {margin-left: auto; margin-right: auto; position:relative; height:auto;width:inherit;max-width: 900px}
 
 
 /* ==========================================================================

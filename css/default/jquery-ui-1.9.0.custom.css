@@ -61,17 +61,17 @@ button.ui-button-icon-only { width: 5em; } /* button elements seem to need a lit
 button.ui-button-icons-only { width: 3.7em; } 
 
 /*button text element */
-.ui-button .ui-button-text { display: block; line-height: 1.4;  }
-.ui-button-text-only .ui-button-text { padding: .6em 1em; }
-.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .6em; text-indent: -9999999px; }
-.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .6em 1em .6em 2.1em; }
-.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .6em 2.1em .6em 1em; }
-.ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+.ui-button .ui-button-text { display: block; line-height: 1;  }
+.ui-button-text-only .ui-button-text { padding: .4em .4em; }
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .4em .4em; }
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em .4em; }
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em .4em; }
+.ui-button-text-icons .ui-button-text { padding: .4em .4em; }
 /* no icon support for input elements, provide padding by default */
-input.ui-button { padding: .6em 1em; }
+input.ui-button { padding: .4em .4em; }
 
 /*button icon element(s) */
-.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -9px; }
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; padding: .4em .4em; }
 .ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
 .ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
 .ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
@@ -1203,11 +1203,13 @@ body .ui-tooltip { border-width:1px; }
 
 
 /*multiselect*/
-.ui-multiselect { padding: .2em .2em; text-align:left;}
+.ui-multiselect { padding: .2em .2em .2em .2em; text-align:center;}
 
 /*search status, search city*/
 .ui-multiselect.search-status,.ui-multiselect.search-city,.ui-multiselect.search-country {font-size:1em;}
-.ui-multiselect.search-country {width:220px !important;}
+.ui-multiselect.search-country {width:100px !important;}
+.ui-multiselect.search-city {width:100px !important;}
+
 
 .ui-multiselect span.ui-icon { float:right; }
 .ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
@@ -1224,7 +1226,7 @@ body .ui-tooltip { border-width:1px; }
 .ui-multiselect-menu {display:none; padding:5px; position:absolute; z-index:10000; text-align: left;}
 
 /*search status, search city*/
-.ui-multiselect-menu.search-status, .ui-multiselect-menu.search-city, .ui-multiselect-menu.search-country{font-weight:bold;margin-top:-3px;border:1px solid #aaa;}
+.ui-multiselect-menu.search-status, .ui-multiselect-menu.search-city, .ui-multiselect-menu.search-country{font-weight:bold;border:1px solid #aaa;}
 
 .ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:auto;}
 .ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; padding:.6em 1em;}

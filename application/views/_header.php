@@ -19,15 +19,14 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 	
 	<!--css-->
 	<?=link_tag(site_url('css/default/jquery-ui-1.9.0.custom.css'), 'stylesheet')?>
-	<?=link_tag(site_url('js/chosen/chosen.css'), 'stylesheet')?>		
-	<?=link_tag(site_url('js/selectbox/jquery.selectBox.css'), 'stylesheet')?>
+ 	<?=link_tag(site_url('js/chosen/chosen.css'), 'stylesheet')?>		
+ 	<?=link_tag(site_url('js/selectbox/jquery.selectBox.css'), 'stylesheet')?>
 	<?=link_tag(site_url('js/royalslider/royalslider.css'), 'stylesheet')?>
 	<?=link_tag(site_url('js/royalslider/skins/black/rs-black.css'), 'stylesheet')?>
 	<?=link_tag(site_url('css/normalize.css'), 'stylesheet')?>
 	<?=link_tag(site_url('css/main.css'), 'stylesheet')?>
 	<style>@import url(/css/720.min.css) (max-width:959px);</style>
-
-        <style>@import url(/css/960.css) (min-width:960px) and (max-width:1199px);</style>
+    <style>@import url(/css/960.css) (min-width:960px) and (max-width:1199px);</style>
 	<style>@import url(/css/1200.min.css) (min-width:1200px);</style>
 
         
@@ -110,10 +109,10 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 				$lang_switch_top_txt ="Français";
 				?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/french'>français</a><?php }
 			?></div>-->
-            <div class="container_12">
-				<div class="grid_12">
+            <div class="">
+				
                     <!--logo-->
-					<div > 
+					<div class="ml-20"> 
 					<?=anchor(base_url(), img(site_url('img/logo.png')), array('id' => 'logo', 'class' => 'left'))?>
 					</div>
 					<!--menu principal-->
@@ -213,7 +212,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
                     </ul>
 					<?php } ?>					
 				</div>
-			</div>
+			
 		</div>
 	</div>	
 	
@@ -221,10 +220,10 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 		<div class="loading">
 			<img src="<?=site_url('img/loading.gif')?>" />
 		</div>
-		<div class="content">
+		<div class="content bg-white bs-black">
 			<!--search bar-->
-			<div id="search-bar" class="container_12">
-				<div class="grid_12 mb-10 mt-10 ta-r">
+			<div id="search-bar" class="container_12 ">
+ 				<div class="grid_12 mb-10 mt-10 ta-c">
 					<form action="/concerts" method="post">
 						<!--search status-->
 <!--						<span>
@@ -233,23 +232,23 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 								<option value="close" <?=($search['search-status']=='close') ? 'selected' : ''?>><?php echo lang("header_attend_show") ?></option>
 							</select>
 -->						</span>
-						<span class="fs-16 grey bold ml-2 mr-2"><?php echo lang("search_from") ?></span>
+						<span class="fs-14 grey bold ml-2 mr-2"><?php echo lang("search_from") ?></span>
 						<!--date range -->
 						<div id="wrapper-date-start" class="wrapper-search-date bg-white ui-corner-all">
 							<input class="ui-corner-left" type="text" size="8" maxlength="10" name="render-date-start" id="render-date-start" readonly value="<?=date('d/m/Y', strtotime($search['search-date-start']))?>" />
-							<span aria-hidden="true" class="fs-14 icon-calendar mr-10"></span>
+							<span aria-hidden="true" class="fs-12 icon-calendar mr-10"></span>
 							<input type="hidden" name="search-date-start" id="search-date-start" value="<?=$search['search-date-start']?>" />
 						</div>
-						<span class="fs-16 grey bold ml-2 mr-2"><?php echo lang("to") ?></span>
+						<span class="fs-14 grey bold ml-2 mr-2"><?php echo lang("to") ?></span>
 						<div id="wrapper-date-end" class="wrapper-search-date bg-white ui-corner-all">
 							<input class="ui-corner-left" type="text" size="8" maxlength="10" name="render-date-end" id="render-date-end" readonly value="<?=date('d/m/Y', strtotime($search['search-date-end']))?>" />
-							<span aria-hidden="true" class="fs-14 icon-calendar mr-10"></span>
+							<span aria-hidden="true" class="fs-12 icon-calendar mr-10"></span>
 							<input type="hidden" name="search-date-end" id="search-date-end" value="<?=$search['search-date-end']?>" />
 						</div>
 
 						<!--search city-->
-						<span class="fs-16 grey bold ml-2 mr-2"><?php echo lang("where") ?></span>
-						
+<!-- 						<span class="fs-14 grey bold ml-2 mr-2"><?php echo lang("where") ?></span>
+ -->						
 						
 						<span>
 							<select name="search-country[]" id="search-country" multiple="multiple">
@@ -302,7 +301,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 						</span>
 						
 						<span>
-							<button id="button-search-concert" class="ui-dark"><span aria-hidden="true" class="fs-10 bold icon-search"></span></button>
+							<button id="button-search-concert" class="search-button ui-purple mt-5"><span aria-hidden="true" class="  fs-14 bold">Go</span></button>
 						</span>
 					</form>
 				</div>
