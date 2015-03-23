@@ -112,7 +112,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
             <div class="">
 				
                     <!--logo-->
-					<div class="ml-20"> 
+					<div class="ml-10"> 
 					<?=anchor(base_url(), img(site_url('img/logo.png')), array('id' => 'logo', 'class' => 'left'))?>
 					</div>
 					<!--menu principal-->
