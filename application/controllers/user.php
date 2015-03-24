@@ -455,12 +455,11 @@ class User extends CI_Controller {
 						
 						$email = $this->input->post('email');
 						$password = $this->input->post('password');
-                                                $temp_email = explode( "@" , $email);
-                                                echo $temp_email[0];
-						//$groups = $this->input->post('groups_menu');
+                        $temp_email = explode( "@" , $email);
+                        //$groups = $this->input->post('groups_menu');
 						$groups = array('2');//groupe artist
 						
-                                                $username = preg_replace("/[^a-zA-Z0-9]+/", "", $temp_email[0]);
+                        $username = preg_replace("/[^a-zA-Z0-9]+/", "", $temp_email[0]);
 						$additional_data = array(
 							'company'		=> $temp_email[0],
 							'web_address'	=> $this->input->post('username')
