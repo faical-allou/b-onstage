@@ -17,7 +17,7 @@ class Page extends CI_Controller {
 		$this->load->model('genre_model');		
 		$this->load->model('sound_model');		
 		$this->load->model('social_model');
-		
+
 		//init vars
 		if($this->ion_auth->logged_in()){
 			$user = $this->user;
@@ -424,7 +424,8 @@ class Page extends CI_Controller {
 					'name'		=> $pi_data['feed']['author'][0]['name']['$t'],
 					'link'		=> $pi_data['feed']['author'][0]['uri']['$t'],
 					'thumbnail'	=> $pi_data['feed']['gphoto$thumbnail']['$t'],
-					'entry'		=> isset($pi_data['feed']['entry']) ? $pi_data['feed']['entry'] : null	
+					'entry'		=> isset($pi_data['feed']['entry']) ? $pi_data['feed']['entry'] : null,
+					'user_page'	=> $user_page
 				);
 				
 				if($user_state == 2)
