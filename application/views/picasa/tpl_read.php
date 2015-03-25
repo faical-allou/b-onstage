@@ -25,7 +25,7 @@
 		<div class="pi-content clearfix p-5">	
 			<?php foreach($entries as $e) { 
 
-				if ($e['title']['$t'] = $user_page['company']) {?>
+				if ($e['title']['$t'] == $user_page['company']) {?>
 				<a href="<?=$e['link'][0]['href']?>" title="<?=$e['title']['$t']?>" class="pi-album bg-white">				
 					<div class="pi-album-thumbnail">
 						<img src="<?=$e['media$group']['media$thumbnail'][0]['url']?>"/>
