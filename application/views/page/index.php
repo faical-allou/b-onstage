@@ -413,7 +413,7 @@
 						<!--dialog import album photo--
 						<?php if($user_state==2) { ?>
 							<div class="wrap-button-action p-10">
-								<div><button id="button-add-photo">J'ajoute des photos</button></div>
+								<div><button id="button-add-photo"><?php echo lang("users_page_picasa_add") ?></button></div>
 							</div>								
 						<?php } ?>
 							
@@ -422,23 +422,24 @@
 							<?=$albums_photos?>
 						</div>
 					</div>-->				
-					
+					<div class="bloc ui-corner-all bg-white bs-black mb-20">
+					</div>
 					
 					<!--picasa web photos-->
 					<div class="bloc ui-corner-all bg-white bs-black mb-20">
-						<!--title picasa photos-->
+						<!--title picasa photos--
 						<?=$photos['pi_title']?>
 						
 						<?php if($user_state == 2){?>								
-							<!--recommendations-->						
+							<!--recommendations--					
 							<div class="recommendations m-10">
 								<?php echo lang("users_page_picasa_txt") ?>
 							</div>					
-						
+-->						
 							<div class="wrap-button-action p-10">										
 								<div><button id="button-add-pi"><?php echo lang("users_page_picasa_add") ?></button></div>								
 							</div>		
-							
+
 							<!--dialog add picasa user-->
 							<div id="dialog-add-pi" title="<?php echo lang("users_page_picasa_addtitle") ?>">								
 								<div class="p-10">

@@ -16,7 +16,7 @@
 			</span>
 			<!--name + album count-->
 			<span class="fs-12 bold grey">
-				<?=$name.' - '.$count.' album(s)'?>
+				<?=$name?>
 			<span>
 		</a>	
 	</div>	
@@ -36,7 +36,7 @@
 		</div>	
 	<?php } else { ?>	
 		<div class="p-20">												
-			<p class="fs-15 grey"><i>Aucun album pour ce compte picasa</i></p>
+			<p class="fs-15 grey"><i><?php echo lang("users_page_picasa_album_notfound") ?></i></p>
 		</div>	
 	<?php } ?>
 </div>

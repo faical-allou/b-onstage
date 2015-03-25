@@ -736,7 +736,7 @@ page
 #description-page a{color:#8e2c86;font-weight:bold;}
 
 .wrap-button-action{background-color:#fff;}
-.wrap-button-action > div{border:4px dashed #eaeaea;text-align:center;line-height:100px;height:100px;}
+.wrap-button-action > div{border:4px dashed #eaeaea;padding: 50px; text-align:center;line-height:100px;height:100px;}
 
 /*list concerts*/
 

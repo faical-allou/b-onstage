@@ -1005,9 +1005,9 @@ $lang['users_page_picasa_input'] = 'Enter the email address linked to the accoun
 $lang['users_page_picasa_notfound'] = 'No account registered';
 $lang['users_page_picasa_add_success'] = 'Account added';
 $lang['users_page_picasa_add_error1'] = 'This account is already taken';
-$lang['users_page_picasa_deleted'] = 'Delete this account?';
+$lang['users_page_picasa_deleted'] = 'Account deleted';
 $lang['users_page_picasa_album_notfound'] = 'No album found';
-$lang['users_page_picasa_delconf'] = 'Account deleted';
+$lang['users_page_picasa_delconf'] = 'Delete this account?';
 $lang['users_page_sons_txt'] = '<div class="title fs-16 purple">Recommendations to add music</div>	
 	<p class="grey fs-12 bold">Stages have to listen to your music to select you!</p>	
 	<p class="grey fs-12 bold"> Here is the way to upload music:  </p>	

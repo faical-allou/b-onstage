@@ -19,7 +19,7 @@
 			</span>
 			<!--name + album count-->
 			<span class="fs-12 bold grey">
-				<?=$name.' - '.$count.' '.lang("albums")?>			
+				<?=$name?>			
 			<span>
 		</a>	
 		

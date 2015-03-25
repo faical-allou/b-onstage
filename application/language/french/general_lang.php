@@ -942,9 +942,9 @@ $lang['users_page_picasa_input'] = 'Saisir l\'adresse mail de votre compte Picas
 $lang['users_page_picasa_notfound'] = 'Aucun compte Picasa enregistré';
 $lang['users_page_picasa_add_success'] = 'Le compte Picasa a été ajouté';
 $lang['users_page_picasa_add_error1'] = 'Ce compte Picasa est déjà enregistré';
-$lang['users_page_picasa_deleted'] = 'Supprimer ce compte Picasa ?';
+$lang['users_page_picasa_deleted'] = 'Compte Picasa supprimé avec succès';
 $lang['users_page_picasa_album_notfound'] = 'Aucun album pour ce compte Picasa ';
-$lang['users_page_picasa_delconf'] = 'Compte Picasa supprimé avec succès';
+$lang['users_page_picasa_delconf'] = 'Supprimer ce compte Picasa ?';
 $lang['users_page_sons_txt'] = '<div class="title fs-16 purple">Recommendations pour ajouter de la musique</div>
 								<p class="grey fs-12 bold">Afin de vous démarquer, il est important que les Scènes puissent vous écouter.</p>
 								<p class="grey fs-12 bold">Ajoutez vos sons à votre profil. Voici comment faire:</p>
