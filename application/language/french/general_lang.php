@@ -934,18 +934,17 @@ $lang['users_page_media_add_error1'] = 'Le Flux a été supprimé';
 $lang['users_page_flux_deleted'] = 'Le Média a été ajouté';
 $lang['users_page_videos_deleted'] = 'Ce média est déjà enregistré  ';
 $lang['users_page_picasa_txt'] = '<p class="title purple fs-16">Recommendations pour ajouter des photos</p>
-								<p class="grey fs-12 bold">Ajoutez vos photos à votre profil. Vous pouvez par exemple y mettre des photos de votre groupe, de vos concerts, etc.</p>
 								<p class="grey fs-12 bold">Cliquez sur J\'ajoute un compte Picasa. Entrez l\'adresse mail de votre compte Picasa.</p> 
 								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p>';
 $lang['users_page_picasa_addtitle'] = 'Ajouter un compte Picasa';
-$lang['users_page_picasa_add'] = 'J\'ajoute un compte Picasa';
-$lang['users_page_picasa_input'] = 'Saisir l\'adresse mail de votre compte Picasa.';
+$lang['users_page_picasa_add'] = 'Ajouter un compte Picasa';
+$lang['users_page_picasa_input'] = 'Saisir l\'adresse mail de votre compte Picasa';
 $lang['users_page_picasa_notfound'] = 'Aucun compte Picasa enregistré';
 $lang['users_page_picasa_add_success'] = 'Le compte Picasa a été ajouté';
 $lang['users_page_picasa_add_error1'] = 'Ce compte Picasa est déjà enregistré';
 $lang['users_page_picasa_deleted'] = 'Supprimer ce compte Picasa ?';
-$lang['users_page_picasa_album_notfound'] = 'Compte Picasa supprimé avec succès';
-$lang['users_page_picasa_delconf'] = 'Aucun album pour ce compte Picasa  ';
+$lang['users_page_picasa_album_notfound'] = 'Aucun album pour ce compte Picasa ';
+$lang['users_page_picasa_delconf'] = 'Compte Picasa supprimé avec succès';
 $lang['users_page_sons_txt'] = '<div class="title fs-16 purple">Recommendations pour ajouter de la musique</div>
 								<p class="grey fs-12 bold">Afin de vous démarquer, il est important que les Scènes puissent vous écouter.</p>
 								<p class="grey fs-12 bold">Ajoutez vos sons à votre profil. Voici comment faire:</p>

@@ -53,9 +53,11 @@
 <!--						<li><a href="javascript:void(0);" id="menu-page-concert" data-content-id="content-concert" class="grey fs-16"><?php echo lang("users_page_menu2") ?></a></li>		-->				
 						<?php if($user_group_page == 'artist') { ?>
 						<li><a href="javascript:void(0);" id="menu-page-sound" data-content-id="content-sound" class="grey fs-16"><?php echo lang("users_page_menu3") ?></a></li>						
-						<?php } ?>
 						<li><a href="javascript:void(0);" id="menu-page-video" data-content-id="content-video" class="grey fs-16"><?php echo lang("users_page_menu4") ?></a></li>						
-<!--						<li><a href="javascript:void(0);" id="menu-page-photo" data-content-id="content-photo" class="grey fs-16"><?php echo lang("users_page_menu5") ?></a></li>			-->			
+						<?php } ?>
+						<?php if($user_group_page == 'stage') { ?>
+						<li><a href="javascript:void(0);" id="menu-page-photo" data-content-id="content-photo" class="grey fs-16"><?php echo lang("users_page_menu5") ?></a></li>						
+						<?php } ?>					
 					</ul>
 				</div>
 				
@@ -403,6 +405,7 @@
 				
 				<!--photo-->
 				<div class="clearfix bloc-page" id="content-photo">
+					
 					<!--<div class="bloc ui-corner-all mb-20 bg-white bs-black">
 						<!--title photos--
 						<?=$title_photos?>

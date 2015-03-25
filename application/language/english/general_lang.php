@@ -997,18 +997,17 @@ $lang['users_page_media_add_error1'] = 'Account deleted';
 $lang['users_page_flux_deleted'] = 'Media added';
 $lang['users_page_videos_deleted'] = 'Media is registered';
 $lang['users_page_picasa_txt'] = '<p class="title purple fs-16">Recommendations to add photos</p>	
-	<p class="grey fs-12 bold">Add photos to your profile such as photos of your band, your logo, concerts etc.</p>	
 	<p class="grey fs-12 bold">Click on I add a Picassa account, enter your email address linked to the Picassa account.</p> 	
 	<p class="grey fs-12 bold">Remember, the more content the more likely you are to be selected.</p>	';
 $lang['users_page_picasa_addtitle'] = 'Add a Picassa account';
-$lang['users_page_picasa_add'] = 'I add a Picassa account';
+$lang['users_page_picasa_add'] = 'Add a Picassa account';
 $lang['users_page_picasa_input'] = 'Enter the email address linked to the account';
 $lang['users_page_picasa_notfound'] = 'No account registered';
 $lang['users_page_picasa_add_success'] = 'Account added';
 $lang['users_page_picasa_add_error1'] = 'This account is already taken';
 $lang['users_page_picasa_deleted'] = 'Delete this account?';
-$lang['users_page_picasa_album_notfound'] = 'Account deleted';
-$lang['users_page_picasa_delconf'] = 'No album found';
+$lang['users_page_picasa_album_notfound'] = 'No album found';
+$lang['users_page_picasa_delconf'] = 'Account deleted';
 $lang['users_page_sons_txt'] = '<div class="title fs-16 purple">Recommendations to add music</div>	
 	<p class="grey fs-12 bold">Stages have to listen to your music to select you!</p>	
 	<p class="grey fs-12 bold"> Here is the way to upload music:  </p>	

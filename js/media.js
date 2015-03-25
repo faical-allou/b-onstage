@@ -21,7 +21,7 @@
 				$('#content-video').video('init', {user_id : user_id, user_state : user_state});
 
 				/********** INIT PAGE PHOTO**********/
-				$('#content-photo').photo('init', {user_id : user_id, user_state : user_state});
+ 				$('#content-photo').photo('init', {user_id : user_id, user_state : user_state});
 						
 			});	
 		}	
