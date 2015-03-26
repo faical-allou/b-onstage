@@ -372,7 +372,7 @@
 			return this.each(function() {								
 						
 				var sc_user, sc_playlists, sc_tracks, sc_exist;	
-				$.getScript("http://connect.soundcloud.com/sdk.js", function(data, textStatus, jqxhr) {	
+				$.getScript("http://connect.soundcloud.com/sdk-2.0.0.js", function(data, textStatus, jqxhr) {	
 							
 					//initialise
 					SC.initialize({
@@ -405,8 +405,8 @@
 											autoOpen	:true,	
 											minWidth	: 400,
 											height		: 'auto',	
-											resizable	: false,
-											draggable	: false,						
+											resizable	: true,
+											draggable	: true,						
 											modal:true,							
 											open		: function(event, ui) {												
 												$.ajax({

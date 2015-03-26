@@ -105,19 +105,19 @@
 						</div>
 						<div class="jp-volume-bar">
 							<div class="jp-volume-bar-value"></div>
-<!-- 						</div>
+<!--  						</div>
 						<ul class="jp-toggles">												
 							<li><a href="javascript:void(0);" class="jp-repeat" tabindex="1" title="<?php echo lang("repeat") ?>">repeat</a></li>
 							<li><a href="javascript:void(0);" class="jp-repeat-off" tabindex="1" title="<?php echo lang("repeatoff") ?>">repeat off</a></li>
 							<li><a href="javascript:void(0);" id="button-show-playlist" class="jp-show-playlist" tabindex="1" title="<?php echo lang("showplaylist") ?>">show</a></li>						
 						</ul>
-					</div>
+-->					</div>
  					<div class="jp-playlist">
 						<ul>
 							<li></li>
 						</ul>	
 					</div>
- -->				</div>	
+				</div>	
 			</div>	
 			<?php } ?>
 		</header>	
