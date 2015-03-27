@@ -173,6 +173,7 @@
                          ['<a target="_blank" href=/cubemoabeat?t=map><strong>cube moa:beat</strong></a>', 52.525691,13.319942, 12],
                          ['<a target="_blank" href=/untertitel?t=map><strong>Untertitel</strong></a>', 52.47738,13.43544, 13],
                          ['<a target="_blank" href=/KeuleBerlinerMundart?t=map><strong>Keule Berliner Mundart</strong></a>', 52.508471,13.455218, 13],
+                         ['<a target="_blank" href=/Kremanski?t=map><strong>Kremanski</strong></a>', 52.500203,13.417794, 13],
                          
 
                          ['<a target="_blank" href=/leplaytime?t=map><strong>le Playtime</strong></a>', 48.84096,2.370422, 14],
