@@ -1,7 +1,7 @@
 <div id="page" class="container_12 mt-20 mb-20">
 	<div class="grid_9 clearfix ui-corner-top">					
 		<!--header-->
-		<header class="bs-black bg-white mb-20 ui-corner-all">			
+		<header class="bs-black bg-white mb-20 mt-20 ui-corner-all">			
 			
 			<!--header page-->
 			<div id="top-header-page">			
@@ -42,7 +42,7 @@
 			
 			<!--title page-->
 			<div id="center-header-page" class="bg-white">
-				<?=heading($user_page['company'],1, 'class="title gery fs-28 m-0"')?>
+				<?=heading($user_page['company'],1, 'class="title grey fs-28 m-0"')?>
 			</div>						
 			
 			<div id="bottom-header-page" class="clearfix ui-corner-bottom">
