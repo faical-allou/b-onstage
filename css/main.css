@@ -369,6 +369,10 @@ stage
 .line-stage-list .action-menu{}
 .line-stage-list .action-menu  > li{display:inline;}
 
+.book-concert {width: 100px;}
+.request-info {width:100px;}
+
+
 /* ==========================================================================
 artist
 ========================================================================== */
