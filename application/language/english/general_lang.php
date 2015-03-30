@@ -295,7 +295,7 @@ $lang['aboutus_txt2_aboutus'] = '<ul class="about-list mb-20">
 				<li><p>We went around the bars and venues and we convinced them to open their location to musicians.</p></li>
 				<li><p>We make it possible to book a venue in few clicks, and let you do what you do best: play music.</p></li>
 			</ul>';
-$lang['aboutus_header3_aboutus'] = 'Sign-up';
+$lang['aboutus_header3_aboutus'] = 'Sign up';
 $lang['aboutus_header4_aboutus'] = 'on b-onstage and the Stage is Yours!';
 $lang['aboutus_header_whoweare'] = 'Who are we?';
 $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
