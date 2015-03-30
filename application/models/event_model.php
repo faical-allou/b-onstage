@@ -119,6 +119,76 @@ class Event_model extends CI_Model
 		
 		return $events;
 	}	
+
+	public function get_one_by_id($id, $status='', $date_from='', $date_to='', $city='', $user_id='',$per_page=25, $page = 1){
+		$start = ($page-1) * $per_page;
+	
+		$this->db->start_cache();
+		$this->db->select('events.*,
+					stage.username as stage_username, stage.company as stage_company, stage.avatar as stage_avatar,
+					stage.state as stage_state, stage.city as stage_city, stage.country as stage_country,stage.web_address as stage_web_address,
+					stage.website as stage_website, stage.facebook as stage_facebook, stage.twitter as stage_twitter, stage.google_plus as stage_google_plus, stage.myspace as stage_myspace')
+						->from('events, users as stage')
+						->where('events.stage_id = stage.id', NULL, false)
+						->where('date_start >=', $date_from)
+						->where('date_start <=', $date_to)
+						->where('events.id =', $id)
+						
+						->like('events.stage_id',$user_id)
+						->order_by('date_start', 'asc')
+						->limit($per_page, $start);
+		$this->db->stop_cache();
+	
+		if($city)
+			$this->db->where_in('stage.city',$city );
+	
+		if($status == 'open'){
+			$this->db->where_in('events.status', array('open', 'pending'));
+			$events = $this->db->get()->result_array();
+		}
+		if($status == 'close'){
+			$this->db->select('artist.username as artist_username, artist.company as artist_company, artist.avatar as artist_avatar,artist.cover as artist_cover,
+							artist.web_address as artist_web_address, artist.country as artist_country, artist.city as artist_city, artist.avatar as artist_avatar');
+			$this->db->from('users as artist');
+			$this->db->where('artist_id=artist.id', NULL, false);
+			$this->db->where('events.status', 'close');
+			$events = $this->db->get()->result_array();
+		}
+		$this->db->flush_cache();
+	
+		//add reservation list of artist id
+		if($status == 'open'){
+			foreach ($events as $key => $event){
+				$events[$key]['reservations_artist_id'] = array();
+				$query = $this->db->select('reservations.artist_id')->from('reservations')->where('reservations.event_id', $event['id'])->get();
+				foreach($query->result_array() as $row)
+					$events[$key]['reservations_artist_id'][] = $row['artist_id'];
+			}
+		}
+	
+		// Add music genres to the event
+		//Determine row name depending on lang loaded
+		if($this->session->userdata('lang_loaded') == "french"){$rowname = '';}
+		else {
+			foreach($this->config->item('lang_counts') as $key => $value){
+				if($this->session->userdata('lang_loaded') == $value["name"]){
+					$rowname = '_'.$value["id"];
+				}
+			}
+		}
+		foreach ($events as $key => $event) {
+			$events[$key]['genres'] = array();
+			$genres_ids = explode('|', $event['genre_id']);
+			$query = $this->db->select('name'.$rowname)
+			->from('musical_genres')
+			->where_in('id', $genres_ids)
+			->get();
+			foreach ($query->result_array() as $row)
+				array_push($events[$key]['genres'],ucfirst($row['name'.$rowname]));
+		}
+	
+		return $events;
+	}
 	
 	
 	

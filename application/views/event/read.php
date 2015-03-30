@@ -3,7 +3,9 @@
 		<div>
 			<!--date et heure-->
 			<div class="title mb-20 clearfix bg-white ui-corner-all bs-black fs-24" style="padding:.6em 1em;">
-				<?php echo lang("the") ?> <span class="purple"><?=$date?></span> <?php echo lang("de") ?> <span class="purple"><?=$schedule?></span>, <?=anchor($artist_link, ucfirst($concert['artist_company']), array('class' => 'purple')).' '.lang("shows_inshowat").' '.anchor($stage_link, $concert['stage_company'], array('class' => 'purple'))?>				
+				<span class="purple"><?=$date?></span> 
+				<span class="purple"><?=$schedule?></span>, 
+				<?=anchor($artist_link, ucfirst($concert['artist_company']), array('class' => 'purple')).' '.lang("shows_inshowat").' '.anchor($stage_link, $concert['stage_company'], array('class' => 'purple'))?>				
 			</div>		
 			
 			<!--infos concert-->

@@ -77,6 +77,19 @@ class Concerts extends CI_Controller {
 		$genres = $this->musical_genre_model->get(0,'');		
 		
 		// Get events									
+		if (isset($_GET['id'])) {
+		$events = $this->event_model->get_one_by_id(
+				$_GET['id'],
+				$status,
+				$date_start,
+				$date_end,
+				$this->input->post('search-city'),
+				'',
+				$per_page,
+				$page				
+				);
+		}
+		else {
 		$events = $this->event_model->get_all(					
 			$status,
 			$date_start,
@@ -86,6 +99,7 @@ class Concerts extends CI_Controller {
 			$per_page,
 			$page
 		);		
+		};
 		
 		// Get min max reservation, entry
 		list($min, $max) = $this->event_model->get_filter_infos($date_start, $date_end);	
