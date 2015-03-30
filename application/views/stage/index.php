@@ -180,6 +180,8 @@
                          ['<a target="_blank" href=/lebluenote?t=map><strong>Le Blue Note</strong></a>', 48.8867591,2.3464823, 15],
                          ['<a target="_blank" href=/orphee?t=map><strong>Orphée</strong></a>', 48.880978,2.33437, 16],
                          ['<a target="_blank" href=/lerosie?t=map><strong>Le Rosie</strong></a>', 48.886752,2.347134, 17],
+                         ['<a target="_blank" href=/lechina?t=map><strong>Le China</strong></a>', 48.849945,2.37377, 18],
+                         ['<a target="_blank" href=/lecafegibus?t=map><strong>Le Café Gibus</strong></a>', 48.8660549,2.3719272, 18],
                          
                        ];
         
