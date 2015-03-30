@@ -4,7 +4,22 @@
 <div id="wrap-slider">
 	<div id="slider" class="royalSlider rsBlack ">
 
-	<!--slide5-->
+	<!--slide6-->
+		<div class="rsContent slide6 db">
+			<div class="bContainer ui-corner-all p-20 db">		
+				<div class=" fs-32 bold white"><?php echo lang("home_slide6_txt") ?></div>
+				<div class=" fs-24 bold white"><?php echo lang("home_slide6_txt2") ?></div>				
+				<div class=" fs-14 bold white mb-20"><?php echo lang("home_slide6_txt3") ?></div>				
+				<span class="ui-green rsButton" style="font-size:1em;"> 
+					<a href="<?=site_url('concerts/oujouer?id=28017&t=slide6')?>" >
+					<?php echo lang("home_slide6_txt4") ?></a>
+				</span>
+			</div>
+			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-6.jpg">
+		</div>
+
+
+	<!--slide5--
 		<div class="rsContent slide5 db">
 			<div class="bContainer ui-corner-all p-20 db">		
 				<div class=" fs-32 italic bold grey"><?php echo lang("home_slide5_txt") ?></div>
@@ -19,7 +34,7 @@
 		</div>
 
 
-	<!--slide4-->
+	<!--slide4--
 		<div class="rsContent slide4">
 			<div class="bContainer ui-corner-all p-20">		
 				<div class=" fs-36 bold white"><?php echo lang("home_slide4_txt") ?></div>

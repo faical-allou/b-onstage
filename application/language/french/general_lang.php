@@ -239,7 +239,7 @@ $lang['home_slide2_txt3'] = 'Les Scènes sont sur b-onstage';
 $lang['home_slide2_txt4'] = 'Trouver une date';
 
 $lang['home_slide3_txt'] = 'Vous pouvez organiser un concert en quelques clicks';
-$lang['home_slide3_txt2'] = 'Plus besoin de marcher des heures dans la ville!';
+$lang['home_slide3_txt2'] = 'Plus besoin d\'y passer des heures!';
 $lang['home_slide3_txt3'] = 'Inscrivez vous!';
 
 $lang['home_slide4_txt'] = 'b-onstage rembourse les frais';
@@ -250,6 +250,12 @@ $lang['home_slide5_txt'] = 'Ich liebe dich...';
 $lang['home_slide5_txt2'] = 'On vous aime aussi!';
 $lang['home_slide5_txt3'] = 'et on vous aide à Paris comme à Berlin';
 $lang['home_slide5_txt4'] = 'Trouver une Scène';
+
+$lang['home_slide6_txt'] = 'Venez fêter l\'anniversaire de b-onstage';
+$lang['home_slide6_txt2'] = '150€ à gagner!';
+$lang['home_slide6_txt2'] = 'tirage au sort le 15 Avril';
+$lang['home_slide6_txt4'] = 'Envoyer une demande';
+
 
 $lang['home_promo'] = 'b-onstage vous rembourse vos frais de réservation pour tous vos concerts en Mars 2015!';
 

@@ -222,19 +222,22 @@ slider
 .blockSubHeadline {font-size: 32px;line-height: 40px}
 .txtCent {text-align: center;width: 100%;}
 
+.slide6{background:#000000;}
 .slide5{background:#fff;}
 .slide4{background:#000000;}
 .slide3{background:#fff;}
 .slide1{background:#000000;}
 .slide2{background:#000000;}
 
+.slide6 .bContainer {bottom: 5%; left: 5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
 .slide5 .bContainer {top: 5%; left: 5%; text-align:left;background:rgba(255,255,255,0.8);display:block;}
 .slide4 .bContainer {top: 5%; right:5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
 .slide3 .bContainer {top: 5%; left: 5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
 .slide2 .bContainer {top: 5%; left: 5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
 .slide1 .bContainer {top: 5%; right: 5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
 
-.slide5 img {margin-left: auto; margin-right: 0; position:float; height:auto;width:inherit;max-width: 900px}
+.slide6 img {margin-left: auto; margin-right: 0; position:relative; height:auto;width:inherit;max-width: 900px}
+.slide5 img {margin-left: auto; margin-right: 0; position:relative; height:auto;width:inherit;max-width: 900px}
 .slide4 img {margin-left: 0; margin-right: auto; position:relative; height:auto;width:inherit;max-width: 900px}
 .slide3 img {margin-left: auto; margin-right: 0; position:relative; height:auto;width:inherit;max-width: 900px}
 .slide2 img {margin-left: auto; margin-right: auto; position:relative; height:auto;width:inherit;max-width: 900px}

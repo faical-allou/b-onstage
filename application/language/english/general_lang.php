@@ -240,7 +240,7 @@ $lang['home_slide2_txt3'] = 'Stages are on b-onstage';
 $lang['home_slide2_txt4'] = 'Apply Now!';
 
 $lang['home_slide3_txt'] = 'Now you can book venues in few clicks...';
-$lang['home_slide3_txt2'] = 'You don\'t have to walk around the city to get a gig!';
+$lang['home_slide3_txt2'] = 'You don\'t have to spend days to get a gig!';
 $lang['home_slide3_txt3'] = 'Join us Now!';
 
 $lang['home_slide4_txt'] = 'b-onstage pays back the fee';
@@ -251,6 +251,11 @@ $lang['home_slide5_txt'] = 'Je ne parle pas français';
 $lang['home_slide5_txt2'] = 'We do and we serve you in Paris as well';
 $lang['home_slide5_txt3'] = '';
 $lang['home_slide5_txt4'] = 'Get a gig Now!';
+
+$lang['home_slide6_txt'] = 'It\'s our birthday';
+$lang['home_slide6_txt2'] = 'Get on Stage and Get paid!';
+$lang['home_slide6_txt3'] = 'draw on the 15th of April';
+$lang['home_slide6_txt4'] = 'Apply Now!';
 
 $lang['home_promo'] = 'b-onstage pays back the booking fees for all concerts in March 2015!';
 
