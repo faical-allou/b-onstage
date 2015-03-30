@@ -201,7 +201,7 @@ $lang['sortby'] = 'Sort by';
 $lang['showmoreresults'] = 'Show more results';
 $lang['the'] = 'The';
 $lang['step'] = 'Step';
-$lang['connect'] = 'Connect';
+$lang['connect'] = 'Log in';
 $lang['or'] = 'or';
 $lang['otherinfos'] = 'Other infos';
 $lang['originaire_de'] = 'Originally from';
@@ -1148,7 +1148,7 @@ $lang['request_info'] = 'Request info';
 
 
 $lang['book_error1'] = 'To send a request you must be logged in';
-$lang['book_error1_1'] = 'to play';
+$lang['book_error1_1'] = 'to apply';
 $lang['book_error2'] = 'Only logged in Artists can send requests';
 $lang['book_req_txt1'] = '	<p class="bold">You are about to send a request to organize a Concert.</p>	
 	<p class="bold">Here are the details of your request :</p>';
