@@ -147,7 +147,7 @@ class Reservation extends CI_Controller {
 		if(IS_AJAX){							
 			try{
 				if (!$this->ion_auth->logged_in())
-					throw new Exception('<p class="title fs-16 grey">'.lang("book_error1").'</p><p class="title grey fs-16">'.anchor(site_url('login'),lang("connect"), array('class' => 'purple')).' '.lang("or").' '.anchor(site_url('signup_choice'),lang("aboutus_header3_aboutus"), array('class' => 'purple')).' '.lang("book_error1_1").'</p>');
+					throw new Exception('<p class="title fs-16 grey">'.lang("book_error1").'</p><p class="title grey fs-16">'.anchor(site_url('login'),lang("connect"), array('class' => 'purple')).' '.lang("or").' '.anchor(site_url('signup'),lang("aboutus_header3_aboutus"), array('class' => 'purple')).' '.lang("book_error1_1").'</p>');
 				
 				if(!$this->ion_auth->in_group('artist'))
 					throw new Exception('<p class="title fs-16">'.lang("book_error2").'</p>');			
