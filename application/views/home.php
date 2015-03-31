@@ -1,3 +1,7 @@
+<!-- Floating link -->
+<span class="ta-c b fs-14 bold ">
+<a class="contact-float contact_us p-10" href="javascript:void(0)">Contact</a>
+</span>
 
 
 <!--slider-->	
@@ -124,10 +128,12 @@
 			<div class="p-20">
 				<?=img(array('src' => site_url('img/icons/home/network.png')))?>
 				<p class="fs-24  white ta-c" style="height:auto"><?php echo lang("home_bottom_txt2") ?></p>
-				<a href="<?=site_url('signup/?t=pband')?>" class="ui-white action-home mt-10" style="font-size:1em;"><?php echo lang("become_member") ?></a>			
-			</div>	
+				<a href="<?=site_url('signup/?t=pband')?>" class="ui-white action-home mt-10" style="font-size:1em;"><?php echo lang("become_member") ?></a>							
+				</div>	
 		</div>
 	</div>
+
+	
 </div>	
 
 

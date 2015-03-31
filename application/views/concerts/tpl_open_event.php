@@ -36,7 +36,7 @@
 									<button class="book-concert ui-green" data-event-id="<?=$event['id']?>" data-stage-id="<?=$event['stage_id']?>" style="font-size:1em;"><?php echo lang("book_button2") ?></button>					
 								<?php } ?>
 								</br> 
-									<button class="request-info ui-purple mt-10" href="javascript:void(0)" id="contact_us"><?php echo lang("request_info") ?></a> 
+									<button class="request-info ui-purple mt-10 contact_us" href="javascript:void(0)"><?php echo lang("request_info") ?></a> 
 								
 								
 							</div>

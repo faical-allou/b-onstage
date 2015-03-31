@@ -1,3 +1,4 @@
+			
 			<!--end content-->
 			</div>
 		<!--end container-->
@@ -14,7 +15,7 @@
                                 <dd><?=anchor(site_url('about_us'),lang("aboutus_link_whoweare"))?></dd>
                                 <dd><?=anchor(site_url('how_does_it_work'),lang("aboutus_link_howitworks"))?></dd>												
                                 <dd><?=anchor(site_url('how_i_make_money'),lang("aboutus_link_howimakemoney"))?></dd>												
-                                <dd><a href="javascript:void(0)" id="contact_us"><?php echo lang("footer_contactus") ?></a></dd>
+                                <dd><a href="javascript:void(0)" class="contact_us"><?php echo lang("footer_contactus") ?></a></dd>
                             </dl>
                         </div>
                         <div class="grid_3 footer">									

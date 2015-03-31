@@ -259,7 +259,7 @@ function change_social_tabs(id){
 
 function init_footer(){	
 
-	$('#contact_us').click(function(){
+	$('.contact_us').click(function(){
 		var dialog_form_contact = $('<div>').dialog({					
 			autoOpen:true,					
 			width:600,
