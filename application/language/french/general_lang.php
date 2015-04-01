@@ -111,9 +111,9 @@ $lang['user_page_desc'] = 'Mettre une description';
 $lang['user_rese_desc'] = 'Mettre une description';
 $lang['user_artist_desc'] = 'Tous les artistes présents sur b-onstage';
 $lang['user_stage_desc'] = 'Tous les artistes présents sur b-onstage';
-$lang['user_shows_desc'] = 'Mettre une description';
-$lang['user_book_desc'] = 'Mettre une description';
-$lang['user_signin_desc'] = 'Mettre une description';
+$lang['user_shows_desc'] = 'Tous les concerts';
+$lang['user_book_desc'] = 'Les Scènes disponibles';
+$lang['user_signin_desc'] = 'Connectez vous pour envoyer des demandes et gérer votre compte';
 
 // General
 $lang['hello'] = 'Bonjour';

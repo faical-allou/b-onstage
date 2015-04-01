@@ -112,9 +112,9 @@ $lang['user_page_desc'] = 'add a description';
 $lang['user_rese_desc'] = 'add a description';
 $lang['user_artist_desc'] = 'All b-onstage Artists';
 $lang['user_stage_desc'] = 'All b-onstage Stages';
-$lang['user_shows_desc'] = 'add a description';
-$lang['user_book_desc'] = 'add a description';
-$lang['user_signin_desc'] = 'add a description';
+$lang['user_shows_desc'] = 'The show';
+$lang['user_book_desc'] = 'Venues Available';
+$lang['user_signin_desc'] = 'Sign in to book venues and check your account';
 
 // General
 $lang['hello'] = 'Hello';
