@@ -255,7 +255,7 @@ $lang['home_slide5_txt4'] = 'Get a gig Now!';
 $lang['home_slide6_txt'] = 'It\'s our birthday';
 $lang['home_slide6_txt2'] = 'Get on Stage and Get paid!';
 $lang['home_slide6_txt3'] = 'draw on the 15th of April';
-$lang['home_slide6_txt4'] = 'Apply Now!';
+$lang['home_slide6_txt4'] = '150€ for the winner!';
 
 $lang['home_promo'] = 'b-onstage pays back the booking fees for all concerts in March 2015!';
 
@@ -301,7 +301,7 @@ $lang['aboutus_header_whoweare'] = 'Who are we?';
 $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
 				<li><p class="grey fs-15">Musicians and programers, we founded b-onstage to help musicians launch their career.</p></li>		
 				<li><p class="grey fs-15">We conceived it to make it easier to  <strong>organize Concerts.</strong></p></li>	
-				<li><p class="grey fs-15"><strong>We visit all venues</strong> (who we consider as partners), we take the photos and we list them <strong>to make sure what you see is what you get.</strong></p></li>
+				<li><p class="grey fs-15"><strong>We visit all venues</strong> (who we consider as partners), we list them <strong>to make sure what you see is what you get.</strong></p></li>
 				<li><p class="grey fs-15">We can offer <strong>specialized contracts</strong> to limit liabilities and balance the relationship.</p></li>	
 				<li><p class="grey fs-15">We follow up <strong>on all our partners and registered Artists</strong> and we answer every message we get. We are ready to side with you in all of your initiatives.</p></li>
 			</ul>';

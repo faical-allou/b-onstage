@@ -626,7 +626,7 @@ class User extends CI_Controller {
 						$this->load->view('user/auth/signup_steps_artist',$this->step);
 						$this->load->view('user/auth/activate', $this->footer);						
 						$this->load->view('_footer');
-						$to = "faical.allou@mybandonstage.com". "," . "faical.allou@gmail.com";
+						$to = "faical.allou@mybandonstage.com";
 						mail ($to, 'user activate', "a user reached the activate page");
 					
   					}
@@ -676,7 +676,7 @@ class User extends CI_Controller {
 						$this->load->view('user/auth/signup_steps_artist',$this->step);
 						$this->load->view('user/auth/terminate', array('user' => $this->user));
 						$this->load->view('_footer', $this->footer);
-						$to = "faical.allou@mybandonstage.com". "," . "faical.allou@gmail.com";
+						$to = "faical.allou@mybandonstage.com";
 						mail ($to, 'registration complete', "a user completed the registration");
 					}
 					break;

@@ -251,10 +251,10 @@ $lang['home_slide5_txt2'] = 'On vous aime aussi!';
 $lang['home_slide5_txt3'] = 'et on vous aide à Paris comme à Berlin';
 $lang['home_slide5_txt4'] = 'Trouver une Scène';
 
-$lang['home_slide6_txt'] = 'Venez fêter l\'anniversaire de b-onstage';
-$lang['home_slide6_txt2'] = '150€ à gagner!';
+$lang['home_slide6_txt'] = 'Venez jouer pour l\'anniversaire de b-onstage';
+$lang['home_slide6_txt2'] = 'On a besoin de musique';
 $lang['home_slide6_txt2'] = 'tirage au sort le 15 Avril';
-$lang['home_slide6_txt4'] = 'Envoyer une demande';
+$lang['home_slide6_txt4'] = '150€ à gagner!';
 
 
 $lang['home_promo'] = 'b-onstage vous rembourse vos frais de réservation pour tous vos concerts en Mars 2015!';
@@ -306,7 +306,7 @@ $lang['aboutus_header_whoweare'] = 'Qui sommes-nous ?';
 $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
 				<li><p class="grey fs-15">Musiciens et programmeurs, nous avons créé b-onstage pour aider les musiciens à lancer leur carrière.</p></li>		
 				<li><p class="grey fs-15">Nous l\'avons conçu dans le but de </strong> faciliter les démarches pour <strong>organiser des concerts.</strong></p></li>	
-				<li><p class="grey fs-15"><strong>Nous visitons toutes les Scènes</strong> (qui sont des établissements partenaires de b-onstage), nous prenons les photos et nous les référençons avec leurs descriptions pour assurer qu’<strong>on vous offre ce qu’on vous promet.</strong></p></li>
+				<li><p class="grey fs-15"><strong>Nous visitons toutes les Scènes</strong> (qui sont des établissements partenaires de b-onstage), nous les référençons avec leurs descriptions pour assurer qu’<strong>on vous offre ce qu’on vous promet.</strong></p></li>
 				<li><p class="grey fs-15">Nous pouvons vous proposer <strong>pour chaque concert des contrats spécialisés</strong> pour limiter les responsabilités équitablement et équilibrer les relations entre tous les intervenants.</p></li>	
 				<li><p class="grey fs-15">Nous assurons <strong>le suivi de tous nos partenaires et de tous les Artistes</strong>, nous répondons à tous les messages que nous recevons et nous sommes prêts à intervenir auprès de tous les organismes pour vous soutenir.</p></li>
 			</ul>';
