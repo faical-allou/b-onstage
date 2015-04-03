@@ -141,8 +141,9 @@
 											.data('file-name', 	dataFile.file_name)
 											.Jcrop({
 												setSelect:   [ 0, 0, 880, 300 ],
+												aspectRatio: 880/300,
 												onSelect : function(pos){
-													img_cover.data('x',pos.x).data('y',pos.y);
+													img_cover.data('x',pos.x).data('y',pos.y).data('w',pos.x2-pos.x).data('h',pos.y2-pos.y);
 												}
 											},function(){
 												jcrop_api = this;															
@@ -175,7 +176,10 @@
 											data		: {
 												filename	: img_cover.data('file-name'),
 												x			: img_cover.data('x'),
-												y			: img_cover.data('y')													 	
+												y			: img_cover.data('y'),
+												w			: img_cover.data('w'),
+												h			: img_cover.data('h'),
+															
 											},	
 											success		: function(data){														
 												if(data.status == 'OK'){
@@ -282,8 +286,9 @@
 											.data('file-name', 	dataFile.file_name)
 											.Jcrop({
 												setSelect:   [ 0, 0, 240, 240 ],
+												aspectRatio: 1,
 												onSelect : function(pos){
-													img_avatar.data('x',pos.x).data('y',pos.y);
+													img_avatar.data('x',pos.x).data('y',pos.y).data('w',pos.x2-pos.x).data('h',pos.y2-pos.y);
 												}
 											},function(){
 												jcrop_avatar = this;															
@@ -324,8 +329,10 @@
 											data		: {
 												filename	: img_avatar.data('file-name'),
 												x			: img_avatar.data('x'),
-												y			: img_avatar.data('y')													 	
-											},	
+												y			: img_avatar.data('y'),
+												w			: img_avatar.data('w'),
+												h			: img_avatar.data('h'),
+																	},	
 											success		: function(data){														
 												if(data.status == 'OK'){
 													$('#img-avatar').attr('src', data.file + '?' + new Date().getTime());

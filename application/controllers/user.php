@@ -1231,17 +1231,17 @@ class User extends CI_Controller {
 			switch($ext){
 				case 'jpg':
 					$img = imagecreatefromjpeg($src);
-					imagecopyresampled($crop_img,$img,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,880,300);
+					imagecopyresampled($crop_img,$img,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,$_POST['w'],$_POST['h']);
 					$valid = imagejpeg($crop_img, $dest,$quality);
 					break;
 				case 'png':
 					$img = imagecreatefrompng($src);
-					imagecopyresampled($crop_img,$img,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,880,300);
+					imagecopyresampled($crop_img,$img,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,$_POST['w'],$_POST['h']);
 					$valid = imagepng($crop_img, $dest);
 					break;
 				case 'gif':
 					$img = imagecreatefromgif($src);
-					imagecopyresampled($crop_img,$img,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,880,300);
+					imagecopyresampled($crop_img,$img,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,$_POST['w'],$_POST['h']);
 					$valid = imagegif($crop_img, $dest);
 					break;
 				default:break;
@@ -1285,17 +1285,17 @@ class User extends CI_Controller {
 			switch($ext){
 				case 'jpg':
 					$img = imagecreatefromjpeg($src);
-					imagecopyresampled($crop_img,$img,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,240,240);
+					imagecopyresampled($crop_img,$img,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,$_POST['w'],$_POST['h']);
 					$valid = imagejpeg($crop_img, $dest,$quality);
 					break;
 				case 'png':
 					$img = imagecreatefrompng($src);
-					imagecopyresampled($crop_img,$img,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,240,240);
+					imagecopyresampled($crop_img,$img,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,$_POST['w'],$_POST['h']);
 					$valid = imagepng($crop_img, $dest);
 					break;
 				case 'gif':
 					$img = imagecreatefromgif($src);
-					imagecopyresampled($crop_img,$img,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,240,240);
+					imagecopyresampled($crop_img,$img,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,$_POST['w'],$_POST['h']);
 					$valid = imagegif($crop_img, $dest);
 					break;
 				default:break;
