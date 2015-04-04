@@ -25,9 +25,9 @@ $(function() {
 		$('.recommendations').alert();
 		
 		$('.contact-line:even').css('background-color', '#f5f5f5'); 
-		$('.contact-link').button({icons:{primary:'ui-icon-person'}});
+		$('.contact-link').button();
 		$('.send-msg')
-		.button({icons:{primary:'ui-icon-mail-closed'}})
+		.button()
 		.click(function(){
 			var email_to = $(this).data('email-to');
 			var send_msg_dialog = $('<div>')
@@ -109,7 +109,7 @@ $(function() {
 		
 		
 		$('.delete-contact')
-		.button({icons:{primary:'ui-icon-trash'}})
+		.button()
 		.click(function(){
 			var contact_id = $(this).data('contact-id');
 			var delete_dialog = $('<div>')

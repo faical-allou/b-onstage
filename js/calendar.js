@@ -33,8 +33,8 @@
 					});
 					
 				$('#switch-calendar').buttonset();
-				$('#switch-grid').button( 'option', 'icons', {primary:'ui-icon-switch-calendar'});				
-				$('#switch-list').button( 'option', 'icons', {primary:'ui-icon-switch-list'});
+				$('#switch-grid').button( 'option', 'icons');				
+				$('#switch-list').button( 'option', 'icons');
 				$('#switch-grid, #switch-list').button( 'option', 'text', false);	
 					
 				$('#switch-list').bind('change',function(){					

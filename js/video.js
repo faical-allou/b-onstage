@@ -109,7 +109,7 @@
 					});		
 					
 					$('#button-add-yt-video')
-					.button({icons:{primary:'ui-icon-plus'}})
+					.button()
 					.click(function(){
 						$('#dialog-add-yt-video').dialog('open');
 						return false;
@@ -232,7 +232,7 @@
 					});					
 				
 					$('#button-add-yt-flux')
-					.button({icons:{primary:'ui-icon-plus'}})
+					.button()
 					.click(function(){
 						$('#dialog-add-yt-flux').dialog('open');
 						return false;

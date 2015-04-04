@@ -31,7 +31,7 @@
 				
 				if(user_state == 2){												
 					$('#button-add-sc')
-					.button({icons:{primary:'ui-icon-plus'}})
+					.button()
 					.click(function(){						
 						parent.sound('add_sc');		
 					});					
