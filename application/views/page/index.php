@@ -45,7 +45,7 @@
 				<?=heading($user_page['company'],1, 'class="title grey fs-28 m-0"')?>
 			</div>						
 			
-			<div id="bottom-header-page" class="clearfix ui-corner-bottom">
+			<div id="bottom-header-page" class="clearfix ui-corner-bottom bs-black">
 				<!--menu page-->
 				<div id="menu-page" class="left">
 					<ul>

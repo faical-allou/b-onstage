@@ -11,6 +11,7 @@
 	
 	//init all buttons
 	$('.home-list-link').button();	
+	$('.link-button').button();		
 	
 	$('.action-home').button();		
 	

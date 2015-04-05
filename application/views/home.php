@@ -14,7 +14,7 @@
 				<div class=" fs-32 bold white"><?php echo lang("home_slide6_txt") ?></div>
 				<div class=" fs-24 bold white"><?php echo lang("home_slide6_txt2") ?></div>				
 				<div class=" fs-14 bold white mb-20"><?php echo lang("home_slide6_txt3") ?></div>				
-				<span class="ui-green rsButton" style="font-size:1em;"> 
+				<span class=" ui-green rsButton" style="font-size:1em;"> 
 					<a href="<?=site_url('concerts/oujouer?id=28017&t=slide6')?>" >
 					<?php echo lang("home_slide6_txt4") ?></a>
 				</span>
@@ -58,7 +58,7 @@
 			<div class="bContainer ui-corner-all p-20">		
 				<div class=" fs-32 bold grey"><?php echo lang("home_slide3_txt") ?></div>
 				<div class=" fs-24 bold grey mb-20"><?php echo lang("home_slide3_txt2") ?></div>				
-				<div class="ui-green rsButton" style="font-size:1em;"> 
+				<div class="ui-green rsButton" style="font-size:1em"> 
 					<a href="<?=site_url('signup/?t=slide3')?>" >
 					<?php echo lang("home_slide3_txt3") ?></a>
 				</div>
@@ -85,7 +85,7 @@
 				<div class=" fs-32 bold white"><?php echo lang("home_slide1_txt") ?></div>				
 				<div class=" fs-32 bold white mb-20"><?php echo lang("home_slide1_txt2") ?></div>				
 				<div class="ta-c">
-				<div class="ui-green rsButton" style="font-size:1em;">
+				<div class="ui-green link-button" style="font-size:1em;">
 					<a href="<?=site_url('signup/?t=slide1')?>" >
 					<?php echo lang("home_slide1_txt3") ?></a>
 				</div>
@@ -106,9 +106,9 @@
 		<div class="grid_3">	
 			<div class="fs-18 ta-c bold"><?php echo lang("home_howitworks_title")?></div>	 
 			<div class="fs-16 ta-l mb-10 bold"><?php echo lang("home_howitworks_list")?></div>
-			<div class="ta-c bold">
-			<a href="<?=site_url('signup/?t=video')?>" class="ta-c ui-green action-home" style="font-size:1em;"><?php echo lang("home_slide3_txt3") ?></a>			
-			</div>
+			<span class="bold ui-green fs-16 link-button">
+			<a href="<?=site_url('signup/?t=video')?>"><?php echo lang("home_slide3_txt3") ?></a>			
+			</span>
 		</div>	
 	</div>
 </div>
