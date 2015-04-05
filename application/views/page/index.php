@@ -31,9 +31,11 @@
 							</span>
 							<span class="ml-5">								
 								<?=anchor(site_url('login/'.urlencode(uri_string())), lang("signin_title"), array('class'=>'ui-purple'))?>								
-							</span>	
-							<a class="ml-5 ui-dark mt-10" href="javascript:void(0)" id="contact_us"><?php echo lang("request_info") ?></a> 
-
+							</span>
+							<span class="ml-5 mt-10">								
+							<a class="ui-dark contact_us" href="javascript:void(0)"><?php echo lang("request_info") ?></a> 
+							</span>
+							
 						</div>
 					</div>
 				<?php } ?>	
