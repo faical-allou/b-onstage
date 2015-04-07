@@ -91,7 +91,7 @@
     	    	  // Setup the click event listeners: simply set the map to
     	    	  // Berlin
     	    	  google.maps.event.addDomListener(controlUI, 'click', function() {
-    	    	    map.setCenter(new google.maps.LatLng(52.5075419,13.4251364));
+    	    	    map.setCenter(new google.maps.LatLng(52.5075419,13.35));
     	    	    map.setZoom(11)
     	    	  });
 
@@ -159,33 +159,6 @@
             new google.maps.Point(12, 35));
 */
         
-/*        var locations = [
-                         ['<a target="_blank" href=/Valentinstueberl?t=map><strong>Valentin Stüberl</strong></a>', 52.483214,13.434167, 1],
-                         ['<a target="_blank" href=/Schnapphahn?t=map><strong>Schnapphahn</strong></a>', 52.500851,13.417273, 2],
-                         ['<a target="_blank" href=/liesl?t=map><strong>Liesl</strong></a>', 52.46897,13.43136, 3],
-                         ['<a target="_blank" href=/Leuchtstoff?t=map><strong>Leuchtstoff</strong></a>', 52.468121,13.432597, 4],
-                         ['<a target="_blank" href=/WilhelmTell?t=map><strong>Wilhelm Tell</strong></a>', 52.477414,13.42377, 5],
-                         ['<a target="_blank" href=/Werkstadt?t=map><strong>WerkStadt Kulturverein Berlin e.V.</strong></a>', 52.469078,13.436226, 6],
-                         ['<a target="_blank" href=/Langenacht?t=map><strong>Lange Nacht</strong></a>', 52.47877,13.423351, 7],
-                         ['<a target="_blank" href=/Froschkoenig?t=map><strong>FroschKönig</strong></a>', 52.476803,13.423846, 8],
-                         ['<a target="_blank" href=/amalia?t=map><strong>Amalia</strong></a>', 52.470061,13.43699, 9],
-                         ['<a target="_blank" href=/laika?t=map><strong>Laika</strong></a>', 52.469268,13.438026, 10],
-                         ['<a target="_blank" href=/Kuerbishuette?t=map><strong>Kürbishütte 1905</strong></a>', 52.50908,13.45599, 11],
-                         ['<a target="_blank" href=/cubemoabeat?t=map><strong>cube moa:beat</strong></a>', 52.525691,13.319942, 12],
-                         ['<a target="_blank" href=/untertitel?t=map><strong>Untertitel</strong></a>', 52.47738,13.43544, 13],
-                         ['<a target="_blank" href=/KeuleBerlinerMundart?t=map><strong>Keule Berliner Mundart</strong></a>', 52.508471,13.455218, 13],
-                         ['<a target="_blank" href=/Kremanski?t=map><strong>Kremanski</strong></a>', 52.500203,13.417794, 13],
-                         
-
-                         ['<a target="_blank" href=/leplaytime?t=map><strong>le Playtime</strong></a>', 48.84096,2.370422, 14],
-                         ['<a target="_blank" href=/lebluenote?t=map><strong>Le Blue Note</strong></a>', 48.8867591,2.3464823, 15],
-                         ['<a target="_blank" href=/orphee?t=map><strong>Orphée</strong></a>', 48.880978,2.33437, 16],
-                         ['<a target="_blank" href=/lerosie?t=map><strong>Le Rosie</strong></a>', 48.886752,2.347134, 17],
-                         ['<a target="_blank" href=/lechina?t=map><strong>Le China</strong></a>', 48.849945,2.37377, 18],
-                         ['<a target="_blank" href=/lecafegibus?t=map><strong>Le Café Gibus</strong></a>', 48.8660549,2.3719272, 18],
-                         
-                       ];
-*/
 		var locations = [];
 		for (i = 0; i <= stages_formap.nb_stages-1; i++) {
 			if (stages_formap.stages[i].stage_web_address == "0") { stages_formap.stages[i].stage_web_address = stages_formap.stages[i].stage_username};
