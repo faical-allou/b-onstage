@@ -97,5 +97,25 @@ class Stage_model extends CI_Model
 		
 		return $this->db->get()->result_array();		
 	}
+
+	public function get_all_formap(){
+		$this->db->start_cache();
+		//cache stages
+		$this->db->select('users.id as stage_id, users.username as stage_username, users.company as stage_company, users.web_address as stage_web_address, users.lati as stage_lati, users.longi as stage_longi')
+		->from('users')
+		->join('users_groups', 'users.id = user_id')
+		->where('users_groups.group_id', 3);
+	
+		$this->db->stop_cache();
+	
+		$nb_stages = $this->db->count_all_results();
+	
+		//get stages
+		$stages = $this->db->get()->result_array();
+		$this->db->flush_cache();
+	
+			return array('nb_stages' => $nb_stages, 'stages' => $stages);
+			}
+	
 	
 }

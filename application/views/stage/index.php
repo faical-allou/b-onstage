@@ -14,6 +14,7 @@
 		</div>
 		</div>
 -->	
+	
 				
     <style type="text/css">
       html, body, #map-canvas { height: 300px;}
@@ -22,8 +23,11 @@
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyDcej0yq3y7ly-GiqDOe5hDhCDDzhhV3Z8">
     </script>
-    <script type="text/javascript">
-
+    
+	
+    <script type="text/javascript" charset="utf-8">
+    var stages_formap = <?= json_encode($stages_formap)?>;
+    
     function CenterParis(controlDiv, map) {
 
     	  // Set CSS for the control border
@@ -136,14 +140,11 @@
                                 }
                           ]
 
-        var styledMapOptions = {
-        	    name: 'Custom Style'
-       	};
+        var styledMapOptions = {name: 'Custom Style'};
         
         var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
 		
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
         map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
         
@@ -158,7 +159,7 @@
             new google.maps.Point(12, 35));
 */
         
-        var locations = [
+/*        var locations = [
                          ['<a target="_blank" href=/Valentinstueberl?t=map><strong>Valentin Stüberl</strong></a>', 52.483214,13.434167, 1],
                          ['<a target="_blank" href=/Schnapphahn?t=map><strong>Schnapphahn</strong></a>', 52.500851,13.417273, 2],
                          ['<a target="_blank" href=/liesl?t=map><strong>Liesl</strong></a>', 52.46897,13.43136, 3],
@@ -184,10 +185,19 @@
                          ['<a target="_blank" href=/lecafegibus?t=map><strong>Le Café Gibus</strong></a>', 48.8660549,2.3719272, 18],
                          
                        ];
-        
+*/
+		var locations = [];
+		for (i = 0; i <= stages_formap.nb_stages-1; i++) {
+			if (stages_formap.stages[i].stage_web_address == "0") { stages_formap.stages[i].stage_web_address = stages_formap.stages[i].stage_username};
+			locations[i] = ['<a target="_blank" ' + 'href=/' + stages_formap.stages[i].stage_web_address + '?t=map><strong>' + stages_formap.stages[i].stage_company + '</strong></a>', stages_formap.stages[i].stage_lati, stages_formap.stages[i].stage_longi, stages_formap.stages[i].stage_id];    
+			}
+		
+	
+		for (j = 0; j < locations.length; j++) {
+
         var infowindow = new google.maps.InfoWindow();
         var marker, j;
-        
+		}
               
         for (j = 0; j < locations.length; j++) {  
             marker = new google.maps.Marker({

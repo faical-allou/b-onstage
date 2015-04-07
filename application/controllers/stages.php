@@ -68,7 +68,8 @@ class Stages extends CI_Controller {
 		$per_page = 20;		
 		$stages = $this->stage_model->get_all('','',$per_page,$page);
 		$stages_list = '';
-
+		$stages_formap = $this->stage_model->get_all_formap();
+		
 		if($stages['nb_stages'] > 0) {
 
 			foreach($stages['stages'] as $sta){							
@@ -84,15 +85,15 @@ class Stages extends CI_Controller {
 					'stage_company'	=> $sta['company'],
 					'stage_location'=> $sta['country'].', '.$sta['city'],
 					'avatar_link'	=> anchor($stage_link, img(array('src' => site_url($sta['avatar']), 'width' => '120px', 'class' => 'ui-corner-all')), array('class' => 'mr-20')),
-					'stage_link'	=> $stage_link
+					'stage_link'	=> $stage_link,
 					//'facebook_link'	=> (!empty($sta['facebook'])) ? anchor($sta['facebook'],'<span aria-hidden="true" class="icon-facebook fs-28 grey"></span>') : false,
 					//'twitter_link'	=> (!empty($sta['twitter'])) ? anchor($sta['twitter'],'<span aria-hidden="true" class="icon-twitter fs-28 grey"></span>') : false,				
-					//'nb_members'	=> count($art['members']),
-					//'members'		=> $art['members'],
-					//'nb_concerts'	=> count($art['concerts']),
+					//'nb_members'		=> count($art['members']),
+					//'members'			=> $art['members'],
+					//'nb_concerts'		=> count($art['concerts']),
 					//'concerts'		=> $art['concerts'],
 					//'nb_tracks'		=> count($art['tracks']),
-					//'tracks'		=> $art['tracks']		
+					//'tracks'			=> $art['tracks']		
 
 				);					
 
@@ -148,7 +149,8 @@ class Stages extends CI_Controller {
 			'nb_pages'			=> $nb_pages,
 			'per_page'			=> $per_page,
 			'page'				=> $page,
-			'social_sidebar'	=> $social_sidebar			
+			'social_sidebar'	=> $social_sidebar,
+			'stages_formap'		=> $stages_formap				
 
 		);
 
