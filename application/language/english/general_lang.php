@@ -187,7 +187,7 @@ $lang['togglesize'] = 'Toggle size';
 $lang['close'] = 'Close';
 $lang['albums'] = 'enalbum(s)';
 $lang['youhave'] = 'You have';
-$lang['showrecom'] = 'Show recommendations';
+$lang['showrecom'] = 'Show help';
 $lang['seestage'] = 'See stage';
 $lang['refuse'] = 'refuse';
 $lang['see'] = 'See';
@@ -996,7 +996,7 @@ $lang['users_page_videos_notfound'] = 'No video yet';
 $lang['users_page_flux_addtitle'] = 'Video deleted';
 $lang['users_page_flux_add'] = 'Add a Youtube account';
 $lang['users_page_flux_input'] = 'I add a Youtube account';
-$lang['users_page_flux_notfound'] = 'Add the username located in the Youtube URL';
+$lang['users_page_flux_notfound'] = ' ';
 $lang['users_page_media_add_success'] = 'No account registered yet';
 $lang['users_page_media_add_error1'] = 'Account deleted';
 $lang['users_page_flux_deleted'] = 'Media added';
@@ -1113,6 +1113,15 @@ $lang['stages_searchshowmore'] 	='Display more...';
 $lang['stages_searchby'] 	='Search by name';
 $lang['stages_searchresutls'] 	='Results';
 			
+$lang['legend'] 				='Legend';
+
+$lang['room_size_legend'] 		='Approximate room size, in number of people';
+$lang['stage_size_legend'] 		='Approximate stage size in number of musicians';
+$lang['microphone_legend'] 		='Availability of microphone';
+$lang['speakers_legend'] 		='Availability of loudspeakers';
+$lang['amplification_legend'] 	='Mixing Console';
+$lang['lights_legend'] 			='Availability of spotlights';
+
 			
 // Shows page			
 $lang['shows_sortby1'] 	='Sort by date';

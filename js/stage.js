@@ -96,6 +96,10 @@
 					});				
 				});
 				
+				/**********INIT RECOMMENDATIONS*********/
+				$('.recommendations').alert();				
+
+				
 				//function show
 				function show(){
 					page = 1;

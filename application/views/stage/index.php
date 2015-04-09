@@ -223,8 +223,61 @@
 	<div class="container_12">	
 		<div id="map-canvas" class= "grid_12 mt-30"></div>
 		
+			
+		
+		
 		<div class="grid_9 mb-20 mt-20">	
-			<!--artists list-->
+		
+		<!--legend-->
+		<div class="recommendations m-10">
+					<span class="dt">  <?php echo lang("legend") ?> </span>
+					<div class="dt">
+						<div class="dtc ta-c">
+							<div class="p-10">
+								<i class="fa fa-users"></i>
+								<p class="grey fs-12"><?php echo lang("room_size_legend") ?></p>
+							</div>	
+						</div>
+						
+						<div class="dtc ta-c">
+							<div class="p-10">
+								<i class="fa fa-square-o"></i>
+								<p class="grey fs-12"><?php echo lang("stage_size_legend") ?></p>
+							</div>	
+						</div>
+						
+						<div class="dtc ta-c">
+							<div class="p-10">
+								<i class="fa fa-microphone"></i>
+								<p class="grey fs-12"><?php echo lang("microphone_legend") ?></p>
+							</div>	
+						</div>
+						
+						<div class="dtc ta-c">
+							<div class="p-10">
+								<i class="fa fa-volume-off"></i>
+								<p class="grey fs-12"><?php echo lang("speakers_legend") ?></p>
+							</div>	
+						</div>
+						
+						<div class="dtc ta-c">
+							<div class="p-10">
+								<i class="fa fa-sliders"></i>
+								<p class="grey fs-12"><?php echo lang("amplification_legend") ?></p>
+							</div>	
+						</div>
+						
+						<div class="dtc ta-c">
+							<div class="p-10">
+								<i class="fa fa-lightbulb-o"></i>
+								<p class="grey fs-12"><?php echo lang("lights_legend") ?></p>
+							</div>	
+						</div>
+												
+						</div>
+			</div>			
+		
+			<!--stage list-->
 			<div class="bs-black">
 				<div class="fs-16 p-10 white title bg-black ui-corner-top"><?php echo lang("stages_searchresutls") ?></div> 
 				<div id="stages-list">
@@ -232,7 +285,7 @@
 				</div>	
 			</div>	
 			
-			<!--show more artists-->
+			<!--show more stages-->
 			<?php if($nb_pages > 1) {?>
 			<div class="mt-20">
 				<button id="show-more-stages" style="width:100%;"><?php echo lang("stages_searchshowmore") ?></button>

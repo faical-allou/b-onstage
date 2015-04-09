@@ -22,6 +22,48 @@
 					<?php } ?>
 				</ul>
 			</div>
+			<div class="fs-14 mb-5 mt-5">
+				<span class= "fa-stack fa">
+				<i class="fa fa-users fa-stack-1x"></i>
+				</span>
+				<span class="fs-14"><?=$room_size?></span>
+					
+				<span class= "fa-stack fa">
+				<i class="fa fa-square-o fa-stack-1x"></i>
+				</span>
+				<span class="fs-14"><?=$stage_size?></span>
+				
+				<span class= "fa-stack fa mr-5">
+				<i class="fa fa-microphone fa-stack-1x"></i>
+				<?php if ($stage_microphone=="") :?>
+ 				<i class="fa fa-ban fa-stack-2x red"></i>
+				<?php endif; ?>
+				</span>
+
+				<span class= "fa-stack fa mr-5">
+				<i class="fa fa-volume-off fa-stack-1x"></i>
+				<?php if ($stage_speakers=="") : ?>
+ 				<i class="fa fa-ban fa-stack-2x red"></i>
+				<?php endif; ?>
+				</span>
+
+				<span class= "fa-stack fa mr-5">
+				<i class="fa fa-sliders fa-stack-1x"></i>
+				<?php if ($stage_amplification=="") : ?>
+ 				<i class="fa fa-ban fa-stack-2x red"></i>
+				<?php endif; ?>
+				</span>
+				
+				<span class= "fa-stack fa mr-5">
+				<i class="fa fa-lightbulb-o fa-stack-1x"></i>
+				<?php if ($stage_lights=="") : ?>
+ 				<i class="fa fa-ban fa-stack-2x red"></i>
+				<?php endif; ?>
+				</span>
+				
+				
+		</div>	
+		
 		</div>	
 	</div>
 </div>	

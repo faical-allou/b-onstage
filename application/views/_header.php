@@ -29,6 +29,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
     <style>@import url(/css/960.css) (min-width:960px) and (max-width:1199px);</style>
 	<style>@import url(/css/1200.min.css) (min-width:1200px);</style>
 
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></link>
         
 	<!--jquery, jquery ui-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>

@@ -186,7 +186,7 @@ $lang['togglesize'] = 'Basculer taille';
 $lang['close'] = 'Fermer';
 $lang['albums'] = 'album(s)';
 $lang['youhave'] = 'Vous avez';
-$lang['showrecom'] = 'Afficher les recommendations';
+$lang['showrecom'] = 'Afficher l\'aide';
 $lang['seestage'] = 'Voir scène';
 $lang['refuse'] = 'refuser';
 $lang['see'] = 'Voir';
@@ -934,7 +934,7 @@ $lang['users_page_videos_notfound'] = 'Aucune vidéo enregistrée';
 $lang['users_page_flux_addtitle'] = 'La Vidéo a été supprimée';
 $lang['users_page_flux_add'] = 'Ajouter un utilisateur Youtube';
 $lang['users_page_flux_input'] = 'J\'ajoute un flux de vidéos';
-$lang['users_page_flux_notfound'] = 'Saisir le nom d\'utilisateur situé dans l\'url de la page Youtube.';
+$lang['users_page_flux_notfound'] = ' ';
 $lang['users_page_media_add_success'] = 'Aucun flux enregistré';
 $lang['users_page_media_add_error1'] = 'Le Flux a été supprimé';
 $lang['users_page_flux_deleted'] = 'Le Média a été ajouté';
@@ -1057,6 +1057,17 @@ $lang['artists_searchshowmore'] = 'Afficher plus d\'Artistes';
 $lang['stages_searchshowmore'] = 'Afficher plus de Scènes';
 $lang['stages_searchby'] = 'Rechercher par nom';
 $lang['stages_searchresutls'] 	='Resultats de la recherche';
+
+$lang['legend'] 				='Legende';
+
+$lang['room_size_legend'] 		='Taille de la salle en nombre de personnes aproximatif';
+$lang['stage_size_legend'] 		='Taille de la scène en nombre de musiciens approximatif';
+$lang['microphone_legend'] 		='Mise à disposition d\'un microphone';
+$lang['speakers_legend'] 		='Mise à disposition de Hauts parleurs';
+$lang['amplification_legend'] 	='Table de mixage / Amplification';
+$lang['lights_legend'] 			='Disponibilité de spotlights';
+
+
 
 
 // Shows page
