@@ -212,6 +212,7 @@ $lang['checkall'] = 'Check all';
 $lang['uncheckall'] = 'Uncheck all';
 $lang['selected'] = 'Selected';
 $lang['where'] = 'Where?';
+$lang['availability'] = 'Availability';
 
 
 // Header

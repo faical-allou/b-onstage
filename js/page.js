@@ -507,10 +507,96 @@
 				
 				/***********INIT MEDIA**********/
 				$('#media').media('init', {user_id :user_id, user_state : user_state});	
+
+				
+				/***********INIT buttons**********/
+				//init reservation requets
+				$('.book-concert').button();
+				$('body').on('click', '.book-concert', function(event){					
+					stage_id = $(event.currentTarget).data('stage-id');
+					event_id = $(event.currentTarget).data('event-id');					
+					reservation_request($(this), event_id, stage_id);					
+				});				
+
+				//init reservation requets
+				$('.request-info').button();
+
+				
 				
 			});
 		}
 	};
+
+function reservation_request(button, event_id, stage_id){
+		var reservation_dialog = $('<div>')
+		.dialog({						
+			appendTo		: 'body',	
+			draggable		: false,
+			resizable		: false,
+			width			: 600,						
+			modal			: true,
+			open			: function(){							
+				$.ajax({
+					url			: '/reservation/request/' + event_id,
+					dataType	: 'json',	
+					success		: function(data){
+						reservation_dialog.append(data.msg).dialog('option','position','center');
+					}	
+				});							
+			},
+			buttons: 
+			[
+				{
+					text	: document.getElementById("validatetxt").innerHTML,								
+					'class'	: 'ui-purple',									
+					click: function() {									
+						if($('#accept-terms').prop('checked')){
+							$.ajax({
+								url			: '/reservation/send/' + event_id + '/' + stage_id,
+								dataType	: 'json',											
+								success		: function(data){
+								
+									switch(data.status){
+										case 'SUCCESS'  : 
+											show_servor_message(data.msg);
+											var parent = button.parent();
+											button.remove();
+											$('<a>')
+											.appendTo(parent)
+											.attr('style','font-size:1em')
+											.attr('href', '/user/reservations')
+											.addClass('show-reservation ui-purple')
+											.html('Voir ma réservation')
+											.button();														
+											break;
+										case 'ERROR'	: 
+											show_servor_message(data.msg);
+											break;
+										default			: break;												
+									}
+								}
+							});									
+							$(this).dialog('close').remove();
+						}
+						else
+							$('#accept-terms').parent().addClass('ui-state-error');
+					}
+				},
+				{
+					text:document.getElementById("canceltxt").innerHTML,
+					click: function() {																				
+						$(this).dialog('close').remove();															
+					}
+				}
+			]
+		});
+		
+		$(window).resize(function(){
+			reservation_dialog.dialog('option', 'position', 'center');
+		});
+		
+	};	
+	
 	
   $.fn.page = function( method ) {
 

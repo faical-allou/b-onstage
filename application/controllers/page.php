@@ -199,7 +199,7 @@ class Page extends CI_Controller {
 		foreach($concerts as $concert){
 			$date_concert = date_format(date_create($concert['date_start']), 'j').nbs();
 			$date_concert .= get_month(date_format(date_create($concert['date_start']), 'n'));
-			$date_concert .= nbs().'à'.nbs();
+			$date_concert .= nbs().'-'.nbs();
 			$date_concert .= date_format(date_create($concert['date_start']), 'G\hi');		 
 					
 			$data = array(				
@@ -222,6 +222,52 @@ class Page extends CI_Controller {
 			);
 
 			$list_concerts .= $this->load->view('page/tpl_concert', $data, true);			
+		}
+		
+		/********** Events **********/
+		$date_start = date('Y-m-d 00:00:00');
+		$date_end = date('Y-m-d 23:59:59', strtotime("+1 years"));
+		
+		$events = $this->event_model->get_all('open', $date_start, $date_end, $user_page['city'], $user_page['id'],25, 1);
+		$nb_events = count($events);
+		$title_events = lang('availability');
+		$list_events = '';
+		
+		foreach($events as $event){
+			$date_event = date_format(date_create($event['date_start']), 'j').nbs();
+			$date_event .= get_month(date_format(date_create($event['date_start']), 'n'));
+			$date_event .= nbs().'-'.nbs();
+			$date_event .= date_format(date_create($event['date_start']), 'G\hi');
+			switch($event['payment_type']){
+				case 1 :
+					$payment_type = lang("payment_notset");
+					break;
+				case 2 :
+					$payment_type = lang("users_calendar_create_non_renum");
+					break;
+				case 3 :
+					$payment_type = ($event['payment_amount'] > 0) ? lang("users_calendar_create_cachet").round($event['payment_amount'],2).'€ '.br() : '';
+					$payment_type .= ($event['percent_drink'] > 0) ? round($event['percent_drink'],2).' '.lang("users_calendar_create_conso").br() : '';
+					$payment_type .= ($event['percent_entry'] > 0) ? round($event['percent_entry'],2).'% '.lang("users_calendar_create_tickets").br() : '';
+					$payment_type .= ($event['refund_fees'] > 0) ? lang("users_calendar_create_remb") : '';
+					break;
+				default : break;
+			};
+				
+			$data = array(
+					'event'				=> $event,
+					'date_start'		=> date_create($event['date_start']),
+					'date_end'			=> date_create($event['date_end']),
+					'payment_type'		=> $payment_type,
+					'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : 'Gratuit',
+					'event_location'	=> $event['stage_city'].', '.$event['stage_country'],
+					'event_genres'		=> implode(', ',$event['genres']),
+					'stage_link'		=> !empty($event['stage_web_address']) ?  site_url($event['stage_web_address']) : site_url('page/'.$event['stage_username']),
+					'reserved'			=> in_array($this->user['id'], $event['reservations_artist_id']) ? true : false
+						
+			);
+		
+			$list_events .= $this->load->view('concerts/tpl_open_event_light', $data, true);
 		}
 		
 		
@@ -483,7 +529,10 @@ class Page extends CI_Controller {
 			'photos'					=> $photos,						
 			'title_in_photos'			=> $title_in_photos,
 			'title_fl_photos'			=> $title_fl_photos,
-			'social_sidebar'			=> $social_sidebar			
+			'social_sidebar'			=> $social_sidebar,
+			'list_events'				=> $list_events,
+			'title_events'				=> $title_events,
+			'nb_events'					=> $nb_events,
 		);
 		
 		$this->footer['scripts'] = array(

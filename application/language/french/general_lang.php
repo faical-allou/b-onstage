@@ -211,6 +211,7 @@ $lang['checkall'] = 'Cocher tout';
 $lang['uncheckall'] = 'Décocher tout';
 $lang['selected'] = 'Sélectionné(s)';
 $lang['where'] = 'Où?';
+$lang['availability'] = 'Disponibilité';
 
 
 // Header

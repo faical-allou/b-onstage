@@ -32,8 +32,8 @@
 							<span class="ml-5">								
 								<?=anchor(site_url('login/'.urlencode(uri_string())), lang("signin_title"), array('class'=>'ui-purple'))?>								
 							</span>
-							<span class="ml-5 mt-10">								
-							<a class="ui-dark contact_us" href="javascript:void(0)"><?php echo lang("request_info") ?></a> 
+							<span class="ml-5 ">								
+							<a class="ui-dark contact_us mt-10" href="javascript:void(0)"><?php echo lang("request_info") ?></a> 
 							</span>
 							
 						</div>
@@ -150,12 +150,12 @@
 						<?php } ?>					
 
 						<?php foreach($infos as $info) { ?>							
-							<div class="read-bloc p-10 fs-16 title grey clearfix" id="read-bloc-<?=$info['id']?>" data-val="<?=$info['val']?>">
-								<div class="left ta-r bold" style="width:20%;"><?=$info['title']?></div>
+							<div class="read-bloc p-10 fs-16 grey clearfix dib" id="read-bloc-<?=$info['id']?>" data-val="<?=$info['val']?>">
+								<div class="left ta-r" style="width:auto;"><?=$info['title']?></div>
 								<?php if($info['type'] == 'url') { ?>
 									<a href="http://<?=$info['val']?>" class="read-bloc-val purple db left ml-20" data-type="<?=$info['type']?>"><?=$info['val']?></a>
 								<?php } else { ?>	
-									<div class="read-bloc-val left ml-20" data-type="<?=$info['type']?>"><?=$info['val']?></div>
+									<div class="read-bloc-val left ml-20 bold" data-type="<?=$info['type']?>"><?=$info['val']?></div>
 								<?php } ?>									
 							</div>
 							<?php if($user_state==2){ ?>
@@ -181,9 +181,23 @@
 						<?php } } ?>
 					</div>
 				</div>
+
+				<!--bloc description-->
+				<div class="ui-corner-all bg-white bs-black">
+					<?=$title_description?>				
+					<div class="p-20">							
+						<?php if(empty($description)) { ?>
+							<p class="grey fs-15"><i><?php echo lang("users_page_desc_notfound") ?></i></p>														
+						<?php } ?>																
+						<div id="description-page">
+							<?=$description?>							
+						</div>
+					</div>	
+				</div>	
+				
 				
 				<!--bloc social links-->
-				<div class="ui-corner-all mb-20 bg-white bs-black">
+				<div class="ui-corner-all mb-20 mt-20 bg-white bs-black">
 					<?=$title_social_links?>
 					<div class="p-20">
 						<?php if($empty_social_links) { ?>							
@@ -222,18 +236,7 @@
 					</div>	
 				</div>			
 				
-				<!--bloc description-->
-				<div class="ui-corner-all bg-white bs-black">
-					<?=$title_description?>				
-					<div class="p-20">							
-						<?php if(empty($description)) { ?>
-							<p class="grey fs-15"><i><?php echo lang("users_page_desc_notfound") ?></i></p>														
-						<?php } ?>																
-						<div id="description-page">
-							<?=$description?>							
-						</div>
-					</div>	
-				</div>				
+			
 			</div>		
 			
 			
@@ -295,14 +298,7 @@
 									</div>	
 								<?php } ?>	
 							</div>	
-							
-							<!--albums-->
-							
-							
-							
-							
-							<!--playlists-->
-							
+													
 						</div>
 					</div>
 					
@@ -494,7 +490,25 @@
 			</div>
 			
 		</div>
-	</div>
+
+
+			<!--event list-->							
+				<div class="bs-black bg-white ui-corner-all">
+					<div class="title-page"><?=$title_events?></div>					
+					<?php if($nb_events > 0) { ?>						
+						<div>
+							<?=$list_events?>						
+						</div>	
+					<?php } else { ?>
+						<div class="p-20">
+							<p class="fs-15 grey"><i><?php echo lang("users_page_shows_notfound") ?></i></p>
+						</div>
+					<?php } ?>
+					
+				</div>				
+		
+	</div>	
+	
 	
 	
 	<!--sidebar page-->
