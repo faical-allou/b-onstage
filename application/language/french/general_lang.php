@@ -1061,7 +1061,7 @@ $lang['stages_searchresutls'] 	='Resultats de la recherche';
 
 $lang['legend'] 				='Legende';
 
-$lang['room_size_legend'] 		='Taille de la salle en nombre de personnes aproximatif';
+$lang['room_size_legend'] 		='Taille de la salle en nombre de personnes approximatif';
 $lang['stage_size_legend'] 		='Taille de la scène en nombre de musiciens approximatif';
 $lang['microphone_legend'] 		='Mise à disposition d\'un microphone';
 $lang['speakers_legend'] 		='Mise à disposition de Hauts parleurs';

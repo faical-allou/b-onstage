@@ -144,14 +144,14 @@
 				<!--bloc informations-->
 				<div class="ui-corner-all mb-20 bg-white bs-black">
 					<?=$title_infos?>					
-					<div class="p-20">
+					<div class="p-5">
 						<?php if($empty_infos) { ?>
 							<p class="grey fs-15"><i><?php echo lang("users_page_modpro_noinfo") ?></i></p>							
 						<?php } ?>					
 
 						<?php foreach($infos as $info) { ?>							
 							<div class="read-bloc p-10 fs-16 grey clearfix dib" id="read-bloc-<?=$info['id']?>" data-val="<?=$info['val']?>">
-								<div class="left ta-r" style="width:auto;"><?=$info['title']?></div>
+								<div class="left ta-r" style="width:auto;"><?=$info['title']." :"?></div>
 								<?php if($info['type'] == 'url') { ?>
 									<a href="http://<?=$info['val']?>" class="read-bloc-val purple db left ml-20" data-type="<?=$info['type']?>"><?=$info['val']?></a>
 								<?php } else { ?>	
@@ -491,7 +491,7 @@
 			
 		</div>
 
-
+		<?php if($user_group_page =='stage') { ?>
 			<!--event list-->							
 				<div class="bs-black bg-white ui-corner-all">
 					<div class="title-page"><?=$title_events?></div>					
@@ -505,7 +505,9 @@
 						</div>
 					<?php } ?>
 					
-				</div>				
+				</div>	
+							
+		<?php } ?>
 		
 	</div>	
 	
