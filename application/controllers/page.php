@@ -225,7 +225,7 @@ class Page extends CI_Controller {
 		}
 		
 		/********** Events **********/
-		$date_start = date('Y-m-d 00:00:00'),strtotime("+14 days");
+		$date_start = date('Y-m-d 00:00:00',strtotime("+14 days"));
 		$date_end = date('Y-m-d 23:59:59', strtotime("+1 years"));
 		
 		$events = $this->event_model->get_all('open', $date_start, $date_end, $user_page['city'], $user_page['id'],50, 1);
