@@ -808,11 +808,8 @@ $lang['users_home_txt_bottom'] = 'Details made public   ';
 $lang['users_home_modify'] = 'Modify 	';
 $lang['users_home_show_profile'] = 'My profile ';
 $lang['users_home_profile_txt'] = '<p class="grey fs-12 bold">Complete your profile</p>	
-	<p class="grey fs-12 bold">The more you add to your profile the more appeal</p>	
-	<p class="grey fs-12 bold"> it is to the public  so add photos and links.</p>	
-	<p class="grey fs-12 bold">To be selected, Stages have to listen to your sounds</p>	
-	<p class="grey fs-12 bold">so add your music.</p>	
-	<p class="grey fs-12 bold">Add more links.</p>';
+	<p class="grey fs-12 bold">The more you add to your profile the more appealing it is to the public so add photos and media.</p>	
+	<p class="grey fs-12 bold">To be selected, Stages will want to listen to your music.</p>';	
 $lang['users_home_username_txt'] = 'Enter your username';
 $lang['users_home_username_success'] = 'Username modified';
 $lang['users_home_username_error1'] = 'The username is already taken';
