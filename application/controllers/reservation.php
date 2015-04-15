@@ -28,9 +28,9 @@ class Reservation extends CI_Controller {
 					'pseudo'				=> $artist['username'],
 					'reservation_id'		=> $reservation_id,
 					'stage_name'			=> $stage['company'],
-					'event_date'			=> date_format($event_date,'d/m/Y').' '.lang("to2").' '.date_format($event_date,'H:i'),  
+					'event_date'			=> date_format($event_date,'d/m/Y').' '.lang("at").' '.date_format($event_date,'H:i'),  
 					'url_profil'			=> (!empty($artist['web_address'])) ? site_url($artist['web_address']) : site_url('page/'.$artist['username']),
-					'url_new_reservation'	=> site_url('concert')
+					'url_new_reservation'	=> site_url('concerts')
 				);
 				$html_message = $this->parser->parse('user/email/delete_reservation', $data, TRUE);				
 				$this->email->from('contact@b-onstage.com	', 'b-onstage');

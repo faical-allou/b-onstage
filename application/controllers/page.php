@@ -217,7 +217,7 @@ class Page extends CI_Controller {
 				'company'				=> $concert['company'],
 				'link_url'				=> empty($concert['web_address']) ? site_url($concert['web_address']) : site_url('page/'.$concert['username']),
 				'location'				=> $concert['city'].', '.$concert['country'],
-				'entry'					=> empty($concert['entry']) ? 'Gratuit' : round($concert['entry'],2),
+				'entry'					=> empty($concert['entry']) ? '0' : round($concert['entry'],2),
 				'concert_url'			=> site_url('event/'.$concert['id'])				
 			);
 
@@ -259,7 +259,7 @@ class Page extends CI_Controller {
 					'date_start'		=> date_create($event['date_start']),
 					'date_end'			=> date_create($event['date_end']),
 					'payment_type'		=> $payment_type,
-					'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : 'Gratuit',
+					'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : '0',
 					'event_location'	=> $event['stage_city'].', '.$event['stage_country'],
 					'event_genres'		=> implode(', ',$event['genres']),
 					'stage_link'		=> !empty($event['stage_web_address']) ?  site_url($event['stage_web_address']) : site_url('page/'.$event['stage_username']),

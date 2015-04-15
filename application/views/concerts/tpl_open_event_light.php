@@ -17,7 +17,7 @@
 			
 			<div class="dib right">
 			<?php if($reserved) { ?>
-			<a href="<?=site_url('user/reservations')?>" class="show-reservation ui-purple db", style= "font-size:1em"><?php echo lang("book_button1") ?></a> 
+			<a href="<?=site_url('user/reservations')?>" class="show-reservation ui-purple db"><?php echo lang("book_button1") ?></a> 
 			<?php } else { ?>
 			<button class="book-concert ui-green db" data-event-id="<?=$event['id']?>" data-stage-id="<?=$event['stage_id']?>", style= "font-size:1em"><?php echo lang("book_button2") ?></button>					
 			<?php } ?>

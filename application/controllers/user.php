@@ -1381,7 +1381,7 @@ class User extends CI_Controller {
 					'location'			=> $reservation['stage_city'].', '.$reservation['stage_country'],
 					'payment_type'		=> implode(' + ', $payment_type),
 					'musical_genre'		=> implode(', ', $musical_genre),
-					'entry'				=> ($reservation['entry'] == 0) ? 'Gratuit' : round($reservation['entry'], 2),
+					'entry'				=> ($reservation['entry'] == 0) ? '0' : round($reservation['entry'], 2),
 					'stage_link'		=> !empty($reservation['stage_web_address']) ?  site_url($reservation['stage_web_address']) : site_url('page/'.$reservation['stage_username'])
 				);				
 				

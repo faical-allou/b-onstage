@@ -32,7 +32,7 @@
 				<div class="mb-5"><?=form_label(lang("signup_form_artist_name"), 'company',$attrs_label)?></div>
 				<div><?=form_input($company).form_error($company['name']);?></div>											
 			</div>	
--->			<!--username		
+			<!--username		
 			<div class="mb-10">			
 				<div class="mb-5"><?=form_label($this->lang->line('username'), 'username',$attrs_label)?></div>
 				<div><?=form_input($username).form_error($username['name'])?></div>					
@@ -52,7 +52,7 @@
 				<div class="mb-5"><?=form_label($this->lang->line('password_confirm'), 'password_confirm',$attrs_label)?></div>
 				<div><?=form_password($password_confirm).form_error($password_confirm['name'])?></div>
 			</div>	
--->			<!--terms of services
+ 			<!--terms of services
 			<div class="mb-10">
 				<div>
 					<label>

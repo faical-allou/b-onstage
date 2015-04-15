@@ -195,7 +195,7 @@ class Concerts extends CI_Controller {
 						'date_end'			=> date_create($event['date_end']),
 						'event_location'	=> $event['stage_city'].', '.$event['stage_country'],
 						'event_genres'		=> implode(', ',$event['genres']),
-						'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : 'Gratuit',	
+						'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : '0',	
 						'payment_type'		=> $payment_type,
 						'stage_link'		=> !empty($event['stage_web_address']) ?  site_url($event['stage_web_address']) : site_url('page/'.$event['stage_username']),
 						'reserved'			=> in_array($this->user['id'], $event['reservations_artist_id']) ? true : false
@@ -250,7 +250,7 @@ class Concerts extends CI_Controller {
 						'date_end'			=> date_create($event['date_end']),
 						'event_location'	=> $event['stage_city'].', '.$event['stage_country'],
 						'event_genres'		=> implode(', ',$event['genres']),	
-						'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : 'Gratuit',
+						'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : '0',
 						'stage_link'		=> !empty($event['stage_web_address']) ?  site_url($event['stage_web_address']) : site_url('page/'.$event['stage_username']),
 						'artist_link'		=> !empty($event['artist_web_address']) ?  site_url($event['artist_web_address']) : site_url('page/'.$event['artist_username'])
 					);
@@ -331,7 +331,7 @@ class Concerts extends CI_Controller {
 							'date_start'		=> date_create($event['date_start']),
 							'date_end'			=> date_create($event['date_end']),
 							'payment_type'		=> $payment_type,
-							'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : 'Gratuit',
+							'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : '0',
 							'event_location'	=> $event['stage_city'].', '.$event['stage_country'],
 							'event_genres'		=> implode(', ',$event['genres']),
 							'stage_link'		=> !empty($event['stage_web_address']) ?  site_url($event['stage_web_address']) : site_url('page/'.$event['stage_username']),
@@ -348,7 +348,7 @@ class Concerts extends CI_Controller {
 							'date_end'			=> date_create($event['date_end']),
 							'event_location'	=> $event['stage_city'].', '.$event['stage_country'],
 							'event_genres'		=> implode(', ',$event['genres']),
-							'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : 'Gratuit',								
+							'entry'				=> !empty($event['entry']) ? round($event['entry'], 2).' ' : '0',								
 							'stage_link'		=> !empty($event['stage_web_address']) ?  site_url($event['stage_web_address']) : site_url('page/'.$event['stage_username']),
 							'artist_link'		=> !empty($event['artist_web_address']) ?  site_url($event['artist_web_address']) : site_url('page/'.$event['artist_username'])
 							);			

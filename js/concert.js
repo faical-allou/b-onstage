@@ -198,7 +198,7 @@
 				$('body').on('click', '.book-concert', function(event){					
 					stage_id = $(event.currentTarget).data('stage-id');
 					event_id = $(event.currentTarget).data('event-id');					
-					reservation_request($(this), event_id, stage_id);					
+					reservation_request($(this), event_id, stage_id);
 				});				
 
 				//init reservation requets
@@ -338,6 +338,7 @@
 											}
 										});									
 										$(this).dialog('close').remove();
+										location.reload();
 									}
 									else
 										$('#accept-terms').parent().addClass('ui-state-error');

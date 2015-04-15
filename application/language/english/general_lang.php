@@ -11,13 +11,6 @@ $lang['password_change_successful'] 	 	 = 'Password Successfully Changed';
 $lang['password_change_unsuccessful'] 	  	 = 'Unable to Change Password';
 $lang['forgot_password_successful'] 	 	 = 'Password Reset Email Sent';
 $lang['forgot_password_unsuccessful'] 	 	 = 'Unable to Reset Password';
-$lang['forgot_password_email1_subject'] 	 = 'Forgotten Password Verification';
-$lang['forgot_password_email1_txt1'] 		 = 'Reset Password for';
-$lang['forgot_password_email1_txt2'] 		 = 'Please click this link to';
-$lang['forgot_password_email1_txt3'] 		 = 'Reset Your Password';
-$lang['forgot_password_email2_subject'] 	 = 'New Password';
-$lang['forgot_password_email2_txt1'] 		 = 'New Password for';
-$lang['forgot_password_email2_txt2'] 		 = 'Your password has been reset to';
 
 // Activation
 $lang['activate_successful'] 		  	     = 'You\re account is active, go get the gigs!';
@@ -189,7 +182,7 @@ $lang['albums'] = 'enalbum(s)';
 $lang['youhave'] = 'You have';
 $lang['showrecom'] = 'Show help';
 $lang['seestage'] = 'See stage';
-$lang['refuse'] = 'refuse';
+$lang['refuse'] = 'Reject';
 $lang['see'] = 'See';
 $lang['add'] = 'Add';
 $lang['playlists'] = 'Playlists';
@@ -213,7 +206,7 @@ $lang['uncheckall'] = 'Uncheck all';
 $lang['selected'] = 'Selected';
 $lang['where'] = 'Where?';
 $lang['availability'] = 'Availability';
-
+$lang['time'] = 'Time';
 
 // Header
 $lang['header_book_date'] = 'Make a Reservation';
@@ -358,6 +351,7 @@ $lang['footer_madein'] = 'Proudly made and operating in Berlin and Paris';
 
 
 // Contact us		
+$lang['contactus'] = 'Contact us';
 $lang['contactus_subject'] = 'Subject';
 $lang['contactus_message'] = 'Message';
 $lang['contactus_yourname'] = 'Your name';
@@ -769,22 +763,8 @@ $lang['signup_form_title4'] ='Use at least seven characters';
 $lang['signup_form_title5'] ='Confirm your password ';
 $lang['signup_active_txt'] ='<p>You will receive an email with instruction to validate your account.</p>	
 	<p>If it doesn’t appear in your inbox please <strong>check your spam folder.</p>	
-	<p style="font-weight:bold;">If you have a problem, please contact support@b-onstage.com </p>
+	<p>If you have a problem, please contact support@b-onstage.com </p>
 	<p>Only one click away! </p>';
-$lang['signup_active_email_subj'] ='Activate your account    ';
-$lang['signup_active_email_txt1'] ='<h1 style="font-size:22px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">To validate your account b-onstage</h1>	
-	<br />	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">To validate your account please click on the link below:</div>';
-$lang['signup_active_email_txt2'] ='Activate the account ';
-$lang['signup_active_email_txt3'] ='<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If it doesn’t work please send us a note from the form on the Contact us section of the website b-onstage. </p>	
-	<br />	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>	
-	<br />	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please do not reply to this email. </p>	
-	<br />	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you see any problem with the website, please send an email to support@b-onstage.com.</p>	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We are improving the site everyday. If you want to send us a feedback please send us an email to suggestion@b-onstage.com,</p>	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you want to unsubscribe to all our email please click here.</p>';
 $lang['signup_terminate_success'] ='<p>Your account is now active,</p>	
 	<p>It’s up to you now.</p>	
 	<p>We are improving the site everyday, if you want to send us a feedback please send us an email to suggestion@b-onstage.com.</p>	
@@ -814,40 +794,6 @@ $lang['signup_stage_step_2_txt'] = '<p class="fs-16 title">Confirmed</p>
 			<p class="fs-16 title">We have received your request.</p>
 			<p class="fs-16 title">Our team will contact you soon to set up a visit.</p>
 			<p class="fs-16 title">We will explain you in more details ow it works and how you can benefit from it.</p>';
-$lang['signup_stage_email_subject'] = 'Registration';
-$lang['signup_stage_email_txt'] = '	<h1 style="font-size:18px;font-family:\'Arial\',sans-serif;color:#8e2c86;">Hi,</h1>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We have received your request.</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Our team will contact you soon to set up a visit.</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We will explain you in more details ow it works and how you can benefit from it.</p>
-	<br />
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">See you soon!</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>
-	<br />
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please do not reply to this email.</p>	
-	<br />
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you see any problem with the website, please send an email to support@b-onstage.com.</p>
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We are improving the site everyday, if you want to send us a feedback please send us an email to suggestion@b-onstage.com.</p>
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you want to unsubscribe to all our email please click here.</p>';
-$lang['signup_stage_confirmation_email_subject'] = 'Confirmation of your registration';
-$lang['signup_stage_confirmation_email_txt1'] = '<p style="font-size:18px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Welcome to b-onstage,</p>	
-	<br />
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Your credentials:</p>';
-$lang['signup_stage_confirmation_email_txt2'] = 'You can now:</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Create your own Events</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Search for artists</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Add content to your profile</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">To access your profile,';
-$lang['signup_stage_confirmation_email_txt3'] = 'To understand how b-onstage works,';
-$lang['signup_stage_confirmation_email_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please let us know if you need more information, sned us an email at: support@b-onstage.com</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Now… the Stage is yours</p>
-	<br/>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>
-	<br />
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please do not reply to this email.</p>	
-	<br />
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you see any problem with the website, please send an email to support@b-onstage.com.</p>
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We are improving the site everyday, if you want to send us a feedback please send us an email to suggestion@b-onstage.com.</p>
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you want to unsubscribe to all our email please click here.</p>';	
 
 
 // Users home		
@@ -1041,7 +987,7 @@ $lang['users_rese_is_expired'] = 'Too late';
 $lang['users_rese_delayfees'] = 'Time left to pay';
 $lang['users_rese_cancel'] = 'Cancel reservation';
 $lang['users_rese_enterprice'] = 'Ticket price';
-$lang['users_rese_fees'] = 'Remuneration';
+$lang['users_rese_fees'] = 'Cost if Selected';
 $lang['users_cost_ifselected'] = 'Cost if Selected';
 $lang['users_rese_renumartist'] = 'Remuneration';
 $lang['users_rese_status1'] = 'Pending payment';
@@ -1049,12 +995,12 @@ $lang['users_rese_status1_a'] = 'Pending payment';
 $lang['users_rese_status2'] = 'Closed';
 $lang['users_rese_status3'] = 'Pending validation';
 $lang['users_rese_needpay'] = 'Pending payment ';
-$lang['users_rese_needpaytxt'] = '<p class="grey fs-12 bold">We recommend you to pay before the end of the validity period.</p>	
-	<p class="grey fs-12 bold">After that, we will display the date as available and you won’t be considered selected anymore.</p>';
-$lang['users_rese_closedtxt'] = '<p class="purple">The date is closed </p>';
-$lang['users_rese_tovalidatetxt'] = '<p class="purple">Recommendations en attente de validation</p>	
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>	
-	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>';
+$lang['users_rese_needpaytxt'] = '<p>We recommend you to pay before the end of the validity period.</p>	
+	<p>After that, we will display the date as available and you won’t be considered selected anymore.</p>';
+$lang['users_rese_closedtxt'] = '<p class="fs-16 purple">Reservations unsuccessful</p>
+    <p>Here are reservations not accepted</p>';
+$lang['users_rese_tovalidatetxt'] = '<p class=" fs-16 purple">Reservations pending validation</p>	
+	<p>Here are the reservation that have not been confirmed yet. Please be patient.</p>';
 $lang['users_rese_cancel_conf'] = 'Do you want to cancel this reservation?';
 $lang['users_rese_cancel_txt1'] = 'We do not recommend to cancel at this stage. The Stage may not accept your reservations anymore.';
 $lang['users_rese_cancel_txt2'] = 'We do not recommend to cancel at this stage. the reservation fee will be refunded except transaction fee.';
@@ -1068,34 +1014,8 @@ $lang['users_rese_refuse_success'] = 'Request rejected';
 $lang['users_rese_validate_success'] = 'Reservation accepted';
 $lang['users_rese_pendingtxt'] = 'Reservation pending payment';
 $lang['users_rese_pendingtxt2'] = 'Waiting list';
-$lang['users_rese_refuse_email_subject'] = 'Request rejected   ';
-$lang['users_rese_refuse_email_txt1'] = 'Sorry your request:<strong>was not accepted </strong>';
-$lang['users_rese_refuse_email_txt2'] = 'Reservation number  ';
-$lang['users_rese_refuse_email_txt3'] = 'While waiting for your next date, try to improve your profile, more content means more chances to succeed.</p>			
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">To go to your profile,';
-$lang['users_rese_refuse_email_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">See you soon.</p>	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>	
-	<br />	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please do not reply to this email.</p>	
-	<br />	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you see any problem with the website, please send an email to support@b-onstage.com.</p>	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We are improving the site everyday. If you want to send us a feedback please send us an email to suggestion@b-onstage.com.</p>	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you want to unsubscribe to all our email please click here. </p>';
-$lang['users_rese_refuse_email_txt5'] = 'To make a reservation';
 $lang['users_rese_seereq'] = 'Reservation Request';
 $lang['users_rese_amount'] = 'Number of Reservation';
-$lang['users_rese_accepted_email_subject'] = 'reservation request accepted';
-$lang['users_rese_accepted_email_txt1'] = 'Congratulations! Your request <strong>was accpeted :</strong>';
-$lang['users_rese_accepted_email_txt2'] = 'WARNING!! You have 48h to validate this request and make the payment from b-onstage.com. After that your request will be cancelled';
-$lang['users_rese_accepted_email_txt3'] = 'Click here to see your request in your b-onstage  ';
-$lang['users_rese_accepted_email_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Now the Stage is Yours!</p>	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>	
-	<br />	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please do not reply to this email.</p>	
-	<br />	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you see any problem with the website, please send an email to support@b-onstage.com.</p>	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We are improving the site everyday. If you want to send us a feedback please send us an email to suggestion@b-onstage.com.</p>	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you want to unsubscribe to all our email please click here.</p>';
 $lang['users_rese_event_details'] = 'Details of the Event';
 $lang['users_rese_artist_details'] = 'Details of the Artists';
 $lang['users_rese_artist_band'] = 'Artists / Band';
@@ -1166,35 +1086,6 @@ $lang['book_req_showdate'] = 'Date of the event';
 $lang['book_req_txt2'] = '<p class="bold">Your request will be sent to the Stage. You will have to pay the reservation fee once your booking request is accepted by the Stage. You will receive an email (and a notification on your profile) when your application is accepted.</p>';
 $lang['book_req_agree'] = 'I have read and I accept the <a href="#" class="purple">General Conditions</a>';
 $lang['book_req_success'] = 'Your request has been sent';
-$lang['book_req_email_artist_subject'] = 'Your reservation number:';
-$lang['book_req_email_artist_txt1'] = 'You have requested:';
-$lang['book_req_email_artist_txt2'] = '
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Your request was sent to the Stage.</p>	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We will inform you wether your request is accepted or rejected.</p>	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Good Luck!!</p>	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If your application is accepted you will receive an email with a link to the payment portal. You will then have 48h to make a payment, otherwise we will have to cancel your booking.</p>	
-	<!--Tant que cette réservation n’a pas été acceptée par la scène, vous pouvez l’annuler en cliquant sur le lien suivant : Annuler ma réservation-->	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">See you soon.</p>	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>	
-	<br />	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please do not reply to this email.</p>	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you see any problem with the website, please send an email to support@b-onstage.com.</p>	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We are improving the site everyday, if you want to send us a feedback please send us an email to suggestion@b-onstage.com,</p>	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you want to unsubscribe to all our email please click here. </p>';
-$lang['book_req_email_stage_subject'] = 'You received a request';
-$lang['book_req_email_stage_txt1'] = 'You have received a request from';
-$lang['book_req_email_stage_txt2'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;"><a href="/user/calendar"><strong>Click here</strong></a> to check your calendar</p>';
-$lang['book_req_email_stage_txt3'] = 'This Artists is interested by your Stage';
-$lang['book_req_email_stage_txt4'] = '	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;"> Check the Artist profile on b-onstage.com</p>	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">You can confirm this reservation (and select the artist), or leave it in the reservation list. You can accept this reservation later if you wish.</p>	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Click here to see the list of requests.</p>	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you accept a reservation, the Artist will have 48h to make the payment; if no payment is made we will cancel the reservation.</p>	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">b-onstage.</p>	
-	<br />	
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please do not reply to this email.</p>	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you see any problem with the website, please send an email to support@b-onstage.com.</p>	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We are improving the site everyday, if you want to send us a feedback please send us an email to suggestion@b-onstage.com,</p>	
-	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you want to unsubscribe to all our email please click here.</p>';
 		
 		
 // Notifications		
@@ -1329,3 +1220,90 @@ $lang['redactor_anchor'] = 	 'Anchor';
 $lang['redactor_link_new_tab'] = 	 'Open link in new tab';
 $lang['redactor_underline'] = 	 'Underline';
 $lang['redactor_alignment'] = 	 'Alignment';
+
+// emails
+$lang['forgot_password_email1_subject'] 	 = 'Forgotten Password Verification';
+$lang['forgot_password_email1_txt1'] 		 = 'Reset Password for';
+$lang['forgot_password_email1_txt2'] 		 = 'Please click this link to';
+$lang['forgot_password_email1_txt3'] 		 = 'Reset Your Password';
+
+$lang['forgot_password_email2_subject'] 	 = 'New Password';
+$lang['forgot_password_email2_txt1'] 		 = 'New Password for';
+$lang['forgot_password_email2_txt2'] 		 = 'Your password has been reset to';
+
+$lang['signup_active_email_subj'] ='Activate your account    ';
+$lang['signup_active_email_txt1'] ='<p>Thank you for signing up</p><p>Please validate your account b-onstage in one click</p>';
+$lang['signup_active_email_txt2'] ='Activate the account ';
+$lang['signup_active_email_txt3'] ='<br />your b-onstage team<br /><br />';
+
+$lang['signup_stage_email_subject'] = 'Registration';
+$lang['signup_stage_email_txt'] = '	<h1 style="font-size:18px;font-family:\'Arial\',sans-serif;color:#8e2c86;">Hi,</h1>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We have received your request.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Our team will contact you soon to set up a visit.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We will explain you in more details ow it works and how you can benefit from it.</p>
+	<br />
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">See you soon!</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>
+	<br />';
+
+$lang['signup_stage_confirmation_email_subject'] = 'Confirmation of your registration';
+$lang['signup_stage_confirmation_email_txt1'] = '<p style="font-size:18px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Welcome to b-onstage,</p>	
+	<br />
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Your credentials:</p>';
+$lang['signup_stage_confirmation_email_txt2'] = 'You can now:</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Create your own Events</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Search for artists</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Add content to your profile</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">To access your profile,';
+$lang['signup_stage_confirmation_email_txt3'] = 'To understand how b-onstage works,';
+$lang['signup_stage_confirmation_email_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please let us know if you need more information, sned us an email at: support@b-onstage.com</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Now… the Stage is yours</p>
+	<br/>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>
+	<br />';
+
+$lang['users_rese_refuse_email_subject'] = 'Request rejected   ';
+$lang['users_rese_refuse_email_txt1'] = 'Sorry your request: <strong>was not accepted </strong>';
+$lang['users_rese_refuse_email_txt2'] = 'Reservation number  ';
+$lang['users_rese_refuse_email_txt3'] = 'While waiting for your next date, try to improve your profile, more content means more chances to succeed.</p>	';
+$lang['users_rese_refuse_email_txt4'] = 'See you soon.<br />	
+	Your b-onstage team<br />	
+	<br />';	
+$lang['users_rese_refuse_email_txt5'] = 'to make another reservation';
+
+$lang['users_rese_accepted_email_subject'] = 'reservation request accepted';
+$lang['users_rese_accepted_email_txt1'] = 'Congratulations! Your request <strong>was accepted :</strong>';
+$lang['users_rese_accepted_email_txt2'] = 'WARNING!! You have 48h to validate this request and make the payment from your account on www.b-onstage.com. After that your request will be cancelled';
+$lang['users_rese_accepted_email_txt3'] = 'Click here to see your request in your account  ';
+$lang['users_rese_accepted_email_txt4'] = 'Now the Stage is Yours! <br/>	
+	your b-onstage team<br />	
+	<br />';	
+
+$lang['book_req_email_artist_subject'] = 'Your reservation number:';
+$lang['book_req_email_artist_txt1'] = 'You have requested:';
+$lang['book_req_email_artist_txt2'] = '
+	Your request was sent to the Stage.	<br/>
+	We will inform you wether your request is accepted or not.<br/>	
+	<br/>	
+	If your application is accepted you will receive an email with a link to the payment portal. You will then have 48h to make a payment, otherwise we will have to cancel your booking.<br/>	
+	<br/>See you soon.<br/>	
+	<br />your b-onstage team<br /><br />';	
+
+$lang['book_req_email_stage_subject'] = 'You received a request';
+$lang['book_req_email_stage_txt1'] = 'You have received a request from';
+$lang['book_req_email_stage_txt2'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;"><a href="/user/calendar"><strong>Click here</strong></a> to check your calendar</p>';
+$lang['book_req_email_stage_txt3'] = 'This Artists is interested by your Stage';
+$lang['book_req_email_stage_txt4'] = '	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;"> Check the Artist profile on b-onstage.com</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">You can confirm this reservation (and select the artist), or leave it in the reservation list. You can accept this reservation later if you wish.</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Click here to see the list of requests.</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you accept a reservation, the Artist will have 48h to make the payment; if no payment is made we will cancel the reservation.</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">b-onstage.</p>	
+	<br />	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Please do not reply to this email.</p>	
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you see any problem with the website, please send an email to support@b-onstage.com.</p>	
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">We are improving the site everyday, if you want to send us a feedback please send us an email to suggestion@b-onstage.com,</p>	
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">If you want to unsubscribe to all our email please click here.</p>';
+
+$lang['email_footer'] ='Please do not reply to this email.<br />
+	If you see any problem with the website, please send an email to support@b-onstage.com.<br />
+	We are improving the site every day. If you want to send us a feedback please use suggestion@b-onstage.com.';
