@@ -1207,8 +1207,8 @@ $lang['users_rese_refuse_email_txt1'] = 'Désolé! Votre demande de réservation
 $lang['users_rese_refuse_email_txt2'] = 'Code de réservation  ';
 $lang['users_rese_refuse_email_txt3'] = 'En attendant votre prochaine réservation, pensez à améliorer votre profil. Vous pouvez y ajouter votre musique , vos vidéos, vos photos, etc.<br/>';
 $lang['users_rese_refuse_email_txt4'] = 'À bientôt.<br/>
-L\'équipe b-onstage.<br/>
-	<br />';
+<br/>L\'équipe b-onstage.<br/><br />'
+	;
 $lang['users_rese_refuse_email_txt5'] = 'pour faire une nouvelle réservation';
 
 $lang['users_rese_accepted_email_subject'] = 'Demande de réservation acceptée';
@@ -1216,8 +1216,7 @@ $lang['users_rese_accepted_email_txt1'] = 'Félicitations! Votre demande de rés
 $lang['users_rese_accepted_email_txt2'] = 'ATTENTION !! Vous avez 48 heures pour valider cette réservation et effectuer le paiement depuis votre espace b-onstage. Passé ce délai, votre réservation sera annulée!!';
 $lang['users_rese_accepted_email_txt3'] = 'Cliquez ici pour voir votre réservation dans votre espace b-onstage  ';
 $lang['users_rese_accepted_email_txt4'] = 'Maintenant..... c’est à vous de jouer!!<br/>
-L\'équipe b-onstage.<br/>
-	<br />';
+<br />L\'équipe b-onstage.<br/><br />';
 
 $lang['book_req_email_stage_subject']	 = 'Vous avez reçu une demande de réservation';
 $lang['book_req_email_stage_txt1']	 = 'Vous avez reçu la demande de';

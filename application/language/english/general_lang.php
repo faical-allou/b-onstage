@@ -1263,16 +1263,15 @@ $lang['signup_stage_confirmation_email_txt4'] = '<p style="font-size:15px;font-f
 	<br />';
 
 $lang['users_rese_refuse_email_subject'] = 'Request rejected   ';
-$lang['users_rese_refuse_email_txt1'] = 'Sorry your request: <strong>was not accepted </strong>';
+$lang['users_rese_refuse_email_txt1'] = 'Sorry your request <strong>was not accepted </strong>';
 $lang['users_rese_refuse_email_txt2'] = 'Reservation number  ';
 $lang['users_rese_refuse_email_txt3'] = 'While waiting for your next date, try to improve your profile, more content means more chances to succeed.</p>	';
 $lang['users_rese_refuse_email_txt4'] = 'See you soon.<br />	
-	Your b-onstage team<br />	
-	<br />';	
+	<br />Your b-onstage team<br /><br />';	
 $lang['users_rese_refuse_email_txt5'] = 'to make another reservation';
 
-$lang['users_rese_accepted_email_subject'] = 'reservation request accepted';
-$lang['users_rese_accepted_email_txt1'] = 'Congratulations! Your request <strong>was accepted :</strong>';
+$lang['users_rese_accepted_email_subject'] = 'Request accepted';
+$lang['users_rese_accepted_email_txt1'] = 'Congratulations! The following request <strong>was accepted :</strong>';
 $lang['users_rese_accepted_email_txt2'] = 'WARNING!! You have 48h to validate this request and make the payment from your account on www.b-onstage.com. After that your request will be cancelled';
 $lang['users_rese_accepted_email_txt3'] = 'Click here to see your request in your account  ';
 $lang['users_rese_accepted_email_txt4'] = 'Now the Stage is Yours! <br/>	
@@ -1281,8 +1280,7 @@ $lang['users_rese_accepted_email_txt4'] = 'Now the Stage is Yours! <br/>
 
 $lang['book_req_email_artist_subject'] = 'Your reservation number:';
 $lang['book_req_email_artist_txt1'] = 'You have requested:';
-$lang['book_req_email_artist_txt2'] = '
-	Your request was sent to the Stage.	<br/>
+$lang['book_req_email_artist_txt2'] = 'Your request was sent to the Stage.	<br/>
 	We will inform you wether your request is accepted or not.<br/>	
 	<br/>	
 	If your application is accepted you will receive an email with a link to the payment portal. You will then have 48h to make a payment, otherwise we will have to cancel your booking.<br/>	
