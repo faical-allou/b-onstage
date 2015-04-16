@@ -8,7 +8,7 @@
 <div id="wrap-slider">
 	<div id="slider" class="royalSlider rsBlack ">
 
-	<!--slide6-->
+	<!--slide6--
 		<div class="rsContent slide6 db">
 			<div class="bContainer ui-corner-all p-20 db">		
 				<div class=" fs-32 bold white"><?php echo lang("home_slide6_txt") ?></div>
