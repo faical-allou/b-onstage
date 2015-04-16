@@ -704,13 +704,9 @@ $lang['signup_active_txt'] = '<p>Vous allez recevoir un mail de confirmation dan
 		<p style="font-weight:bold;">Si vous ne le recevez pas, vérifiez votre courrier indésirable (ou Spam).</p>
 		<p>Sinon, contactez-nous à l\'adresse support@b-onstage.com, en detaillant le problème que vous rencontrez.</p>		';
 $lang['signup_terminate_success'] = '<p>Votre inscription est maintenant validée. Bienvenue dans la communauté b-onstage!</p>
-		<p>N\'oubliez pas que c\'est vous qui en êtes l\'acteur principal!!</p>
-		<p>Si vous avez des suggestions, n\'hésitez pas à nous les envoyer à l\'adresse  suggestion@mybandonstage.com. Nous y-sommes trè attentifs. Le site est en constante amélioration, afin de le rendre le plus utile et pratique possible pour vous.</p>		
-		<p>Vous allez maintenant pouvoir completer votre profil.</p>
 		<p>N\'oubliez pas que c\'est à vous de vous mettre en avant. Créez une description, ajoutez votre musique, vos videos et vos photos..</p>';
 $lang['signup_terminate_success1'] = 'Cliquez-ici</a> pour commencez à compléter mon profil';
 $lang['signup_terminate_success2'] = '<p>Ensuite c’est parti!! Vous allez pouvoir organiser vos concerts.</p>
-		<p>On vous trouve la place et vous faites le show!</p>
 		<p>À vous de jouer!!</p>
 		<p>L’Équipe de b-onstage</p>';
 

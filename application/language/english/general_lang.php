@@ -766,14 +766,10 @@ $lang['signup_active_txt'] ='<p>You will receive an email with instruction to va
 	<p>If you have a problem, please contact support@b-onstage.com </p>
 	<p>Only one click away! </p>';
 $lang['signup_terminate_success'] ='<p>Your account is now active,</p>	
-	<p>It’s up to you now.</p>	
-	<p>We are improving the site everyday, if you want to send us a feedback please send us an email to suggestion@b-onstage.com.</p>	
-	<p>You can now complete your profile.</p>	
 	<p>Don’t forget that this is how the public will see you, make it appealing and add all the content you can.</p>';
 $lang['signup_terminate_success1'] ='Click here</a> to complete your profile ';
 $lang['signup_terminate_success2'] ='<p>After that, it’s showtime !!!</p>	
-	<p> We find the stage, we introduce you!</p>	
-	<p>and the Stage is Yours!!</p>	
+	<p>the Stage is Yours!!</p>	
 	<p>b-onstage</p>';
 
 
