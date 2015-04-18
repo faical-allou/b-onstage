@@ -128,7 +128,7 @@ $lang['at'] = 'at';
 $lang['de'] = 'from';
 $lang['submit'] = 'Submit';
 $lang['become_member'] = 'Sign up Now!';
-$lang['clickhere'] = 'click-here';
+$lang['clickhere'] = 'click here';
 $lang['modify'] = 'Modify';
 $lang['address'] = 'Address';
 $lang['postalcode'] = 'Postal code';
@@ -246,10 +246,11 @@ $lang['home_slide5_txt2'] = 'We do and we serve you in Paris as well';
 $lang['home_slide5_txt3'] = '';
 $lang['home_slide5_txt4'] = 'Get a gig Now!';
 
-$lang['home_slide6_txt'] = 'It\'s our birthday';
-$lang['home_slide6_txt2'] = 'Get on Stage and Get paid!';
-$lang['home_slide6_txt3'] = 'draw on the 15th of April';
-$lang['home_slide6_txt4'] = '150€ for the winner!';
+$lang['home_slide6_txt'] = 'It\'s our birthday!';
+$lang['home_slide6_txt1'] = 'Trapdoor in Berlin!';
+$lang['home_slide6_txt2'] = 'Dean Woodson in Paris!';
+$lang['home_slide6_txt3'] = 'Join us in Paris!';
+$lang['home_slide6_txt4'] = 'Join us in Berlin!';
 
 $lang['home_promo'] = 'b-onstage pays back the booking fees for all concerts in March 2015!';
 
@@ -1261,7 +1262,7 @@ $lang['users_rese_refuse_email_txt2'] = 'Reservation number  ';
 $lang['users_rese_refuse_email_txt3'] = 'While waiting for your next date, try to improve your profile, more content means more chances to succeed.</p>	';
 $lang['users_rese_refuse_email_txt4'] = 'See you soon.<br />	
 	<br />Your b-onstage team<br /><br />';	
-$lang['users_rese_refuse_email_txt5'] = 'to make another reservation';
+$lang['users_rese_refuse_email_txt5'] = 'Make another reservation';
 
 $lang['users_rese_accepted_email_subject'] = 'Request accepted';
 $lang['users_rese_accepted_email_txt1'] = 'Congratulations! The following request <strong>was accepted :</strong>';

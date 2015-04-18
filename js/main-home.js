@@ -24,17 +24,18 @@
 	//init slider	
 	jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.855, 1.235, 0.000, 1.650)';
 	$('#slider').royalSlider({
-		arrowsNav: true,
+		arrowsNav: false,
 		arrowsNavAutoHide: false,		
 		fadeinLoadedSlide: false,
 		controlNavigationSpacing: 0,
-		controlNavigation: 'bullets',
+		controlNavigation: 'none',
 		imageScaleMode: 'none',
 		imageAlignCenter:false,
 		blockLoop: true,
 		loop: true,
 		numImagesToPreload: 4,
 		transitionType: 'fade',
+		autoScaleSlider: 'true',
 		keyboardNavEnabled: true,
 		block: {
 			delay: 400

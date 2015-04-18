@@ -8,18 +8,20 @@
 <div id="wrap-slider">
 	<div id="slider" class="royalSlider rsBlack ">
 
-	<!--slide6--
+	<!--slide6-->
 		<div class="rsContent slide6 db">
-			<div class="bContainer ui-corner-all p-20 db">		
-				<div class=" fs-32 bold white"><?php echo lang("home_slide6_txt") ?></div>
-				<div class=" fs-24 bold white"><?php echo lang("home_slide6_txt2") ?></div>				
-				<div class=" fs-14 bold white mb-20"><?php echo lang("home_slide6_txt3") ?></div>				
+			<div class="bContainer ui-corner-all p-10 db">		
+				<div class=" fs-24 bold grey"><?php echo lang("home_slide6_txt") ?></div>
 				<span class=" ui-green rsButton" style="font-size:1em;"> 
-					<a href="<?=site_url('concerts/oujouer?id=28017&t=slide6')?>" >
+					<a href="https://www.facebook.com/events/831148590291660/" >
+					<?php echo lang("home_slide6_txt3") ?></a>
+				</span>
+				<span class=" ui-green rsButton" style="font-size:1em;"> 
+					<a href="https://www.facebook.com/events/765103676930764/" >
 					<?php echo lang("home_slide6_txt4") ?></a>
 				</span>
 			</div>
-			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-6.jpg">
+			<img class="rsABlock" data-move-effect="fade" src="/img/slide/slide-6.png">
 		</div>
 
 

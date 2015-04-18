@@ -127,7 +127,7 @@ $lang['at'] = 'à';
 $lang['de'] = 'de';
 $lang['submit'] = 'Envoyer';
 $lang['become_member'] = 'S\'inscrire';
-$lang['clickhere'] = 'cliquez-ici';
+$lang['clickhere'] = 'cliquez ici';
 $lang['modify'] = 'Modifier';
 $lang['address'] = 'Adresse';
 $lang['postalcode'] = 'Code postal';
@@ -247,9 +247,9 @@ $lang['home_slide5_txt3'] = 'et on vous aide à Paris comme à Berlin';
 $lang['home_slide5_txt4'] = 'Trouver une Scène';
 
 $lang['home_slide6_txt'] = 'C\'est notre anniversaire!';
-$lang['home_slide6_txt2'] = 'On a besoin de musique';
-$lang['home_slide6_txt3'] = 'tirage au sort le 15 Avril';
-$lang['home_slide6_txt4'] = '150€ à gagner!';
+$lang['home_slide6_txt2'] = '';
+$lang['home_slide6_txt3'] = 'Participer à Paris';
+$lang['home_slide6_txt4'] = 'Participer à Berlin';
 
 
 $lang['home_promo'] = 'b-onstage vous rembourse vos frais de réservation pour tous vos concerts en Mars 2015!';
@@ -1205,7 +1205,7 @@ $lang['users_rese_refuse_email_txt3'] = 'En attendant votre prochaine réservati
 $lang['users_rese_refuse_email_txt4'] = 'À bientôt.<br/>
 <br/>L\'équipe b-onstage.<br/><br />'
 	;
-$lang['users_rese_refuse_email_txt5'] = 'pour faire une nouvelle réservation';
+$lang['users_rese_refuse_email_txt5'] = 'Faire une nouvelle réservation';
 
 $lang['users_rese_accepted_email_subject'] = 'Demande de réservation acceptée';
 $lang['users_rese_accepted_email_txt1'] = 'Félicitations! Votre demande de réservation suivante <strong>à été acceptée :</strong>';
