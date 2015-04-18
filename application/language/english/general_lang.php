@@ -246,8 +246,8 @@ $lang['home_slide5_txt2'] = 'We do and we serve you in Paris as well';
 $lang['home_slide5_txt3'] = '';
 $lang['home_slide5_txt4'] = 'Get a gig Now!';
 
-$lang['home_slide6_txt'] = 'It\'s our birthday!';
-$lang['home_slide6_txt1'] = 'Trapdoor in Berlin!';
+$lang['home_slide6_txt'] = 'April 29th is b-onstage birthday!';
+$lang['home_slide6_txt1'] = 'of course with live music!';
 $lang['home_slide6_txt2'] = 'Dean Woodson in Paris!';
 $lang['home_slide6_txt3'] = 'Join us in Paris!';
 $lang['home_slide6_txt4'] = 'Join us in Berlin!';

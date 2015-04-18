@@ -246,8 +246,8 @@ $lang['home_slide5_txt2'] = 'On vous aime aussi!';
 $lang['home_slide5_txt3'] = 'et on vous aide à Paris comme à Berlin';
 $lang['home_slide5_txt4'] = 'Trouver une Scène';
 
-$lang['home_slide6_txt'] = 'C\'est notre anniversaire!';
-$lang['home_slide6_txt2'] = '';
+$lang['home_slide6_txt'] = 'C\'est notre anniversaire le 29 Avril!';
+$lang['home_slide6_txt1'] = 'avec bien sûr de la musique live';
 $lang['home_slide6_txt3'] = 'Participer à Paris';
 $lang['home_slide6_txt4'] = 'Participer à Berlin';
 

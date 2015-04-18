@@ -12,6 +12,8 @@
 		<div class="rsContent slide6 db">
 			<div class="bContainer ui-corner-all p-10 db">		
 				<div class=" fs-24 bold grey"><?php echo lang("home_slide6_txt") ?></div>
+				<div class=" fs-16 bold grey mb-5"><?php echo lang("home_slide6_txt1") ?></div>
+
 				<span class=" ui-green rsButton" style="font-size:1em;"> 
 					<a href="https://www.facebook.com/events/831148590291660/" >
 					<?php echo lang("home_slide6_txt3") ?></a>
