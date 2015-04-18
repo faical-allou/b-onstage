@@ -335,7 +335,7 @@
 						<div id="yt-medias">
 							<ul class="clearfix">								
 								<li data-content-id="#yt-videos"><?php echo lang("users_page_menu4") ?> (<span id="count-video"><?=$videos['yt_video_count']?></span>)</li>
-								<li data-content-id="#yt-feeds"><?php echo lang("flux") ?> (<span id="count-feed"><?=$videos['yt_feed_count']?></span>)</li>
+<!--								<li data-content-id="#yt-feeds"><?php echo lang("flux") ?> (<span id="count-feed"><?=$videos['yt_feed_count']?></span>)</li> -->
 							</ul>
 							<div>
 								<!--yt videos-->
