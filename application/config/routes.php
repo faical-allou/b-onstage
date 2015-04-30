@@ -71,6 +71,10 @@ $route['how_i_make_money'] = 'about/how_i_make_money';
 $route['payonline/(:any)/(:any)'] = 'payonline/index/$1/$2';
 $route['legal'] = 'main/legal';
 $route['terms_of_services'] = 'main/terms_of_services';
+$route['forstages'] = 'forstages/index';
+
+
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
