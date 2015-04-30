@@ -246,11 +246,8 @@ $lang['home_slide5_txt2'] = 'We do and we serve you in Paris as well';
 $lang['home_slide5_txt3'] = '';
 $lang['home_slide5_txt4'] = 'Get a gig Now!';
 
-$lang['home_slide6_txt'] = 'April 29th is b-onstage birthday!';
-$lang['home_slide6_txt1'] = 'of course with live music!';
-$lang['home_slide6_txt2'] = 'Dean Woodson in Paris!';
-$lang['home_slide6_txt3'] = 'Join us in Paris!';
-$lang['home_slide6_txt4'] = 'Join us in Berlin!';
+$lang['home_slide6_txt'] = 'Thank you for the great shows!';
+$lang['home_slide6_txt1'] = 'in Paris and Berlin';
 
 $lang['home_promo'] = 'b-onstage pays back the booking fees for all concerts in March 2015!';
 
@@ -339,6 +336,10 @@ $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 				<li><p>From time to time <strong>b-onstage will organize events and will offer prizes</strong> so sign up and we\'ll keep you informed!</p></li>				
 				</li>
 			</ul>';
+
+// Footer
+$lang['forstages_title'] = 'For Venues';
+$lang['forstages_desc'] = 'Our services for Venue Owners and Bars';
 
 
 // Footer

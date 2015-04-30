@@ -14,14 +14,6 @@
 				<div class=" fs-24 bold grey"><?php echo lang("home_slide6_txt") ?></div>
 				<div class=" fs-16 bold grey mb-5"><?php echo lang("home_slide6_txt1") ?></div>
 
-				<span class=" ui-green rsButton" style="font-size:1em;"> 
-					<a href="https://www.facebook.com/events/831148590291660/" >
-					<?php echo lang("home_slide6_txt3") ?></a>
-				</span>
-				<span class=" ui-green rsButton" style="font-size:1em;"> 
-					<a href="https://www.facebook.com/events/765103676930764/" >
-					<?php echo lang("home_slide6_txt4") ?></a>
-				</span>
 			</div>
 			<img class="rsABlock" data-move-effect="fade" src="/img/slide/slide-6.png">
 		</div>
