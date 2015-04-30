@@ -9,6 +9,9 @@ class Forstages extends CI_Controller {
 		$this->user = $this->ion_auth->user()->row_array();	
 		
 		$this->load->model('event_model');
+		$this->load->model('artist_model');
+		$this->load->model('stage_model');
+		
 		
 		//init vars
 		if($this->ion_auth->logged_in()){
@@ -43,8 +46,17 @@ class Forstages extends CI_Controller {
 		$this->header['description'] = lang("forstages_desc");		
 		$this->footer['scripts'] = array('js/main-home.js');
 		
+		$artists = $this->artist_model->get_all("","","",25,1);
+		$stages = $this->stage_model->get_all("","",25,1);
+		
+		$data = array(
+				'number_artists'		=> $artists['nb_artists'],
+				'number_stages'			=> $stages['nb_stages']
+				);
+				
+				
 		$this->load->view('_header',$this->header);				
-		$this->load->view('forstages');
+		$this->load->view('forstages', $data);
 		$this->load->view('_footer', $this->footer);		
 	}
 	

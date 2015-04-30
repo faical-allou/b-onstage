@@ -421,6 +421,18 @@ artist
 .line-artist-list .action-menu  > li{display:inline;}
 
 /* ==========================================================================
+for stages
+========================================================================== */
+.wrap-header-forstages{height:auto; background-size: cover; min-height:300px;width: 100%;overflow:hidden; background-image: url(/img/montreal.jpg); background-color: #000000}
+.header-forstages{ position:relative; height:auto;width:inherit;overflow:hidden;}
+.tagline-forstages{ margin-left: auto; margin-right: auto;position:float; z-index:9999; }
+.images-forstages{position: relative;}
+.forstages-howitworks{list-style-type: disc; margin-left:1px;font-family: "Open Sans Condensed";width: auto; text-align:left;}
+.forstages-howitworks > li {border-bottom:1px dashed #eaeaea;padding:2px 2px; display:list-item;margin-bottom: 0px;margin-top: 0px}
+.forstages-howitworks > li:last-child{border-bottom:none;}
+
+
+/* ==========================================================================
 event
 ========================================================================== */
 
@@ -1877,6 +1889,8 @@ a.underline:hover{text-decoration:underline;}
 .p-15{padding:15px;}
 .p-20{padding:20px;}
 .p-30{padding:30px;}
+.p-50{padding:50px;}
+
 /*padding-left*/
 .pl-2{padding-left:2px;}
 .pl-3{padding-left:3px;}

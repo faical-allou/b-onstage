@@ -346,7 +346,40 @@ $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 // Footer
 $lang['forstages_title'] = 'Pour les Scènes';
 $lang['forstages_desc'] = 'Notre service pour les salles de concerts et les bars';
+$lang['forstages_tagline1'] = 'La musique live devrait être partout ... tous les jours';
+$lang['forstages_tagline2'] = 'mais on doit la rendre plus facile à organiser';
 
+$lang['forstages_howto_title1'] = 'Créez un évènement';
+$lang['forstages_howto_list1'] = '<ul class="forstages-howitworks">
+				<li><p>Créez un créneau (jour/heure) à offir aux musiciens </p></li>
+				<li><p>Choisissez le genre de musique que vous voulez</p></li>
+				<li><p>Entrez vos coûts de production ainsi que la rénumération offerte aux musiciens</p></li>
+			</ul>';
+$lang['forstages_howto_title2'] = 'Gérer vos demandes';
+$lang['forstages_howto_list2'] = '<ul class="forstages-howitworks">
+				<li><p>Vous recevrez des demandes pour des dates spécifiques, les demandes restent organisées</p></li>
+				<li><p>Les demandes ont le même format et sont sauvegardées, vous ne les perdrez plus</p></li>
+				<li><p>Le calendrier est coloré en fonction du statut pour vous aider à vous y retrouver rapidement</p></li>
+			</ul>';
+$lang['forstages_howto_title3'] = 'Confirmez les dates';
+$lang['forstages_howto_list3'] = '<ul class="forstages-howitworks">
+				<li><p>Vérifiez le profil des musiciens et les liens vers les réseaux sociaux</p></li>
+				<li><p>Écoutez les sons et regardez les videos depuis les profils</p></li>
+				<li><p>Si vous êtes satisfait vous pouvez valider la demande pour recevoir les musiciens aux conditions affichées</p></li>
+				<li><p>Le musicien (ou son organisation) aura alors 48h pour s\'acquiter des coûts de production pour confirmer son intérêt</p></li>
+			</ul>';
+
+$lang['forstages_why'] = 'Pourquoi b-onstage?';
+$lang['forstages_why_text'] = '<ul class="forstages-howitworks">
+				<li><p>Recevoir des musiciens dans votre espace devient facile à gérer </p></li>
+				<li><p>Avec une promotion (la scène, le musicien et b-onstage) vous avez de meilleures chances de remplir la salle</p></li>
+				<li><p>Il devient plus simple de faire correspondre les musiciens avec la scène</p></li>
+				<li><p>Nous sommes flexible et il n\'y a pas d\'engagement, vous pouvez avoir un concert par mois ou plusieurs par jour </p></li>
+				<li><p>L\'utilisation du site est gratuite, vous n\'avez rien à nous payer</p></li>
+			</ul>';
+
+$lang['forstages_artists'] = 'artistes programment des dates grâce à b-onstage';
+$lang['forstages_stages'] = 'scènes gèrent leurs demandes sur b-onstage';
 
 
 // Footer
