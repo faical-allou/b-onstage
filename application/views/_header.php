@@ -123,8 +123,10 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 <!--					<li><?=anchor(site_url('concerts/programmation'), lang("shows"), array('id' => 'menu-programmation'))?></li>
 -->						<li><?=anchor(site_url('stages'), lang("scenes"), array('id' => 'menu-stage'))?></li>
 						<li><?=anchor(site_url('artists'), lang("artists") , array('id' => 'menu-artist'))?></li>
+						<li><?=anchor(site_url('forstages'), lang("header_forstages") , array('id' => 'menu-forstages'))?></li>
 						<li><?=anchor(site_url('about'), lang("header_aboutus") , array('id' => 'menu-about'))?></li>
-					</ul>
+						
+						</ul>
 					<!--account menu-->
 					<?php if(empty($user)) { ?>
 					<ul class="menu right">

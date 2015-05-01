@@ -219,6 +219,8 @@ $lang['header_myprofile'] = 'My Profile';
 $lang['header_mycontacts'] = 'My Contacts';
 $lang['header_book_a_date'] = 'Request a Date';
 $lang['header_attend_show'] = 'Attend a Concert';
+$lang['header_forstages'] = 'For venues';
+
 
 $lang['search_from'] = 'Search from';
 
@@ -324,8 +326,6 @@ $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
 			</ul>';
 
 
-
-
 $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 				<li><p>We did the leg work so you don\'t have to. <strong>You don\'t have to distribute demos for days</strong>, it saves you time and money. </p></li>			
 				<li><p>b-onstage gives you the opportunity to get in front of your fans <strong> and the venues\' regulars</strong>. More fans means more opportunities to make money.</p></li>			
@@ -341,40 +341,36 @@ $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 $lang['forstages_title'] = 'For Venues';
 $lang['forstages_desc'] = 'Our services for Venue Owners and Bars';
 $lang['forstages_tagline1'] = 'Live Music should be everywhere ... every day';
-$lang['forstages_tagline2'] = 'but we need to make it more simple to organize';
+$lang['forstages_tagline2'] = 'but we need to make it easier to organize';
+$lang['forstages_button'] = 'Organize concerts';
 
 
 $lang['forstages_howto_title1'] = 'Create events';
 $lang['forstages_howto_list1'] = '<ul class="forstages-howitworks">
-				<li><p>Create a slot (date/time) to offer to the musicians </p></li>
-				<li><p>Chose the genre of music you are looking for</p></li>
+				<li><p>Create a slot (date/time/genre) to offer to the musicians </p></li>
 				<li><p>Enter your production cost and the renumeration for the musician</p></li>
 			</ul>';
 $lang['forstages_howto_title2'] = 'Manage requests';
 $lang['forstages_howto_list2'] = '<ul class="forstages-howitworks">
-				<li><p>You\'ll receive request for each available date, request stay organized</p></li>
-				<li><p>Requests have the same format and are saved, you won\'t lose or forget any</p></li>
-				<li><p>The calendar is color-coded to make easier to check the status</p></li>
+				<li><p>You\'ll receive requests for each available slot, requests stay organized</p></li>
+				<li><p>Requests are saved on the same format, they are easy to compare and you won\'t lose or forget any</p></li>
 			</ul>';
 $lang['forstages_howto_title3'] = 'Confirm dates';
 $lang['forstages_howto_list3'] = '<ul class="forstages-howitworks">
-				<li><p>Check the musicians profiles and social links</p></li>
-				<li><p>Listen to their music and watch their videos on their profile</p></li>
-				<li><p>If you are staisfied with one request you can validate the request</p></li>
-				<li><p>Musicians (or their supporting organistation) will have 48h to pay the production cost to confirm their interest</p></li>
+				<li><p>Check the musicians profiles, their music/videos and social links</p></li>
+				<li><p>When you validate, musicians (or their supporting organistation) will have 48h to pay the production cost to confirm their interest; other artists will be notified to try a different slot</p></li>
 			</ul>';
 
 $lang['forstages_why'] = 'Why b-onstage?';
 $lang['forstages_why_text'] = '<ul class="forstages-howitworks">
-				<li><p>We make it simple for you to receive musicians</p></li>
 				<li><p>With a joint promotion (the venue, the musicians and b-onstage) you have better chances to fill up your room</p></li>
-				<li><p>We make it easy to assess the fit between musician and venue</p></li>
-				<li><p>We are flexible there is no commitment. You can have a concert per month or more than a concert per day</p></li>
+				<li><p>We are flexible there is no commitment. You can have a concert per month or more than a concert per day and you only validate musicians you like.</p></li>
 				<li><p>Using the website is free, you don\'t have to pay us</p></li>
 			</ul>';
 
-$lang['forstages_artists'] = 'artists already book their gigs on b-onstage';
-$lang['forstages_stages'] = 'stages use b-onstage to manage their requests';
+$lang['forstages_stats'] = 'Since January 2015, already:';
+$lang['forstages_artists'] = 'artists booking their gigs';
+$lang['forstages_stages'] = 'stages managing their programs';
 
 
 
@@ -815,7 +811,7 @@ $lang['signup_terminate_success2'] ='<p>After that, it’s showtime !!!</p>
 $lang['signup_stage_step_1_title'] = 'Sign up';
 $lang['signup_stage_step_1_txt'] = '<li><span class="grey title">You want your venue to be listed on b-onstage? Please fill up the form.</span></li>		
 			<li><span class="grey title">One of our staff will contact you to organise a visit and create a profile. </span></li>		
-			<li><span class="grey title">Your account will give you the opportunity to create events and find artists.</span></li>';
+			<li><span class="grey title">We won\'t take long, 30min and you\'ll be set. </span></li>';
 $lang['signup_stage_step_1_form_title'] = 'I sign up as Stage';
 $lang['signup_stage_step_1_form_field1'] = 'Name';
 $lang['signup_stage_step_1_form_field1_title'] = 'Enter the name of your Stage';
@@ -885,7 +881,7 @@ $lang['users_calendar_create_recurrence'] = 'Recurring';
 $lang['users_calendar_create_eventdetails'] = 'Details';
 $lang['users_calendar_create_location'] = 'Location';
 $lang['users_calendar_create_genre'] = 'Genre';
-$lang['users_calendar_create_book'] = 'Amount';
+$lang['users_calendar_create_book'] = 'Production cost + b-onstage fee';
 $lang['users_calendar_create_payment'] = 'Remuneration of artist';
 $lang['users_calendar_create_price'] = 'Ticket price';
 $lang['users_calendar_create_choose_musical_genre'] = 'Select genres';

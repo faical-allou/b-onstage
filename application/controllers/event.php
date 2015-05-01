@@ -268,7 +268,7 @@ class Event extends CI_Controller {
 			);			
 			
 			/*****RESERVATION*****/
-			$this->data['label_reservation'] = 'Montant de la réservation';
+			$this->data['label_reservation'] = lang("users_calendar_create_book");
 			$this->data['reservation'] = array(
 				'name'			=> 'ev-reservation',
 				'id'			=> 'ev-reservation',

@@ -184,7 +184,7 @@ menu
 #logo{display:block;width:50px;height:50px;}
 .menu{display:block;}
 .menu > li {display:inline;}
-.menu > li > a{font-family:"Open Sans Condensed", sans-serif;text-decoration:none;float:left;display:block;padding:0 10px;height:50px;line-height:50px;font-size:16px;color:#fff;}
+.menu > li > a{font-family:"Open Sans Condensed", sans-serif;text-decoration:none;float:left;display:block;padding:0 10px;height:50px;line-height:50px;font-size:14px;color:#fff;}
 .menu > li > a:hover,.menu > li > a:focus, .menu > li > a.active{background:rgba(255,255,255,0.2);}
 
 .profil-menu{display:block;}
@@ -423,7 +423,7 @@ artist
 /* ==========================================================================
 for stages
 ========================================================================== */
-.wrap-header-forstages{height:auto; background-size: cover; min-height:300px;width: 100%;overflow:hidden; background-image: url(/img/montreal.jpg); background-color: #000000}
+.wrap-header-forstages{height:auto; background-size: cover; min-height:300px;width: 100%;overflow:hidden; background-image: url(/img/forstages.jpg); background-color: #000000}
 .header-forstages{ position:relative; height:auto;width:inherit;overflow:hidden;}
 .tagline-forstages{ margin-left: auto; margin-right: auto;position:float; z-index:9999; }
 .images-forstages{position: relative;}
@@ -1954,6 +1954,8 @@ a.underline:hover{text-decoration:underline;}
 .ml-40{margin-left:40px;}
 .ml-50{margin-left:50px;}
 .ml-100{margin-left:100px;}
+.ml-200{margin-left:200px;}
+
 /*margin-right*/
 .mr-2{margin-right:2px;}
 .mr-3{margin-right:3px;}
@@ -1963,6 +1965,10 @@ a.underline:hover{text-decoration:underline;}
 .mr-15{margin-right:15px;}
 .mr-20{margin-right:20px;}
 .mr-30{margin-right:30px;}
+.mr-50{margin-right:50px;}
+.mr-100{margin-right:100px;}
+.mr-200{margin-right:200px;}
+
  /*margin-top*/
 .mt-1{margin-top:1px;}
 .mt-2{margin-top:2px;}
