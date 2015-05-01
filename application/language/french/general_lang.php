@@ -360,7 +360,7 @@ $lang['forstages_howto_list1'] = '<ul class="forstages-howitworks">
 			</ul>';
 $lang['forstages_howto_title2'] = 'Gérez vos demandes';
 $lang['forstages_howto_list2'] = '<ul class="forstages-howitworks">
-				<li><p>Vous recevrez des demandes pour des crénaux spécifiques, les demandes restent organisées</p></li>
+				<li><p>Vous recevrez des demandes pour des créneaux spécifiques, les demandes restent organisées</p></li>
 				<li><p>Les demandes sont sauvegardées au même format, elles sont plus faciles à comparer et vous ne les perdrez plus</p></li>
 			</ul>';
 $lang['forstages_howto_title3'] = 'Confirmez les dates';
