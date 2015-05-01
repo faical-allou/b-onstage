@@ -349,14 +349,14 @@ $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 $lang['forstages_title'] = 'Pour les Scènes';
 $lang['forstages_desc'] = 'Notre service pour les salles de concerts et les bars';
 $lang['forstages_tagline1'] = 'La Musique Live devrait être partout ... tous les jours';
-$lang['forstages_tagline2'] = 'mais on doit la rendre plus facile à organiser';
+$lang['forstages_tagline2'] = 'et on va vous rendre les choses plus faciles';
 $lang['forstages_button'] = 'Organiser des concerts';
 
 
 $lang['forstages_howto_title1'] = 'Créez un évènement';
 $lang['forstages_howto_list1'] = '<ul class="forstages-howitworks">
 				<li><p>Créez un créneau (jour/heure/genre) à offir aux musiciens </p></li>
-				<li><p>Entrez vos coûts de production ainsi que la rénumération offerte aux musiciens</p></li>
+				<li><p>Entrez vos coûts de production ainsi que la rénumération offerte aux musiciens si possible</p></li>
 			</ul>';
 $lang['forstages_howto_title2'] = 'Gérez vos demandes';
 $lang['forstages_howto_list2'] = '<ul class="forstages-howitworks">
@@ -366,13 +366,14 @@ $lang['forstages_howto_list2'] = '<ul class="forstages-howitworks">
 $lang['forstages_howto_title3'] = 'Confirmez les dates';
 $lang['forstages_howto_list3'] = '<ul class="forstages-howitworks">
 				<li><p>Vérifiez le profil des musiciens, musique/videos et les liens vers les réseaux sociaux</p></li>
-				<li><p>Quand vous validez, le musicien (ou son organisation) aura alors 48h pour s\'acquiter des coûts de production pour confirmer son intérêt. Les autres musiciens reçoivent un email pour leur demander de choisir une autre date</p></li>
+				<li><p>Si vous validez, le musicien (ou son organisation) aura alors 48h pour s\'acquiter des coûts de production pour confirmer son intérêt. Les autres musiciens reçoivent un email pour leur demander de choisir une autre date</p></li>
 			</ul>';
 
 $lang['forstages_why'] = 'Pourquoi b-onstage?';
 $lang['forstages_why_text'] = '<ul class="forstages-howitworks">
 				<li><p>Avec une promotion coordonnée (la scène, le musicien et b-onstage) vous avez de meilleures chances de remplir votre établissement</p></li>
-				<li><p>Nous sommes flexibles et il n\'y a pas d\'engagement. Vous pouvez avoir un concert par mois ou plusieurs par jour, et vous ne validez que les musiciens qui vous conviennent </p></li>
+				<li><p>Vous pouvez avoir un concerts par mois ou plusieurs par jour. Vous ne validez que les musiciens qui vous conviennent.</p></li>
+				<li><p>Nous sommes flexibles et il n\'y a pas d\'engagement et aucune obligation de payer</p></li>
 				<li><p>L\'utilisation du site est gratuite, vous n\'avez rien à nous payer</p></li>
 			</ul>';
 $lang['forstages_stats'] = 'Depuis Janvier 2015, déjà:';

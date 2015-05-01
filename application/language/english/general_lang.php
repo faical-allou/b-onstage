@@ -219,7 +219,7 @@ $lang['header_myprofile'] = 'My Profile';
 $lang['header_mycontacts'] = 'My Contacts';
 $lang['header_book_a_date'] = 'Request a Date';
 $lang['header_attend_show'] = 'Attend a Concert';
-$lang['header_forstages'] = 'For venues';
+$lang['header_forstages'] = 'For the Venues';
 
 
 $lang['search_from'] = 'Search from';
@@ -338,17 +338,17 @@ $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 			</ul>';
 
 // Footer
-$lang['forstages_title'] = 'For Venues';
+$lang['forstages_title'] = 'For the Venues';
 $lang['forstages_desc'] = 'Our services for Venue Owners and Bars';
 $lang['forstages_tagline1'] = 'Live Music should be everywhere ... every day';
-$lang['forstages_tagline2'] = 'but we need to make it easier to organize';
+$lang['forstages_tagline2'] = 'and we will make it easy for you';
 $lang['forstages_button'] = 'Organize concerts';
 
 
 $lang['forstages_howto_title1'] = 'Create events';
 $lang['forstages_howto_list1'] = '<ul class="forstages-howitworks">
 				<li><p>Create a slot (date/time/genre) to offer to the musicians </p></li>
-				<li><p>Enter your production cost and the renumeration for the musician</p></li>
+				<li><p>Enter your production cost and the renumeration for the musician if any</p></li>
 			</ul>';
 $lang['forstages_howto_title2'] = 'Manage requests';
 $lang['forstages_howto_list2'] = '<ul class="forstages-howitworks">
@@ -358,13 +358,14 @@ $lang['forstages_howto_list2'] = '<ul class="forstages-howitworks">
 $lang['forstages_howto_title3'] = 'Confirm dates';
 $lang['forstages_howto_list3'] = '<ul class="forstages-howitworks">
 				<li><p>Check the musicians profiles, their music/videos and social links</p></li>
-				<li><p>When you validate, musicians (or their supporting organistation) will have 48h to pay the production cost to confirm their interest; other artists will be notified to try a different slot</p></li>
+				<li><p>If you validate, musicians (or their supporting organistation) will have 48h to pay the production cost to confirm their interest; other artists will be notified to try a different slot</p></li>
 			</ul>';
 
 $lang['forstages_why'] = 'Why b-onstage?';
 $lang['forstages_why_text'] = '<ul class="forstages-howitworks">
 				<li><p>With a joint promotion (the venue, the musicians and b-onstage) you have better chances to fill up your room</p></li>
-				<li><p>We are flexible there is no commitment. You can have a concert per month or more than a concert per day and you only validate musicians you like.</p></li>
+				<li><p>You can have concerts as often as you want and you only validate musicians you like</p></li>
+				<li><p>We are flexible there is no commitment and no obligation to pay</p></li> 
 				<li><p>Using the website is free, you don\'t have to pay us</p></li>
 			</ul>';
 
