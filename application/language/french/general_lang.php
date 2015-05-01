@@ -1266,7 +1266,7 @@ $lang['book_req_email_artist_txt2'] = '
 	Votre demande a été envoyée à la scène.	<br/>
 	Nous vous informerons si vous êtes acceptés ou pas.<br/>	
 	<br/>	
-	So votre demande est aceptée vous recevrez un lien vers le portail de paiement. Vous aurez 48h pour faire le paiement, sinon nous devrons annuler votre demande.<br/>	
+	Si votre demande est acceptée vous recevrez un lien vers le portail de paiement. Vous aurez 48h pour faire le paiement, sinon nous devrons annuler votre demande.<br/>	
 	<br/>A bientôt.<br/>	
 	<br />L\'équipe b-onstage<br /><br />';	
 
