@@ -71,7 +71,7 @@
 										<?php echo lang("users_rese_enterprice") ?>
 									</div>
 									<div class="fs-18 purple title">
-										<?=$entry?>						
+										<?=$entry?>€						
 									</div>								
 								</div>	
 							</td>

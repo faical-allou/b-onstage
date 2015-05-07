@@ -271,6 +271,14 @@ $lang['home_howitworks_list'] = '<ul class="home-howitworks">
 				<li><p>......The Stage is Yours!</p></li>
 			</ul>';
 
+// Referral program
+$lang['referral_program'] = 'Become b-onstage Ambassador </br>';
+$lang['referral_program2'] = 'Support the community and earn money for your projects';
+
+$lang['referral_program_step1'] = 'Introduce b-onstage to any venue you deem suitable for musicians ';
+$lang['referral_program_step2'] = 'We\'ll contact them and take care of the details, you don\'t have to do anything';
+$lang['referral_program_step3'] = 'Earn 50% of the revenue of this Stage for 1 full year';
+
 
 // About us
 $lang['aboutus_link_aboutus'] = 'About';
@@ -824,7 +832,7 @@ $lang['signup_stage_step_2_title'] = 'We have received your request';
 $lang['signup_stage_step_2_txt'] = '<p class="fs-16 title">Confirmed</p>
 			<p class="fs-16 title">We have received your request.</p>
 			<p class="fs-16 title">Our team will contact you soon to set up a visit.</p>
-			<p class="fs-16 title">We will explain you in more details ow it works and how you can benefit from it.</p>';
+			<p class="fs-16 title">We will explain you in more details how it works and how you can benefit from it.</p>';
 
 
 // Users home		

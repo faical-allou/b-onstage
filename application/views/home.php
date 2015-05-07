@@ -127,9 +127,7 @@
 				<a href="<?=site_url('signup/?t=pband')?>" class="ui-white action-home mt-10" style="font-size:1em;"><?php echo lang("become_member") ?></a>							
 				</div>	
 		</div>
-	</div>
-
-	
+	</div>	
 </div>	
 
 
@@ -183,5 +181,34 @@
 	</div>			
 </div>
 
-
+<div class="bg-grey-2 ta-c p-10">
+					<span class="fs-32 bold">  <?php echo lang("referral_program") ?> </span>
+					<span class="fs-18 bold">  <?php echo lang("referral_program2") ?> </span>
+					
+	<div class="container_12 ta-c mb-10 mt-30 p-10">
+					<div class="dib">
+						<div class="grid_3 ta-c">
+							<div class="p-5">
+								<i class="fa fa-glass fa-4x"></i>
+								<p class="grey fs-14 bold"><?php echo lang("referral_program_step1") ?></p>
+							</div>	
+						</div>
+						
+						<div class="grid_3 ta-c">
+							<div class="p-5">
+								<i class="fa fa-list-alt fa-4x "></i>
+								<p class="grey fs-14 bold"><?php echo lang("referral_program_step2") ?></p>
+							</div>	
+						</div>
+						
+						<div class="grid_3 ta-c">
+							<div class="p-5">
+								<i class="fa fa-money fa-4x "></i>
+								<p class="grey fs-14 bold"><?php echo lang("referral_program_step3") ?></p>
+							</div>	
+						</div>
+					</div>
+	</div>
+<a href="<?=site_url('signup/?t=pband')?>" class="ui-green action-home mb-20" style="font-size:1em;"><?php echo lang("become_member") ?></a>
+</div>
 

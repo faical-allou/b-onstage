@@ -274,6 +274,14 @@ $lang['home_seeall_artist'] = 'Voir tous les Artistes';
 $lang['home_bottom_txt'] = 'Réservez une Scène en deux clicks, </br>Gardez votre énergie pour les répétitions';
 $lang['home_bottom_txt2'] = 'L\'inscription est gratuite et le restera, </br> Connectez vous aux scènes à l\'international';
 
+// Referral program
+$lang['referral_program'] = 'Deviens Ambassadeur b-onstage </br>'; 
+$lang['referral_program2'] = 'Aide la communauté et gagne de l\'argent pour tes projets';
+
+$lang['referral_program_step1'] = 'Explique le concept à une scène qui peut accueillir de la musique live';
+$lang['referral_program_step2'] = 'Nous contacterons la scène et réglerons les détails, tu n\'as plus rien à faire';
+$lang['referral_program_step3'] = 'Gagne 50% du revenu généré par la scène pendant 1 an!';
+
 
 
 // About us
