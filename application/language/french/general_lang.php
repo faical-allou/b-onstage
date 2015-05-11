@@ -65,6 +65,7 @@ $lang['legal_title'] = 'Mentions légales';
 $lang['signup_choice_title'] = 'Type de compte';
 $lang['signup_active_title'] = 'Activez votre compte';
 $lang['signup_stage_title'] = 'Inscription';
+$lang['signup_stage_title_ref'] = 'Lister des Scènes en tant qu\'Ambassadeur';
 $lang['signup_stage_step2_title'] = 'Pré-inscription terminée';
 $lang['user_home_title'] = 'Mes paramètres de compte';
 $lang['user_update_information_title'] = 'Modifier mes coordonnées';
@@ -92,6 +93,7 @@ $lang['signup_choice_desc'] = 'Choisissez un type de compte';
 $lang['signup_active_desc'] = 'Activez voter compte';
 $lang['signup_terminate_desc'] = 'Vos premiers pas sur b-onstage';
 $lang['signup_stage_desc'] = 'Créer un compte';
+$lang['signup_stage_desc_ref'] = 'Devenir an Ambassadeur';
 $lang['signup_stage_step2_desc'] = 'Activer votre compte';
 $lang['user_home_desc'] = 'Page d\'accueil';
 $lang['user_update_information_desc'] = 'Mettre à jour les informations';
@@ -250,8 +252,10 @@ $lang['home_slide5_txt4'] = 'Trouver une Scène';
 
 $lang['home_slide6_txt'] = 'Merci pour les performances!';
 $lang['home_slide6_txt1'] = 'à Paris et à Berlin';
-$lang['home_slide6_txt3'] = 'Participer à Paris';
-$lang['home_slide6_txt4'] = 'Participer à Berlin';
+
+$lang['home_slide8_txt'] = 'Montez sur Scène chaque semaine!';
+$lang['home_slide8_txt1'] = 'avec b-onstage, c\'est possible';
+$lang['home_slide8_txt2'] = 'Inscription gratuite';
 
 
 $lang['home_promo'] = 'b-onstage vous rembourse vos frais de réservation pour tous vos concerts en Mars 2015!';
@@ -265,8 +269,11 @@ $lang['home_howitworks_list'] = '<ul class="home-howitworks">
 				<li><p>......A Vous de Jouer!</p></li>
 			</ul>';
 
+$lang['home_howitworks_button'] = 'en detail';
+
+
 $lang['home_title_concert'] = 'Les Concerts';
-$lang['home_title_stage'] = 'Les Scènes qui nous font confiance';
+$lang['home_title_stage'] = 'Les Scènes disponibles';
 $lang['home_title_artist'] = 'Les Artistes que nous servons';
 $lang['home_seeall_shows'] = 'Voir tous les Concerts';
 $lang['home_seeall_stages'] = 'Voir toutes les Scènes';
@@ -278,9 +285,11 @@ $lang['home_bottom_txt2'] = 'L\'inscription est gratuite et le restera, </br> Co
 $lang['referral_program'] = 'Deviens Ambassadeur b-onstage </br>'; 
 $lang['referral_program2'] = 'Aide la communauté et gagne de l\'argent pour tes projets';
 
-$lang['referral_program_step1'] = 'Explique le concept à une scène qui peut accueillir de la musique live';
+$lang['referral_program_step1'] = 'Explique le concept b-onstage à une scène que tu aimes en tant que musicien';
 $lang['referral_program_step2'] = 'Nous contacterons la scène et réglerons les détails, tu n\'as plus rien à faire';
-$lang['referral_program_step3'] = 'Gagne 50% du revenu généré par la scène pendant 1 an!';
+$lang['referral_program_step3'] = 'Gagne 50% des frais b-onstage générés par la scène pendant une année!';
+
+$lang['referral_program_button'] = 'Participer';
 
 
 
@@ -352,13 +361,17 @@ $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 				<li><p>De temps en temps <strong>b-onstage organise des évenements avec des prix à la clé</strong>, inscrivez-vous et nous vous tiendrons informés.</p></li>				
 				</li>
 			</ul>';
+			
+$lang['aboutus_txt_howimakemoney_ref'] = 'en plus vous pouvez apporter votre contribution à la communauté et gagner de l\'argent pour vos projet en participant à notre programme Ambassadeur ';
+
 
 // Footer
 $lang['forstages_title'] = 'Pour les Scènes';
 $lang['forstages_desc'] = 'Notre service pour les salles de concerts et les bars';
 $lang['forstages_tagline1'] = 'La Musique Live devrait être partout ... tous les jours';
 $lang['forstages_tagline2'] = 'et on va vous rendre les choses plus faciles';
-$lang['forstages_button'] = 'Organiser des concerts';
+$lang['forstages_button1'] = 'S\'inscrire pour recevoir des demandes';
+$lang['forstages_button2'] = 'Recommender une Scène';
 
 
 $lang['forstages_howto_title1'] = 'Créez un évènement';
@@ -755,15 +768,16 @@ $lang['signup_terminate_success2'] = '<p>Ensuite c’est parti!! Vous allez pouv
 
 
 // signup stage
-$lang['signup_stage_step_1_title'] = 'Créez un compte';
+$lang['signup_stage_step_1_title'] = 'Infos de base';
 $lang['signup_stage_step_1_txt'] = '<li><span class="grey title">Vous voulez que votre établissement devienne une Scène sur le réseau b-onstage? Remplissez le formulaire ci-contre.</span></li>		
 			<li><span class="grey title">Vous serez ensuite contacté par notre équipe afin de vous aider à créer un profil.</span></li>		
 			<li><span class="grey title">Nous avons besoin de 30min seulement et tout sera prêt.</span></li>';
 $lang['signup_stage_step_1_form_title'] = 'Je m\'inscris en tant que scène';
 $lang['signup_stage_step_1_form_field1'] = 'Nom d\'établissement';
+
 $lang['signup_stage_step_1_form_field1_title'] = 'Saisir votre nom d\'établissement';
 $lang['signup_stage_step_1_form_field2_title'] = 'L\'adresse e-mail doit être valide et sera votre identifiant de connexion.';
-$lang['signup_stage_step_1_form_field3_title'] = 'Le numéro de téléphone est falcutatif, mais nous permettra de vous contacter pour mettre en pla ce votre inscription et activation de votre compte';
+$lang['signup_stage_step_1_form_field3_title'] = 'Le numéro de téléphone est falcutatif, mais nous permettra de vous contacter pour votre inscription et l\'activation de votre compte';
 $lang['signup_stage_step_1_form_field3'] = 'Téléphone (facultatif)';
 $lang['signup_stage_step_1_form_submit'] = 'Valider la pré-inscription';
 $lang['signup_stage_step_2_title'] = 'Pré-inscription terminée';
@@ -772,6 +786,21 @@ $lang['signup_stage_step_2_txt'] = '<p class="fs-16 title">Pré-inscription term
 			<p class="fs-16 title">Vous serez contacté dans les prochains jours par notre équipe, afin de convenir d\'un rendez-vous.</p>
 			<p class="fs-16 title">Nous vous expliquerons alors comment le site fonctionne et nous vous assisterons dans la création de votre Profil b-onstage.</p>';
 	
+// signup stage ref
+$lang['signup_stage_step_1_form_title_ref'] = 'La Scène suivante veut rejoindre b-onstage';
+$lang['signup_stage_step_1_form_field0_ref'] = 'Adresse email de l\'Ambassadeur';
+$lang['signup_stage_step_1_form_field0_title'] = 'Vous devez avoir un compte b-onstage artiste pour être Ambassadeur';
+$lang['signup_stage_step_1_form_field1_ref'] = 'Nom de la Scène';
+
+$lang['signup_stage_step_1_txt_ref'] = '<li><span class="grey title">Vous connaissez une Scène et voulez la partager avec la communauté b-onstage? Remplissez le formulaire ci-contre!</span></li>		
+			<li><span class="grey title">La seule condition est d\'avoir un compte artiste b-onstage... un compte gratuit en quelques clicks.</span></li>		
+			<li><span class="grey title">Nous appelerons toutes les Scènes que vous nous envoyez mais ça nous aiderait que vous parliez de b-onstage en avance. Rien d\'autres à faire pour vous.</span></li>';		
+
+$lang['signup_stage_step_2_txt_ref'] = '<li><span class="grey title">Nous contacterons la Scène pour régler les détails (disponibilités, genres, coûts de production, rénumération des artistes, règles de communications, suivi des demandes, réclamations...).</span></li>	
+			<li><span class="grey title">Nous partagerons les frais b-onstage perçues sur cette Scène, 50/50 avec vous, pendant un an.</span></li>
+			<li><span class="grey title">Vous n\'avez plus rien à faire mais il est dans votre intérêt de faire connaître b-onstage autour de vous bien sûr.</span></li>';
+
+$lang['signup_stage_step_1_link_ref'] = 'Comment expliquer b-onstage à une Scène?';
 	
 
 // Users home

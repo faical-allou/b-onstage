@@ -43,27 +43,6 @@ class User extends CI_Controller {
 		$cities = $this->event_model->get_stage_cities();
 		$this->load->vars(array('search' => $search));				
 
-/*					//fb login
-	
- 		$GLOBALS['log_fb']=FALSE;
- 		$GLOBALS['name_fb'] = "Paul";
- 		$GLOBALS['username_fb'] = "superuser";
-		$GLOBALS['email_fb'] = "@l.com";
-		$GLOBALS['password_fb'] = "123";
-		
-		
-		
-		if ( isset($_GET['n'], $_GET['u'], $_GET['e'], $_GET['p'], $_GET['fb']) )
-					{
-						$GLOBALS['name_fb'] = $_GET['n'];
-						$GLOBALS['username_fb'] = $_GET['u'];
-						$GLOBALS['email_fb'] = $_GET['e'];
-						$GLOBALS['password_fb'] = $_GET['p'];
-						$GLOBALS['log_fb'] = $_GET['fb'];
-
-					}
-					//fb login end
-*/	
 	}
 
 	//index function
@@ -412,6 +391,167 @@ class User extends CI_Controller {
 		}		
 	}
 	
+	function signup_stage_ref($step_value = 1){
+	
+		$step['step'] = $step_value;
+		switch($step_value)
+		{
+			//step 1: signup
+			case 1:
+				if ($this->ion_auth->logged_in()){
+					redirect('user', 'refresh');
+				}else{
+					$header = array(
+							'title'			=> lang("signup_stage_title_ref"),
+							'description'	=> lang("signup_stage_desc_ref")
+					);
+	
+	
+					$step['title'] = lang("signup_stage_step_1_title");
+					$step['align_title'] = 'ta-l';
+	
+					$this->form_validation->set_error_delimiters('<div class="ui-state-error ui-corner-all fs-12 bold p-5 mt-10">', '</div>');
+					
+					$this->form_validation->set_rules('ambassador', 'lang:identity', 'trim|required|valid_email');
+					$this->form_validation->set_rules('company', lang("signup_stage_step_1_form_field1"), 'trim|required');
+					$this->form_validation->set_rules('email', 'lang:identity', 'trim|required|valid_email|is_unique[users.email]');
+					$this->form_validation->set_rules('terms_of_services', 'lang:terms_of_services', 'callback_terms_of_services');
+	
+					if ($this->form_validation->run() == true){
+	
+						$ambassador = $this->input->post('email');
+						$email = $this->input->post('email');
+						$company = $this->input->post('company');
+						$tel = $this->input->post('tel');
+							
+						$data = array();
+						//send email to stage
+						$html_message = $this->parser->parse('user/email/confirm_pre_inscription', $data, TRUE);
+						$this->email->from('contact@b-onstage.com', 'b-onstage');
+						$this->email->to($email);
+						$this->email->subject(lang("signup_stage_email_subject"));
+						$this->email->message($html_message);
+						$this->email->send();
+							
+						//envoi du mail à scenes@mybandonstage.com
+						$pre_inscription_lang = $this->session->userdata('lang_loaded');
+						$data = array(
+								'email'		=> $email,
+								'company'	=> $company,
+								'tel'		=> $tel,
+								'lang'		=> $pre_inscription_lang
+						);
+							
+						$html_message = $this->parser->parse('user/email/send_pre_inscription', $data, TRUE);
+						$this->email->from($email, $company);
+						$this->email->to('contact@b-onstage.com');	// 	PROD : scenes@mybandonstage.com  TEST : contact@b-onstage.com
+						$this->email->subject('Demande d\'inscription | b-onstage');
+						$this->email->message($html_message);
+						$this->email->send();
+							
+						redirect('registration_completed_stage_ref', 'refresh');
+	
+					}else{
+						//var data
+						//set message
+						$data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
+							
+						//attrs label
+						$data['attrs_label'] = array(
+								'class'		=> 'fs-12 grey bold pl-2'
+						);
+	
+						//ambassador
+						$data['ambassador'] = array(
+								'title'		=> lang("signup_stage_step_1_form_field0_title"),
+								'name'		=> 'ambassador',
+								'class'		=> 'input ui-corner-all fs-13 grey',
+								'id'		=> 'ambassador',
+								'value'		=> $this->form_validation->set_value('ambassador')
+						);
+						
+						//company
+						$data['company'] = array(
+								'title'		=> lang("signup_stage_step_1_form_field1_title"),
+								'name'		=> 'company',
+								'class'		=> 'input ui-corner-all fs-13 grey',
+								'id'		=> 'company',
+								'value'		=> $this->form_validation->set_value('company')
+						);
+							
+						//email
+						$data['email'] = array(
+								'name'		=> 'email',
+								'title'		=> lang("signup_stage_step_1_form_field2_title"),
+								'class'		=> 'input ui-corner-all fs-13 grey',
+								'id'		=> 'email',
+								'value'		=> $this->form_validation->set_value('email')
+						);
+	
+						//tel
+						$data['tel'] = array(
+								'name'		=> 'tel',
+								'title'		=> lang("signup_stage_step_1_form_field3_title"),
+								'class'		=> 'input ui-corner-all fs-13 grey',
+								'id'		=> 'tel',
+								'value'		=> $this->input->post('tel')
+						);
+							
+						//terms of services
+						$data['terms_of_services'] = array(
+								'name'		=> 'terms_of_services',
+								'id'		=> 'terms_of_services',
+								'value'		=> 'yes',
+								'checked'	=> false,
+								'class'		=> 'left mt-2'
+						);
+	
+						$data['text_terms_of_services'] = lang("signup_form_accept");
+							
+						//submit signup form
+						$data['submit'] = array(
+								'name'		=> 'button-register',
+								'class'		=> 'ui-purple',
+								'id'		=> 'submit-signup',
+								'value'		=> lang("signup_stage_step_1_form_submit")
+						);
+	
+						$footer['scripts'] = array('js/main-signup-stage.js');
+	
+						//load views
+						$this->load->view('_header', $header);
+						$this->load->view('user/auth/signup_steps_stage',$step);
+						$this->load->view('user/auth/signup_stage_ref', $data);
+						$this->load->view('_footer',$footer);
+					}
+				}
+				break;
+	
+				//signup stage fini
+			case 2 :
+				if ($this->ion_auth->logged_in()){
+					redirect('user', 'refresh');
+				}else{
+					//var header
+					$header['doctype'] = 'html5';
+					$header['title'] = lang("signup_stage_step2_title");
+					$header['description'] = lang("signup_stage_step2_desc");
+	
+					//var step
+					$step['title'] = lang("signup_stage_step_2_title");
+					$step['align_title'] = 'ta-c';
+	
+					$footer['scripts'] = array('js/main-signup-stage.js');
+						
+					$this->load->view('_header', $header);
+					$this->load->view('user/auth/signup_steps_stage',$step);
+					$this->load->view('user/auth/terminate_stage_ref', $footer);
+					$this->load->view('_footer');
+				}
+				break;
+			default : break;
+		}
+	}
 	
 	
 	
@@ -629,13 +769,7 @@ class User extends CI_Controller {
 						$to = "faical.allou@mybandonstage.com";
 						mail ($to, 'user activate', "a user reached the activate page");
 					
-  					}
-/*					if($GLOBALS['log_fb'])	
-  						{
-  						$activation_code = $this->ion_auth_model->activation_code;
-  						redirect('user/activate/'. $GLOBALS['id'] .'/'. $activation_code);
- 						}
-*/					
+  					}					
 
 					break;
 

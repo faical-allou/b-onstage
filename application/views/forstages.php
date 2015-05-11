@@ -1,10 +1,15 @@
 
 <div class="wrap-header-forstages ta-c pt-50 bold white ">
 			<div class="tagline-forstages fs-36 p-10"><?php echo lang("forstages_tagline1")?></div>
-			<div class="tagline-forstages fs-24"><?php echo lang("forstages_tagline2")?></div>
-			<span class="bold ui-green fs-16 mt-30 link-button">
-			<a href="<?=site_url('signup_stage')?>"><?php echo lang("forstages_button") ?></a>			
-			</span>
+			<div class="tagline-forstages fs-28"><?php echo lang("forstages_tagline2")?></div>
+			
+			<div class="bold ui-purple fs-16 mt-30 link-button">
+			<a href="<?=site_url('signup_stage')?>"><?php echo lang("forstages_button1") ?></a>			
+			</div><br/>
+			
+			<div class="bold ui-green fs-16 mt-30 link-button">
+			<a href="<?=site_url('signup_stage_ref')?>"><?php echo lang("forstages_button2") ?></a>			
+			</div>
 			
 </div>
 
@@ -58,10 +63,14 @@
 			<p><?php echo lang("forstages_stats")?></p>
 			<p class="purple"><?php echo $number_artists." ".lang("forstages_artists")?></p>
 			<p class="purple"><?php echo $number_stages." ".lang("forstages_stages")?></p>
-			<span class="bold ui-green fs-16 mt-30 ml-50 link-button ta-c">
-			<a href="<?=site_url('signup_stage')?>"><?php echo lang("forstages_button") ?></a>			
-			</span>
+			<div class="bold ui-purple fs-16 mt-30 link-button">
+			<a href="<?=site_url('signup_stage')?>"><?php echo lang("forstages_button1") ?></a>			
+			</div><br/>
 			
+			<div class="bold ui-green fs-16 mt-30 link-button">
+			<a href="<?=site_url('signup_stage_ref')?>"><?php echo lang("forstages_button2") ?></a>			
+			</div>
+						
 			</div>	
 		</div>
 	</div>

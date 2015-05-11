@@ -8,7 +8,23 @@
 <div id="wrap-slider">
 	<div id="slider" class="royalSlider rsBlack ">
 
-	<!--slide6-->
+	<!--slide8-->
+		<div class="rsContent slide1">
+			<div class="bContainer ui-corner-all p-20">	
+				<div class=" fs-32 bold white"><?php echo lang("home_slide8_txt") ?></div>				
+				<div class=" fs-32 bold white mb-20"><?php echo lang("home_slide8_txt1") ?></div>				
+				<div class="ta-c">
+				<div class="ui-green link-button" style="font-size:1em;">
+					<a href="<?=site_url('signup/?t=slide8')?>" >
+					<?php echo lang("home_slide8_txt2") ?></a>
+				</div>
+				</div>
+			</div>
+			<img class="rsABlock" data-move-effect="fade"  src="/img/slide/img-slide-8.png" data-rsw="900" data-rsh="500">
+		</div>
+
+
+	<!--slide6--
 		<div class="rsContent slide6 db">
 			<div class="bContainer ui-corner-all p-10 db">		
 				<div class=" fs-24 bold grey"><?php echo lang("home_slide6_txt") ?></div>
@@ -49,7 +65,7 @@
 			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-4.png" data-rsw="900" data-rsh="500">
 		</div>
 
-	<!--slide3-->
+	<!--slide3--
 		<div class="rsContent slide3">
 			<div class="bContainer ui-corner-all p-20">		
 				<div class=" fs-32 bold grey"><?php echo lang("home_slide3_txt") ?></div>
@@ -94,23 +110,54 @@
 </div>	
 
 <div class="bg-white bs-black">
-	<div class="container_12 pt-50 pb-50 ta-c">
-		<div id="home-video" class="grid_9 ta-c ">	
+	<div class=" pt-50 pb-50 ta-c ">
+		<div id="home-video" class="dib m-30">	
 			<iframe width="480" height="270" src="https://www.youtube.com/embed/kIHGjqx4ecc?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=0&controls=0" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
 		</div>	
 		
-		<div class="grid_3">	
+		<div class="dib m-30">	
 			<div class="fs-18 ta-c bold"><?php echo lang("home_howitworks_title")?></div>	 
 			<div class="fs-16 ta-l mb-10 bold"><?php echo lang("home_howitworks_list")?></div>
 			<span class="bold ui-green fs-16 link-button">
-			<a href="<?=site_url('signup/?t=video')?>"><?php echo lang("home_slide3_txt3") ?></a>			
+			<a href="<?=site_url('about/?t=video')?>"><?php echo lang("home_howitworks_button") ?></a>			
 			</span>
 		</div>	
 	</div>
 </div>
 
+<!-- referral program -->
+<div class="bg-grey-2 ta-c p-10 mb-30">
+					<span class="fs-32 bold">  <?php echo lang("referral_program") ?> </span>
+					<span class="fs-18 bold">  <?php echo lang("referral_program2") ?> </span>
+					
+	<div class="container_12 ta-c mb-10 mt-30 p-10">
+					<div class="dib">
+						<div class="grid_3 ta-c">
+							<div class="p-5">
+								<i class="fa fa-glass fa-4x purple"></i>
+								<p class="grey fs-14 bold"><?php echo lang("referral_program_step1") ?></p>
+							</div>	
+						</div>
+						
+						<div class="grid_3 ta-c">
+							<div class="p-5">
+								<i class="fa fa-list-alt fa-4x purple"></i>
+								<p class="grey fs-14 bold"><?php echo lang("referral_program_step2") ?></p>
+							</div>	
+						</div>
+						
+						<div class="grid_3 ta-c">
+							<div class="p-5">
+								<i class="fa fa-money fa-4x purple"></i>
+								<p class="grey fs-14 bold"><?php echo lang("referral_program_step3") ?></p>
+							</div>	
+						</div>
+					</div>
+	</div>
+<a href="<?=site_url('signup_stage_ref')?>" class="ui-green action-home mb-20" style="font-size:1em;"><?php echo lang("referral_program_button") ?></a>
+</div>
 
-
+<!--
 <div class="bg-purple">
 	<div class="container_12 pt-20 pb-50 mb-30">
 		<div class="grid_6 ta-c">	
@@ -129,7 +176,7 @@
 		</div>
 	</div>	
 </div>	
-
+-->
 
 
 <div class="container_12 mb-30 db">
@@ -181,34 +228,4 @@
 	</div>			
 </div>
 
-<div class="bg-grey-2 ta-c p-10">
-					<span class="fs-32 bold">  <?php echo lang("referral_program") ?> </span>
-					<span class="fs-18 bold">  <?php echo lang("referral_program2") ?> </span>
-					
-	<div class="container_12 ta-c mb-10 mt-30 p-10">
-					<div class="dib">
-						<div class="grid_3 ta-c">
-							<div class="p-5">
-								<i class="fa fa-glass fa-4x"></i>
-								<p class="grey fs-14 bold"><?php echo lang("referral_program_step1") ?></p>
-							</div>	
-						</div>
-						
-						<div class="grid_3 ta-c">
-							<div class="p-5">
-								<i class="fa fa-list-alt fa-4x "></i>
-								<p class="grey fs-14 bold"><?php echo lang("referral_program_step2") ?></p>
-							</div>	
-						</div>
-						
-						<div class="grid_3 ta-c">
-							<div class="p-5">
-								<i class="fa fa-money fa-4x "></i>
-								<p class="grey fs-14 bold"><?php echo lang("referral_program_step3") ?></p>
-							</div>	
-						</div>
-					</div>
-	</div>
-<a href="<?=site_url('signup/?t=pband')?>" class="ui-green action-home mb-20" style="font-size:1em;"><?php echo lang("become_member") ?></a>
-</div>
 

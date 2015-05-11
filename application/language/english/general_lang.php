@@ -66,6 +66,7 @@ $lang['legal_title'] = 'Legal notice';
 $lang['signup_choice_title'] = 'Type of account';
 $lang['signup_active_title'] = 'Activate your account';
 $lang['signup_stage_title'] = 'Sign up';
+$lang['signup_stage_title_ref'] = 'Listing Stages as Ambassador';
 $lang['signup_stage_step2_title'] = 'Registration complete';
 $lang['user_home_title'] = 'My parameters';
 $lang['user_update_information_title'] = 'Modify my details';
@@ -93,6 +94,7 @@ $lang['signup_choice_desc'] = 'Chose a type of account';
 $lang['signup_active_desc'] = 'Activate your account';
 $lang['signup_terminate_desc'] = 'First steps with b-onstage';
 $lang['signup_stage_desc'] = 'Create an account';
+$lang['signup_stage_desc_ref'] = 'Become an Ambassador';
 $lang['signup_stage_step2_desc'] = 'Activate your account';
 $lang['user_home_desc'] = 'Your homepage';
 $lang['user_update_information_desc'] = 'Update Information';
@@ -251,10 +253,18 @@ $lang['home_slide5_txt4'] = 'Get a gig Now!';
 $lang['home_slide6_txt'] = 'Thank you for the great shows!';
 $lang['home_slide6_txt1'] = 'in Paris and Berlin';
 
+$lang['home_slide6_txt'] = 'Thank you for the great shows!';
+$lang['home_slide6_txt1'] = 'in Paris and Berlin';
+
+$lang['home_slide8_txt'] = 'Get on stage every week  !';
+$lang['home_slide8_txt1'] = 'with b-onstage now you can';
+$lang['home_slide8_txt2'] = 'Sign up now';
+
+
 $lang['home_promo'] = 'b-onstage pays back the booking fees for all concerts in March 2015!';
 
 $lang['home_title_concert'] = 'Concerts';
-$lang['home_title_stage'] = 'Stages who trust us';
+$lang['home_title_stage'] = 'Stages available';
 $lang['home_title_artist'] = 'Artists we serve';
 $lang['home_seeall_shows'] = 'See all Concerts';
 $lang['home_seeall_stages'] = 'See all Stages';
@@ -270,14 +280,19 @@ $lang['home_howitworks_list'] = '<ul class="home-howitworks">
 				<li><p>Wait, we\'ll confirm if you are selected</p></li>
 				<li><p>......The Stage is Yours!</p></li>
 			</ul>';
+$lang['home_howitworks_button'] = 'more details';
+
+
 
 // Referral program
 $lang['referral_program'] = 'Become b-onstage Ambassador </br>';
 $lang['referral_program2'] = 'Support the community and earn money for your projects';
 
-$lang['referral_program_step1'] = 'Introduce b-onstage to any venue you deem suitable for musicians ';
+$lang['referral_program_step1'] = 'Introduce b-onstage to a venue you like as a musician';
 $lang['referral_program_step2'] = 'We\'ll contact them and take care of the details, you don\'t have to do anything';
-$lang['referral_program_step3'] = 'Earn 50% of the revenue of this Stage for 1 full year';
+$lang['referral_program_step3'] = 'Earn 50% of b-onstage fees on this Stage for 1 full year';
+
+$lang['referral_program_button'] = 'Participate';
 
 
 // About us
@@ -344,13 +359,17 @@ $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 				<li><p>From time to time <strong>b-onstage will organize events and will offer prizes</strong> so sign up and we\'ll keep you informed!</p></li>				
 				</li>
 			</ul>';
+$lang['aboutus_txt_howimakemoney_ref'] = 'on top of that you can contribute to the community and make money with our Ambassador program';
+
+
 
 // Footer
 $lang['forstages_title'] = 'For the Venues';
 $lang['forstages_desc'] = 'Our services for Venue Owners and Bars';
 $lang['forstages_tagline1'] = 'Live Music should be everywhere ... every day';
 $lang['forstages_tagline2'] = 'and we will make it easy for you';
-$lang['forstages_button'] = 'Organize concerts';
+$lang['forstages_button1'] = 'Sign up as Stage to receive requests';
+$lang['forstages_button2'] = 'Recommend a Stage';
 
 
 $lang['forstages_howto_title1'] = 'Create events';
@@ -817,7 +836,7 @@ $lang['signup_terminate_success2'] ='<p>After that, it’s showtime !!!</p>
 
 
 // signup stage
-$lang['signup_stage_step_1_title'] = 'Sign up';
+$lang['signup_stage_step_1_title'] = 'Basic Info';
 $lang['signup_stage_step_1_txt'] = '<li><span class="grey title">You want your venue to be listed on b-onstage? Please fill up the form.</span></li>		
 			<li><span class="grey title">One of our staff will contact you to organise a visit and create a profile. </span></li>		
 			<li><span class="grey title">We won\'t take long, 30min and you\'ll be set. </span></li>';
@@ -826,13 +845,29 @@ $lang['signup_stage_step_1_form_field1'] = 'Name';
 $lang['signup_stage_step_1_form_field1_title'] = 'Enter the name of your Stage';
 $lang['signup_stage_step_1_form_field2_title'] = 'The email address will be used to connect next time';
 $lang['signup_stage_step_1_form_field3_title'] = 'The phone number is optional but it is better to keep you up to date';
-$lang['signup_stage_step_1_form_field3'] = 'Phone number';
+$lang['signup_stage_step_1_form_field3'] = 'Phone number (optional)';
 $lang['signup_stage_step_1_form_submit'] = 'Confirm';
-$lang['signup_stage_step_2_title'] = 'We have received your request';
+$lang['signup_stage_step_2_title'] = 'We received your request!';
 $lang['signup_stage_step_2_txt'] = '<p class="fs-16 title">Confirmed</p>
 			<p class="fs-16 title">We have received your request.</p>
 			<p class="fs-16 title">Our team will contact you soon to set up a visit.</p>
 			<p class="fs-16 title">We will explain you in more details how it works and how you can benefit from it.</p>';
+
+// signup stage ref
+$lang['signup_stage_step_1_form_title_ref'] = 'This Stage wants to be part of b-onstage';
+$lang['signup_stage_step_1_form_field0_ref'] = 'Ambassador email address';
+$lang['signup_stage_step_1_form_field0_title'] = 'You need to have a b-onstage artist account to be Ambassador';
+$lang['signup_stage_step_1_form_field1_ref'] = 'Name of the venue';
+
+$lang['signup_stage_step_1_txt_ref'] = '<li><span class="grey title">You know a venue and you want to share it with b-onstage community? Fill up the form!</span></li>		
+			<li><span class="grey title">The only condition is to have an artist account on b-onstage... a free account in few clicks.</span></li>		
+			<li><span class="grey title">We\'ll call every Stage you suggest us but we recommend you talk to them in advance. You don\'t have to do anything after that. </span></li>';		
+
+$lang['signup_stage_step_2_txt_ref'] = '<li><span class="grey title">We\'ll contact the venue to discuss the details (availability, genres, production costs, rules of communication, requests, cancellations ...) and we\'ll follow up on the requests received as well as reclammations.</span></li>	
+			<li><span class="grey title">You\'ll get 50% of b-onstage fees we\'ll get through this Stage for one year</span></li>
+			<li><span class="grey title">You don\'t have to do anything but of course, it is in your interest to communicate about b-onstage.</span></li>';
+
+$lang['signup_stage_step_1_link_ref'] = 'How to explain b-onstage to a venue';
 
 
 // Users home		
