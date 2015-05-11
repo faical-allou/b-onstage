@@ -253,7 +253,7 @@ $lang['home_slide5_txt4'] = 'Trouver une Scène';
 $lang['home_slide6_txt'] = 'Merci pour les performances!';
 $lang['home_slide6_txt1'] = 'à Paris et à Berlin';
 
-$lang['home_slide8_txt'] = 'Montez sur Scène chaque semaine!';
+$lang['home_slide8_txt'] = 'Sur scène chaque semaine!';
 $lang['home_slide8_txt1'] = 'avec b-onstage, c\'est possible';
 $lang['home_slide8_txt2'] = 'Inscription gratuite';
 
@@ -371,7 +371,7 @@ $lang['forstages_desc'] = 'Notre service pour les salles de concerts et les bars
 $lang['forstages_tagline1'] = 'La Musique Live devrait être partout ... tous les jours';
 $lang['forstages_tagline2'] = 'et on va vous rendre les choses plus faciles';
 $lang['forstages_button1'] = 'S\'inscrire pour recevoir des demandes';
-$lang['forstages_button2'] = 'Recommender une Scène';
+$lang['forstages_button2'] = 'Recommander une Scène';
 
 
 $lang['forstages_howto_title1'] = 'Créez un évènement';
@@ -393,8 +393,8 @@ $lang['forstages_howto_list3'] = '<ul class="forstages-howitworks">
 $lang['forstages_why'] = 'Pourquoi b-onstage?';
 $lang['forstages_why_text'] = '<ul class="forstages-howitworks">
 				<li><p>Avec une promotion coordonnée (la scène, le musicien et b-onstage) vous avez de meilleures chances de remplir votre établissement</p></li>
-				<li><p>Vous pouvez avoir un concerts par mois ou plusieurs par jour. Vous ne validez que les musiciens qui vous conviennent.</p></li>
-				<li><p>Nous sommes flexibles et il n\'y a pas d\'engagement et aucune obligation de payer</p></li>
+				<li><p>Vous pouvez avoir un concert par mois ou plusieurs par jour. Vous ne validez que les musiciens qui vous conviennent.</p></li>
+				<li><p>Nous sommes flexibles, il n\'y a pas d\'engagement et aucune obligation de payer</p></li>
 				<li><p>L\'utilisation du site est gratuite, vous n\'avez rien à nous payer</p></li>
 			</ul>';
 $lang['forstages_stats'] = 'Depuis Janvier 2015, déjà:';
