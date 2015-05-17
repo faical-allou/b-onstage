@@ -419,16 +419,16 @@ class User extends CI_Controller {
 	
 					if ($this->form_validation->run() == true){
 	
-						$ambassador = $this->input->post('email');
+						$ambassador = $this->input->post('ambassador');
 						$email = $this->input->post('email');
 						$company = $this->input->post('company');
 						$tel = $this->input->post('tel');
 							
 						$data = array();
 						//send email to stage
-						$html_message = $this->parser->parse('user/email/confirm_pre_inscription', $data, TRUE);
+						$html_message = $this->parser->parse('user/email/confirm_pre_inscription_ref', $data, TRUE);
 						$this->email->from('contact@b-onstage.com', 'b-onstage');
-						$this->email->to($email);
+						$this->email->to($ambassador);
 						$this->email->subject(lang("signup_stage_email_subject"));
 						$this->email->message($html_message);
 						$this->email->send();
@@ -436,14 +436,15 @@ class User extends CI_Controller {
 						//envoi du mail à scenes@mybandonstage.com
 						$pre_inscription_lang = $this->session->userdata('lang_loaded');
 						$data = array(
+								'ambassador'=> $ambassador,
 								'email'		=> $email,
 								'company'	=> $company,
 								'tel'		=> $tel,
 								'lang'		=> $pre_inscription_lang
 						);
 							
-						$html_message = $this->parser->parse('user/email/send_pre_inscription', $data, TRUE);
-						$this->email->from($email, $company);
+						$html_message = $this->parser->parse('user/email/send_pre_inscription_ref', $data, TRUE);
+						$this->email->from('contact@b-onstage.com', 'b-onstage');
 						$this->email->to('contact@b-onstage.com');	// 	PROD : scenes@mybandonstage.com  TEST : contact@b-onstage.com
 						$this->email->subject('Demande d\'inscription | b-onstage');
 						$this->email->message($html_message);

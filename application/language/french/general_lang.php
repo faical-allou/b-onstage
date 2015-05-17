@@ -285,7 +285,7 @@ $lang['home_bottom_txt2'] = 'L\'inscription est gratuite et le restera, </br> Co
 $lang['referral_program'] = 'Deviens Ambassadeur b-onstage </br>'; 
 $lang['referral_program2'] = 'Aide la communauté et gagne de l\'argent pour tes projets';
 
-$lang['referral_program_step1'] = 'Explique le concept b-onstage à une scène que tu aimes en tant que musicien';
+$lang['referral_program_step1'] = 'Présente b-onstage à un lieu que tu aimes en tant que musicien, même si il n\'y a pas de musique live aujourd\'hui';
 $lang['referral_program_step2'] = 'Nous contacterons la scène et réglerons les détails, tu n\'as plus rien à faire';
 $lang['referral_program_step3'] = 'Gagne 50% des frais b-onstage générés par la scène pendant une année!';
 
@@ -1253,6 +1253,17 @@ $lang['signup_stage_email_txt'] = '	<h1 style="font-size:18px;font-family:\'Aria
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">A bientôt</p>
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
 	<br />';
+
+$lang['signup_stage_email_txt_ref'] = '	<h1 style="font-size:18px;font-family:\'Arial\',sans-serif;color:#8e2c86;">Bonjour,</h1>
+	<p>Nous avons bien reçu votre demande d\'inscription.</p>
+	<p>Nous allons contacter la Scène dans les prochains jours pour parler des détails.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Vous n\'avez plus rien à faire, nous vous reverserons 50% des frais b-onstage perçus sur chaque concert.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Vous devriez parler de b-onstage autour de vous et améliorer la visibilité de la Scène que vous venez de nous recommander.</p>
+	<br />
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">A bientôt</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
+	<br />';
+
 	
 $lang['signup_stage_confirmation_email_subject'] = 'Confirmation de votre inscription à b-onstage';
 $lang['signup_stage_confirmation_email_txt1'] = '<p style="font-size:18px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Bienvenue dans le réseau b-onstage,</p>	

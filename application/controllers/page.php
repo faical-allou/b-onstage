@@ -122,7 +122,7 @@ class Page extends CI_Controller {
 				'type'			=> 'url',
 				'form_label'	=> lang("users_page_inputwebsite"),				
 				'input_type'	=> 'url',
-				'form_msg'		=> 'Ex: http://www.monsite.com',
+				'form_msg'		=> 'Ex: www.monsite.com',
 				'msg'			=> lang("users_page_inputwebsite")
 			)
 		);	

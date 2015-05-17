@@ -288,7 +288,7 @@ $lang['home_howitworks_button'] = 'more details';
 $lang['referral_program'] = 'Become b-onstage Ambassador </br>';
 $lang['referral_program2'] = 'Support the community and earn money for your projects';
 
-$lang['referral_program_step1'] = 'Introduce b-onstage to a venue you like as a musician';
+$lang['referral_program_step1'] = 'Introduce b-onstage to a venue you like as a musician, even if there is no live music today';
 $lang['referral_program_step2'] = 'We\'ll contact them and take care of the details, you don\'t have to do anything';
 $lang['referral_program_step3'] = 'Earn 50% of b-onstage fees on this Stage for 1 full year';
 
@@ -1316,6 +1316,17 @@ $lang['signup_stage_email_txt'] = '	<h1 style="font-size:18px;font-family:\'Aria
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">See you soon!</p>
 	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>
 	<br />';
+
+$lang['signup_stage_email_txt_ref'] = '	<h1 style="font-size:18px;font-family:\'Arial\',sans-serif;color:#8e2c86;">Hello,</h1>
+	<p>We received your request.</p>
+	<p>We will contact the Stage in the next few days to fix the details.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">You don\'t have anything else to do.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">You should talk about b-onstage to increase the visibility of the Stage you recommended us.</p>
+	<br />
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">See you soon!</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>
+	<br />';
+
 
 $lang['signup_stage_confirmation_email_subject'] = 'Confirmation of your registration';
 $lang['signup_stage_confirmation_email_txt1'] = '<p style="font-size:18px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Welcome to b-onstage,</p>	

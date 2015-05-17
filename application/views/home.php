@@ -127,8 +127,8 @@
 
 <!-- referral program -->
 <div class="bg-grey-2 ta-c p-10 mb-30">
-					<span class="fs-32 bold">  <?php echo lang("referral_program") ?> </span>
-					<span class="fs-18 bold">  <?php echo lang("referral_program2") ?> </span>
+					<span class="fs-24 bold">  <?php echo lang("referral_program") ?> </span>
+					<span class="fs-32 bold">  <?php echo lang("referral_program2") ?> </span>
 					
 	<div class="container_12 ta-c mb-10 mt-30 p-10">
 					<div class="dib">
