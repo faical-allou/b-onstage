@@ -800,7 +800,7 @@ $lang['signup_stage_step_2_txt_ref'] = '<li><span class="grey title">Nous contac
 			<li><span class="grey title">Nous partagerons les frais b-onstage perçues sur cette Scène, 50/50 avec vous, pendant un an.</span></li>
 			<li><span class="grey title">Vous n\'avez plus rien à faire mais il est dans votre intérêt de faire connaître b-onstage autour de vous bien sûr.</span></li>';
 
-$lang['signup_stage_step_1_link_ref'] = 'Comment expliquer b-onstage à une Scène?';
+$lang['signup_stage_step_1_link_ref'] = '> Comment expliquer b-onstage à une Scène?';
 	
 
 // Users home

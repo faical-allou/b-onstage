@@ -867,7 +867,7 @@ $lang['signup_stage_step_2_txt_ref'] = '<li><span class="grey title">We\'ll cont
 			<li><span class="grey title">You\'ll get 50% of b-onstage fees we\'ll get through this Stage for one year</span></li>
 			<li><span class="grey title">You don\'t have to do anything but of course, it is in your interest to communicate about b-onstage.</span></li>';
 
-$lang['signup_stage_step_1_link_ref'] = 'How to explain b-onstage to a venue';
+$lang['signup_stage_step_1_link_ref'] = '> How to explain b-onstage to a venue';
 
 
 // Users home		
