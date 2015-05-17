@@ -359,7 +359,7 @@ $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 				<li><p>From time to time <strong>b-onstage will organize events and will offer prizes</strong> so sign up and we\'ll keep you informed!</p></li>				
 				</li>
 			</ul>';
-$lang['aboutus_txt_howimakemoney_ref'] = 'on top of that you can contribute to the community and make money with our Ambassador program';
+$lang['aboutus_txt_howimakemoney_ref'] = '> Also, you can contribute to the community and make money with our Ambassador program';
 
 
 

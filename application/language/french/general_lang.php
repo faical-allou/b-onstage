@@ -362,7 +362,7 @@ $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
 				</li>
 			</ul>';
 			
-$lang['aboutus_txt_howimakemoney_ref'] = 'en plus vous pouvez apporter votre contribution à la communauté et gagner de l\'argent pour vos projet en participant à notre programme Ambassadeur ';
+$lang['aboutus_txt_howimakemoney_ref'] = '> En plus vous pouvez supporter la communauté et gagner de l\'argent pour vos projet en participant à notre programme Ambassadeur ';
 
 
 // Footer

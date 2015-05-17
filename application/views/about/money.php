@@ -14,7 +14,7 @@
 		<div class="about">	
 			<?php echo lang("aboutus_txt_howimakemoney") ?>
 		</div>
-		<div class="about ta-c">	
+		<div class="about">	
 			<a href="/signup_stage_ref" class="bold"><?php echo lang("aboutus_txt_howimakemoney_ref") ?></a>
 		</div>
 		<div class="about">
