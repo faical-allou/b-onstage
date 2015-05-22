@@ -443,292 +443,158 @@ $lang['terms_of_services_header'] = 'General terms and conditions';
 $lang['terms_of_services_txt'] = '<p>This contract provides the conditions of use of <a href="http://www.b-onstage.com">www.b-onstage.com</a> which belongs to MYBANDONSTAGE.</p>
 
 <br /><h2 class="title purple fs-18">DEFINITIONS </h2>
-
 <p>In these General terms and conditions, the terms identified by a capital letter have the meanings given below (in singular and plural):</p>
 <ul>
-  <li>
-    <p>- &nbsp;	The term &quot;Terms&quot; means these Terms and Conditions;</p>
-  </li>
-  <li>
-    <p>- &nbsp;	The term &quot;Site&quot; means B-ONSTAGE website which belongs to MYBANDONSTAGE whose principal URL is <a href="http://www.b-onstage.com">www.b-onstage.com</a> and aims at connecting Stages with Artists;</p>
-  </li>
-  <li>
-    <p>- &nbsp;	The term &quot;User&quot; means any person or entity using the Site and its services, including Artists, Stages and Visitors;</p>
-  </li>
-  <li>
-    <p>- &nbsp;	The term &quot;Visitor&quot; means any person browsing the site without being registered.</p>
-  </li>
-  <li>
-    <p>- &nbsp;	The term &quot;Profile&quot; means the secure personal space, created by a Stage or an Artist in order to have access to services offered by the Site;</p>
-  </li>
-  <li>
-    <p>- &nbsp;	The term &quot;Page&quot; means a public area of ??the Site, created by a Stage or an Artist;</p>
-  </li>
-  <li>
-    <p>- &nbsp;	The term &quot;Stage&quot; refers to a specific category of users registered on the Site, all facilities such as cafes, bars, restaurants, theaters, recording studios (etc.), with adequate places that they want to make available to Artists to organize events under certain conditions;</p>
-  </li>
-  <li>
-    <p>- &nbsp;	The term &quot;Artist&quot; refers to a specific category of users registered on the site, any musician, band or music group (etc.) wishing to find a Stage and thus meet their public to perform their works;</p>
-  </li>
-  <li>
-    <p>- &nbsp;	The term &quot;Event&quot; refers to a live musical performance, made by an Artist and organized by a Stage, which can be a concert, a performance or a recording.</p>
-  </li>
-  <li>
-    <p>The term &quot;Price&quot; means the total cost of the event, that is the rental of the Stage including the services and materials available, and the costs of MYBANDONSTAGE.</p>
-  </li>
+  <li><p>- &nbsp;	The term &quot;Terms&quot; means these Terms and Conditions;</p></li>
+  <li><p>- &nbsp;	The term &quot;Site&quot; means B-ONSTAGE website which belongs to MYBANDONSTAGE whose principal URL is <a href="http://www.b-onstage.com">www.b-onstage.com</a> and aims at connecting Stages with Artists;</p></li>
+  <li><p>- &nbsp;	The term &quot;User&quot; means any person or entity using the Site and its services, including Artists, Stages and Visitors;</p></li>
+  <li><p>- &nbsp;	The term &quot;Visitor&quot; means any person browsing the site without being registered.</p></li>
+  <li><p>- &nbsp;	The term &quot;Profile&quot; means the secure personal space, created by a Stage or an Artist in order to have access to services offered by the Site;</p></li>
+  <li><p>- &nbsp;	The term &quot;Page&quot; means a public area of ??the Site, created by a Stage or an Artist;</p></li>
+  <li><p>- &nbsp;	The term &quot;Stage&quot; refers to a specific category of users registered on the Site, all facilities such as cafes, bars, restaurants, theaters, recording studios (etc.), with adequate places that they want to make available to Artists to organize events under certain conditions;</p></li>
+  <li><p>- &nbsp;	The term &quot;Artist&quot; refers to a specific category of users registered on the site, any musician, band or music group (etc.) wishing to find a Stage and thus meet their public to perform their works;</p></li>
+  <li><p>- &nbsp;	The term &quot;Event&quot; refers to a live musical performance, made by an Artist and organized by a Stage, which can be a concert, a performance or a recording.</p></li>
+  <li><p>The term &quot;Price&quot; means the total cost of the event, that is the rental of the Stage including the services and materials available, and the costs of MYBANDONSTAGE.</p></li>
 </ul>
 
 <br /><h2 class="title purple fs-18">	1. OBJECT </h2>
-
 <p>The General terms and Conditions are intended to define the terms of provision of services, the information on the Site and the conditions of use by the User.</p>
-
 <p>Any access and / or use of the Site implies acceptance and unconditional compliance with the Terms by User, as brought to its attention. It therefore falls under the User responsibility to read them carefully and keep a copy if necessary.</p>
-
 <p>In case the user does not wish to accept all or part of these Terms, he/she is asked to renounce to any use of the Site. The company MYBANDONSTAGE reserves the right to refuse access to the Site, unilaterally and without prior notice, to any User not meeting or not agreeing to these Terms.</p>
 <br />
 
 <br /><h2 class="title purple fs-18">	2. LEGAL NOTICE </h2>
-
 <p>The site is edited by the company MYBANDONSTAGE, limited liability company registered in the Register of Commerce and Companies in PAU, France under the number 538 826 330.</p>
 <p>Contact: <a href="mailto:info@mybandonstage.com">info@mybandonstage.com </a></p>
-
 <p>MYBANDONSTAGE purpose is to facilitate and promote Artistic creation and the relationship of Artists to the public, allowing Artists to find Stages to organize events through the website.</p>
-
 <p>As Intermediary, B-ONSTAGE is a platform for online booking to bring together Artists in search of events and Stages with premises for this purpose.</p>
-
 <p>Publication Director: Mr. Faical ALLOU.</p>
-
 <p>The site has been declared to CNIL and is registered by GoDaddy.com, LLC company located 14455 North Hayden Rd, Suite 219, Scottsdale, AZ 85260 - Contact: <a href="mailto:support@godaddy.com">support@godaddy.com</a>, and hosted by PlanetHoster LLC, 150 Stone Mercury, Montreal, Quebec, H1A 5A9, Canada</p>
 
 <br /><h2 class="title purple fs-18">	3. USER ACCESS </h2>
 
 <h3 class="title fs-16">3.1. Information available</h3>
-
 <p>Pages of users, as well as the list of events are free and available to any user with Internet access. All costs relating to access the Site (such as material costs, software and Internet access technologies, etc.) are the exclusive responsibility of the User who is solely responsible for the proper functioning and proper use of its hardware and its access to the Internet.</p>
 
 <h3 class="title fs-16">3.2. Restricted access</h3>
-
 <p>Access to other services of the Site is limited, conditioned by creating a profile, preregistration is free for Artists and Stages.</p>
 
 <h4 class="title fs-14">3.2.1. Registration of Artists</h4>
-
 <p>The registration of the Artist on the site is necessary in particular to:</p>
-
 <ul>
-  <li>
-    <p>Create and manage confidential Profile;</p>
-  </li>
-  <li>
-    <p>Create and manage its page containing photographs, videos and content to make themselves known;</p>
-  </li>
-  <li>
-    <p>Book a Stage for an event;</p>
-  </li>
-  <li>
-    <p>Make payment of the price of booking to the Stage for an event;</p>
-  </li>
-  <li>
-    <p>Respond to Events offered by Stages;</p>
-  </li>
-  <li>
-    <p>Rate the Stages and events that could be organized;</p>
-  </li>
-  <li>
-    <p>Participate in events and B-ONSTAGE competitions;</p>
-  </li>
-</ul>
-<ul>
-  <li>
-    <p>Keep a record of events made through the Site</p>
-  </li>
+  <li><p>Create and manage confidential Profile;</p></li>
+  <li><p>Create and manage its page containing photographs, videos and content to make themselves known;</p></li>
+  <li><p>Book a Stage for an event;</p></li>
+  <li><p>Make payment of the price of booking to the Stage for an event;</p></li>
+  <li><p>Respond to Events offered by Stages;</p></li>
+  <li><p>Rate the Stages and events that could be organized;</p></li>
+  <li><p>Participate in events and B-ONSTAGE competitions;</p></li>
+  <li><p>Keep a record of events made through the Site</p></li>
 </ul>
 <p>Once the profile established and validated by email, the Artist will create a Page with various content. Page shall not contain phone number, fax or email. Page may contain, in a dedicated area, a reference or link redirecting to a site or a profile of the Artist. The Site will also allow geolocation of the Artist on a map.</p>
-
 <p>By using the services of the Site, Artist testifies that (1) the information provided during registration, on their profile page are complete and accurate and will remain so throughout its registration (2) that he/she is at least 18 years and (3) it is able to contract on his/her behalf. If the Artist is a minor or incompetent, he cannot register personally. The minor will be registered on the site by an adult and acceptance of these Terms will be made by an adult with the ability and the right to contract on behalf of Artist (e.g. parent).</p>
-
 <p>The Artist is solely responsible for the content (coordinates, text, comments, picture, videos, sounds, links...) posted on their profile page, especially in case of actual or suspected infringement of third party rights.</p>
 
 <h4 class="title fs-14">3.2.2. Registration of Stages</h4>
-
 <p>The registration of the Stage on the Site shall be necessary to:</p>
-
 <ul>
-  <li>
-    <p>Create and manage confidential Profile;</p>
-  </li>
-  <li>
-    <p>Create and manage its page containing photographs, videos and content to get to be known by Artists;</p>
-  </li>
-  <li>
-    <p>Suggest, organize and book events for Artists;</p>
-  </li>
-  <li>
-    <p>Know and contact the Artists to organize events;</p>
-  </li>
-  <li>
-    <p>Propose booking premises for a price;</p>
-  </li>
-  <li>
-    <p>Accept an Event reservation made ??by an Artist;</p>
-  </li>
-  <li>
-    <p>Follow the payment of the price of the event booked by an Artist;</p>
-  </li>
-  <li>
-    <p>Rate the Artists that have performed in its premises.</p>
-  </li>
+  <li><p>Create and manage confidential Profile;</p></li>
+  <li><p>Create and manage its page containing photographs, videos and content to get to be known by Artists;</p></li>
+  <li><p>Suggest, organize and book events for Artists;</p></li>
+  <li><p>Know and contact the Artists to organize events;</p></li>
+  <li><p>Propose booking premises for a price;</p></li>
+  <li><p>Accept an Event reservation made ??by an Artist;</p></li>
+  <li><p>Follow the payment of the price of the event booked by an Artist;</p></li>
+  <li><p>Rate the Artists that have performed in its premises.</p></li>
 </ul>
-
 <p>To access these services on the Site, Stages must first create a profile that will contain specific information, including their name, RCS, contact information (address, phone / fax, email), its legal representatives or privileged contacts to organize events, its website, the availability of its premises and reservation price, including all taxes. Otherwise, the Profile cannot be validated.</p>
-
 <p>Once the Profile made,?the Stage will create a standard page, which will contain a brief description of its premises, with photographs or videos as well as the equipment available, the services and the availability of their facilities, their location, their Price per bookable date. The Stage page shall not contain phone number, fax number or email address. Page may contain, in a dedicated area, a reference or link redirecting to a site or profile of the Stage. The site will also allow geolocation of the Stage on the map.</p>
-
 <p>By using the services of the Site, Stage and its representatives testifies that (1) the information provided during the registration of the Profile and Page is complete, true, accurate, not confusing and that it remains so throughout its registration (2) they are solely responsible for the content (address, texts, comments, images, videos, sounds...) posted on their profile page, especially in case of actual or alleged damage to the rights of other parties.</p>
 
-
 <h3 class="title fs-16">3.3. Charter</h3>
-
 <p>The User agrees to:</p>
-
 <ul>
-  <li>
-    <p>Use the Site in accordance with the Terms;</p>
-  </li>
-  <li>
-    <p>Not infringe the rights to the image and honor of other users or third parties;</p>
-  </li>
-  <li>
-    <p>Not be illegal, unlawful, or improper in its use of the Site</p>
-  </li>
-  <li>
-    <p>Not affect (or attempt to) data, the operation or integrity of the Site;</p>
-  </li>
-  <li>
-    <p>Do not contact directly, by any means whatsoever, Stages and / or an Artist listed on the site to organize an event. Not conclude an agreement on an event with a Stage or an Artist other than through the site. Otherwise, the user will be remove from the list indefinitely. In this regard, MYBANDONSTAGE oversees contacts and events occurring between the users.</p>
-  </li>
-  <li>
-    <p>Playing his own compositions and productions at events, in compliance with copyright. Stages and MYBANDONSTAGE cannot be held responsible for infringement.</p>
-  </li>
+  <li><p>Use the Site in accordance with the Terms;</p></li>
+  <li><p>Not infringe the rights to the image and honor of other users or third parties;</p></li>
+  <li><p>Not be illegal, unlawful, or improper in its use of the Site</p></li>
+  <li><p>Not affect (or attempt to) data, the operation or integrity of the Site;</p></li>
+  <li><p>Do not contact directly, by any means whatsoever, Stages and / or an Artist listed on the site to organize an event. Not conclude an agreement on an event with a Stage or an Artist other than through the site. Otherwise, the user will be remove from the list indefinitely. In this regard, MYBANDONSTAGE oversees contacts and events occurring between the users.</p></li>
+  <li><p>Playing his own compositions and productions at events, in compliance with copyright. Stages and MYBANDONSTAGE cannot be held responsible for infringement.</p></li>
 </ul>
-
 <p>In addition, the company MYBANDONSTAGE reserves the right to sue any user who violates these Terms and will ask on this occasion, the repair of financial and moral damages resulting therefrom.</p>
 
 <br /><h2 class="title purple fs-18">	4. &nbsp;&nbsp;&nbsp;DETAIL OF SERVICE </h2>
-
 <p>This article aims at defining the terms and conditions under which the company provides service linking Artists and Stages through the provision of a platform for booking with secure online payment.</p>
-
 <p>The following provisions enacted in the interests of informing the User, are not intended to be exhaustive and can be complemented by the contract signed by the Artist with the Stage.</p>
-
 <p><strong>4.1.</strong> MYBANDONSTAGE offers Artists and Stages on its website:</p>
 <p>•a Profile</p>
 <p>•a Page</p>
 <p>•Visibility in the booking engine</p>
 <p>•Geolocalistaion</p>
-
 <p><strong>4.2.</strong> The company MYBANDONSTAGE provides the Artist willing to organize an event, a platform to check the availability of a Stage and to book an event.</p>
-
 <p><strong>4.3.</strong> The website indicates whether the Stage is available on the date time request. It sends the request to the Stage.</p>
-
 <p><strong>4.4.</strong> Once the reservation is confirmed by the Stage, the Artist makes full payment of the Price.</p>
-
 <p><strong>4.5.</strong> Once payment of the full price of the Eventas shown on page of the Stage, the booking is final and confirmed on the Artist Profile. The site displays the Stage as unavailability on that date, except for special Events defined by MYBANDONSTAGE.</p>
-
 <p><strong>4.6.</strong> MYBANDONSTAGE may offer Stage advertising and promotion on the home page of the Site. The purchase of advertising space will be, if necessary, billed for an additional charge according to information provided by the Site. This bill is not included in the price as defined in these Terms. Again, MYBANDONSTAGE will not be responsible for the content and accuracy of this display.</p>
-
 <p><strong>4.7.</strong> MYBANDONSTAGE reserves the right to use the name of Stage and Artists for promotional purposes on the pages that the company manages on social networks</p>
 
 <br /><h2 class="title purple fs-18">5. &nbsp;&nbsp;&nbsp;FINANCIAL CONDITIONS </h2>
-
 <p><strong>5.1.</strong> The Price displayed must be in Euro and includes all taxes</p>
-
 <p><strong>5.2.</strong> Paiements are made by credit cards through he secured paiement portal on the website</p>
-
-<p><strong>5.3.</strong> For any event booked, MYBANDONSTAGE invoices the Stage based on the Price, a booking fee corresponding to its management fee of 20€ (twenty euros hereinafter Management Fees), a sum which he forfeited in all circumstances when the reservation is confirmed.</p>
-
-<p>In addition to these fees an additional 20% (twenty) of the remaining amount is applicable when the event takes place in accordance with the reservation (hereinafter the &quot;surcharge&quot;).</p>
-
-<p>MYBANDONSTAGE reserves the right to modify its fees and surcharge management in these Terms at any time, said that the price listed on the day of booking is applicable to the Event.</p>
-
-<p><strong>5.4.</strong> The price is paid to the Stage, net of management fees and surcharge before the tenth of the month &quot;n+1&quot; to the events that took place before the twentieth of the month &quot;n&quot; at 23:59; otherwise before tenth of the month &quot;n +2&quot; for Events that occurred between 21 and the end of &quot;n&quot;</p>
-
+<p><strong>5.3.</strong> For any event booked, MYBANDONSTAGE charges its management fee (Management Fees).</p>
+<p>MYBANDONSTAGE reserves the right to modify its fees and surcharge in these Terms at any time, said that the price listed on the day of booking is applicable to the Event.</p>
+<p><strong>5.4.</strong> The Price is paid to the Stage, net of management fees and surcharge before the tenth of the month &quot;n+1&quot; for the events that took place before the twentieth of the month &quot;n&quot; at 23:59; otherwise before tenth of the month &quot;n +2&quot; for Events that occurred between 21 and the end of &quot;n&quot;</p>
 <p><strong>5.5.</strong> Any inquiry or claim must be sent to MYBANDONSTAGE by email to the following address: <a href="mailto:info@mybandonstage.com">info@mybandonstage.com</a> within seven (7) days of the completion of the event</p>
 
-
 <br /><h2 class="title purple fs-18">6. &nbsp;&nbsp;&nbsp;MODIFICATIONS AND CANCELLATION OF THE EVENT </h2>
-
 <p><strong>6.1.</strong> All the following relate to cases where the Artist has already booked and paid the price of the event.</p>
-
 <p><strong>6.2.</strong> Any changes or cancellations of the event must be made??through the online booking system on the site.</p>
-
 <p><strong>6.3.</strong> In case of cancellation of the event, MYBANDONSTAGE reserves the right to display such cancellation for information to users.</p>
-
 <p><strong>6.4.</strong> In case of ate or recurrent cancellations, MYBANDONSTAGE reserves the right to report on the profile of this user a distinctive reference for information to other users.</p>
-
 <p><strong>6.5.</strong> In case of modification of the event, the Stage and the Artist agree on its practicalities. Otherwise, the event is considered to have occurred, the provisions of section 4 apply.</p>
-
 <p><strong>6.6.</strong> In case of cancellation by the Artist within two (2) weeks before the event, the price and the surcharge are acquired in accordance with the provisions of Article 5.</p>
-
-<p><strong>6.7.</strong> In case of cancellation by the Stage at any time the price is fully refunded to the Artist including the Management.</p>
+<p><strong>6.6.</strong> In case of cancellation by the Artist earlier than two (2) weeks before the event, the Price is fully refunded to the Artist .</p>
+<p><strong>6.7.</strong> In case of cancellation by the Stage at any time the Price is fully refunded to the Artist.</p>
 <br />
+
 <br /><h2 class="title purple fs-18">7. &nbsp;&nbsp;&nbsp;Content </h2>
-
 <p>As host of content, MYBANDONSTAGE strives to ensure regular update of the site, but cannot be held responsible for content or links that may be posted by users of the Site, including Artists and Stages.</p>
-
 <p>Users are asked to report to MYBANDONSTAGE any content which they consider inappropriate by email at support@mybandonstage.com.</p>
-
 <p>Without notice and without any prior information, MYBANDONSTAGE reserves the right to modify or remove, at its sole discretion, all or part of the Site Profiles or Pages, at any time and for any reason, particularly if violation of the Terms.</p>
-
 
 <br /><h2 class="title purple fs-18">8. &nbsp;&nbsp;&nbsp;INTELLECTUAL PROPERTY </h2>
 
 <h3 class="title fs-16">8.1. Rights on the website and content</h3>
-
 <p>The Site, the services being offered and the database, are the exclusive property of MYBANDONSTAGE.</p>
-
 <p>Consequently, any extraction, partial or total reproduction, transfer of the Website or the elements it contains, such as the database, for any use other than their consultation on the Site is strictly prohibited, without exceptions and are strictly regulated by laws including the Code of Intellectual Property.</p>
 
 <h3 class="title fs-16">8.2. Copyrignts</h3>
-
 <p>The names, designations and identifying signs of any kind (such as names, logos or figurative marks, product names and service names, domain), quoted or reproduced on the Site are the property of MYBANDONSTAGE or, its suppliers, customers or Artists or Stages. Any breach of this obligation constitutes copyright infringement and is liable to criminal prosecution and civil or criminal penalties.</p>
-
 <p>In particular, &ldquo;b-onstage&rdquo; is a registered trademark owned by MYBANDONSTAGE. Any non authorized reproduction of the brand, its logo and all identifiers is an infringement for which the offender is liable to prosecution as well as heavy civil and criminal penalties.</p>
 
 <h3 class="title fs-16">8.3. Rights on the user content</h3>
-
 <p>Artists and Stages expressly authorize the company MYBANDONSTAGE, upon registration, free of charge for the duration of their registration, the right to use, reproduce, distribute, adapt, publish, translate all content posted in any form whatsoever, including texts, articles, photos, illustrations, icons, logos, databases, software and all other signs or creations. This authorization is granted exclusively for the purposes of operating the site and its purpose.</p>
 
 <br /><h2 class="title purple fs-18">9. &nbsp;&nbsp;&nbsp;PERSONNAL DATA </h2>
 
 <h3 class="title fs-16">9.1. Cookies and data</h3>
-
 <p>The User is informed that the use of the Site and its services may require the installation of a cookie on your hard drive when browsing on the Site. A cookie does not identify the user, but it records information relating to the navigation of your computer on the website that the company MYBANDONSTAGE can read during subsequent visits to facilitate the navigation of the User. The shelf life of this information is two (2) months.</p>
-
 <p>The user can manually delete this information from his computer station, following the procedure applicable to its operating system and its Internet browser.</p>
-
 <p>In the case where the user chooses to refuse acceptance of cookies on the hard disk of the device, the operation of the Site will not be guaranteed.</p>
-
 <p>The company MYBANDONSTAGE may be required to collect anonymous data flows and traffic generated when a computer is connected to the Site, such as service providers, IP address, type and version of browser used, duration of the connection address, etc. These data are collected especially to meet its legal obligations and can also be used for statistical purposes in order to carry out analyzes of use of the Site and to improve and adapt to your needs and your tastes. These data are always processed anonymously.</p>
 
 <h3 class="title fs-16">9.2. PERSONNAL DATA</h3>
-
 <p>During their visit on the Site, the Users including the Artist and the Stage may need to disclose personal data to MYBANDONSTAGE through their Profile.</p>
 
 <h4 class="title fs-14">9.2.1. CONFIDENTIALITY</h4>
-
 <p>The Artists and the Stages are entirely responsible for access to their profile, including the confidentiality of password (login and password) they have has chosen. They will not allow the use by unauthorized third parties for any reason whatsoever.</p>
-
 <p>The Artist and the Stage agree to contact MYBANDONSTAGE as soon as possible in case of hacking or use of the profile without permission.</p>
-
 <p>The company MYBANDONSTAGE cannot be held liable for identity theft or the misuse of profile or page of an Artist or a Stage and the possible consequences that may result.</p>
 
 <h4 class="title fs-14">9.2.2. NATURE AND TREATMENT OF THE PERSONNAL DATA</h4>
-
 <p>The company MYBANDONSTAGE collects and processes information provided by the Artist or the Stage in order to make the services function.</p>
-
 <p>The personal data collected is used exclusively by the company MYBANDONSTAGE within the strict framework of the services of the Site, except within the limits of Article 9.2.3.</p>
-
 <p>This information is confidential and will be treated as such, stored on secure servers without any garantee except for reasonable precautions.</p>
-
 <p>These data will be saved to a period of one (1) year from the date of creation, modification or deletion of content:</p>
 <p>The identifier of the connection initiating the communication;</p>
 <p>The identifier assigned by the system, subject of the transaction and content;</p>
@@ -736,59 +602,38 @@ $lang['terms_of_services_txt'] = '<p>This contract provides the conditions of us
 <p>The nature of the transaction;</p>
 <p>The date and time of the transaction;</p>
 <p>If necessary, the identifier used by the author of the operation.</p>
-
 <p>Other data is retained by the company MYBANDONSTAGE until latest two (2) years after the closing of the account.</p>
 
 <h4 class="title fs-14">9.2.3. &nbsp;&nbsp;&nbsp;TRANSFER OF PERSONNAL DATA</h4>
-
 <p>The company MYBANDONSTAGE undertakes not to disclose, sell or transfer to third parties the personal data without obtaining the prior consent of the Artist or the Stage in question, except for legal requirement or request of national courts.</p>
 
 <h4 class="title fs-14">9.2.4. &nbsp;&nbsp;ACCES RIGHT, MODIFICATION AND DELETION </h4>
-
 <p>According to the French law &quot;Informatique et Libertés&quot; n ° 78-17 of 6 January 1978 amended in 2004, the Artist or the Stage with personal statement personal data has a right of access, rectification and deletion of the data using the form provided for this purpose on the Site, by sending an email to <a href="mailto:support@mybandonstage.com">support@mybandonstage.com</a> or by registered letter to the company MYBANDONSTAGE, 10 Rue des Camelias 64000 PAU.</p>
-
 <p>At any time, the Artist and the Stage may, for legitimate reasons, oppose the processing of data concerning him / her, including seeking the closure of its profile, which will result in the deletion of personal data being stored within one (1) month.</p>
 
 <br /><h2 class="title purple fs-18">10. HYPERTEXT </h2>
-
 <p>The establishment of a hypertext link to the Site requires the prior permission of MYBANDONSTAGE. If you want to establish such a link, please contact the webmaster (<a href="mailto:support@mybandonstage.com">support@mybandonstage.com</a>).</p>
-
 <p>The company MYBANDONSTAGE cannot be held responsible for the activities of sites that are linked to www.b-onstage.com, and shall bear no responsibility for these sites or from these sites.</p>
 
 <br /><h2 class="title purple fs-18">11. LIMIT OF LIABILITY </h2>
-
 <p><strong>11.1.</strong> The company MYBANDONSTAGE will not be held responsible for factors beyond its control, direct or indirect and / or consequential, foreseeable or unforeseeable (including loss of profits or a chance...) which may be incurred by users or their technical environment in the supply of service or the total or partial loss of the functionality of the Site including computers, software, hardware, networks (modems, phones...) and any equipment used to access the Site or use.</p>
-
 <p><strong>11.2.</strong> The User of the Site, including the Artist and the Stage, testify that they know the characteristics and limitations of the Internet, in particular its technical performance, response times for consulting, querying or transferring data and the risks to the safety and continuity of communications.</p>
-
 <p><strong>11.3.</strong> MYBANDONSTAGE implements all reasonable means at its disposal to ensure quality access to the site but is under no obligation of results in the field.</p>
-
 <p><strong>11.4.</strong> In order to maintain, or for any other reason MYBANDONSTAGE reserves the right, without notice or information of users, to terminate, suspend or modify access to any or part of the Site, without conferring any right to any compensation or obligation on his part, whatever the damage suffered by the Users or by third parties as a result of these problems or outages. </p>
-
 <p><strong>11.5.</strong> MYBANDONSTAGE strives to offer users information and / or tools available and verified but cannot be held responsible for errors, absence of availability of features mentioned above.</p>
-
 <p><strong>11.6.</strong> Information provided by the Site is for information only and do not absolve the user from further analysis and personalization.</p>
-
 <p><strong>11.7.</strong> MYBANDONSTAGE does not guarantee the accuracy, completeness or timeliness of the information provided by users on the Site. Accordingly, the User agrees to use this information under his exclusive responsibility.</p>
-
 <p><strong>11.8.</strong> MYBANDONSTAGE shall not be liable in case of problems related to force majeure or circumstances beyond its control or for any dispute relating to announcements made by the Artists and the Stages on the site through their Profile. Single host and moderator of the site, MYBANDONSTAGE will not be responsible for content published on the Site as long as it was not alerted or notified of the alleged illegality of the content.</p>
-
 <p><strong>11.9.</strong> As an intermediary, and not provider or organizer, MYBANDONSTAGE responsibility will not be engaged in case of cancellation of the event by the Artist or the Stage and for any dispute or claim that may arise on the occasion of the organization or execution of the event.</p>
-
 <br /><h2 class="title purple fs-18">12. DURATION AND UPDATE </h2>
-
 <p>The Terms are valid for an indefinite period starting from the first use of the Site by the User.</p>
-
 <p>These Terms are subject to change with the Site and the activities of the company MYBANDONSTAGE. The User have accepted the Terms is invited to regularly check their updates. Unless major changes in these Terms, with consequences on the situation of the user, and which may cause to an alert on the Website, the User is deemed to accept these regular updates.</p>
 
 <br /><h2 class="title purple fs-18">13. MISCELLANIOUS </h2>
-
 <p><strong>13.1.</strong> If one or more provisions of these Terms is held to be invalid or declared as such under any law, regulation or following a final decision of a competent court, other provisions shall remain in full force and effect.</p>
-
 <p><strong>13.2.</strong> The fact that the company MYBANDONSTAGE breaches any of the obligations contained in these Terms shall not be deemed in the future as a waiver of the future obligation.</p>
 
 <br /><h2 class="title purple fs-18">14. JURIDICTION </h2>
-
 <p>These Terms are governed by French law. In case of a dispute over their interpretation, the Parisian courts will have jurisdiction.</p>';
 			
 // legal

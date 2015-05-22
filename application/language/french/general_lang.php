@@ -444,7 +444,6 @@ $lang['terms_of_services_header'] = 'Conditions générales d\'utilisation';
 $lang['terms_of_services_txt'] = '<p>Le présent contrat prévoit les conditions d&rsquo;utilisation du site <a href="http://www.b-onstage.com"> www.b-onstage.com</a> de la société MYBANDONSTAGE.</p>
 
 <br /><h2 class="title purple fs-18">DEFINITIONS </h2>
-
 <p>Dans les présentes Conditions Générales d&rsquo;Utilisation, les termes identifiés par une majuscule ont la signification indiquée ci-après (au singulier comme au pluriel):</p>
 <p>- &nbsp;	Le terme « CGU » désigne les présents termes et conditions générales d&rsquo;utilisation du site<a href="http://www.b-onstage.com"> www.b-onstage.com</a>;</p>
 <p>- &nbsp;	Le terme « Site » &nbsp;désigne le site Internet B-ONSTAGE de la société MYBANDONSTAGE ayant pour adresse principale<a href="http://www.b-onstage.com"> www.b-onstage.com</a>, qui a pour but de mettre en contact des Scènes avec des Artistes pour des Evénements ;</p>
@@ -458,40 +457,28 @@ $lang['terms_of_services_txt'] = '<p>Le présent contrat prévoit les conditions
 <p>- &nbsp;	Le terme « Prix » s&rsquo;entend du coût total de l&rsquo;Evénement, à savoir soit de la prestation de l&rsquo;Artiste, soit de la location de la Scène y compris les services et matériels mis à disposition, ainsi que les frais de la société MYBANDONSTAGE.</p>
 
 <br /><h2 class="title purple fs-18">1. &nbsp;&nbsp;&nbsp;OBJET </h2>
-
 <p>Les CGU ont pour objet de définir les modalités de mise à disposition des services et informations du Site ainsi que ses conditions d&rsquo;utilisation par l&rsquo;Utilisateur.</p>
-
 <p>Tout accès et/ou utilisation du Site suppose l&rsquo;acceptation et le respect inconditionnels des CGU par l&rsquo;Utilisateur, telles que portées à sa connaissance. Il lui incombe donc de les lire attentivement et d&rsquo;en conserver une copie si nécessaire.</p>
-
 <p>Dans le cas où l&rsquo;Utilisateur ne souhaite pas accepter tout ou partie des présentes CGU, il lui est demandé de renoncer à tout usage du Site. La société MYBANDONSTAGE se réserve le droit de refuser l&rsquo;accès au Site, unilatéralement et sans notification préalable, à tout Utilisateur ne respectant ou n&rsquo;acceptant pas les présentes CGU.</p>
 
 <br /><h2 class="title purple fs-18">2. &nbsp;&nbsp;&nbsp;MENTIONS LEGALES </h2>
-
 <p>Le Site est édité par la société MYBANDONSTAGE, société à responsabilité limitée immatriculée au Registre du Commerce et des Sociétés de PAU sous le numéro 538 826 330.</p>
 <p>Contact: info@mybandonstage.com</p>
-
 <p>La société MYBANDONSTAGE a pour objet de faciliter et promouvoir la création artistique et la relation des artistes au public, permettant aux Artistes via le Site de trouver des Scènes pour organiser des Evénements.</p>
-
 <p>Intermédiaire, le Site B-ONSTAGE est une plateforme de réservation en ligne permettant de mettre en contact les Artistes en recherche d&rsquo;Evénements et les Scènes disposant de locaux à cet effet.</p>
-
 <p>Directeur de la publication : M. Faiçal ALLOU.</p>
-
 <p>Le Site a été déclaré auprès de la CNIL et est enregistré par <a href="http://www.godaddy.com/">GoDaddy.com</a>, LLC société sise 14455 North Hayden Rd., Suite 219, Scottsdale, AZ 85260 - Contact : support@godaddy.com; et hébergé par PlanetHoster LLC, 150 Pierre Mercure, Montreal, Quebec, H1A 5A9, Canada</p>
 
 <br /><h2 class="title purple fs-18">3. &nbsp;&nbsp;&nbsp;ACCES DES UTILISATEURS </h2>
 
 <h3 class="title fs-16">3.1.	Informations accessibles</h3>
-
 <p>Les Pages des Utilisateurs, ainsi que la liste des Evénements sont librement et gratuitement accessibles sur le Site à tout Utilisateur disposant d&rsquo;un accès Internet. Tous les coûts afférents à l&rsquo;accès au Site (tels que frais matériels, logiciels ou technologies d&rsquo;accès à Internet, etc.) sont exclusivement à la charge de l&rsquo;Utilisateur qui est seul responsable du bon fonctionnement et de la bonne utilisation de son équipement informatique et de son accès à Internet.</p>
 
 <h3 class="title fs-16">3.2.	Accès aux autres services du Site</h3>
-
 <p>L&rsquo;accès aux autres services du Site est limitatif, conditionné par la création d&rsquo;un Profil, l&rsquo;inscription préalable étant gratuite pour les Artistes et les Scènes.</p>
 
 <h4 class="title fs-14">3.2.1. &nbsp;&nbsp;Inscription de l&rsquo;Artiste</h4>
-
 <p>L&rsquo;inscription de l&rsquo;Artiste sur le Site lui est nécessaire notamment pour :</p>
-
 <p>- &nbsp;	Créer et gérer son Profil confidentiel;</p>
 <p>- &nbsp;	Créer et gérer sa Page contenant photographies, &nbsp;vidéos et contenus &nbsp;pour se faire connaitre des Scènes</p>
 <p>- &nbsp;	Réserver une Scène pour un Evénement ;</p>
@@ -500,17 +487,12 @@ $lang['terms_of_services_txt'] = '<p>Le présent contrat prévoit les conditions
 <p>- &nbsp;	Donner son avis sur les Scènes et Evénements qu&rsquo;il a pu y organiser;</p>
 <p>- &nbsp;	Participer aux tremplins et concours B-ONSTAGE ;</p>
 <p>- &nbsp;	Conserver un historique des Evénements réalisés par le biais du Site ainsi que ses participations et prix gagnés lors des tremplins et concours B-ONSTAGE.</p>
-
 <p>Une fois son Profil constitué et validé par email, l&rsquo;Artiste pourra créer une Page standard proposée par le Site, avec divers contenus. La Page ne pourra pas contenir de numéro de téléphone, de télécopie ou d&rsquo;adresse email. La Page pourra contenir, dans une zone dédiée, un lien faisant référence ou redirigeant vers un site ou un profil de l&rsquo;Artiste. Le Site permettra également une géolocalisation de l&rsquo;Artiste sur une carte géographique.</p>
-
 <p>En utilisant les services du Site, l&rsquo;Artiste déclare et garantit (1) que les informations fournies lors de &nbsp;son inscription, sur son Profil et sa Page, sont complètes et exactes et qu&rsquo;elles le demeureront tout au long de son inscription, (2) qu&rsquo;il a au moins 18 ans et (3) qu&rsquo;il est capable de contracter en son nom. Si l&rsquo;Artiste est mineur ou incapable, il ne pourra s&rsquo;inscrire personnellement et devra se faire inscrire et représenter sur le Site et pour l&rsquo;acceptation des présentes CGU par toute personne majeure ayant la capacité et le droit de contracter pour le compte de l&rsquo;Artiste (ex. : parent).</p>
-
 <p> L&rsquo;Artiste est seul responsable des contenus (coordonnées, textes, commentaires, image, vidéos, sons, liens…) mis en ligne sur son Profil et Page, notamment en cas d&rsquo;atteinte réelle ou supposée aux droits des tiers.</p>
 
 <h4 class="title fs-14">3.2.2. &nbsp;&nbsp;Inscription de la Scène</h4>
-
 <p>L&rsquo;inscription de la Scène sur le Site lui est nécessaire notamment pour :</p>
-
 <p>- &nbsp;	Créer et gérer son Profil confidentiel ;</p>
 <p>- &nbsp;	Créer et gérer sa Page contenant photographies, vidéos et contenus pour se faire connaitre des Artistes ; </p>
 <p>- &nbsp;	Proposer, organiser et réserver des Evénements pour des Artistes ;</p>
@@ -519,147 +501,92 @@ $lang['terms_of_services_txt'] = '<p>Le présent contrat prévoit les conditions
 <p>- &nbsp;	Valider une réservation d&rsquo;Evénement faite par un Artiste ;</p>
 <p>- &nbsp;	Suivre le paiement du Prix de l&rsquo;Evénement réservé par un Artiste ;</p>
 <p>- &nbsp;	Donner un avis sur les Artistes qui se sont produits dans ses locaux.</p>
-
 <p>Pour accéder à ces services du Site, la Scène devra au préalable créer un Profil qui contiendra des renseignements précis, notamment leur raison sociale, numéro R.C.S., coordonnées (adresse, numéro de téléphone/fax, email), ses représentants légaux ou contacts privilégiés pour organiser des Evénements, son site Internet, mais encore la disponibilité de ses locaux et son prix de réservation, toutes taxes comprises. A défaut, son Profil pourra ne pas être validé.</p>
-
 <p>Son Profil constitué, la Scène pourra créer une Page standard proposée par le Site, qui contiendra une présentation succincte de son local, avec des photographies ou vidéos ainsi que les équipements mis à disposition, les services ainsi que la disponibilité de leurs locaux, leur localisation et le Prix de réservation. La Page de la Scène ne pourra pas contenir de numéro de téléphone, de télécopie, ou d&rsquo;adresse email. La Page pourra contenir, dans une zone dédiée, un lien faisant référence ou redirigeant vers un site ou un profil de la Scène. Le Site permettra également une géolocalisation de la Scène sur la carte géographique proposée par le Site.</p>
-
 <p>En utilisant les services du Site, la Scène et ses représentants déclarent et garantissent (1) que les informations fournies lors de son inscription, sur son Profil et sa Page sont complètes, véridiques, précises, ne prêtent pas à confusion et qu&rsquo;elles le demeureront tout au long de son inscription (2) qu&rsquo;ils sont seuls responsables des contenus (coordonnées, textes, commentaires, images, vidéos, sons …) mis en ligne sur leurs Profil et Page, notamment en cas d&rsquo;atteinte réelle ou supposée aux droits des tiers.</p>
 
-
-
 <h3 class="title fs-16">3.3.	Charte de bonne conduite</h3>
-
 <p>L&rsquo;Utilisateur s&rsquo;engage à:</p>
-
 <p>- &nbsp;	utiliser le Site dans le respect des conditions et finalités des CGU ;</p>
 <p>- &nbsp;	ne pas porter atteinte aux droits, à l&rsquo;image, à l&rsquo;honneur d&rsquo;autres Utilisateurs ou de tiers ;</p>
 <p>- &nbsp;	ne pas avoir un comportement illicite ou illégal, ou non conforme aux bonnes mœurs ;</p>
 <p>- &nbsp;	ne pas porter atteinte (ou tenter de le faire) aux données, au fonctionnement ou à l&rsquo;intégrité du Site ;</p>
 <p>- &nbsp;	ne pas contacter directement, par quelque moyen que ce soit, une Scène et/ou un Artiste inscrits sur le Site pour organiser un Evénement et ne pas conclure d&rsquo;accord sur un Evénement avec une Scène ou un Artiste autrement que par le biais du Site. A défaut, l&rsquo;Utilisateur se verra radier du listing pour une durée illimitée. A cet égard, MYBANDONSTAGE assure une veille des contacts et évènements intervenant entre les Utilisateurs.</p>
 <p> - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jouer ses propres compositions et productions lors des Évènements, dans le respect des droits d&rsquo;auteurs. MYBANDONSTAGE et la Scène ne pourront être tenue pour responsable en cas de manquement.</p>
-
 <p>En outre, la société MYBANDONSTAGE se réserve le droit de poursuivre tout Utilisateur qui contreviendrait aux présentes CGU, et de demander, à cette occasion, la réparation des préjudices pécuniaires et moraux en résultant.</p>
 
 <br /><h2 class="title purple fs-18">4. &nbsp;&nbsp;&nbsp;DETAILS DU SERVICE </h2>
-
 <p>Le présent article a pour objet de définir les termes et conditions dans lesquels la société MYBANDONSTAGE fournit un service de mise en relation entre un Artiste et une Scène à travers la mise à disposition d&rsquo;une plateforme de réservation avec paiement en ligne sécurisé.</p>
-
 <p>Les dispositions suivantes édictées dans un souci d\'information de l\'Utilisateur, n&rsquo;ont pas vocation à être exhaustives et peuvent être complétées par le contrat signé par l&rsquo;Artiste avec la Scène.</p>
-
 <p><strong>4.1.</strong> &nbsp;&nbsp;&nbsp;La société MYBANDONSTAGE met à la disposition des Artistes et des Scènes sur le Site:</p>
 <p>• &nbsp;	Un Profil</p>
 <p>• &nbsp;	Une Page</p>
 <p>• &nbsp;	Un référencement sur la centrale de réservation</p>
 <p>• &nbsp;	Une géolocalisation sur la carte proposée par le site</p>
-
 <p><strong>4.2.</strong> &nbsp;&nbsp;&nbsp;La société MYBANDONSTAGE met à la disposition de l&rsquo;Artiste et de la Scène voulant organiser un Evénement, une plateforme de réservation en ligne leur permettant via leur Page de vérifier la disponibilité d&rsquo;une Scène et de la réserver pour un Evénement.</p>
-
 <p><strong>4.3.</strong> &nbsp;&nbsp;Le Site indique si la Scène est disponible à la date voulue. Il envoie la réservation d&rsquo;Evénement à la Scène.</p>
-
 <p><strong>4.4.</strong>	Une fois la réservation validée par la &nbsp;Scène, l&rsquo;Artiste procède au paiement complet du Prix en ligne.</p>
-
 <p><strong>4.5.</strong>	A réception du paiement du Prix complet de l&rsquo;Evénement tel qu&rsquo;indiqué sur la Page de la Scène, la réservation est définitive et est confirmée à l&rsquo;Artiste sur son Profil. Le Site indique sur le calendrier de la Scène concernée son indisponibilité à cette date, sauf modalités particulières à définir avec la société MYBANDONSTAGE (ex. en cas de tremplin, concerts groupés, festival…).</p>
-
 <p><strong>4.6.</strong>	MYBANDONSTAGE pourra proposer à la Scène et/ou à l&rsquo;Artiste un affichage publicitaire et promotionnel sur la page d&rsquo;accueil du Site, selon des modalités à définir via le Site. Cet achat d&rsquo;espace publicitaire fera l&rsquo;objet, le cas échéant, d&rsquo;une facturation supplémentaire conformément aux informations fournies par le Site. Cette facturation n&rsquo;est pas incluse dans le Prix tel que défini aux présentes CGU. A nouveau, MYBANDONSTAGE ne sera pas responsable des contenus et de l&rsquo;exactitude de cet affichage, choisi et défini par la Scène et/ou l&rsquo;Artiste.</p>
 <p><strong>4.7.</strong>	MYBANDONSTAGE se réserve le droit d&rsquo;utiliser le nom des Scènes et Artistes à des fins promotionnelles sur les pages que la société gère sur les réseaux sociaux</p>
 
 <br /><h2 class="title purple fs-18">5. &nbsp;&nbsp;&nbsp;CONDITIONS FINANCIERES </h2>
-
 <p><strong>5.1.</strong>	Le Prix de l&rsquo;Evénement sur le Site doit être indiqué en euros et T.T.C.</p>
-
 <p><strong>5.2.</strong>	Les paiements réalisés sur le Site s\'effectuent par carte bancaire par l\'intermédiaire d\'un système de paiement sécurisé.</p>
-
-<p><strong>5.3.</strong>	Pour tout Evénement réservé, la société MYBANDONSTAGE facture à la Scène, sur le montant du Prix, des frais de réservation correspondant à ses frais de gestion de 20€ (ci-après Frais de Gestion), somme qui lui reste acquise en toute circonstance dès la réservation validée.</p>
-
-<p>S&rsquo;ajoute à ces frais une surcharge de 20% (vingt) du Prix lorsque l&rsquo;Evénement a lieu conformément à la réservation (ci-après la « Surcharge »).</p>
-
+<p><strong>5.3.</strong>	Pour tout Evénement réservé, la société MYBANDONSTAGE facture des frais de réservation correspondant à ses frais de gestion (ci-après Frais de Gestion).</p>
 <p>La société MYBANDONSTAGE se réserve le droit de modifier ses Frais de Gestion et sa surcharge, dans les présentes CGV, à tout moment, étant indiqué que le Prix figurant le jour de la réservation est applicable à l\'Evénement.</p>
-
 <p><strong>5.4.</strong>	Le Prix est versé à la Scène, déduction faite des Frais de Gestion et de la Surcharge avant le 10 du mois &ldquo;n+1&rdquo; pour les Evénements ayant eu lieu avant le 20 du mois &ldquo;n&rdquo; à 23:59; avant le 10 du mois &ldquo;n+2&rdquo;, pour les Evénements ayant eu lieu entre le 21 et la fin du mois &ldquo;n&rdquo;</p>
-
 <p><strong>5.5.</strong>	Toute demande d&rsquo;information, de précision ou réclamation éventuelle doit être adressé à la société MYBANDONSTAGE qui collecte le Prix au nom et pour le compte de la Scène dans les sept (7) jours qui suivent la réalisation de l&rsquo;Evénement par email à l&rsquo;adresse suivante : info@mybandonstage.com</p>
 
-
 <br /><h2 class="title purple fs-18">6. &nbsp;&nbsp;&nbsp;MODIFICATIONS ET ANNULATIONS DE L&rsquo;EVENEMENT </h2>
-
 <p><strong>6.1.</strong> &nbsp;&nbsp;&nbsp;Toutes les conditions suivantes concernent des cas où l&rsquo;Artiste a déjà réservé et payé le Prix de l&rsquo;Evénement.</p>
-
 <p><strong>6.2.</strong>	Toutes les modifications ou annulations de l&rsquo;Evénement doivent être effectuées via le système de réservation en ligne sur le Site.</p>
-
 <p><strong>6.3.</strong>	En cas d&rsquo;annulation de l&rsquo;Evénement, MYBANDONSTAGE, ainsi alertée, se réserve le droit d&rsquo;afficher cette annulation, aux fins d&rsquo;information des Utilisateurs. </p>
-
 <p><strong>6.4.</strong>	En cas d&rsquo;annulations abusives, tardives ou récurrentes d&rsquo;un Utilisateur, &nbsp;MYBANDONSTAGE, se réserve le droit de signaler sur le profil de cet Utilisateur une mention distinctive, aux fins d&rsquo;information des autres Utilisateurs.</p>
-
 <p><strong>6.5.</strong>	En cas de modification de l&rsquo;Evénement, la Scène et l&rsquo;Artiste se mettent d&rsquo;accord sur ses modalités pratiques. A défaut, l&rsquo;Evénement est considéré comme ayant eu lieu, les dispositions de l&rsquo;article 4 s&rsquo;appliquent.</p>
-
 <p><strong>6.6.</strong>	En cas d&rsquo;annulation par l&rsquo;Artiste moins de deux (2) semaines avant l&rsquo;Evénement, le Prix comme la Surcharge de la société MYBANDONSTAGE restent acquis conformément aux dispositions de l&rsquo;article 5.</p>
-
-<p>Lorsque &nbsp;l&rsquo;annulation a lieu plus de deux (2) semaines avant l&rsquo;Evénement, le Prix est entièrement reversé à l&rsquo;Artiste, déduction faite des Frais de Gestion.</p>
-
+<p>Lorsque &nbsp;l&rsquo;annulation a lieu plus de deux (2) semaines avant l&rsquo;Evénement, le Prix est entièrement reversé à l&rsquo;Artiste.</p>
 <p><strong>6.7.</strong>	En cas d&rsquo;annulation par la Scène et ce, sans condition de préavis, le Prix est entièrement rétrocédé à l&rsquo;Artiste, Frais de Gestion inclus.</p>
 
 <br /><h2 class="title purple fs-18">7. &nbsp;&nbsp;&nbsp;CONTENU DU SITE </h2>
-
 <p>En tant qu&rsquo;hébergeur de contenus, la société MYBANDONSTAGE s&rsquo;efforce d&rsquo;assurer la mise à jour régulière du Site, mais ne saurait être tenue responsable des contenus pouvant être mis en ligne par les Utilisateurs du Site, notamment les Artistes et Scènes, mais encore des données ou informations disponibles sur ou à partir de sites ou sources externes, telles que mises en lignes par lesdits Utilisateurs.</p>
-
 <p>Les Utilisateurs sont invités à signaler à la société MYBANDONSTAGE tout contenu qui leur paraît ne pas correspondre aux règles susvisées.</p>
-
 <p>Alertée ou de sa propre initiative, la société MYBANDONSTAGE se réserve le droit de modifier ou de supprimer, à sa seule discrétion, tout ou partie du Site, des Profils ou Pages, et ce, à tout moment &nbsp;et pour tout motif, notamment en cas de &nbsp;violation des CGU, sans préavis et sans information préalable des Utilisateurs qui ne pourront pas engager sa responsabilités de ce fait.</p>
-
 <p>En tant qu&rsquo;hébergeur des Profils et Pages sur lesquels elle n&rsquo;a aucune prise et n&rsquo;effectue aucun contrôle a priori, la société MYBANDONSTAGE pourra supprimer sur simple demande à l&rsquo;adresse support@mybandonstage.com dans un délai raisonnable tel que précisé par la jurisprudence, les contenus pouvant constituer une atteinte aux droits de tiers.</p>
-
 <br /><h2 class="title purple fs-18">8. &nbsp;&nbsp;&nbsp;PROPRIETE INTELLECTUELLE </h2>
 
 <h3 class="title fs-16">8.1.	Droits sur le Site et son contenu</h3>
-
 <p>Le Site, les services y étant proposés ainsi que la base de données y étant intégrée, sont la propriété exclusive de la société MYBANDONSTAGE.</p>
-
 <p>En conséquence, toute extraction, reproduction partielle ou totale, transfert du Site et/ou des éléments qu&rsquo;il contient, tels que sa base de données, mais encore toute utilisation autre que leur consultation sur le Site, sont strictement interdits, hors les exceptions prévues et strictement encadrées par les lois en vigueur et notamment le Code de la Propriété Intellectuelle.</p>
 
 <h3 class="title fs-16">8.2.	Droits sur les marques et nom de domaine</h3>
-
 <p>Les noms, dénominations et signes identitaires de toute nature (tels que noms, logotypes ou marques figuratives, noms des produits et services, noms de domaine), cités ou reproduits sur le Site, sont la propriété de la société MYBANDONSTAGE ou, le cas échéant, de ses prestataires, clients ou des Artistes ou Scènes du Site. Il ne peut en &nbsp;être fait aucun usage même partiel par l&rsquo;Utilisateur, aucune reproduction, représentation ou imitation, sauf autorisation écrite et préalable des titulaires concernés. Toute infraction à cette obligation constitue le délit de contrefaçon exposant son auteur à des poursuites judiciaires et à des sanctions civiles et pénales.</p>
-
 <p>En particulier, MYBANDONSTAGE est une marque enregistrée, propriété exclusive de la société MYBANDONSTAGE. Toute reproduction ou représentation non autorisée par écrit préalable de la marque, de son logo et de tous signes distinctifs constitue un acte de contrefaçon à tout le moins un acte répréhensible pour lequel le contrevenant s&rsquo;expose à des poursuites judiciaires ainsi qu&rsquo;à de lourdes sanctions civiles et pénales.</p>
 
 <h3 class="title fs-16">8.3.	Droits sur le contenu du Site</h3>
-
 <p>Les Artistes et Scènes autorisent expressément la société MYBANDONSTAGE, dès leur inscription, à titre gracieux et pour la durée de leur inscription, pour la durée de protection accordée par les lois et conventions nationales et internationales en vigueur et pour le monde entier, le droit d&rsquo;utiliser, reproduire, distribuer, adapter, éditer, traduire tous les contenus mis en ligne sous quelque forme que ce soit et notamment de textes, articles, photos, images, illustrations, icones, logos, bases de données, logiciels et tous autres signes ou créations. Cette autorisation est donnée exclusivement pour les besoins de l&rsquo;exploitation du Site et de son objet.</p>
 
 <br /><h2 class="title purple fs-18">	9. &nbsp;&nbsp;&nbsp;DONNEES PERSONNELLES </h2>
 
 <h3 class="title fs-16">9.1.	Cookies et données</h3>
-
 <p>L&rsquo;Utilisateur est informé que l&rsquo;utilisation du Site et de ses services peut nécessiter l&rsquo;implantation d&rsquo;un cookie sur son disque dur lors de la navigation sur le Site. Un cookie ne permet pas d&rsquo;identifier l&rsquo;Utilisateur ; en revanche il enregistre des informations relatives à sa navigation de son ordinateur sur le Site que la société MYBANDONSTAGE pourra lire lors de ses visites ultérieures, afin de faciliter la navigation de l&rsquo;Utilisateur. La durée de conservation de ces informations est de deux (2) mois.</p>
-
 <p>L&rsquo;Utilisateur peut effacer manuellement ces informations depuis son poste informatique, en suivant le procédé applicable à son système d&rsquo;exploitation et à son navigateur Internet.</p>
-
 <p>Dans l\'hypothèse, où l\'Utilisateur choisit de refuser la réception de cookies sur le disque dur de son terminal, le fonctionnement du Site ne sera pas garanti.</p>
-
 <p>La société MYBANDONSTAGE peut être amenée à recueillir des données anonymes concernant les flux et trafic générés lorsque qu&rsquo;un ordinateur est connecté au Site, telles que : fournisseurs d\'accès, adresse IP, type et version du navigateur utilisé, durée de la connexion, etc. Ces données sont collectées notamment afin de répondre à ses obligations légales et peuvent également être utilisées dans un but statistique afin de procéder à des analyses de fréquentation du Site et de l&rsquo;améliorer en l&rsquo;adaptant à vos besoins et à vos goûts. Ces données ne sont jamais exploitées nominativement.</p>
 
 <h3 class="title fs-16">9.2.	Données personnelles</h3>
-
 <p>A l\'occasion de leur navigation sur le Site, l&rsquo;Utilisateur notamment l&rsquo;Artiste comme la Scène peut être amené à communiquer des données à caractère personnel à la société MYBANDONSTAGE via son Profil.</p>
 
 <h4 class="title fs-14">9.2.1. &nbsp;&nbsp;Confidentialité</h4>
-
 <p>L&rsquo;Artiste comme la Scène est entièrement responsable de l&rsquo;accès à son Profil, et notamment de la confidentialité des identifiants (login et du mot de passe) qu&rsquo;il/elle aura choisis. Il s&rsquo;engage à ne pas les divulguer mais encore à ne pas en permettre l&rsquo;usage par des tiers non autorisés à quelque titre que ce soit.</p>
-
 <p>L&rsquo;Artiste comme la Scène s&rsquo;engage à contacter la société MYBANDONSTAGE dans les plus brefs délais en cas de soupçon de piratage ou d&rsquo;utilisation de son Profil sans autorisation.</p>
-
 <p>La société MYBANDONSTAGE ne peut être tenue responsable d&rsquo;une usurpation d&rsquo;identité ou de l&rsquo;usage détourné du Profil ou de la Page d&rsquo;un Artiste ou d&rsquo;une Scène et des conséquences éventuelles pouvant en résulter.</p>
 
 <h4 class="title fs-14">9.2.2. &nbsp;&nbsp;Nature et traitement des données à caractère personnel recueillies</h4>
-
 <p>La société MYBANDONSTAGE recueille et traite les informations communiquées par l&rsquo;Artiste ou la Scène afin de faire fonctionner les services du Site de manière optimale.</p>
-
 <p>Les données personnelles ainsi collectées sont exclusivement destinées à la société MYBANDONSTAGE dans le cadre strict des services du Site, sauf dans les limites de l&rsquo;article 9.2.3.</p>
-
 <p>Conformément à la loi, la communication de données à caractère personnel est facultative, basée sur l&rsquo;accord explicite de l&rsquo;Utilisateur, notamment de l&rsquo;Artiste et de la Scène par ses représentants légaux, à faire usage des services du Site.</p>
 <p>Ces informations sont confidentielles et seront traitées comme telles, sauvegardées sur les serveurs sécurisés de la société MYBANDONSTAGE ou de ses prestataires informatiques, celle-ci s&rsquo;obligeant à faire ses meilleurs efforts pour en assurer par tous moyens la confidentialité, la non-divulgation, toute modification ou destruction, mais sans en être tenue d&rsquo;une obligation de résultat en la matière.</p>
-
 <p>La durée de conservation des &nbsp;données suivantes sera limitée à une durée d&rsquo;un (1) an à compter de la création, de la modification ou de la suppression d&rsquo;un contenu :</p>
 <p>- &nbsp;&nbsp;L&rsquo;identifiant de la connexion à l&rsquo;origine de la communication ;</p>
 <p>- &nbsp;&nbsp;L&rsquo;identifiant attribué par le système d&rsquo;information au contenu, objet de l&rsquo;opération ;</p>
@@ -667,59 +594,39 @@ $lang['terms_of_services_txt'] = '<p>Le présent contrat prévoit les conditions
 <p>- &nbsp;&nbsp;La nature de l&rsquo;opération ;</p>
 <p>- &nbsp;&nbsp;Les dates et heures de l&rsquo;opération ;</p>
 <p>- &nbsp;&nbsp;Le cas échéant, l&rsquo;identifiant utilisé par l&rsquo;auteur de l&rsquo;opération.</p>
-
 <p>Sauf exception aux termes des CGU, les autres données sont conservées par la société MYBANDONSTAGE au plus tard deux (2) ans après la fermeture du compte concerné.</p>
 
 <h4 class="title fs-14">9.2.3. &nbsp;&nbsp;&nbsp;Transfert des données à caractère personnel</h4>
-
 <p>La société MYBANDONSTAGE s&rsquo;engage à ne pas communiquer, céder ou transférer, à des tiers les données à caractère personnel sans avoir recueilli préalablement l&rsquo;accord de l&rsquo;Artiste ou de la Scène concerné(e), sauf exigence légale ou requête des juridictions compétentes.</p>
 
 <h4 class="title fs-14">9.2.4. &nbsp;&nbsp;Droit d&rsquo;accès, de modification ou de suppression aux données à caractère personnel</h4>
-
 <p>Conformément à la loi française dite « Informatique et Libertés » n°78-17 du 6 janvier 1978 modifiée en 2004, l&rsquo;Artiste ou la Scène ayant communiqué des données nominatives personnelles dispose d\'un droit d\'accès, de rectification et de suppression de ces données qu\'ils exercent gratuitement en utilisant le formulaire prévu à cet effet sur le Site en envoyant un email à support@mybandonstage.com ou écrivant par lettre recommandée avec accusé de réception à la société MYBANDONSTAGE, 10 Rue des Camélias 64000 PAU.</p>
-
 <p>A tout moment, l&rsquo;Artiste comme la Scène pourra, pour des motifs légitimes, s&rsquo;opposer au traitement des données le/la concernant et notamment solliciter la fermeture de son Profil, ce qui entraînera l&rsquo;effacement irrémédiable et définitif des données à caractère personnel y étant contenues dans un délai d&rsquo;un (1) mois.</p>
 
 <br /><h2 class="title purple fs-18">10. LIENS HYPERTEXTES </h2>
-
 <p>La mise en place d&rsquo;un lien hypertexte vers le Site nécessite une autorisation préalable de la société MYBANDONSTAGE. Si vous souhaitez mettre en place un tel lien, veuillez prendre contact avec le responsable du Site (support@mybandonstage.com).</p>
-
 <p>La société MYBANDONSTAGE ne pourra pas être tenue pour responsable de la mise à disposition des sites qui font l&rsquo;objet d&rsquo;un lien hypertexte à partir du Site et ne peut supporter aucune responsabilité notamment sur le contenu, les produits, les services disponibles sur ces sites ou à partir de ces sites.</p>
 
 <br /><h2 class="title purple fs-18">11. LIMITATION DE RESPONSABILITE </h2>
-
 <p><strong>11.1.</strong>La société MYBANDONSTAGE ne saurait être tenue responsable des éléments en dehors de son contrôle, ni des dommages directs ou indirects et/ou immatériels, prévisibles ou imprévisibles (incluant la perte de profits ou d\'une chance…) qui pourraient éventuellement être subis par les Utilisateurs ou par leur environnement technique lors de la fourniture et/ou de l\'utilisation ou de l\'impossibilité totale ou partielle d\'utiliser les fonctionnalités du Site, et notamment leurs ordinateurs, logiciels, équipement, réseaux (modems, téléphones…) et tout matériel utilisé pour accéder au Site ou pour l&rsquo;utiliser.</p>
-
 <p><strong>11.2.</strong>En tout état de cause, l&rsquo;Utilisateur du Site, et notamment l&rsquo;Artiste et la Scène, déclarent connaître les caractéristiques et les limites de l\'Internet, en particulier ses performances techniques, les temps de réponse pour consulter, interroger ou transférer des données et les risques liés à la sécurité et la continuité des communications.</p>
-
 <p><strong>11.3.</strong>La société MYBANDONSTAGE met en œuvre tous les moyens raisonnables à sa disposition pour assurer un accès de qualité au Site mais n&rsquo;est tenue à aucune obligation de résultat en la matière.</p>
-
 <p><strong>11.4.</strong>Afin d&rsquo;en assurer la maintenance, ou pour toute autre raison qui lui serait propre, la société MYBANDONSTAGE se réserve la possibilité, sans préavis ni information des Utilisateurs, &nbsp;d&rsquo;interrompre, de suspendre momentanément ou de modifier l&rsquo;accès à tout ou partie du Site, sans que cette interruption, suspension ou modification de l&rsquo;accès n&rsquo;ouvre le droit à une quelconque obligation ou indemnisation de sa part, quel que soit le préjudice éventuellement subi par celui-ci ou par les tiers du fait de ces dysfonctionnements ou indisponibilités.</p>
-
 <p><strong>11.5.</strong>La société MYBANDONSTAGE met tout en œuvre pour offrir aux Utilisateurs des informations et/ou outils disponibles et vérifiés mais ne saurait être tenue pour responsables des erreurs, absences de disponibilité des fonctionnalités susvisées.</p>
-
 <p><strong>11.6.</strong>Les informations fournies par le Site le sont à titre indicatif et ne sauraient dispenser l&rsquo;Utilisateur d&rsquo;une analyse complémentaire et personnalisée.</p>
-
 <p><strong>11.7.</strong>La société MYBANDONSTAGE ne saurait garantir l&rsquo;exactitude, la complétude, l&rsquo;actualité absolues des informations diffusées par les Utilisateurs sur le Site. En conséquence, l&rsquo;Utilisateur reconnaît utiliser ces informations sous sa responsabilité exclusive.</p>
-
 <p><strong>11.8.</strong>La responsabilité de la société MYBANDONSTAGE ne pourra être engagée en cas de problèmes liés à une force majeure ou des faits indépendants de sa volonté mais encore pour tout litige lié aux contenus diffusés par les Artistes et les Scènes sur le Site par le biais de leur Page. Simple hébergeur et modérateur du Site, la société MYBANDONSTAGE ne sera pas responsable des contenus publiés sur le Site via les Pages, tant qu&rsquo;elle n&rsquo;a pas été alertée ou avertie de l&rsquo;illicéité supposée de ces contenus.</p>
-
 <p><strong>11.9.</strong>En tant que simple intermédiaire, et non prestataire ni organisateur, la responsabilité de la société MYBANDONSTAGE ne pourra être engagée en cas d&rsquo;annulation de l&rsquo;Evénement par l&rsquo;Artiste ou la Scène mais encore pour tout litige ou réclamation qui pourrait naître à l&rsquo;occasion de l&rsquo;organisation ou la réalisation de l&rsquo;Evénement auquel elle est entièrement étrangère.</p>
 
 <br /><h2 class="title purple fs-18">12. DUREE ET MISES A JOUR </h2>
-
 <p>Les CGU sont conclues pour une durée indéterminée à compter de l&rsquo;utilisation du Site par l&rsquo;Utilisateur.</p>
-
 <p>Les présentes CGU sont susceptibles d&rsquo;évoluer avec le Site et l&rsquo;activité de la société MYBANDONSTAGE. L&rsquo;Utilisateur ayant accepté les CGU est invité à vérifier régulièrement leurs mises à jour. Sauf changement majeur dans ces CGU, ayant des conséquences sur la situation de l&rsquo;Utilisateur, et qui donneront éventuellement lieu à une alerte sur le Site, l&rsquo;Utilisateur est réputé accepter ces mises à jour régulières.</p>
 
 <br /><h2 class="title purple fs-18">13. DIVERS </h2>
-
 <p><strong>13.1.</strong>Si une ou plusieurs stipulations des présentes CGU sont tenues pour non valides ou déclarées telles en application d\'une loi, d\'un règlement ou à la suite d\'une décision définitive d\'une juridiction compétente, les autres stipulations garderont toute leur force et leur portée.</p>
-
 <p><strong>13.2.</strong>Le fait pour la société MYBANDONSTAGE de ne pas se prévaloir d\'un manquement à l\'une des obligations visées dans les présentes CGU ne saurait être interprété pour l\'avenir comme une renonciation à se prévaloir ultérieurement de l\'obligation en cause.</p>
 
 <br /><h2 class="title purple fs-18">14. DROIT APPLICABLE ET JURIDICTION COMPETENTE </h2>
-
 <p>Les présentes CGU sont soumises à la loi française. En cas de litige sur leur interprétation, les tribunaux parisiens seront seuls compétents.</p>';
 
 // legal
