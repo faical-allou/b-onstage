@@ -72,7 +72,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'french';
+$config['language']	= 'english';
 
 // Languages
 //ENGLISH
@@ -85,6 +85,12 @@ $config['lang_counts'][] =  array('name'				    => 'french',
 									'id'					=> 'fr',
 									'datepickerid'			=> 'fr',
 									'isocode'				=> 'fre');
+
+//GERMAN
+$config['lang_counts'][] =  array('name'				    => 'german',
+									'id'					=> 'de',
+									'datepickerid'			=> 'de',
+									'isocode'				=> 'deu');
 
 /*
 |--------------------------------------------------------------------------

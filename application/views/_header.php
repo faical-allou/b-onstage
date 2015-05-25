@@ -1,9 +1,11 @@
 <?php include_once("analyticstracking.php") ?>
 <?php 
 //Include config lang
+	
 foreach($this->config->item('lang_counts') as $key => $value){
 if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value["id"];}
 }
+
 ?><!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -99,19 +101,27 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 		<!--menu principal-->
 		<div id="w-menu">
 			<!--<div id="top_lang_bar"><?php 
-			// english link : lang loaded is french
-			if($this->session->userdata('lang_loaded') == "french") { 
+			
+			// lang loaded is german : english link
+			if($this->session->userdata('lang_loaded') == "german") { 
 				$lang_switch_top_link ="english";
-				$lang_switch_top_txt ="English";
+				$lang_switch_top_txt ="EN>FR>DE";
 				?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/english'>english</a><?php  }
-			// french link : lang loaded is english
-			else { 
-				$lang_switch_top_link ="french";
-				$lang_switch_top_txt ="Français";
-				?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/french'>français</a><?php }
+			// lang loaded is english : french link
+			else { if($this->session->userdata('lang_loaded') == "english") {
+					$lang_switch_top_link ="french";
+					$lang_switch_top_txt ="FR>DE>EN";
+					?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/french'>français</a><?php }
+					// lang loaded is french: german link
+					else {
+						$lang_switch_top_link ="german";
+						$lang_switch_top_txt ="DE>EN>FR";
+						?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/german'>deutsch</a><?php }
+											
+					}
+					
 			?></div>-->
             <div class="">
-				
                     <!--logo-->
 					<div class="ml-10"> 
 					<?=anchor(base_url(), img(site_url('img/logo.png')), array('id' => 'logo', 'class' => 'left'))?>
