@@ -326,8 +326,8 @@
 														.appendTo(parent)
 														.attr('style','font-size:1em')
 														.attr('href', '/user/reservations')
-														.addClass('show-reservation ui-purple')
-														.html('Voir ma réservation')
+														.addClass('show-reservation white')
+														.html(' ')
 														.button();
 														window.location.reload();
 														break;
