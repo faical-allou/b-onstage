@@ -2,7 +2,6 @@
 function loading_page(){
 	$(window).bind('load', function(){				
 		$('#container > .content').fadeToggle(800);	
-		location.reload(true);
 	});	
 }
 

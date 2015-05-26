@@ -40,7 +40,8 @@
 				.change(function(event){
 					selected_options = $(this).val() || [];
 					genres = selected_options.join('|');
-					show();						
+					show();
+					window.location.reload();
 				});
 				
 				
@@ -81,7 +82,8 @@
 						payment_type.percent_entry = checked_3;
 						payment_type.refund_fees = checked_4;
 						payment_type.remuneration = checked_5;					
-						show();	
+						show();
+						window.location.reload();
 					});
 						
 						
@@ -103,6 +105,7 @@
 							time_out_id = window.setTimeout(
 								function(){															
 									show();
+									window.location.reload();
 								},
 								1000	
 							);	
@@ -129,6 +132,7 @@
 						time_out_id = window.setTimeout(
 							function(){														
 								show();
+								window.location.reload();
 							},
 							1000
 						);			
@@ -163,7 +167,8 @@
 							function(){							
 								schedule_min = hours_start + ':' + minutes_start + ':00';
 								schedule_max = hours_end + ':' + minutes_end + ':00';
-								show();								
+								show();	
+								window.location.reload();
 							},
 							1000							
 						);		
@@ -180,6 +185,7 @@
 					click			: function(event, ui){
 						order_by = ui.value;
 					show();
+					window.location.reload();
 					}
 				});
 
