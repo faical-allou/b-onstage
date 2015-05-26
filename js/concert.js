@@ -41,7 +41,6 @@
 					selected_options = $(this).val() || [];
 					genres = selected_options.join('|');
 					show();
-					window.location.reload();
 				});
 				
 				
@@ -83,7 +82,6 @@
 						payment_type.refund_fees = checked_4;
 						payment_type.remuneration = checked_5;					
 						show();
-						window.location.reload();
 					});
 						
 						
@@ -105,7 +103,6 @@
 							time_out_id = window.setTimeout(
 								function(){															
 									show();
-									window.location.reload();
 								},
 								1000	
 							);	
@@ -132,7 +129,6 @@
 						time_out_id = window.setTimeout(
 							function(){														
 								show();
-								window.location.reload();
 							},
 							1000
 						);			
@@ -168,7 +164,6 @@
 								schedule_min = hours_start + ':' + minutes_start + ':00';
 								schedule_max = hours_end + ':' + minutes_end + ':00';
 								show();	
-								window.location.reload();
 							},
 							1000							
 						);		
@@ -185,7 +180,6 @@
 					click			: function(event, ui){
 						order_by = ui.value;
 					show();
-					window.location.reload();
 					}
 				});
 
@@ -344,7 +338,6 @@
 											}
 										});									
 										$(this).dialog('close').remove();
-										location.reload();
 									}
 									else
 										$('#accept-terms').parent().addClass('ui-state-error');
