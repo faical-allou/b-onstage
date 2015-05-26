@@ -328,7 +328,7 @@
 														.attr('href', '/user/reservations')
 														.addClass('show-reservation ui-purple')
 														.html('Voir ma réservation')
-														.button();
+														.button()
 														.window.location.reload();
 														break;
 													case 'ERROR'	: 
