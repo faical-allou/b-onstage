@@ -105,17 +105,17 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 			// lang loaded is german : english link
 			if($this->session->userdata('lang_loaded') == "german") { 
 				$lang_switch_top_link ="english";
-				$lang_switch_top_txt ="EN>FR>DE";
+				$lang_switch_top_txt =">EN/FR";
 				?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/english'>english</a><?php  }
 			// lang loaded is english : french link
 			else { if($this->session->userdata('lang_loaded') == "english") {
 					$lang_switch_top_link ="french";
-					$lang_switch_top_txt ="FR>DE>EN";
+					$lang_switch_top_txt =">FR/DE";
 					?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/french'>français</a><?php }
 					// lang loaded is french: german link
 					else {
 						$lang_switch_top_link ="german";
-						$lang_switch_top_txt ="DE>EN>FR";
+						$lang_switch_top_txt =">DE/EN";
 						?><a class="top_lang_bar_link" href='/langswitch/switchLanguage/german'>deutsch</a><?php }
 											
 					}
