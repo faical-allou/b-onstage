@@ -187,7 +187,7 @@
 			<?php foreach($artists as $artist){ ?>				
 				<li>					
 					<div class="clearfix">
-						<div class="left"><?=img(array('src' => $artist['avatar'], 'width' => '128px'))?></div>
+						<div class="left"><?=img(array('src' => $artist['avatar'], 'width' => '240px'))?></div>
 						<div class="left ml-10">
 							<div>
 								<a href="<?=$artist['link']?>" class="fs-16 title grey"><?=$artist['name']?></a>
@@ -211,7 +211,7 @@
 			<?php foreach($stages as $stage){ ?>				
 				<li>					
 					<div class="clearfix">
-						<div class="left"><?=img(array('src' => $stage['avatar'], 'width' => '128px'))?></div>
+						<div class="left"><?=img(array('src' => $stage['avatar'], 'width' => '240px'))?></div>
 						<div class="left ml-10">
 							<div>
 								<a href="<?=$stage['link']?>" class="title fs-16 grey"><?=$stage['name']?></a>
