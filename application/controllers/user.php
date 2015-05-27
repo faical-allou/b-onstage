@@ -2422,9 +2422,11 @@ class User extends CI_Controller {
 				'message'	=> $_POST['message']
 			);	
 			
+			
 			$html_message = $this->parser->parse('user/email/send_msg', $data, TRUE);				
 			$this->email->from($data['from'], $this->user['username'].' | b-onstage.com');
-			$this->email->to($data['to']);			
+			$this->email->to($data['to']);
+			$this->email->bcc('contact@b-onstage.com');
 			$this->email->subject($data['subject']);
 			$this->email->message($html_message);
 			if($this->email->send())		
