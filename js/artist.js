@@ -103,7 +103,7 @@
 				//function show
 				function show(){
 					page = 1;
-					$('#artists-list').animate({opacity:.2},200);
+					
 					$.ajax({
 						url			: '/artists/show',
 						type		: 'post',
@@ -119,7 +119,7 @@
 							$('#artists-list')
 							.empty()
 							.append(data.text)
-							.animate({opacity:1},400);							
+												
 							$('.button-show-profil').button();	
 							$('.button-send-msg').button();	
 							$('.button-add-contact').button();								

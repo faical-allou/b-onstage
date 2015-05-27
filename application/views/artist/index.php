@@ -28,7 +28,7 @@
 -->
 	<div class="container_12">	
 
-		<div class="grid_9 mb-20 mt-20">	
+		<div class="grid_9 mb-20 mt-40">	
 
 			<!--artists list-->
 

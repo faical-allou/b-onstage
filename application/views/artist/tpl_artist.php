@@ -1,13 +1,15 @@
-<div class="line-artist-list bg-white">
-	<div class="inner clearfix p-20">			
-		<div class="left">
+<div class="line-artist-list ztop p-10"  style="background-color:rgba(255,255,255,0.7) " >	
+
+		
+
+<div class="left" >
 			<?=$avatar_link?>
 		</div>
 		<div class="left">
 			<div>
 				<?=anchor($artist_link,$artist_company, array('class' => 'title fs-28 grey'))?>			
 			</div>
-			<div class="mb-5">
+			<div class="mb-5" >
 				<p class="fs-12 grey bold">
 					<span class="icon-location mr-5" aria-hidden="true"></span>
 					<?=$artist_location?>
@@ -24,4 +26,6 @@
 			</div>	
 		</div>			
 	</div>
-</div>	
+
+<div style="background-image:url(<?=$cover_link?>); height:200px; position:relative;" ></div>	
+
