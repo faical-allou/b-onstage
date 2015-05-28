@@ -845,7 +845,7 @@ $lang['users_page_modpro_txt'] = 'Cliquez sur la partie de votre profil que vous
 $lang['users_page_modpro_txtdone'] = 'Modifications terminées';
 $lang['users_page_modpro_noinfo'] = 'Aucune information disponible';
 $lang['users_page_shows_upcoming'] = 'Concerts à venir';
-$lang['users_page_shows_notfound'] = 'Aucun concert à venir pour le moment';
+$lang['users_page_shows_notfound'] = 'Aucune disponilité dans le mois à venir';
 $lang['users_page_videos_txt'] = '<p class="title purple fs-16">Recommendations pour ajouter une vidéo</p>
 								<p class="grey fs-12 bold">Ajoutez vos vidéos à votre profil. Vous pouvez par exemple y mettre des vidéos de vos concerts, de vos clips, etc.</p> 
 								<p class="grey fs-12 bold">Cliquez sur J\'ajoute une vidéo. Copiez l\'adresse du lien vidéo Youtube.</p> 

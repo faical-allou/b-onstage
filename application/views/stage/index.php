@@ -229,7 +229,7 @@
 		<div class="grid_9 mb-20 mt-10">	
 		
 		<!--legend-->
-		<div class="recommendations mb-10">
+		<div class="recommendations mb-10 mt-10">
 					<span class="dt">  <?php echo lang("legend") ?> </span>
 					<div class="dt">
 						<div class="dtc ta-c">
@@ -274,7 +274,7 @@
 							</div>	
 						</div>
 												
-						</div>
+					</div>
 			</div>			
 		
 			<!--stage list-->

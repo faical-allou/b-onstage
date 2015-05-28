@@ -848,7 +848,7 @@ $lang['users_page_modpro_txt'] = 'Click where you want to make a change';
 $lang['users_page_modpro_txtdone'] = 'Save changes';
 $lang['users_page_modpro_noinfo'] = 'No information';
 $lang['users_page_shows_upcoming'] = 'Concerts coming soon...';
-$lang['users_page_shows_notfound'] = 'No concerts yet';
+$lang['users_page_shows_notfound'] = 'No availability in the next month';
 $lang['users_page_videos_txt'] = '<p class="title purple fs-16">Recommendation to add videos.</p>	
 	<p class="grey fs-12 bold">Add your videos to your profile such music videos, or live concerts videos.</p> 	
 	<p class="grey fs-12 bold">Remember, the more content the more likely you are to be selected.</p>	';

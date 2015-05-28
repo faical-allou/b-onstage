@@ -19,16 +19,58 @@
 			<table width="100%">
 				<tbody>
 					<tr>
-						<td width="60%" class="va-t ta-l">
+						<td width="80%" class="va-t ta-l">
 							<div class="left">			
 								<?=img(array('src' => site_url($event['stage_avatar']), 'title' => $event['stage_company'], 'width' => '128px', 'class'=>' mr-5 bs-black-thumbnail'))?>
 							</div>	
 							<div class="left ml-20">
 								<div class="mt-10 mb-10 fs-18 title grey"><?=anchor($stage_link, $event['stage_company'], array('class' => 'purple'))?> <?php echo lang("book_organiser") ?></div>
 								<p class="fs-12 grey bold"><span aria-hidden="true" class="icon-location mr-5"></span><?=$event_location?></p>
+								<div class="fs-14 mb-5 mt-5">
+								<span class= "fa-stack fa">
+								<i class="fa fa-users fa-stack-1x"></i>
+								</span>
+								<span class="fs-14 bold" style= "margin-left: -8px"><?=$event['stage_room_size']?></span>
+									
+								<span class= "fa-stack fa">
+								<i class="fa fa-square-o fa-stack-1x"></i>
+								</span>
+								<span class="fs-14 bold" style= "margin-left: -8px"><?=$event['stage_stage_size']?></span>
+								
+								<span class= "fa-stack fa">
+								<i class="fa fa-microphone fa-stack-1x"></i>
+								<?php if ($event['stage_microphone']=="") :?>
+				 				<i class="fa fa-ban fa-stack-2x red"></i>
+								<?php endif; ?>
+								</span>
+				
+								<span class= "fa-stack fa">
+								<i class="fa fa-volume-off fa-stack-1x"></i>
+								<?php if ($event['stage_speakers']=="") : ?>
+				 				<i class="fa fa-ban fa-stack-2x red"></i>
+								<?php endif; ?>
+								</span>
+				
+								<span class= "fa-stack fa">
+								<i class="fa fa-sliders fa-stack-1x"></i>
+								<?php if ($event['stage_amplification']=="") : ?>
+				 				<i class="fa fa-ban fa-stack-2x red"></i>
+								<?php endif; ?>
+								</span>
+								
+								<span class= "fa-stack fa">
+								<i class="fa fa-lightbulb-o fa-stack-1x"></i>
+								<?php if ($event['stage_lights']=="") : ?>
+				 				<i class="fa fa-ban fa-stack-2x red"></i>
+								<?php endif; ?>
+								</span>
 							</div>
-						</td>
-						<td width="40%" class="ta-l va-t">
+							</div>
+							
+							</td>
+							
+						
+						<td width="20%" class="ta-l va-t">
 							<div>
 								<?php if($reserved) { ?>
 									<a href="<?=site_url('user/reservations')?>" class="show-reservation ui-purple""><?php echo lang("book_button1") ?></a> 

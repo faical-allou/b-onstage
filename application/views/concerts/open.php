@@ -95,12 +95,64 @@ var entry_max = <?=$entry_max?>;
 							</div>
 						</div>						
 					</div>					
-				</div>	
+				
+
+				</div>
 			</td>	
-			<td class="result-concert">						
+			<td class="result-concert">
+					
+				
 				<!--title-->
 				<div class="p-10 fs-16 white title bg-black ui-corner-tr"><?php echo lang("artists_searchresutls") ?></div>										
 				
+				<!--legend-->
+				<div class="recommendations p-10">
+					<span class="dt">  <?php echo lang("legend") ?> </span>
+					<div class="dt">
+						<div class="dtc ta-c">
+							<div class="p-5">
+								<i class="fa fa-users"></i>
+								<p class="grey fs-12"><?php echo lang("room_size_legend") ?></p>
+							</div>	
+						</div>
+						
+						<div class="dtc ta-c">
+							<div class="p-5">
+								<i class="fa fa-square-o"></i>
+								<p class="grey fs-12"><?php echo lang("stage_size_legend") ?></p>
+							</div>	
+						</div>
+						
+						<div class="dtc ta-c">
+							<div class="p-5">
+								<i class="fa fa-microphone"></i>
+								<p class="grey fs-12"><?php echo lang("microphone_legend") ?></p>
+							</div>	
+						</div>
+						
+						<div class="dtc ta-c">
+							<div class="p-5">
+								<i class="fa fa-volume-off"></i>
+								<p class="grey fs-12"><?php echo lang("speakers_legend") ?></p>
+							</div>	
+						</div>
+						
+						<div class="dtc ta-c">
+							<div class="p-5">
+								<i class="fa fa-sliders"></i>
+								<p class="grey fs-12"><?php echo lang("amplification_legend") ?></p>
+							</div>	
+						</div>
+						
+						<div class="dtc ta-c">
+							<div class="p-5">
+								<i class="fa fa-lightbulb-o"></i>
+								<p class="grey fs-12"><?php echo lang("lights_legend") ?></p>
+							</div>	
+						</div>
+												
+					</div>
+				</div>
 				<!--header removing recommendations			
 				<div class="recommendations m-10">
 					<div class="dt" style="width:100%;">
