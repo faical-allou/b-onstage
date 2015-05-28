@@ -49,6 +49,7 @@
 									ytUrl = $('#id-yt-video').val();									
 									vUrl = ytUrl.match(/[a-z]\:\/\/www\.youtube\.com\/watch\?v=([\w-]{11})/)[1];									
 									yt_url = 'http://gdata.youtube.com/feeds/api/videos/' + vUrl;
+									yt_id = vUrl;
 									yt_type = $('#id-yt-video').data('type');
 									$.ajax({
 										url			: '/user/add_yt_video',			
@@ -57,7 +58,9 @@
 										data		: {											
 											user_id		: user_id,
 											url			: yt_url,
-											type		: yt_type
+											type		: yt_type,
+											video_id	: yt_id,
+											
 										},
 										success		: function(data){													
 											switch(data.status){
@@ -69,7 +72,6 @@
 													$('#yt-videos-list').prepend(data.html);
 													$('.delete-yt-video').button({
 														text	: false,
-														icons : { primary : 'ui-icon-trash' }
 													});	
 													break;
 												case 'ERROR_BD'	:
@@ -118,7 +120,6 @@
 					//init delete video
 					$('.delete-yt-video').button({
 						text	: false,
-						icons : { primary : 'ui-icon-trash' }
 					});	
 					
 					$('body')
@@ -192,7 +193,6 @@
 													$('#yt-feeds-list').prepend(data.html);													
 													$('.delete-yt-feed').button({
 														text	: false,
-														icons : { primary : 'ui-icon-trash' }
 													});
 													break;
 												case 'ERROR_BD'	:
@@ -242,7 +242,6 @@
 					
 					$('.delete-yt-feed').button({
 						text	: false,
-						icons : { primary : 'ui-icon-trash' }
 					});	
 					
 					$('body')

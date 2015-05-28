@@ -351,7 +351,7 @@
 													<div class="pt-5 pb-10">														
 														<?=form_input(array('id'=>'id-yt-video', 'data-type' => 'video', 'name'=>'id-yt-video', 'class' => 'ml-5 required input ui-corner-all', 'style' => 'width:90%;'))?>			
 													</div>
-													<div><p class="grey fs-12"><i>Ex: https://www.youtube.com/watch?v=Mr4hGHC3o1A</i></p></div>												
+													<div><p class="grey fs-12"><i>Ex: https://www.youtube.com/watch?v=AbcDefGHIjk</i></p></div>												
 												<?=form_close()?>
 											</div>
 										</div>

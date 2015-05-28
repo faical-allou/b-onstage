@@ -299,13 +299,14 @@ class Media_model extends CI_Model
 	/**********VIDEOS**********/
 	
 	//add yt video
-	public function add_yt_video($user_id,$type, $url){
+	public function add_yt_video($user_id,$type, $url, $yt_id){
 		
 		try {
 			$data = array(
 			   'user_id' => $user_id ,
 			   'type' => $type ,
-			   'url' => $url
+			   'url' => $url ,
+				'yt_id'	=> $yt_id
 			);		
 			
 			if($this->db->from('yt_medias')->where('user_id', $user_id)->where('url', $url)->count_all_results() > 0 ){
@@ -330,7 +331,8 @@ class Media_model extends CI_Model
 				'thumbnail_url'	=> $entry['media$group']['media$thumbnail'][0]['url'],							
 				'player_url'	=> $entry['media$group']['media$content'][0]['url'],
 				'link_url'		=> $entry['link'][0]['href'],
-				'description'	=> ellipsize($entry['media$group']['media$description']['$t'],200,1)
+				'description'	=> ellipsize($entry['media$group']['media$description']['$t'],200,1),
+				'yt_id'			=> $yt_id
 			);		
 			$html = $this->load->view('page/tpl_yt_video', $data ,true);
 			

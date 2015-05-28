@@ -860,10 +860,10 @@ $lang['users_page_flux_addtitle'] = 'Video deleted';
 $lang['users_page_flux_add'] = 'Add a Youtube account';
 $lang['users_page_flux_input'] = 'I add a Youtube account';
 $lang['users_page_flux_notfound'] = ' ';
-$lang['users_page_media_add_success'] = 'No account registered yet';
-$lang['users_page_media_add_error1'] = 'Account deleted';
-$lang['users_page_flux_deleted'] = 'Media added';
-$lang['users_page_videos_deleted'] = 'Media is registered';
+$lang['users_page_media_add_success'] = 'New media registered!';
+$lang['users_page_media_add_error1'] = 'Sorry there was an error';
+$lang['users_page_flux_deleted'] = 'Media deleted';
+$lang['users_page_videos_deleted'] = 'Video was deleted';
 $lang['users_page_picasa_txt'] = '<p class="title purple fs-16">Recommendations to add photos</p>	
 	<p class="grey fs-12 bold">Click on I add a Picassa account, enter your email address linked to the Picassa account.</p> 	
 	<p class="grey fs-12 bold">Remember, the more content the more likely you are to be selected.</p>	';

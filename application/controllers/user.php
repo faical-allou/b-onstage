@@ -2060,7 +2060,9 @@ class User extends CI_Controller {
 			$user_id = $_POST['user_id'];
 			$type = $_POST['type'];
 			$url = $_POST['url'];
-			$result = $this->media_model->add_yt_video($user_id,$type, $url);
+			$yt_id = $_POST['video_id'];
+				
+			$result = $this->media_model->add_yt_video($user_id,$type, $url, $yt_id);
 			echo json_encode($result);
 		}
 	}

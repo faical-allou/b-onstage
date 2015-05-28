@@ -1,15 +1,6 @@
-<div class="yt-video p-20">
-	<a href="<?=$player_url?>" class="yt-thumbnail-video video" title="<?=$title?>" rel="fancybox-thumb">
-		<?=img($thumbnail_url)?>
-	</a>
-	<div class="yt-content-video">
-		<div class="mb-5">
-			<a href="<?=$player_url?>" class="title grey video fs-16" title="<?=$title?>" rel="fancybox-thumb"><?=$title?></a>
-		</div>
-		<div class="fs-12 grey bold">
-			<?=$view_count?> <?php echo lang("views") ?>
-		</div>
-		<p class="grey-2 bold fs-12"><?=$description?></p>		
+<div class="yt-video p-20 ta-c">
+	<div class="dib m-30">	
+	<iframe width="360" height="190" src="https://www.youtube.com/embed/<?= $yt_id ?>?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=1&controls=1" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
 	</div>
 	<?php if($id){ ?>
 		<button data-id="<?=$id?>" class="delete-yt-video"><?php echo lang("delete") ?></button>

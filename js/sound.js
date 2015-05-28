@@ -347,7 +347,6 @@
 				if(user_state == 2){
 					//init delete soundcloud user				
 					$('.sc-delete-user')
-					.button({icons : {primary : 'ui-icon-trash'}})
 					.bind('click', function(){						 
 						sc_user_id = $(this).data('sc-user-id');
 						parent.sound('delete_sc', {sc_user_id : sc_user_id});

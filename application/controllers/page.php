@@ -368,6 +368,7 @@ class Page extends CI_Controller {
 				switch($yt_media['type']){
 					case 'video':
 						$yt_video['id'] = $yt_media['id'];
+						$yt_video['yt_id'] = $yt_media['yt_id'];
 						$yt_video['video'] = $this->_get_data($yt_media['url'].'?alt=json', true);
 						array_push($yt_videos, $yt_video);
 						$videos['yt_video_count']++;					
@@ -393,7 +394,8 @@ class Page extends CI_Controller {
 					'thumbnail_url'	=> $entry['media$group']['media$thumbnail'][0]['url'],							
 					'link_url'		=> $entry['link'][0]['href'],					
 					'player_url'	=> $entry['media$group']['media$content'][0]['url'],
-					'description'	=> ellipsize($entry['media$group']['media$description']['$t'],200,1)
+					'description'	=> ellipsize($entry['media$group']['media$description']['$t'],200,1),
+					'yt_id'			=> $yt_video['yt_id']
 				);		
 				$videos['yt_videos'] .= $this->load->view('page/tpl_yt_video', $data ,true);
 			}		

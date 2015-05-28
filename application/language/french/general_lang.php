@@ -858,10 +858,10 @@ $lang['users_page_flux_addtitle'] = 'La Vidéo a été supprimée';
 $lang['users_page_flux_add'] = 'Ajouter un utilisateur Youtube';
 $lang['users_page_flux_input'] = 'J\'ajoute un flux de vidéos';
 $lang['users_page_flux_notfound'] = ' ';
-$lang['users_page_media_add_success'] = 'Aucun flux enregistré';
-$lang['users_page_media_add_error1'] = 'Le Flux a été supprimé';
-$lang['users_page_flux_deleted'] = 'Le Média a été ajouté';
-$lang['users_page_videos_deleted'] = 'Ce média est déjà enregistré  ';
+$lang['users_page_media_add_success'] = 'Nouveau média enregistré';
+$lang['users_page_media_add_error1'] = 'Une erreur s\'est produite';
+$lang['users_page_flux_deleted'] = 'Le Flux a été supprimé';
+$lang['users_page_videos_deleted'] = 'La vidéo a été supprimée ';
 $lang['users_page_picasa_txt'] = '<p class="title purple fs-16">Recommendations pour ajouter des photos</p>
 								<p class="grey fs-12 bold">Cliquez sur J\'ajoute un compte Picasa. Entrez l\'adresse mail de votre compte Picasa.</p> 
 								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p>';
