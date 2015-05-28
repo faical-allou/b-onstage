@@ -53,7 +53,7 @@ class Artists extends CI_Controller {
 
 		
 
-		$per_page = 20;		
+		$per_page = 10;		
 		$artists = $this->artist_model->get_all('','','',$per_page,$page);
 		$artists_list = '';	
 
@@ -138,8 +138,8 @@ class Artists extends CI_Controller {
 			'nb_pages'			=> $nb_pages,
 			'per_page'			=> $per_page,
 			'page'				=> $page,
-			'social_sidebar'	=> $social_sidebar			
-
+			'social_sidebar'	=> $social_sidebar,			
+				
 		);
 
 		

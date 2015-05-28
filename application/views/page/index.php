@@ -84,9 +84,9 @@
 			<!--sound player-->
 			<?php if($user_group_page =='artist') { ?>
 			<div id="sound-player" class="jp-player ui-corner-bottom"></div>
-			<div class="jp-audio">
+			<div class="jp-audio ">
 				<div class="jp-type-playlist">
-					<div class="jp-gui jp-interface">
+					<div class="jp-gui jp-interface bg-white bs-black">
 						<ul class="jp-controls">
 							<li><a href="javascript:void(0);" class="jp-previous" tabindex="1">previous</a></li>
 							<li><a href="javascript:void(0);" class="jp-play" tabindex="1">play</a></li>

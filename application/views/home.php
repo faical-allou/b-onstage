@@ -199,7 +199,7 @@
 			<?php } ?>
 		</ul>		
 		<div class="p-20 ta-r">
-			<a href="<?=site_url('artists/?t=tab')?>" class="home-list-link"><?php echo lang("home_seeall_artist") ?></a>
+			<a href="<?=site_url('artists?t=tab')?>" class="home-list-link"><?php echo lang("home_seeall_artist") ?></a>
 		</div>
 	</div>
 	
