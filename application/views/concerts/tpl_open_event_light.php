@@ -12,8 +12,8 @@
 			<div class="title-concert title left ml-10">
 				<span aria-hidden="true" class="mr-5 icon-music"></span><?=UCFirst($event['title'])?>
 			</div>		
-		</div>		
-		<div class="mb-20 clearfix">		
+			
+		<div class="clearfix">		
 			
 			<div class="dib right">
 			<?php if($reserved) { ?>
@@ -23,7 +23,7 @@
 			<?php } ?>
 			</div>
 		</div>		
-									
+		</div>								
 			
 		
 

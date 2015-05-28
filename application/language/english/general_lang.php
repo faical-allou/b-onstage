@@ -893,6 +893,21 @@ $lang['users_page_sons_notrack'] = 'No track available';
 $lang['users_page_sons_soundcloud_delconf'] = 'Do you really want to delete the account';
 $lang['users_page_sons_soundcloud_syncconf'] = 'Do you want to sync? ';
 
+//Users equipment
+$lang['users_page_roomsize'] = 'Room Size';
+$lang['users_page_inputroomsize'] = 'Size of the room in number of people';
+$lang['users_page_stagesize'] = 'Stage Size';
+$lang['users_page_inputstagesize'] = 'Size of the stage in number of band members';
+$lang['users_page_microphone'] = 'Microphone';
+$lang['users_page_inputequipment'] = 'Describe or leave empty if not available';
+$lang['users_page_speakers'] = 'Speakers';
+$lang['users_page_amplification'] = 'Amplification';
+$lang['users_page_lights'] = 'Lights';
+$lang['users_page_otherequipment'] = 'Other';
+$lang['users_page_inputotherequipment'] = 'Anything else not covered';
+$lang['users_page_equipment_title'] = 'Equipment';
+
+
 
 //Users reservations		
 $lang['users_rese_payfees'] = 'Pay the reservation fee';

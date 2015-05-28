@@ -1,7 +1,7 @@
 <div id="page" class="container_12 mt-20 mb-20">
-	<div class="grid_9 clearfix ui-corner-top">					
+	<div class="grid_12 clearfix ui-corner-top">					
 		<!--header-->
-		<header class="bs-black bg-white mb-20 mt-20 ui-corner-all">			
+		<header class=" bg-white mb-20 mt-20 ui-corner-all">			
 			
 			<!--header page-->
 			<div id="top-header-page">			
@@ -142,22 +142,24 @@
 						
 				<!--read mode-->
 				<!--bloc informations-->
-				<div class="ui-corner-all mb-20 bg-white bs-black">
-					<?=$title_infos?>					
-					<div class="p-5">
+				<div class="mb-20 bg-white">
+					<span class="bold title grey"><?=$title_infos?></span>
+										
+					<div class="p-10 ta-c">
 						<?php if($empty_infos) { ?>
 							<p class="grey fs-15"><i><?php echo lang("users_page_modpro_noinfo") ?></i></p>							
 						<?php } ?>					
 
 						<?php foreach($infos as $info) { ?>							
-							<div class="read-bloc p-10 fs-16 grey clearfix dib" id="read-bloc-<?=$info['id']?>" data-val="<?=$info['val']?>">
-								<div class="left ta-r" style="width:auto;"><?=$info['title']." :"?></div>
+							<div class="read-bloc mr-10 fs-14 grey clearfix dib" id="read-bloc-<?=$info['id']?>" data-val="<?=$info['val']?>">
+								<div class="left ta-r" style="width:auto;"><?=$info['title']." : "?></div>
 								<?php if($info['type'] == 'url') { ?>
-									<a href="http://<?=$info['val']?>" class="read-bloc-val purple db left ml-20" data-type="<?=$info['type']?>"><?=$info['val']?></a>
+									<a href="http://<?=$info['val']?>" class="read-bloc-val purple db left ml-5" data-type="<?=$info['type']?>"><?=$info['val']?></a>
 								<?php } else { ?>	
-									<div class="read-bloc-val left ml-20 bold" data-type="<?=$info['type']?>"><?=$info['val']?></div>
+									<div class="read-bloc-val left ml-5 bold" data-type="<?=$info['type']?>"><?=$info['val']?></div>
 								<?php } ?>									
 							</div>
+							
 							<?php if($user_state==2){ ?>
 								<div class="edit-bloc p-10 fs-12 bold clearfix" id="edit-bloc-<?=$info['id']?>">
 									<div class="left ta-r" style="width:20%;"><span aria-hidden="true" class="icon-pencil mr-10"></span><strong><?=$info['title']?></strong></div>
@@ -180,11 +182,94 @@
 								</div>											
 						<?php } } ?>
 					</div>
-				</div>
+				
 
+				</div>
+				<!--bloc equipment-->
+				<?php if($user_group_page == 'stage') { ?>
+				<div class="border-top mb-20 bg-white">
+					<span class="bold title grey"><?=$title_equipment?></span>
+					<div class="fs-14 ml-10 mb-5 mt-5 ta-c">
+						<span class= "fa-stack fa">
+						<i class="fa fa-users fa-stack-2x"></i>
+						</span>
+						<span class="fs-14 bold ml-5 mr-10"><?=$room_size?></span>
+							
+						<span class= "fa-stack fa">
+						<i class="fa fa-square-o fa-stack-2x"></i>
+						</span>
+						<span class="fs-14 bold ml-5 mr-10"><?=$stage_size?></span>
+						
+						<span class= "fa-stack fa mr-10">
+						<i class="fa fa-microphone fa-stack-2x"></i>
+						<?php if ($stage_microphone=="") :?>
+		 				<i class="fa fa-ban fa-stack-2x red"></i>
+						<?php endif; ?>
+						</span>
+		
+						<span class= "fa-stack fa mr-10">
+						<i class="fa fa-volume-off fa-stack-2x"></i>
+						<?php if ($stage_speakers=="") : ?>
+		 				<i class="fa fa-ban fa-stack-2x red"></i>
+						<?php endif; ?>
+						</span>
+		
+						<span class= "fa-stack fa mr-10">
+						<i class="fa fa-sliders fa-stack-2x"></i>
+						<?php if ($stage_amplification=="") : ?>
+		 				<i class="fa fa-ban fa-stack-2x red"></i>
+						<?php endif; ?>
+						</span>
+						
+						<span class= "fa-stack fa mr-10">
+						<i class="fa fa-lightbulb-o fa-stack-2x"></i>
+						<?php if ($stage_lights=="") : ?>
+		 				<i class="fa fa-ban fa-stack-2x red"></i>
+						<?php endif; ?>
+						</span>
+					</div>
+					
+										
+					<div class="p-20">
+						<?php if($empty_infos) { ?>
+							<p class="grey fs-15"><i><?php echo lang("users_page_modpro_noinfo") ?></i></p>							
+						<?php } ?>					
+
+						<?php foreach($equipment as $item) { ?>							
+							<div class="read-bloc mr-10 fs-14 grey clearfix " id="read-bloc-<?=$item['id']?>" data-val="<?=$item['val']?>">
+								<div class="left ta-r" style="width:auto;"><?=$item['title']." : "?></div>
+								<div class="read-bloc-val left ml-5 bold" data-type="<?=$item['type']?>"><?=$item['val']?></div>									
+							</div>
+							
+							<?php if($user_state==2){ ?>
+								<div class="edit-bloc p-10 fs-12 bold clearfix" id="edit-bloc-<?=$item['id']?>">
+									<div class="left ta-r" style="width:20%;"><span aria-hidden="true" class="icon-pencil mr-10"></span><strong><?=$item['title']?></strong></div>
+									<div class="left ml-20 edit-bloc-val"><?=(($item['val']) ? $item['val'] : $item['msg'])?></div>
+									<div class="dialog-update-info" id="dialog-update-info-<?=$item['id']?>" title="<?=$item['msg']?>">										
+										<div class="p-10">
+											<form action="" method="get"  id="form-update-info-<?=$item['id']?>">
+												<div>
+													<label class="fs-12 grey bold" for="<?=$item['id']?>"><?=$item['form_label']?></label>
+												</div>
+												<div class="pt-10">
+													<?=form_input(array('type' => $item['input_type'], 'id' => $item['id'], 'name' => $item ['id'], 'value' => $item['val'], 'class' => 'mb-5 required input'))?>
+												</div>
+												<div>
+													<p class="fs-12 grey"><i><?=$item['form_msg']?></i></p>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>											
+						<?php } } ?>
+					</div>
+				
+
+				</div>
+				<?php }  ?>
 				<!--bloc description-->
-				<div class="ui-corner-all bg-white bs-black">
-					<?=$title_description?>				
+				<div class=" bg-white border-top ">
+					<span class="bold title grey"><?=$title_description?></span>				
 					<div class="p-20">							
 						<?php if(empty($description)) { ?>
 							<p class="grey fs-15"><i><?php echo lang("users_page_desc_notfound") ?></i></p>														
@@ -197,8 +282,8 @@
 				
 				
 				<!--bloc social links-->
-				<div class="ui-corner-all mb-20 mt-20 bg-white bs-black">
-					<?=$title_social_links?>
+				<div class=" mb-20 mt-20 bg-white border-top">
+					<span class="bold title grey"><?=$title_social_links?></span>
 					<div class="p-20">
 						<?php if($empty_social_links) { ?>							
 							<p class="grey fs-15"><i><?php echo lang("users_page_socialmed_notfound") ?></i></p>							
@@ -242,7 +327,7 @@
 			
 			<!--concert-->
 			<div class="bloc-page" id="content-concert">	
-				<div class="bs-black bg-white ui-corner-all">
+				<div class="bs-black  ">
 					<div class="title-page"><?=$title_concerts?></div>					
 					<?php if($nb_concerts > 0) { ?>						
 						<div>
@@ -510,11 +595,7 @@
 		<?php } ?>
 		
 	</div>	
-	
-	
-	
-	<!--sidebar page-->
-	<?php echo $social_sidebar ?>	
+		
 </div>
 
 <!--jPlayer-->

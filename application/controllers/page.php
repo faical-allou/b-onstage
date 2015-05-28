@@ -78,7 +78,9 @@ class Page extends CI_Controller {
 			$user_state = 2;
 				
 		//get all infos
-		$title_infos = heading(lang("users_page_generalinfo"), 1 ,'class="title-page ui-corner-top ui-corner-top"');
+		$title_infos =lang("users_page_generalinfo");
+		$title_equipement = lang("users_page_equipment_title");
+		
 		
 		$infos = array(
 			//company
@@ -122,14 +124,94 @@ class Page extends CI_Controller {
 				'type'			=> 'url',
 				'form_label'	=> lang("users_page_inputwebsite"),				
 				'input_type'	=> 'url',
-				'form_msg'		=> 'Ex: www.monsite.com',
+				'form_msg'		=> 'Ex: www.mywebsite.com',
 				'msg'			=> lang("users_page_inputwebsite")
-			)
+			),
+			);
+			$equipment = array(
+			//room_size
+				array(
+						'id'			=> 'room_size',
+						'title'			=> lang("users_page_roomsize"),
+						'val'			=> !empty($user_page['room_size']) ? $user_page['room_size'] : '',
+						'type'			=> 'text',
+						'form_label'	=> lang("users_page_inputroomsize"),
+						'input_type'	=> 'text',
+						'form_msg'		=> 'ex: 50',
+						'msg'			=> lang("users_page_inputroomsize")
+				),
+				//stage_size
+				array(
+						'id'			=> 'stage_size',
+						'title'			=> lang("users_page_stagesize"),
+						'val'			=> !empty($user_page['stage_size']) ? $user_page['stage_size'] : '',
+						'type'			=> 'text',
+						'form_label'	=> lang("users_page_inputstagesize"),
+						'input_type'	=> 'text',
+						'form_msg'		=> 'ex: 4',
+						'msg'			=> lang("users_page_inputstagesize")
+				),
+				//microphone
+				array(
+						'id'			=> 'microphone',
+						'title'			=> lang("users_page_microphone"),
+						'val'			=> !empty($user_page['microphone']) ? $user_page['microphone'] : '',
+						'type'			=> 'text',
+						'form_label'	=> lang("users_page_inputequipment"),
+						'input_type'	=> 'text',
+						'form_msg'		=> 'ex: 4',
+						'msg'			=> lang("users_page_inputequipment")
+				),
+				//speakers
+				array(
+						'id'			=> 'speakers',
+						'title'			=> lang("users_page_speakers"),
+						'val'			=> !empty($user_page['speakers']) ? $user_page['speakers'] : '',
+						'type'			=> 'text',
+						'form_label'	=> lang("users_page_inputequipment"),
+						'input_type'	=> 'text',
+						'form_msg'		=> 'ex: 2 active speakers',
+						'msg'			=> lang("users_page_inputequipment")
+				),
+				//amplification
+				array(
+						'id'			=> 'amplification',
+						'title'			=> lang("users_page_amplification"),
+						'val'			=> !empty($user_page['amplification']) ? $user_page['amplification'] : '',
+						'type'			=> 'text',
+						'form_label'	=> lang("users_page_inputequipment"),
+						'input_type'	=> 'text',
+						'form_msg'		=> 'ex: an 8 track console ',
+						'msg'			=> lang("users_page_inputequipment")
+				),
+				//lights
+				array(
+						'id'			=> 'lights',
+						'title'			=> lang("users_page_lights"),
+						'val'			=> !empty($user_page['lights']) ? $user_page['lights'] : '',
+						'type'			=> 'text',
+						'form_label'	=> lang("users_page_inputequipment"),
+						'input_type'	=> 'text',
+						'form_msg'		=> 'ex: 8 track console ',
+						'msg'			=> lang("users_page_inputequipment")
+				),
+				//other
+				array(
+						'id'			=> 'other',
+						'title'			=> lang("users_page_otherequipment"),
+						'val'			=> !empty($user_page['other']) ? $user_page['other'] : '',
+						'type'			=> 'text',
+						'form_label'	=> lang("users_page_inputotherequipment"),
+						'input_type'	=> 'text',
+						'form_msg'		=> 'ex: Full Drum Kit ',
+						'msg'			=> lang("users_page_inputotherequipment")
+				),
 		);	
+			
 		$empty_infos = empty($user_page['company']) && empty($user_page['country']) && empty($user_page['city']) && empty($user_page['website']);
 		
 		//social links
-		$title_social_links = heading(lang("users_page_socialmed"), 1 ,'class="title-page ui-corner-top"');
+		$title_social_links = lang("users_page_socialmed");
 		
 		$social_links = array(
 			array(
@@ -184,7 +266,7 @@ class Page extends CI_Controller {
 
 		
 		//description : biographie pour les groupes		
-		$title_description = ($user_group_page == 'stage') ? heading(lang("desc"), 1 ,'class="title-page ui-corner-top"') : heading(lang("bio"), 1 ,'class="title-page ui-corner-top"');		
+		$title_description = ($user_group_page == 'stage') ? lang("desc") : lang("bio");		
 		$description = !empty($user_page['description']) ? $user_page['description'] : '';
 			
 		
@@ -225,8 +307,8 @@ class Page extends CI_Controller {
 		}
 		
 		/********** Events **********/
-		$date_start = date('Y-m-d 00:00:00',strtotime("+14 days"));
-		$date_end = date('Y-m-d 23:59:59', strtotime("+1 years"));
+		$date_start = date('Y-m-d 00:00:00',strtotime("+7 days"));
+		$date_end = date('Y-m-d 23:59:59', strtotime("+1 month"));
 		
 		$events = $this->event_model->get_all('open', $date_start, $date_end, $user_page['city'], $user_page['id'],50, 1);
 		$nb_events = count($events);
@@ -496,8 +578,8 @@ class Page extends CI_Controller {
 		
 		
 		/*****GET SOCIAL INFOS*****/
-		$social_sidebar = $this->social_model->get_all();
-		$social_sidebar = $this->load->view('social/tpl_sidebar', $social_sidebar, true);
+//		$social_sidebar = $this->social_model->get_all();
+//		$social_sidebar = $this->load->view('social/tpl_sidebar', $social_sidebar, true);
 		
 		//var header		
 		$this->header['doctype'] = 'html5';
@@ -531,10 +613,18 @@ class Page extends CI_Controller {
 			'photos'					=> $photos,						
 			'title_in_photos'			=> $title_in_photos,
 			'title_fl_photos'			=> $title_fl_photos,
-			'social_sidebar'			=> $social_sidebar,
 			'list_events'				=> $list_events,
 			'title_events'				=> $title_events,
 			'nb_events'					=> $nb_events,
+			'stage_microphone' 			=> $user_page['microphone'],
+			'stage_size'				=> $user_page['stage_size'],
+			'room_size'					=> $user_page['room_size'],
+			'stage_speakers'			=> $user_page['speakers'],
+			'stage_amplification'		=> $user_page['amplification'],
+			'stage_lights'				=> $user_page['lights'],
+			'stage_other'				=> $user_page['other'],
+			'title_equipment'			=> $title_equipement,
+			'equipment'					=> $equipment,
 		);
 		
 		$this->footer['scripts'] = array(
