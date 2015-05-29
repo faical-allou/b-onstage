@@ -126,27 +126,27 @@
 </div>
 
 <!-- referral program -->
-<div class="bg-grey-2 ta-c p-10 mb-30">
+<div class="bg-grey-2 ta-c p-10 mb-30 bs-black">
 					<span class="fs-24 bold">  <?php echo lang("referral_program") ?> </span>
 					<span class="fs-32 bold">  <?php echo lang("referral_program2") ?> </span>
 					
-	<div class="container_12 ta-c mb-10 mt-30 p-10">
+	<div class="container_12 ta-c mb-10 mt-30 p-10 ">
 					<div class="dib">
-						<div class="grid_3 ta-c">
+						<div class="grid_4 ta-c">
 							<div class="p-5">
 								<i class="fa fa-glass fa-4x purple"></i>
 								<p class="grey fs-14 bold"><?php echo lang("referral_program_step1") ?></p>
 							</div>	
 						</div>
 						
-						<div class="grid_3 ta-c">
+						<div class="grid_4 ta-c">
 							<div class="p-5">
 								<i class="fa fa-list-alt fa-4x purple"></i>
 								<p class="grey fs-14 bold"><?php echo lang("referral_program_step2") ?></p>
 							</div>	
 						</div>
 						
-						<div class="grid_3 ta-c">
+						<div class="grid_4 ta-c">
 							<div class="p-5">
 								<i class="fa fa-money fa-4x purple"></i>
 								<p class="grey fs-14 bold"><?php echo lang("referral_program_step3") ?></p>
@@ -181,7 +181,7 @@
 
 <div class="container_12 mb-30 db">
 	<!--last 5 artist-->
-	<div class="grid_6 home-bloc ui-corner-all bs-black di">
+	<div class="grid_6 home-bloc ui-corner-all di">
 		<?=heading($title_artist, 2, 'class="home-title title"')?>		
 		<ul class="home-list">
 			<?php foreach($artists as $artist){ ?>				
@@ -205,7 +205,7 @@
 	
 	
 	<!--last 5 stages-->
-	<div class="grid_6 home-bloc ui-corner-all bs-black di">
+	<div class="grid_6 home-bloc ui-corner-all di">
 		<?=heading($title_stage, 2, 'class="home-title title"')?>		
 		<ul class="home-list">
 			<?php foreach($stages as $stage){ ?>				
