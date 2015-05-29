@@ -72,7 +72,7 @@ class Artists extends CI_Controller {
 					'artist_email'	=> $art['email'],
 					'artist_company'=> $art['company'],
 					'artist_location'=> $art['country'].', '.$art['city'],
-					'avatar_link'	=> anchor($artist_link, img(array('src' => site_url($art['avatar']), 'width' => '120px', 'class' => 'ui-corner-all')), array('class' => 'mr-20')),
+					'avatar_link'	=> anchor($artist_link, img(array('src' => site_url($art['avatar']), 'width' => '160px', 'class' => 'ui-corner-all')), array('class' => 'mr-20')),
 					'cover_link'	=> $art['cover'],
 						
 					'artist_link'	=> $artist_link

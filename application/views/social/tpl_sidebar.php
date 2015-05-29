@@ -14,61 +14,26 @@ setlocale(LC_TIME, $lang_id."_".strtoupper($lang_id).".UTF8");
 
 				<ul id="social-followers">
 
-					<li>
-
-						<a href="<?=$twitter['link']?>">
-
-							<div>
-
-								<span aria-hidden="true" class="icon-twitter fs-32"></span>						
-
-								<span class="ml-20 fs-36 title purple"><?=$twitter['followers']?></span>
-
-							</div>						
-
-							<div class="fs-10 grey-2 bold"><?php echo lang("users_page_socmedfollowers1") ?></div>											
-
-						</a>
-
-					</li>
 
 					<li>	
-
 						<a href="<?=$facebook['link']?>">
-
 							<div>
-
 								<span aria-hidden="true" class="icon-facebook fs-32"></span>						
-
 								<span class="ml-20 fs-36 title purple"><?=$facebook['likes']?></span>
-
 							</div>						
-
 							<div class="fs-10 grey-2 bold"><?php echo lang("users_page_socmedfollowers2") ?></div>
-
 						</a>
-
 					</li>
-
-					<li>	
-
-<!--						<a href="<?=$google_plus['link']?>">
-
+					<li>
+						<a href="<?=$twitter['link']?>">
 							<div>
-
-								<span aria-hidden="true" class="icon-google-plus fs-32"></span>						
-
-								<span class="ml-20 fs-36 title purple"><?php
-                                echo $google_plus['google_data']->circledByCount;						
-								?></span>
-
+								<span aria-hidden="true" class="icon-twitter fs-32"></span>						
+								<span class="ml-20 fs-36 title purple"><?=$twitter['followers']?></span>
 							</div>						
-
-							<div class="fs-10 grey-2 bold"><?php echo lang("users_page_socmedfollowers3") ?></div>
-
-						</a>	
--->
+							<div class="fs-10 grey-2 bold"><?php echo lang("users_page_socmedfollowers1") ?></div>											
+						</a>
 					</li>
+					
 
 				</ul>
 
@@ -79,17 +44,34 @@ setlocale(LC_TIME, $lang_id."_".strtoupper($lang_id).".UTF8");
 			<div id="social-tabs" class="bg-white ui-corner-all bs-black mb-20">
 
 				<ul class="clearfix" class="tabs-menu">
-
-					<li id="tabs-menu-twitter" data-content-id="tabs-content-twitter" class="ui-corner-tl active"><span aria-hidden="true" class="icon-twitter fs-24"></span></li>
-
 					<li id="tabs-menu-facebook" data-content-id="tabs-content-facebook"><span aria-hidden="true" class="icon-facebook fs-24"></span></li>
-
-<!--					<li id="tabs-menu-google-plus" data-content-id="tabs-content-google-plus"><span aria-hidden="true" class="icon-google-plus-2 fs-24"></span></li>
--->
+					<li id="tabs-menu-twitter" data-content-id="tabs-content-twitter" class="ui-corner-tl active"><span aria-hidden="true" class="icon-twitter fs-24"></span></li>
 				</ul>
 
 				<div class="bg-white p-10">
+					<!--facebook-->
+					<div id="tabs-content-facebook" class="tabs-content">
 
+						<p class="grey fs-16 title"><?php echo lang("follow") ?> <a href="<?=$facebook['link']?>" class="purple">b-onstage</a> <?php echo lang("users_page_onsocmed2") ?></p>
+                        <?php 
+						foreach ($facebook['alldata'] as $item) {
+							//Hide empty posts
+							if(!empty($item['message'])){
+								echo '<ul id="tweets-list"><li>
+									<p class="grey-2 fs-12"><span class="purple">'.strftime('%d %B %Y @ %H:%I:%S',gmdate($item['created_time'])).' :</span>
+									'.$item['message'].'
+									</p>
+								</li></ul>';
+							}
+						}
+						?>
+                        <div align="center" style="margin-top:20px;">
+                        	<div class="fb-like" data-href="<?php echo $facebook['link'] ?>" data-width="200" data-layout="button_count" data-show-faces="true" data-send="true"></div>
+                        </div>
+
+					</div>
+				
+				
 					<!--twitter-->
 
 					<div id="tabs-content-twitter" class="tabs-content">					
@@ -126,26 +108,6 @@ setlocale(LC_TIME, $lang_id."_".strtoupper($lang_id).".UTF8");
 
 					
 
-					<div id="tabs-content-facebook" class="tabs-content">
-
-						<p class="grey fs-16 title"><?php echo lang("follow") ?> <a href="<?=$facebook['link']?>" class="purple">b-onstage</a> <?php echo lang("users_page_onsocmed2") ?></p>
-                        <?php 
-						foreach ($facebook['alldata'] as $item) {
-							//Hide empty posts
-							if(!empty($item['message'])){
-								echo '<ul id="tweets-list"><li>
-									<p class="grey-2 fs-12"><span class="purple">'.strftime('%d %B %Y @ %H:%I:%S',gmdate($item['created_time'])).' :</span>
-									'.$item['message'].'
-									</p>
-								</li></ul>';
-							}
-						}
-						?>
-                        <div align="center" style="margin-top:20px;">
-                        	<div class="fb-like" data-href="<?php echo $facebook['link'] ?>" data-width="200" data-layout="button_count" data-show-faces="true" data-send="true"></div>
-                        </div>
-
-					</div>
 
 					
 

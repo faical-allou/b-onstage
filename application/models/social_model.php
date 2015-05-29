@@ -52,7 +52,7 @@ class Social_model extends CI_Model{
 		$twitter_screen_name = TWITTER_SCREEN_NAME;
 		require_once("php/twitter/twitteroauth.php"); //Path to twitteroauth library
 		$twitteruser = "$twitter_screen_name";
-		$notweets = 30;
+		$notweets = 5;
 		$consumerkey = TWITTER_CONKEY;
 		$consumersecret = TWITTER_CONSEC;
 		$accesstoken = TWITTER_ACCTOK;

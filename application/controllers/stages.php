@@ -65,7 +65,7 @@ class Stages extends CI_Controller {
 
 		
 
-		$per_page = 20;		
+		$per_page = 10;		
 		$stages = $this->stage_model->get_all('','',$per_page,$page);
 		$stages_list = '';
 		$stages_formap = $this->stage_model->get_all_formap();
@@ -79,13 +79,13 @@ class Stages extends CI_Controller {
 
 				$stage = array(										
 
-					'stage_state'	=> $stage_state,
-					'stage_id'		=> $sta['id'],
-					'stage_email'	=> $sta['email'],
-					'stage_company'	=> $sta['company'],
-					'stage_location'=> $sta['country'].', '.$sta['city'],
-					'avatar_link'	=> anchor($stage_link, img(array('src' => site_url($sta['avatar']), 'width' => '120px', 'class' => 'ui-corner-all')), array('class' => 'mr-20')),
-					'stage_link'	=> $stage_link,
+					'stage_state'			=> $stage_state,
+					'stage_id'				=> $sta['id'],
+					'stage_email'			=> $sta['email'],
+					'stage_company'			=> $sta['company'],
+					'stage_location'		=> $sta['country'].', '.$sta['city'],
+					'avatar_link'			=> anchor($stage_link, img(array('src' => site_url($sta['avatar']), 'width' => '240px', 'class' => 'ui-corner-all')), array('class' => 'mr-20')),
+					'stage_link'			=> $stage_link,
 					'stage_microphone' 		=> $sta['microphone'],
 					'stage_size'			=> $sta['stage_size'],
 					'room_size'				=> $sta['room_size'],
