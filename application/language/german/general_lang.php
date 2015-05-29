@@ -1,1230 +1,1249 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 // Account Creation
-$lang['account_creation_successful'] = 'Le compte est créé!';
-$lang['account_creation_unsuccessful'] = 'Impossible de créer le compte';
-$lang['account_creation_duplicate_email'] = 'Email déjà utilisé ou invalide';
-$lang['account_creation_duplicate_username'] = 'Nom d\'utilisateur déjà utilisé ou invalide';
-
+$lang['account_creation_successful'] 	  	 = 'Konto erfolgreich angelegt';
+$lang['account_creation_unsuccessful'] 	 	 = 'Kontoanlage nicht möglich';
+$lang['account_creation_duplicate_email'] 	 = 'Email schon verwendet oder ungültig';
+$lang['account_creation_duplicate_username'] = 'Benutzername schon verwendet oder ungültig';
 
 // Password
-$lang['password_change_successful'] = 'Le mot de passe a été changé!';
-$lang['password_change_unsuccessful'] = 'Impossible de changer le mot de passe';
-$lang['forgot_password_successful'] = 'Mail de réinitialisation envoyé';
-$lang['forgot_password_unsuccessful'] = 'Impossible de réinitialiser le mot de passe';
+$lang['password_change_successful'] 	 	 = 'Passwort erfolgreich geändert';
+$lang['password_change_unsuccessful'] 	  	 = 'Passwort kann nicht geändert werden';
+$lang['forgot_password_successful'] 	 	 = 'Email zum Rücksetzen des Passworts verschickt';
+$lang['forgot_password_unsuccessful'] 	 	 = 'Passwort kann nicht zurückgesetzt werden';
 
 // Activation
-$lang['activate_successful'] = 'Compte activé';
-$lang['activate_unsuccessful'] = 'Impossible d\'activer le compte';
-$lang['deactivate_successful'] = 'Compte désactivé';
-$lang['deactivate_unsuccessful'] = 'Impossible de désactiver le compte';
-$lang['activation_email_successful'] = 'Email d\'activation envoyé avec succès';
-$lang['activation_email_unsuccessful'] = 'Impossible d\'envoyer le mail d\'activation';
+$lang['activate_successful'] 		  	     = 'Dein Konto ist aktiv. Hol\' Dir die Gigs!';
+$lang['activate_unsuccessful'] 		 	     = 'Konto kann nicht aktiviert werden';
+$lang['deactivate_successful'] 		  	     = 'Konto deaktiviert';
+$lang['deactivate_unsuccessful'] 	  	     = 'Konto kann nicht deaktiviert werden';
+$lang['activation_email_successful'] 	  	 = 'Aktivierungs-Email verschickt';
+$lang['activation_email_unsuccessful']   	 = 'Aktivierungs-Email kann nicht verschickt';
 
 // Login / Logout
-$lang['login_successful'] = 'Connecté avec succès';
-$lang['login_unsuccessful'] = 'Vos identifiants sont incorrects. Merci de réessayer.';
-$lang['logout_successful'] = 'Vous êtes déconnectés';
+$lang['login_successful'] 		  	         = 'Erfolgreich eingeloggt';
+$lang['login_unsuccessful'] 		  	     = 'Falsches Login';
+$lang['login_unsuccessful_not_active'] 		 = 'Konto ist inaktive';
+$lang['logout_successful'] 		 	         = 'Erfolgreich ausgeloggt';
 
 // Account Changes
-$lang['update_successful'] = 'Compte utilisateur mis à jour avec succès';
-$lang['update_unsuccessful'] = 'Impossible de mettre à jour le compte utilisateur';
-$lang['delete_successful'] = 'Utilisateur supprimé';
-$lang['delete_unsuccessful'] = 'Impossible de supprimer l\'utilisateur';
+$lang['update_successful'] 		 	         = 'Konto-Information erfolgreich aktualisiert';
+$lang['update_unsuccessful'] 		 	     = 'Konto-Information kann nicht aktualisiert werden';
+$lang['delete_successful'] 		 	         = 'Nutzer gelöscht';
+$lang['delete_unsuccessful'] 		 	     = 'Löschen des Nutzers nicht möglich';
 
 //labels
-$lang['first_name'] = 'Prénom';
-$lang['last_name'] = 'Nom';
-$lang['username'] = 'Nom d\'utilisateur';
-$lang['identity'] = 'Adresse électronique';
-$lang['password'] = 'Mot de passe';
-$lang['password_confirm'] = 'Confirmer le mot de passe';
-$lang['remember_me'] = 'Rester connecté';
-$lang['forgot_password'] = 'Mot de passe oublié?';
-$lang['groups_menu'] = 'Selectionner un type de compte';
-$lang['terms_of_services'] = 'Pour utiliser nos services, vous devez accepter les conditions d\'utilisation b-onstage.';
+$lang['first_name'] = 'Vorname';
+$lang['last_name'] = 'Name';
+$lang['username'] = 'Nutzername für b-onstage';
+$lang['identity'] = 'Email'; 
+$lang['password'] = 'Passwort';
+$lang['password_confirm'] = 'Passwort bestätigen';
+$lang['remember_me'] = 'Merken'; 
+$lang['groups_menu'] = 'Kontenart wählen';
+$lang['forgot_password'] = 'Passwort vergessen?';
+$lang['terms_of_services'] = 'Zur Nutzung unseres Angebotes musst Du die b-onstage Geschäftsbedingungen akzeptieren.';
 
-$lang['signin_title'] = 'Connexion';
-$lang['signup_title'] = 'Créer un compte';
-$lang['signup_activate_title'] = 'Activer votre compte';
-$lang['signup_terminate_title'] = 'A vous de Jouer!';
+
+$lang['signin_title'] = 'Einloggen';
+$lang['signup_title'] = 'Konto anlegen';
+$lang['signup_activate_title'] = 'Konto aktivieren';
+$lang['signup_terminate_title'] = 'Die Bühne gehört Dir!';
 
 //Notifications
-$lang['notify_account_created'] = 'Votre inscription est maintenant validée';
+$lang['notify_account_created'] = 'Deine Anmeldung ist jetzt bestätigt!';
 
 
 // Titles		
-$lang['home_title'] = 'Bienvenue sur b-onstage';
-$lang['aboutus_title'] = 'A propos';
-$lang['whoweare_title'] = 'Qui sommes-nous?';
-$lang['howitworks_title'] = 'Comment ça marche?';
-$lang['howimakemoney_title'] = 'Qu\'est-ce que j\'y gagne?';
+$lang['home_title'] = 'Willkommen bei b-onstage';
+$lang['aboutus_title'] = 'Über uns';
+$lang['whoweare_title'] = 'Wer wir sind';
+$lang['howitworks_title'] = 'Wie funktioniert das?';
+$lang['howimakemoney_title'] = 'Wie Du Geld verdienst';
 
-$lang['terms_of_services_title'] = 'Conditions générales d\'utilisations';
-$lang['legal_title'] = 'Mentions légales';
-$lang['signup_choice_title'] = 'Type de compte';
-$lang['signup_active_title'] = 'Activez votre compte';
-$lang['signup_stage_title'] = 'Inscription';
-$lang['signup_stage_title_ref'] = 'Lister des Scènes en tant qu\'Ambassadeur';
-$lang['signup_stage_step2_title'] = 'Pré-inscription terminée';
-$lang['user_home_title'] = 'Mes paramètres de compte';
-$lang['user_update_information_title'] = 'Modifier mes coordonnées';
-$lang['user_calendar_title'] = 'Gestion du calendrier';
-$lang['user_calendar_create_title'] = 'Créer un évènement';
-$lang['user_contact_title'] = 'Mes contacts';
-$lang['user_notifs_title'] = 'Notifications';
-$lang['user_rese_title'] = 'Mes réservations';
-$lang['user_artist_title'] = 'Les artistes | b-onstage';
-$lang['user_stage_title'] = 'Les scènes | b-onstage';
-$lang['user_shows_title'] = 'Programmation    ';
-$lang['user_book_title'] = 'Ou jouer ma musique ?	';
+$lang['terms_of_services_title'] = 'Allg. Geschäftsbedingungen';
+$lang['legal_title'] = 'Rechtlicher Hinweis';
+$lang['signup_choice_title'] = 'Kontentyp';
+$lang['signup_active_title'] = 'Konto aktivieren';
+$lang['signup_stage_title'] = 'Mitglied werden';
+$lang['signup_stage_title_ref'] = 'Als Botschafter Bühnen anmelden';
+$lang['signup_stage_step2_title'] = 'Registrierung vollständig';
+$lang['user_home_title'] = 'Meine Daten';
+$lang['user_update_information_title'] = 'Meine Daten ändern';
+$lang['user_calendar_title'] = 'Meinen Kalender verwalten';
+$lang['user_calendar_create_title'] = 'Ein Event kreieren';
+$lang['user_contact_title'] = 'Meine Kontakte';
+$lang['user_notifs_title'] = 'Nachrichten';
+$lang['user_rese_title'] = 'Meine Buchungen';
+$lang['user_artist_title'] = 'Künstler | b-onstage';
+$lang['user_stage_title'] = 'Bühnen | b-onstage';
+$lang['user_shows_title'] = 'Programm    ';
+$lang['user_book_title'] = 'Wo auftreten	';
 		
 		
 // Page descriptions		
-$lang['home_desc'] = 'Sur b-onstage les musiciens réservent des scènes pour leurs concerts';
-$lang['aboutus_desc'] = 'A propos';
-$lang['whoweare_desc'] = 'Qui sommes-nous?';
-$lang['howitworks_desc'] = 'Comment ça marche?';
-$lang['howimakemoney_desc'] = 'Qu\'est-ce que j\'y gagne?';
+$lang['home_desc'] = 'b-onstage - hier buchen Musiker die Bühne für ihre Show!';
+$lang['aboutus_desc'] = 'Über uns';
+$lang['whoweare_desc'] = 'Wer wir sind';
+$lang['howitworks_desc'] = 'Wie funktioniert das?';
+$lang['howimakemoney_desc'] = 'Wie Du Geld verdienst';
 
-$lang['terms_of_services_desc'] = 'Conditions générales d\'utilisations';
-$lang['legal_desc'] = 'Mentions légales';
-$lang['signup_choice_desc'] = 'Choisissez un type de compte';
-$lang['signup_active_desc'] = 'Activez voter compte';
-$lang['signup_terminate_desc'] = 'Vos premiers pas sur b-onstage';
-$lang['signup_stage_desc'] = 'Créer un compte';
-$lang['signup_stage_desc_ref'] = 'Devenir an Ambassadeur';
-$lang['signup_stage_step2_desc'] = 'Activer votre compte';
-$lang['user_home_desc'] = 'Page d\'accueil';
-$lang['user_update_information_desc'] = 'Mettre à jour les informations';
-$lang['user_calendar_desc'] = 'Votre calendrier';
-$lang['user_calendar_create_desc'] = 'Créer un évènement';
-$lang['user_calendar_event_edit_desc'] = 'Modifier un évènement';
-$lang['user_contact_desc'] = 'Mes contacts';
-$lang['user_notifs_desc'] = 'Mes notifications';
-$lang['user_page_desc'] = 'Description';
-$lang['user_rese_desc'] = 'Votre réservation';
-$lang['user_artist_desc'] = 'Tous les artistes présents sur b-onstage';
-$lang['user_stage_desc'] = 'Tous les artistes présents sur b-onstage';
-$lang['user_shows_desc'] = 'Tous les concerts';
-$lang['user_book_desc'] = 'Les Scènes disponibles';
-$lang['user_signin_desc'] = 'Connectez vous pour envoyer des demandes et gérer votre compte';
+$lang['terms_of_services_desc'] = 'Allg. Geschäftsbedingungen';
+$lang['legal_desc'] = 'Rechtlicher Hinweis';
+$lang['signup_choice_desc'] = 'Kontentyp wählen';
+$lang['signup_active_desc'] = 'Konto aktivieren';
+$lang['signup_terminate_desc'] = 'Erste Schritte mit b-onstage';
+$lang['signup_stage_desc'] = 'Konto anlegen';
+$lang['signup_stage_desc_ref'] = 'Botschafter werden';
+$lang['signup_stage_step2_desc'] = 'Konto aktivieren';
+$lang['user_home_desc'] = 'Deine Homepage';
+$lang['user_update_information_desc'] = 'Information aktualisieren';
+$lang['user_calendar_desc'] = 'Dein Kalender';
+$lang['user_calendar_create_desc'] = 'Ein Event kreieren';
+$lang['user_calendar_event_edit_desc'] = 'Ein Event bearbeiten';
+$lang['user_contact_desc'] = 'Meine Kontakte';
+$lang['user_notifs_desc'] = 'Meine Nachrichten';
+$lang['user_page_desc'] = 'Beschreibung';
+$lang['user_rese_desc'] = 'Meine Buchungen';
+$lang['user_artist_desc'] = 'Alle b-onstage Künstler';
+$lang['user_stage_desc'] = 'Alle b-onstage Bühnen';
+$lang['user_shows_desc'] = 'Die Show';
+$lang['user_book_desc'] = 'Verfügbare Auftritte';
+$lang['user_signin_desc'] = 'Für Buchung und Kontenansicht bitte anmelden!';
 
 // General
-$lang['hello'] = 'Bonjour';
-$lang['artists'] = 'Artistes';
-$lang['artist'] = 'Artiste';
-$lang['scenes'] = 'Scènes';
-$lang['scene'] = 'Scène';
-$lang['shows'] = 'Concerts';
-$lang['signup'] = 'S\'inscrire';
-$lang['login'] = 'Se connecter';
-$lang['logout'] = 'Se déconnecter';
-$lang['from'] = 'du';
-$lang['sur'] = 'sur';
-$lang['to'] = 'au';
-$lang['in'] = 'à';
-$lang['to2'] = 'à';
-$lang['at'] = 'à';
-$lang['de'] = 'de';
-$lang['submit'] = 'Envoyer';
-$lang['become_member'] = 'S\'inscrire';
-$lang['clickhere'] = 'cliquez ici';
-$lang['modify'] = 'Modifier';
+$lang['hello'] = 'Hallo';
+$lang['artists'] = 'Künstler';
+$lang['artist'] = 'Künstler';
+$lang['scenes'] = 'Bühnen';
+$lang['scene'] = 'Bühne';
+$lang['shows'] = 'Konzerte';
+$lang['signup'] = 'Anmelden';
+$lang['login'] = 'Einloggen';
+$lang['logout'] = 'Ausloggen';
+$lang['from'] = 'von';
+$lang['to'] = 'bis';
+$lang['sur'] = 'on';
+$lang['in'] = 'in';
+$lang['to2'] = 'zu';
+$lang['at'] = 'bei';
+$lang['de'] = 'aus';
+$lang['submit'] = 'Senden';
+$lang['become_member'] = 'Jetzt anmelden';
+$lang['clickhere'] = 'HHier klicken!';
+$lang['modify'] = 'Ändern';
 $lang['address'] = 'Adresse';
-$lang['postalcode'] = 'Code postal';
-$lang['city'] = 'Ville';
-$lang['country'] = 'Pays';
-$lang['phone'] = 'Téléphone';
-$lang['hide'] = 'Masquer';
-$lang['validate'] = 'valider';
-$lang['requieredfield'] = 'Ce champ est obligatoire';
-$lang['mincharacters'] = 'Ce champ doit contenir au minimum';
-$lang['maxcharacters'] = 'Ce champ doit contenir au maximum';
-$lang['characters'] = 'caractères';
-$lang['error_retry'] = 'Une erreur s\'est produite, veuillez essayez ultérieurement.';
-$lang['calendar'] = 'Calendrier';
+$lang['postalcode'] = 'Postleitzahl';
+$lang['city'] = 'Stadt';
+$lang['country'] = 'Land';
+$lang['phone'] = 'Telefon';
+$lang['hide'] = 'Verbergen';
+$lang['validate'] = 'Bestätigen';
+$lang['requieredfield'] = 'Eintrag erfordelich';
+$lang['mincharacters'] = 'Feld muss mindestens';
+$lang['maxcharacters'] = 'Feld darf höchstens';
+$lang['characters'] = 'Zeichen';
+$lang['error_retry'] = 'Fehler aufgetreten, bitte später erneut versuchen';
+$lang['calendar'] = 'Kalender';
 $lang['list'] = 'Liste';
-$lang['open'] = 'Ouvert';
-$lang['req_inprocess'] = 'Demandes en cours';
-$lang['awaiting'] = 'En attente';
-$lang['confirmed'] = 'Confirmé';
-$lang['today'] = 'Aujourd\'hui';
-$lang['date'] = 'Date';
-$lang['schedule'] = 'Horaire';
+$lang['open'] = 'Öffnen';
+$lang['req_inprocess'] = 'Anfrage wird bearbeitet';
+$lang['awaiting'] = 'Warte...';
+$lang['confirmed'] = 'Bestätigt';
+$lang['today'] = 'Heute';
+$lang['date'] = 'Datum';
+$lang['schedule'] = 'Terminplan';
 $lang['infos'] = 'Infos';
-$lang['action'] = 'Action';
-$lang['save'] = 'ENREGISTRER';
-$lang['save_change'] = 'ENREGISTRER LES MODIFICATIONS';
-$lang['desc'] = 'Description';
+$lang['action'] = 'Aktion';
+$lang['save'] = 'SPEICHERN';
+$lang['save_change'] = 'ÄNDERUNGEN SPEICHERN';
+$lang['desc'] = 'Beschreibung';
 $lang['bio'] = 'Biographie';
-$lang['notset'] = 'Non renseigné';
-$lang['resume'] = 'Résumé';
-$lang['cancel'] = 'Annuler';
-$lang['delete'] = 'Supprimer';
+$lang['notset'] = 'Nicht bestimmt';
+$lang['resume'] = 'Zusammenfassung';
+$lang['cancel'] = 'Abbrechen';
+$lang['delete'] = 'Löschen';
 $lang['plus'] = 'Plus';
-$lang['follow'] = 'Suivre';
-$lang['flux'] = 'Flux';
-$lang['views'] = 'vues';
-$lang['prev'] = 'Précédent';
-$lang['play'] = 'Jouer';
+$lang['follow'] = 'Folgen';
+$lang['flux'] = 'Videostream';
+$lang['views'] = 'views';
+$lang['prev'] = 'Vorheriges';
+$lang['play'] = 'Abspielen';
 $lang['pause'] = 'Pause';
-$lang['startslideshow'] = 'Démarrer le diaporama';
-$lang['next'] = 'Suivant';
 $lang['stop'] = 'Stop';
-$lang['repeat'] = 'Lecture en boucle';
-$lang['repeatoff'] = 'Arrêt de la lecture en boucle';
-$lang['mute'] = 'Désactiver le son';
-$lang['unmute'] = 'Activer le son';
-$lang['showplaylist'] = 'Afficher la liste de lecture';
-$lang['togglesize'] = 'Basculer taille';
-$lang['close'] = 'Fermer';
-$lang['albums'] = 'album(s)';
-$lang['youhave'] = 'Vous avez';
-$lang['showrecom'] = 'Afficher l\'aide';
-$lang['seestage'] = 'Voir scène';
-$lang['refuse'] = 'refuser';
-$lang['see'] = 'Voir';
-$lang['add'] = 'Ajouter';
-$lang['playlists'] = 'Listes de lecture';
-$lang['listen'] = 'Ecouter';
-$lang['sync'] = 'Synchroniser';
-$lang['show'] = 'Afficher';
-$lang['noresultfound'] = 'Aucun résultat trouvé';
-$lang['sortby'] = 'Trier par';
-$lang['showmoreresults'] = 'Afficher plus de résultats';
-$lang['the'] = 'Le';
-$lang['step'] = 'Etape';
-$lang['connect'] = 'Connectez-vous';
-$lang['or'] = 'ou';
-$lang['otherinfos'] = 'Autres infos';
-$lang['originaire_de'] = 'Originaire de';
-$lang['band_members'] = 'Les membres du groupe';
-$lang['choose_city'] = 'Ville';
-$lang['choose_country'] = 'Pays';
-$lang['checkall'] = 'Cocher tout';
-$lang['uncheckall'] = 'Décocher tout';
-$lang['selected'] = 'Sélectionné(s)';
-$lang['where'] = 'Où?';
-$lang['availability'] = 'Disponibilité';
-$lang['time'] = 'Heure';
-
+$lang['mute'] = 'Stumm';
+$lang['unmute'] = 'Ton An';
+$lang['repeat'] = 'Wiederholung';
+$lang['repeatoff'] = 'Wiederholung aus';
+$lang['showplaylist'] = 'Playlist zeigen';
+$lang['startslideshow'] = 'Diashow starten';
+$lang['next'] = 'Nächstes';
+$lang['togglesize'] = 'Größe justieren';
+$lang['close'] = 'Schließen';
+$lang['albums'] = 'Alben';
+$lang['youhave'] = 'Du hast';
+$lang['showrecom'] = 'Hilfe zeigen';
+$lang['seestage'] = 'Bühne zeigen';
+$lang['refuse'] = 'Ablehnen';
+$lang['see'] = 'Ansehen';
+$lang['add'] = 'Hinzufügen';
+$lang['playlists'] = 'Playlists';
+$lang['listen'] = 'Anhören';
+$lang['sync'] = 'Synchronisieren';
+$lang['show'] = 'Zeigen';
+$lang['noresultfound'] = 'Keine Ergebnisse';
+$lang['sortby'] = 'Sortiere nach';
+$lang['showmoreresults'] = 'Mehr Ergebnisse zeigen';
+$lang['the'] = 'The';
+$lang['step'] = 'Step';
+$lang['connect'] = 'Einloggen';
+$lang['or'] = 'oder';
+$lang['otherinfos'] = 'Andere Info';
+$lang['originaire_de'] = 'Original von';
+$lang['band_members'] = 'Bandmitglieder';
+$lang['choose_city'] = 'Stadt';
+$lang['choose_country'] = 'Land';
+$lang['checkall'] = 'Alle wählen';
+$lang['uncheckall'] = 'Alle abwählen';
+$lang['selected'] = 'Ausgewählte';
+$lang['where'] = 'Wo?';
+$lang['availability'] = 'Verfügbarkeit';
+$lang['time'] = 'Zeit';
 
 // Header
-$lang['header_book_date'] = 'Trouver une date';
-$lang['header_aboutus'] = 'A propos';
-$lang['header_seeall_notices'] = 'Voir toutes les notifications';
-$lang['header_myaccount'] = 'Mon compte';
-$lang['header_mycalendar'] = 'Mon calendrier';
-$lang['header_mybookings'] = 'Mes réservations';
-$lang['header_myprofile'] = 'Mon profil';
-$lang['header_mycontacts'] = 'Mes contacts';
-$lang['header_book_a_date'] = 'Réserver une date';
-$lang['header_attend_show'] = 'Assister à un Concert';
-$lang['header_forstages'] = 'Pour les scènes';
+$lang['header_book_date'] = 'Buchung vornehmen';
+$lang['header_aboutus'] = 'Über uns';
+$lang['header_seeall_notices'] = 'Mitteilungen';
+$lang['header_myaccount'] = 'Mein Konto';
+$lang['header_mycalendar'] = 'Mein Kalender';
+$lang['header_mybookings'] = 'Meine Buchungen';
+$lang['header_myprofile'] = 'Mein Profil';
+$lang['header_mycontacts'] = 'Meine Kontakte';
+$lang['header_book_a_date'] = 'Termin anfragen';
+$lang['header_attend_show'] = 'Konzert besuchen';
+$lang['header_forstages'] = 'Für Veranstalter';
 
 
-$lang['search_from'] = 'Rechercher du';
+$lang['search_from'] = 'Suche von';
 
 
-// Home
-$lang['home_slide1_txt'] = 'Trouvez des Scènes pour jouer en live ...';
-$lang['home_slide1_txt2'] = 'A vous de jouer !!';
-$lang['home_slide1_txt3'] = 'Inscrivez-vous!';
+// Home		
+$lang['home_slide1_txt'] = 'Live-Auftritte finden ...';
+$lang['home_slide1_txt2'] = 'Die Bühne gehört Dir!';
+$lang['home_slide1_txt3'] = 'Gratis anmelden!';
 
-$lang['home_slide2_txt'] = 'Tu veux jouer en live?';
-$lang['home_slide2_txt2'] = 'Tu ne trouves pas de Scène?';
-$lang['home_slide2_txt3'] = 'Les Scènes sont sur b-onstage';
-$lang['home_slide2_txt4'] = 'Trouver une date';
+$lang['home_slide2_txt'] = 'Du willst live spielen?';
+$lang['home_slide2_txt2'] = 'Keine Auftrittsmöglichkeit in Sicht?';
+$lang['home_slide2_txt3'] = 'Deine Bühne finden: b-onstage';
+$lang['home_slide2_txt4'] = 'Jetzt bewerben!';
 
-$lang['home_slide3_txt'] = 'Vous pouvez organiser un concert en quelques clicks';
-$lang['home_slide3_txt2'] = 'Plus besoin d\'y passer des heures!';
-$lang['home_slide3_txt3'] = 'Inscrivez vous!';
+$lang['home_slide3_txt'] = 'Mit wenigen Klicks einen Auftritt buchen...';
+$lang['home_slide3_txt2'] = 'Ein Gig für Dich ohne tagelanges Suchen!';
+$lang['home_slide3_txt3'] = 'Jetzt anmelden!';
 
-$lang['home_slide4_txt'] = 'b-onstage rembourse les frais';
-$lang['home_slide4_txt2'] = 'pour tous les concerts en mars!';
-$lang['home_slide4_txt3'] = 'Montez sur Scène!';
+$lang['home_slide4_txt'] = 'b-onstage zahlt Gebühren zurück';
+$lang['home_slide4_txt2'] = 'für alle Konzerte im März!';
+$lang['home_slide4_txt3'] = 'Komm auf die Bühne!';
 
-$lang['home_slide5_txt'] = 'Ich liebe dich...';
-$lang['home_slide5_txt2'] = 'On vous aime aussi!';
-$lang['home_slide5_txt3'] = 'et on vous aide à Paris comme à Berlin';
-$lang['home_slide5_txt4'] = 'Trouver une Scène';
+$lang['home_slide5_txt'] = 'Je ne parle pas français';
+$lang['home_slide5_txt2'] = 'Wir schon! Und wir sind auch in Paris für Dich da';
+$lang['home_slide5_txt3'] = '';
+$lang['home_slide5_txt4'] = 'Hol\' Dir Deinen Gig!';
 
-$lang['home_slide6_txt'] = 'Merci pour les performances!';
-$lang['home_slide6_txt1'] = 'à Paris et à Berlin';
+$lang['home_slide6_txt'] = 'Danke für die klasse Shows!';
+$lang['home_slide6_txt1'] = 'in Paris und Berlin';
 
-$lang['home_slide8_txt'] = 'Auf die Bühne jeden woche!';
-$lang['home_slide8_txt1'] = 'avec b-onstage, c\'est possible';
-$lang['home_slide8_txt2'] = 'Inscription gratuite';
+$lang['home_slide6_txt'] = 'Danke für die klasse Shows!';
+$lang['home_slide6_txt1'] = 'in Paris und Berlin';
+
+$lang['home_slide8_txt'] = 'Jede Woche einen Auftritt?';
+$lang['home_slide8_txt1'] = 'b-onstage hilft Dir dabei';
+$lang['home_slide8_txt2'] = 'Jetzt anmelden';
 
 
-$lang['home_promo'] = 'b-onstage vous rembourse vos frais de réservation pour tous vos concerts en Mars 2015!';
+$lang['home_promo'] = 'b-onstage erstattet die Gebühren für alle Konzerte im März 2015!';
 
-$lang['home_howitworks_title'] = 'Comment ça marche?';
+$lang['home_title_concert'] = 'Konzerte';
+$lang['home_title_stage'] = 'Verfügbare Bühnen';
+$lang['home_title_artist'] = 'Betreute Künstler';
+$lang['home_seeall_shows'] = 'Alle Konzerte zeigen';
+$lang['home_seeall_stages'] = 'Alle Bühnen zeigen';
+$lang['home_seeall_artist'] = 'Alle Künstler zeigen';
+$lang['home_bottom_txt'] = 'Mit wenigen Klicks einen Auftritt buchen, </br>Spar Deine Power für die Proben!';
+$lang['home_bottom_txt2'] = 'Jetzt anmelden: gratis! </br> Finde Bühnen zuhause und unterwegs';
+
+$lang['home_howitworks_title'] = 'Wie funktioniert das?';
 
 $lang['home_howitworks_list'] = '<ul class="home-howitworks">
-				<li><p>Enregistrez vous et complétez votre profil</p></li>
-				<li><p>Réservez une scène à la date qui vous convient</p></li>
-				<li><p>Attendez que nous confirmions votre sélection</p></li>
-				<li><p>......A Vous de Jouer!</p></li>
+				<li><p>Anmelden und Profil ausfüllen</p></li>
+				<li><p>Eine Bühne für Dein Wunschdatum buchen</p></li>
+				<li><p>Moment, wir warten auf Bestätigung</p></li>
+				<li><p>......Die Bühne gehört Dir!</p></li>
 			</ul>';
+$lang['home_howitworks_button'] = 'Mehr Details';
 
-$lang['home_howitworks_button'] = 'en detail';
 
-
-$lang['home_title_concert'] = 'Les Concerts';
-$lang['home_title_stage'] = 'Les Scènes disponibles';
-$lang['home_title_artist'] = 'Les Artistes que nous servons';
-$lang['home_seeall_shows'] = 'Voir tous les Concerts';
-$lang['home_seeall_stages'] = 'Voir toutes les Scènes';
-$lang['home_seeall_artist'] = 'Voir tous les Artistes';
-$lang['home_bottom_txt'] = 'Réservez une Scène en deux clicks, </br>Gardez votre énergie pour les répétitions';
-$lang['home_bottom_txt2'] = 'L\'inscription est gratuite et le restera, </br> Connectez vous aux scènes à l\'international';
 
 // Referral program
-$lang['referral_program'] = 'Deviens Ambassadeur b-onstage </br>'; 
-$lang['referral_program2'] = 'Aide la communauté et gagne de l\'argent pour tes projets';
+$lang['referral_program'] = 'Werde b-onstage Botschafter </br>';
+$lang['referral_program2'] = 'Unterstütze die community und verdiene Geld für Deine Projekte';
 
-$lang['referral_program_step1'] = 'Présente b-onstage à un lieu que tu aimes en tant que musicien, même si il n\'y a pas de musique live aujourd\'hui';
-$lang['referral_program_step2'] = 'Nous contacterons la scène et réglerons les détails, tu n\'as plus rien à faire';
-$lang['referral_program_step3'] = 'Gagne 50% des frais b-onstage générés par la scène pendant une année!';
+$lang['referral_program_step1'] = 'Stelle als Musiker b-onstage einem Veranstalter vor, auch wenn dort heute keine Live-Musik spielt';
+$lang['referral_program_step2'] = 'Wir nehmen Verbindung auf und kümmern uns um die Details, Du mußt nichts weiter tun';
+$lang['referral_program_step3'] = 'Verdiene 50% der b-onstage Gebühren für diese Bühne für 1 Jahr!';
 
-$lang['referral_program_button'] = 'Participer';
-
+$lang['referral_program_button'] = 'Mitmachen';
 
 
 // About us
-$lang['aboutus_link_aboutus'] = 'A propos';
-$lang['aboutus_link_whoweare'] = 'Qui sommes-nous ?';
-$lang['aboutus_link_howitworks'] = 'Comment ça marche?';
-$lang['aboutus_link_howimakemoney'] = 'Qu\'est-ce que j\'y gagne?';
+$lang['aboutus_link_aboutus'] = 'Über uns';
+$lang['aboutus_link_whoweare'] = 'Wer wir sind?';
+$lang['aboutus_link_howitworks'] = 'Wie das funktioniert';
+$lang['aboutus_link_howimakemoney'] = 'Wie Du dabei verdienst';
 
-$lang['aboutus_header_aboutus'] = 'Pourquoi b-onstage ?';
+$lang['aboutus_header_aboutus'] = 'Warum b-onstage?';
 $lang['aboutus_txt1_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>Parce que la vente de disque ne suffit plus <strong>pour vivre de sa musique.</strong></p></li>
-				<li><p>Parce que comme vous, <strong>nous avons passé des journées entières</strong> à aller de bar en bar pour trouver où jouer sans grand succès.</p></li>
-				<li><p>Parce que nous pensons qu\'il y a <strong>une meilleure façon de trouver une Scène</strong>.</p></li>
+				<li><p>Weil die Plattentantiemen <strong>nicht mehr genug sind.</strong></p></li>
+				<li><p>Weil wir, wie Du <strong>tagelang</strong> ohne Ergebnis von einem Veranstalter zum anderen gelaufen sind.</p></li>
+				<li><p>Weil wir wußten, es muß <strong>einen besseren Weg geben, ein Konzert zu buchen</strong>.</p></li>
 			</ul>';
-
-
-$lang['aboutus_header2_aboutus'] = 'Et maintenant ?';
+$lang['aboutus_header2_aboutus'] = 'Und jetzt?';
 $lang['aboutus_txt2_aboutus'] = '<ul class="about-list mb-20">
-				<li><p>Nous avons visité des bars et salles et nous les avons convaincus de recevoir plus de musiciens.</p></li>
-				<li><p>Nous vous donnons la possibilité de réserver une scène en quelques clicks.</p></li>
+				<li><p>Wir sind die Bars und Veranstaltungsplätze abgelaufen und haben die Leute überzeugt, live-Musik zu ermöglichen.</p></li>
+				<li><p>Wir machen die Buchung mit wenigen Klicks möglich, damit Du tun kannst, was Du am Besten machst: Musik!</p></li>
 			</ul>';
-
-
-$lang['aboutus_header3_aboutus'] = 'Inscrivez-vous';
-$lang['aboutus_header4_aboutus'] = 'sur b-onstage et à vous de jouer !';
-$lang['aboutus_header_whoweare'] = 'Qui sommes-nous ?';
+$lang['aboutus_header3_aboutus'] = 'Anmelden';
+$lang['aboutus_header4_aboutus'] = 'bei b-onstage und die Bühne gehört Dir!';
+$lang['aboutus_header_whoweare'] = 'Wer wir sind?';
 $lang['aboutus_txt_whoweare'] = '<ul class="about-list mb-20">
-				<li><p class="grey fs-15">Musiciens et programmeurs, nous avons créé b-onstage pour aider les musiciens à lancer leur carrière.</p></li>		
-				<li><p class="grey fs-15">Nous l\'avons conçu dans le but de </strong> faciliter les démarches pour <strong>organiser des concerts.</strong></p></li>	
-				<li><p class="grey fs-15"><strong>Nous visitons toutes les Scènes</strong> (qui sont des établissements partenaires de b-onstage), nous les référençons avec leurs descriptions pour assurer qu’<strong>on vous offre ce qu’on vous promet.</strong></p></li>
-				<li><p class="grey fs-15">Nous pouvons vous proposer <strong>pour chaque concert des contrats spécialisés</strong> pour limiter les responsabilités équitablement et équilibrer les relations entre tous les intervenants.</p></li>	
-				<li><p class="grey fs-15">Nous assurons <strong>le suivi de tous nos partenaires et de tous les Artistes</strong>, nous répondons à tous les messages que nous recevons et nous sommes prêts à intervenir auprès de tous les organismes pour vous soutenir.</p></li>
+				<li><p class="grey fs-15">Musiker und Programmierer wir haben b-onstage gegründet, um Musikern beim Karrierestart zu helfen.</p></li>		
+				<li><p class="grey fs-15">Wir sehen es als Weg, einfacher <strong>Konzerte zu organisieren.</strong></p></li>	
+				<li><p class="grey fs-15"><strong>Wir sehen uns alle Plätze and</strong> (die als Partner in Frage kommen), wir stellen sie vor <strong>damit Du weißt: was Du siehst, bekommst Du auch.</strong></p></li>
+				<li><p class="grey fs-15">Wir können <strong>spezielle Verträge</strong> für definierte Verpflichtungen und ausgewogene Verhältnisse anbieten.</p></li>	
+				<li><p class="grey fs-15">Wir begleiten <strong>all unsere Partner und gelisteten Künstler</strong> und wir beantworten jede Nachricht an uns. Bei jeder Initiative stehen wir auf Deiner Seite!</p></li>
 			</ul>';
 $lang['aboutus_txt_howitworks'] = '<ul class="about-list">
-				<li><p>Nous mettons gratuitement à votre disposition une plateforme de réservation en ligne permettant de vérifier la disponibilité d’une Scène et de la réserver pour vous y produire, faire votre Concert.</p></li>			
-				<li><p>Sur b-onstage vous utilisez notre outil de recherche pour trouvez les Scènes disponibles en fonction des dates et/ou des villes qui vous conviennent.</p></li>
-				<li><p>Vous envoyez une demande de réservation pour faire un Concert sur la Scène sélectionnée. Nous vous notifierons une fois la réservation validée par la Scène.</p></li>
-				<li class="nb"><p><strong>Note :</strong> Les Scènes sont susceptibles de recevoir un grand nombre de demandes de réservation. Complétez au mieux votre profil et soyez patients, cela peut prendre du temps avant que vous ne soyez sélectionnés par la Scène.</p></li>
-				<li><p>Pour valider votre réservation, vous devrez procéder au paiement en ligne des frais de réservation.</p></li>
+				<li><p>Wir bieten Dir kostenlosen Zugang zu der Online Reservierungsplattform: so findet Du Auftritte und kannst direkt buchen!</p></li>			
+				<li><p>Wenn Deine Wahl getroffen ist, forderst Du eine Reservierung an. Wir teilen Dir mit, wenn Du ausgewählt wurdest.</p></li>
+				<li class="nb"><p><strong>Wichtig:</strong> Manche Bühnen bekommen viele Anfragen. Halte Dein Profil aktuell und komplett und hab\' etwas Geduld - es kann etwas dauern bis Du Deinen Gig bekommst.</p></li>
+				<li><p>Um die Buchung abzuschliessen, musst Du Deine Buchungsgebühr zahlen.</p></li>
 				<li class="nb">
-					<p><strong>Note :</strong> Les frais de réservation permettent surtout de garantir que les deux parties tiennent leurs engagements et que le Concert se déroulent dans les meilleures conditions. Cela évite également que des Artistes peu sérieux dégradent les relations avec les Scènes, et qu’il y ait de moins en moins de lieu et de date à votre disposition.</p>
+					<p><strong>Note :</strong> Die Buchungsgebühr dient auch dazu, das Erscheinen des Künstlers sicher zu stellen und der Bühne eine gewisse Sicherheit zu geben. So soll auch Ärger durch Unruhestifter und der Ausstieg von Bühnenanbietern vermieden werden.</p>
 				</li>
 				<li class="nb">
-					<p><strong>Note :</strong> Vous ne payez que quand et si vous êtes choisis pour le concert.</p>
+					<p><strong>Note :</strong> Du zahlst nur, wenn und sobald Du gebucht wirst.</p>
 				</li>
-				<li><p>A réception du paiement des frais de réservations, tels qu’indiqués sur la page de la Scène, la réservation est définitive et vous serez notifié. Une fois réservé les détails de votre Concert s\'afficheront et seront visible par le public.</p></li>
-				<li><p>Afin de vous protéger, et de vous garantir les meilleures conditions, nous avons conçu des contrats Artistes/Scènes (accord de prestation) que nous pouvons mettre à disposition sur simple demande. Nous vous invitons à signer un contrat Artiste(s)/Scène, qui est un contrat de prestation avec la Scène qui pourra vous être envoyé. Ce contrat établit le lien juridique entre la Scène et l’Artiste, la société Mybandonstage n’intervenant, s’agissant de l’exécution des prestations artistiques et de location de salle, que comme intermédiaire de mise en relation via le site b-onstage.</p></li>
-				<li><p>Il vous suffit de vous présenter quelques heures avant le Concert pour vous préparer et la suite dépend de vous...</p></li>	
-				<li><p>Si vous voulez annuler, vous pouvez le faire sans conséquence tant que le paiement des frais de réservation n’a pas été réalisé.</p></li>
+				<li><p>Wenn die Zahlung eingeht wird die Buchung wirksam und Du wirst benachrichtigt. Das Auftrittsdatum wird dann als Konzert öffentlich publiziert.</p></li>
+				<li><p>Als Hilfestellung für Dich haben wir einen Auftrittskontrakt entworfen, den Du auf Anfrage bekommen kannst. Damit steht Dir ein rechtlicher Rahmen für das Konzert zur Verfügung; mybandonstage ist nur Vermittler, nicht Partei, dieser Verbindung.</p></li>
+				<li><p>Du musst jetzt nur noch rechtzeitig vor dem Konzert erscheinen - der Rest hängt von Dir ab!</p></li>	
+				<li><p>Wenn Du absagen musst, ist das bis zum Eingang der Gebühr kostenlos möglich.</p></li>
 				<li>
-					<p>Une fois le paiement fait, vous pouvez annuler jusqu’à :</p>
+					<p>Nach Deiner Zahlung kannst Du zu folgenden Bedingungen absagen:</p>
 					<ul class="sub-about-list">
-						<li>Deux semaines avant la date du Concert, nous vous reverserons les frais de réservation.</li>						
-						<li>Passée cette limite de deux semaines avant la date du Concert, vous ne pouvez plus récupérer les frais de réservation, mais nous vous demandons de procéder à l’annulation tout de même pour éviter le statut "No-Show".</li>
+						<li>Bis zwei Wochen vor dem Konzert werden die Buchungsgebühren erstattet.</li>						
+						<li>Weniger als zwei Wochen vor dem Konzert können die Gebühren nicht erstattet werden, eine Absage ist aber trotzdem wichtig!</li>
 					</ul>
-				<li class="nb"><p><strong>Note :</strong>Au cas où vous ne vous présentez pas le jour du Concert sans avoir annulé sur le site au moins 72 heures à l’avance, nous nous réservons le droit d’afficher le statut "No-Show" sur votre profil public.</p></li>
-	
+				<li class="nb"><p><strong>Wichtig: </strong>Wenn Du nicht erscheinst und dies nicht 72 Std. vor Konzert mitteilst, können wir eine "No-Show" Notiz zu Deinem Profil hinzufügen.</p></li>
+
 				</li>
 			</ul>';
+
 
 $lang['aboutus_txt_howimakemoney'] = '<ul class="about-list">
-				<li><p>Nous nous déplaçons pour que vous n\'ayez pas à le faire. <strong>Cela vous évite de marcher pendant des jours</strong> et qui vous fait gagner du temps et de l\'argent.</p></li>			
-				<li><p>b-onstage vous donne l\'opportunité de jouer devant vos fans <strong> et les habitués de la Scène</strong>. Chaque nouveau fan est une nouvelle opportunité.</p></li>			
-				<li><p>Vous pouvez<strong> toujours recevoir des pourboires, vendre des CDs et autres goodies</strong>  pendant et après le show.</p></li>			
-				<li><p><strong>Certains événements sont rémunérés</strong> avec des conditions données par la Scène (cachet fixe, surcharge sur les boissons, part de la billeterie ou défraiement) et nous les affichons comme tels. b-onstage fait tout pour vous avoir les meilleures conditions et ne prend aucun frais sur cette transaction, tout est pour vous.</p></li>			
-				<li><p><strong>Contribuez à la communauté</strong> en organisant un maximum de concerts, même si les garanties sont faibles au début. Plus nous organiserons de concerts avec succès plus nous pourrons offrir de concerts rémunérés.</p></li>			
-				<li><p><strong>Donnez toujours le meilleur de vous-même</strong>, commencez dès que possible et prenez soin de votre historique sur la plateforme, cela augmentera vos chances plus tard pour les évènements les plus convoités.</p></li>
-				<li><p>De temps en temps <strong>b-onstage organise des évenements avec des prix à la clé</strong>, inscrivez-vous et nous vous tiendrons informés.</p></li>				
+				<li><p>Wir haben Dir die "Beinarbeit" abgenommen. <strong>Du sparst Dir das tagelange Verteilen von Demos </strong> - und damit Zeit und Geld. </p></li>			
+				<li><p>b-onstage ermöglicht Dir Auftritte vor Deinen Fans <strong> und den Stammgästen der Plätze</strong>. Mehr Fans heißt: mehr Gelegenheit Geld zu verdienen.</p></li>			
+				<li><p>Du hast <strong> immer die Gelegenheit, Geld einzusammeln oder CDs oder anderes zu verkaufen</strong> - während und nach Deiner Show.</p></li>			
+				<li><p><strong>Manche Auftritte werden bezahlt</strong> zu Bedingungen des Veranstalters (feste Gage, Getränkeaufschlag, Anteil vom Eintritt, Erstattung der Kosten) - das wird vorher bekannt gegeben. Wir tun alles, um den besten Deal für Dich zu erreichen, und b-onstage verlangt dafür keine Gebühr - <strong>das Geld gehört Dir!</strong></p></li>			
+				<li><p><strong>Trage zur Künstlergemeinde bei</strong> - mir so vielen Konzerten wie möglich, selbst wenn der Profit anfangs begrenzt ist. Mehr erfolgreiche Auftritte bedeuten früher oder später <strong>bezahlte </strong>Auftritte.</p></li>			
+				<li><p><strong>Liefere immer eine gute Show</strong>, fange so früh wie möglich an, erwirb Erfahrung und Popularität auf der Webseite. Damit steigen Deine Chancen, für die begehrteren Bühnen gebucht zu werden.</p></li>
+				<li><p>Von Zeit zu Zeiten wird <strong>b-onstage Veranstaltungen mit Preisen organisieren</strong> - also werde Mitglied und bleibe immer auf dem neuesten Stand!</p></li>				
 				</li>
 			</ul>';
-			
-$lang['aboutus_txt_howimakemoney_ref'] = '> En plus vous pouvez supporter la communauté et gagner de l\'argent pour vos projet en participant à notre programme Ambassadeur ';
+$lang['aboutus_txt_howimakemoney_ref'] = '>Auch als Botschafter kannst Du der Community weiterhelfen und nebenbei etwas Geld verdienen.';
+
 
 
 // Footer
-$lang['forstages_title'] = 'Pour les Scènes';
-$lang['forstages_desc'] = 'Notre service pour les salles de concerts et les bars';
-$lang['forstages_tagline1'] = 'La Musique Live devrait être partout ... tous les jours';
-$lang['forstages_tagline2'] = 'et on va vous rendre les choses plus faciles';
-$lang['forstages_button1'] = 'S\'inscrire pour recevoir des demandes';
-$lang['forstages_button2'] = 'Recommander une Scène';
+$lang['forstages_title'] = 'Für die Bühnen';
+$lang['forstages_desc'] = 'Unser Service für Besitzer von Bühnen und Bars';
+$lang['forstages_tagline1'] = 'Überall sollte es Live Musik geben, und immer!';
+$lang['forstages_tagline2'] = 'Wir machen das für Dich einfach.';
+$lang['forstages_button1'] = 'Werde Mitglied mit Deiner Auftrittsmöglichkeit, und Du erhältst rasch Angebote.';
+$lang['forstages_button2'] = 'Eine Bühne empfehlen';
 
 
-$lang['forstages_howto_title1'] = 'Créez un évènement';
+$lang['forstages_howto_title1'] = 'Auftritt anbieten';
 $lang['forstages_howto_list1'] = '<ul class="forstages-howitworks">
-				<li><p>Créez un créneau (jour/heure/genre) à offir aux musiciens </p></li>
-				<li><p>Entrez vos coûts de production ainsi que la rénumération offerte aux musiciens si possible</p></li>
+				<li><p>Richte einen Slot (Tag/Zeit/Genre) als Angebot für Musiker ein. </p></li>
+				<li><p>Gib die Produktionskosten und die Vergütung (wenn angeboten) für die Musiker an.</p></li>
 			</ul>';
-$lang['forstages_howto_title2'] = 'Gérez vos demandes';
+$lang['forstages_howto_title2'] = 'Anfragen verwalten';
 $lang['forstages_howto_list2'] = '<ul class="forstages-howitworks">
-				<li><p>Vous recevrez des demandes pour des créneaux spécifiques, les demandes restent organisées</p></li>
-				<li><p>Les demandes sont sauvegardées au même format, elles sont plus faciles à comparer et vous ne les perdrez plus</p></li>
+				<li><p>Für jeden Slot werden Anfragen eingehen, und diese bleiben stets übersichtlich geordnet.</p></li>
+				<li><p>Anfragen werden im selben Format gespeichert, so sind sie vergleichbar und gehen nicht verloren oder werden vergessen.</p></li>
 			</ul>';
-$lang['forstages_howto_title3'] = 'Confirmez les dates';
+$lang['forstages_howto_title3'] = 'Auftritte bestätigen';
 $lang['forstages_howto_list3'] = '<ul class="forstages-howitworks">
-				<li><p>Vérifiez le profil des musiciens, musique/videos et les liens vers les réseaux sociaux</p></li>
-				<li><p>Si vous validez, le musicien (ou son organisation) aura alors 48h pour s\'acquiter des coûts de production pour confirmer son intérêt. Les autres musiciens reçoivent un email pour leur demander de choisir une autre date</p></li>
+				<li><p>Prüfe das Profil der Musiker, ihre Musik/Videos und das soziale Netzwerk.</p></li>
+				<li><p>Nach Deiner Bestätigung haben die Musiker (oder deren Management) 48 Stunden Zeit, die Produktionskosten zu zahlen und damit Ihr Interesse zu bestätigen. Andere Musiker werden auf noch offene Slots verwiesen.</p></li>
 			</ul>';
 
-$lang['forstages_why'] = 'Pourquoi b-onstage?';
+$lang['forstages_why'] = 'Warum b-onstage?';
 $lang['forstages_why_text'] = '<ul class="forstages-howitworks">
-				<li><p>Avec une promotion coordonnée (la scène, le musicien et b-onstage) vous avez de meilleures chances de remplir votre établissement</p></li>
-				<li><p>Vous pouvez avoir un concert par mois ou plusieurs par jour. Vous ne validez que les musiciens qui vous conviennent.</p></li>
-				<li><p>Nous sommes flexibles, il n\'y a pas d\'engagement et aucune obligation de payer</p></li>
-				<li><p>L\'utilisation du site est gratuite, vous n\'avez rien à nous payer</p></li>
+				<li><p>Mit gemeinsamer Promotion (also Veranstalter, Musiker und b-onstage) ist das Füllen der Plätze einfacher.</p></li>
+				<li><p>Du kannst so viele Konzerte veranstalten, wie Du willst, und arbeitest nur mit Musikern, die Dir gefallen.</p></li>
+				<li><p>Alles bleibt flexibel: ohne Verpflichtungen und Zahlungszwänge.</p></li> 
+				<li><p>Die Nutzung unserer Webseite ist für Bühnen gratis, Gebühren fallen nicht an.</p></li>
 			</ul>';
-$lang['forstages_stats'] = 'Depuis Janvier 2015, déjà:';
-$lang['forstages_artists'] = 'artistes qui réservent des dates';
-$lang['forstages_stages'] = 'scènes qui gèrent leurs programmes';
+
+$lang['forstages_stats'] = 'Seit Januar 2015 haben';
+$lang['forstages_artists'] = 'Künstler ihre Gigs gebucht';
+$lang['forstages_stages'] = 'Bühnen ihr Programm gemanagt';
+
 
 
 // Footer
-$lang['footer_contactus'] = 'Contactez-nous';
-$lang['footer_followus'] = 'Nous suivre';
-$lang['footer_legal'] = 'Légal';
-$lang['footer_legal_link1'] = 'Conditions générales d\'utilisation';
-$lang['footer_legal_link2'] = 'Mentions légales';
-$lang['footer_copyright'] = 'Copyright &copy; 2013 b-onstage. Tous droits réservés.';
-$lang['footer_madein'] = 'Proudly made and operating in Berlin and Paris';
+$lang['footer_contactus'] = 'Kontakt';
+$lang['footer_followus'] = 'Folge uns';
+$lang['footer_legal'] = 'Rechtliches';
+$lang['footer_legal_link1'] = 'Allgem. Geschäftsbedingungen';
+$lang['footer_legal_link2'] = 'Impressum';
+$lang['footer_copyright'] = 'Copyright &copy; 2013 b-onstage. Alle Rechte vorbehalten';
+$lang['footer_madein'] = 'Gemacht und betrieben in Berlin und Paris';
 
 
 // Contact us		
-$lang['contactus'] = 'Contactez nous';
-$lang['contactus_subject'] = 'Sujet';
-$lang['contactus_message'] = 'Message';
-$lang['contactus_yourname'] = 'Votre nom';
-$lang['contactus_youremail'] = 'Votre email';
-$lang['contactus_yourmsg'] = 'Votre message';
-$lang['contactus_subject_1'] = 'J\'ai ...';
-$lang['contactus_subject_2'] = 'J\'ai une question';
-$lang['contactus_subject_3'] = 'J\'ai une remarque';
-$lang['contactus_subject_4'] = 'J\'ai un problème';
-$lang['contactus_subject_5'] = 'J\'ai une urgence';
-$lang['contactus_subject_6'] = 'J\'ai une plainte';
-$lang['contactus_subject2_1'] = 'Au sujet de ...';
-$lang['contactus_subject2_2'] = 'Au sujet du design du site';
-$lang['contactus_subject2_3'] = 'Au sujet de mon inscription';
-$lang['contactus_subject2_4'] = 'Au sujet de mon compte';
-$lang['contactus_subject2_5'] = 'Au sujet de ma demande de réservation';
-$lang['contactus_subject2_6'] = 'Au sujet de mon concert';
-$lang['contactus_subject2_7'] = 'Au sujet des frais de réservation';
-$lang['contactus_subject2_8'] = 'Au sujet d\'annulation de réservation';
-$lang['contactus_subject2_9'] = 'Au sujet d\'annulation de concert';
-$lang['contactus_subject2_10'] = 'Au sujet d\'autre chose';
-$lang['contactus_email_success'] = 'Votre email a été envoyé. Nous vous répondrons dans les plus brefs délais';
-$lang['contactus_email_error'] = 'Une erreur s\'est produite, veuillez réessayer ultérieurement.';
-
+$lang['contactus'] = 'Kontakt';
+$lang['contactus_subject'] = 'Betreff';
+$lang['contactus_message'] = 'Nachricht';
+$lang['contactus_yourname'] = 'Name';
+$lang['contactus_youremail'] = 'eMail Adresse';
+$lang['contactus_yourmsg'] = 'Nachricht';
+$lang['contactus_subject_1'] = 'Ich habe...';
+$lang['contactus_subject_2'] = 'eine Frage';
+$lang['contactus_subject_3'] = 'eine Anmerkung';
+$lang['contactus_subject_4'] = 'ein Problem';
+$lang['contactus_subject_5'] = 'einen Notfall';
+$lang['contactus_subject_6'] = 'eine Beschwerde';
+$lang['contactus_subject2_1'] = 'Es geht um:';
+$lang['contactus_subject2_2'] = 'das Design der Webseite';
+$lang['contactus_subject2_3'] = 'meine Registrierung';
+$lang['contactus_subject2_4'] = 'mein Konto';
+$lang['contactus_subject2_5'] = 'meine Anfrage';
+$lang['contactus_subject2_6'] = 'ein Konzert';
+$lang['contactus_subject2_7'] = 'die Reservierungsgebühr';
+$lang['contactus_subject2_8'] = 'die Stornierung einer Reservierung';
+$lang['contactus_subject2_9'] = 'die Absage eines Konzerts';
+$lang['contactus_subject2_10'] = 'etwas anderes.';
+$lang['contactus_email_success'] = 'Deine eMail wurde abgeschickt. Wir antworten so schnell es geht.';
+$lang['contactus_email_error'] = 'Leider gab es ein Problem, bitte versuche es später noch einmal.';
 
 // terms_of_services
-$lang['terms_of_services_header'] = 'Conditions générales d\'utilisation';
-$lang['terms_of_services_txt'] = '<p>Le présent contrat prévoit les conditions d&rsquo;utilisation du site <a href="http://www.b-onstage.com"> www.b-onstage.com</a> de la société MYBANDONSTAGE.</p>
+$lang['terms_of_services_header'] = 'Allgemeine Geschäftsbedingungen';
+$lang['terms_of_services_txt'] = '<p>Diese Vereinbarung regelt ausschließlich die Bedingungen für die Nutzung des Internetauftritts unter <a href="http://www.b-onstage.com">www.b-onstage.com</a> im Besitz von MYBANDONSTAGE.</p>
 
-<br /><h2 class="title purple fs-18">DEFINITIONS </h2>
-<p>Dans les présentes Conditions Générales d&rsquo;Utilisation, les termes identifiés par une majuscule ont la signification indiquée ci-après (au singulier comme au pluriel):</p>
-<p>- &nbsp;	Le terme « CGU » désigne les présents termes et conditions générales d&rsquo;utilisation du site<a href="http://www.b-onstage.com"> www.b-onstage.com</a>;</p>
-<p>- &nbsp;	Le terme « Site » &nbsp;désigne le site Internet B-ONSTAGE de la société MYBANDONSTAGE ayant pour adresse principale<a href="http://www.b-onstage.com"> www.b-onstage.com</a>, qui a pour but de mettre en contact des Scènes avec des Artistes pour des Evénements ;</p>
-<p>- &nbsp;	Le terme « Utilisateur » désigne toute personne physique ou morale utilisant le Site et ses services dans leur généralité, et notamment les Artistes, les Scènes et les Visiteurs;</p>
-<p> - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le terme « Visiteur » désigne toute personne naviguant sur le Site sans &nbsp;être enregistré.</p>
-<p>- &nbsp;	Le terme « Profil» désigne l&rsquo;espace personnel sécurisé, créé par une Scène ou par un Artiste afin d&rsquo;avoir accès aux services proposés par le Site ;</p>
-<p>- &nbsp;	Le terme « Page » désigne un espace public du Site, créé par une Scène ou un Artiste pour se présenter succinctement;</p>
-<p>- &nbsp;	Le terme « Scène » désigne une catégorie spécifique d&rsquo;Utilisateurs enregistrés sur le Site, à savoir tous les établissements de type cafés, bars, restaurants, salles de spectacles, studios d&rsquo;enregistrement (etc.), disposant de lieux adéquats qu&rsquo;ils souhaitent mettre à disposition d&rsquo;Artistes pour organiser des Evénements sous certaines conditions ;</p>
-<p>- &nbsp;	Le terme « Artiste » désigne une catégorie spécifique d&rsquo;Utilisateurs enregistrés sur le Site, à savoir tout musicien, formation musicale ou groupe de musique &nbsp;(etc.), souhaitant trouver une Scène et ainsi rencontrer leur public, pour répéter, se produire et/ou enregistrer leurs œuvres;</p>
-<p>- &nbsp;	Les terme « Evénement » et désigne une prestation musicale live, réalisée par un Artiste et organisée par une Scène, pouvant être un concert, une représentation ou un enregistrement.</p>
-<p>- &nbsp;	Le terme « Prix » s&rsquo;entend du coût total de l&rsquo;Evénement, à savoir soit de la prestation de l&rsquo;Artiste, soit de la location de la Scène y compris les services et matériels mis à disposition, ainsi que les frais de la société MYBANDONSTAGE.</p>
+<br /><h2 class="title purple fs-18">BEGRIFFSBESTIMMUNGEN </h2>
+<p>In diesen Allgemeinen Geschäftsbedingungen stehen die in GROSSSCHREIBUNG aufgeführten Begriffe, in Ein- und Mehrzahl, für die hier aufgeführten Bedeutungen:</p>
+<ul>
+  <li><p>- &nbsp;	Der Begriff &quot;Bedingungen&quot; steht für diese Allgemeinen Geschäftsbedingungen;</p></li>
+  <li><p>- &nbsp;	Der Begriff &quot;Webseite&quot; steht für den B-ONSTAGE Internetauftritt von MYBANDONSTAGE unter dem Level-1-URL <a href="http://www.b-onstage.com">www.b-onstage.com</a> und zielt auf die Verbindung von Auftrittsgelegenheiten mit auftrittswilligen Musikern.</p></li>
+  <li><p>- &nbsp;	Der Begriff &quot;Nutzer&quot; steht für jede natürliche oder juristische Person, die diese Seite besucht und /oder Angebote nutzt, einschließlich Künstler, Veranstalter und Besucher;</p></li>
+  <li><p>- &nbsp;	Der Begriff &quot;Besucher&quot; steht für jede natürliche oder juristische Person, die diese Seite besucht ohne registriert zu sein.</p></li>
+  <li><p>- &nbsp;	Der Begriff &quot;Profil&quot; steht für den abgesicherten, persönlichen Bereich, der von Künstlern oder Veranstaltern angelegt wurde um die Dienste der Webseite nutzen zu können.</p></li>
+  <li><p>- &nbsp;	Der Begriff &quot;Seite&quot; steht für den öffentlich zugänglichen Bereich der Webseite, der von Künstlern oder Veranstaltern angelegt wurde.</p></li>
+  <li><p>- &nbsp;	Der Begriff &quot;Bühne&quot; bezieht sich auf jene Nutzer der Webseite, die unter definierten Bedingungen Auftrittsmöglichkeiten anbieten, einschließlich, aber nicht beschränkt auf Gaststätten, Theater, Veranstaltungshallen, open-Air-Veranstaltungen, Aufnahmestudios und vergleichbares.</p></li>
+  <li><p>- &nbsp;	Der Begriff &quot;Künstler&quot; bezieht sich auf jene Nutzer der Webseite, die unter definierten Bedingungen Auftrittsmöglichkeiten suchen, einschließlich, aber nicht beschränkt auf Musiker, Musikkapellen, und vergleichbares.</p></li>
+  <li><p>- &nbsp;	Der Begriff &quot;Veranstaltung&quot; bezieht sich auf die live vorgetragene Aufführung von Musik oder darstellender Kunst, die vom Künstler vorgetragen und von der Bühne organisiert wurde, einschließlich, aber nicht beschränkt auf Konzerte, Performance-Kunst, Ton- und Bildaufnahmen und vergleichbares.</p></li>
+  <li><p>Der Begriff &quot;Preis&quot; steht für die Gesamtkosten der Veranstaltung, einschließlich, aber nicht beschränkt auf Bühnenmiete, Hilfsdienste, Materialien und die Kosten für MYBANDONSTAGE sowie vergleichbares.</p></li>
+</ul>
 
-<br /><h2 class="title purple fs-18">1. &nbsp;&nbsp;&nbsp;OBJET </h2>
-<p>Les CGU ont pour objet de définir les modalités de mise à disposition des services et informations du Site ainsi que ses conditions d&rsquo;utilisation par l&rsquo;Utilisateur.</p>
-<p>Tout accès et/ou utilisation du Site suppose l&rsquo;acceptation et le respect inconditionnels des CGU par l&rsquo;Utilisateur, telles que portées à sa connaissance. Il lui incombe donc de les lire attentivement et d&rsquo;en conserver une copie si nécessaire.</p>
-<p>Dans le cas où l&rsquo;Utilisateur ne souhaite pas accepter tout ou partie des présentes CGU, il lui est demandé de renoncer à tout usage du Site. La société MYBANDONSTAGE se réserve le droit de refuser l&rsquo;accès au Site, unilatéralement et sans notification préalable, à tout Utilisateur ne respectant ou n&rsquo;acceptant pas les présentes CGU.</p>
+<br /><h2 class="title purple fs-18">	1. ZWECK </h2>
+<p>Diese Allgemeinen Geschäftsbedingungen regeln die Bedingungen, unter denen Dienste verfügbar gemacht werden, die Informationen auf der Webseite und die Rechte und Pflichten ihrer Nutzer.</p>
+<p>Jeder Zugriff auf die Webseite stellt die Anerkennung dieser Bedingungen und das uneingeschränkte Einverständnis mit den hier vorliegenden Bedingungen dar. Demgemäß obliegt es dem Nutzer, sich stets sorgfältig mit den Allgemeinen Geschäftsbedingungen vertraut zu halten. Gegebenenfalls soll der Nutzer eine Kopie dieser Bedingungen aufbewahren.</p>
+<p>Ist der Nutzer mit diesen Allgemeinen Geschäftbedingungen ganz oder teilweise nicht einverstanden, hat er unverzüglich die Nutzung der Webseite abzubrechen und fürderhin zu unterlassen. Die Firma MYBANDONSTAGE behält sich das Recht vor, die Nutzung der Seite ohne vorherige Ankündigung und ohne Angabe von Gründen zu untersagen, wenn nach ihrer Erwägung ein Nutzer diese Allgemeinen Geschäftsbedingungen nicht oder nicht vollständig einhält.</p>
+<br />
 
-<br /><h2 class="title purple fs-18">2. &nbsp;&nbsp;&nbsp;MENTIONS LEGALES </h2>
-<p>Le Site est édité par la société MYBANDONSTAGE, société à responsabilité limitée immatriculée au Registre du Commerce et des Sociétés de PAU sous le numéro 538 826 330.</p>
-<p>Contact: info@mybandonstage.com</p>
-<p>La société MYBANDONSTAGE a pour objet de faciliter et promouvoir la création artistique et la relation des artistes au public, permettant aux Artistes via le Site de trouver des Scènes pour organiser des Evénements.</p>
-<p>Intermédiaire, le Site B-ONSTAGE est une plateforme de réservation en ligne permettant de mettre en contact les Artistes en recherche d&rsquo;Evénements et les Scènes disposant de locaux à cet effet.</p>
-<p>Directeur de la publication : M. Faiçal ALLOU.</p>
-<p>Le Site a été déclaré auprès de la CNIL et est enregistré par <a href="http://www.godaddy.com/">GoDaddy.com</a>, LLC société sise 14455 North Hayden Rd., Suite 219, Scottsdale, AZ 85260 - Contact : support@godaddy.com; et hébergé par PlanetHoster LLC, 150 Pierre Mercure, Montreal, Quebec, H1A 5A9, Canada</p>
+<br /><h2 class="title purple fs-18">	2. RECHTLICHE ANMERKUNGEN </h2>
+<p>Diese Seite wird durch die Firma MYBANDONSTAGE LLC, Registergericht PAU, Frankreich, Reg.Nr. 538 826 330 betrieben.</p>
+<p>Kontakt: <a href="mailto:info@mybandonstage.com">info@mybandonstage.com </a></p>
+<p>Firmenzweck von MYBANDONSTAGE ist unter anderem die Unterstützung und Promotion von und die Öffentlichkeitsarbeit für Künstler, insbesondere zu dem Zweck, für diese Künstler Auftrittsmöglichekeiten, auch mit Hilfe dieser Webseite, zu beschaffen.</p>
+<p>Als Vermittler bietet B-ONSTAGE eine Plattform für die online-Buchung von Künstlern, um die Aufnahme von Geschäftsbeziehungen zwischen Künstlern und geigneten Veranstaltern zu erleichtern.</p>
+<p>V.i.S.d.P.: Herr Faical ALLOU.</p>
+<p>Die Webseite ist in Frankreich bei der CNIL gemeldet und ist über die GoDaddy.com, LLC, 14455 North Hayden Rd, Suite 219, Scottsdale, AZ 85260 - Kontakt <a href="mailto:support@godaddy.com">support@godaddy.com</a> registriert, und wird bei PlanetHoster LLC, 150 Stone Mercury, Montreal, Quebec, H1A 5A9, Kanada, gehostet.</p>
 
-<br /><h2 class="title purple fs-18">3. &nbsp;&nbsp;&nbsp;ACCES DES UTILISATEURS </h2>
+<br /><h2 class="title purple fs-18">	3. NUTZUNGSZUGRIFF </h2>
 
-<h3 class="title fs-16">3.1.	Informations accessibles</h3>
-<p>Les Pages des Utilisateurs, ainsi que la liste des Evénements sont librement et gratuitement accessibles sur le Site à tout Utilisateur disposant d&rsquo;un accès Internet. Tous les coûts afférents à l&rsquo;accès au Site (tels que frais matériels, logiciels ou technologies d&rsquo;accès à Internet, etc.) sont exclusivement à la charge de l&rsquo;Utilisateur qui est seul responsable du bon fonctionnement et de la bonne utilisation de son équipement informatique et de son accès à Internet.</p>
+<h3 class="title fs-16">3.1. Bereitgestellte Informationen</h3>
+<p>Von Nutzern angelegte Seiten und die Liste der Veranstaltungen sind frei, öffentlich und kostenlos zugänglich. Internet-Verbindungskosten und für die Verbindung erforderliche Geräte sind ausschließlich in der Verantwortung des Zugriff Suchenden, der zudem für das einwandfreie Funktionieren seiner Hardware, Software und Verbindungstechnologie selbst verantwortlich ist.</p>
 
-<h3 class="title fs-16">3.2.	Accès aux autres services du Site</h3>
-<p>L&rsquo;accès aux autres services du Site est limitatif, conditionné par la création d&rsquo;un Profil, l&rsquo;inscription préalable étant gratuite pour les Artistes et les Scènes.</p>
+<h3 class="title fs-16">3.2. Eingeschränkter Zugriff</h3>
+<p>Zu bestimmten Inhalten der Webseite ist der Zugriff nur für registrierte Nutzer nach Anlegen eines Nutzerprofils möglich. Die Registrierung ist für Künstler und Bühnen kostenlos.</p>
 
-<h4 class="title fs-14">3.2.1. &nbsp;&nbsp;Inscription de l&rsquo;Artiste</h4>
-<p>L&rsquo;inscription de l&rsquo;Artiste sur le Site lui est nécessaire notamment pour :</p>
-<p>- &nbsp;	Créer et gérer son Profil confidentiel;</p>
-<p>- &nbsp;	Créer et gérer sa Page contenant photographies, &nbsp;vidéos et contenus &nbsp;pour se faire connaitre des Scènes</p>
-<p>- &nbsp;	Réserver une Scène pour un Evénement ;</p>
-<p>- &nbsp;	Procéder au paiement du Prix de la réservation de la Scène pour un Evénement ;</p>
-<p>- &nbsp;	Répondre aux Evénements proposés par des Scènes ;</p>
-<p>- &nbsp;	Donner son avis sur les Scènes et Evénements qu&rsquo;il a pu y organiser;</p>
-<p>- &nbsp;	Participer aux tremplins et concours B-ONSTAGE ;</p>
-<p>- &nbsp;	Conserver un historique des Evénements réalisés par le biais du Site ainsi que ses participations et prix gagnés lors des tremplins et concours B-ONSTAGE.</p>
-<p>Une fois son Profil constitué et validé par email, l&rsquo;Artiste pourra créer une Page standard proposée par le Site, avec divers contenus. La Page ne pourra pas contenir de numéro de téléphone, de télécopie ou d&rsquo;adresse email. La Page pourra contenir, dans une zone dédiée, un lien faisant référence ou redirigeant vers un site ou un profil de l&rsquo;Artiste. Le Site permettra également une géolocalisation de l&rsquo;Artiste sur une carte géographique.</p>
-<p>En utilisant les services du Site, l&rsquo;Artiste déclare et garantit (1) que les informations fournies lors de &nbsp;son inscription, sur son Profil et sa Page, sont complètes et exactes et qu&rsquo;elles le demeureront tout au long de son inscription, (2) qu&rsquo;il a au moins 18 ans et (3) qu&rsquo;il est capable de contracter en son nom. Si l&rsquo;Artiste est mineur ou incapable, il ne pourra s&rsquo;inscrire personnellement et devra se faire inscrire et représenter sur le Site et pour l&rsquo;acceptation des présentes CGU par toute personne majeure ayant la capacité et le droit de contracter pour le compte de l&rsquo;Artiste (ex. : parent).</p>
-<p> L&rsquo;Artiste est seul responsable des contenus (coordonnées, textes, commentaires, image, vidéos, sons, liens…) mis en ligne sur son Profil et Page, notamment en cas d&rsquo;atteinte réelle ou supposée aux droits des tiers.</p>
+<h4 class="title fs-14">3.2.1. Registrierung als Künstler</h4>
+<p>Die Registrierung als Künstler ist insbesondere erforderlich:</p>
+<ul>
+  <li><p>zum Erstellen und Verwalten vertraulicher Profile,</p></li>
+  <li><p>zum Erstellen und Verwalten von Seiten mit Fotografien, Videos und Inhalten, die der Selbstdarstellung dienen,</p></li>
+  <li><p>zum Buchen von Bühnen für Veranstaltungen,</p></li>
+  <li><p>zum Zahlen der Buchungsgebühren für eine Bühne,</p></li>
+  <li><p>zum Antworten auf Veranstaltungsangebote von Bühnen,</p></li>
+  <li><p>zum Bewerten der Bühnen und stattgefundenen Veranstaltungen,</p></li>
+  <li><p>zur Teilnahme an Veranstaltungen und Wettbewerben von B-ONSTAGE,</p></li>
+  <li><p>zum Führen der Aufzeichnungen über Veranstaltungen, die über die Webseite ermöglicht wurden.</p></li>
+</ul>
+<p>Nach dem Anlegen des Profils und der eMail-Bestätigung, legt der Künstler eine Selbstdarstellungs-Seite mit informativen Inhalten an. Die Seite darf keine Daten zur Kontaktaufnahme - Telefonnummern, Fax, eMail, Postanschriften - enthalten. Erlaubt sind, in einem hierfür bestimmten Bereich, links oder Hinweise auf Portfolio-Seiten des Künstlers. Eine Geolokation für den Künstler kann auf einer Karte ebenfalls angezeigt werden.</p>
+<p>Durch die Nutzung des Angebotes bestätigt die/der Künstler(in), dass (1) alle während der Registrierung gemachten Angaben richtig und vollständig sind und auf durch den Künstler auf aktuellem Stand gehalten werden und (2) dass sie/er volljährig und (3) dass sie/er geschäftsfähig ist. Minderjährige und Personen mit eingeschränkter Geschäftsfähigkeit können durch eine(n) Erziehungs- oder Betreuungsberechtigte(n) registriert und in der Wahrnehmung von Rechten und Pflichten vertreten werden. Gesetzliche Haftungsvorschriften gelten entsprechend.</p>
+<p>Ausschließlich der Künstler verantwortet die von ihm eingebrachten Inhalte (Ortskoordinaten, Text, Kommentare, Bilder, Videos, Musikdateien etc.) und haftet dafür, dass keine Rechte Dritter verletzt werden.</p>
 
-<h4 class="title fs-14">3.2.2. &nbsp;&nbsp;Inscription de la Scène</h4>
-<p>L&rsquo;inscription de la Scène sur le Site lui est nécessaire notamment pour :</p>
-<p>- &nbsp;	Créer et gérer son Profil confidentiel ;</p>
-<p>- &nbsp;	Créer et gérer sa Page contenant photographies, vidéos et contenus pour se faire connaitre des Artistes ; </p>
-<p>- &nbsp;	Proposer, organiser et réserver des Evénements pour des Artistes ;</p>
-<p>- &nbsp;	Connaître et contacter des Artistes pour organiser des Evénements ;</p>
-<p>- &nbsp;	Proposer la réservation de ses locaux selon le Prix ;</p>
-<p>- &nbsp;	Valider une réservation d&rsquo;Evénement faite par un Artiste ;</p>
-<p>- &nbsp;	Suivre le paiement du Prix de l&rsquo;Evénement réservé par un Artiste ;</p>
-<p>- &nbsp;	Donner un avis sur les Artistes qui se sont produits dans ses locaux.</p>
-<p>Pour accéder à ces services du Site, la Scène devra au préalable créer un Profil qui contiendra des renseignements précis, notamment leur raison sociale, numéro R.C.S., coordonnées (adresse, numéro de téléphone/fax, email), ses représentants légaux ou contacts privilégiés pour organiser des Evénements, son site Internet, mais encore la disponibilité de ses locaux et son prix de réservation, toutes taxes comprises. A défaut, son Profil pourra ne pas être validé.</p>
-<p>Son Profil constitué, la Scène pourra créer une Page standard proposée par le Site, qui contiendra une présentation succincte de son local, avec des photographies ou vidéos ainsi que les équipements mis à disposition, les services ainsi que la disponibilité de leurs locaux, leur localisation et le Prix de réservation. La Page de la Scène ne pourra pas contenir de numéro de téléphone, de télécopie, ou d&rsquo;adresse email. La Page pourra contenir, dans une zone dédiée, un lien faisant référence ou redirigeant vers un site ou un profil de la Scène. Le Site permettra également une géolocalisation de la Scène sur la carte géographique proposée par le Site.</p>
-<p>En utilisant les services du Site, la Scène et ses représentants déclarent et garantissent (1) que les informations fournies lors de son inscription, sur son Profil et sa Page sont complètes, véridiques, précises, ne prêtent pas à confusion et qu&rsquo;elles le demeureront tout au long de son inscription (2) qu&rsquo;ils sont seuls responsables des contenus (coordonnées, textes, commentaires, images, vidéos, sons …) mis en ligne sur leurs Profil et Page, notamment en cas d&rsquo;atteinte réelle ou supposée aux droits des tiers.</p>
+<h4 class="title fs-14">3.2.2. Registrierung für Bühnen</h4>
+<p>Die Registrierung für Bühnen ist insbesondere erforderlich:</p>
+<ul>
+  <li><p>zum Erstellen und Verwalten vertraulicher Profile,</p></li>
+  <li><p>zum Erstellen und Verwalten von Seiten mit Fotografien, Videos und Inhalten, die der Darstellung gegenüber Künstlern dienen,</p></li>
+  <li><p>zum Vorschlagen, Organisieren und Buchen von Künstlern,</p></li>
+  <li><p>zum Finden von geeigneten Künstlern und zur Kontaktaufnahme mit diesen,</p></li>
+  <li><p>zum Anbieten der kostenpflichtigen Überlassung von Propose booking premises for a price;</p></li>
+  <li><p>zur Annahme der Buchung einer Veranstaltung, die von einem Künstler angetragen wurde,</p></li>
+  <li><p>zur Verfolgung der Zahlung des Künstlers für die Buchung,</p></li>
+  <li><p>zur Bewertung des Künstlers nach einem Auftritt.</p></li>
+</ul>
+<p>Zum Zugang zu den Diensten der Webseite müssen Bühnen zunächst ein Profil anlegen. Inhalt dieses Profils sind spezifische Informationen, einschließlich Name, Kontaktinformationen (Adresse, Telefon, Fax, eMail), Benennung mindestens eines Handlungsbevollmächtigten oder einer für die Veranstaltungsorganisation zuständigen Person, evtl. Internetauftritt, Verfügbarkeit der Räumlichkeiten und Reservierungsgebühren als Endpreis. Fehlende Informationen verhindern die Zulassung des Profils durch b-onstage.</p>
+<p>Nach dem Anlegen des Profils und der eMail-Bestätigung, legt die eine Selbstdarstellungs-Seite mit einer kurzen Beschreibung der Räumlichkeiten, der verfügbaren technischen Ausstattung, Fotos und/oder Videos, angebotene Dienstleistungen, Angaben zur Verfügbarkeit der Stätte, Adresse und Preis je buchbaren Termins. Die Seite darf keine Daten zur Kontaktaufnahme - Telefonnummern, Fax, eMail, Postanschriften - enthalten. Erlaubt sind, in einem hierfür bestimmten Bereich, links oder Hinweise auf Portfolio-Seiten der Bühne. Eine Geolokation für die Bühne kann auf einer Karte ebenfalls angezeigt werden.</p>
+<p>Durch die Nutzung des Angebotes bestätigt die Bühne bzw. deren Beauftragter, dass (1) alle während der Registrierung gemachten Angaben vollständig, wahr, zutreffend und unmißverständlich sind und auf dem aktuellen Stand gehalten werden; (2) sie auschließlich selbst für die Inhalte (Adresse, Texte, Kommentare, Bilder, Videos, Musikdateien und vergleichbares) auf der Selbstdarstellungsseite verantwortlich sind, insbesondere in Bezug auf die vermutete oder tatsächliche Verletzung der Rechte Dritter.</p>
 
-<h3 class="title fs-16">3.3.	Charte de bonne conduite</h3>
-<p>L&rsquo;Utilisateur s&rsquo;engage à:</p>
-<p>- &nbsp;	utiliser le Site dans le respect des conditions et finalités des CGU ;</p>
-<p>- &nbsp;	ne pas porter atteinte aux droits, à l&rsquo;image, à l&rsquo;honneur d&rsquo;autres Utilisateurs ou de tiers ;</p>
-<p>- &nbsp;	ne pas avoir un comportement illicite ou illégal, ou non conforme aux bonnes mœurs ;</p>
-<p>- &nbsp;	ne pas porter atteinte (ou tenter de le faire) aux données, au fonctionnement ou à l&rsquo;intégrité du Site ;</p>
-<p>- &nbsp;	ne pas contacter directement, par quelque moyen que ce soit, une Scène et/ou un Artiste inscrits sur le Site pour organiser un Evénement et ne pas conclure d&rsquo;accord sur un Evénement avec une Scène ou un Artiste autrement que par le biais du Site. A défaut, l&rsquo;Utilisateur se verra radier du listing pour une durée illimitée. A cet égard, MYBANDONSTAGE assure une veille des contacts et évènements intervenant entre les Utilisateurs.</p>
-<p> - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jouer ses propres compositions et productions lors des Évènements, dans le respect des droits d&rsquo;auteurs. MYBANDONSTAGE et la Scène ne pourront être tenue pour responsable en cas de manquement.</p>
-<p>En outre, la société MYBANDONSTAGE se réserve le droit de poursuivre tout Utilisateur qui contreviendrait aux présentes CGU, et de demander, à cette occasion, la réparation des préjudices pécuniaires et moraux en résultant.</p>
+<h3 class="title fs-16">3.3. Satzung</h3>
+<p>Der Nutzer erklärt</p>
+<ul>
+  <li><p>Die Seite nur in Übereinstimmung mit den Bedingungen zu benutzen;</p></li>
+  <li><p>Ehren- und Persönlichkeitsrechte anderer Nutzer oder Dritter nicht zu verletzen;</p></li>
+  <li><p>Die Webseite nicht zu illegalen, ungesetzlichen oder unangemessenen Zwecken zu benutzen;</p></li>
+  <li><p>Die Datensicherheit, Funktionalität und Integrität der Seite nicht zu beeinträchtigen noch dies zu versuchen;</p></li>
+  <li><p>Auf keine Weise und in keinem Fall Bühnen oder Künstler auf dieser Seite zur Veranstaltung von Aufführungen direkt zu kontaktieren und keine Vereinbarungen außer durch diese Seite zu treffen. Bei Zuwiderhandlungen wird der Nutzer endgültig von den Diensten der Seite ausgeschlossen. In solchem Fall überwacht MYBANDONSTAGE Kontakte und Geschehnisse zwischen den Nutzern.</p></li>
+  <li><p>Bei Konzerten seine eigenen Werke aufzuführen und nicht gegen das Urheberrecht zu verstoßen. Bühnen und MYBANDONSTAGE können für Verstöße nicht in Anspruch genommen werden.</p></li>
+</ul>
+<p>Darüber hinaus behält MYBANDONSTAGE sich das Recht vor, zivilrechtlich gegen Verstöße gegen diese Vereinbarungen vorzugehen um Ersatz für finanzielle Schäden und solche des Ansehens zu erreichen.</p>
 
-<br /><h2 class="title purple fs-18">4. &nbsp;&nbsp;&nbsp;DETAILS DU SERVICE </h2>
-<p>Le présent article a pour objet de définir les termes et conditions dans lesquels la société MYBANDONSTAGE fournit un service de mise en relation entre un Artiste et une Scène à travers la mise à disposition d&rsquo;une plateforme de réservation avec paiement en ligne sécurisé.</p>
-<p>Les dispositions suivantes édictées dans un souci d\'information de l\'Utilisateur, n&rsquo;ont pas vocation à être exhaustives et peuvent être complétées par le contrat signé par l&rsquo;Artiste avec la Scène.</p>
-<p><strong>4.1.</strong> &nbsp;&nbsp;&nbsp;La société MYBANDONSTAGE met à la disposition des Artistes et des Scènes sur le Site:</p>
-<p>• &nbsp;	Un Profil</p>
-<p>• &nbsp;	Une Page</p>
-<p>• &nbsp;	Un référencement sur la centrale de réservation</p>
-<p>• &nbsp;	Une géolocalisation sur la carte proposée par le site</p>
-<p><strong>4.2.</strong> &nbsp;&nbsp;&nbsp;La société MYBANDONSTAGE met à la disposition de l&rsquo;Artiste et de la Scène voulant organiser un Evénement, une plateforme de réservation en ligne leur permettant via leur Page de vérifier la disponibilité d&rsquo;une Scène et de la réserver pour un Evénement.</p>
-<p><strong>4.3.</strong> &nbsp;&nbsp;Le Site indique si la Scène est disponible à la date voulue. Il envoie la réservation d&rsquo;Evénement à la Scène.</p>
-<p><strong>4.4.</strong>	Une fois la réservation validée par la &nbsp;Scène, l&rsquo;Artiste procède au paiement complet du Prix en ligne.</p>
-<p><strong>4.5.</strong>	A réception du paiement du Prix complet de l&rsquo;Evénement tel qu&rsquo;indiqué sur la Page de la Scène, la réservation est définitive et est confirmée à l&rsquo;Artiste sur son Profil. Le Site indique sur le calendrier de la Scène concernée son indisponibilité à cette date, sauf modalités particulières à définir avec la société MYBANDONSTAGE (ex. en cas de tremplin, concerts groupés, festival…).</p>
-<p><strong>4.6.</strong>	MYBANDONSTAGE pourra proposer à la Scène et/ou à l&rsquo;Artiste un affichage publicitaire et promotionnel sur la page d&rsquo;accueil du Site, selon des modalités à définir via le Site. Cet achat d&rsquo;espace publicitaire fera l&rsquo;objet, le cas échéant, d&rsquo;une facturation supplémentaire conformément aux informations fournies par le Site. Cette facturation n&rsquo;est pas incluse dans le Prix tel que défini aux présentes CGU. A nouveau, MYBANDONSTAGE ne sera pas responsable des contenus et de l&rsquo;exactitude de cet affichage, choisi et défini par la Scène et/ou l&rsquo;Artiste.</p>
-<p><strong>4.7.</strong>	MYBANDONSTAGE se réserve le droit d&rsquo;utiliser le nom des Scènes et Artistes à des fins promotionnelles sur les pages que la société gère sur les réseaux sociaux</p>
+<br /><h2 class="title purple fs-18">	4. &nbsp;&nbsp;&nbsp;EINZELHEITEN DER ANGEBOTENEN DIENSTLEISTUNG </h2>
+<p>Dieser Artikel legt die Bedingungen fest, unter denen MYBANDONSTAGE Dienste bei der Vermittlung zwischen Bühnen und Künstlern leistet. Dies geschieht über diese Webseite durch Bereitstellung einer Software-Plattform für Buchungen und eine sichere online-Zahlungsumgebung.</p>
+<p>Die folgenden Vereinbarungen sollen im Interesse aller Nutzer nicht unnötig komplex werden; wo nötig, können sie deshalb durch vertragliche Vereinbarungen zwischen Künstlern und Bühnen ergänzt werden.</p>
+<p><strong>4.1.</strong> MYBANDONSTAGE bietet Bühnen und Künstlern auf der online-Plattform:</p>
+<p>•ein Profil</p>
+<p>•eine Selbstdarstellungsseite</p>
+<p>•Repräsentanz in der automatisierten Buchung</p>
+<p>•Geolokalisation</p>
+<p><strong>4.2.</strong> MYBANDONSTAGE bietet dem auftrittswilligen Künstler eine Plattform zum Auffinden von Auftrittsmöglichekeiten und zum Buchen solcher Auftritte.</p>
+<p><strong>4.3.</strong> Die Webseite informiert über die Verfügbarkeit von Bühnen zu bestimmten Daten. Sie leitet Anfragen an die Bühnen weiter.</p>
+<p><strong>4.4.</strong> Wenn die Reservierung bestätigt ist, zahlt der Künstler die dafür fällige Gebühr.</p>
+<p><strong>4.5.</strong> Mit der vollständigen Zahlung ist die Buchung abgeschlossen und wird als solche im Profil des Künstlers vermerkt. Die Seite zeigt die Bühne für dieses Datum als belegt an, außer im Falle besonderer, von MYBANDONSTAGE gekennzeichneter Ereignisse.</p>
+<p><strong>4.6.</strong> MYBANDONSTAGE kann Werbung und Promotion für Bühnen auf der Homepage anbieten. Der Erwerb von Anzeigenraum und -zeit ist separat geregelt und nicht in den hier ansonsten definierten Preisen/Gebühren enthalten. MYBANDONSTAGE haftet nicht für die Inhalte von Anzeigen.</p>
+<p><strong>4.7.</strong> MYBANDONSTAGE behält sich vor, in angemessener Form für Promotionzwecke in sozialen Netzwerken auf Namen von Künstlern und Bühnen hinzuweisen</p>
 
-<br /><h2 class="title purple fs-18">5. &nbsp;&nbsp;&nbsp;CONDITIONS FINANCIERES </h2>
-<p><strong>5.1.</strong>	Le Prix de l&rsquo;Evénement sur le Site doit être indiqué en euros et T.T.C.</p>
-<p><strong>5.2.</strong>	Les paiements réalisés sur le Site s\'effectuent par carte bancaire par l\'intermédiaire d\'un système de paiement sécurisé.</p>
-<p><strong>5.3.</strong>	Pour tout Evénement réservé, la société MYBANDONSTAGE facture des frais de réservation correspondant à ses frais de gestion (ci-après Frais de Gestion).</p>
-<p>La société MYBANDONSTAGE se réserve le droit de modifier ses Frais de Gestion et sa surcharge, dans les présentes CGV, à tout moment, étant indiqué que le Prix figurant le jour de la réservation est applicable à l\'Evénement.</p>
-<p><strong>5.4.</strong>	Le Prix est versé à la Scène, déduction faite des Frais de Gestion et de la Surcharge avant le 10 du mois &ldquo;n+1&rdquo; pour les Evénements ayant eu lieu avant le 20 du mois &ldquo;n&rdquo; à 23:59; avant le 10 du mois &ldquo;n+2&rdquo;, pour les Evénements ayant eu lieu entre le 21 et la fin du mois &ldquo;n&rdquo;</p>
-<p><strong>5.5.</strong>	Toute demande d&rsquo;information, de précision ou réclamation éventuelle doit être adressé à la société MYBANDONSTAGE qui collecte le Prix au nom et pour le compte de la Scène dans les sept (7) jours qui suivent la réalisation de l&rsquo;Evénement par email à l&rsquo;adresse suivante : info@mybandonstage.com</p>
+<br /><h2 class="title purple fs-18">5. &nbsp;&nbsp;&nbsp;FINANZIELLE KONDITIONEN </h2>
+<p><strong>5.1.</strong> Alle Preise müssen in Euro und einschließlich aller Steuern angegeben werden.</p>
+<p><strong>5.2.</strong> Zahlungen müssen per Kreditkarte im gesicherten Zahlungsportal der Webseite vorgenommen werden.</p>
+<p><strong>5.3.</strong> Für alle gebuchten Auftritte berechnet MYBANDONSTAGE Management-Gebühren.</p>
+<p>MYBANDONSTAGE behält sich das Recht vor, Gebühren und Aufschläge wie in diesen Bedingungen erwähnt jederzeit zu ändern, der am Tag der Buchung gültige Preis ist maßgeblich.</p>
+<p><strong>5.4.</strong> Buchungspreise, abzüglich Gebühren und Zuschlägen, werden bis zum 10. des Monats  &quot;n+1&quot; für jene Veranstaltungen, die vor dem 20. des Vormonats stattgefunden haben &quot;n&quot; um 23:59 ausbezahlt; und vor dem 20. des Monats &quot;n +2&quot; für Veranstaltungen, die zwischen dem 21. und dem Ende des Vormonats stattgefunden haben. &quot;n&quot;</p>
+<p><strong>5.5.</strong> Einreden und Forderungen müssen MYBANDONSTAGE gegenüber per eMail: <a href="mailto:info@mybandonstage.com">info@mybandonstage.com</a> innerhalb von 7 Tagen nach Zahlung geltend gemacht werden.</p>
 
-<br /><h2 class="title purple fs-18">6. &nbsp;&nbsp;&nbsp;MODIFICATIONS ET ANNULATIONS DE L&rsquo;EVENEMENT </h2>
-<p><strong>6.1.</strong> &nbsp;&nbsp;&nbsp;Toutes les conditions suivantes concernent des cas où l&rsquo;Artiste a déjà réservé et payé le Prix de l&rsquo;Evénement.</p>
-<p><strong>6.2.</strong>	Toutes les modifications ou annulations de l&rsquo;Evénement doivent être effectuées via le système de réservation en ligne sur le Site.</p>
-<p><strong>6.3.</strong>	En cas d&rsquo;annulation de l&rsquo;Evénement, MYBANDONSTAGE, ainsi alertée, se réserve le droit d&rsquo;afficher cette annulation, aux fins d&rsquo;information des Utilisateurs. </p>
-<p><strong>6.4.</strong>	En cas d&rsquo;annulations abusives, tardives ou récurrentes d&rsquo;un Utilisateur, &nbsp;MYBANDONSTAGE, se réserve le droit de signaler sur le profil de cet Utilisateur une mention distinctive, aux fins d&rsquo;information des autres Utilisateurs.</p>
-<p><strong>6.5.</strong>	En cas de modification de l&rsquo;Evénement, la Scène et l&rsquo;Artiste se mettent d&rsquo;accord sur ses modalités pratiques. A défaut, l&rsquo;Evénement est considéré comme ayant eu lieu, les dispositions de l&rsquo;article 4 s&rsquo;appliquent.</p>
-<p><strong>6.6.</strong>	En cas d&rsquo;annulation par l&rsquo;Artiste moins de deux (2) semaines avant l&rsquo;Evénement, le Prix comme la Surcharge de la société MYBANDONSTAGE restent acquis conformément aux dispositions de l&rsquo;article 5.</p>
-<p>Lorsque &nbsp;l&rsquo;annulation a lieu plus de deux (2) semaines avant l&rsquo;Evénement, le Prix est entièrement reversé à l&rsquo;Artiste.</p>
-<p><strong>6.7.</strong>	En cas d&rsquo;annulation par la Scène et ce, sans condition de préavis, le Prix est entièrement rétrocédé à l&rsquo;Artiste, Frais de Gestion inclus.</p>
+<br /><h2 class="title purple fs-18">6. &nbsp;&nbsp;&nbsp;ÄNDERUNGEN UND STORNIERUNGEN DER VERANSTALTUNG </h2>
+<p><strong>6.1.</strong> Die folgenden Regelungen gelten für den Fall, dass der Künstler gebucht und den Buchungspreis bereits bezahlt hat.</p>
+<p><strong>6.2.</strong> Änderungen und Stornierungen müssen über das Buchungssystem der Webseite vorgenommen werden.</p>
+<p><strong>6.3.</strong> Für den Fall der Stornierung behält sich MYBANDONSTAGE das Recht vor, diese Stornierung zur Information für andere Nutzer zu veröffentlichen.</p>
+<p><strong>6.4.</strong> Für den Fall der verspäteten oder nachträglichen Stornierung behält sich MYBANDONSTAGE das Recht vor, einen deutlichen Hinweis darauf am Nutzerprofil des Stornierenden zur Information für andere Nutzer zu veröffentlichen.</p>
+<p><strong>6.5.</strong> Eine Änderung der Veranstaltung kann nur einvernehmlich zwischen Künstler und Bühne erfolgen. Anderenfalles gilt die Veranstaltung als durchgeführt, die Regelungen aus Satz 4 finden Anwendung.</p>
+<p><strong>6.6.</strong> Storniert der Künstler weniger als 2 Wochen vor Veranstaltungstermin, werden Buchungspreis und Gebühren gemäß Artikel 5 einbehalten.</p>
+<p><strong>6.6.</strong> Storniert der Künstler mehr als 2 Wochen vor Veranstaltungstermin, werden Buchungspreis und Gebühren in voller Höhe erstattet.</p>
+<p><strong>6.7.</strong> Erfolgt die Stornierung durch die Bühne, werden dem Künstler Buchungspreis und Gebühren in voller Höhe erstattet.</p>
+<br />
 
-<br /><h2 class="title purple fs-18">7. &nbsp;&nbsp;&nbsp;CONTENU DU SITE </h2>
-<p>En tant qu&rsquo;hébergeur de contenus, la société MYBANDONSTAGE s&rsquo;efforce d&rsquo;assurer la mise à jour régulière du Site, mais ne saurait être tenue responsable des contenus pouvant être mis en ligne par les Utilisateurs du Site, notamment les Artistes et Scènes, mais encore des données ou informations disponibles sur ou à partir de sites ou sources externes, telles que mises en lignes par lesdits Utilisateurs.</p>
-<p>Les Utilisateurs sont invités à signaler à la société MYBANDONSTAGE tout contenu qui leur paraît ne pas correspondre aux règles susvisées.</p>
-<p>Alertée ou de sa propre initiative, la société MYBANDONSTAGE se réserve le droit de modifier ou de supprimer, à sa seule discrétion, tout ou partie du Site, des Profils ou Pages, et ce, à tout moment &nbsp;et pour tout motif, notamment en cas de &nbsp;violation des CGU, sans préavis et sans information préalable des Utilisateurs qui ne pourront pas engager sa responsabilités de ce fait.</p>
-<p>En tant qu&rsquo;hébergeur des Profils et Pages sur lesquels elle n&rsquo;a aucune prise et n&rsquo;effectue aucun contrôle a priori, la société MYBANDONSTAGE pourra supprimer sur simple demande à l&rsquo;adresse support@mybandonstage.com dans un délai raisonnable tel que précisé par la jurisprudence, les contenus pouvant constituer une atteinte aux droits de tiers.</p>
-<br /><h2 class="title purple fs-18">8. &nbsp;&nbsp;&nbsp;PROPRIETE INTELLECTUELLE </h2>
+<br /><h2 class="title purple fs-18">7. &nbsp;&nbsp;&nbsp;INHALTE </h2>
+<p>Als Bereitsteller der Inhalte strebt MYBANDONSTAGE die regelmäßige Aktualisierung der Webseite an, haftet aber nicht für Inhalte, die durch Nutzer, einschließlich Bühnen und Künstler, veröffentlicht werden.</p>
+<p>Nutzer werden gebeten, unangemessene Inhalte per eMail: support@mybandonstage.com an MYBANDONSTAGE zu melden.</p>
+<p>MYBANDONSTAGE behält sich das Recht vor, Inhalte und Leistungsangebote der Webseite, in ausschließlich eigener Entscheidung, ohne vorherige Mitteilung ganz oder teilweise zu ändern oder zu löschen. Dies gilt insbesondere, aber nicht ausschließlich, bei Verletzungen dieser Bedingungen durch Nutzer.</p>
 
-<h3 class="title fs-16">8.1.	Droits sur le Site et son contenu</h3>
-<p>Le Site, les services y étant proposés ainsi que la base de données y étant intégrée, sont la propriété exclusive de la société MYBANDONSTAGE.</p>
-<p>En conséquence, toute extraction, reproduction partielle ou totale, transfert du Site et/ou des éléments qu&rsquo;il contient, tels que sa base de données, mais encore toute utilisation autre que leur consultation sur le Site, sont strictement interdits, hors les exceptions prévues et strictement encadrées par les lois en vigueur et notamment le Code de la Propriété Intellectuelle.</p>
+<br /><h2 class="title purple fs-18">8. &nbsp;&nbsp;&nbsp;GEISTIGES EIGENTUM </h2>
 
-<h3 class="title fs-16">8.2.	Droits sur les marques et nom de domaine</h3>
-<p>Les noms, dénominations et signes identitaires de toute nature (tels que noms, logotypes ou marques figuratives, noms des produits et services, noms de domaine), cités ou reproduits sur le Site, sont la propriété de la société MYBANDONSTAGE ou, le cas échéant, de ses prestataires, clients ou des Artistes ou Scènes du Site. Il ne peut en &nbsp;être fait aucun usage même partiel par l&rsquo;Utilisateur, aucune reproduction, représentation ou imitation, sauf autorisation écrite et préalable des titulaires concernés. Toute infraction à cette obligation constitue le délit de contrefaçon exposant son auteur à des poursuites judiciaires et à des sanctions civiles et pénales.</p>
-<p>En particulier, MYBANDONSTAGE est une marque enregistrée, propriété exclusive de la société MYBANDONSTAGE. Toute reproduction ou représentation non autorisée par écrit préalable de la marque, de son logo et de tous signes distinctifs constitue un acte de contrefaçon à tout le moins un acte répréhensible pour lequel le contrevenant s&rsquo;expose à des poursuites judiciaires ainsi qu&rsquo;à de lourdes sanctions civiles et pénales.</p>
+<h3 class="title fs-16">8.1. Rechte an Webseite und Inhalten</h3>
+<p>Die Webseite, die angebotenen Dienste und die Datenbasis sind das ausschließliche Eigentum von MYBANDONSTAGE.</p>
+<p>Entsprechend wird die vollständige ooder auszugsweise Kopie, der Transfer von Inhalten, einschließlich, aber nicht beschränkt auf Datenbasen, ausdrücklich untersagt. Die Nutzung der Seite ist nur in der von MYBANDONSTAGE jeweils bereitgestellten Form auf dem/den hierfür dedizierten Server(n) zulässig. Nationales Zivil- und Strafrecht und die Genfer Konvention finden Anwendung.</p>
 
-<h3 class="title fs-16">8.3.	Droits sur le contenu du Site</h3>
-<p>Les Artistes et Scènes autorisent expressément la société MYBANDONSTAGE, dès leur inscription, à titre gracieux et pour la durée de leur inscription, pour la durée de protection accordée par les lois et conventions nationales et internationales en vigueur et pour le monde entier, le droit d&rsquo;utiliser, reproduire, distribuer, adapter, éditer, traduire tous les contenus mis en ligne sous quelque forme que ce soit et notamment de textes, articles, photos, images, illustrations, icones, logos, bases de données, logiciels et tous autres signes ou créations. Cette autorisation est donnée exclusivement pour les besoins de l&rsquo;exploitation du Site et de son objet.</p>
+<h3 class="title fs-16">8.2. Copyright</h3>
+<p>Namen, Bezeichnungen und Identifikationszeichen jeder Art (Künstler- / Bühnennamen, Logos, figurative Darstellungen, Produktbezeichnungen und Bezeichnungen von Dienstleistungen) sind Eigentum von MYBANDONSTAGE oder der jeweiligen Eigentümer, einschließlich, aber nicht beschränkt, auf Künstler, Bühnen und Kunden. Jeder Verstoß hiergegen stellt eine Urheberrechtsverletzung dar, die schwere finanzielle und persönliche Folgen haben kann. MYBANDONSTAGE forciert grundsätzlich die Anwendung zivil- und strafrechtlicher Vorschriften und Gesetze.</p>
+<p>Insbesondere ist &ldquo;b-onstage&rdquo; eine geschützte Markenbezeichnung im Besitz von MYBANDONSTAGE. Jede nicht autorisierte Verwendung der Marke, des Logos oder eines mit ihr verbunden Zeichens ist ein Verstoß, mit dem sich der Täter empfindlichen zivil-. und strafrechtlichen Konsequenzen aussetzt.</p>
 
-<br /><h2 class="title purple fs-18">	9. &nbsp;&nbsp;&nbsp;DONNEES PERSONNELLES </h2>
+<h3 class="title fs-16">8.3. Rechte an Inhalten der Nutzer</h3>
+<p>Mit ihre jeweiligen Registrierung gestatten Künstler und Bühnen MYBANDONSTAGE ausdrücklich die Verwendung, Reproduktion, Verbreitung, Anpassung, Publikation und Übersetzung aller von Ihnen auf der Seite verwendeten Inhalte, einschließlich Texte, Artikel, Fotos, Illustrationen, Zeichen, Logos, Daten, Software; Diese Erlaubnis gilt nur für zur Erreichung des Geschäftszweckes sinnvolle Verwendung des Materials.</p>
 
-<h3 class="title fs-16">9.1.	Cookies et données</h3>
-<p>L&rsquo;Utilisateur est informé que l&rsquo;utilisation du Site et de ses services peut nécessiter l&rsquo;implantation d&rsquo;un cookie sur son disque dur lors de la navigation sur le Site. Un cookie ne permet pas d&rsquo;identifier l&rsquo;Utilisateur ; en revanche il enregistre des informations relatives à sa navigation de son ordinateur sur le Site que la société MYBANDONSTAGE pourra lire lors de ses visites ultérieures, afin de faciliter la navigation de l&rsquo;Utilisateur. La durée de conservation de ces informations est de deux (2) mois.</p>
-<p>L&rsquo;Utilisateur peut effacer manuellement ces informations depuis son poste informatique, en suivant le procédé applicable à son système d&rsquo;exploitation et à son navigateur Internet.</p>
-<p>Dans l\'hypothèse, où l\'Utilisateur choisit de refuser la réception de cookies sur le disque dur de son terminal, le fonctionnement du Site ne sera pas garanti.</p>
-<p>La société MYBANDONSTAGE peut être amenée à recueillir des données anonymes concernant les flux et trafic générés lorsque qu&rsquo;un ordinateur est connecté au Site, telles que : fournisseurs d\'accès, adresse IP, type et version du navigateur utilisé, durée de la connexion, etc. Ces données sont collectées notamment afin de répondre à ses obligations légales et peuvent également être utilisées dans un but statistique afin de procéder à des analyses de fréquentation du Site et de l&rsquo;améliorer en l&rsquo;adaptant à vos besoins et à vos goûts. Ces données ne sont jamais exploitées nominativement.</p>
+<br /><h2 class="title purple fs-18">9. &nbsp;&nbsp;&nbsp;PERSÖNLICHE DATEN </h2>
 
-<h3 class="title fs-16">9.2.	Données personnelles</h3>
-<p>A l\'occasion de leur navigation sur le Site, l&rsquo;Utilisateur notamment l&rsquo;Artiste comme la Scène peut être amené à communiquer des données à caractère personnel à la société MYBANDONSTAGE via son Profil.</p>
+<h3 class="title fs-16">9.1. Cookies und Daten</h3>
+<p>Der Nutzer ist informiert, dass die Dienste dieser Webseite die automatisierte Installation von Cookies aud dem Endgerät des Nutzers erforderlich machen kann. Ein Cookie identifiziert nicht den Nutzer, sondern die genutzte Seite und bewahrt Informationen zur Navigation, die beim erneuten Besuch einer Seite gelesen werden können. Die programmierte Lebensdauer der Informationen ist zwei Monate.</p>
+<p>Der Nutzer kann Cookies und die von diesen gespeicherten Daten jederzeit manuell löschen, indem er die entsprechenden Hinweise seines Betriebssystems und seine Internetbrowsers befolgt.</p>
+<p>Lehnt der Nutzer die Zulassung von Cookies ab, kann ein einwandfreies und bestimmungsgemäßes Funkionieren des Seitenzugriffs nicht mehr garantiert werden.</p>
+<p>Für die Firma MYBANDONSTAGE kann es erforderlich sein, Datenströme und Zugriffe anonym zu protokollieren. Dabei können Informationen zu Zugangsanbietern, IP Adressen, Browser-Art und Versioon, Verbindungsdauer etc. erhoben werden. Diese Daten werden zur Erfüllung gesetzlicher Vorschriften gesammelt und können auch statistisch und zur Verbesserung der Nutzerfreundlichkeit genutzt werden. Diese Daten werden nur anonymisiert verwendet.</p>
 
-<h4 class="title fs-14">9.2.1. &nbsp;&nbsp;Confidentialité</h4>
-<p>L&rsquo;Artiste comme la Scène est entièrement responsable de l&rsquo;accès à son Profil, et notamment de la confidentialité des identifiants (login et du mot de passe) qu&rsquo;il/elle aura choisis. Il s&rsquo;engage à ne pas les divulguer mais encore à ne pas en permettre l&rsquo;usage par des tiers non autorisés à quelque titre que ce soit.</p>
-<p>L&rsquo;Artiste comme la Scène s&rsquo;engage à contacter la société MYBANDONSTAGE dans les plus brefs délais en cas de soupçon de piratage ou d&rsquo;utilisation de son Profil sans autorisation.</p>
-<p>La société MYBANDONSTAGE ne peut être tenue responsable d&rsquo;une usurpation d&rsquo;identité ou de l&rsquo;usage détourné du Profil ou de la Page d&rsquo;un Artiste ou d&rsquo;une Scène et des conséquences éventuelles pouvant en résulter.</p>
+<h3 class="title fs-16">9.2. PERSONENBEZOGENE DATEN</h3>
+<p>Während der Nutzung der Webseite kann es für Nutzer, einschließlich Künstler und Bühnen, erforderlich sein, MYBANDONSTAGE durch Profileinträge personenbezogene Daten bekannt zu geben.</p>
 
-<h4 class="title fs-14">9.2.2. &nbsp;&nbsp;Nature et traitement des données à caractère personnel recueillies</h4>
-<p>La société MYBANDONSTAGE recueille et traite les informations communiquées par l&rsquo;Artiste ou la Scène afin de faire fonctionner les services du Site de manière optimale.</p>
-<p>Les données personnelles ainsi collectées sont exclusivement destinées à la société MYBANDONSTAGE dans le cadre strict des services du Site, sauf dans les limites de l&rsquo;article 9.2.3.</p>
-<p>Conformément à la loi, la communication de données à caractère personnel est facultative, basée sur l&rsquo;accord explicite de l&rsquo;Utilisateur, notamment de l&rsquo;Artiste et de la Scène par ses représentants légaux, à faire usage des services du Site.</p>
-<p>Ces informations sont confidentielles et seront traitées comme telles, sauvegardées sur les serveurs sécurisés de la société MYBANDONSTAGE ou de ses prestataires informatiques, celle-ci s&rsquo;obligeant à faire ses meilleurs efforts pour en assurer par tous moyens la confidentialité, la non-divulgation, toute modification ou destruction, mais sans en être tenue d&rsquo;une obligation de résultat en la matière.</p>
-<p>La durée de conservation des &nbsp;données suivantes sera limitée à une durée d&rsquo;un (1) an à compter de la création, de la modification ou de la suppression d&rsquo;un contenu :</p>
-<p>- &nbsp;&nbsp;L&rsquo;identifiant de la connexion à l&rsquo;origine de la communication ;</p>
-<p>- &nbsp;&nbsp;L&rsquo;identifiant attribué par le système d&rsquo;information au contenu, objet de l&rsquo;opération ;</p>
-<p>- &nbsp;&nbsp;Les types de protocoles utilisés pour la connexion au service et pour le transfert des contenus;</p>
-<p>- &nbsp;&nbsp;La nature de l&rsquo;opération ;</p>
-<p>- &nbsp;&nbsp;Les dates et heures de l&rsquo;opération ;</p>
-<p>- &nbsp;&nbsp;Le cas échéant, l&rsquo;identifiant utilisé par l&rsquo;auteur de l&rsquo;opération.</p>
-<p>Sauf exception aux termes des CGU, les autres données sont conservées par la société MYBANDONSTAGE au plus tard deux (2) ans après la fermeture du compte concerné.</p>
+<h4 class="title fs-14">9.2.1. VERTRAULICHKEIT</h4>
+<p>Künstler und Bühnen sind für den Zugang zu ihren Nutzerprofilen ausschließlich selbst verantwortlich, insbesondere die Vertraulichkeit von Zugangsdaten (Nutzername, Passwort). Es obliegt den Nutzern, sich vor unbefugter Benutzung dieser Daten durch Dritte angemessen zu schützen.</p>
+<p>Bühnen und Künstler sind verpflichtet, MYBANDONSTAGE unverzüglich von mißbräuchlicher Nutzung ihres Profils oder der Buchungsplattform durch Dritte oder "Hacking" zu informieren.</p>
+<p>Die Firma MYBANDONSTAGE kann nicht für die wirtschaftlichen Schäden oder Ansehensverluste als Folge von Identitätsdiebstahl und/oder mißbräuchlicher Benutzung von Profilen oder der Buchungsplattform haftbar gemacht werden.</p>
 
-<h4 class="title fs-14">9.2.3. &nbsp;&nbsp;&nbsp;Transfert des données à caractère personnel</h4>
-<p>La société MYBANDONSTAGE s&rsquo;engage à ne pas communiquer, céder ou transférer, à des tiers les données à caractère personnel sans avoir recueilli préalablement l&rsquo;accord de l&rsquo;Artiste ou de la Scène concerné(e), sauf exigence légale ou requête des juridictions compétentes.</p>
+<h4 class="title fs-14">9.2.2. WESEN UND BEHANDLUNG DER PERSONENBEZOGENEN DATEN</h4>
+<p>Die Firma MYBANDONSTAGE sammelt und verarbeitet personenbezogene Daten voon Künstlern und Bühnen um die Erbringung versprochener Dienste möglich zu machen.</p>
+<p>Die gesammelten Daten werden von MYBANDONSTAGE ausschließlich im Rahmen der Leistungserbringung verwendet, mit Ausnahme der in Artikel 9.2.3. beschriebenen Fälle.</p>
+<p>Die Daten werden vertraulich behandelt und in sicheren Serverumgebungen unter Einhaltung vernünftiger Vorsichtsmaßregeln gespeichert. Eine Haftung für mißbräuchliche Verwendung durch Dritte ist ausgeschlossen.</p>
+<p>Diese Daten werden für einen Zeitraum von einem Jahr ab Erfassung, Bearbeitung oder Löschung von Inhalten vorgehalten:</p>
+<p>Identifikationsmerkmale für die Verbindung, die die Kommunikation eingeleitet hat.</p>
+<p>Identifikationsmerkmale die vom System vergeben wurden, Zweck und Inhalt der Interaktion.</p>
+<p>Die Protokolltypen, die für die Verbindung zum Dienst und den Transfer von Inhalten verwendet wurden.</p>
+<p>Der Zweck der Interaktion.</p>
+<p>Datum und Zeitpunkt der Interaktion.</p>
+<p>Wenn erforderlich, das vvom Autor der Operation erfragte Authentifizierungsmerkmal.</p>
+<p>Andere Daten werden von MYBANDONSTAGE längstens zwei Jahre bis nach Löschung des Nutzeraccounts aufbewahrt.</p>
 
-<h4 class="title fs-14">9.2.4. &nbsp;&nbsp;Droit d&rsquo;accès, de modification ou de suppression aux données à caractère personnel</h4>
-<p>Conformément à la loi française dite « Informatique et Libertés » n°78-17 du 6 janvier 1978 modifiée en 2004, l&rsquo;Artiste ou la Scène ayant communiqué des données nominatives personnelles dispose d\'un droit d\'accès, de rectification et de suppression de ces données qu\'ils exercent gratuitement en utilisant le formulaire prévu à cet effet sur le Site en envoyant un email à support@mybandonstage.com ou écrivant par lettre recommandée avec accusé de réception à la société MYBANDONSTAGE, 10 Rue des Camélias 64000 PAU.</p>
-<p>A tout moment, l&rsquo;Artiste comme la Scène pourra, pour des motifs légitimes, s&rsquo;opposer au traitement des données le/la concernant et notamment solliciter la fermeture de son Profil, ce qui entraînera l&rsquo;effacement irrémédiable et définitif des données à caractère personnel y étant contenues dans un délai d&rsquo;un (1) mois.</p>
+<h4 class="title fs-14">9.2.3. &nbsp;&nbsp;&nbsp;ÜBERTRAGUNG PERSONENBEZOGENER DATEN</h4>
+<p>MYBANDONSTAGE unternimmt es keinesfalls, personenbezogene Daten ihrer Nutzer and Dritte zu verkaufen, zu übertragen ooder mitzuteilen, ohne dass die vorherige Zustimmung der betroffenen Nutzer vorliegt. Hiervon ausgenommen sind Anordnungen eines regulären Gerichts.</p>
 
-<br /><h2 class="title purple fs-18">10. LIENS HYPERTEXTES </h2>
-<p>La mise en place d&rsquo;un lien hypertexte vers le Site nécessite une autorisation préalable de la société MYBANDONSTAGE. Si vous souhaitez mettre en place un tel lien, veuillez prendre contact avec le responsable du Site (support@mybandonstage.com).</p>
-<p>La société MYBANDONSTAGE ne pourra pas être tenue pour responsable de la mise à disposition des sites qui font l&rsquo;objet d&rsquo;un lien hypertexte à partir du Site et ne peut supporter aucune responsabilité notamment sur le contenu, les produits, les services disponibles sur ces sites ou à partir de ces sites.</p>
+<h4 class="title fs-14">9.2.4. &nbsp;&nbsp;ZUGRIFFSRECHT, ÄNDERUNG UND LÖSCHUNG </h4>
+<p>In Übereinstimmung mit dem französischen Gesetz &quot;Informatique et Libertés&quot; n ° 78-17 vom 6. Januar 1978, geändert 2004, hat der Künstler / die Bühne das Recht of Einsicht, Richtigstellung oder Löschung der auf sie bezogenen Daten. Das Formblatt hierzu kann unter der eMail <a href="mailto:support@mybandonstage.com">support@mybandonstage.com</a> oder durch eingeschriebenen Brief an: MYBANDONSTAGE, 10 Rue des Camelias, 64000 PAU, France angefordert werden.</p>
+<p>Der Nutzer kann, begründet, jederzeit der Verarbeitung oder Speicherung seiner Daten widersprechen und /oder die Schließung seines Profiles verlangen. Die Löschung der personenbezogenen Daten erfolgt dann binnen eines Monats.</p>
 
-<br /><h2 class="title purple fs-18">11. LIMITATION DE RESPONSABILITE </h2>
-<p><strong>11.1.</strong>La société MYBANDONSTAGE ne saurait être tenue responsable des éléments en dehors de son contrôle, ni des dommages directs ou indirects et/ou immatériels, prévisibles ou imprévisibles (incluant la perte de profits ou d\'une chance…) qui pourraient éventuellement être subis par les Utilisateurs ou par leur environnement technique lors de la fourniture et/ou de l\'utilisation ou de l\'impossibilité totale ou partielle d\'utiliser les fonctionnalités du Site, et notamment leurs ordinateurs, logiciels, équipement, réseaux (modems, téléphones…) et tout matériel utilisé pour accéder au Site ou pour l&rsquo;utiliser.</p>
-<p><strong>11.2.</strong>En tout état de cause, l&rsquo;Utilisateur du Site, et notamment l&rsquo;Artiste et la Scène, déclarent connaître les caractéristiques et les limites de l\'Internet, en particulier ses performances techniques, les temps de réponse pour consulter, interroger ou transférer des données et les risques liés à la sécurité et la continuité des communications.</p>
-<p><strong>11.3.</strong>La société MYBANDONSTAGE met en œuvre tous les moyens raisonnables à sa disposition pour assurer un accès de qualité au Site mais n&rsquo;est tenue à aucune obligation de résultat en la matière.</p>
-<p><strong>11.4.</strong>Afin d&rsquo;en assurer la maintenance, ou pour toute autre raison qui lui serait propre, la société MYBANDONSTAGE se réserve la possibilité, sans préavis ni information des Utilisateurs, &nbsp;d&rsquo;interrompre, de suspendre momentanément ou de modifier l&rsquo;accès à tout ou partie du Site, sans que cette interruption, suspension ou modification de l&rsquo;accès n&rsquo;ouvre le droit à une quelconque obligation ou indemnisation de sa part, quel que soit le préjudice éventuellement subi par celui-ci ou par les tiers du fait de ces dysfonctionnements ou indisponibilités.</p>
-<p><strong>11.5.</strong>La société MYBANDONSTAGE met tout en œuvre pour offrir aux Utilisateurs des informations et/ou outils disponibles et vérifiés mais ne saurait être tenue pour responsables des erreurs, absences de disponibilité des fonctionnalités susvisées.</p>
-<p><strong>11.6.</strong>Les informations fournies par le Site le sont à titre indicatif et ne sauraient dispenser l&rsquo;Utilisateur d&rsquo;une analyse complémentaire et personnalisée.</p>
-<p><strong>11.7.</strong>La société MYBANDONSTAGE ne saurait garantir l&rsquo;exactitude, la complétude, l&rsquo;actualité absolues des informations diffusées par les Utilisateurs sur le Site. En conséquence, l&rsquo;Utilisateur reconnaît utiliser ces informations sous sa responsabilité exclusive.</p>
-<p><strong>11.8.</strong>La responsabilité de la société MYBANDONSTAGE ne pourra être engagée en cas de problèmes liés à une force majeure ou des faits indépendants de sa volonté mais encore pour tout litige lié aux contenus diffusés par les Artistes et les Scènes sur le Site par le biais de leur Page. Simple hébergeur et modérateur du Site, la société MYBANDONSTAGE ne sera pas responsable des contenus publiés sur le Site via les Pages, tant qu&rsquo;elle n&rsquo;a pas été alertée ou avertie de l&rsquo;illicéité supposée de ces contenus.</p>
-<p><strong>11.9.</strong>En tant que simple intermédiaire, et non prestataire ni organisateur, la responsabilité de la société MYBANDONSTAGE ne pourra être engagée en cas d&rsquo;annulation de l&rsquo;Evénement par l&rsquo;Artiste ou la Scène mais encore pour tout litige ou réclamation qui pourrait naître à l&rsquo;occasion de l&rsquo;organisation ou la réalisation de l&rsquo;Evénement auquel elle est entièrement étrangère.</p>
+<br /><h2 class="title purple fs-18">10. HYPERTEXT (HTML) </h2>
+<p>Die Einrichtung eines HTML Links auf der Seite bedarf der vorherigen Zustimmung durch MYBANDONSTAGE. Um einen solchen Linke einzurichten, setzen Sie sich bitt per eMail unter (<a href="mailto:support@mybandonstage.com">support@mybandonstage.com</a>) mit uns in Verbindung.</p>
+<p>Die Firma MYBANDONSTAGE haftet nicht für Inhalte von Seiten, auf die von irgendeinem Punkt von www.b-onstage.com aus verlinkt wurde, und kann für Inhalte fremder Seiten nicht verantwortlich gemacht werden.</p>
 
-<br /><h2 class="title purple fs-18">12. DUREE ET MISES A JOUR </h2>
-<p>Les CGU sont conclues pour une durée indéterminée à compter de l&rsquo;utilisation du Site par l&rsquo;Utilisateur.</p>
-<p>Les présentes CGU sont susceptibles d&rsquo;évoluer avec le Site et l&rsquo;activité de la société MYBANDONSTAGE. L&rsquo;Utilisateur ayant accepté les CGU est invité à vérifier régulièrement leurs mises à jour. Sauf changement majeur dans ces CGU, ayant des conséquences sur la situation de l&rsquo;Utilisateur, et qui donneront éventuellement lieu à une alerte sur le Site, l&rsquo;Utilisateur est réputé accepter ces mises à jour régulières.</p>
+<br /><h2 class="title purple fs-18">11. HAFTUNGSBESCHRÄNKUNG </h2>
+<p><strong>11.1.</strong> Die Firma MYBANDONSTAGE übernimmt keine Verantwortung für Schäden, die sich aus Faktoren ausserhalb ihre unmittelbaren Kontrolle ergeben, und haftet für solche Schäden auch nicht. Dies gilt für direkte und indirekte, vorhersehbare und nicht vorhersehbare Schäden und Folgeschäden, einschließlich, aber nicht beschränkt auf Gewinnausfälle und der Verhinderung von Zugewinnchancen, die Nutzern oder der von ihnen benutzen technischen Einrichtung entstehen. Der Haftungsausschluß schließt tatsächliche ooder vermeintliche Schäden aus der Unmöglichkeit zur Nutzung der Webseite und des teilweisen oder vollständigen Funktionsverlustes von Geräten oder Software, die zum Zugriff auf die Seite verwendet wurden, aus.</p>
+<p><strong>11.2.</strong> Der Nutzer der Webseite, einschließlich Bühnen und Künstlerm bestätigt, dass er über die Spezifika und Einschränkungen des Internets, insbesondere technische Möglichkeiten, Latenzzeiten beim Abruf, der Bereitstellung und Übertragung von Daten und die Risiken für die Sicherheit und Verlässlichkeit der Kommunikation vertraut ist.</p>
+<p><strong>11.3.</strong> MYBANDONSTAGE ergreift alle nach eigener Einschätzung vernünftigen und wirksamen Massnahmen um Qualität und Sicherheit der angebotenen Dienste zu gewährleisten, übernimmt aber keine Haftung für den laufenden Betrieb.</p>
+<p><strong>11.4.</strong> Zum Zwecke der Wartung oder aus anderen Gründen behält sich MYBANDONSTAGE das Recht vor, den Zugriff auf Teile der Webseite oder die Webseite als solches einzuschränken, zu unterbrechen oder zu unterbinden. Dies ist kann auch ohne vorherige Ankündigung notwendig werden. Daraus entstehen dem Nutzer keine Schadensersatz- oder Haftungsansprüche gegen den Betreiber, unabhängig von Art und Höhe des dem Nutzer oder Dritten entstandenen oder vermuteten Schadens. </p>
+<p><strong>11.5.</strong> MYBANDONSTAGE unternimmt nach bestem Vermögen ein Angebot von Diensten und Information für den Nutzer. Eine haftung für die Nichterreichbarkeit oder Unzugänglichkeit von Angeboten, ganz oder teilweise, ist jedoch ausgeschlossen.</p>
+<p><strong>11.6.</strong> Alle Inhalte dieser Webseite dienen ausschließlich der Information des Nutzers und entbinden diesen nicht vor seiner Pflicht zur Prüfung und zur Berücksichtigug seiner persönlichen Umstände.</p>
+<p><strong>11.7.</strong> MYBANDONSTAGE übernimmt keine Garantie für die Genauigkeit, Vollständigkeit und Rechtzeitigkeit der von Nutzern auf der Seite bereitgestellten Daten. Entsprechend erklärt der Nutzer sein Einverständnis, die Webseite auf eigene Gefahr zu benutzen.</p>
+<p><strong>11.8.</strong> MYBANDONSTAGE haftet nicht für Auswirkungen höherer Gewalt oder Umständen ausserhalb ihrer Kontrolle, insbesondere, aber nicht ausschließlich, für Streitigkeiten in Verbindung mit Verlautbarungen, die Künstler oder Bühnen auf ihren Profilen oder Seite publiziert haben. Für von Dritten gestaltete Teilbereiche (Profil, Homepage des Künstlers/der Bühne) ist MYBANDONSTAGE solange nicht verantwortlich, als die Firma nicht von den streitigen oder illegalen Inhalten in Kenntnis gesetzt wurde.</p>
+<p><strong>11.9.</strong> MYBANDONSTAGE ist Vermittler, nicht Veranstalter oder Organisator von Auftritten/Konzerten. Deswegen übernimmt MYBANDONSTAGE keine Verantwortung im Falle der Absage eines solchen Events durch Künstler oder Bühne und für daraus sich ergebende Streitigkeiten oder Forderungen.</p>
+<br /><h2 class="title purple fs-18">12. DAUER DER GÜLTIGKEIT, ÄNDERUNGEN </h2>
+<p>Diese Bedingungen gelten auf unbestimmte Zeit, beginnend mit dem ersten Zugriff des Nutzers auf die Webseite.</p>
+<p>Diese Bedingungen können sich, abhängig von geschäftlichen Aktivitäten der Firma MYBANDONSTAGE und dem Diensteangebot der Webseite, ändern. Dem Nutzer wird deshalb nahegelegt, regelmäßig auf Änderungen zu achten. Außer bei solchen Änderungen, die den Status der Nutzer erheblich beeinflussen, sind die Nutzer gehalten, soclhe Änderungen hinzunehmen.</p>
 
-<br /><h2 class="title purple fs-18">13. DIVERS </h2>
-<p><strong>13.1.</strong>Si une ou plusieurs stipulations des présentes CGU sont tenues pour non valides ou déclarées telles en application d\'une loi, d\'un règlement ou à la suite d\'une décision définitive d\'une juridiction compétente, les autres stipulations garderont toute leur force et leur portée.</p>
-<p><strong>13.2.</strong>Le fait pour la société MYBANDONSTAGE de ne pas se prévaloir d\'un manquement à l\'une des obligations visées dans les présentes CGU ne saurait être interprété pour l\'avenir comme une renonciation à se prévaloir ultérieurement de l\'obligation en cause.</p>
+<br /><h2 class="title purple fs-18">13. VERSCHIEDENES </h2>
+<p><strong>13.1.</strong> Wird für eine oder mehrere Bestimmungen dieser Geschäftsbedingungen unter Anwendung von Rechtsvorschriften oder Gesetzen durch ein Gericht auf Unwirksamkeit erkannt, bleiben alle anderen Bestimmungen deswegen dennoch in Kraft.</p>
+<p><strong>13.2.</strong> Verzichtet die Firma MYBANDONSTAGE auf die Durchsetzung einer oder mehrerer Bestimmungen dieser Geschäftsbedingungen, kann daraus keinesfalls ein gewohnheitmässiger Anspruch auf zukünftig gleiche Behandlung hergeleitet werden.</p>
 
-<br /><h2 class="title purple fs-18">14. DROIT APPLICABLE ET JURIDICTION COMPETENTE </h2>
-<p>Les présentes CGU sont soumises à la loi française. En cas de litige sur leur interprétation, les tribunaux parisiens seront seuls compétents.</p>';
-
+<br /><h2 class="title purple fs-18">14. JURISDICTION </h2>
+<p>Dioese Bedingungen unterliegen französischem Recht. Im Falle des Rechtstreits übe die Auslegung ist ein zuständiges Gericht in Paris anzurufen.</p>';
+			
 // legal
-$lang['legal_header'] = 'Mentions légales';
-$lang['legal_txt'] = '<p><strong>Mybandonstage</strong> est une société au capital de 15000 euros inscrite au Registre du Commerce et des Sociétés de PAU sous le numéro 538 826 330.</p>
-			<p><strong>Siège social :</strong> Rue des camélias 64000 PAU - FRANCE (contact@b-onstage.com).</p>
-			<p><strong>Directeur de la publication :</strong>  M. Faiçal ALLOU.</p>
-			<p>La société Mybandonstage est soumise au droit français.</p>
-			<p><strong>Hébergeur :</strong>PlanetHoster LLC, 150 Pierre Mercure, Montreal, Quebec, H1A 5A9, Canada.</p>';
-
-
+$lang['legal_header'] = 'Impressum';
+$lang['legal_txt'] = '<p><strong>Mybandonstage</strong> ist als Kapitalgesellschaft am Registre du Commerce et des Sociétés in PAU unter der Nummer 538 826 330 eingetragen.</p>
+			<p><strong>Zentrale :</strong> Rue des camélias 64000 PAU - FRANCE (contact@b-onstage.com).</p>
+			<p><strong>Geschäftsführer:</strong>  M. Faiçal ALLOU.</p>
+			<p>Mybandonstage ist eine SARL (Haftungsbeschränkte Gesellschaft) nach französischem Recht.</p>
+			<p><strong>Hosting :</strong>PlanetHoster LLC, 150 Pierre Mercure, Montreal, Quebec, H1A 5A9, Canada.</p>';
+			
 // Login
-$lang['login_header'] = 'Connexion';
-$lang['forgot_header'] = 'Code oublié';
-$lang['forgot_txt'] = 'Merci d’entrer votre email pour qu’on vous envoie un nouveau code.';
+$lang['login_header'] = 'Verbindung';
+$lang['forgot_header'] = 'Passwort vergessen';
+$lang['forgot_txt'] = 'Gib Deine eMail-Adresse ein, damit wir Dir Anweisungen zum Zurücksetzen des Passworts schicken können.';
 
-
-// signup artist
-$lang['signup_choice_link1'] = 'Je m\'inscris en tant qu\'Artiste';
-$lang['signup_choice_link2'] = 'Je m\'inscris en tant que Scène';
-$lang['signup_header'] = 'Créez votre compte en 3 étapes';
-$lang['signup_txt1'] = '<p class="grey fs-24 title ts-white">Plus de concerts veut dire:</p>
-			<p class="grey fs-16 title ts-white">Plus de visibilité et plus de fans!</p>							
-			<p class="grey fs-16 title ts-white">Une relation plus proche avec vos fans!</p>';
-$lang['signup_txt2'] = '<p class="grey fs-24 title ts-white">Bientôt vous pourrez:</p>							
-			<p class="grey fs-16 title ts-white">Réserver des dates et gérez vos réservations.</p>	
-			<p class="grey fs-16 title ts-white">Jouer votre musique live sur les Scènes b-onstage !</p>	';
-$lang['signup_form_header'] = 'Dites-nous en plus sur vous';
-$lang['signup_form_artist_name'] = 'Nom d\'Artiste';
-$lang['signup_form_accept'] = 'En cliquant sur le boutton ci-dessous,</br>j\'accepte les '.anchor(site_url('terms_of_services'),'Conditions générales d\'utilisation',array('class'=>'purple'));
-$lang['signup_form_next'] = 'Etape suivante';
-$lang['signup_form_title1'] = 'C\'est sous ce nom la que vos fans vous trouveront';
-$lang['signup_form_title2'] = 'C\'est pour votre page sur b-onstage; utilisez des lettres et des chiffres mais pas d\'espace ni de caractères spéciaux.';
-$lang['signup_form_title3'] = 'L\'adresse e-mail doit être valide et sera votre identifiant de connexion.';
-$lang['signup_form_title4'] = 'Utilisez au moins sept caractères.';
-$lang['signup_form_title5'] = 'Confirmez le mot de passe saisi au-dessus.';
-$lang['signup_active_txt'] = '<p>Vous allez recevoir un mail de confirmation dans quelques minutes. Suivez les informations pour valider votre compte.</p>
-		<p style="font-weight:bold;">Si vous ne le recevez pas, vérifiez votre courrier indésirable (ou Spam).</p>
-		<p>Sinon, contactez-nous à l\'adresse support@b-onstage.com, en detaillant le problème que vous rencontrez.</p>		';
-$lang['signup_terminate_success'] = '<p>Votre inscription est maintenant validée. Bienvenue dans la communauté b-onstage!</p>
-		<p>N\'oubliez pas que c\'est à vous de vous mettre en avant. Créez une description, ajoutez votre musique, vos videos et vos photos..</p>';
-$lang['signup_terminate_success1'] = 'Cliquez-ici</a> pour commencez à compléter mon profil';
-$lang['signup_terminate_success2'] = '<p>Ensuite c’est parti!! Vous allez pouvoir organiser vos concerts.</p>
-		<p>À vous de jouer!!</p>
-		<p>L’Équipe de b-onstage</p>';
+// signup_choice		
+$lang['signup_choice_link1'] ='Als Künstler registrieren';
+$lang['signup_choice_link2'] ='Als Bühne registrieren';
+$lang['signup_header'] ='In 3 einfachen Schritten registrieren';
+$lang['signup_txt1'] ='<p class="grey fs-24 title ts-white">Mehr Konzerte heißt:</p>	
+	<p class="grey fs-16 title ts-white">Mehr Publicity und mehr Fans.</p>	
+	<p class="grey fs-16 title ts-white">Bessere Bindung Deiner Fans.</p>';
+$lang['signup_txt2'] ='<p class="grey fs-24 title ts-white">In Kürze kannst Du: </p>	
+	<p class="grey fs-16 title ts-white">Auftritte anbieten und Deine Buchungen managen.</p>	
+	<p class="grey fs-16 title ts-white">Live auf unseren Bühnen auftreten!</p>';
+$lang['signup_form_header'] ='Sag\' uns, wer Du bist:';
+$lang['signup_form_artist_name'] ='Dein Künstler- oder Band-Name';
+$lang['signup_form_accept'] ='Mit dem Klick auf den unten stehenden Button </br>akzeptiere ich '.anchor(site_url('terms_of_services'),'die Allgemeinen Geschäftsbedingungen',array('class'=>'purple'));
+$lang['signup_form_next'] ='Nächster Schritt';
+$lang['signup_form_title1'] ='So erscheinst Du auf der Webseite';
+$lang['signup_form_title2'] ='Keine Leer- oder Sonderzeichen. Hiermit wird Deine Seite eröffnet';
+$lang['signup_form_title3'] ='Wir schicken Dir eine eMail zur Vermeidung von Spam';
+$lang['signup_form_title4'] ='Mindest sieben Zeichen';
+$lang['signup_form_title5'] ='Passwort bestätigen ';
+$lang['signup_active_txt'] ='<p>Du erhältst eine eMail zur Validierung Deines Kontos.</p>	
+	<p>Sollte keine Mail eingehen, <strong>sieh bitte im Spam Ordner nach.</p>	
+	<p>Bei Problemen wende Dich an support@b-onstage.com </p>
+	<p>Nur noch einen Klick! </p>';
+$lang['signup_terminate_success'] ='<p>Dein Konto ist jetzt aktiv.</p>	
+	<p>Vergiß nicht: so sieht Dich die Öffentlichkeit. Gestalte Deine Seite ansprechend und zeige alles, was Du zu bieten hast!</p>';
+$lang['signup_terminate_success1'] ='Klicken</a> zum Vervollständigen Deines Profils. ';
+$lang['signup_terminate_success2'] ='<p>Und danach: ist Showtime!</p>	
+	<p>Die Bühne gehört Dir!</p>	
+	<p>b-onstage</p>';
 
 
 // signup stage
-$lang['signup_stage_step_1_title'] = 'Infos de base';
-$lang['signup_stage_step_1_txt'] = '<li><span class="grey title">Vous voulez que votre établissement devienne une Scène sur le réseau b-onstage? Remplissez le formulaire ci-contre.</span></li>		
-			<li><span class="grey title">Vous serez ensuite contacté par notre équipe afin de vous aider à créer un profil.</span></li>		
-			<li><span class="grey title">Nous avons besoin de 30min seulement et tout sera prêt.</span></li>';
-$lang['signup_stage_step_1_form_title'] = 'Je m\'inscris en tant que scène';
-$lang['signup_stage_step_1_form_field1'] = 'Nom d\'établissement';
+$lang['signup_stage_step_1_title'] = 'Basis Info';
+$lang['signup_stage_step_1_txt'] = '<li><span class="grey title">Du willst Dein Unternehmen bei b-onstage vorstellen? Bitte fülle das Formular aus:</span></li>		
+			<li><span class="grey title">Jemand aus unserem Team setzt sich mit Dir zur Vereinbarung eines Besuchs und der Erstellung ddes Profils in Verbindung. </span></li>		
+			<li><span class="grey title">Das dauert nicht lange - 30 Minuten, und es kann losgehen. </span></li>';
+$lang['signup_stage_step_1_form_title'] = 'Meine Bühne registrieren';
+$lang['signup_stage_step_1_form_field1'] = 'Name';
+$lang['signup_stage_step_1_form_field1_title'] = 'Name der Bühne angeben';
+$lang['signup_stage_step_1_form_field2_title'] = 'Diese eMail Adresse wird für zukünftige Kontakte benutzt';
+$lang['signup_stage_step_1_form_field3_title'] = 'Die Telefonnummer ist freiwillig, aber wir können Dich schneller informieren.';
+$lang['signup_stage_step_1_form_field3'] = 'Telefon (optional)';
+$lang['signup_stage_step_1_form_submit'] = 'Bestätigen';
+$lang['signup_stage_step_2_title'] = 'Anfrage erhalten!';
+$lang['signup_stage_step_2_txt'] = '<p class="fs-16 title">Bestätigt</p>
+			<p class="fs-16 title">Wir haben Deine Anfrage erhalten!</p>
+			<p class="fs-16 title">In Kürze setzen wir uns zur Terminvereinabrung mit Dir in Verbindung.</p>
+			<p class="fs-16 title">Dabei erläutern wir Details und zeigen, wie b-onstage Dir nützt.</p>';
 
-$lang['signup_stage_step_1_form_field1_title'] = 'Saisir votre nom d\'établissement';
-$lang['signup_stage_step_1_form_field2_title'] = 'L\'adresse e-mail doit être valide et sera votre identifiant de connexion.';
-$lang['signup_stage_step_1_form_field3_title'] = 'Le numéro de téléphone est falcutatif, mais nous permettra de vous contacter pour votre inscription et l\'activation de votre compte';
-$lang['signup_stage_step_1_form_field3'] = 'Téléphone (facultatif)';
-$lang['signup_stage_step_1_form_submit'] = 'Valider la pré-inscription';
-$lang['signup_stage_step_2_title'] = 'Pré-inscription terminée';
-$lang['signup_stage_step_2_txt'] = '<p class="fs-16 title">Pré-inscription terminée</p>
-			<p class="fs-16 title">Nous avons bien reçu votre demande d\'inscription.</p>
-			<p class="fs-16 title">Vous serez contacté dans les prochains jours par notre équipe, afin de convenir d\'un rendez-vous.</p>
-			<p class="fs-16 title">Nous vous expliquerons alors comment le site fonctionne et nous vous assisterons dans la création de votre Profil b-onstage.</p>';
-	
 // signup stage ref
-$lang['signup_stage_step_1_form_title_ref'] = 'La Scène suivante veut rejoindre b-onstage';
-$lang['signup_stage_step_1_form_field0_ref'] = 'Adresse email de l\'Ambassadeur';
-$lang['signup_stage_step_1_form_field0_title'] = 'Vous devez avoir un compte b-onstage artiste pour être Ambassadeur';
-$lang['signup_stage_step_1_form_field1_ref'] = 'Nom de la Scène';
+$lang['signup_stage_step_1_form_title_ref'] = 'Diese Bühne möchte Teil von b-onstage werden';
+$lang['signup_stage_step_1_form_field0_ref'] = 'eMail des Botschafters';
+$lang['signup_stage_step_1_form_field0_title'] = 'Du benötigst einen b-onstage Künstler-Account, um Botschafter zu werden';
+$lang['signup_stage_step_1_form_field1_ref'] = 'Bezeichnung der Bühne';
 
-$lang['signup_stage_step_1_txt_ref'] = '<li><span class="grey title">Vous connaissez une Scène et voulez la partager avec la communauté b-onstage? Remplissez le formulaire ci-contre!</span></li>		
-			<li><span class="grey title">La seule condition est d\'avoir un compte artiste b-onstage... un compte gratuit en quelques clicks.</span></li>		
-			<li><span class="grey title">Nous appelerons toutes les Scènes que vous nous envoyez mais ça nous aiderait que vous parliez de b-onstage en avance. Rien d\'autres à faire pour vous.</span></li>';		
+$lang['signup_stage_step_1_txt_ref'] = '<li><span class="grey title">Du kennst eine Auftrittsmöglichkeit und möchtest sie mit der b-onstage Community teilen? Bitte fülle das Formular aus!</span></li>		
+			<li><span class="grey title">Die einzige Bedingung ist ein Künstler-Konto bei b-onstage - das kostet nichts außer ein paar Klicks.</span></li>		
+			<li><span class="grey title">Wir rufen jede von Dir empfohlene Bühne an, wünschen uns aber, dass Du vorher mit dem Verantwortlichen dort sprichst. Weiter mußt Du nichts tun! </span></li>';		
 
-$lang['signup_stage_step_2_txt_ref'] = '<li><span class="grey title">Nous contacterons la Scène pour régler les détails (disponibilités, genres, coûts de production, rénumération des artistes, règles de communications, suivi des demandes, réclamations...).</span></li>	
-			<li><span class="grey title">Nous partagerons les frais b-onstage perçues sur cette Scène, 50/50 avec vous, pendant un an.</span></li>
-			<li><span class="grey title">Vous n\'avez plus rien à faire mais il est dans votre intérêt de faire connaître b-onstage autour de vous bien sûr.</span></li>';
+$lang['signup_stage_step_2_txt_ref'] = '<li><span class="grey title">Wir setzen uns mit der Bühne in Verbidnung und besprechen die Details (Verfügbarkeit, Genres, Auftrittskosten, Kommunikation, Anfragen, Stornos) und wir betreuen Anfragen und Reklamationen.</span></li>	
+			<li><span class="grey title">Für ein Jahr bekommst Du 50% der b-onstage Gebühren, die wir mit dieser Bühne umsetzen.</span></li>
+			<li><span class="grey title">Du mußt dazu nichts tun, aber natürlich ist es in Deinem Interesse, über b-onstage zu reden!</span></li>';
 
-$lang['signup_stage_step_1_link_ref'] = '> Comment expliquer b-onstage à une Scène?';
-	
+$lang['signup_stage_step_1_link_ref'] = '> Wie man b-onstage einem Unternehmen erklärt';
 
-// Users home
-$lang['users_home_title1'] = 'Paramètres généraux';
-$lang['users_home_email'] = 'Adresse électronique';
-$lang['users_home_artist_name'] = 'Nom du groupe / artiste';
-$lang['users_home_stage_name'] = 'Nom de la scène / bar';
-$lang['users_home_stage_name_short'] = 'Nom de la scène';
-$lang['users_home_url'] = 'Votre profil est ici:';
-$lang['users_home_title2'] = 'Mes coordonnées';
-$lang['users_home_txt_bottom'] = 'coordonnées visibles dans le profil.';
-$lang['users_home_modify'] = 'Modifier coordonnées';
-$lang['users_home_show_profile'] = 'Afficher mon profil';
-$lang['users_home_profile_txt'] = '<p class="grey fs-12 bold">Remplissez votre profil!</p>
-				<p class="grey fs-12 bold">Les profils les plus consultés sont ceux qui ont le plus de contenu...</p>
-				<p class="grey fs-12 bold">...Alors, mettez des images de vous sur votre profil.</p>
-				<p class="grey fs-12 bold">Pour faire leur choix, les Scènes vont vouloir vous écouter...</p>
-				<p class="grey fs-12 bold">...Alors mettez votre musique.</p>
-				<p class="grey fs-12 bold">Importez aussi vos photos, vos vidéos...</p>';
-$lang['users_home_username_txt'] = 'Saisir un nom d\'utilisateur';
-$lang['users_home_username_success'] = 'Nom d\'utilisateur modifié avec succès.';
-$lang['users_home_username_error1'] = 'Le nom d\'utilisateur existe déjà.';
-$lang['users_home_username_error2'] = 'Une erreur s\'est produite, veuillez réessayer plus tard.';
-$lang['users_home_username_error3'] = 'Nom incorrect; Il ne doit pas y avoir d\'espace ni de caractères spéciaux.';
-$lang['users_home_passwrod_old'] = 'Ancien mot de passe';
-$lang['users_home_passwrod_new'] = 'Nouveau mot de passe';
-$lang['users_home_passwrod_conf'] = 'Confirmer le mot de passe';
-$lang['users_home_passwrod_success'] = 'Le Mot de passe a été modifié';
-$lang['users_home_input_artist_name'] = 'Saisir un nom de groupe';
-$lang['users_home_input_artist_name_success'] = 'Nom du groupe modifié avec succès.';
-$lang['users_home_input_artist_name_error1'] = 'Le nom du groupe existe déjà.';
-$lang['users_home_input_artist_name_error2'] = 'Aucun nom de groupe / artiste enregistré';
-$lang['users_home_input_artist_name_error3'] = 'Aucun nom de scène enregistré';
-$lang['users_home_url_success'] = 'Url du profil modifiée avec succès.';
-$lang['users_home_url_error1'] = 'Url du profil existe déjà.';
-$lang['users_home_no_fname'] = 'Aucun prénom enregistré';
-$lang['users_home_no_lname'] = 'Aucun nom enregistré';
-$lang['users_home_no_addr'] = 'Aucune adresse enregistrée';
-$lang['users_home_no_pcode'] = 'Aucun code postal enregistré';
-$lang['users_home_no_city'] = 'Aucune ville enregistrée';
-$lang['users_home_no_country'] = 'Aucun pays renseigné';
-$lang['users_home_no_tel'] = 'Aucun téléphone enregistré';
-$lang['users_header_mynotif'] = 'Mes notifications';
+
+// Users home		
+$lang['users_home_title1'] = 'Generelle Parameter';
+$lang['users_home_email'] = 'eMail Adresse';
+$lang['users_home_artist_name'] = 'Name des Künstlers';
+$lang['users_home_stage_name'] = 'Name der Bühne';
+$lang['users_home_stage_name_short'] = 'Name der Bühne';
+$lang['users_home_url'] = 'URL des Profils';
+$lang['users_home_title2'] = 'Meine Details';
+$lang['users_home_txt_bottom'] = 'Details für d. Öffentlichkeit   ';
+$lang['users_home_modify'] = 'Ändern 	';
+$lang['users_home_show_profile'] = 'Mein Profil ';
+$lang['users_home_profile_txt'] = '<p class="grey fs-12 bold">Profil vervollständigen!</p>	
+	<p class="grey fs-12 bold">Je umfangreicher Dein Profil, desto attraktiver: füge Fotos und Medien hinzu!</p>	
+	<p class="grey fs-12 bold">Damit Sie Dich auswählen, wollen Bühnen Deine Musik hören!</p>';	
+$lang['users_home_username_txt'] = 'Benutzername';
+$lang['users_home_username_success'] = 'Benutzername geändert';
+$lang['users_home_username_error1'] = 'Der Benutzername ist belegt';
+$lang['users_home_username_error2'] = 'Fehler aufgetreten. Bitte versuche es später erneut. Erhältst Du wiederholt diese Meldung nimm bit Kontakt zu uns auf.';
+$lang['users_home_username_error3'] = 'Unzulässiger Name, bitte keine Leer- und Sonderzeichen!';
+$lang['users_home_passwrod_old'] = 'Altes Passwort';
+$lang['users_home_passwrod_new'] = 'Neues Passwort';
+$lang['users_home_passwrod_conf'] = 'Passwort bestätigen';
+$lang['users_home_passwrod_success'] = 'Passwort geändert';
+$lang['users_home_input_artist_name'] = 'Band-Name hinzufügen';
+$lang['users_home_input_artist_name_success'] = 'Band-Name geändert';
+$lang['users_home_input_artist_name_error1'] = 'Der Band-Name ist belegt';
+$lang['users_home_url'] = 'Dein Profil ist hier:';
+$lang['users_home_url_success'] = 'Kein Künstlername vermerkt';
+$lang['users_home_url_error1'] = 'Dein Profil steht unter: ';
+$lang['users_home_input_artist_name_error2'] = 'URL geändert';
+$lang['users_home_input_artist_name_error3'] = 'URL ist belegt';
+$lang['users_home_no_fname'] = 'Kein Name registriert';
+$lang['users_home_no_lname'] = 'Kein Name registriert';
+$lang['users_home_no_addr'] = 'Keine Adresse registriert';
+$lang['users_home_no_pcode'] = 'Keine Postleitzahl registriert';
+$lang['users_home_no_city'] = 'Keine Stadt registriert';
+$lang['users_home_no_country'] = 'Kein Land registriert';
+$lang['users_home_no_tel'] = 'Keine Telefonnummer registriert';
+$lang['users_header_mynotif'] = 'Meine Nachrichten';
 
 
 // Users calendar		
-$lang['users_calendar_addevent'] = 'CREER EVENEMENT';
-$lang['users_calendar_open_txt'] = 'Filtrer les évènements ouverts';
-$lang['users_calendar_req_inprocess_txt'] = 'Filtrer les évènements ayant des demandes de réservations';
-$lang['users_calendar_awaiting_txt'] = 'Filtrer les évènements en attente de validation';
-$lang['users_calendar_confirmed_txt'] = 'Filtrer les évènements confirmés';
-$lang['users_calendar_list_nodata'] = 'Aucun résultat';
-$lang['users_calendar_create_success'] = 'L’Évènement a été enregistré';
-$lang['users_calendar_back'] = 'Retour calendrier';
-$lang['users_calendar_create_input_title'] = 'Saisir un titre';
-$lang['users_calendar_create_recurrence'] = 'Récurrence...';
-$lang['users_calendar_create_eventdetails'] = 'Détails de l\'évènement';
-$lang['users_calendar_create_location'] = 'Lieu';
-$lang['users_calendar_create_genre'] = 'Genre musical recherché';
-$lang['users_calendar_create_book'] = 'Coûts de production + frais b-onstage';
-$lang['users_calendar_create_payment'] = 'Rémunération de l\'artiste';
-$lang['users_calendar_create_price'] = 'Prix des entrées';
-$lang['users_calendar_create_choose_musical_genre'] = 'Choisissez des genres musicaux';
-$lang['users_calendar_create_non_renum'] = 'Non rémunéré';
-$lang['users_calendar_create_cachet'] = 'Cachet fixe ';
-$lang['users_calendar_create_conso'] = 'Surcharge sur les boissons';
-$lang['users_calendar_create_tickets'] = 'sur la billeterie';
-$lang['users_calendar_create_remb'] = 'Défraiement';
-$lang['users_calendar_concert_at'] = 'Concert au';
-$lang['users_calendar_genre'] = 'Genre musical';
-$lang['users_calendar_event_mod_del'] = 'Modifier / supprimer l\'évènement';
-$lang['users_calendar_edit_success'] = 'L’Évènement a été modifié';
-$lang['users_calendar_event_del_conf'] = 'Voulez-vous supprimer cet évènement ?';
-$lang['users_calendar_event_del_error1'] = 'Vous n\'êtes pas propriétaire de cet évènement, il vous est donc impossible de le supprimer';
-$lang['users_calendar_event_del_success'] = 'Evènement supprimé avec succès';
+$lang['users_calendar_addevent'] = 'EVENT ANLEGEN';
+$lang['users_calendar_open_txt'] = 'Offene Events filtern';
+$lang['users_calendar_req_inprocess_txt'] = 'Angefragte Events filtern';
+$lang['users_calendar_awaiting_txt'] = 'Schwebende Events filtern';
+$lang['users_calendar_confirmed_txt'] = 'Bestätigte Events filtern';
+$lang['users_calendar_list_nodata'] = 'Nichts gefunden';
+$lang['users_calendar_create_success'] = 'Event aufgezeichnet';
+$lang['users_calendar_back'] = 'Zurück';
+$lang['users_calendar_create_input_title'] = 'Titel angeben';
+$lang['users_calendar_create_recurrence'] = 'Veranstaltungsreihe';
+$lang['users_calendar_create_eventdetails'] = 'Details';
+$lang['users_calendar_create_location'] = 'Ort';
+$lang['users_calendar_create_genre'] = 'Genre';
+$lang['users_calendar_create_book'] = 'Produktionskosten + b-onstage Gebühr';
+$lang['users_calendar_create_payment'] = 'Künstlervergütung';
+$lang['users_calendar_create_price'] = 'Ticket-Preis';
+$lang['users_calendar_create_choose_musical_genre'] = 'Genres auswählen';
+$lang['users_calendar_create_non_renum'] = 'Keine';
+$lang['users_calendar_create_cachet'] = 'Festbetrag ';
+$lang['users_calendar_create_conso'] = 'Getränkeaufschlag';
+$lang['users_calendar_create_tickets'] = 'der Eintrittskasse';
+$lang['users_calendar_create_remb'] = 'Reimburse expenses';
+$lang['users_calendar_concert_at'] = 'Konzert bei';
+$lang['users_calendar_genre'] = 'Genre';
+$lang['users_calendar_event_mod_del'] = 'Event ändern/löschen';
+$lang['users_calendar_edit_success'] = 'Event geändert';
+$lang['users_calendar_event_del_conf'] = 'Möchtest Du dieses Event löschen?';
+$lang['users_calendar_event_del_error1'] = 'Du kannst dieses Event nicht löschen.';
+$lang['users_calendar_event_del_success'] = 'Event gelöscht';
 
-$lang['payment_notset'] = 'Pourboire + Ventes propres';
+$lang['payment_notset'] = 'Trinkgelder & eigene Verkäufe';
 
 
 //Users Contact
-$lang['users_contact_notfound'] = 'Aucun contact enregistré.';
-$lang['users_contact_seeprofile'] = 'Voir profil';
-$lang['users_contact_sendmsg'] = 'Envoyer message';
-$lang['users_contact_del_conf'] = 'Voulez vous vraiment supprimer ce contact ?';
-$lang['users_contact_del_success'] = 'Contact supprimé avec succès';
-$lang['users_contact_send_success'] = 'Message envoyé avec succès';
-$lang['users_contact_add'] = 'Ajouter à mes contacts';
-$lang['users_contact_add_error1'] = 'Ce contact est déjà présent dans vos contacts';
-$lang['users_contact_add_success'] = 'Le Contact a été ajouté';
+$lang['users_contact_notfound'] = 'Kein Kontakt.';
+$lang['users_contact_seeprofile'] = 'Siehe Profil';
+$lang['users_contact_sendmsg'] = 'Nachricht senden';
+$lang['users_contact_del_conf'] = 'Möchtest Du diesen Kontakt wirklich löschen?';
+$lang['users_contact_send_success'] = 'Nachricht abgesandt';
+$lang['users_contact_del_success'] = 'Kontakt gelöscht';
+$lang['users_contact_add'] = 'Zu meinen Kontakten hinzufügen';
+$lang['users_contact_add_error1'] = 'Dieser Kontakt ist schon in Deiner Liste!';
+$lang['users_contact_add_success'] = 'Kontakt hinzugefügt';
 
 
 //User notifs
-$lang['users_notifs_notfound'] = 'Aucune notification';
-$lang['users_notifs_seemore'] = 'Voir plus de notifications';
+$lang['users_notifs_notfound'] = 'Keine Nachricht';
+$lang['users_notifs_seemore'] = 'Mehr';
 
 
-//Users page
-$lang['users_page_modpic'] = 'Modifier la photo de couverture';
-$lang['users_page_modava'] = 'Modifier avatar';
-$lang['users_page_pic'] = 'Photo de couverture';
-$lang['users_page_ava'] = 'Photo de profil';
-$lang['users_page_ison'] = 'est sur';
-$lang['users_page_comwith'] = 'Communiquez avec';
-$lang['users_page_signup'] = 'en vous inscrivant.';
+//Users page		
+$lang['users_page_modpic'] = 'Profilbild ändern';
+$lang['users_page_modava'] = 'Avatar ändern';
+$lang['users_page_pic'] = 'Coverfoto';
+$lang['users_page_ava'] = 'Profilbild';
+$lang['users_page_ison'] = 'ist an';
+$lang['users_page_comwith'] = 'Zur Kommunikation mit';
+$lang['users_page_signup'] = 'musst Du eingeloggt sein';
 $lang['users_page_menu1'] = 'Profil';
-$lang['users_page_menu2'] = 'Concerts';
-$lang['users_page_menu3'] = 'Sons';
-$lang['users_page_menu4'] = 'Vidéos';
-$lang['users_page_menu5'] = 'Photos';
-$lang['users_page_modpro'] = 'Modifier profil';
-$lang['users_page_generalinfo'] = 'Informations générales';
-$lang['users_page_stage'] = 'Etablissement';
-$lang['users_page_band'] = 'Nom du groupe';
-$lang['users_page_inputcountry'] = 'Saisir votre pays';
-$lang['users_page_inputcity'] = 'Saisir votre ville';
-$lang['users_page_website'] = 'Site officiel';
-$lang['users_page_inputwebsite'] = 'Saisir le lien de votre site officiel';
-$lang['users_page_socialmed'] = 'Liens sociaux';
-$lang['users_page_socialmed_notfound'] = 'Aucun liens sociaux disponibles';
-$lang['users_page_desc_notfound'] = 'Aucune description disponible';
-$lang['users_page_inputsocialmed1'] = 'Saisir le lien de votre page facebook';
-$lang['users_page_inputsocialmed2'] = 'Saisir le lien de votre Myspace';
-$lang['users_page_inputsocialmed3'] = 'Saisir le lien de votre compte Twitter';
-$lang['users_page_inputsocialmed4'] = 'Saisir le lien de votre profil Google +';
-$lang['users_page_followus'] = 'Suivez b-onstage';
-$lang['users_page_onsocmed1'] = 'sur Twitter';
-$lang['users_page_onsocmed2'] = 'sur Facebook';
-$lang['users_page_onsocmed4'] = 'sur Google+';
-$lang['users_page_socmedfollowers1'] = 'Twitter Followers';
+$lang['users_page_menu2'] = 'Konzerte';
+$lang['users_page_menu3'] = 'Musik';
+$lang['users_page_menu4'] = 'Videos';
+$lang['users_page_menu5'] = 'Fotos';
+$lang['users_page_modpro'] = 'Profil ändern';
+$lang['users_page_generalinfo'] = 'Generelle Info';
+$lang['users_page_stage'] = 'Bühne';
+$lang['users_page_band'] = 'Name der Band';
+$lang['users_page_inputcountry'] = 'Land';
+$lang['users_page_inputcity'] = 'Stadt';
+$lang['users_page_website'] = 'Webseite';
+$lang['users_page_inputwebsite'] = 'Link zur Webseite';
+$lang['users_page_socialmed'] = 'Sociale Netze';
+$lang['users_page_socialmed_notfound'] = 'Noch keine sozialen Netze';
+$lang['users_page_desc_notfound'] = 'Noch keine Beschreibung';
+$lang['users_page_inputsocialmed1'] = 'Link zu facebook';
+$lang['users_page_inputsocialmed2'] = 'Link zu mySpace';
+$lang['users_page_inputsocialmed3'] = 'Link zu Twitter';
+$lang['users_page_inputsocialmed4'] = 'Link zu Google+';
+$lang['users_page_followus'] = 'Follow b-onstage';
+$lang['users_page_onsocmed1'] = 'auf Twitter   ';
+$lang['users_page_onsocmed2'] = 'auf facebook   ';
+$lang['users_page_onsocmed4'] = 'auf Google+';
+$lang['users_page_socmedfollowers1'] = 'Twitter followers';
 $lang['users_page_socmedfollowers2'] = 'Facebook Fans';
-$lang['users_page_socmedfollowers3'] = 'Google + Followers';
-$lang['users_page_modpic_success'] = 'Photo de couverture mise à jour';
-$lang['users_page_modava_success'] = 'Avatar mis à jour';
-$lang['users_page_modpro_txt'] = 'Cliquez sur la partie de votre profil que vous voulez modifier';
-$lang['users_page_modpro_txtdone'] = 'Modifications terminées';
-$lang['users_page_modpro_noinfo'] = 'Aucune information disponible';
-$lang['users_page_shows_upcoming'] = 'Concerts à venir';
-$lang['users_page_shows_notfound'] = 'Aucun concert à venir pour le moment';
-$lang['users_page_videos_txt'] = '<p class="title purple fs-16">Recommendations pour ajouter une vidéo</p>
-								<p class="grey fs-12 bold">Ajoutez vos vidéos à votre profil. Vous pouvez par exemple y mettre des vidéos de vos concerts, de vos clips, etc.</p> 
-								<p class="grey fs-12 bold">Cliquez sur J\'ajoute une vidéo. Copiez l\'adresse du lien vidéo Youtube.</p> 
-								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p>';
-$lang['users_page_videos_addtitle'] = 'Ajouter une vidéo Youtube';
-$lang['users_page_videos_add'] = 'J\'ajoute une vidéo';
-$lang['users_page_videos_input'] = 'Saisir l\'url de votre vidéo Youtube.';
-$lang['users_page_videos_notfound'] = 'Aucune vidéo enregistrée';
-$lang['users_page_flux_addtitle'] = 'La Vidéo a été supprimée';
-$lang['users_page_flux_add'] = 'Ajouter un utilisateur Youtube';
-$lang['users_page_flux_input'] = 'J\'ajoute un flux de vidéos';
-$lang['users_page_flux_notfound'] = ' ';
-$lang['users_page_media_add_success'] = 'Aucun flux enregistré';
-$lang['users_page_media_add_error1'] = 'Le Flux a été supprimé';
-$lang['users_page_flux_deleted'] = 'Le Média a été ajouté';
-$lang['users_page_videos_deleted'] = 'Ce média est déjà enregistré  ';
-$lang['users_page_picasa_txt'] = '<p class="title purple fs-16">Recommendations pour ajouter des photos</p>
-								<p class="grey fs-12 bold">Cliquez sur J\'ajoute un compte Picasa. Entrez l\'adresse mail de votre compte Picasa.</p> 
-								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p>';
-$lang['users_page_picasa_addtitle'] = 'Ajouter un compte Picasa';
-$lang['users_page_picasa_add'] = 'Ajouter un compte Picasa';
-$lang['users_page_picasa_input'] = 'Saisir l\'adresse mail de votre compte Picasa';
-$lang['users_page_picasa_notfound'] = 'Aucun compte Picasa enregistré';
-$lang['users_page_picasa_add_success'] = 'Le compte Picasa a été ajouté';
-$lang['users_page_picasa_add_error1'] = 'Ce compte Picasa est déjà enregistré';
-$lang['users_page_picasa_deleted'] = 'Compte Picasa supprimé avec succès';
-$lang['users_page_picasa_album_notfound'] = 'Aucun album pour ce compte Picasa ';
-$lang['users_page_picasa_delconf'] = 'Supprimer ce compte Picasa ?';
-$lang['users_page_sons_txt'] = '<div class="title fs-16 purple">Recommendations pour ajouter de la musique</div>
-								<p class="grey fs-12 bold">Afin de vous démarquer, il est important que les Scènes puissent vous écouter.</p>
-								<p class="grey fs-12 bold">Ajoutez vos sons à votre profil. Voici comment faire:</p>
-								<ul style="list-style:square;margin-left:20px;">	
-									<li class="purple fs-12 bold"><span class="grey">Télécharger vos morceaux sur votre compte Soundcloud.</span></li>
-									<li class="purple fs-12 bold"><span class="grey">Cliquez sur J\'ajoute un compte Souncloud, entrez vos informations Soundcloud (vous pouvez ajouter plusieurs comptes Soundcloud).</span></li>
-								</ul>	
-								<p class="grey fs-12 bold">Rappelez-vous, les profils les plus visités restent ceux qui ont le plus de contenu.</p>';
-$lang['users_page_sons_track'] = 'Pistes';
-$lang['users_page_sons_addtrack'] = 'J\'ajoute des pistes audio';
-$lang['users_page_sons_addsoundcloud'] = 'J\'ajoute un compte Soundcloud';
-$lang['users_page_sons_addtrack_success'] = 'Piste téléchargée';
-$lang['users_page_sons_nosound'] = 'Aucun son à écouter.';
-$lang['users_page_sons_notrack'] = 'Aucune piste disponible.';
-$lang['users_page_sons_soundcloud_delconf'] = 'Voulez-vous vraiment supprimer ce compte Soundcloud ?';
-$lang['users_page_sons_soundcloud_syncconf'] = 'Voulez-vous synchroniser ce compte? ';
+$lang['users_page_socmedfollowers3'] = 'Google + followers';
+$lang['users_page_modpic_success'] = 'Coverfoto geändert';
+$lang['users_page_modava_success'] = 'Avatar geändert';
+$lang['users_page_modpro_txt'] = 'Klicke, wo Du Änderungen vornehmen willst';
+$lang['users_page_modpro_txtdone'] = 'Änderungen speichern';
+$lang['users_page_modpro_noinfo'] = 'Keine Information';
+$lang['users_page_shows_upcoming'] = 'Bevorstehende Konzerte';
+$lang['users_page_shows_notfound'] = 'Noch keine Konzerte';
+$lang['users_page_videos_txt'] = '<p class="title purple fs-16">Empfehlung: Videos hinzufügen.</p>	
+	<p class="grey fs-12 bold">Fügen Deinem Profil Musikvideos oder Aufnahmen von Live-Auftritten hinzu.</p> 	
+	<p class="grey fs-12 bold">Denke daran: je mehr Du zeigst, desto wahrscheinlicher wirst Du gebucht!</p>	';
+$lang['users_page_videos_addtitle'] = 'Youtube Video hinzufügen';
+$lang['users_page_videos_add'] = 'Ich füge ein Youtube Video hinzu';
+$lang['users_page_videos_input'] = 'URL Deines Videos';
+$lang['users_page_videos_notfound'] = 'Noch kein Video';
+$lang['users_page_flux_addtitle'] = 'Video hinzufügen';
+$lang['users_page_flux_add'] = 'Youtube Account hinzufügen';
+$lang['users_page_flux_input'] = 'Ich füge einen Youtube Account hinzu';
+$lang['users_page_flux_notfound'] = ' Noch kein Account registriert';
+$lang['users_page_media_add_success'] = 'Video hinzugefügt';
+$lang['users_page_media_add_error1'] = 'Ein Fehler ist aufgetreten';
+$lang['users_page_flux_deleted'] = 'Video gelöscht';
+$lang['users_page_videos_deleted'] = 'Video gelöscht';
+$lang['users_page_picasa_txt'] = '<p class="title purple fs-16">Empfehlung zum Einfügen von Photos</p>	
+	<p class="grey fs-12 bold">Klicke auf "Ich füge einen Picasa Account hinzu" und gib die eMail an, die mit Deinem Picasa Konto verknüpft ist.</p> 	
+	<p class="grey fs-12 bold">Denke daran: je mehr Du zeigst, desto wahrscheinlicher wirst Du gebucht!</p>	';
+$lang['users_page_picasa_addtitle'] = 'Picassa account hinzufügen';
+$lang['users_page_picasa_add'] = 'Ich füge einen Picasa Account hinzu';
+$lang['users_page_picasa_input'] = 'gib die eMail an, die mit diesem Konto verknüpft ist';
+$lang['users_page_picasa_notfound'] = 'Kein Account registriert';
+$lang['users_page_picasa_add_success'] = 'Account hinzugefügt';
+$lang['users_page_picasa_add_error1'] = 'Dieser Account ist bereits belegt';
+$lang['users_page_picasa_deleted'] = 'Account gelöscht';
+$lang['users_page_picasa_album_notfound'] = 'Kein Album gefunden';
+$lang['users_page_picasa_delconf'] = 'Account löschen?';
+$lang['users_page_sons_txt'] = '<div class="title fs-16 purple">Empfehlung zum Einfügen von Musik</div>	
+	<p class="grey fs-12 bold">Bühnen wollen Deine Musik hören, bevor Sie Dich auftreten lassen!</p>	
+	<p class="grey fs-12 bold"> Hier ist eine Möglichkeit, Sound-Dateien hochzuladen:  </p>	
+	<ul style="list-style:square;margin-left:20px;">	
+	<li class="purple fs-12 bold"><span class="grey">Lade Deine Tracks auf Deinen Soundcloud Account.</span></li>	
+	<li class="purple fs-12 bold"><span class="grey">Klicke "Ich füge einen Picasa Account hinzu" und gib die Informationen ein (mehrere Soundcloud Accounts möglich!).</span></li>	
+	</ul>	
+	<p class="grey fs-12 bold">Denke daran: je mehr Du hören lässt, desto wahrscheinlicher wirst Du gebucht!</p>	';
+$lang['users_page_sons_track'] = 'Track';
+$lang['users_page_sons_addtrack'] = ' Musik hinzufügen';
+$lang['users_page_sons_addsoundcloud'] = 'Ich füge einen Picasa Account hinzu';
+$lang['users_page_sons_addtrack_success'] = 'Track hochgeladen';
+$lang['users_page_sons_nosound'] = 'Noch keine Musik';
+$lang['users_page_sons_notrack'] = 'Kein Track verfügbar';
+$lang['users_page_sons_soundcloud_delconf'] = 'Account wirklich löschen?';
+$lang['users_page_sons_soundcloud_syncconf'] = 'Synchronisieren? ';
 
-
-//Users reservations
-$lang['users_rese_payfees'] = 'Payer les frais de réservation';
-$lang['users_rese_seeshow'] = 'Voir concert';
-$lang['users_rese_showended'] = 'Concert terminé';
-$lang['users_rese_youplayin'] = 'Vous jouez dans';
-$lang['users_rese_is_expired'] = 'Délai dépassé';
-$lang['users_rese_delayfees'] = 'Délai pour payer les frais de réservation';
-$lang['users_rese_cancel'] = 'Annuler réservation';
-$lang['users_rese_enterprice'] = 'Prix entrée';
-$lang['users_rese_fees'] = 'Frais de réservation';
-$lang['users_cost_ifselected'] = 'Frais de réservation';
-$lang['users_rese_renumartist'] = 'Rémunération artiste';
-$lang['users_rese_status1'] = 'En attente de paiement';
-$lang['users_rese_status1_a'] = 'Artiste en attente de paiement';
-$lang['users_rese_status2'] = 'Fermée';
-$lang['users_rese_status3'] = 'En attente de validation';
-$lang['users_rese_needpay'] = 'Réservations en attente de paiement des frais de réservations. ';
-$lang['users_rese_needpaytxt'] = '<p class="grey fs-12 bold">Il vous est fortement conseillé de les traiter avant que le délai soit dépassé.</p>
-				<p class="grey fs-12 bold">Si la mention <span class="purple">"Délai dépassé"</span> apparaît sur l\'une de vos réservations cela signifie que le délai de 48h pour payer les frais de réservations est écoulé. De ce fait la réservation est annulée et est remise dans la rubrique <a href="'.site_url('concerts').'" class="purple bold">"Réservez date".</a></p>';
-$lang['users_rese_closedtxt'] = '<p class="purple">Recommendations réservations fermées</p>
-<p>Ici se trouvent les réservations qui n\'ont pas été acceptées.</p>';
-$lang['users_rese_tovalidatetxt'] = '<p class="purple">Recommendations en attente de validation</p>
-	<p>Ici se trouvent les réservation qui n\'ont pas été encore validées. Merci de patienter.</p>';
-
-$lang['users_rese_cancel_conf'] = 'Voulez-vous annuler cette réservation ?';
-$lang['users_rese_cancel_txt1'] = 'Il n\'est pas conseillé d\'annuler la réservation à ce stade. Cette scène pourrait ne pas accepter vos futures demandes. Etes-vous certain de vouloir annuler ?';
-$lang['users_rese_cancel_txt2'] = 'Il n\'est pas conseillé d\'annuler la réservation à ce stade. Vos frais de réservation vous seront remboursés (déduits des frais de gestion b-onstage). De plus cette scène pourrait ne pas accepter vos futures demandes. Etes-vous certain de vouloir annuler ?';
-$lang['users_rese_cancel_txt3'] = 'Il n\'est pas conseillé d\'annuler la réservation à ce stade. Vos frais de réservation ne vous seront pas remboursés. De plus cette scène pourrait ne pas accepter vos futures demandes. Etes-vous certain de vouloir annuler?';
-$lang['users_rese_cancel_txt4'] = 'Il est très fortement conseillé de ne pas annuler à ce stade! Vos frais de réservation ne vous seront pas remboursés, et le concert sera affiché en statut "Annulé, No-show" et b-onstage se réserve le droit de porter une mention "No-show" sur votre profil. De plus cette scène pourrait ne pas accepter vos futures demandes. Etes-vous certain de vouloir annuler?';
-$lang['users_rese_cancel_success'] = 'Votre demande de réservation a été annulée avec succès.';
-$lang['users_rese_request'] = 'Demande de réservation';
-$lang['users_rese_validate_artist'] = 'Valider cet artiste';
-$lang['users_rese_refuse_artist'] = 'Voulez-vous rejeter cette demande?';
-$lang['users_rese_refuse_success'] = 'Suppression réussie';
-$lang['users_rese_validate_success'] = 'Demande de réservation validée!';
-$lang['users_rese_pendingtxt'] = 'Réservation en attente de paiement';
-$lang['users_rese_pendingtxt2'] = 'En liste d\'attente';
-$lang['users_rese_seereq'] = 'demande(s) de réservation';
-$lang['users_rese_amount'] = 'Nbr. de demandes de réservation';
-$lang['users_rese_event_details'] = 'Détails sur l\'évènement';
-$lang['users_rese_artist_details'] = 'Détails sur l\'artiste / groupe';
-$lang['users_rese_artist_band'] = 'Artiste / groupe';
-$lang['users_rese_scene_stage'] = 'Scène / salle';
-$lang['users_rese_paid'] = 'Réservation payée';
-$lang['users_rese_pay_error'] = 'Erreur lors du paiement de la réservation, veuillez nous contacter pour vérifier le statut  ';
-
-
-// Artists page
-$lang['artists_searchby'] = 'Rechercher Artiste';
-$lang['artists_searchbycity'] = 'Rechercher par ville';
-$lang['artists_searchresutls'] = 'Résultats de la recherche';
-$lang['artists_searchshowmore'] = 'Afficher plus d\'Artistes';
-
-// Stage page
-$lang['stages_searchshowmore'] = 'Afficher plus de Scènes';
-$lang['stages_searchby'] = 'Rechercher par nom';
-$lang['stages_searchresutls'] 	='Resultats de la recherche';
-
-$lang['legend'] 				='Legende';
-
-$lang['room_size_legend'] 		='Taille de la salle en nombre de personnes approximatif';
-$lang['stage_size_legend'] 		='Taille de la scène en nombre de musiciens approximatif';
-$lang['microphone_legend'] 		='Mise à disposition d\'un microphone';
-$lang['speakers_legend'] 		='Mise à disposition de Hauts parleurs';
-$lang['amplification_legend'] 	='Table de mixage / Amplification';
-$lang['lights_legend'] 			='Disponibilité de spotlights';
+//Users equipment
+$lang['users_page_roomsize'] = 'Raumgröße';
+$lang['users_page_inputroomsize'] = 'Raumgröße, Anzahl Besucher';
+$lang['users_page_stagesize'] = 'Bühnengröße';
+$lang['users_page_inputstagesize'] = 'Bühnengröße, Anzahl Musiker';
+$lang['users_page_microphone'] = 'Microphone';
+$lang['users_page_inputequipment'] = 'Erklären oder leer wenn nicht verfügbar';
+$lang['users_page_speakers'] = 'Speaker';
+$lang['users_page_amplification'] = 'Mischpult';
+$lang['users_page_lights'] = 'Spotlights';
+$lang['users_page_otherequipment'] = 'Andere';
+$lang['users_page_inputotherequipment'] = 'Andere sachen';
+$lang['users_page_equipment_title'] = 'Ausrüstung';
 
 
 
+//Users reservations		
+$lang['users_rese_payfees'] = 'Zahle die Reservierungsgebühr';
+$lang['users_rese_seeshow'] = 'Siehe Konzert';
+$lang['users_rese_showended'] = 'Konzert beendet';
+$lang['users_rese_youplayin'] = 'Du spielst in ';
+$lang['users_rese_is_expired'] = 'Zu spät';
+$lang['users_rese_delayfees'] = 'Restzeit bis Zahlung';
+$lang['users_rese_cancel'] = 'Reservierung stornieren';
+$lang['users_rese_enterprice'] = 'Ticket-Preis';
+$lang['users_rese_fees'] = 'Kosten falls ausgewählt';
+$lang['users_cost_ifselected'] = 'Kosten falls ausgewählt';
+$lang['users_rese_renumartist'] = 'Vergütung';
+$lang['users_rese_status1'] = 'Zahlung schwebend';
+$lang['users_rese_status1_a'] = 'Zahlung schwebend';
+$lang['users_rese_status2'] = 'Geschlossen';
+$lang['users_rese_status3'] = 'Bestätigung schwebend';
+$lang['users_rese_needpay'] = 'Zahlung schwebend ';
+$lang['users_rese_needpaytxt'] = '<p>Wir empfehlen, vor Ablauf der Bestätigungsfrist zu zahlen.</p>	
+	<p>Danach führen wir die Veranstaltung als unbesetzt und Du wirst nicht mehr als ausgewählt geführt.</p>';
+$lang['users_rese_closedtxt'] = '<p class="fs-16 purple">Reservierung fehlgeschlagen</p>
+    <p>Hier die nicht akzeptierten Reservierungen</p>';
+$lang['users_rese_tovalidatetxt'] = '<p class=" fs-16 purple">Schwebende Reservierungen</p>	
+	<p>Diese Reservierungen sind noch unbestätigt, bitte habe etwas Geduld.</p>';
+$lang['users_rese_cancel_conf'] = 'Möchtest Du diese Reservierung stornieren?';
+$lang['users_rese_cancel_txt1'] = 'Stornierung für diese Bühne nicht empfohlen. Möglicherweise wird diese Bühne von Dir keine Reservierung mehr akzeptieren.';
+$lang['users_rese_cancel_txt2'] = 'Stornierung für diese Bühne nicht empfohlen. Die Reservierungsgebühr (abzüglich Überweisungskosten) wird erstattet.';
+$lang['users_rese_cancel_txt3'] = 'Stornierung für diese Bühne nicht empfohlen. Die Reservierungsgebühr wird nicht erstattet.';
+$lang['users_rese_cancel_txt4'] = 'Wir empfehlen dringend, NICHT zu stornieren. Tust Du es trotzdem, teile uns den Grund mit, weil wir sonst einen No-Show Vermerk mit Deinem Profil zeigen müssen!';
+$lang['users_rese_cancel_success'] = 'Die Reservierung wurde storniert.';
+$lang['users_rese_request'] = 'Reservierungsanfrage';
+$lang['users_rese_validate_artist'] = 'Künstler bestätigen';
+$lang['users_rese_refuse_artist'] = 'Möchtest Du diesen Künstler ablehnen?';
+$lang['users_rese_refuse_success'] = 'Reservierung abgelehnt.';
+$lang['users_rese_validate_success'] = 'Reservierung angenommen.';
+$lang['users_rese_pendingtxt'] = 'Reservierung: Zahlung schwebend';
+$lang['users_rese_pendingtxt2'] = 'Warteliste';
+$lang['users_rese_seereq'] = 'Reservierungsanfrage';
+$lang['users_rese_amount'] = 'Anzahl der Reservierungen';
+$lang['users_rese_event_details'] = 'Details des Auftritts';
+$lang['users_rese_artist_details'] = 'Details des Künstlers';
+$lang['users_rese_artist_band'] = 'Künstler / Band';
+$lang['users_rese_scene_stage'] = 'Bühnen';
+$lang['users_rese_paid'] = 'Reservierung bezahlt';
+$lang['users_rese_pay_error'] = 'Während der Zahlung ist ein Fehler aufgetreten, bitte kontaktiere uns für einen Statuscheck.';
 
-// Shows page
-$lang['shows_sortby1'] = 'Trier par date';
-$lang['shows_sortby2'] = 'Trier par prix entrée';
-$lang['shows_sortby3'] = 'Trier par genre musical';
-$lang['shows_inshow'] = 'en concert';
-$lang['shows_inshowat'] = 'en concert au';
-$lang['shows_seeshow'] = 'Voir Concert';
-$lang['shows_seeartist'] = 'Voir Artiste';
-$lang['shows_showinfo'] = 'Infos Concert';
-$lang['shows_stageinfo'] = 'Infos Scène';
-$lang['shows_artistinfo'] = 'Infos Artiste';
-$lang['shows_nosite'] = 'Pas de site officiel';
-$lang['shows_bandsound'] = 'Les sons du groupe';
-
-// Book page			
-$lang['book_filterresults']	 = 'Filtrer les résultats';
-$lang['book_bysort1']	 = 'Filtrer le genre musical';
-$lang['book_bysort2']	 = 'Filtrer par intervalles';
-$lang['book_bysort3']	 = 'Filtrer par type de rémunération';
-$lang['book_bysort2_1']	 = 'Réservation entre';
-$lang['book_bysort2_2']	 = 'Prix entrée entre';
-$lang['book_bysort2_3']	 = 'Horaire entre';
-$lang['book_steptxt1']	 = 'Choisissez une date </br>et cliquez sur <strong>"Réserver"</strong>.';
-$lang['book_steptxt2']	 = 'Une fois sélectionné par la Scène, vous avez <strong>48 heures</strong> pour valider votre réservation.';
-$lang['book_steptxt3']	 = 'Le jour du Concert, présentez-vous et <strong>c\'est à vous de jouer!</strong>';
-$lang['book_organiser']	 = 'est l\'organisateur';
-$lang['book_button1']	 = 'Voir ma réservation';
-$lang['book_button2']	 = 'Réserver';
-$lang['request_info']	 = 'Demander des infos';
-
-$lang['book_error1']	 = 'Pour réserver une Date, il faut être un Artiste b-onstage.';
-$lang['book_error1_1']	 = 'pour jouer live.';
-$lang['book_error2']	 = 'Les demandes de réservation de Scène ne sont faisables que par les Artistes.';
-$lang['book_req_txt1']	 = '<p class="bold"> Vous êtes sur le point d’envoyer une demande de réservation pour vous produire en concert.</p>	
-		<p class="bold">Voici les détails de la date que souhaitez réserver : </p>	';
-$lang['book_req_showdate']	 = 'Date du concert';
-$lang['book_req_txt2']	 = '<p class="bold">Une fois validée, votre demande de réservation sera envoyée à la Scène. Vous ne devrez payer les frais de réservation qu’une fois votre demande de réservation acceptée par la Scène. Vous recevrez un email (et une notification sur votre profil) lorsque votre demande aura été acceptée.</p>';
-$lang['book_req_agree']	 = 'En cochant cette case, je reconnais avoir lu et accepté <a href="#" class="purple">les conditions d’utilisations.</a>';
-$lang['book_req_success']	 = 'Votre demande a bien été prise en compte';
+// Artists page			
+$lang['artists_searchby'] 	='Suche Künstler';
+$lang['artists_searchbycity'] 	='Suche Stadt';
+$lang['artists_searchresutls'] 	='Ergebnis';
+$lang['artists_searchshowmore'] 	='Zeige weitere';
 			
+// Stage page			
+$lang['stages_searchshowmore'] 	='Zeige weitere';
+$lang['stages_searchby'] 	='Suche nach Namen';
+$lang['stages_searchresutls'] 	='Ergebnis';
 			
-// Notifications			
-$lang['notifs_1']	 = 'Votre demande de réservation a été soumise';
-$lang['notifs_2']	 = 'Vous avez reçu une demande de réservation de';
-$lang['notifs_3']	 = 'Bienvenue sur b-onstage';
-$lang['notifs_4']	 = 'a accepté votre demande de réservation';
+$lang['legend'] 				='Erläuterungen';
+
+$lang['room_size_legend'] 		='Ca. Raumgröße, Anzahl Besucher';
+$lang['stage_size_legend'] 		='Ca. Bühnengröße, Anzahl Musiker';
+$lang['microphone_legend'] 		='Microphone vorhanden?';
+$lang['speakers_legend'] 		='Speaker vorhanden?';
+$lang['amplification_legend'] 	='Mischpult vorhanden?';
+$lang['lights_legend'] 			='Spotlights vorhanden?';
+
+			
+// Shows page			
+$lang['shows_sortby1'] 	='Sortiere: Datum';
+$lang['shows_sortby2'] 	='Sortiere: Preis';
+$lang['shows_sortby3'] 	='Sortiere: Genre';
+$lang['shows_inshow'] 	='Spielt';
+$lang['shows_seeshow'] 	='Spielt bei';
+$lang['shows_showinfo'] 	='Konzert anzeigen';
+$lang['shows_inshowat'] 	='Künstlerprofil anzeigen';
+$lang['shows_stageinfo'] 	='Info: Konzert';
+$lang['shows_artistinfo'] 	='Info: Bühnen';
+$lang['shows_seeartist'] 	='Info: Künstler';
+$lang['shows_nosite'] 	='Keine Webseite';
+$lang['shows_bandsound'] 	='Songs';
+
+
+
+// Book page		
+$lang['book_filterresults'] = 'Ergebnisse filtern';
+$lang['book_bysort1'] = 'Filtern nach Genre';
+$lang['book_bysort2'] = 'Filtern nach Intervall';
+$lang['book_bysort3'] = 'Filtern nach Vergütung';
+$lang['book_bysort2_1'] = 'Buchung zwischen';
+$lang['book_bysort2_2'] = 'Eintrittspreis zwischen';
+$lang['book_bysort2_3'] = 'Zeit zwischen';
+$lang['book_steptxt1'] = 'Datum wählen </br>und klicke <strong>"Buchen"</strong>.';
+$lang['book_steptxt2'] = 'Wir bestätigen, wenn Du ausgewählt wirst. Danach hast Du <strong>48 Std.</strong> zum Bestätigen.';
+$lang['book_steptxt3'] = '<strong>”Die Bühne gehört Dir!”</strong>';
+$lang['book_organiser'] = 'veranstaltet das Konzert';
+$lang['book_button1'] = 'Meine Anfragen ansehen';
+$lang['book_button2'] = 'Buchen';
+$lang['request_info'] = 'Info anfordern';
+
+
+$lang['book_error1'] = 'Du musst eingeloggt sein um eine Anfrage zu machen.';
+$lang['book_error1_1'] = 'bewerben';
+$lang['book_error2'] = 'Nur eingeloggte Künstler können Anfragen senden.';
+$lang['book_req_txt1'] = '	<p class="bold">Du bist im Begriff, eine Anfrage zur Veranstaltung eines Konzerts zu senden.</p>	
+	<p class="bold">Hier sind die Details Deiner Anfrage:</p>';
+$lang['book_req_showdate'] = 'Datum der Veranstaltung';
+$lang['book_req_txt2'] = '<p class="bold">Deine Anfrage wird an die Bühne gesandt. Wenn Deine Anfrage von der Bühne akzeptiert wird, musst Du die Buchungsgebühr bezahlen. Du erhältst eine eMail und eine Nachricht in Deinem Profil, wenn Deine Anfrage angenommen wurde.</p>';
+$lang['book_req_agree'] = 'Ich habe die <a href="#" class="purple">Allgemeinen Bedingungen</a> gelesen und akzeptiere sie.';
+$lang['book_req_success'] = 'Deine Anfrage wurde abgesandt.';
+		
+		
+// Notifications		
+$lang['notifs_1'] = 'Deine Anfrage wurde abgesandt.';
+$lang['notifs_2'] = 'Du hast eine Anfrage erhalten';
+$lang['notifs_3'] = 'Willkommen bei b-onstage';
+$lang['notifs_4'] = 'hat Deine Anfrage angenommen.';
 
 
 // Calendar months and day names
-$lang['calendar_month_1'] = 'Janvier';
-$lang['calendar_month_2'] = 'Février';
-$lang['calendar_month_3'] = 'Mars';
-$lang['calendar_month_4'] = 'Avril';
+$lang['calendar_month_1'] = 'Januar';
+$lang['calendar_month_2'] = 'Februar';
+$lang['calendar_month_3'] = 'März';
+$lang['calendar_month_4'] = 'April';
 $lang['calendar_month_5'] = 'Mai';
-$lang['calendar_month_6'] = 'Juin';
-$lang['calendar_month_7'] = 'Juillet';
-$lang['calendar_month_8'] = 'Août';
-$lang['calendar_month_9'] = 'Septembre';
-$lang['calendar_month_10'] = 'Octobre';
-$lang['calendar_month_11'] = 'Novembre';
-$lang['calendar_month_12'] = 'Décembre';
-$lang['calendar_shortmonth_1'] = 'janv.';
-$lang['calendar_shortmonth_2'] = 'févr.';
-$lang['calendar_shortmonth_3'] = 'mars';
-$lang['calendar_shortmonth_4'] = 'avr.';
-$lang['calendar_shortmonth_5'] = 'mai';
-$lang['calendar_shortmonth_6'] = 'juin';
-$lang['calendar_shortmonth_7'] = 'juil.';
-$lang['calendar_shortmonth_8'] = 'août';
-$lang['calendar_shortmonth_9'] = 'sept.';
-$lang['calendar_shortmonth_10'] = 'oct.';
-$lang['calendar_shortmonth_11'] = 'nov.';
-$lang['calendar_shortmonth_12'] = 'déc.';
-$lang['calendar_day_0'] = 'Dimanche';
-$lang['calendar_day_1'] = 'Lundi';
-$lang['calendar_day_2'] = 'Mardi';
-$lang['calendar_day_3'] = 'Mercredi';
-$lang['calendar_day_4'] = 'Jeudi';
-$lang['calendar_day_5'] = 'Vendredi';
-$lang['calendar_day_6'] = 'Samedi';
-$lang['calendar_shortday_0'] = 'Dim';
-$lang['calendar_shortday_1'] = 'Lun';
-$lang['calendar_shortday_2'] = 'Mar';
-$lang['calendar_shortday_3'] = 'Mer';
-$lang['calendar_shortday_4'] = 'Jeu';
-$lang['calendar_shortday_5'] = 'Ven';
-$lang['calendar_shortday_6'] = 'Sam';
-$lang['calendar_year'] = 'Année';
-$lang['calendar_years'] = 'Années';
-$lang['calendar_month'] = 'Mois';
-$lang['calendar_months'] = 'Mois';
-$lang['calendar_week'] = 'Semaine';
-$lang['calendar_weeks'] = 'Semaines';
-$lang['calendar_day'] = 'Jour';
-$lang['calendar_days'] = 'Jours';
-$lang['calendar_hour'] = 'Heure';
-$lang['calendar_hours'] = 'Heures';
+$lang['calendar_month_6'] = 'Juni';
+$lang['calendar_month_7'] = 'Juli';
+$lang['calendar_month_8'] = 'August';
+$lang['calendar_month_9'] = 'September';
+$lang['calendar_month_10'] = 'Oktober';
+$lang['calendar_month_11'] = 'November';
+$lang['calendar_month_12'] = 'Dezember';
+$lang['calendar_shortmonth_1'] = 'Jan.';
+$lang['calendar_shortmonth_2'] = 'Feb.';
+$lang['calendar_shortmonth_3'] = 'März';
+$lang['calendar_shortmonth_4'] = 'Apr.';
+$lang['calendar_shortmonth_5'] = 'Mai';
+$lang['calendar_shortmonth_6'] = 'Juni';
+$lang['calendar_shortmonth_7'] = 'Juli';	
+$lang['calendar_shortmonth_8'] = 'Aug.';
+$lang['calendar_shortmonth_9'] = 'Sep.';
+$lang['calendar_shortmonth_10'] = 'Okt.';
+$lang['calendar_shortmonth_11'] = 'Nov.';
+$lang['calendar_shortmonth_12'] = 'Dez.';
+$lang['calendar_day_0'] = 'Sonntag';
+$lang['calendar_day_1'] = 'Montag';
+$lang['calendar_day_2'] = 'Dienstag';
+$lang['calendar_day_3'] = 'Mittwoch';
+$lang['calendar_day_4'] = 'Donnerstag';
+$lang['calendar_day_5'] = 'Freitag';
+$lang['calendar_day_6'] = 'Samstag';
+$lang['calendar_shortday_0'] = 'So';
+$lang['calendar_shortday_1'] = 'Mo';
+$lang['calendar_shortday_2'] = 'Di';
+$lang['calendar_shortday_3'] = 'Mi';
+$lang['calendar_shortday_4'] = 'Do';
+$lang['calendar_shortday_5'] = 'Fr';
+$lang['calendar_shortday_6'] = 'Sa';
+$lang['calendar_year'] = 'Jahr';
+$lang['calendar_years'] = 'Jahre';
+$lang['calendar_month'] = 'Monat';
+$lang['calendar_months'] = 'Monate';
+$lang['calendar_week'] = 'Woche';
+$lang['calendar_weeks'] = 'Wochen';
+$lang['calendar_day'] = 'Tag';
+$lang['calendar_days'] = 'Tage';
+$lang['calendar_hour'] = 'Stunde';
+$lang['calendar_hours'] = 'Stunden';
 $lang['calendar_minute'] = 'Minute';
-$lang['calendar_minutes'] = 'Minutes';
-$lang['calendar_second'] = 'Seconde';
-$lang['calendar_seconds'] = 'Secondes';
-$lang['calendar_y'] = 'a';
-$lang['calendar_m'] = 'm';
-$lang['calendar_w'] = 's';
-$lang['calendar_d'] = 'j';
+$lang['calendar_minutes'] = 'n';
+$lang['calendar_second'] = 'Sekunde';
+$lang['calendar_seconds'] = 'Sekunden';
+$lang['calendar_y'] = 'J';
+$lang['calendar_m'] = 'M';
+$lang['calendar_w'] = 'W';
+$lang['calendar_d'] = 'D';
 
 
 // Redactor
-$lang['redactor_html'] = 'Code HTML';
-$lang['redactor_video'] = 'Insérer une vidéo...';
-$lang['redactor_image'] = 'Insérer une image...';
-$lang['redactor_table'] = 'Tableau';
-$lang['redactor_link'] = 'Lien';
-$lang['redactor_link_insert'] = 'Insérer un lien...';
-$lang['redactor_unlink'] = 'Supprimer le lien';
-$lang['redactor_formatting'] = 'Styles';
-$lang['redactor_paragraph'] = 'Paragraphe';
-$lang['redactor_quote'] = 'Citation';
-$lang['redactor_code'] = 'Code';
-$lang['redactor_header1'] = 'Titre 1';
-$lang['redactor_header2'] = 'Titre 2';
-$lang['redactor_header3'] = 'Titre 3';
-$lang['redactor_header4'] = 'Titre 4';
-$lang['redactor_bold'] = 'Gras';
-$lang['redactor_italic'] = 'Italique';
-$lang['redactor_fontcolor'] = 'Couleur du texte';
-$lang['redactor_backcolor'] = 'Couleur d\'arrière plan du texte';
-$lang['redactor_unorderedlist'] = 'Liste à puces';
-$lang['redactor_orderedlist'] = 'Liste numérotée';
-$lang['redactor_outdent'] = 'Diminuer le trait';
-$lang['redactor_indent'] = 'Augmenter le trait';
-$lang['redactor_cancel'] = 'Annuler';
-$lang['redactor_insert'] = 'Insérer';
-$lang['redactor_save'] = 'Sauvegarder';
-$lang['redactor__delete'] = 'Supprimer';
-$lang['redactor_insert_table'] = 'Insérer un tableau...';
-$lang['redactor_insert_row_above'] = 'Ajouter une rangée au-dessus';
-$lang['redactor_insert_row_below'] = 'Ajouter une rangée en-dessous';
-$lang['redactor_insert_column_left'] = 'Ajouter une colonne à gauche';
-$lang['redactor_insert_column_right'] = 'Ajouter une colonne à droite';
-$lang['redactor_delete_column'] = 'Supprimer la colonne';
-$lang['redactor_delete_row'] = 'Supprimer la rangée';
-$lang['redactor_delete_table'] = 'Supprimer le tableau';
-$lang['redactor_rows'] = 'Rangées';
-$lang['redactor_columns'] = 'Colonnes';
-$lang['redactor_add_head'] = 'Ajouter un en-tête';
-$lang['redactor_delete_head'] = 'Supprimer l\'en-tête';
-$lang['redactor_title'] = 'Titre';
-$lang['redactor_image_position'] = 'Position';
-$lang['redactor_none'] = 'Aucun';
-$lang['redactor_left'] = 'Gauche';
-$lang['redactor_right'] = 'Droite';
-$lang['redactor_image_web_link'] = 'Adresse URL de l\'image';
-$lang['redactor_text'] = 'Texte';
-$lang['redactor_mailto'] = 'Courriel';
-$lang['redactor_web'] = 'Adresse URL';
-$lang['redactor_video_html_code'] = 'Code d\'intégration du vidéo';
-$lang['redactor_file'] = 'Insérer un fichier...';
-$lang['redactor_upload'] = 'Téléverser';
-$lang['redactor_download'] = 'Télécharger';
-$lang['redactor_choose'] = 'Choisir';
-$lang['redactor_or_choose'] = 'Ou choisissez';
-$lang['redactor_drop_file_here'] = 'Déposez le fichier ici';
-$lang['redactor_align_left'] = 'Aligner à gauche';
-$lang['redactor_align_center'] = 'Aligner au centre';
-$lang['redactor_align_right'] = 'Aligner à droite';
-$lang['redactor_align_justify'] = 'Justifier';
-$lang['redactor_horizontalrule'] = 'Insérer une ligne horizontale';
-$lang['redactor_deleted'] = 'Supprimé';
-$lang['redactor_anchor'] = 'Ancre';
-$lang['redactor_link_new_tab'] = 'Ouvrir le lien dans un nouvel onglet';
-$lang['redactor_underline'] = 'Underline';
-$lang['redactor_alignment'] = 'Alignment';
+$lang['redactor_html'] = 	 'HTML';
+$lang['redactor_video'] = 	 'Video einfügen';
+$lang['redactor_image'] = 	 'Bild einfügen';
+$lang['redactor_table'] = 	 'Tabelle';
+$lang['redactor_link'] = 	 'Link';
+$lang['redactor_link_insert'] = 	 'Link einfügen';
+$lang['redactor_unlink'] = 	 'Link entfernen';
+$lang['redactor_formatting'] = 	 'Formatieren';
+$lang['redactor_paragraph'] = 	 'Absatz';
+$lang['redactor_quote'] = 	 'Zitat';
+$lang['redactor_code'] = 	 'Code';
+$lang['redactor_header1'] = 	 'Überschrift 1';
+$lang['redactor_header2'] = 	 'Überschrift 2';
+$lang['redactor_header3'] = 	 'Überschrift 3';
+$lang['redactor_header4'] = 	 'Überschrift 4';
+$lang['redactor_bold'] = 	  'Fett';
+$lang['redactor_italic'] = 	 'Kursiv';
+$lang['redactor_fontcolor'] = 	 'Schriftfarbe';
+$lang['redactor_backcolor'] = 	 'Hintergrundfarbe';
+$lang['redactor_unorderedlist'] = 	 'Ungeordnete Liste';
+$lang['redactor_orderedlist'] = 	 'Geordnete Liste';
+$lang['redactor_outdent'] = 	 'Ausrücken';
+$lang['redactor_indent'] = 	 'Einrücken';
+$lang['redactor_cancel'] = 	 'Löschen';
+$lang['redactor_insert'] = 	 'Einfügen';
+$lang['redactor_save'] = 	 'Speichern';
+$lang['redactor__delete'] = 	 'Löschen';
+$lang['redactor_insert_table'] = 	 'Tabelle einfügen';
+$lang['redactor_insert_row_above'] = 	 'Zeile oben einfügen';
+$lang['redactor_insert_row_below'] = 	 'Zeile unten einfügen';
+$lang['redactor_insert_column_left'] = 	 'Spalte links einfügen';
+$lang['redactor_insert_column_right'] = 	 'Spalte rechts einfügen';
+$lang['redactor_delete_column'] = 	 'Spalte löschen';
+$lang['redactor_delete_row'] = 	 'Zeile löschen';
+$lang['redactor_delete_table'] = 	 'Tabelle löschen';
+$lang['redactor_rows'] = 	 'Zeilen';
+$lang['redactor_columns'] = 	 'Spalten';
+$lang['redactor_add_head'] = 	 'Kopfzeile einfügen';
+$lang['redactor_delete_head'] = 	 'Kopfzeile löschen';
+$lang['redactor_title'] = 	 'Titel';
+$lang['redactor_image_position'] = 	 'Ausrichtung';
+$lang['redactor_none'] = 	 'keine';
+$lang['redactor_left'] = 	 'links';
+$lang['redactor_right'] = 	 'rechts';
+$lang['redactor_image_web_link'] = 	 'Bild URL';
+$lang['redactor_text'] = 	 'Text';
+$lang['redactor_mailto'] = 	 'eMail';
+$lang['redactor_web'] = 	 'URL';
+$lang['redactor_video_html_code'] = 	 'Einbettungscode Video';
+$lang['redactor_file'] = 	 'Datei einfügen';
+$lang['redactor_upload'] = 	 'Hochladen';
+$lang['redactor_download'] = 	 'Herunterladen';
+$lang['redactor_choose'] = 	 'Auswählen';
+$lang['redactor_or_choose'] = 	 'Oder auswählen';
+$lang['redactor_drop_file_here'] = 	 'Datei hierher ziehen';
+$lang['redactor_align_left'] = 	'Text linksbündig';
+$lang['redactor_align_center'] = 	 'Text zentrieren';
+$lang['redactor_align_right'] = 	 'Text rechtsbündig';
+$lang['redactor_align_justify'] = 	 'Text Blocksatz';
+$lang['redactor_horizontalrule'] = 	 'Horizontale Linie einfügen';
+$lang['redactor_deleted'] = 	 'gelöscht';
+$lang['redactor_anchor'] = 	 'Anker';
+$lang['redactor_link_new_tab'] = 	 'Link in neuem Tab öffnen';
+$lang['redactor_underline'] = 	 'Unterstreichen';
+$lang['redactor_alignment'] = 	 'Ausrichtung';
 
+// emails
+$lang['forgot_password_email1_subject'] 	 = 'Verifizierung des verlorenen Passworts';
+$lang['forgot_password_email1_txt1'] 		 = 'Wir setzen das Passwort zurück für:';
+$lang['forgot_password_email1_txt2'] 		 = 'Bitte klicke auf diesen Link um';
+$lang['forgot_password_email1_txt3'] 		 = 'das Passwort zurückzusetzen';
 
-//emails
-$lang['forgot_password_email1_subject'] = 'Vérification pour Mot de passe oublié';
-$lang['forgot_password_email1_txt1'] = 'Réinitialiser le mot de passe';
-$lang['forgot_password_email1_txt2'] = 'Cliquer sur ce lien pour';
-$lang['forgot_password_email1_txt3'] = 'réinitialiser votre mot de passe';
-$lang['forgot_password_email2_subject'] = 'Nouveau Mot de passe';
-$lang['forgot_password_email2_txt1'] = 'Nouveau Mot de passe';
-$lang['forgot_password_email2_txt2'] = 'Votre mot de passe a été réinitialisé à';
+$lang['forgot_password_email2_subject'] 	 = 'Neues Passwort';
+$lang['forgot_password_email2_txt1'] 		 = 'Neues Passwort für:';
+$lang['forgot_password_email2_txt2'] 		 = 'Dein Passwort wurde zurückgesetzt auf:';
 
-$lang['signup_active_email_subj'] = 'Activez votre compte';
-$lang['signup_active_email_txt1'] = '<p>Merci pour votre inscription</p><p>Plus qu\'un click pour profiter du réseau b-onstage</p>';
-$lang['signup_active_email_txt2'] = 'Activez le compte ';	
-$lang['signup_active_email_txt3'] = '<br />L\'équipe b-onstage<br /><br />';
+$lang['signup_active_email_subj'] ='Aktiviere Deinen Account    ';
+$lang['signup_active_email_txt1'] ='<p>Danke für Deine Anmeldung!</p><p>Bitte bestätigen Deinen Account bei b-onstage mit einem Klick</p>';
+$lang['signup_active_email_txt2'] ='Aktiviere den Account ';
+$lang['signup_active_email_txt3'] ='<br />Dein b-onstage Team<br /><br />';
 
-$lang['signup_stage_email_subject'] = 'Pré-inscription à b-onstage';
-$lang['signup_stage_email_txt'] = '	<h1 style="font-size:18px;font-family:\'Arial\',sans-serif;color:#8e2c86;">Bonjour,</h1>
-	<p>Nous avons bien reçu votre demande d\'inscription.</p>
-	<p>Vous serez contacté dans les prochains jours par notre équipe, afin de convenir d\'un rendez-vous.</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Nous vous expliquerons alors comment le site fonctionne et nous vous assisterons dans la création de votre Profil b-onstage.</p>
+$lang['signup_stage_email_subject'] = 'Registrierung';
+$lang['signup_stage_email_txt'] = '	<h1 style="font-size:18px;font-family:\'Arial\',sans-serif;color:#8e2c86;">Hi,</h1>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Wir haben Deine Anmeldung erhalten.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Unser Team nimmt zur Vereinbarung eines Termins in Kürze Kontakt auf.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">So können wir Details erläutern und zeigen, wie Du die meisten Vorteile aus b-onstage ziehen kannst.</p>
 	<br />
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">A bientôt</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Bis bald!</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>
 	<br />';
 
-$lang['signup_stage_email_txt_ref'] = '	<h1 style="font-size:18px;font-family:\'Arial\',sans-serif;color:#8e2c86;">Bonjour,</h1>
-	<p>Nous avons bien reçu votre demande d\'inscription.</p>
-	<p>Nous allons contacter la Scène dans les prochains jours pour parler des détails.</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Vous n\'avez plus rien à faire, nous vous reverserons 50% des frais b-onstage perçus sur chaque concert.</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Vous devriez parler de b-onstage autour de vous et améliorer la visibilité de la Scène que vous venez de nous recommander.</p>
+$lang['signup_stage_email_txt_ref'] = '	<h1 style="font-size:18px;font-family:\'Arial\',sans-serif;color:#8e2c86;">Hallo,</h1>
+	<p>Wir haben Deine Anfrage erhalten.</p>
+	<p>Wir setzen uns in den nächsten Tagen mit der Bühne in Verbindung, um Details festzulegen.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Du musst nichts weiter unternehmen.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Rede weiter über b-onstage und vergrößere so die Publizität der von Dir empfohlenen Bühne.</p>
 	<br />
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">A bientôt</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Bis bald!</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>
 	<br />';
 
-	
-$lang['signup_stage_confirmation_email_subject'] = 'Confirmation de votre inscription à b-onstage';
-$lang['signup_stage_confirmation_email_txt1'] = '<p style="font-size:18px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Bienvenue dans le réseau b-onstage,</p>	
+
+$lang['signup_stage_confirmation_email_subject'] = 'Bestätigung Deiner Registrierung';
+$lang['signup_stage_confirmation_email_txt1'] = '<p style="font-size:18px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Willkommen zu b-onstage,</p>	
 	<br />
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Rappel de vos identifiants :</p>';
-$lang['signup_stage_confirmation_email_txt2'] = 'Vous pouvez désormais :</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Créer vos premier Évènements et Concert.</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Rechercher et communiquer avec des Artistes.</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Ajouter du contenu sur votre Profil (vidéos, photos)</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Pour vous rendre sur votre profil,';
-$lang['signup_stage_confirmation_email_txt3'] = 'Pour comprendre comment b-onstage fonctionne,';
-$lang['signup_stage_confirmation_email_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Pour toute question ou demande d\'information sur nos services, écrivez-nous à l\'adresse info@b-onstage.com</p>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Maintenant..... c’est à vous de jouer!!</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">Deine Daten:</p>';
+$lang['signup_stage_confirmation_email_txt2'] = 'Du kannst jetzt:</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Deine eigenen Veranstaltungen auflegen</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Nach Künstlern suchen</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Deine Profile Inhalte hinzufügen</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Um auf  Profil zuzugreifen,';
+$lang['signup_stage_confirmation_email_txt3'] = 'Um zu verstehen, wie b-onstage funktioniert,';
+$lang['signup_stage_confirmation_email_txt4'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Bitte lass uns wissen, wenn Du mehr Informationen möchtest. Sende eine eMail an: support@b-onstage.com</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Jetzt... gehört die Bühne Dir!</p>
 	<br/>
-	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">L\'équipe b-onstage.</p>
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;font-weight:bold;">b-onstage.</p>
 	<br />';
 
-$lang['users_rese_refuse_email_subject'] = 'Demande de réservation refusée';
-$lang['users_rese_refuse_email_txt1'] = 'Désolé! Votre demande de réservation suivante <strong>n’a pas été retenue:</strong>';
-$lang['users_rese_refuse_email_txt2'] = 'Code de réservation  ';
-$lang['users_rese_refuse_email_txt3'] = 'En attendant votre prochaine réservation, pensez à améliorer votre profil. Vous pouvez y ajouter votre musique , vos vidéos, vos photos, etc.<br/>';
-$lang['users_rese_refuse_email_txt4'] = 'À bientôt.<br/>
-<br/>L\'équipe b-onstage.<br/><br />'
-	;
-$lang['users_rese_refuse_email_txt5'] = 'Faire une nouvelle réservation';
+$lang['users_rese_refuse_email_subject'] = 'Anfrage abgelehnt   ';
+$lang['users_rese_refuse_email_txt1'] = 'Leider wurde Deine Anfrage <strong>nicht akzeptiert </strong>';
+$lang['users_rese_refuse_email_txt2'] = 'Reservierungsnummer  ';
+$lang['users_rese_refuse_email_txt3'] = 'Während Du auf Deinen nächsten Termin wartest, versuche doch, Dein Profil zu verbessern. Mehr Inhalt erhöht Deine Erfolgs-Chancen!</p>	';
+$lang['users_rese_refuse_email_txt4'] = 'Bis bald!<br />	
+	<br />Dein b-onstage Team<br /><br />';	
+$lang['users_rese_refuse_email_txt5'] = 'Mache eine neue Reservierung';
 
-$lang['users_rese_accepted_email_subject'] = 'Demande de réservation acceptée';
-$lang['users_rese_accepted_email_txt1'] = 'Félicitations! Votre demande de réservation suivante <strong>à été acceptée :</strong>';
-$lang['users_rese_accepted_email_txt2'] = 'ATTENTION !! Vous avez 48 heures pour valider cette réservation et effectuer le paiement depuis votre espace b-onstage. Passé ce délai, votre réservation sera annulée!!';
-$lang['users_rese_accepted_email_txt3'] = 'Cliquez ici pour voir votre réservation dans votre espace b-onstage  ';
-$lang['users_rese_accepted_email_txt4'] = 'Maintenant..... c’est à vous de jouer!!<br/>
-<br />L\'équipe b-onstage.<br/><br />';
+$lang['users_rese_accepted_email_subject'] = 'Anfrage angenommen';
+$lang['users_rese_accepted_email_txt1'] = 'Herzlichen Glückwunsch! Die folgende Anfrage <strong>wurde akzeptiert!</strong>';
+$lang['users_rese_accepted_email_txt2'] = 'ACHTUNG! Du hast 48 Stunden, um Deine Anfrage zu bestätigen und die Zahlung von Deinem Konto bei www.b-onstage.com zu leisten. Nach Ablauf dieser Frist wird Deine Anfrage sonst storniert.';
+$lang['users_rese_accepted_email_txt3'] = 'Klicke hier, um die Anfrage in Deinem Account anzusehen  ';
+$lang['users_rese_accepted_email_txt4'] = 'Jetzt gehört die Bühne Dir! <br/>	
+	Dein b-onstage Team<br />	
+	<br />';	
 
-$lang['book_req_email_stage_subject']	 = 'Vous avez reçu une demande de réservation';
-$lang['book_req_email_stage_txt1']	 = 'Vous avez reçu la demande de';
-$lang['book_req_email_stage_txt2']	 = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;"><a href="/user/calendar"><strong>Cliquez ici</strong></a> pour accéder à votre calendrier dans votre espace b-onstage.</p>';
-$lang['book_req_email_stage_txt3']	 = 'Cet Artiste souhaite se produire dans votre établissement le';
-$lang['book_req_email_stage_txt4']	 = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Voir la fiche de l’artiste sur b-onstage.com</p>	
-		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Vous pouvez valider cette réservation (et ainsi sélectionner l’artiste), ou la laisser dans la liste de réservation. Cela vous permettra d’accepter cette réservation plus tard, si vous le souhaitez.</p>	
-		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Cliquez-ici pour voir la liste de vos demandes de réservation dans votre espace b-onstage.</p>	
-		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Si vous acceptez une réservation, un mail sera envoyé à l’artiste. Il aura alors 48h pour effectuer le paiement, sans quoi nous annulerons sa réservation et nous vous en avertirons.</p>	
-		<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">L\'équipe b-onstage.</p>	
-		<br />';	
-
-$lang['book_req_email_artist_subject']	 = 'Votre demande de réservation n°';
-$lang['book_req_email_artist_txt1']	 = 'Vous avez fait la demande de réservation suivante :';
-$lang['book_req_email_artist_txt2'] = '
-	Votre demande a été envoyée à la scène.	<br/>
-	Nous vous informerons si vous êtes acceptés ou pas.<br/>	
+$lang['book_req_email_artist_subject'] = 'Deine Reservierung Nummer:';
+$lang['book_req_email_artist_txt1'] = 'Du hast angefragt:';
+$lang['book_req_email_artist_txt2'] = 'Deine Anfrage wurde an die Bühne gesandt.	<br/>
+	Wir informieren Dich, ob Deine Anfrage angenommen wurde, oder nicht.<br/>	
 	<br/>	
-	Si votre demande est acceptée vous recevrez un lien vers le portail de paiement. Vous aurez 48h pour faire le paiement, sinon nous devrons annuler votre demande.<br/>	
-	<br/>A bientôt.<br/>	
-	<br />L\'équipe b-onstage<br /><br />';	
+	Wenn Deine Bewerbung angenommen wird, erhältst Du eine eMail mit einem Link zur Zahlungsseite. Du musst dann innerhalb von 48 Std. zahlen, weil wir sonst Deine Buchung stornieren müssen.<br/>	
+	<br/>Bis bald!<br/>	
+	<br />Dein b-onstage Team<br /><br />';	
 
-$lang['email_footer'] ='Merci de ne pas utiliser la fonction "Répondre" de votre messagerie.<br />	
-	Si vous rencontrez des problèmes avec notre site ou nos services, écrivez-nous à l\'adresse support@b-onstage.com.<br />
-	Afin de rendre b-onstage le plus utile et agréable pour vous, nous vous encourageons à nous envoyer toutes vos suggestions à l\'adresse suggestion@b-onstage.com.<br />';
+$lang['book_req_email_stage_subject'] = 'Du hast eine Anfrage erhalten';
+$lang['book_req_email_stage_txt1'] = 'Du hast eine Anfrage erhalten von:';
+$lang['book_req_email_stage_txt2'] = '<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;"><a href="/user/calendar"><strong>Klicke hier</strong></a> um Deinen Kalender anzusehen.</p>';
+$lang['book_req_email_stage_txt3'] = 'Dieser Künstler hat Interesse an einem Auftritt bei Dir';
+$lang['book_req_email_stage_txt4'] = '	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;"> Sieh Dir das Profil des Künstlers auf b-onstage.com an</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Du kannst die Reservierung bestätigen und den Künstler akzeptieren, oder die Anfrage in der Reservierungsliste belassen. Du kannst die Reservierung auf Wunsch auch später annehmen.</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Klicke hier, um eine Liste der Anfragen anzusehen.</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Wenn Du die Reservierung annimmst, hat der Künstler 48 Std. um die Reservierungsgebühr zu zahlen. Erfolgt keine Zahlung, stornieren wir die Anfrage.</p>	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">b-onstage.</p>	
+	<br />	
+	<p style="font-size:15px;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Bitte antworte nicht auf diese Mail</p>	
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Wenn Du Probleme mit der Webseite hast, schreibe bitze an support@b-onstage.com</p>	
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Wir verbessern die Seite täglich. Wenn Du uns Feedback geben willst, schreibe bitte an suggestion@b-onstage.com</p>	
+	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Wenn Du zukünftige keine eMails mehr von uns erhalten möchtest, klicke hier.</p>';
+
+$lang['email_footer'] ='Bitte antworte nicht auf diese Mail<br />
+	Wenn Du Probleme mit der Webseite hast, schreibe bitze an support@b-onstage.com<br />
+	Wir verbessern die Seite täglich. Wenn Du uns Feedback geben willst, schreibe bitte an suggestion@b-onstage.com';
