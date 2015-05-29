@@ -40,6 +40,8 @@
                                 <dt class="title fs-16">Language</dt>
                                 <dd><a href='/langswitch/switchLanguage/english'>English</a></dd>						
                                 <dd><a href='/langswitch/switchLanguage/french'>Francais</a></dd>						
+                                <dd><a href='/langswitch/switchLanguage/german'>Deutsch</a></dd>						
+
                             </dl>
                         </div>
                     </div>

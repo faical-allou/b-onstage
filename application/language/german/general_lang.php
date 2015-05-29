@@ -551,7 +551,7 @@ $lang['terms_of_services_txt'] = '<p>Diese Vereinbarung regelt ausschließlich d
 <p><strong>6.2.</strong> Änderungen und Stornierungen müssen über das Buchungssystem der Webseite vorgenommen werden.</p>
 <p><strong>6.3.</strong> Für den Fall der Stornierung behält sich MYBANDONSTAGE das Recht vor, diese Stornierung zur Information für andere Nutzer zu veröffentlichen.</p>
 <p><strong>6.4.</strong> Für den Fall der verspäteten oder nachträglichen Stornierung behält sich MYBANDONSTAGE das Recht vor, einen deutlichen Hinweis darauf am Nutzerprofil des Stornierenden zur Information für andere Nutzer zu veröffentlichen.</p>
-<p><strong>6.5.</strong> Eine Änderung der Veranstaltung kann nur einvernehmlich zwischen Künstler und Bühne erfolgen. Anderenfalles gilt die Veranstaltung als durchgeführt, die Regelungen aus Satz 4 finden Anwendung.</p>
+<p><strong>6.5.</strong> Eine Änderung der Veranstaltung kann nur einvernehmlich zwischen Künstler und Bühne erfolgen. Anderenfalles gilt die Veranstaltung als durchgeführt, die Regelungen aus Satz 6.4. finden Anwendung.</p>
 <p><strong>6.6.</strong> Storniert der Künstler weniger als 2 Wochen vor Veranstaltungstermin, werden Buchungspreis und Gebühren gemäß Artikel 5 einbehalten.</p>
 <p><strong>6.6.</strong> Storniert der Künstler mehr als 2 Wochen vor Veranstaltungstermin, werden Buchungspreis und Gebühren in voller Höhe erstattet.</p>
 <p><strong>6.7.</strong> Erfolgt die Stornierung durch die Bühne, werden dem Künstler Buchungspreis und Gebühren in voller Höhe erstattet.</p>
@@ -898,7 +898,7 @@ $lang['users_page_roomsize'] = 'Raumgröße';
 $lang['users_page_inputroomsize'] = 'Raumgröße, Anzahl Besucher';
 $lang['users_page_stagesize'] = 'Bühnengröße';
 $lang['users_page_inputstagesize'] = 'Bühnengröße, Anzahl Musiker';
-$lang['users_page_microphone'] = 'Microphone';
+$lang['users_page_microphone'] = 'Mikrophone';
 $lang['users_page_inputequipment'] = 'Erklären oder leer wenn nicht verfügbar';
 $lang['users_page_speakers'] = 'Speaker';
 $lang['users_page_amplification'] = 'Mischpult';
@@ -969,7 +969,7 @@ $lang['legend'] 				='Erläuterungen';
 
 $lang['room_size_legend'] 		='Ca. Raumgröße, Anzahl Besucher';
 $lang['stage_size_legend'] 		='Ca. Bühnengröße, Anzahl Musiker';
-$lang['microphone_legend'] 		='Microphone vorhanden?';
+$lang['microphone_legend'] 		='Mikrophone vorhanden?';
 $lang['speakers_legend'] 		='Speaker vorhanden?';
 $lang['amplification_legend'] 	='Mischpult vorhanden?';
 $lang['lights_legend'] 			='Spotlights vorhanden?';
@@ -1163,7 +1163,7 @@ $lang['forgot_password_email2_txt1'] 		 = 'Neues Passwort für:';
 $lang['forgot_password_email2_txt2'] 		 = 'Dein Passwort wurde zurückgesetzt auf:';
 
 $lang['signup_active_email_subj'] ='Aktiviere Deinen Account    ';
-$lang['signup_active_email_txt1'] ='<p>Danke für Deine Anmeldung!</p><p>Bitte bestätigen Deinen Account bei b-onstage mit einem Klick</p>';
+$lang['signup_active_email_txt1'] ='<p>Danke für Deine Anmeldung!</p><p>Bitte bestätige Deinen Account bei b-onstage mit einem Klick</p>';
 $lang['signup_active_email_txt2'] ='Aktiviere den Account ';
 $lang['signup_active_email_txt3'] ='<br />Dein b-onstage Team<br /><br />';
 
@@ -1245,5 +1245,5 @@ $lang['book_req_email_stage_txt4'] = '	<p style="font-size:15px;font-family:\'Ar
 	<p style="font-size:11px;font-weight:bold;font-family:\'Arial\',sans-serif;color:#3a3a3a;">Wenn Du zukünftige keine eMails mehr von uns erhalten möchtest, klicke hier.</p>';
 
 $lang['email_footer'] ='Bitte antworte nicht auf diese Mail<br />
-	Wenn Du Probleme mit der Webseite hast, schreibe bitze an support@b-onstage.com<br />
+	Wenn Du Probleme mit der Webseite hast, schreibe bitte an support@b-onstage.com<br />
 	Wir verbessern die Seite täglich. Wenn Du uns Feedback geben willst, schreibe bitte an suggestion@b-onstage.com';
