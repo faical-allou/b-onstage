@@ -373,7 +373,7 @@ concert
 #loader-more-concert{display:none;text-align:center;}
 
 .filter-concert{	
-	width:25%;	
+	width:20%;	
 	vertical-align:top;
 	padding:0;
 	border-right:2px solid #eaeaea;
@@ -387,7 +387,7 @@ concert
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 );
 }
 
-.result-concert{width:75%;vertical-align:top;padding:0;}
+.result-concert{width:80%;vertical-align:top;padding:0;}
 
 .line-concert{border-top:1px solid #eaeaea;}
 .line-concert > div.inner{position:relative;overflow:hidden;}

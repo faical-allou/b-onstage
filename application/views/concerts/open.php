@@ -18,8 +18,8 @@ var entry_min = <?=$entry_min?>;
 var entry_max = <?=$entry_max?>;
 </script>
 
-<div id="concert" class="container_12">
-	<div class="grid_12 ui-corner-all bs-black bg-white mb-20">
+<div id="concert" class=" p-10">
+	<div class="grid_12 ui-corner-all bg-white">
 		<table width="100%"><tbody><tr>
 			<td class="filter-concert">				
 				<div class="p-10 fs-16 white title bg-black ui-corner-tl"><?php echo lang("book_filterresults") ?></div>					
@@ -65,7 +65,7 @@ var entry_max = <?=$entry_max?>;
 					</div>
 -->
 					<!--payment type-->
-					<div class="p-20">					
+					<div class="p-5">					
 						<div class="mb-10 purple title fs-16"><?php echo lang("book_bysort3") ?></div>
 						<div id="filter-payment">
 							<!--payment amount-->
