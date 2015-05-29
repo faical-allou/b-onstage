@@ -14,8 +14,8 @@
 		<div class="about">	
 			<?php echo lang("aboutus_txt_howimakemoney") ?>
 		</div>
-		<div class="about">	
-			<a href="/signup_stage_ref" class="bold"><?php echo lang("aboutus_txt_howimakemoney_ref") ?></a>
+		<div class="about ta-c">
+			<?=heading(anchor(site_url('signup_stage_ref'),lang("aboutus_txt_howimakemoney_ref"), array('class' => 'purple fs-16 ')))?>		
 		</div>
 		<div class="about">
 			<?=heading(anchor(site_url('signup'),lang("aboutus_header3_aboutus"), array('class' => 'purple')).' '.lang("aboutus_header4_aboutus"), 2, 'class="fs-24 title grey"')?>	
