@@ -27,8 +27,8 @@ class Concerts extends CI_Controller {
 
 		if( ! $search = $this->session->userdata('concertsearch')){	
 			$search['search-status'] = 'open';
-			$search['search-date-start'] = date('Y-m-d');			
-			$search['search-date-end'] = date('Y-m-d', strtotime("+3 months"));		
+			$search['search-date-start'] = date('Y-m-d', strtotime("+7 days"));			
+			$search['search-date-end'] = date('Y-m-d', strtotime("+21 days"));		
 			$search['search-city'] = null;
 		}	
 	

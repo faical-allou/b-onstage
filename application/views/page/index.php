@@ -1,4 +1,4 @@
-<div id="page" class="container_12 mt-20 mb-20">
+<div id="page" class="container_12 mb-20">
 	<div class="grid_12 clearfix ui-corner-top">					
 		<!--header-->
 		<header class=" bg-white mb-20 mt-20 ui-corner-all">			
@@ -126,7 +126,7 @@
 		
 
 		<!--finish mode edit-->
-		<div id="finished-editing" class="ui-corner-all bs-black mb-20">
+		<div id="finished-editing" class="ui-corner-all bs-black	">
 			<div class="clearfix p-10">				
 				<span class="right ml-5"><button id="button-finished-editing" class="ui-dark"><?php echo lang("users_page_modpro_txtdone") ?></button></span>	
 				<span class="right white fs-12 bold" style="padding:.6em 1em;"><?php echo lang("users_page_modpro_txt") ?></span>
@@ -142,7 +142,7 @@
 						
 				<!--read mode-->
 				<!--bloc informations-->
-				<div class="mb-20 bg-white">
+				<div class="mb-10 bg-white">
 					<span class="bold title grey"><?=$title_infos?></span>
 										
 					<div class="p-10 ta-c">
@@ -187,7 +187,7 @@
 				</div>
 				<!--bloc equipment-->
 				<?php if($user_group_page == 'stage') { ?>
-				<div class="border-top mb-20 bg-white">
+				<div class="border-top mb-10 bg-white">
 					<span class="bold title grey"><?=$title_equipment?></span>
 					<div class="fs-14 ml-10 mb-5 mt-5 ta-c">
 						<span class= "fa-stack fa">
@@ -282,7 +282,7 @@
 				
 				
 				<!--bloc social links-->
-				<div class=" mb-20 mt-20 bg-white border-top">
+				<div class=" mb-10 mt-10 bg-white border-top">
 					<span class="bold title grey"><?=$title_social_links?></span>
 					<div class="p-20">
 						<?php if($empty_social_links) { ?>							

@@ -22,11 +22,17 @@ function init_account_menu(id){
 		$('#' + id).addClass('active');	
 }
 
+function white_search_bar(white){
+	if(white){
+		$('#search-bar-background').removeClass('bg-black2');
+	}};
+
 function init_search_bar(open){
 	if(open){
 		$('#search-bar').show();
 	}
-
+	
+	
 	/**********INIT SEARCH STATUS**********/
 	$('#search-status').multiselect({
 		header			: false,

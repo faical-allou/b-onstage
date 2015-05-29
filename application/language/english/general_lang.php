@@ -211,7 +211,7 @@ $lang['availability'] = 'Availability';
 $lang['time'] = 'Time';
 
 // Header
-$lang['header_book_date'] = 'Make a Reservation';
+$lang['header_book_date'] = 'Find a Gig';
 $lang['header_aboutus'] = 'About';
 $lang['header_seeall_notices'] = 'Notifications';
 $lang['header_myaccount'] = 'My Account';

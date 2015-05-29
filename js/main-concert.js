@@ -8,6 +8,7 @@ $(function() {
 		init_menu((status=='open') ? 'menu-concert' : 'menu-programmation');
 		init_profil_menu();
 		init_search_bar(true);
+		white_search_bar(true);
 		init_footer();
 		
 		/**********INIT PAGE CONCERT**********/

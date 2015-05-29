@@ -58,9 +58,9 @@ class Main extends CI_Controller {
 
 			$search['search-status'] = 'open';
 
-			$search['search-date-start'] = date('Y-m-d');			
+			$search['search-date-start'] = date('Y-m-d', strtotime("+7 days"));			
 
-			$search['search-date-end'] = date('Y-m-d', strtotime("+3 months"));		
+			$search['search-date-end'] = date('Y-m-d', strtotime("+21 days"));		
 
 			$search['search-city'] = null;
 			

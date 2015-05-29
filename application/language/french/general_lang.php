@@ -219,7 +219,7 @@ $lang['header_mycalendar'] = 'Mon calendrier';
 $lang['header_mybookings'] = 'Mes réservations';
 $lang['header_myprofile'] = 'Mon profil';
 $lang['header_mycontacts'] = 'Mes contacts';
-$lang['header_book_a_date'] = 'Réserver une date';
+$lang['header_book_a_date'] = 'Trouver une date';
 $lang['header_attend_show'] = 'Assister à un Concert';
 $lang['header_forstages'] = 'Pour les scènes';
 
