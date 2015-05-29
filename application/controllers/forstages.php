@@ -44,7 +44,7 @@ class Forstages extends CI_Controller {
 	{
 		$this->header['title'] = lang("forstages_title");
 		$this->header['description'] = lang("forstages_desc");		
-		$this->footer['scripts'] = array('js/main-home.js');
+		$this->footer['scripts'] = array('js/main-forstages.js');
 		
 		$artists = $this->artist_model->get_all("","","",25,1);
 		$stages = $this->stage_model->get_all("","",25,1);
