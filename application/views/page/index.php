@@ -270,7 +270,7 @@
 				<!--bloc description-->
 				<div class=" bg-white border-top ">
 					<span class="bold title grey"><?=$title_description?></span>				
-					<div class="p-20">							
+					<div class="p-10">							
 						<?php if(empty($description)) { ?>
 							<p class="grey fs-15"><i><?php echo lang("users_page_desc_notfound") ?></i></p>														
 						<?php } ?>																
@@ -278,8 +278,11 @@
 							<?=$description?>							
 						</div>
 					</div>	
-				</div>	
-				
+					<?php if($user_group_page == 'stage') { ?>
+					
+					<img class="db m-auto" width="600px" height = "300px" src='https://maps.googleapis.com/maps/api/staticmap?zoom=12&size=600x300&markers=<?php echo $lati.",".$longi?>'>
+						
+					<?php } ?>
 				
 				<!--bloc social links-->
 				<div class=" mb-10 mt-10 bg-white border-top">

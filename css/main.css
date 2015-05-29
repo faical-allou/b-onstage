@@ -1935,6 +1935,7 @@ a.underline:hover{text-decoration:underline;}
    ========================================================================== */
    
 /*margin*/
+.m-auto{margin:auto;}
 .m-0{margin:0px;}
 .m-2{margin:2px;}
 .m-3{margin:3px;}

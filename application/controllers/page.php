@@ -625,6 +625,9 @@ class Page extends CI_Controller {
 			'stage_other'				=> $user_page['other'],
 			'title_equipment'			=> $title_equipement,
 			'equipment'					=> $equipment,
+			'lati'						=> $user_page['lati'],
+			'longi'						=> $user_page['longi'],
+					
 		);
 		
 		$this->footer['scripts'] = array(
