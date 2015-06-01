@@ -154,7 +154,7 @@
 							<div class="read-bloc mr-10 fs-14 grey clearfix dib" id="read-bloc-<?=$info['id']?>" data-val="<?=$info['val']?>">
 								<div class="left ta-r" style="width:auto;"><?=$info['title']." : "?></div>
 								<?php if($info['type'] == 'url') { ?>
-									<a href="http://<?=$info['val']?>" class="read-bloc-val purple db left ml-5" data-type="<?=$info['type']?>"><?=$info['val']?></a>
+									<a href=<?=$info['val']?>" class="read-bloc-val purple db left ml-5" data-type="<?=$info['type']?>"><?=$info['val']?></a>
 								<?php } else { ?>	
 									<div class="read-bloc-val left ml-5 bold" data-type="<?=$info['type']?>"><?=$info['val']?></div>
 								<?php } ?>									
