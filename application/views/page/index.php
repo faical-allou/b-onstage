@@ -283,7 +283,8 @@
 					<img class="db m-auto" width="600px" height = "300px" src='https://maps.googleapis.com/maps/api/staticmap?zoom=12&size=600x300&markers=<?php echo $lati.",".$longi?>'>
 						
 					<?php } ?>
-				
+					</div>
+					
 				<!--bloc social links-->
 				<div class=" mb-10 mt-10 bg-white border-top">
 					<span class="bold title grey"><?=$title_social_links?></span>
