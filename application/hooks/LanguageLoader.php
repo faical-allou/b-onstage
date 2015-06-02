@@ -11,7 +11,12 @@ class LanguageLoader
 		$ci->lang->is_loaded = array();
 		$ci->lang->language = array();
 		
+		if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])){
 		$lang_browser = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+		}
+		else {
+		$lang_browser = "english";
+		};
 		switch ($lang_browser) {
 			case 'fr': $lang_browser = "french"; break;
 			case 'de': $lang_browser = "german"; break;
