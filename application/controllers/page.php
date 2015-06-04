@@ -206,6 +206,17 @@ class Page extends CI_Controller {
 						'form_msg'		=> 'ex: Full Drum Kit ',
 						'msg'			=> lang("users_page_inputotherequipment")
 				),
+				//noise
+				array(
+						'id'			=> 'noise',
+						'title'			=> lang("users_page_noise"),
+						'val'			=> !empty($user_page['noise']) ? $user_page['noise'] : '',
+						'type'			=> 'text',
+						'form_label'	=> lang("users_page_inputnoise"),
+						'input_type'	=> 'text',
+						'form_msg'		=> 'ex: no Drums after 10pm ',
+						'msg'			=> lang("users_page_inputnoise")
+				),
 		);	
 			
 		$empty_infos = empty($user_page['company']) && empty($user_page['country']) && empty($user_page['city']) && empty($user_page['website']);
@@ -623,6 +634,8 @@ class Page extends CI_Controller {
 			'stage_amplification'		=> $user_page['amplification'],
 			'stage_lights'				=> $user_page['lights'],
 			'stage_other'				=> $user_page['other'],
+			'stage_noise'				=> $user_page['noise'],
+					
 			'title_equipment'			=> $title_equipement,
 			'equipment'					=> $equipment,
 			'lati'						=> $user_page['lati'],

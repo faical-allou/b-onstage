@@ -905,6 +905,9 @@ $lang['users_page_otherequipment'] = 'Autre';
 $lang['users_page_inputotherequipment'] = 'Tout ce qui n\'a pas éte couvert plus haut';
 $lang['users_page_equipment_title'] = 'Equipement';
 
+$lang['users_page_noise'] = 'Restriction dues au bruit';
+$lang['users_page_inputnoise'] = 'Restrictions';
+
 
 
 //Users reservations
@@ -973,6 +976,7 @@ $lang['microphone_legend'] 		='Mise à disposition d\'un microphone';
 $lang['speakers_legend'] 		='Mise à disposition de Hauts parleurs';
 $lang['amplification_legend'] 	='Table de mixage / Amplification';
 $lang['lights_legend'] 			='Disponibilité de spotlights';
+$lang['noise_legend'] 			='Restriction dues au bruit';
 
 
 

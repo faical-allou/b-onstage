@@ -60,7 +60,7 @@ class Event_model extends CI_Model
 					stage.username as stage_username, stage.company as stage_company, stage.avatar as stage_avatar,
 					stage.state as stage_state, stage.city as stage_city, stage.country as stage_country,stage.web_address as stage_web_address,
 					stage.website as stage_website, stage.facebook as stage_facebook, stage.twitter as stage_twitter, stage.google_plus as stage_google_plus, stage.myspace as stage_myspace,
-					stage.room_size as stage_room_size,stage.stage_size as stage_stage_size,stage.microphone as stage_microphone,stage.speakers as stage_speakers,stage.amplification as stage_amplification, stage.lights as stage_lights')
+					stage.room_size as stage_room_size,stage.stage_size as stage_stage_size,stage.microphone as stage_microphone,stage.speakers as stage_speakers,stage.amplification as stage_amplification, stage.lights as stage_lights, stage.noise as stage_noise')
 			
 					->from('events, users as stage')
 					->where('events.stage_id = stage.id', NULL, false)
@@ -130,7 +130,7 @@ class Event_model extends CI_Model
 					stage.username as stage_username, stage.company as stage_company, stage.avatar as stage_avatar,
 					stage.state as stage_state, stage.city as stage_city, stage.country as stage_country,stage.web_address as stage_web_address,
 					stage.website as stage_website, stage.facebook as stage_facebook, stage.twitter as stage_twitter, stage.google_plus as stage_google_plus, stage.myspace as stage_myspace,
-					stage.room_size as stage_room_size,stage.stage_size as stage_stage_size,stage.microphone as stage_microphone,stage.speakers as stage_speakers,stage.amplification as stage_amplification, stage.lights as stage_lights')
+					stage.room_size as stage_room_size,stage.stage_size as stage_stage_size,stage.microphone as stage_microphone,stage.speakers as stage_speakers,stage.amplification as stage_amplification, stage.lights as stage_lights, stage.noise as stage_noise')
 						->from('events, users as stage')
 						->where('events.stage_id = stage.id', NULL, false)
 						->where('date_start >=', $date_from)
@@ -204,7 +204,7 @@ class Event_model extends CI_Model
 					stage.id as stage_id, stage.username as stage_username, stage.company as stage_company, stage.avatar as stage_avatar,
 					stage.state as stage_state, stage.city as stage_city, stage.country as stage_country,stage.web_address as stage_web_address,
 					stage.website as stage_website, stage.facebook as stage_facebook, stage.twitter as stage_twitter, stage.google_plus as stage_google_plus, stage.myspace as stage_myspace,
-					stage.room_size as stage_room_size,stage.stage_size as stage_stage_size,stage.microphone as stage_microphone,stage.speakers as stage_speakers,stage.amplification as stage_amplification, stage.lights as stage_lights')
+					stage.room_size as stage_room_size,stage.stage_size as stage_stage_size,stage.microphone as stage_microphone,stage.speakers as stage_speakers,stage.amplification as stage_amplification, stage.lights as stage_lights, stage.noise as stage_noise ')
 					->from('events, users as stage')
 					->where('events.stage_id = stage.id', NULL, false)
 					->where('date_start >=', $date_from)

@@ -61,6 +61,13 @@
 				<?php endif; ?>
 				</span>
 				
+				<span class= "fa-stack fa">
+				<i class="fa fa-bell-slash fa-stack-1x"></i>
+				<?php if ($stage_noise=="") : ?>
+ 				<i class="fa fa-ban fa-stack-2x red"></i>
+				<?php endif; ?>
+				</span>
+				
 				
 		</div>	
 		

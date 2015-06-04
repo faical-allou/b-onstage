@@ -93,7 +93,8 @@ class Stages extends CI_Controller {
 					'stage_amplification'	=> $sta['amplification'],
 					'stage_lights'			=> $sta['lights'],
 					'stage_other'			=> $sta['other'],
-						
+					'stage_noise'			=> $sta['noise'],
+							
 					//'facebook_link'	=> (!empty($sta['facebook'])) ? anchor($sta['facebook'],'<span aria-hidden="true" class="icon-facebook fs-28 grey"></span>') : false,
 					//'twitter_link'	=> (!empty($sta['twitter'])) ? anchor($sta['twitter'],'<span aria-hidden="true" class="icon-twitter fs-28 grey"></span>') : false,				
 					//'nb_members'		=> count($art['members']),

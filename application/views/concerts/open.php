@@ -150,7 +150,15 @@ var entry_max = <?=$entry_max?>;
 								<p class="grey fs-12"><?php echo lang("lights_legend") ?></p>
 							</div>	
 						</div>
-												
+						
+						<div class="dtc ta-c">
+							<div class="p-5">
+								<i class="fa fa-bell-slash"></i>
+								<p class="grey fs-12"><?php echo lang("noise_legend") ?></p>
+							</div>	
+						</div>
+						
+						
 					</div>
 				</div>
 				<!--header removing recommendations			

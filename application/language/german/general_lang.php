@@ -907,6 +907,9 @@ $lang['users_page_otherequipment'] = 'Andere';
 $lang['users_page_inputotherequipment'] = 'Andere sachen';
 $lang['users_page_equipment_title'] = 'Ausrüstung';
 
+$lang['users_page_noise'] = 'Lärmschutz';
+$lang['users_page_inputnoise'] = 'Restriktionen';
+
 
 
 //Users reservations		
@@ -973,6 +976,7 @@ $lang['microphone_legend'] 		='Mikrophone vorhanden?';
 $lang['speakers_legend'] 		='Speaker vorhanden?';
 $lang['amplification_legend'] 	='Mischpult vorhanden?';
 $lang['lights_legend'] 			='Spotlights vorhanden?';
+$lang['noise_legend'] 			='Lärmschutz?';
 
 			
 // Shows page			
