@@ -71,6 +71,15 @@
 					 				<i class="fa fa-ban fa-stack-2x red"></i>
 									<?php endif; ?>
 									</span>
+									
+									<span class= "fa-stack fa">
+									<i class="fa fa-bell-slash fa-stack-1x"></i>
+									<?php if ($event['stage_noise']=="") : ?>
+					 				<i class="fa fa-ban fa-stack-2x red"></i>
+									<?php endif; ?>
+									</span>
+									
+									
 								</div>
 								</div>
 								
@@ -79,13 +88,17 @@
 							
 							<td width="20%" class="ta-l va-t">
 								<div>
-									<?php if($reserved) { ?>
+									<?php if($event['type'] == 'openstage') { ?>
+										<span class="openstage white bg-blue fs-12 bold ta-c ui-blue" ><?php echo 'Open Stage' ?></span>
+									<?php } else { 	
+											 		if($reserved) { ?>
 										<a href="<?=site_url('user/reservations')?>" class="show-reservation ui-purple""><?php echo lang("book_button1") ?></a> 
-									<?php } else { ?>
+											<?php } else { ?>
 										<button class="book-concert ui-green" data-event-id="<?=$event['id']?>" data-stage-id="<?=$event['stage_id']?>" style="font-size:1em;"><?php echo lang("book_button2") ?></button>					
 									<?php } ?>
+									<?php } ?>
 									</br> 
-										<button class="request-info ui-purple mt-10 contact_us" href="javascript:void(0)"><?php echo lang("request_info") ?></a> 
+										<button class="request-info ui-purple mt-10 contact_us" href="javascript:void(0)"><?php echo lang("request_info") ?></button> 
 								</div>
 							</td>
 						</tr>

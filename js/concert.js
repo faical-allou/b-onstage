@@ -201,7 +201,7 @@
 					reservation_request($(this), event_id, stage_id);
 				});				
 
-				//init reservation requets
+				//init request info requets
 				$('.request-info').button();
 
 				
