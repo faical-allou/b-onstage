@@ -385,7 +385,7 @@ $lang['forstages_howto_list2'] = '<ul class="forstages-howitworks">
 $lang['forstages_howto_title3'] = 'Confirm dates';
 $lang['forstages_howto_list3'] = '<ul class="forstages-howitworks">
 				<li><p>Check the musicians profiles, their music/videos and social links</p></li>
-				<li><p>If you validate, musicians (or their supporting organistation) will have 48h to pay the production cost to confirm their interest; other artists will be notified to try a different slot</p></li>
+				<li><p>If you validate, musicians (or their supporting organisation) will have 48h to pay the production cost to confirm their interest; other artists will be notified to try a different slot</p></li>
 			</ul>';
 
 $lang['forstages_why'] = 'Why b-onstage?';
