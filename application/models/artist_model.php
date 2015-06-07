@@ -74,6 +74,40 @@ class Artist_model extends CI_Model{
 		return array('nb_artists' => $nb_artists, 'artists' => $artists);	
 	}
 	
+	public function get_feature($name='',$musical_genre='', $location='',$per_page = 25, $page = 1){
+	
+		$start = ($page-1) * $per_page;
+	
+		$this->db->start_cache();
+		//cache artist
+		$this->db->select('artist.*')
+		->from('users as artist, groups, users_groups')
+		->where('artist.id = users_groups.user_id', NULL, false)
+		->where('groups.id = users_groups.group_id', NULL, false)
+		->where('feature', 1)
+		->where('groups.name', 'artist')
+		->like('artist.company', $name, 'after')
+		->like('artist.city', $location, 'after')
+		->order_by('artist.created_on', 'desc');
+	
+		//if musical genre
+	
+		$this->db->stop_cache();
+	
+		//get nb artists
+		$nb_artists = $this->db->count_all_results();
+	
+		//get artists
+		$this->db->limit($per_page, $start);
+		$artists = $this->db->get()->result_array();
+	
+		$this->db->flush_cache();
+
+	
+			return array('nb_artists' => $nb_artists, 'artists' => $artists);
+			}
+	
+	
 	public function get_location($location = ''){
 		$this->db->select('country, city, COUNT( users.id ) AS nb')
 					->from('users, groups, users_groups')

@@ -102,7 +102,7 @@ class Main extends CI_Controller {
 
 		$home['artists'] = array();
 
-		$artists = $this->artist_model->get_all('','','',5,1);
+		$artists = $this->artist_model->get_feature('','','',5,1);
 
 		foreach($artists['artists'] as $artist){
 
