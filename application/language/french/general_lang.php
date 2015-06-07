@@ -976,7 +976,7 @@ $lang['microphone_legend'] 		='Mise à disposition d\'un microphone';
 $lang['speakers_legend'] 		='Mise à disposition de Hauts parleurs';
 $lang['amplification_legend'] 	='Table de mixage / Amplification';
 $lang['lights_legend'] 			='Disponibilité de spotlights';
-$lang['noise_legend'] 			='Restriction dues au bruit';
+$lang['noise_legend'] 			='Restrictions dues au bruit?';
 
 
 
