@@ -644,6 +644,9 @@ class Page extends CI_Controller {
 		);
 		
 		$this->footer['scripts'] = array(
+			'js/plupload-2.1.4/js/plupload.full.min.js',
+			'js/plupload-2.1.4/js/jquery.plupload.queue/jquery.plupload.queue.js',
+			'js/plupload-2.1.4/js/jquery.ui.plupload/jquery.ui.plupload.js',
 			'js/swfupload/swfupload.js',
 			'js/swfupload/jquery.swfupload.js',
 			'js/jplayer/jquery.jplayer.min.js',
@@ -675,8 +678,9 @@ class Page extends CI_Controller {
 	
 	
 	private function _get_data($json_url='',$array = false){
-		$json_data = file_get_contents($json_url);
-		return json_decode($json_data, $array);		
+//		$json_data = file_get_contents($json_url);
+		return; 
+//		json_decode($json_data, $array);		
 	}	
 }
 
