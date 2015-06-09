@@ -104,7 +104,7 @@
     	var MY_MAPTYPE_ID = 'custom_style';
         var mapOptions = {
           center: new google.maps.LatLng(50.957245, 6.9673223),
-          zoom:5,
+          zoom:3,
           scrollwheel: false,
           zoomControl: true,
           zoomControlOptions: {
