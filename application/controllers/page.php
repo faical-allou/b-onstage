@@ -644,9 +644,6 @@ class Page extends CI_Controller {
 		);
 		
 		$this->footer['scripts'] = array(
-			'js/plupload-2.1.4/js/plupload.full.min.js',
-			'js/plupload-2.1.4/js/jquery.plupload.queue/jquery.plupload.queue.js',
-			'js/plupload-2.1.4/js/jquery.ui.plupload/jquery.ui.plupload.js',
 			'js/swfupload/swfupload.js',
 			'js/swfupload/jquery.swfupload.js',
 			'js/jplayer/jquery.jplayer.min.js',
