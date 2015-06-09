@@ -238,46 +238,8 @@
 										dialog_upload_avatar.append(data);			
 										dialog_upload_avatar.dialog('option', 'position', 'center');										
 										$('#progressbar-avatar').progressbar();										
-										$('#confirm-update-avatar').hide();
-										
-										$('#upload-avatar').plupload({
-											// General settings
-									        runtimes : 'html5,flash,silverlight,html4',
-									        url : '/upload/avatar/' + $('#upload-avatar').data('session-id'),
-									        // Maximum file size
-									        max_file_size : '2mb',
-									        chunk_size: '1mb',
-									        // Resize images on clientside if we can
-									        resize : {
-									            width : 200,
-									            height : 200,
-									            quality : 90,
-									            crop: true // crop to exact dimensions
-									        },
-									        // Specify what files to browse for
-									        filters : [
-									            {title : "Image files", extensions : "jpg,gif,png"},
-									            {title : "Zip files", extensions : "zip,avi"}
-									        ],
-									        // Rename files by clicking on their titles
-									        rename: true,
-									        // Sort files
-									        sortable: true,
-									        // Enable ability to drag'n'drop files onto the widget (currently only HTML5 supports that)
-									        dragdrop: true,
-									        // Views to activate
-									        views: {
-									            list: true,
-									            thumbs: true, // Show thumbs
-									            active: 'thumbs'
-									        },
-									        // Flash settings
-									        flash_swf_url : 'js/plupload-2.1.4/js/Moxie.swf',
-									        // Silverlight settings
-									        silverlight_xap_url : 'js/plupload-2.1.4/js/Moxie.xap',
-											
-											
-											/*
+										$('#confirm-update-avatar').hide();										
+										$('#upload-avatar').swfupload({
 											upload_url: '/upload/avatar/' + $('#upload-avatar').data('session-id'),								
 											file_post_name: 'uploadfile',
 											file_size_limit : '5 MB',
@@ -285,13 +247,13 @@
 											file_types_description : 'avatar image',
 											file_upload_limit : 10,
 											file_queue_limit : 1,
-											flash_swf_url : '/js/swfupload/swfupload.swf',
+											flash_url : '/js/swfupload/swfupload.swf',
 											button_placeholder_id : 'button-upload-avatar',
 											button_image_url : '/js/swfupload/button/'+document.getElementById("button_upcover").innerHTML,
 											button_width : 200,
 											button_height : 40,
 											button_cursor : SWFUpload.CURSOR.HAND,
-											button_window_mode : SWFUpload.WINDOW_MODE.TRANSPARENT  */
+											button_window_mode : SWFUpload.WINDOW_MODE.TRANSPARENT
 										})
 										.bind('swfuploadLoaded', function(event){									
 										})
@@ -341,7 +303,6 @@
 										.bind('uploadError', function(event, file, errorCode, message){			
 											$('#state-upload-avatar').append('<li class="ui-state-error">'+message+'</li>');
 										});
-									
 									}
 								});			
 							},
