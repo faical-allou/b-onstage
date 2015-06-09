@@ -16,6 +16,9 @@ $(function() {
 			per_page			: per_page		
 		});
 		
+		$('.action-home').button();		
+
+		
 		/********** SHOW PAGE *********/
 		$('#container > .loading').toggle();
 		$('#container > .content').fadeToggle(400, function(){

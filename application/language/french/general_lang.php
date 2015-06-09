@@ -290,6 +290,7 @@ $lang['referral_program_step2'] = 'Nous contacterons la scène et réglerons les
 $lang['referral_program_step3'] = 'Gagne 50% des frais b-onstage générés par la scène pendant une année!';
 
 $lang['referral_program_button'] = 'Participer';
+$lang['referral_program_helpus'] = 'Ajoute ta ville à la carte';
 
 
 
@@ -701,7 +702,8 @@ $lang['signup_stage_step_1_form_field1_ref'] = 'Nom de la Scène';
 
 $lang['signup_stage_step_1_txt_ref'] = '<li><span class="grey title">Vous connaissez une Scène et voulez la partager avec la communauté b-onstage? Remplissez le formulaire ci-contre!</span></li>		
 			<li><span class="grey title">La seule condition est d\'avoir un compte artiste b-onstage... un compte gratuit en quelques clicks.</span></li>		
-			<li><span class="grey title">Nous appelerons toutes les Scènes que vous nous envoyez mais ça nous aiderait que vous parliez de b-onstage en avance. Rien d\'autres à faire pour vous.</span></li>';		
+			<li><span class="grey title">Nous appelerons toutes les Scènes que vous nous envoyez mais ça nous aiderait que vous parliez de b-onstage en avance. Rien d\'autres à faire pour vous.</span></li>		
+			<li><span class="grey title">Nous te verserons 50% des frais perçus sur cette Scène pendant 1 an</span></li>';		
 
 $lang['signup_stage_step_2_txt_ref'] = '<li><span class="grey title">Nous contacterons la Scène pour régler les détails (disponibilités, genres, coûts de production, rénumération des artistes, règles de communications, suivi des demandes, réclamations...).</span></li>	
 			<li><span class="grey title">Nous partagerons les frais b-onstage perçues sur cette Scène, 50/50 avec vous, pendant un an.</span></li>

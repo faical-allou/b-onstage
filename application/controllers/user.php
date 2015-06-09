@@ -398,13 +398,6 @@ class User extends CI_Controller {
 		{
 			//step 1: signup
 			case 1:
-				if ($this->ion_auth->logged_in()){
-					redirect('user', 'refresh');
-				}else{
-					$header = array(
-							'title'			=> lang("signup_stage_title_ref"),
-							'description'	=> lang("signup_stage_desc_ref")
-					);
 	
 	
 					$step['title'] = lang("signup_stage_step_1_title");
@@ -516,7 +509,12 @@ class User extends CI_Controller {
 								'id'		=> 'submit-signup',
 								'value'		=> lang("signup_stage_step_1_form_submit")
 						);
-	
+						//var header
+						$header['doctype'] = 'html5';
+						$header['title'] = lang("signup_stage_title_ref");
+						$header['description'] = lang("signup_stage_desc_ref");
+						
+						
 						$footer['scripts'] = array('js/main-signup-stage.js');
 	
 						//load views
@@ -525,14 +523,11 @@ class User extends CI_Controller {
 						$this->load->view('user/auth/signup_stage_ref', $data);
 						$this->load->view('_footer',$footer);
 					}
-				}
+				
 				break;
 	
 				//signup stage fini
 			case 2 :
-				if ($this->ion_auth->logged_in()){
-					redirect('user', 'refresh');
-				}else{
 					//var header
 					$header['doctype'] = 'html5';
 					$header['title'] = lang("signup_stage_step2_title");
@@ -548,7 +543,7 @@ class User extends CI_Controller {
 					$this->load->view('user/auth/signup_steps_stage',$step);
 					$this->load->view('user/auth/terminate_stage_ref', $footer);
 					$this->load->view('_footer');
-				}
+				
 				break;
 			default : break;
 		}

@@ -293,6 +293,7 @@ $lang['referral_program_step2'] = 'Wir nehmen Verbindung auf und kümmern uns um
 $lang['referral_program_step3'] = 'Verdiene 50% der b-onstage Gebühren für diese Bühne für 1 Jahr!';
 
 $lang['referral_program_button'] = 'Mitmachen';
+$lang['referral_program_helpus'] = 'Bringe b-onstage in deine Stadt';
 
 
 // About us
@@ -706,7 +707,8 @@ $lang['signup_stage_step_1_form_field1_ref'] = 'Bezeichnung der Bühne';
 
 $lang['signup_stage_step_1_txt_ref'] = '<li><span class="grey title">Du kennst eine Auftrittsmöglichkeit und möchtest sie mit der b-onstage Community teilen? Bitte fülle das Formular aus!</span></li>		
 			<li><span class="grey title">Die einzige Bedingung ist ein Künstler-Konto bei b-onstage - das kostet nichts außer ein paar Klicks.</span></li>		
-			<li><span class="grey title">Wir rufen jede von Dir empfohlene Bühne an, wünschen uns aber, dass Du vorher mit dem Verantwortlichen dort sprichst. Weiter mußt Du nichts tun! </span></li>';		
+			<li><span class="grey title">Wir rufen jede von Dir empfohlene Bühne an, wünschen uns aber, dass Du vorher mit dem Verantwortlichen dort sprichst. Weiter mußt Du nichts tun! </span></li>		
+			<li><span class="grey title">Verdiene 50% der b-onstage Gebühren für diese Bühne für 1 Jahr! </span></li>';		
 
 $lang['signup_stage_step_2_txt_ref'] = '<li><span class="grey title">Wir setzen uns mit der Bühne in Verbidnung und besprechen die Details (Verfügbarkeit, Genres, Auftrittskosten, Kommunikation, Anfragen, Stornos) und wir betreuen Anfragen und Reklamationen.</span></li>	
 			<li><span class="grey title">Für ein Jahr bekommst Du 50% der b-onstage Gebühren, die wir mit dieser Bühne umsetzen.</span></li>

@@ -221,11 +221,9 @@
     </script>
 					
 	<div class="container_12">	
-		<div id="map-canvas" class= "grid_12 mt-30"></div>
-		
-			
-		
-		
+		<a href="<?=site_url('signup_stage_ref?t=map')?>" class="ui-green action-home mt-50 ml-50 p-a ztop" style="font-size:1em;"><?php echo lang("referral_program_helpus") ?></a>
+	
+	<div id="map-canvas" class= "grid_12 mt-30 "></div>
 		<div class="grid_9 mb-20 mt-10">	
 		
 		<!--legend-->
