@@ -16,11 +16,15 @@
 		<div class="clearfix">		
 			
 			<div class="dib right">
-			<?php if($reserved) { ?>
-			<a href="<?=site_url('user/reservations')?>" class="show-reservation ui-purple db"><?php echo lang("book_button1") ?></a> 
-			<?php } else { ?>
-			<button class="book-concert ui-green db" data-event-id="<?=$event['id']?>" data-stage-id="<?=$event['stage_id']?>", style= "font-size:1em"><?php echo lang("book_button2") ?></button>					
-			<?php } ?>
+			<?php if($event['type'] == 'openstage') { ?>
+						<span class="openstage white bg-blue fs-12 bold ta-c ui-blue" ><?php echo 'Open Stage' ?></span>
+			<?php } else { 	
+						if($reserved) { ?>
+							<a href="<?=site_url('user/reservations')?>" class="show-reservation ui-purple""><?php echo lang("book_button1") ?></a> 
+							<?php } else { ?>
+									<button class="book-concert ui-green" data-event-id="<?=$event['id']?>" data-stage-id="<?=$event['stage_id']?>" style="font-size:1em;"><?php echo lang("book_button2") ?></button>					
+									<?php } ?>
+								<?php } ?>
 			</div>
 		</div>		
 		</div>								
