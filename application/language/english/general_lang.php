@@ -708,7 +708,7 @@ $lang['signup_stage_step_1_form_field1_ref'] = 'Name of the venue';
 $lang['signup_stage_step_1_txt_ref'] = '<li><span class="grey title">You know a venue and you want to share it with b-onstage community? Fill up the form!</span></li>		
 			<li><span class="grey title">The only condition is to have an artist account on b-onstage... a free account in few clicks.</span></li>		
 			<li><span class="grey title">We\'ll call every Stage you suggest us but we recommend you talk to them in advance. You don\'t have to do anything after that. </span></li>		
-			<li><span class="grey title">You\'ll get either 50% of the fees on this Stage for 1 year, or 50€ in credit to use on b-onstage! </span></li>';		
+			<li><span class="grey title">You\'ll get either 50% of the fees on this Stage for 1 year, or 50€ in credit to use on b-onstage valid for 1 year! </span></li>';		
 
 $lang['signup_stage_step_2_txt_ref'] = '<li><span class="grey title">We\'ll contact the venue to discuss the details (availability, genres, production costs, rules of communication, requests, cancellations ...) and we\'ll follow up on the requests received as well as reclammations.</span></li>	
 			<li><span class="grey title">You don\'t have to do anything but of course, it is in your interest to communicate about b-onstage.</span></li>';
