@@ -702,11 +702,10 @@ $lang['signup_stage_step_1_form_field1_ref'] = 'Nom de la Scène';
 
 $lang['signup_stage_step_1_txt_ref'] = '<li><span class="grey title">Vous connaissez une Scène et voulez la partager avec la communauté b-onstage? Remplissez le formulaire ci-contre!</span></li>		
 			<li><span class="grey title">La seule condition est d\'avoir un compte artiste b-onstage... un compte gratuit en quelques clicks.</span></li>		
-			<li><span class="grey title">Nous appelerons toutes les Scènes que vous nous envoyez mais ça nous aiderait que vous parliez de b-onstage en avance. Rien d\'autres à faire pour vous.</span></li>		
-			<li><span class="grey title">Nous te verserons 50% des frais perçus sur cette Scène pendant 1 an</span></li>';		
+			<li><span class="grey title">Nous appellerons toutes les Scènes que vous recommandez et gérerons les détails. Quelques mots de votre part peuvent accélerer les choses. Rien d\'autres à faire pour vous.</span></li>		
+			<li><span class="grey title">Nous te verserons au choix, 50% des frais perçus sur cette Scène pendant 1 an ou 50€ de crédits b-onstage pour monter sur Scène!</span></li>';		
 
 $lang['signup_stage_step_2_txt_ref'] = '<li><span class="grey title">Nous contacterons la Scène pour régler les détails (disponibilités, genres, coûts de production, rénumération des artistes, règles de communications, suivi des demandes, réclamations...).</span></li>	
-			<li><span class="grey title">Nous partagerons les frais b-onstage perçues sur cette Scène, 50/50 avec vous, pendant un an.</span></li>
 			<li><span class="grey title">Vous n\'avez plus rien à faire mais il est dans votre intérêt de faire connaître b-onstage autour de vous bien sûr.</span></li>';
 
 $lang['signup_stage_step_1_link_ref'] = '> Comment expliquer b-onstage à une Scène?';
