@@ -1027,7 +1027,7 @@ $lang['book_req_success'] = 'Your request has been sent';
 // Notifications		
 $lang['notifs_1'] = 'Your request was sent';
 $lang['notifs_2'] = 'You received a request';
-$lang['notifs_3'] = 'Welcome to b-onstage';
+$lang['notifs_3'] = 'Welcome to b-onstage: what do you think of it? <a href=https://www.surveymonkey.com/s/QTSBNGZ>Short Survey</a>';
 $lang['notifs_4'] = 'accepted your request';
 
 

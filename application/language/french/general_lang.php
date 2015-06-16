@@ -1026,7 +1026,7 @@ $lang['book_req_success']	 = 'Votre demande a bien été prise en compte';
 // Notifications			
 $lang['notifs_1']	 = 'Votre demande de réservation a été soumise';
 $lang['notifs_2']	 = 'Vous avez reçu une demande de réservation de';
-$lang['notifs_3']	 = 'Bienvenue sur b-onstage';
+$lang['notifs_3']	 = 'Bienvenue sur b-onstage: qu\'en pensez vous? <a href=https://www.surveymonkey.com/s/QTSBNGZ>Enquête rapide</a>';
 $lang['notifs_4']	 = 'a accepté votre demande de réservation';
 
 
