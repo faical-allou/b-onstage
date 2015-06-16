@@ -6,8 +6,14 @@
 			<?=$avatar_link?>
 		</div>
 		<div class="left">
-			<div>
-				<?=anchor($artist_link,$artist_company, array('class' => 'title fs-28 grey'))?>			
+			<div >
+				<?php if (strlen($artist_company) > 20) { 
+					$artist_company_short = substr($artist_company,0,17)."..."; 
+					} else {
+						$artist_company_short = $artist_company;
+					};
+					
+				echo anchor($artist_link,$artist_company_short, array('class' => 'title fs-28 grey'))?>			
 			</div>
 			<div class="mb-5" >
 				<p class="fs-12 grey bold">
