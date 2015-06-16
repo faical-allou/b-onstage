@@ -790,6 +790,8 @@ class User extends CI_Controller {
 						$this->ion_auth->update($id, $update_data);						
 						$this->user['avatar'] = $url_avatar;						
 						$this->header['terminate_avatar'] = $url_avatar;
+						$user_email = $this->user['email'];
+						
 						
 						//var header
 						$this->header['doctype'] = 'html5';
@@ -807,7 +809,7 @@ class User extends CI_Controller {
 						$this->load->view('user/auth/terminate', array('user' => $this->user));
 						$this->load->view('_footer', $this->footer);
 						$to = "faical.allou@mybandonstage.com";
-						mail ($to, 'registration complete', "a user completed the registration");
+						mail ($to, 'registration complete', "a user completed the registration ".$user_email);
 					}
 					break;
 			default:break;
