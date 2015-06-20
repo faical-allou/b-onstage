@@ -5,11 +5,11 @@
 
 
 <!--slider-->	
-<div id="wrap-slider">
-	<div id="slider" class="royalSlider rsBlack ">
+<div id="wrap-slider p-f">
+	<div id="slider" class="royalSlider rsBlack">
 
 	<!--slide8-->
-		<div class="rsContent slide1">
+		<div class="rsContent slide1 p-f">
 			<div class="bContainer ui-corner-all p-20">	
 				<div class=" fs-32 bold white"><?php echo lang("home_slide8_txt") ?></div>				
 				<div class=" fs-24 bold white mb-20"><?php echo lang("home_slide8_txt1") ?></div>				
@@ -24,75 +24,8 @@
 		</div>
 
 
-	<!--slide6--
-		<div class="rsContent slide6 db">
-			<div class="bContainer ui-corner-all p-10 db">		
-				<div class=" fs-24 bold grey"><?php echo lang("home_slide6_txt") ?></div>
-				<div class=" fs-16 bold grey mb-5"><?php echo lang("home_slide6_txt1") ?></div>
-
-			</div>
-			<img class="rsABlock" data-move-effect="fade" src="/img/slide/slide-6.png">
-		</div>
-
-
-	<!--slide5--
-		<div class="rsContent slide5 db">
-			<div class="bContainer ui-corner-all p-20 db">		
-				<div class=" fs-32 italic bold grey"><?php echo lang("home_slide5_txt") ?></div>
-				<div class=" fs-24 bold grey"><?php echo lang("home_slide5_txt2") ?></div>				
-				<div class=" fs-24 bold grey mb-20"><?php echo lang("home_slide5_txt3") ?></div>				
-				<span class="ui-green rsButton" style="font-size:1em;"> 
-					<a href="<?=site_url('concerts/?t=slide5')?>" >
-					<?php echo lang("home_slide5_txt4") ?></a>
-				</span>
-			</div>
-			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-5.png">
-		</div>
-
-
-	<!--slide4--
-		<div class="rsContent slide4">
-			<div class="bContainer ui-corner-all p-20">		
-				<div class=" fs-36 bold white"><?php echo lang("home_slide4_txt") ?></div>
-				<div class=" fs-24 bold white mb-20"><?php echo lang("home_slide4_txt2") ?></div>				
-				<div class="ta-c">
-				<span class="ui-green rsButton" style="font-size:1em;"> 
-					<a href="<?=site_url('concerts/?t=slide4')?>" >
-					<?php echo lang("home_slide4_txt3") ?></a>
-				</span>
-				</div>
-			</div>
-			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-4.png" data-rsw="900" data-rsh="500">
-		</div>
-
-	<!--slide3--
-		<div class="rsContent slide3">
-			<div class="bContainer ui-corner-all p-20">		
-				<div class=" fs-32 bold grey"><?php echo lang("home_slide3_txt") ?></div>
-				<div class=" fs-24 bold grey mb-20"><?php echo lang("home_slide3_txt2") ?></div>				
-				<div class="ui-green rsButton" style="font-size:1em"> 
-					<a href="<?=site_url('signup/?t=slide3')?>" >
-					<?php echo lang("home_slide3_txt3") ?></a>
-				</div>
-			</div>
-			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-3.jpg" data-rsw="1024" data-rsh="685">
-		</div>
-
-		<!--slide2-->
-<!--		<div class="rsContent slide2">
-			<div class="bContainer">	
-				<div class=" fs-32 bold white"><?php echo lang("home_slide2_txt2") ?></div>				
-				<div class=" fs-32 bold white mb-20"><?php echo lang("home_slide2_txt3") ?></div>				
-				<div class="ui-green rsButton" style="font-size:1em;">
-					<a href="<?=site_url('concerts')?>" ">
-					<?php echo lang("home_slide2_txt4") ?></a>
-				</div>
-			</div>
-			<img class="rsABlock" data-move-effect="fade" src="/img/slide/img-slide-test2.jpg" data-rsw="900" data-rsh="500">
-		</div>
--->
 		<!--slide1-->
-		<div class="rsContent slide1">
+		<div class="rsContent slide1 p-f">
 			<div class="bContainer ui-corner-all p-20">	
 				<div class=" fs-32 bold white"><?php echo lang("home_slide1_txt") ?></div>				
 				<div class=" fs-32 bold white mb-20"><?php echo lang("home_slide1_txt2") ?></div>				
@@ -108,6 +41,7 @@
 
 	</div>	
 </div>	
+
 
 <div class="bg-white bs-black">
 	<div class=" pt-50 pb-50 ta-c ">
