@@ -272,7 +272,7 @@ class Event extends CI_Controller {
 			$this->data['reservation'] = array(
 				'name'			=> 'ev-reservation',
 				'id'			=> 'ev-reservation',
-				'placeholder'	=> 50,
+				'placeholder'	=> 5,
 				'value'			=> '',				
 				'size'			=> 4,
 				'class'			=> 'input fs-13 grey ui-corner-all required number'

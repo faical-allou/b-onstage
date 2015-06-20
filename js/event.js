@@ -426,7 +426,7 @@
 					}
 				});													
 				//add rules
-				$('#ev-reservation').rules("add", {min: 50});
+				$('#ev-reservation').rules("add", {min: 0});
 			});	
 		},	
 		
@@ -507,7 +507,7 @@
 							}
 						});	
 						//add rules
-						$('#ev-reservation').rules("add", {min: 50});
+						$('#ev-reservation').rules("add", {min:0});
 						break;
 						
 					/*****PENDING EVENT*****/	

@@ -79,9 +79,9 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 							<tr>
 								<td width="25%" align="right"><strong><?=form_label($label_reservation,$reservation['id'])?></strong></td>
 								<td>
-									<div><input type="text" name="ev-reservation" value="" id="ev-reservation" placeholder="50" 
+									<div><input type="text" name="ev-reservation" value="" id="ev-reservation" placeholder="5" 
                                     size="4" class="input fs-13 grey ui-corner-all required number" 
-                                    onfocus="this.placeholder=''" onblur="if(this.placeholder == '') { this.placeholder='50'}">
+                                    onfocus="this.placeholder=''" onblur="if(this.placeholder == '') { this.placeholder='5'}">
 									<?php /*echo form_input($reservation) */ ?></div>
 								</td>		
 							</tr>
