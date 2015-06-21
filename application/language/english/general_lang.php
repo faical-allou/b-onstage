@@ -265,7 +265,7 @@ $lang['home_promo'] = 'b-onstage pays back the booking fees for all concerts in 
 
 $lang['home_title_concert'] = 'Concerts';
 $lang['home_title_stage'] = 'Stages available';
-$lang['home_title_artist'] = 'Artists we serve';
+$lang['home_title_artist'] = 'Artists we already serve';
 $lang['home_seeall_shows'] = 'See all Concerts';
 $lang['home_seeall_stages'] = 'See all Stages';
 $lang['home_seeall_artist'] = 'See all Artists';
@@ -285,12 +285,12 @@ $lang['home_howitworks_button'] = 'more details';
 
 
 // Referral program
-$lang['referral_program'] = 'Become b-onstage Ambassador </br>';
+$lang['referral_program'] = 'You can also become b-onstage Ambassador in your town</br>';
 $lang['referral_program2'] = 'Support the community and earn money for your projects';
 
 $lang['referral_program_step1'] = 'Introduce b-onstage to a venue you like as a musician, even if there is no live music today';
 $lang['referral_program_step2'] = 'We\'ll contact them and take care of the details, you don\'t have to do anything';
-$lang['referral_program_step3'] = 'Earn 50% of b-onstage fees on this Stage for 1 full year';
+$lang['referral_program_step3'] = 'Earn 50% of b-onstage fees on this Stage for 1 full year, or 50€ credits to get on stage';
 
 $lang['referral_program_button'] = 'Participate';
 $lang['referral_program_helpus'] = 'Put your city on the map';

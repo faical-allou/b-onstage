@@ -274,7 +274,7 @@ $lang['home_howitworks_button'] = 'en detail';
 
 $lang['home_title_concert'] = 'Les Concerts';
 $lang['home_title_stage'] = 'Les Scènes disponibles';
-$lang['home_title_artist'] = 'Les Artistes que nous servons';
+$lang['home_title_artist'] = 'Artistes que nous servons déjà';
 $lang['home_seeall_shows'] = 'Voir tous les Concerts';
 $lang['home_seeall_stages'] = 'Voir toutes les Scènes';
 $lang['home_seeall_artist'] = 'Voir tous les Artistes';
@@ -282,12 +282,12 @@ $lang['home_bottom_txt'] = 'Réservez une Scène en deux clicks, </br>Gardez vot
 $lang['home_bottom_txt2'] = 'L\'inscription est gratuite et le restera, </br> Connectez vous aux scènes à l\'international';
 
 // Referral program
-$lang['referral_program'] = 'Deviens Ambassadeur b-onstage </br>'; 
+$lang['referral_program'] = 'Tu peux aussi devenir Ambassadeur b-onstage dans ta ville</br>'; 
 $lang['referral_program2'] = 'Aide la communauté et gagne de l\'argent pour tes projets';
 
 $lang['referral_program_step1'] = 'Présente b-onstage à un lieu que tu aimes en tant que musicien, même si il n\'y a pas de musique live aujourd\'hui';
 $lang['referral_program_step2'] = 'Nous contacterons la scène et réglerons les détails, tu n\'as plus rien à faire';
-$lang['referral_program_step3'] = 'Gagne 50% des frais b-onstage générés par la scène pendant une année!';
+$lang['referral_program_step3'] = 'Gagne 50% des frais b-onstage générés par la scène pendant une année, ou 50€ de crédits pour monter sur scènes!';
 
 $lang['referral_program_button'] = 'Participer';
 $lang['referral_program_helpus'] = 'Ajoute ta ville à la carte';

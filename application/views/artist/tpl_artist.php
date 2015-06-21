@@ -1,4 +1,4 @@
-<div class="line-artist-list ztop p-10"  style="background-color:rgba(255,255,255,0.7) " >	
+<div class="line-artist-list ztop p-10 white-box" >	
 
 		
 

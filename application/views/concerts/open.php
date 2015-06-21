@@ -18,52 +18,14 @@ var entry_min = <?=$entry_min?>;
 var entry_max = <?=$entry_max?>;
 </script>
 
-<div id="concert" class=" p-10">
-	<div class="grid_12 ui-corner-all bg-white">
+<div id="concert" class=" p-10 ">
+	<div class="grid_12 ui-corner-all bg-white mb-10">
 		<table width="100%"><tbody><tr>
 			<td class="filter-concert">				
 				<div class="p-10 fs-16 white title bg-black ui-corner-tl"><?php echo lang("book_filterresults") ?></div>					
 				<div class="inner">	
 
-<!-- Removing filters until relevant and fixed
-					<!--filter sort 
-					<div class="p-20">
-						<div class="mb-10 purple title fs-16"><?php echo lang("sortby") ?></div>
-						<div><?=form_dropdown($filter_sort['name'], $filter_sort['options'], $filter_sort['selected'], $filter_sort['js'])?></div>
-					</div>
-					<!--genre musical
-					<div class="p-20">
-						<div class="mb-10 purple title fs-16"><?php echo lang("book_bysort1") ?></div>
-						<div>
-							<select id="filter-genre" name="filter-genre" multiple="multiple">						
-								<?php foreach($genres as $genre){ ?>
-								<option value="<?=$genre['id']?>"><?=$genre['name'.$rowname]?></option>
-								<?php } ?>
-							</select>				
-						</div>
-					</div>		
-					<!--daterange silder
-					<div class="p-20">
-						<div class="mb-10 purple title fs-16"><?php echo lang("book_bysort2") ?></div>
-						<!--reservation
-						<div class="mb-20">
-							<div class="mb-10 grey fs-12 bold"><?php echo lang("book_bysort2_1") ?> <span id="filter-reservation"></span></div>				
-							<div class="ml-5 mr-5" id="slider-range-reservation"></div>					
-						</div>					
-						
-						<!--entry				
-						<div class="mb-20">
-							<div class="mb-10 grey fs-12 bold"><?php echo lang("book_bysort2_2") ?> <span id="filter-entry"></span></div>
-							<div class="ml-5 mr-5" id="slider-range-entry"></div>
-						</div>
-						
-						<!--schedule
-						<div class="mb-10">
-							<div class="mb-10 grey fs-12 bold"><?php echo lang("book_bysort2_3") ?> <span id="filter-schedule"></span></div>
-							<div class="ml-5 mr-5" id="slider-range-schedule"></div>
-						</div>
-					</div>
--->
+
 					<!--payment type-->
 					<div class="p-5">					
 						<div class="mb-10 purple title fs-16"><?php echo lang("book_bysort3") ?></div>

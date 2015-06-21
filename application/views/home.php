@@ -50,7 +50,7 @@
 		</div>	
 		
 		<div class="dib m-30">	
-			<div class="fs-18 ta-c bold"><?php echo lang("home_howitworks_title")?></div>	 
+			<div class="fs-24 ta-c bold mb-10 underline"><?php echo lang("home_howitworks_title")?></div>	 
 			<div class="fs-16 ta-l mb-10 bold"><?php echo lang("home_howitworks_list")?></div>
 			<span class="bold ui-green fs-16 link-button">
 			<a href="<?=site_url('about/?t=video')?>"><?php echo lang("home_howitworks_button") ?></a>			
@@ -60,7 +60,7 @@
 </div>
 
 <!-- referral program -->
-<div class="bg-grey-2 ta-c p-10 mb-30 bs-black">
+<div class="ta-c p-10 bs-black wrap-ref-program white-box">
 					<span class="fs-24 bold">  <?php echo lang("referral_program") ?> </span>
 					<span class="fs-32 bold">  <?php echo lang("referral_program2") ?> </span>
 					
@@ -91,66 +91,66 @@
 <a href="<?=site_url('signup_stage_ref')?>" class="ui-green action-home mb-20" style="font-size:1em;"><?php echo lang("referral_program_button") ?></a>
 </div>
 
-<!--
-<div class="bg-purple">
-	<div class="container_12 pt-20 pb-50 mb-30">
-		<div class="grid_6 ta-c">	
-			<div class="p-20">
-				<?=img(array('src' => site_url('img/icons/home/calendar.png')))?>
-				<p class="fs-24  white ta-c" style="height:auto;"><?php echo lang("home_bottom_txt") ?></p>
-				<a href="<?=site_url('concerts/?t=pband')?>" class="ui-white action-home mt-10" style="font-size:1em;"><?php echo lang("header_book_a_date") ?></a>			
-			</div>	
-		</div>
-		<div class="grid_6 ta-c">			
-			<div class="p-20">
-				<?=img(array('src' => site_url('img/icons/home/network.png')))?>
-				<p class="fs-24  white ta-c" style="height:auto"><?php echo lang("home_bottom_txt2") ?></p>
-				<a href="<?=site_url('signup/?t=pband')?>" class="ui-white action-home mt-10" style="font-size:1em;"><?php echo lang("become_member") ?></a>							
-				</div>	
-		</div>
-	</div>	
-</div>	
--->
 
-
-<div class="container_12 mb-30 db">
+<div class=" mt-10 mb-30 db ">
 	<!--last 5 artist-->
-	<div class="grid_6 home-bloc ui-corner-all di">
+	<div class="grid_12 home-bloc ui-corner-all di bg-grey-2">
 		<?=heading($title_artist, 2, 'class="home-title title"')?>		
-		<ul class="home-list">
+		<ul class="home-list ta-c">
 			<?php foreach($artists as $artist){ ?>				
 				<li>					
 					<div class="clearfix">
-						<div class="left"><?=img(array('src' => $artist['avatar'], 'width' => '240px'))?></div>
-						<div class="left ml-10">
+						<div class="db p-r"><?=img(array('src' => $artist['avatar'], 'width' => '240px'))?></div>
+						<div class="mt--30 white-box p-2 p-a ta-c" >
 							<div>
-								<a href="<?=$artist['link']?>" class="fs-16 title grey"><?=$artist['name']?></a>
+								<?php 
+								$artist_name = $artist['name'];
+								if (strlen($artist_name) > 20) { 
+								$artist_name_short = substr($artist_name,0,17)."..."; 
+								} else {
+									$artist_name_short = $artist_name;
+								};?>
+								<a href="<?=$artist['link']?>" class="fs-16 title grey"><?=$artist_name_short?></a>
 							</div>
-							<p class="fs-12 grey bold"><span class="icon-location mr-5" aria-hidden="true"></span><?=$artist['location']?></p>
+							<div class="fs-12 grey bold ">
+								<span class="icon-location mr-5" aria-hidden="true"></span>
+								<?=$artist['location']?>
+							</div>
 						</div>
 					</div>					
 				</li>
 			<?php } ?>
 		</ul>		
-		<div class="p-20 ta-r">
-			<a href="<?=site_url('artists?t=tab')?>" class="home-list-link"><?php echo lang("home_seeall_artist") ?></a>
+		<div class="p-20 ta-r bg-grey-2">
+			<a href="<?=site_url('artists?t=tab')?>" class="home-list-link bg-grey-1"><?php echo lang("home_seeall_artist") ?></a>
 		</div>
 	</div>
 	
 	
 	<!--last 5 stages-->
-	<div class="grid_6 home-bloc ui-corner-all di">
+	<div class="grid_12 home-bloc ui-corner-all di mb-10">
 		<?=heading($title_stage, 2, 'class="home-title title"')?>		
-		<ul class="home-list">
+		<ul class="home-list ta-c">
 			<?php foreach($stages as $stage){ ?>				
 				<li>					
-					<div class="clearfix">
-						<div class="left"><?=img(array('src' => $stage['avatar'], 'width' => '240px'))?></div>
-						<div class="left ml-10">
+					<div class="clearfix dib">
+						<div class="db"><?=img(array('src' => $stage['avatar'], 'width' => '240px'))?></div>
+						<div class="mt--30  white-box p-2 p-a ta-c">
 							<div>
+								<?php 
+								$stage_name = $stage['name'];
+								if (strlen($stage_name) > 20) { 
+								$stage_name_short = substr($stage_name,0,17)."..."; 
+								} else {
+									$stage_name_short = $stage_name;
+								};?>
+							
 								<a href="<?=$stage['link']?>" class="title fs-16 grey"><?=$stage['name']?></a>
 							</div>
-							<p class="fs-12 grey bold"><span class="icon-location mr-5" aria-hidden="true"></span><?=$stage['location']?></p>
+							<div class="fs-12 grey bold">
+								<span class="icon-location mr-5" aria-hidden="true"></span>
+								<?=$stage['location']?>
+							</div>
 						</div>
 					</div>					
 				</li>

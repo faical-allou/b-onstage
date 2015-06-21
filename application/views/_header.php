@@ -233,7 +233,7 @@ if($this->session->userdata('lang_loaded') == $value["name"]){ $lang_id = $value
 		<div class="loading">
 			<img src="<?=site_url('img/loading.gif')?>" />
 		</div>
-		<div class="content bg-white bs-black ">
+		<div class="content bg-grey-2 bs-black ">
 			<!--search bar-->
 			<div id="search-bar-background" class="bg-black2 white">
 			<div id="search-bar" class="container_12 ">

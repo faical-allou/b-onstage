@@ -285,12 +285,12 @@ $lang['home_howitworks_button'] = 'Mehr Details';
 
 
 // Referral program
-$lang['referral_program'] = 'Werde b-onstage Botschafter </br>';
+$lang['referral_program'] = 'Du kannst auch b-onstage Botschafter in deine Stadt werden</br>';
 $lang['referral_program2'] = 'Unterstütze die community und verdiene Geld für Deine Projekte';
 
 $lang['referral_program_step1'] = 'Stelle als Musiker b-onstage einem Veranstalter vor, auch wenn dort heute keine Live-Musik spielt';
 $lang['referral_program_step2'] = 'Wir nehmen Verbindung auf und kümmern uns um die Details, Du mußt nichts weiter tun';
-$lang['referral_program_step3'] = 'Verdiene 50% der b-onstage Gebühren für diese Bühne für 1 Jahr!';
+$lang['referral_program_step3'] = 'Verdiene 50% der b-onstage Gebühren für diese Bühne für 1 Jahr, oder 50€ in Kredit auf b-onstage!';
 
 $lang['referral_program_button'] = 'Mitmachen';
 $lang['referral_program_helpus'] = 'Bringe b-onstage in deine Stadt';
