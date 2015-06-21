@@ -4,16 +4,7 @@
 </script>
 
 <div id="stage">
-<!--	<div class="container_12">
-		<div class="grid_12 mt-20 mb-20">		
- 			<form action="" id="search-form-stage">
-				<?=form_input($filter_name)?>
-				<?=form_input($filter_location)?>
-				<button type="submit" id="search-stage" class="ui-purple"><span aria-hidden="true" class="icon-search fs-16"></span></button>			
-			</form>		
-		</div>
-		</div>
--->	
+
 	
 				
     <style type="text/css">
@@ -118,26 +109,36 @@
                             {
                             featureType: 'road.highway',
                             elementType: 'all',
-                             stylers: [
+                            stylers: [
                                { hue: '#ffffff' },
                                { saturation: 0 },
                                { visibility: 'off' },
                                { gamma: 1.0 },
                                { weight: 1 },                             
                              ]
-                            
-                            },{
-                                featureType: 'water',
-                                elementType: 'all',
-                                 stylers: [
-                                   { hue: ' ' },
-                                   { saturation: -50 },
-                                   { visibility: 'simplified' },
-                                   { lightness: 80 },
-                                   { weight: 1 },                             
-                                 ]
-                                
-                                }
+                          	},
+                          	{
+                            featureType: 'water',
+                            elementType: 'all',
+                            stylers: [
+                                { hue: ' ' },
+                                { saturation: -50 },
+                                { visibility: 'simplified' },
+                                { lightness: 80 },
+                                { weight: 1 },                             
+                             ]
+                             }
+                            ,{
+                             featureType: 'landscape',
+                             elementType: 'all',
+                             stylers: [
+                                 { hue: ' ' },
+                                 { saturation: 0 },
+                                 { visibility: 'off' },
+                                 { lightness: 1 },
+                                 { weight: 1 },                             
+                              ]
+                              }
                           ]
 
         var styledMapOptions = {name: 'Custom Style'};
@@ -147,17 +148,6 @@
         var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
         map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-        
-/*      var pinColor = "8e2c86";
-        var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,
-            new google.maps.Size(21, 34),
-            new google.maps.Point(0,0),
-            new google.maps.Point(10, 34));
-        var pinShadow = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_shadow",
-            new google.maps.Size(40, 37),
-            new google.maps.Point(0, 0),
-            new google.maps.Point(12, 35));
-*/
         
 		var locations = [];
 		for (i = 0; i <= stages_formap.nb_stages-1; i++) {
@@ -176,8 +166,6 @@
             marker = new google.maps.Marker({
               position: new google.maps.LatLng(locations[j][1],locations[j][2]),
               map: map,
-//              icon: pinImage,
-//              shadow: pinShadow
               })
 
             google.maps.event.addListener(marker, 'click', (function(marker, j) {

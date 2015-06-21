@@ -94,7 +94,7 @@
 
 <div class=" mt-10 mb-30 db ">
 	<!--last 5 artist-->
-	<div class="grid_12 home-bloc ui-corner-all di bg-grey-2">
+	<div class="grid_12 home-bloc ui-corner-all di ">
 		<?=heading($title_artist, 2, 'class="home-title title"')?>		
 		<ul class="home-list ta-c">
 			<?php foreach($artists as $artist){ ?>				
@@ -121,8 +121,8 @@
 				</li>
 			<?php } ?>
 		</ul>		
-		<div class="p-20 ta-r bg-grey-2">
-			<a href="<?=site_url('artists?t=tab')?>" class="home-list-link bg-grey-1"><?php echo lang("home_seeall_artist") ?></a>
+		<div class="p-20 ta-r ">
+			<a href="<?=site_url('artists?t=tab')?>" class="home-list-link bg-grey-2"><?php echo lang("home_seeall_artist") ?></a>
 		</div>
 	</div>
 	
@@ -157,7 +157,7 @@
 			<?php } ?>
 		</ul>		
 		<div class="p-20 ta-c">
-			<a href="<?=site_url('stages/?t=tab')?>" class="home-list-link"><?php echo lang("home_seeall_stages") ?></a>
+			<a href="<?=site_url('stages/?t=tab')?>" class="home-list-link bg-grey-2"><?php echo lang("home_seeall_stages") ?></a>
 		</div>
 	</div>			
 </div>
