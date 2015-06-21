@@ -105,8 +105,8 @@
 							<div>
 								<?php 
 								$artist_name = $artist['name'];
-								if (strlen($artist_name) > 20) { 
-								$artist_name_short = substr($artist_name,0,17)."..."; 
+								if (strlen($artist_name) > 30) { 
+								$artist_name_short = substr($artist_name,0,27)."..."; 
 								} else {
 									$artist_name_short = $artist_name;
 								};?>
@@ -139,13 +139,13 @@
 							<div>
 								<?php 
 								$stage_name = $stage['name'];
-								if (strlen($stage_name) > 20) { 
-								$stage_name_short = substr($stage_name,0,17)."..."; 
+								if (strlen($stage_name) > 30) { 
+								$stage_name_short = substr($stage_name,0,27)."..."; 
 								} else {
 									$stage_name_short = $stage_name;
 								};?>
 							
-								<a href="<?=$stage['link']?>" class="title fs-16 grey"><?=$stage['name']?></a>
+								<a href="<?=$stage['link']?>" class="title fs-16 grey"><?=$stage_name_short?></a>
 							</div>
 							<div class="fs-12 grey bold">
 								<span class="icon-location mr-5" aria-hidden="true"></span>
