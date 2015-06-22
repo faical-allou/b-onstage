@@ -285,7 +285,6 @@ home
 .home-list{}
 .home-list > li {border-bottom:1px dashed #eaeaea;display:inline-block;}
 .home-list > li:hover{background-color:#f5f5f5;}
-.home-list > li:last-child{border-bottom:2px;margin-bottom: 20px}
 .home-list > li a:hover{text-decoration:underline;}
 .home-list-link{position:absolute;bottom:20px;left:20px;right:20px;}
 
@@ -2086,3 +2085,73 @@ a.underline:hover{text-decoration:underline;}
    white-box
    ========================================================================== */   
 .white-box {background-color:rgba(255,255,255,0.7) }
+
+
+/* =============================================================================
+  flip stuff
+   ========================================================================== */   
+
+
+.flip_container {
+  position: relative;
+  margin: 10px auto;
+  width: 240px;
+  height: 240px;
+  z-index: 1;
+}
+
+.flip_container {
+  perspective: 1000;
+  -ms-perspective: 1000;
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
+}
+.flip_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 0.6s;
+  -ms-transform-style: preserve-3d;
+  -ms-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.6s;
+  
+  
+  
+}
+.flip_container:hover .flip_card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  z-index:2;
+}
+.face.back {
+  position: absolute;
+  display: block;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+
+
+

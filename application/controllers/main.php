@@ -108,14 +108,14 @@ class Main extends CI_Controller {
 
 			$data = array(
 
-				'link'		=> ($artist['web_address']) ? site_url($artist['web_address']) : site_url('page/'.$artist['username']),
+				'link'				=> ($artist['web_address']) ? site_url($artist['web_address']) : site_url('page/'.$artist['username']),
 
-				'location'	=> $artist['country'].', '.$artist['city'],
+				'location'			=> $artist['country'].', '.$artist['city'],
 
-				'name'		=> $artist['company'],
+				'name'				=> $artist['company'],
 
-				'avatar'	=> site_url($artist['avatar'])
-
+				'avatar'			=> site_url($artist['avatar']),
+				'description'		=> $artist['description'],
 			);
 
 			array_push($home['artists'], $data);
@@ -132,14 +132,15 @@ class Main extends CI_Controller {
 
 			$data = array(
 
-				'link'		=> ($stage['web_address']) ? site_url($stage['web_address']) : site_url('page/'.$stage['username']),
+				'link'				=> ($stage['web_address']) ? site_url($stage['web_address']) : site_url('page/'.$stage['username']),
 
-				'location'	=> $stage['country'].', '.$stage['city'],
+				'location'			=> $stage['country'].', '.$stage['city'],
 
-				'name'		=> $stage['company'],
+				'name'				=> $stage['company'],
 
-				'avatar'	=> site_url($stage['avatar'])
-
+				'avatar'			=> site_url($stage['avatar']),
+				'description'		=> $stage['description'],
+						
 			);
 
 			array_push($home['stages'], $data);

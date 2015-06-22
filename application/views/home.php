@@ -91,25 +91,35 @@
 <a href="<?=site_url('signup_stage_ref')?>" class="ui-green action-home mb-20" style="font-size:1em;"><?php echo lang("referral_program_button") ?></a>
 </div>
 
-
 <div class=" mt-10 mb-30 db ">
 	<!--last 5 artist-->
 	<div class="grid_12 home-bloc ui-corner-all di ">
 		<?=heading($title_artist, 2, 'class="home-title title"')?>		
 		<ul class="home-list ta-c">
-			<?php foreach($artists as $artist){ ?>				
+			<?php foreach($artists as $artist){ 				
+					$artist_name = $artist['name'];
+					if (strlen($artist_name) > 30) { 
+					$artist_name_short = substr($artist_name,0,27)."..."; 
+					} else {
+						$artist_name_short = $artist_name;
+					};
+					$artist_desc = strip_tags($artist['description']);
+					if (strlen($artist_desc) > 200) {
+						$artist_desc_short = substr($artist_desc,0,197)."...";
+					} else {
+						$artist_desc_short = $artist_desc;
+					};
+					
+					
+					
+					?>				
 				<li>					
-					<div class="clearfix">
+				  <div class="flip_container">
+				  <div class="flip_card">
+					<div class="clearfix front face">
 						<div class="db p-r"><?=img(array('src' => $artist['avatar'], 'width' => '240px'))?></div>
 						<div class="mt--30 white-box p-2 p-a ta-c" >
 							<div>
-								<?php 
-								$artist_name = $artist['name'];
-								if (strlen($artist_name) > 30) { 
-								$artist_name_short = substr($artist_name,0,27)."..."; 
-								} else {
-									$artist_name_short = $artist_name;
-								};?>
 								<a href="<?=$artist['link']?>" class="fs-16 title grey"><?=$artist_name_short?></a>
 							</div>
 							<div class="fs-12 grey bold ">
@@ -117,7 +127,12 @@
 								<?=$artist['location']?>
 							</div>
 						</div>
-					</div>					
+					</div>
+					<div class="back face ">
+						<a href="<?=$artist['link']?>?t=flip" class="fs-16 title white"><?php echo $artist_desc_short ?></a>
+  					</div>
+				  </div>
+				  </div>					
 				</li>
 			<?php } ?>
 		</ul>		
@@ -131,19 +146,28 @@
 	<div class="grid_12 home-bloc ui-corner-all di mb-10">
 		<?=heading($title_stage, 2, 'class="home-title title"')?>		
 		<ul class="home-list ta-c">
-			<?php foreach($stages as $stage){ ?>				
+			<?php foreach($stages as $stage){ 								 
+					$stage_name = $stage['name'];
+					if (strlen($stage_name) > 30) { 
+					$stage_name_short = substr($stage_name,0,27)."..."; 
+					} else {
+						$stage_name_short = $stage_name;
+					};
+					$stage_desc = strip_tags($stage['description']);
+					if (strlen($stage_desc) > 200) {
+						$stage_desc_short = substr($stage_desc,0,197)."...";
+					} else {
+						$stage_desc_short = $stage_desc;
+					};
+					?>
+					
 				<li>					
-					<div class="clearfix dib">
+				  <div class="flip_container">
+				  <div class="flip_card">
+					<div class="clearfix front face">
 						<div class="db"><?=img(array('src' => $stage['avatar'], 'width' => '240px'))?></div>
 						<div class="mt--30  white-box p-2 p-a ta-c">
 							<div>
-								<?php 
-								$stage_name = $stage['name'];
-								if (strlen($stage_name) > 30) { 
-								$stage_name_short = substr($stage_name,0,27)."..."; 
-								} else {
-									$stage_name_short = $stage_name;
-								};?>
 							
 								<a href="<?=$stage['link']?>" class="title fs-16 grey"><?=$stage_name_short?></a>
 							</div>
@@ -152,7 +176,12 @@
 								<?=$stage['location']?>
 							</div>
 						</div>
-					</div>					
+					</div>
+					<div class="back face ">
+						<a href="<?=$stage['link']?>?t=flip" class="fs-16 title white"><?php echo $stage_desc_short ?></a>
+  					</div>
+				  </div>
+				  </div>					
 				</li>
 			<?php } ?>
 		</ul>		

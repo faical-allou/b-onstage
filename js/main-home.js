@@ -42,7 +42,7 @@
 		},
 		autoPlay: {
 			delay: 8000,
-			enabled: true,
+			enabled: false,
 			pauseOnHover: true
 		}
 	});
