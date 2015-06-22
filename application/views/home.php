@@ -43,7 +43,7 @@
 </div>	
 
 
-<div class="bg-white bs-black">
+<div class="bg-white ">
 	<div class=" pt-50 pb-50 ta-c ">
 		<div id="home-video" class="dib m-30">	
 			<iframe width="480" height="270" src="https://www.youtube.com/embed/kIHGjqx4ecc?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=0&controls=0" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
@@ -59,40 +59,9 @@
 	</div>
 </div>
 
-<!-- referral program -->
-<div class="ta-c p-10 bs-black wrap-ref-program white-box">
-					<span class="fs-24 bold">  <?php echo lang("referral_program") ?> </span>
-					<span class="fs-32 bold">  <?php echo lang("referral_program2") ?> </span>
-					
-	<div class="container_12 ta-c mb-10 mt-30 p-10 ">
-					<div class="dib">
-						<div class="grid_4 ta-c">
-							<div class="p-5">
-								<i class="fa fa-glass fa-4x purple"></i>
-								<p class="grey fs-14 bold"><?php echo lang("referral_program_step1") ?></p>
-							</div>	
-						</div>
-						
-						<div class="grid_4 ta-c">
-							<div class="p-5">
-								<i class="fa fa-list-alt fa-4x purple"></i>
-								<p class="grey fs-14 bold"><?php echo lang("referral_program_step2") ?></p>
-							</div>	
-						</div>
-						
-						<div class="grid_4 ta-c">
-							<div class="p-5">
-								<i class="fa fa-money fa-4x purple"></i>
-								<p class="grey fs-14 bold"><?php echo lang("referral_program_step3") ?></p>
-							</div>	
-						</div>
-					</div>
-	</div>
-<a href="<?=site_url('signup_stage_ref')?>" class="ui-green action-home mb-20" style="font-size:1em;"><?php echo lang("referral_program_button") ?></a>
-</div>
 
 <div class=" mt-10 mb-30 db ">
-	<!--last 5 artist-->
+	<!--last 12 artist-->
 	<div class="grid_12 home-bloc ui-corner-all di ">
 		<?=heading($title_artist, 2, 'class="home-title title"')?>		
 		<ul class="home-list ta-c">
@@ -151,7 +120,7 @@
 	</div>
 	
 	
-	<!--last 5 stages-->
+	<!--last 12 stages-->
 	<div class="grid_12 home-bloc ui-corner-all di mb-10">
 		<?=heading($title_stage, 2, 'class="home-title title"')?>		
 		<ul class="home-list ta-c">
@@ -208,6 +177,38 @@
 			<a href="<?=site_url('stages/?t=tab')?>" class="home-list-link bg-grey-2"><?php echo lang("home_seeall_stages") ?></a>
 		</div>
 	</div>			
+</div>
+
+<!-- referral program -->
+<div class="ta-c p-10 bs-black wrap-ref-program white-box">
+					<span class="fs-24 bold">  <?php echo lang("referral_program") ?> </span>
+					<span class="fs-32 bold">  <?php echo lang("referral_program2") ?> </span>
+					
+	<div class="container_12 ta-c mb-10 mt-30 p-10 ">
+					<div class="dib">
+						<div class="grid_4 ta-c">
+							<div class="p-5">
+								<i class="fa fa-glass fa-4x purple"></i>
+								<p class="grey fs-14 bold"><?php echo lang("referral_program_step1") ?></p>
+							</div>	
+						</div>
+						
+						<div class="grid_4 ta-c">
+							<div class="p-5">
+								<i class="fa fa-list-alt fa-4x purple"></i>
+								<p class="grey fs-14 bold"><?php echo lang("referral_program_step2") ?></p>
+							</div>	
+						</div>
+						
+						<div class="grid_4 ta-c">
+							<div class="p-5">
+								<i class="fa fa-money fa-4x purple"></i>
+								<p class="grey fs-14 bold"><?php echo lang("referral_program_step3") ?></p>
+							</div>	
+						</div>
+					</div>
+	</div>
+<a href="<?=site_url('signup_stage_ref')?>" class="ui-green action-home mb-20" style="font-size:1em;"><?php echo lang("referral_program_button") ?></a>
 </div>
 
 
