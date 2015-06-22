@@ -1968,6 +1968,7 @@ a.underline:hover{text-decoration:underline;}
 .ml-50{margin-left:50px;}
 .ml-100{margin-left:100px;}
 .ml-200{margin-left:200px;}
+.ml--10{margin-left:-10px;}
 
 /*margin-right*/
 .mr-2{margin-right:2px;}

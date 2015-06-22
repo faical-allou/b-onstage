@@ -130,7 +130,16 @@
 					</div>
 					<div class="back face ">
 						<a href="<?=$artist['link']?>?t=flip" class="fs-16 title white"><?php echo $artist_desc_short ?></a>
-  					</div>
+						<div class="mt-10 ml--10 white-box p-2 p-a ta-c" >
+							<div>
+								<a href="<?=$artist['link']?>" class="fs-16 title grey"><?=$artist_name_short?></a>
+							</div>
+							<div class="fs-12 grey bold ">
+								<span class="icon-location mr-5" aria-hidden="true"></span>
+								<?=$artist['location']?>
+							</div>
+						</div>
+						</div>
 				  </div>
 				  </div>					
 				</li>
@@ -179,7 +188,17 @@
 					</div>
 					<div class="back face ">
 						<a href="<?=$stage['link']?>?t=flip" class="fs-16 title white"><?php echo $stage_desc_short ?></a>
-  					</div>
+						<div class="mt-10 ml--10 white-box p-2 p-a ta-c">
+							<div>
+							
+								<a href="<?=$stage['link']?>" class="title fs-16 grey"><?=$stage_name_short?></a>
+							</div>
+							<div class="fs-12 grey bold">
+								<span class="icon-location mr-5" aria-hidden="true"></span>
+								<?=$stage['location']?>
+							</div>
+						</div>
+						</div>
 				  </div>
 				  </div>					
 				</li>
