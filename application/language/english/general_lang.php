@@ -285,7 +285,7 @@ $lang['home_howitworks_button'] = 'more details';
 
 
 // Referral program
-$lang['referral_program'] = 'You can also become b-onstage Ambassador in your town</br>';
+$lang['referral_program'] = 'You can also bring b-onstage to your town</br>';
 $lang['referral_program2'] = 'Support the community and earn money for your projects';
 
 $lang['referral_program_step1'] = 'Introduce b-onstage to a venue you like as a musician, even if there is no live music today';

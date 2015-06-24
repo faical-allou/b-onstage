@@ -19,7 +19,7 @@ textarea {
 	color: #1a1a1a;
 }
 
-body {	
+body {
 	background:#f5f5f5;
 	font-size: 1em;
 	line-height: 1.4;
@@ -165,11 +165,11 @@ header + container + footer
      border-bottom: none;
      -webkit-transform: rotate(-90deg);
      -moz-transform: rotate(-90deg);
-     transform: rotate(-90deg); 
+     transform: rotate(-90deg);
      -webkit-transform-origin: 100% 100%;
      -moz-transform-origin: 100% 100%;
      transform-origin: 100% 100%;
-        
+
 }
 
 /* ==========================================================================
@@ -178,7 +178,8 @@ menu
 #w-menu{
 	width:100%;
 	height:50px;
-	background:#8e2c86;/*url(/img/w-menu.png) repeat-x;*/
+/*	background:#8e2c86;/*url(/img/w-menu.png) repeat-x;*/
+  background:rgba(142,44,134,0.9);
 	z-index:9999;
 }
 #logo{display:block;width:50px;height:50px;}
@@ -266,7 +267,7 @@ slider
 .slide4 .bContainer {top: 5%; right:5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
 .slide3 .bContainer {top: 5%; left: 5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
 .slide2 .bContainer {top: 5%; left: 5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
-.slide1 .bContainer {top: 5%; right: 5%; text-align:left;background:rgba(255,255,255,0.2);display:block;}
+.slide1 .bContainer {width: 100%; margin-right: auto; text-align:center;display:block;}
 
 .slide6 img {margin-left: auto; margin-right: auto; position:relative; height:auto;width:inherit;max-width: 1000px}
 .slide5 img {margin-left: auto; margin-right: 0; position:relative; height:auto;width:inherit;max-width: 900px}
@@ -325,7 +326,7 @@ sign in
 user account
 ========================================================================== */
 #account-menu{
-	background-color:#fff;	
+	background-color:#fff;
 }
 
 #account-menu > ul > li{
@@ -342,7 +343,7 @@ user account
 	padding:0 15px;
 	position:relative;
 }
-#account-menu > ul > li > a:hover{	
+#account-menu > ul > li > a:hover{
 	background-color:#fff;
 	color:#8e2c86;
 }
@@ -361,7 +362,7 @@ user account
     right: 50%;
     border-width: 8px 8px 0 8px;
     border-style: solid;
-    border-color: #1a1a1a transparent; 
+    border-color: #1a1a1a transparent;
 }
 
 .account-line{border-bottom:1px dotted #eaeaea;margin-bottom:20px;}
@@ -373,12 +374,12 @@ concert
 ========================================================================== */
 #loader-more-concert{display:none;text-align:center;}
 
-.filter-concert{	
-	width:20%;	
+.filter-concert{
+	width:20%;
 	vertical-align:top;
 	padding:0;
 	border-right:2px solid #eaeaea;
-	background:#fafafa;	
+	background:#fafafa;
 	background: -moz-linear-gradient(left, #ffffff 0%, #f5f5f5 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f5f5));
 	background: -webkit-linear-gradient(left, #ffffff 0%,#f5f5f5 100%);
@@ -740,11 +741,11 @@ page
 
 @media (max-width: 1279px){
 	#page #top-header-page{height:239px;}
-	#page #avatar-page{width:160px;height:160px;}	
+	#page #avatar-page{width:160px;height:160px;}
 }
 @media (min-width : 1280px){
 	#page #top-header-page{height:300px;}
-	#page #avatar-page{width:200px;height:200px;}	
+	#page #avatar-page{width:200px;height:200px;}
 }
 
 #auth-page{width:40%;top:10px;right:10px;}
@@ -753,10 +754,10 @@ page
 #page #center-header-page{height:50px;line-height:50px;margin-bottom:20px;}
 @media (max-width: 1279px){
 	#page #center-header-page{padding-left:200px;}
-}	
+}
 @media (min-width : 1280px){
 	#page #center-header-page{padding-left:240px;}
-}	
+}
 
 /*bottom*/
 #bottom-header-page{border-top:1px solid #eaeaea;background-color:#f5f5f5;height:50px;}
@@ -904,13 +905,13 @@ page
 .pi-content{background-color:#fff;}
 a.pi-album{
 	position:relative;
-	display:block;		
+	display:block;
 	float:left;
 	margin:5px;
 	border:1px solid #eaeaea;
 }
 a.pi-album:hover{-moz-box-shadow:0px 0px 8px #dadada;-webkit-box-shadow:0px 0px 8px #dadada;box-shadow:0px 0px 8px #dadada;}
-	
+
 .pi-album-thumbnail{}
 .pi-album-description{position:absolute;left:0;right:0;bottom:0;height:40px;background-color:#fff;height:48px;}
 
@@ -918,24 +919,24 @@ a.pi-album:hover{-moz-box-shadow:0px 0px 8px #dadada;-webkit-box-shadow:0px 0px 
 
 /*social followers*/
 #social-followers{width:100%;display:block;}
-#social-followers > li > a{display:block;padding:10px 20px;color:#1a1a1a;border-bottom:1px solid #eaeaea;background-color:#fff;} 
+#social-followers > li > a{display:block;padding:10px 20px;color:#1a1a1a;border-bottom:1px solid #eaeaea;background-color:#fff;}
 #social-followers > li > a:hover{background-color:#f5f5f5;}
 
 /*social feeds*/
 #social-tabs> ul{border-bottom:2px solid #1a1a1a;}
 #social-tabs > ul > li {display:block;float:left;padding:5px 10px 0 10px;cursor:pointer;}
-#social-tabs > ul > li:hover{color:#8e2c86;} 
+#social-tabs > ul > li:hover{color:#8e2c86;}
 #social-tabs > ul > li.active{background-color:#1a1a1a;color:#fff;}
 
 /*tweets list*/
 #tweets-list > li {display:block;border-top:1px dotted #eaeaea;}
-#tweets-list:last-child{border-bottom:none;} 
+#tweets-list:last-child{border-bottom:none;}
 
 /* ==========================================================================
 about, about us and contact
 ========================================================================== */
 #about-menu{
-	position:absolute;bottom:0;left:0;right:0;		
+	position:absolute;bottom:0;left:0;right:0;
 	background:rgba(0,0,0,.8);
 }
 #about-menu > li {display:inline;}
@@ -1096,28 +1097,28 @@ Helper classes
 .title{font-family:"Open Sans Condensed", sans-serif;}
 
 /*font-size*/
-.fs-6 {font-size:6px;} 
-.fs-8 {font-size:8px;} 
-.fs-9 {font-size:9px;} 
-.fs-10 {font-size:10px;} 
-.fs-11 {font-size:11px;} 
-.fs-12 {font-size:12px;} 
-.fs-13 {font-size:13px;} 
-.fs-14 {font-size:14px;} 
-.fs-15 {font-size:15px;} 
-.fs-16 {font-size:16px;} 	
-.fs-17 {font-size:17px;} 
-.fs-18 {font-size:18px;} 
-.fs-19 {font-size:19px;} 
-.fs-20 {font-size:20px;} 
-.fs-21 {font-size:21px;} 
-.fs-22 {font-size:22px;} 	
-.fs-23 {font-size:23px;} 
-.fs-24 {font-size:24px;} 	
-.fs-25 {font-size:25px;} 
-.fs-26 {font-size:26px;} 	
-.fs-27 {font-size:27px;} 
-.fs-28 {font-size:28px;} 	
+.fs-6 {font-size:6px;}
+.fs-8 {font-size:8px;}
+.fs-9 {font-size:9px;}
+.fs-10 {font-size:10px;}
+.fs-11 {font-size:11px;}
+.fs-12 {font-size:12px;}
+.fs-13 {font-size:13px;}
+.fs-14 {font-size:14px;}
+.fs-15 {font-size:15px;}
+.fs-16 {font-size:16px;}
+.fs-17 {font-size:17px;}
+.fs-18 {font-size:18px;}
+.fs-19 {font-size:19px;}
+.fs-20 {font-size:20px;}
+.fs-21 {font-size:21px;}
+.fs-22 {font-size:22px;}
+.fs-23 {font-size:23px;}
+.fs-24 {font-size:24px;}
+.fs-25 {font-size:25px;}
+.fs-26 {font-size:26px;}
+.fs-27 {font-size:27px;}
+.fs-28 {font-size:28px;}
 .fs-29{font-size:29px;}
 .fs-30{font-size:30px;}
 .fs-32{font-size:32px;}
@@ -1133,16 +1134,16 @@ Helper classes
 /*font-weight*/
 .normal{font-weight:normal;}
 .bold{font-weight:bold;}
-.italic{font-style:italic;}  
- 
+.italic{font-style:italic;}
+
  /*font-styling*/
 .underline{ text-decoration: underline;}
-  
+
 /*color*/
 .black{color:#000;}
 .grey{color:#1a1a1a;}
 .grey-2{color:#aaa;}
-.white{color:#fff;}  
+.white{color:#fff;}
 .blue{color:#0053a6;}
 .red{color:#cf3d36;}
 .purple{color:#8e2c86;}
@@ -1622,7 +1623,7 @@ you can use the generic selector below, but it's slower:
 	border-top:1px solid #a0a0a0;
 	-moz-box-shadow:0px 0px 8px #dadada;
 	-webkit-box-shadow:0px 0px 8px #dadada;
-	box-shadow:0px 0px 8px #dadada;	
+	box-shadow:0px 0px 8px #dadada;
 }
 .input:focus{
 	border:1px solid #aaa;
@@ -1634,20 +1635,20 @@ you can use the generic selector below, but it's slower:
 /* =============================================================================
    dropdown
    ========================================================================== */
- .wrapper-dropdown{position: relative;cursor:pointer;outline: none;} 
- .wrapper-dropdown .dropdown {  
+ .wrapper-dropdown{position: relative;cursor:pointer;outline: none;}
+ .wrapper-dropdown .dropdown {
 	z-index:1000;
     position: absolute;
-    top: 140%;    
-    background: #fff;    
+    top: 140%;
+    background: #fff;
     border: 1px solid #eaeaea;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 	display:none;
     pointer-events: none;
 }
- 
+
 .wrapper-dropdown .dropdown > li > a {display: block;padding: 10px;border-bottom: 1px solid #eaeaea;box-shadow: inset 0 1px 0 rgba(255,255,255,1);transition: all 0.3s ease-out;}
- 
+
 /* Hover state */
 .wrapper-dropdown .dropdown:after {
     content: "";
@@ -1658,9 +1659,9 @@ you can use the generic selector below, but it's slower:
     right: 15px;
     border-width: 0 6px 6px 6px;
     border-style: solid;
-    border-color: #fff transparent;   
+    border-color: #fff transparent;
 }
- 
+
 .wrapper-dropdown .dropdown:before {
     content: "";
     width: 0;
@@ -1670,20 +1671,20 @@ you can use the generic selector below, but it's slower:
     right: 13px;
     border-width: 0 8px 8px 8px;
     border-style: solid;
-    border-color: #eaeaea transparent;   
+    border-color: #eaeaea transparent;
 }
 
-.wrapper-dropdown.active .dropdown {    	
+.wrapper-dropdown.active .dropdown {
 	display:block;
     pointer-events: auto;
 }
- 
+
 /*dropdown-username*/
  #dropdown-username{
 	width:200px;
 	margin:5px auto;
-	padding:3px;	
-	background:rgba(255,255,255,0.2);	
+	padding:3px;
+	background:rgba(255,255,255,0.2);
 	color: #fff;
 }
 #dropdown-username > div {line-height:34px;height:34px;}
@@ -1704,13 +1705,13 @@ you can use the generic selector below, but it's slower:
 
 #dropdown-username .dropdown{left:0;right:0;}
 #dropdown-username .dropdown li a {font-size:16px; font-family:"Open Sans Condensed", sans-serif;color: #1a1a1a;background:#fff;}
-#dropdown-username .dropdown li:hover a {color:#8e2c86;}   
+#dropdown-username .dropdown li:hover a {color:#8e2c86;}
 /*dropdown-notification*/
-#dropdown-notification{	
+#dropdown-notification{
 	margin:5px auto;
-	padding:3px 15px;	
-	background:rgba(255,255,255,0.2);	
-	color: #fff;	
+	padding:3px 15px;
+	background:rgba(255,255,255,0.2);
+	color: #fff;
 }
 #dropdown-notification > div {line-height:34px;height:34px;}
 #dropdown-notification.priority-1{background-color: #cf3d36;}
@@ -1733,13 +1734,13 @@ you can use the generic selector below, but it's slower:
 
 
 /*dropdown-plus*/
-#dropdown-plus{	
+#dropdown-plus{
 	color:#1a1a1a;
 	padding:0 50px 0 20px;
 	border-left:1px solid #eaeaea;
 }
 
-#dropdown-plus > div{	
+#dropdown-plus > div{
 	height:50px;
 	line-height:50px;
 }
@@ -1762,8 +1763,8 @@ you can use the generic selector below, but it's slower:
 
 #dropdown-plus .dropdown{right:0;width:200px;}
 #dropdown-plus .dropdown li a {font-size:16px; font-family:"Open Sans Condensed", sans-serif;color: #1a1a1a;background:#fff;}
-#dropdown-plus .dropdown li:hover a {color:#8e2c86;} 
-   
+#dropdown-plus .dropdown li:hover a {color:#8e2c86;}
+
 /* =============================================================================
    alert
    ========================================================================== */
@@ -1829,7 +1830,7 @@ you can use the generic selector below, but it's slower:
    ========================================================================== */
 
 /*bg color*/
-.bg-white{background-color:#fff;}   
+.bg-white{background-color:#fff;}
 .bg-grey-1{background-color:#f5f5f5;}
 .bg-grey-2{background-color:#eaeaea;}
 .bg-black{background-color:#1a1a1a;}
@@ -1869,8 +1870,8 @@ you can use the generic selector below, but it's slower:
 	height:8px;
 	background-color:#1a1a1a;
 }
-   
-   
+
+
 /* =============================================================================
    arrow
    ========================================================================== */
@@ -1891,7 +1892,7 @@ a.underline:hover{text-decoration:underline;}
 /* =============================================================================
    Padding
    ========================================================================== */
-   
+
 /*padding*/
 .p-2{padding:2px;}
 .p-3{padding:3px;}
@@ -1916,8 +1917,8 @@ a.underline:hover{text-decoration:underline;}
 .pr-5{padding-right:5px;}
 .pr-10{padding-right:10px;}
 .pr-15{padding-right:15px;}
-.pr-20{padding-right:20px;}  
-/*padding-bottom*/ 
+.pr-20{padding-right:20px;}
+/*padding-bottom*/
 .pb-1{padding-bottom:1px;}
 .pb-2{padding-bottom:2px;}
 .pb-3{padding-bottom:3px;}
@@ -1928,7 +1929,7 @@ a.underline:hover{text-decoration:underline;}
 .pb-30{padding-bottom:30px;}
 .pb-40{padding-bottom:40px;}
 .pb-50{padding-bottom:50px;}
- /*padding-top*/ 
+ /*padding-top*/
 .pt-0{padding-top:0;}
 .pt-1{padding-top:1px;}
 .pt-3{padding-top:3px;}
@@ -1941,7 +1942,7 @@ a.underline:hover{text-decoration:underline;}
 /* =============================================================================
    Margin
    ========================================================================== */
-   
+
 /*margin*/
 .m-auto{margin:auto;}
 .m-0{margin:0px;}
@@ -2023,53 +2024,53 @@ a.underline:hover{text-decoration:underline;}
 	border
    ========================================================================== */
 .bshadow{box-shadow: 8px 8px 0px #aaa}
- 
+
 /* =============================================================================
    stripe
    ========================================================================== */
 
 /* =============================================================================
    position
-   ========================================================================== */   
+   ========================================================================== */
 .p-f{position:fixed;}
 .p-r{position:relative;}
 .p-a{position:absolute;}
-   
+
 /* =============================================================================
    text-align
    ========================================================================== */
 .ta-r{text-align:right;}
 .ta-c{text-align:center;}
-.ta-l{text-align:left;}  
-   
+.ta-l{text-align:left;}
+
 /* =============================================================================
    float
    ========================================================================== */
 .left{float:left;}
-.right{float:right;} 
+.right{float:right;}
 
 /* =============================================================================
    display
-   ========================================================================== */   
+   ========================================================================== */
 .dib{display:inline-block;}
 .di{display:inline;}
-.dt{display:table;table-layout:fixed;}   
+.dt{display:table;table-layout:fixed;}
 .dtc{display:table-cell;}
-.db{display:block;}   
-.dn{display:none;}   
+.db{display:block;}
+.dn{display:none;}
 
 /* =============================================================================
    vertical align
-   ========================================================================== */   
+   ========================================================================== */
 .va-t{vertical-align:top;}
 
 /*#top_lang_bar{padding:0 2px;height:50px;line-height:50px; border:0px #000 solid}
 .top_lang_bar_link{font-family:"Open Sans Condensed", sans-serif;text-decoration:none;color:#fff;}
 #top_lang_bar:hover{background:rgba(255,255,255,0.2);}
 */
-#top_lang_bar_logged{	
+#top_lang_bar_logged{
 	margin:5px auto;
-	padding:3px 15px;	
+	padding:3px 15px;
 	background:rgba(255,255,255,0.2);
 	cursor:pointer;
 }
@@ -2079,18 +2080,18 @@ a.underline:hover{text-decoration:underline;}
 
 /* =============================================================================
    z-index
-   ========================================================================== */   
+   ========================================================================== */
 .ztop{z-index: 1000}
 
 /* =============================================================================
    white-box
-   ========================================================================== */   
+   ========================================================================== */
 .white-box {background-color:rgba(255,255,255,0.7) }
 
 
 /* =============================================================================
   flip stuff
-   ========================================================================== */   
+   ========================================================================== */
 
 
 .flip_container {
@@ -2118,16 +2119,16 @@ a.underline:hover{text-decoration:underline;}
   -moz-transition: 0.6s;
   -webkit-transform-style: preserve-3d;
   -webkit-transition: 0.6s;
-  
-  
-  
+
+
+
 }
 .flip_container:hover .flip_card {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
-  
+
   box-shadow: -5px 5px 5px #aaa;
 }
 .face {
@@ -2153,6 +2154,3 @@ a.underline:hover{text-decoration:underline;}
   text-align: center;
   background-color: #aaa;
 }
-
-
-

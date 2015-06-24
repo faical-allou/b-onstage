@@ -282,7 +282,7 @@ $lang['home_bottom_txt'] = 'Réservez une Scène en deux clicks, </br>Gardez vot
 $lang['home_bottom_txt2'] = 'L\'inscription est gratuite et le restera, </br> Connectez vous aux scènes à l\'international';
 
 // Referral program
-$lang['referral_program'] = 'Tu peux aussi devenir Ambassadeur b-onstage dans ta ville</br>'; 
+$lang['referral_program'] = 'Tu peux aussi faire venir b-onstage dans ta ville!</br>'; 
 $lang['referral_program2'] = 'Aide la communauté et gagne de l\'argent pour tes projets';
 
 $lang['referral_program_step1'] = 'Présente b-onstage à un lieu que tu aimes en tant que musicien, même si il n\'y a pas de musique live aujourd\'hui';
