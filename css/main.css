@@ -280,7 +280,7 @@ slider
 /* ==========================================================================
 home
 ========================================================================== */
-.home-bloc{position:relative;background-color:#fff;display: inline-block;}
+.home-bloc{width:100%; position:relative;background-color:#fff;display: inline-block;}
 
 .home-title{border-bottom:1px solid #eaeaea;font-size:24px;color:#1a1a1a;margin:10;}
 .home-list{}

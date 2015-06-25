@@ -6,11 +6,11 @@
 
 
 <!--slider-->
-<div id="wrap-slider p-f">
+<div id="wrap-slider">
 	<div id="slider" class=" royalSlider rsBlack">
 
 	<!--slide8-->
-		<div class="rsContent slide1 p-f">
+		<div class="rsContent slide1">
 			<div class="bContainer ui-corner-all p-20">
 				<div class=" fs-48 bold white"><?php echo lang("home_slide8_txt") ?></div>
 				<div class=" fs-36 bold white mb-20"><?php echo lang("home_slide8_txt1") ?></div>
@@ -26,7 +26,7 @@
 
 
 		<!--slide1-->
-		<div class="rsContent slide1 p-f">
+		<div class="rsContent slide1">
 			<div class="bContainer ui-corner-all p-20">
 				<div class=" fs-48 bold white"><?php echo lang("home_slide1_txt") ?></div>
 				<div class=" fs-36 bold white mb-20"><?php echo lang("home_slide1_txt2") ?></div>
@@ -44,7 +44,7 @@
 </div>
 
 <!--video-->
-<div class="grid_12 home-bloc mb-50 mt-50">
+<div class=" home-bloc pt-50 pb-50">
 	<div class=" pt-50 ta-c">
 		<div id="home-video" class="dib m-10">
 			<iframe width="480" height="270" src="https://www.youtube.com/embed/kIHGjqx4ecc?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=0&controls=0" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
@@ -61,9 +61,9 @@
 </div>
 
 
-<div class=" mb-50 db ">
+<div class=" bg-white db ">
 	<!--last 12 artist-->
-	<div class="grid_12 home-bloc ui-corner-all di mb-30">
+	<div class="grid_12 home-bloc ui-corner-all di pb-30">
 		<?=heading($title_artist, 2, 'class="home-title title"')?>
 		<ul class="home-list ta-c mb-30">
 			<?php foreach($artists as $artist){
