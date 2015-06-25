@@ -12,8 +12,8 @@
 	<!--slide8-->
 		<div class="rsContent slide1 p-f">
 			<div class="bContainer ui-corner-all p-20">
-				<div class=" fs-32 bold white"><?php echo lang("home_slide8_txt") ?></div>
-				<div class=" fs-24 bold white mb-20"><?php echo lang("home_slide8_txt1") ?></div>
+				<div class=" fs-48 bold white"><?php echo lang("home_slide8_txt") ?></div>
+				<div class=" fs-36 bold white mb-20"><?php echo lang("home_slide8_txt1") ?></div>
 				<div class="ta-c">
 				<div class="ui-green link-button" style="font-size:1em;">
 					<a href="<?=site_url('signup/?t=slide8')?>" >
@@ -28,8 +28,8 @@
 		<!--slide1-->
 		<div class="rsContent slide1 p-f">
 			<div class="bContainer ui-corner-all p-20">
-				<div class=" fs-32 bold white"><?php echo lang("home_slide1_txt") ?></div>
-				<div class=" fs-32 bold white mb-20"><?php echo lang("home_slide1_txt2") ?></div>
+				<div class=" fs-48 bold white"><?php echo lang("home_slide1_txt") ?></div>
+				<div class=" fs-36 bold white mb-20"><?php echo lang("home_slide1_txt2") ?></div>
 				<div class="ta-c">
 				<div class="ui-green link-button" style="font-size:1em;">
 					<a href="<?=site_url('signup/?t=slide1')?>" >

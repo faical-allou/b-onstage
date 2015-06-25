@@ -256,7 +256,7 @@ $lang['home_slide6_txt1'] = 'in Paris and Berlin';
 $lang['home_slide6_txt'] = 'Thank you for the great shows!';
 $lang['home_slide6_txt1'] = 'in Paris and Berlin';
 
-$lang['home_slide8_txt'] = 'Get on stage every week  !';
+$lang['home_slide8_txt'] = 'On stage every week!';
 $lang['home_slide8_txt1'] = 'with b-onstage now you can';
 $lang['home_slide8_txt2'] = 'Sign up now';
 
