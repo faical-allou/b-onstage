@@ -44,8 +44,8 @@
 </div>
 
 <!--video-->
-<div class="bg-white ">
-	<div class=" pt-50 ta-c mb-30">
+<div class="bg-white mt-50 mb-50">
+	<div class=" pt-50 ta-c">
 		<div id="home-video" class="dib m-10">
 			<iframe width="480" height="270" src="https://www.youtube.com/embed/kIHGjqx4ecc?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=0&controls=0" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
 		</div>
@@ -61,7 +61,7 @@
 </div>
 
 
-<div class=" mt-10 mb-30 db ">
+<div class=" mb-50 db ">
 	<!--last 12 artist-->
 	<div class="grid_12 home-bloc ui-corner-all di mb-30">
 		<?=heading($title_artist, 2, 'class="home-title title"')?>
@@ -206,5 +206,5 @@
 						</div>
 					</div>
 	</div>
-<a href="<?=site_url('signup_stage_ref')?>" class="ui-green link-button mb-20 p-10" style="font-size:1em;"><?php echo lang("referral_program_button") ?></a>
+<a href="<?=site_url('signup_stage_ref')?>" class="ui-green link-button mb-50 p-10" style="font-size:1em;"><?php echo lang("referral_program_button") ?></a>
 </div>
