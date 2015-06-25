@@ -44,7 +44,7 @@
 </div>
 
 <!--video-->
-<div class="bg-white mt-50 mb-50">
+<div class="grid_12 home-bloc mb-50 mt-50">
 	<div class=" pt-50 ta-c">
 		<div id="home-video" class="dib m-10">
 			<iframe width="480" height="270" src="https://www.youtube.com/embed/kIHGjqx4ecc?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=0&controls=0" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
