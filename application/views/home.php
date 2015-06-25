@@ -46,11 +46,11 @@
 <!--video-->
 <div class="bg-white ">
 	<div class=" pt-50 pb-50 ta-c ">
-		<div id="home-video" class="dib m-30">
+		<div id="home-video" class="dib m-10">
 			<iframe width="480" height="270" src="https://www.youtube.com/embed/kIHGjqx4ecc?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=0&controls=0" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
 		</div>
 
-		<div class="dib m-30">
+		<div class="dib m-50 ml-100">
 			<div class="fs-24 ta-c bold mb-10 underline"><?php echo lang("home_howitworks_title")?></div>
 			<div class="fs-16 ta-l mb-10 bold"><?php echo lang("home_howitworks_list")?></div>
 			<span class="bold ui-green fs-16 link-button">
