@@ -15,7 +15,7 @@
 				<div class=" fs-48 bold white"><?php echo lang("home_slide8_txt") ?></div>
 				<div class=" fs-36 bold white mb-20"><?php echo lang("home_slide8_txt1") ?></div>
 				<div class="ta-c">
-				<div class="ui-green link-button" style="font-size:1em;">
+				<div class="ui-green link-button fs-18 p-10">
 					<a href="<?=site_url('signup/?t=slide8')?>" >
 					<?php echo lang("home_slide8_txt2") ?></a>
 				</div>
@@ -31,7 +31,7 @@
 				<div class=" fs-48 bold white"><?php echo lang("home_slide1_txt") ?></div>
 				<div class=" fs-36 bold white mb-20"><?php echo lang("home_slide1_txt2") ?></div>
 				<div class="ta-c">
-				<div class="ui-green link-button" style="font-size:1em;">
+				<div class="ui-green link-button fs-18" >
 					<a href="<?=site_url('signup/?t=slide1')?>" >
 					<?php echo lang("home_slide1_txt3") ?></a>
 				</div>
@@ -45,15 +45,15 @@
 
 <!--video-->
 <div class="bg-white ">
-	<div class=" pt-50 pb-50 ta-c ">
+	<div class=" pt-50 ta-c mb-30">
 		<div id="home-video" class="dib m-10">
 			<iframe width="480" height="270" src="https://www.youtube.com/embed/kIHGjqx4ecc?border=none&color=white&modestbranding=1&rel=0&theme=light&autohide=1&autoplay=0&showinfo=0&controls=0" seamless='seamless' frameBorder="0" allowfullscreen></iframe>
 		</div>
 
 		<div class="dib m-50 ml-100">
 			<div class="fs-24 ta-c bold mb-10 underline"><?php echo lang("home_howitworks_title")?></div>
-			<div class="fs-16 ta-l mb-10 bold"><?php echo lang("home_howitworks_list")?></div>
-			<span class="bold ui-green fs-16 link-button">
+			<div class="fs-16 ta-l mb-30 bold"><?php echo lang("home_howitworks_list")?></div>
+			<span class="bold ui-green fs-18 link-button p-10">
 			<a href="<?=site_url('about/?t=video')?>"><?php echo lang("home_howitworks_button") ?></a>
 			</span>
 		</div>
@@ -63,9 +63,9 @@
 
 <div class=" mt-10 mb-30 db ">
 	<!--last 12 artist-->
-	<div class="grid_12 home-bloc ui-corner-all di ">
+	<div class="grid_12 home-bloc ui-corner-all di mb-30">
 		<?=heading($title_artist, 2, 'class="home-title title"')?>
-		<ul class="home-list ta-c">
+		<ul class="home-list ta-c mb-30">
 			<?php foreach($artists as $artist){
 					$artist_name = $artist['name'];
 					if (strlen($artist_name) > 30) {
@@ -79,9 +79,6 @@
 					} else {
 						$artist_desc_short = $artist_desc;
 					};
-
-
-
 					?>
 				<li>
 				  <div class="flip_container">
@@ -115,16 +112,16 @@
 				</li>
 			<?php } ?>
 		</ul>
-		<div class="p-20 ta-r ">
-			<a href="<?=site_url('artists?t=tab')?>" class="home-list-link bg-grey-2"><?php echo lang("home_seeall_artist") ?></a>
+		<div class="p-20 ta-c">
+			<a href="<?=site_url('artists?t=tab')?>" class="link-button ui-green fs-18 p-10"><?php echo lang("home_seeall_artist") ?></a>
 		</div>
 	</div>
 
 
 	<!--last 12 stages-->
-	<div class="grid_12 home-bloc ui-corner-all di mb-10">
+	<div class="grid_12 home-bloc ui-corner-all di mb-50">
 		<?=heading($title_stage, 2, 'class="home-title title"')?>
-		<ul class="home-list ta-c">
+		<ul class="home-list ta-c mb-30">
 			<?php foreach($stages as $stage){
 					$stage_name = $stage['name'];
 					if (strlen($stage_name) > 30) {
@@ -175,7 +172,7 @@
 			<?php } ?>
 		</ul>
 		<div class="p-20 ta-c">
-			<a href="<?=site_url('stages/?t=tab')?>" class="home-list-link bg-grey-2"><?php echo lang("home_seeall_stages") ?></a>
+			<a href="<?=site_url('stages/?t=tab')?>" class="link-button ui-green fs-18 p-10"><?php echo lang("home_seeall_stages") ?></a>
 		</div>
 	</div>
 </div>
@@ -209,5 +206,5 @@
 						</div>
 					</div>
 	</div>
-<a href="<?=site_url('signup_stage_ref')?>" class="ui-green action-home mb-20" style="font-size:1em;"><?php echo lang("referral_program_button") ?></a>
+<a href="<?=site_url('signup_stage_ref')?>" class="ui-green link-button mb-20 p-10" style="font-size:1em;"><?php echo lang("referral_program_button") ?></a>
 </div>

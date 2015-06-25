@@ -5,20 +5,20 @@
 
 <div id="stage">
 
-	
-				
+
+
     <style type="text/css">
       html, body, #map-canvas { height: 300px;}
     </style>
-    
+
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyDcej0yq3y7ly-GiqDOe5hDhCDDzhhV3Z8">
     </script>
-    
-	
+
+
     <script type="text/javascript" charset="utf-8">
     var stages_formap = <?= json_encode($stages_formap)?>;
-    
+
     function CenterParis(controlDiv, map) {
 
     	  // Set CSS for the control border
@@ -52,7 +52,7 @@
     	  });
 
     	};
-    
+
     	   function CenterBerlin(controlDiv, map) {
 
     	    	  // Set CSS for the control border
@@ -87,9 +87,9 @@
     	    	  });
 
     	    	};
-    	
 
-    
+
+
     function initialize() {
 
     	var MY_MAPTYPE_ID = 'custom_style';
@@ -114,7 +114,7 @@
                                { saturation: 0 },
                                { visibility: 'off' },
                                { gamma: 1.0 },
-                               { weight: 1 },                             
+                               { weight: 1 },
                              ]
                           	},
                           	{
@@ -125,7 +125,7 @@
                                 { saturation: -50 },
                                 { visibility: 'simplified' },
                                 { lightness: 80 },
-                                { weight: 1 },                             
+                                { weight: 1 },
                              ]
                              }
                             ,{
@@ -136,149 +136,149 @@
                                  { saturation: 0 },
                                  { visibility: 'off' },
                                  { lightness: 1 },
-                                 { weight: 1 },                             
+                                 { weight: 1 },
                               ]
                               }
                           ]
 
         var styledMapOptions = {name: 'Custom Style'};
-        
+
         var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-		
+
         var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
         map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-        
+
 		var locations = [];
 		for (i = 0; i <= stages_formap.nb_stages-1; i++) {
 			if (stages_formap.stages[i].stage_web_address == "0") { stages_formap.stages[i].stage_web_address = stages_formap.stages[i].stage_username};
-			locations[i] = ['<a target="_blank" ' + 'href=/' + stages_formap.stages[i].stage_web_address + '?t=map><strong>' + stages_formap.stages[i].stage_company + '</strong></a>', stages_formap.stages[i].stage_lati, stages_formap.stages[i].stage_longi, stages_formap.stages[i].stage_id];    
+			locations[i] = ['<a target="_blank" ' + 'href=/' + stages_formap.stages[i].stage_web_address + '?t=map><strong>' + stages_formap.stages[i].stage_company + '</strong></a>', stages_formap.stages[i].stage_lati, stages_formap.stages[i].stage_longi, stages_formap.stages[i].stage_id];
 			}
-		
-	
+
+
 		for (j = 0; j < locations.length; j++) {
 
         var infowindow = new google.maps.InfoWindow();
         var marker, j;
 		}
-              
-        for (j = 0; j < locations.length; j++) {  
+
+        for (j = 0; j < locations.length; j++) {
             marker = new google.maps.Marker({
               position: new google.maps.LatLng(locations[j][1],locations[j][2]),
               map: map,
               })
 
             google.maps.event.addListener(marker, 'click', (function(marker, j) {
-            	                
+
                 return function() {
                 infowindow.setContent(locations[j][0]);
                 infowindow.open(map, marker);
 
                 map.setZoom(15);
                 map.panTo(marker.getPosition());
-                
+
               }
             })(marker, j));
 
-                
-        }; 
+
+        };
 
               // Create the DIV to hold the control and
               // call the CenterControl() constructor passing
               // in this DIV.
               var centerControlDiv1 = document.createElement('div');
               var centerControlDiv2 = document.createElement('div');
-              
+
               var centerParis = new CenterParis(centerControlDiv1, map);
               var centerBerlin = new CenterBerlin(centerControlDiv2, map);
-              
+
               centerControlDiv1.index = 1;
               centerControlDiv2.index = 2;
-              
+
               map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(centerControlDiv1);
               map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(centerControlDiv2);
-              
-              
+
+
           };
 
-         
-          
+
+
         google.maps.event.addDomListener(window, 'load', initialize);
 
-       
+
     </script>
-					
-	<div class="container_12">	
+
+	<div class="container_12">
 		<a href="<?=site_url('signup_stage_ref?t=map')?>" class="ui-green action-home mt-50 ml-50 p-a ztop" style="font-size:1em;"><?php echo lang("referral_program_helpus") ?></a>
-	
+
 	<div id="map-canvas" class= "grid_12 mt-30 "></div>
-		<div class="grid_9 mb-20 mt-10">	
-		
+		<div class="grid_9 mb-20 mt-10">
+
 		<!--legend-->
 		<div class="recommendations mb-10 mt-10">
 					<span class="dt">  <?php echo lang("legend") ?> </span>
-					<div class="dt fs-10">
+					<div class="dt fs-11">
 						<div class="dtc ta-c">
 							<div class="p-5">
 								<i class="fa fa-users"></i>
 								<p class="grey"><?php echo lang("room_size_legend") ?></p>
-							</div>	
+							</div>
 						</div>
-						
+
 						<div class="dtc ta-c">
 							<div class="p-5">
 								<i class="fa fa-square-o"></i>
 								<p class="grey"><?php echo lang("stage_size_legend") ?></p>
-							</div>	
+							</div>
 						</div>
-						
+
 						<div class="dtc ta-c">
 							<div class="p-5">
 								<i class="fa fa-microphone"></i>
 								<p class="grey"><?php echo lang("microphone_legend") ?></p>
-							</div>	
+							</div>
 						</div>
-						
+
 						<div class="dtc ta-c">
 							<div class="p-5">
 								<i class="fa fa-volume-off"></i>
 								<p class="grey"><?php echo lang("speakers_legend") ?></p>
-							</div>	
+							</div>
 						</div>
-						
+
 						<div class="dtc ta-c">
 							<div class="p-5">
 								<i class="fa fa-sliders"></i>
 								<p class="grey"><?php echo lang("amplification_legend") ?></p>
-							</div>	
+							</div>
 						</div>
-						
+
 						<div class="dtc ta-c">
 							<div class="p-5">
 								<i class="fa fa-lightbulb-o"></i>
 								<p class="grey "><?php echo lang("lights_legend") ?></p>
-							</div>	
+							</div>
 						</div>
-						
+
 						<div class="dtc ta-c">
 							<div class="p-5">
 								<i class="fa fa-bell-slash"></i>
 								<p class="grey"><?php echo lang("noise_legend") ?></p>
-							</div>	
+							</div>
 						</div>
-						
-												
+
+
 					</div>
-			</div>			
-		
+			</div>
+
 			<!--stage list-->
 			<div class="bs-black">
-				<div class="fs-16 p-10 white title bg-black ui-corner-top"><?php echo lang("stages_searchresutls") ?></div> 
+				<div class="fs-16 p-10 white title bg-black ui-corner-top"><?php echo lang("stages_searchresutls") ?></div>
 				<div id="stages-list">
 					<?=$stages_list?>
-				</div>	
-			</div>	
-			
+				</div>
+			</div>
+
 			<!--show more stages-->
 			<?php if($nb_pages > 1) {?>
 			<div class="mt-20">
@@ -288,20 +288,20 @@
 				</div>
 			</div>
 			<?php } ?>
-			
+
 			<!--pager-->
 			<div style="display:none;">
 				<ul>
 					<?php
 					$i = 1;
-					for($i=1; $i<=$nb_pages; $i++) 
+					for($i=1; $i<=$nb_pages; $i++)
 						echo '<li>'.anchor(site_url('stages/'.$i), $i).'</li>';
-					?>	
+					?>
 				</ul>
 			</div>
 		</div>
 		<?php echo $social_sidebar ?>
 
-	</div>	
+	</div>
 
 </div>
