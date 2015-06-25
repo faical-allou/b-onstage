@@ -7,7 +7,7 @@
 
 <!--slider-->
 <div id="wrap-slider p-f">
-	<div id="slider" class="zlow royalSlider rsBlack">
+	<div id="slider" class=" royalSlider rsBlack">
 
 	<!--slide8-->
 		<div class="rsContent slide1 p-f">
